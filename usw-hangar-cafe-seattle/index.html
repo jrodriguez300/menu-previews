@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>The Hangar Cafe Menu</title>
+<meta name="description" content="Menu for The Hangar Cafe, Georgetown.">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>The Hangar Cafe</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=6261%2013th%20Ave%20S%2C%20Seattle%2C%20WA%2098108">6261 13th Ave S, Seattle, WA 98108</a><a href="tel:2067620204">(206) 762-0204</a><span>Open seven days a week 8:00 AM - 2:00 PM. Lunch menu available all day on weekdays and after 11 AM on Saturday and Sunday</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#morning-starters-for-late-last-nighters" data-sec="morning-starters-for-late-last-nighters">Morning Starters for Late Last Nighters</a><a href="#savory-crepes" data-sec="savory-crepes">Savory Crepes</a><a href="#sweet-crepes" data-sec="sweet-crepes">Sweet Crepes</a><a href="#waffles" data-sec="waffles">Waffles</a><a href="#savory-treats" data-sec="savory-treats">Savory Treats</a><a href="#baked-treats" data-sec="baked-treats">Baked Treats</a><a href="#additions-sides" data-sec="additions-sides">Additions &amp; Sides</a><a href="#drinks" data-sec="drinks">Drinks</a><a href="#sandwiches" data-sec="sandwiches">Sandwiches</a><a href="#salads" data-sec="salads">Salads</a><a href="#sharables-soup-and-combos" data-sec="sharables-soup-and-combos">Sharables, Soup, and Combos</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="morning-starters-for-late-last-nighters" class="sec">
+      <h2>Morning Starters for Late Last Nighters</h2>
+      
+      <ul>
+        <li data-q="mimosa by the glass choice of cold pressed orange, cold pressed grapefruit, guava, mango, pog, pomegranate, or cranberry. make it a sample platter, choice of 4 flavors $19.">
+          <div class="row"><span class="name">Mimosa by the Glass</span><span class="price">$10.00</span></div>
+          <p class="desc">Choice of Cold Pressed Orange, Cold Pressed Grapefruit, Guava, Mango, POG, Pomegranate, or Cranberry. Make it a Sample Platter, choice of 4 flavors $19.</p>
+        </li>
+        <li data-q="mimosa by the pitcher ">
+          <div class="row"><span class="name">Mimosa by the Pitcher</span><span class="price">$35.00</span></div>
+          
+        </li>
+        <li data-q="future primitive tall boys thunderpussy ipa, n.p.f.o. pilsner, kingdome kolsch. ask about our seasonal rotating option.">
+          <div class="row"><span class="name">Future Primitive Tall Boys</span><span class="price">$8.00</span></div>
+          <p class="desc">Thunderpussy IPA, N.P.F.O. Pilsner, Kingdome Kolsch. Ask about our seasonal rotating option.</p>
+        </li>
+        <li data-q="rainier make it a red beer with tomato juice or clamato $1. add a dash of demitri&#39;s for an extra kick $1. make it a michelada $2.">
+          <div class="row"><span class="name">Rainier</span><span class="price">$6.00</span></div>
+          <p class="desc">Make it a Red Beer with Tomato Juice or Clamato $1. Add a dash of Demitri&#39;s for an extra kick $1. Make it a Michelada $2.</p>
+        </li>
+        <li data-q="white wine spritzer pinot grigio topped off with pellegrino and sprite with your choice of strawberry and basil, or blackberry and mint.">
+          <div class="row"><span class="name">White Wine Spritzer</span><span class="price">$11.00</span></div>
+          <p class="desc">Pinot Grigio topped off with Pellegrino and Sprite with your choice of Strawberry and Basil, or Blackberry and Mint.</p>
+        </li>
+        <li data-q="beermosa cold pressed orange juice and rainer.">
+          <div class="row"><span class="name">Beermosa</span><span class="price">$8.00</span></div>
+          <p class="desc">Cold Pressed Orange Juice and Rainer.</p>
+        </li>
+        <li data-q="sound goods wine cans sound red, rosé, blanc canvas. make your red a calimotxo $2.">
+          <div class="row"><span class="name">Sound Goods Wine Cans</span><span class="price">$9.00</span></div>
+          <p class="desc">Sound Red, Rosé, Blanc Canvas. Make your Red a Calimotxo $2.</p>
+        </li>
+        <li data-q="offset dry ciders pear and apple dry or ask about the seasonal flavor.">
+          <div class="row"><span class="name">Offset Dry Ciders</span><span class="price">$8.00</span></div>
+          <p class="desc">Pear and Apple Dry or ask about the Seasonal Flavor.</p>
+        </li>
+        <li data-q="mulled wine seasonal.">
+          <div class="row"><span class="name">Mulled Wine</span><span class="price">$10</span></div>
+          <p class="desc">Seasonal.</p>
+        </li></ul>
+    </section>
+    <section id="savory-crepes" class="sec">
+      <h2>Savory Crepes</h2>
+      <p class="note">Choice of Breakfast Potatoes or Salad. Substitute Fruit Cup for side $2. Add Mama Lil Peppers $2.</p>
+      <ul>
+        <li data-q="market applewood smoked bacon, mozzarella, tomato, caramelized onion and baby spinach. topped with our house made poblano vinaigrette and creme fraiche.">
+          <div class="row"><span class="name">Market</span><span class="price">$22.95</span></div>
+          <p class="desc">Applewood Smoked Bacon, Mozzarella, Tomato, Caramelized Onion and Baby Spinach. Topped with our House Made Poblano Vinaigrette and Creme Fraiche.</p>
+        </li>
+        <li data-q="caprese mozzarella, fresh basil, slivered red onion and roma tomatoes. topped with a balsamic glaze.">
+          <div class="row"><span class="name">Caprese</span><span class="price">$20.95</span></div>
+          <p class="desc">Mozzarella, Fresh Basil, Slivered Red Onion and Roma Tomatoes. Topped with a Balsamic Glaze.</p>
+        </li>
+        <li data-q="the hangar black forest ham, scrambled eggs, swiss, cheddar, tomato, slivered red onion and baby spinach. topped with our house made poblano vinaigrette and creme fraiche.">
+          <div class="row"><span class="name">The Hangar</span><span class="price">$23.95</span></div>
+          <p class="desc">Black Forest Ham, Scrambled Eggs, Swiss, Cheddar, Tomato, Slivered Red Onion and Baby Spinach. Topped with our House Made Poblano Vinaigrette and Creme Fraiche.</p>
+        </li>
+        <li data-q="turkey pesto oven roasted turkey, scrambled eggs, mozzarella, tomato and spinach. topped with a basil pesto and creme fraiche.">
+          <div class="row"><span class="name">Turkey Pesto</span><span class="price">$22.95</span></div>
+          <p class="desc">Oven Roasted Turkey, Scrambled Eggs, Mozzarella, Tomato and Spinach. Topped with a Basil Pesto and Creme Fraiche.</p>
+        </li>
+        <li data-q="chorizo and eggs spicy chorizo, scrambled eggs, sweet corn, black beans, spinach, tomato and pepperjack. topped with a cilantro cream fraiche and sliced avocado.">
+          <div class="row"><span class="name">Chorizo and Eggs</span><span class="price">$22.95</span></div>
+          <p class="desc">Spicy Chorizo, Scrambled Eggs, Sweet Corn, Black Beans, Spinach, Tomato and Pepperjack. Topped with a Cilantro Cream Fraiche and Sliced Avocado.</p>
+        </li>
+        <li data-q="queen of hearts marinated artichoke hearts, mushrooms, slivered red onions, spinach, roma tomatoes, mozzarella. topped with a basil pesto and creme fraiche.">
+          <div class="row"><span class="name">Queen of Hearts</span><span class="price">$21.95</span></div>
+          <p class="desc">Marinated Artichoke Hearts, Mushrooms, Slivered Red Onions, Spinach, Roma Tomatoes, Mozzarella. Topped with a Basil Pesto and Creme Fraiche.</p>
+        </li>
+        <li data-q="the italian italian sausage, mushroom, spinach, slivered red onion and mozzarella. topped with our house made poblano vinaigrette and creme fraiche.">
+          <div class="row"><span class="name">The Italian</span><span class="price">$22.95</span></div>
+          <p class="desc">Italian Sausage, Mushroom, Spinach, Slivered Red Onion and Mozzarella. Topped with our House Made Poblano Vinaigrette and Creme Fraiche.</p>
+        </li>
+        <li data-q="monte cristo oven roasted turkey, ham, swiss and scrambled eggs. topped with powdered sugar and sunfresh raspberry jam.">
+          <div class="row"><span class="name">Monte Cristo</span><span class="price">$22.95</span></div>
+          <p class="desc">Oven Roasted Turkey, Ham, Swiss and Scrambled Eggs. Topped with Powdered Sugar and Sunfresh Raspberry Jam.</p>
+        </li></ul>
+    </section>
+    <section id="sweet-crepes" class="sec">
+      <h2>Sweet Crepes</h2>
+      
+      <ul>
+        <li data-q="apple brie brown sugar apples and brie. topped with caramel, toasted walnuts and powdered sugar.">
+          <div class="row"><span class="name">Apple Brie</span><span class="price">$18.95</span></div>
+          <p class="desc">Brown Sugar Apples and Brie. Topped with Caramel, Toasted Walnuts and Powdered Sugar.</p>
+        </li>
+        <li data-q="honey sweet ricotta honey sweet ricotta and our house made seasonal berry compote. sprinkled with powdered sugar and toasted almonds.">
+          <div class="row"><span class="name">Honey Sweet Ricotta</span><span class="price">$16.95</span></div>
+          <p class="desc">Honey Sweet Ricotta and Our House Made Seasonal Berry Compote. Sprinkled with Powdered Sugar and Toasted Almonds.</p>
+        </li>
+        <li data-q="biscoff and bananas fresh bananas and biscoff. topped with powdered sugar and fresh whip.">
+          <div class="row"><span class="name">Biscoff and Bananas</span><span class="price">$16.95</span></div>
+          <p class="desc">Fresh Bananas and Biscoff. Topped With Powdered Sugar and Fresh Whip.</p>
+        </li>
+        <li data-q="nutella topped with fresh whip and powdered sugar. add choice of strawberries or bananas $2.">
+          <div class="row"><span class="name">Nutella</span><span class="price">$13.95</span></div>
+          <p class="desc">Topped With Fresh Whip and Powdered Sugar. Add Choice of Strawberries or Bananas $2.</p>
+        </li>
+        <li data-q="butter and sugar powdered sugar and slice of lemon.">
+          <div class="row"><span class="name">Butter and Sugar</span><span class="price">$10.95</span></div>
+          <p class="desc">Powdered Sugar and Slice of Lemon.</p>
+        </li>
+        <li data-q="strawberry cheesecake swirl of sweet cream cheese. topped with fresh strawberries, graham cracker crumbles and sprinkle of powdered sugar.">
+          <div class="row"><span class="name">Strawberry Cheesecake</span><span class="price">$16.95</span></div>
+          <p class="desc">Swirl of Sweet Cream Cheese. Topped with Fresh Strawberries, Graham Cracker Crumbles and Sprinkle of Powdered Sugar.</p>
+        </li>
+        <li data-q="jam sunfresh raspberry jam and powdered sugar.">
+          <div class="row"><span class="name">Jam</span><span class="price">$10.95</span></div>
+          <p class="desc">Sunfresh Raspberry Jam and Powdered Sugar.</p>
+        </li></ul>
+    </section>
+    <section id="waffles" class="sec">
+      <h2>Waffles</h2>
+      
+      <ul>
+        <li data-q="the belgian topped with powdered sugar. side of fresh whip. add strawberries or bananas $2.">
+          <div class="row"><span class="name">The Belgian</span><span class="price">$11.95</span></div>
+          <p class="desc">Topped with Powdered Sugar. Side of Fresh Whip. Add Strawberries or Bananas $2.</p>
+        </li>
+        <li data-q="blackberrys and cream belgian waffle topped with blackberries, vanilla bean anglaise, and a side of fresh whip.">
+          <div class="row"><span class="name">Blackberrys and Cream</span><span class="price">$16.95</span></div>
+          <p class="desc">Belgian Waffle Topped with Blackberries, Vanilla Bean Anglaise, and a Side of Fresh Whip.</p>
+        </li>
+        <li data-q="banana walnut sliced fresh bananas, walnuts, powdered sugar and a side of fresh whip.">
+          <div class="row"><span class="name">Banana Walnut</span><span class="price">$15.95</span></div>
+          <p class="desc">Sliced Fresh Bananas, Walnuts, Powdered Sugar and a Side of Fresh Whip.</p>
+        </li>
+        <li data-q="lemon panna cotta house made lemon panna cotta and sunfresh raspberry jam, powdered sugar and a side of fresh whip.">
+          <div class="row"><span class="name">Lemon Panna Cotta</span><span class="price">$16.95</span></div>
+          <p class="desc">House Made Lemon Panna Cotta and Sunfresh Raspberry Jam, Powdered Sugar and a Side of Fresh Whip.</p>
+        </li>
+        <li data-q="strawberries and cream sliced strawberries and drizzled nutella, topped with toasted hazelnuts, powdered sugar, and a side of fresh whip.">
+          <div class="row"><span class="name">Strawberries and Cream</span><span class="price">$16.95</span></div>
+          <p class="desc">Sliced Strawberries and Drizzled Nutella, topped with Toasted Hazelnuts, Powdered Sugar, and a Side of Fresh Whip.</p>
+        </li>
+        <li data-q="triple b applewood smoked bacon and brie layered a belgian waffle. topped with fresh basil. side of hot honey $2.">
+          <div class="row"><span class="name">Triple B</span><span class="price">$18.95</span></div>
+          <p class="desc">Applewood Smoked Bacon and Brie layered a Belgian Waffle. Topped with Fresh Basil. Side of Hot Honey $2.</p>
+        </li></ul>
+    </section>
+    <section id="savory-treats" class="sec">
+      <h2>Savory Treats</h2>
+      
+      <ul>
+        <li data-q="frittata (gf) sausage, applewood smoked bacon, roma tomatoes, spinach, caramelized onion, roasted red peppers, cheddar and mozzarella baked into fluffy perfection. topped with house made poblano sauce and creme fraiche. served with hangar potatoes or salad.">
+          <div class="row"><span class="name">Frittata (GF)</span><span class="price">$18.95</span></div>
+          <p class="desc">Sausage, Applewood Smoked Bacon, Roma Tomatoes, Spinach, Caramelized Onion, Roasted Red Peppers, Cheddar and Mozzarella baked into Fluffy Perfection. Topped with House Made Poblano Sauce and Creme Fraiche. Served with Hangar Potatoes or Salad.</p>
+        </li>
+        <li data-q="2 egg breakfast 2 eggs, choice of applewood smoked bacon, chicken apple sausage, vegan happy ham, or beyond sausage patty, and hangar potatoes. choice of toast with side of jam and butter.">
+          <div class="row"><span class="name">2 Egg Breakfast</span><span class="price">$18.95</span></div>
+          <p class="desc">2 Eggs, Choice of Applewood Smoked Bacon, Chicken Apple Sausage, Vegan Happy Ham, or Beyond Sausage Patty, and Hangar Potatoes. Choice of Toast with Side of Jam and Butter.</p>
+        </li>
+        <li data-q="vegan breakfast burrito black beans, impossible sausage, spinach, roma tomatoes and potatoes. served a la carte. cheddar cheese $1. smothered $1. side salad $1 or fruit cup $3.">
+          <div class="row"><span class="name">Vegan Breakfast Burrito</span><span class="price">$14.95</span></div>
+          <p class="desc">Black Beans, Impossible Sausage, Spinach, Roma Tomatoes and Potatoes. Served A La Carte. Cheddar Cheese $1. Smothered $1. Side Salad $1 or Fruit Cup $3.</p>
+        </li>
+        <li data-q="avocado toast fresh avocado, and everything but the bagel seasoning. topped with balsamic glaze on your choice of toast. mixed greens &amp; pickled onion $1. add an egg $2.">
+          <div class="row"><span class="name">Avocado Toast</span><span class="price">$9.00</span></div>
+          <p class="desc">Fresh Avocado, and Everything But The Bagel Seasoning. Topped with Balsamic Glaze on your choice of Toast. Mixed Greens &amp; Pickled Onion $1. Add an Egg $2.</p>
+        </li></ul>
+    </section>
+    <section id="baked-treats" class="sec">
+      <h2>Baked Treats</h2>
+      
+      <ul>
+        <li data-q="coffee cake breakfast cake. topped with powdered sugar, a dollop of fresh whip, and drizzled with caramel.">
+          <div class="row"><span class="name">Coffee Cake</span><span class="price">$7.95</span></div>
+          <p class="desc">Breakfast Cake. Topped with Powdered Sugar, a dollop of Fresh Whip, and drizzled with Caramel.</p>
+        </li>
+        <li data-q="macrina granola bowl granola, pecans, and yogurt. topped with dried and fresh fruit. honey or syrup upon request. hot honey $2.">
+          <div class="row"><span class="name">Macrina Granola Bowl</span><span class="price">$11.95</span></div>
+          <p class="desc">Granola, Pecans, and Yogurt. Topped with Dried and Fresh Fruit. Honey or Syrup upon request. Hot Honey $2.</p>
+        </li></ul>
+    </section>
+    <section id="additions-sides" class="sec">
+      <h2>Additions &amp; Sides</h2>
+      
+      <ul>
+        <li data-q="organic chicken apple sausage or impossible sausage meat sausage by aidells.">
+          <div class="row"><span class="name">Organic Chicken Apple Sausage or Impossible Sausage</span><span class="price">$6.00</span></div>
+          <p class="desc">Meat Sausage By Aidells.</p>
+        </li>
+        <li data-q="fruit cup seasonal mix.">
+          <div class="row"><span class="name">Fruit Cup</span><span class="price">$5.00</span></div>
+          <p class="desc">Seasonal Mix.</p>
+        </li>
+        <li data-q="applewood smoked bacon (2) or vegan happy ham (1) ">
+          <div class="row"><span class="name">Applewood Smoked Bacon (2) or Vegan Happy Ham (1)</span><span class="price">$6.00</span></div>
+          
+        </li>
+        <li data-q="side of potatoes oven roasted baby reds in olive oil. topped with salt and pepper.">
+          <div class="row"><span class="name">Side of Potatoes</span><span class="price">$5.00</span></div>
+          <p class="desc">Oven Roasted Baby Reds in Olive Oil. Topped with Salt and Pepper.</p>
+        </li>
+        <li data-q="side of eggs (2) choice of scrambled, sunny side up, over easy, over medium, over hard. add cheese $2.">
+          <div class="row"><span class="name">Side of Eggs (2)</span><span class="price">$4.95</span></div>
+          <p class="desc">Choice of Scrambled, Sunny Side Up, Over Easy, Over Medium, Over Hard. Add Cheese $2.</p>
+        </li>
+        <li data-q="side of toast dave&#39;s white bread, dave&#39;s wheat, sourdough, or gluten free brioche. side of jam and butter.">
+          <div class="row"><span class="name">Side of Toast</span><span class="price">$2.95</span></div>
+          <p class="desc">Dave&#39;s White Bread, Dave&#39;s Wheat, Sourdough, or Gluten Free Brioche. Side of Jam and Butter.</p>
+        </li></ul>
+    </section>
+    <section id="drinks" class="sec">
+      <h2>Drinks</h2>
+      
+      <ul>
+        <li data-q="our house coffee, with refills roasted by fidalgo.">
+          <div class="row"><span class="name">Our House Coffee, with Refills</span><span class="price">$5.00</span></div>
+          <p class="desc">Roasted by Fidalgo.</p>
+        </li>
+        <li data-q="soft drinks can of coke, diet coke, sprite, or pellegrino.">
+          <div class="row"><span class="name">Soft Drinks</span><span class="price">$3.00</span></div>
+          <p class="desc">Can of Coke, Diet Coke, Sprite, or Pellegrino.</p>
+        </li>
+        <li data-q="loose leaf tea black: earl grey, english breakfast, chai. green: jasmine. herbal: peppermint or chamomile.">
+          <div class="row"><span class="name">Loose Leaf Tea</span><span class="price">$5.00</span></div>
+          <p class="desc">Black: Earl Grey, English Breakfast, Chai. Green: Jasmine. Herbal: Peppermint or Chamomile.</p>
+        </li>
+        <li data-q="juice orange, grapefruit, mango, guava, apple, pog, cranberry, pomegranate, or tomato.">
+          <div class="row"><span class="name">Juice</span></div>
+          <p class="desc">Orange, Grapefruit, Mango, Guava, Apple, POG, Cranberry, Pomegranate, or Tomato.</p><div class="prices"><span class="pp"><span class="pl">Small</span> <b>$5.00</b></span><span class="pp"><span class="pl">Large</span> <b>$7.00</b></span></div>
+        </li>
+        <li data-q="hot chocolate or hot apple cider add fresh whip.">
+          <div class="row"><span class="name">Hot Chocolate or Hot Apple Cider</span><span class="price">$5.00</span></div>
+          <p class="desc">Add Fresh Whip.</p>
+        </li>
+        <li data-q="tropical iced tea with refills.">
+          <div class="row"><span class="name">Tropical Iced Tea</span><span class="price">$5.00</span></div>
+          <p class="desc">With Refills.</p>
+        </li></ul>
+    </section>
+    <section id="sandwiches" class="sec">
+      <h2>Sandwiches</h2>
+      <p class="note">Lunch. Available after 11 AM on Saturday and Sunday. All Day on Weekdays. Bread Options: White, Wheat, Sour Dough, or Gluten Free Brioche. Can be made Vegetarian or Vegan!</p>
+      <ul>
+        <li data-q="hangar club turkey, bacon, avocado, greens, tomato, swiss, and house made tri-pepper aioli, 3 slices of your choice of bread.">
+          <div class="row"><span class="name">Hangar Club</span><span class="price">$15.95</span></div>
+          <p class="desc">Turkey, Bacon, Avocado, Greens, Tomato, Swiss, and House Made Tri-pepper Aioli, 3 Slices of Your choice of Bread.</p>
+        </li>
+        <li data-q="turkey sandwich turkey, creamy white cheddar, red onions, lettuce, with house made lemon garlic aoli for spread on your choice of bread.">
+          <div class="row"><span class="name">Turkey Sandwich</span><span class="price">$14.95</span></div>
+          <p class="desc">Turkey, Creamy White Cheddar, Red Onions, Lettuce, With House Made Lemon Garlic Aoli for spread on Your choice of Bread.</p>
+        </li>
+        <li data-q="roasted chicken sandwich slow roasted chicken marinated in the &quot;the sauce&quot; by tyrone jones. housemade slaw with apples, cabbage, and carrots on your choice of bread.">
+          <div class="row"><span class="name">Roasted Chicken Sandwich</span><span class="price">$15.95</span></div>
+          <p class="desc">Slow Roasted Chicken marinated in the &quot;The Sauce&quot; by Tyrone Jones. Housemade Slaw with Apples, Cabbage, and Carrots on Your choice of Bread.</p>
+        </li>
+        <li data-q="grilled ham and brie ham, brie, caramelized onions, tomato, and a epoch of pesto spread on your choice of bread.">
+          <div class="row"><span class="name">Grilled Ham and Brie</span><span class="price">$14.95</span></div>
+          <p class="desc">Ham, Brie, Caramelized onions, Tomato, and a epoch of Pesto spread on Your Choice of Bread.</p>
+        </li></ul>
+    </section>
+    <section id="salads" class="sec">
+      <h2>Salads</h2>
+      <p class="note">Add Roasted Chicken or Bacon to Any Salad for $3.</p>
+      <ul>
+        <li data-q="hangar green salad shaved carrot, roasted pepitas, craisons, tomato, and cucumber on mixed greens with our house made balsamic vinaigrette.">
+          <div class="row"><span class="name">Hangar Green Salad</span><span class="price">$13.95</span></div>
+          <p class="desc">Shaved Carrot, Roasted Pepitas, Craisons, Tomato, And Cucumber on Mixed Greens with our House Made Balsamic Vinaigrette.</p>
+        </li>
+        <li data-q="hangar caesar salad croutons, parmesan, and lemon on romaine and kale with ken&#39;s creamy cesar dressing.">
+          <div class="row"><span class="name">Hangar Caesar Salad</span><span class="price">$13.95</span></div>
+          <p class="desc">Croutons, Parmesan, And Lemon On Romaine and Kale with Ken&#39;s Creamy Cesar Dressing.</p>
+        </li>
+        <li data-q="beet and goat cheese salad beets, herbed goat cheese, walnuts, and pickled red onions on mixed greens with our house made citrus vinaigrette.">
+          <div class="row"><span class="name">Beet and Goat Cheese Salad</span><span class="price">$14.95</span></div>
+          <p class="desc">Beets, Herbed Goat Cheese, Walnuts, And Pickled Red Onions on Mixed Greens with our House Made Citrus Vinaigrette.</p>
+        </li>
+        <li data-q="asian pear salad asian pears, crumbled feta, and candied pecans on mixed greens with a house made lemon citrus vinaigrette.">
+          <div class="row"><span class="name">Asian Pear Salad</span><span class="price">$14.95</span></div>
+          <p class="desc">Asian Pears, Crumbled Feta, And Candied Pecans On Mixed Greens With A House Made Lemon Citrus Vinaigrette.</p>
+        </li></ul>
+    </section>
+    <section id="sharables-soup-and-combos" class="sec">
+      <h2>Sharables, Soup, and Combos</h2>
+      
+      <ul>
+        <li data-q="charcuterie board brie, manchego, gouda, and matured english cheddar cheeses. artichoke hearts, spicy petite dills, ham, and prosciutto. roasted red pepper whipped cream cheese and fig butter for spreads on garlic &quot;n&quot; herb, and fig &quot;n&quot; thyme crackers. $2 for hot honey.">
+          <div class="row"><span class="name">Charcuterie Board</span><span class="price">$24.95</span></div>
+          <p class="desc">Brie, Manchego, Gouda, and Matured English Cheddar Cheeses. Artichoke Hearts, Spicy Petite Dills, Ham, and Prosciutto. Roasted Red Pepper Whipped Cream Cheese and Fig Butter For Spreads on Garlic &quot;n&quot; Herb, And Fig &quot;n&quot; Thyme Crackers. $2 for Hot Honey.</p>
+        </li>
+        <li data-q="bacon wrapped dates 8 pieces of half slices of our thick crispy bacon wrapped around fresh dates with goat cheese. $2 for hot honey.">
+          <div class="row"><span class="name">Bacon Wrapped Dates</span><span class="price">$14.95</span></div>
+          <p class="desc">8 pieces of Half slices of Our Thick Crispy Bacon Wrapped around Fresh Dates with Goat Cheese. $2 For Hot Honey.</p>
+        </li>
+        <li data-q="soup of the day please ask your server for soup of the day. served in a 12oz bowl with one slice of bread with honey whipped butter.">
+          <div class="row"><span class="name">Soup of the Day</span><span class="price">$13.95</span></div>
+          <p class="desc">Please Ask Your Server for Soup of the Day. Served in a 12oz Bowl with One Slice of Bread with Honey Whipped Butter.</p>
+        </li>
+        <li data-q="half sandwich and soup whole bowl of soup with choice half sandwich.">
+          <div class="row"><span class="name">Half Sandwich and Soup</span><span class="price">$17.95</span></div>
+          <p class="desc">Whole Bowl of soup with choice half Sandwich.</p>
+        </li>
+        <li data-q="half sandwich and salad whole salad with choice of half sandwich.">
+          <div class="row"><span class="name">Half Sandwich and Salad</span><span class="price">$17.95</span></div>
+          <p class="desc">Whole salad with choice of Half Sandwich.</p>
+        </li>
+        <li data-q="soup and salad combo whole bowl of soup with our house green salad.">
+          <div class="row"><span class="name">Soup and Salad Combo</span><span class="price">$17.95</span></div>
+          <p class="desc">Whole Bowl of Soup with our House Green Salad.</p>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>Consuming raw or undercooked eggs may increase your chance of food borne illness. Limit 2 cards per transaction. Broken salt &amp; pepper shaker fee $10. Parties of 6 or more subject to 20% auto-gratuity.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for The Hangar Cafe.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The The Hangar Cafe menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Chur Bae Menu</title>
+<meta name="description" content="Menu for Chur Bae, City Works Depot, Auckland CBD.">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Chur Bae</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=Shed%2013A%2C%2090%20Wellesley%20Street%20West%2C%20City%20Works%20Depot%2C%20Auckland%20CBD%2C%201010">Shed 13A, 90 Wellesley Street West, City Works Depot, Auckland CBD, 1010</a><span>Mon-Fri 7:00 - 3:00. Sat &amp; Sun 8:00 - 3:00</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#morning" data-sec="morning">Morning</a><a href="#signatures" data-sec="signatures">Signatures</a><a href="#eggs" data-sec="eggs">Eggs</a><a href="#croffles-fries" data-sec="croffles-fries">Croffles &amp; fries</a><a href="#sides" data-sec="sides">Sides</a><a href="#stronger" data-sec="stronger">Stronger</a><a href="#coffee" data-sec="coffee">Coffee</a><a href="#matcha" data-sec="matcha">Matcha</a><a href="#hojicha" data-sec="hojicha">Hojicha</a><a href="#alternative" data-sec="alternative">Alternative</a><a href="#smoothies" data-sec="smoothies">Smoothies</a><a href="#juices" data-sec="juices">Juices</a><a href="#soda" data-sec="soda">Soda</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="morning" class="sec">
+      <h2>Morning</h2>
+      <p class="note">Weekday breakfast, 7am - 11:30am. Gluten &amp; dairy free on request: **</p>
+      <ul>
+        <li data-q="overnight oats whey protein, nuts, almond &amp; coconut milk, seeds, berry compote">
+          <div class="row"><span class="name">overnight oats</span><span class="price">$18</span></div>
+          <p class="desc">whey protein, nuts, almond &amp; coconut milk, seeds, berry compote</p>
+        </li>
+        <li data-q="morning smash chorizo patty, cheddar, fried egg, gochujang mayo, pickled onion, muffins. + animal style with bacon &amp; hash brown +9">
+          <div class="row"><span class="name">morning smash</span><span class="price">$21</span></div>
+          <p class="desc">chorizo patty, cheddar, fried egg, gochujang mayo, pickled onion, muffins. + animal style with bacon &amp; hash brown +9</p>
+        </li>
+        <li data-q="free range eggs poached eggs, sourdough. + scrambled instead +2 | extra egg +4">
+          <div class="row"><span class="name">free range eggs</span><span class="price">$15</span></div>
+          <p class="desc">poached eggs, sourdough. + scrambled instead +2 | extra egg +4</p>
+        </li>
+        <li data-q="cilbir eggs poached eggs, coconut labneh, chilli oil, dukkah, crispy shallots, sourdough. + bacon +8 | halloumi +9 | avocado +6 (v, gf*, df*)">
+          <div class="row"><span class="name">cilbir eggs</span><span class="price">$23</span></div>
+          <p class="desc">poached eggs, coconut labneh, chilli oil, dukkah, crispy shallots, sourdough. + bacon +8 | halloumi +9 | avocado +6 (v, gf*, df*)</p>
+        </li>
+        <li data-q="mushrooms mixed mushrooms, hummus, crispy sage, dukkah, chimichurri, pickled onion, crispy shallots, sourdough. + poached egg +4 | bacon +8 | halloumi +9 (vf*)">
+          <div class="row"><span class="name">mushrooms</span><span class="price">$24</span></div>
+          <p class="desc">mixed mushrooms, hummus, crispy sage, dukkah, chimichurri, pickled onion, crispy shallots, sourdough. + poached egg +4 | bacon +8 | halloumi +9 (vf*)</p>
+        </li>
+        <li data-q="smashed avocado blistered cherry toms, coconut labneh, dukkah, crispy kale, sourdough. + poached egg +4 | bacon +8 | halloumi or salmon gravlax +9 (vf*)">
+          <div class="row"><span class="name">smashed avocado</span><span class="price">$25</span></div>
+          <p class="desc">blistered cherry toms, coconut labneh, dukkah, crispy kale, sourdough. + poached egg +4 | bacon +8 | halloumi or salmon gravlax +9 (vf*)</p>
+        </li></ul>
+    </section>
+    <section id="signatures" class="sec">
+      <h2>Signatures</h2>
+      
+      <ul>
+        <li data-q="nduja hash hash, fried egg, nduja, pork &amp; fennel sausage, chilli oil, herb sour cream, chimichurri. + sourdough +4 | avocado +6 (gf)">
+          <div class="row"><span class="name">nduja hash</span><span class="price">$26</span></div>
+          <p class="desc">hash, fried egg, nduja, pork &amp; fennel sausage, chilli oil, herb sour cream, chimichurri. + sourdough +4 | avocado +6 (gf)</p>
+        </li>
+        <li data-q="ragu toast slow-cooked beef ragu, nduja cream, aged parmesan, sourdough. + poached egg +4 | hash brown +5 | avocado +6 (df*)">
+          <div class="row"><span class="name">ragu toast</span><span class="price">$25</span></div>
+          <p class="desc">slow-cooked beef ragu, nduja cream, aged parmesan, sourdough. + poached egg +4 | hash brown +5 | avocado +6 (df*)</p>
+        </li></ul>
+    </section>
+    <section id="eggs" class="sec">
+      <h2>Eggs</h2>
+      
+      <ul>
+        <li data-q="eggs benedict choice of: bacon, halloumi or (salmon gravlax +3). hash brown, english muffin, spinach, hollandaise. + extra hash instead +3 | avocado +6 (gf*)">
+          <div class="row"><span class="name">eggs benedict</span><span class="price">$25</span></div>
+          <p class="desc">choice of: bacon, halloumi or (salmon gravlax +3). hash brown, english muffin, spinach, hollandaise. + extra hash instead +3 | avocado +6 (gf*)</p>
+        </li>
+        <li data-q="complete poached eggs, bacon, chorizo, hash brown, blistered cherry toms, sourdough. + hollandaise +2 | avocado +6 | halloumi +9 (gf*, df*)">
+          <div class="row"><span class="name">complete</span><span class="price">$29</span></div>
+          <p class="desc">poached eggs, bacon, chorizo, hash brown, blistered cherry toms, sourdough. + hollandaise +2 | avocado +6 | halloumi +9 (gf*, df*)</p>
+        </li>
+        <li data-q="chilli scramble choice of: bacon, halloumi or (salmon gravlax +3). chilli oil, crispy shallot, sourdough. + avocado +6 | hash brown +5 | gf bread instead +2 (gf*, df*)">
+          <div class="row"><span class="name">chilli scramble</span><span class="price">$28</span></div>
+          <p class="desc">choice of: bacon, halloumi or (salmon gravlax +3). chilli oil, crispy shallot, sourdough. + avocado +6 | hash brown +5 | gf bread instead +2 (gf*, df*)</p>
+        </li></ul>
+    </section>
+    <section id="croffles-fries" class="sec">
+      <h2>Croffles &amp; fries</h2>
+      
+      <ul>
+        <li data-q="croffle croissant waffle, espresso or matcha mascarpone, caramelised banana, berry compote, biscuit crumble. + bacon +8">
+          <div class="row"><span class="name">croffle</span><span class="price">$22</span></div>
+          <p class="desc">croissant waffle, espresso or matcha mascarpone, caramelised banana, berry compote, biscuit crumble. + bacon +8</p>
+        </li>
+        <li data-q="truffle fries with aioli ">
+          <div class="row"><span class="name">truffle fries with aioli</span><span class="price">$12</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="sides" class="sec">
+      <h2>Sides</h2>
+      
+      <ul>
+        <li data-q="bacon ">
+          <div class="row"><span class="name">bacon</span><span class="price">+$8</span></div>
+          
+        </li>
+        <li data-q="halloumi ">
+          <div class="row"><span class="name">halloumi</span><span class="price">+$9</span></div>
+          
+        </li>
+        <li data-q="salmon gravlax ">
+          <div class="row"><span class="name">salmon gravlax</span><span class="price">+$9</span></div>
+          
+        </li>
+        <li data-q="chorizo ">
+          <div class="row"><span class="name">chorizo</span><span class="price">+$6</span></div>
+          
+        </li>
+        <li data-q="avocado ">
+          <div class="row"><span class="name">avocado</span><span class="price">+$6</span></div>
+          
+        </li>
+        <li data-q="hash brown ">
+          <div class="row"><span class="name">hash brown</span><span class="price">+$5</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="stronger" class="sec">
+      <h2>Stronger</h2>
+      <p class="note">After 8am</p>
+      <ul>
+        <li data-q="mimosa prosecco, orange juice">
+          <div class="row"><span class="name">mimosa</span><span class="price">$15</span></div>
+          <p class="desc">prosecco, orange juice</p>
+        </li>
+        <li data-q="fugazi garage project 2.2%">
+          <div class="row"><span class="name">fugazi</span><span class="price">$11</span></div>
+          <p class="desc">garage project 2.2%</p>
+        </li></ul>
+    </section>
+    <section id="coffee" class="sec">
+      <h2>Coffee</h2>
+      <p class="note">honey | vanilla | decaf | extra shot +1. oat | soy | coconut | almond +1</p>
+      <ul>
+        <li data-q="black ">
+          <div class="row"><span class="name">black</span><span class="price">$5.50</span></div>
+          
+        </li>
+        <li data-q="white ">
+          <div class="row"><span class="name">white</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Regular</span> <b>$6</b></span><span class="pp"><span class="pl">Large</span> <b>$6.50</b></span></div>
+        </li>
+        <li data-q="mocha ">
+          <div class="row"><span class="name">mocha</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Regular</span> <b>$6.50</b></span><span class="pp"><span class="pl">Large</span> <b>$7</b></span></div>
+        </li>
+        <li data-q="iced black ">
+          <div class="row"><span class="name">iced black</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="iced latte ">
+          <div class="row"><span class="name">iced latte</span><span class="price">$7</span></div>
+          
+        </li>
+        <li data-q="iced mocha ">
+          <div class="row"><span class="name">iced mocha</span><span class="price">$7.50</span></div>
+          
+        </li>
+        <li data-q="batch or cold brew ">
+          <div class="row"><span class="name">batch or cold brew</span><span class="price">$6</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="matcha" class="sec">
+      <h2>Matcha</h2>
+      
+      <ul>
+        <li data-q="matcha latte ">
+          <div class="row"><span class="name">matcha latte</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="iced matcha latte dirty matcha +2">
+          <div class="row"><span class="name">iced matcha latte</span><span class="price">$7.50</span></div>
+          <p class="desc">dirty matcha +2</p>
+        </li>
+        <li data-q="iced strawberry matcha ">
+          <div class="row"><span class="name">iced strawberry matcha</span><span class="price">$9</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="hojicha" class="sec">
+      <h2>Hojicha</h2>
+      
+      <ul>
+        <li data-q="hojicha latte ">
+          <div class="row"><span class="name">hojicha latte</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="iced hojicha latte dirty hojicha +2">
+          <div class="row"><span class="name">iced hojicha latte</span><span class="price">$7.50</span></div>
+          <p class="desc">dirty hojicha +2</p>
+        </li></ul>
+    </section>
+    <section id="alternative" class="sec">
+      <h2>Alternative</h2>
+      
+      <ul>
+        <li data-q="hot chocolate ">
+          <div class="row"><span class="name">hot chocolate</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Regular</span> <b>$6</b></span><span class="pp"><span class="pl">Large</span> <b>$7</b></span></div>
+        </li>
+        <li data-q="iced chocolate ">
+          <div class="row"><span class="name">iced chocolate</span><span class="price">$7</span></div>
+          
+        </li>
+        <li data-q="spicy chai latte dirty chai +2">
+          <div class="row"><span class="name">spicy chai latte</span><span class="price">$6</span></div>
+          <p class="desc">dirty chai +2</p>
+        </li>
+        <li data-q="honey, lemon &amp; ginger ">
+          <div class="row"><span class="name">honey, lemon &amp; ginger</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="english breakfast | earl grey | green tea | peppermint ">
+          <div class="row"><span class="name">english breakfast | earl grey | green tea | peppermint</span><span class="price">$6</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="smoothies" class="sec">
+      <h2>Smoothies</h2>
+      
+      <ul>
+        <li data-q="berry mixed berries, banana, coconut yoghurt, apple juice, chia">
+          <div class="row"><span class="name">berry</span><span class="price">$11</span></div>
+          <p class="desc">mixed berries, banana, coconut yoghurt, apple juice, chia</p>
+        </li>
+        <li data-q="protein whey, peanut butter, banana, cinnamon, oat milk">
+          <div class="row"><span class="name">protein</span><span class="price">$13</span></div>
+          <p class="desc">whey, peanut butter, banana, cinnamon, oat milk</p>
+        </li>
+        <li data-q="morning pb protein smoothie + double shot espresso">
+          <div class="row"><span class="name">morning pb</span><span class="price">$16</span></div>
+          <p class="desc">protein smoothie + double shot espresso</p>
+        </li></ul>
+    </section>
+    <section id="juices" class="sec">
+      <h2>Juices</h2>
+      
+      <ul>
+        <li data-q="orange ">
+          <div class="row"><span class="name">orange</span><span class="price">$8</span></div>
+          
+        </li>
+        <li data-q="green apple, kiwifruit, spinach, cucumber, celery, lemon, broccoli">
+          <div class="row"><span class="name">green</span><span class="price">$9</span></div>
+          <p class="desc">apple, kiwifruit, spinach, cucumber, celery, lemon, broccoli</p>
+        </li>
+        <li data-q="immunity carrot, orange, apple, lemon, ginger, turmeric">
+          <div class="row"><span class="name">immunity</span><span class="price">$9</span></div>
+          <p class="desc">carrot, orange, apple, lemon, ginger, turmeric</p>
+        </li></ul>
+    </section>
+    <section id="soda" class="sec">
+      <h2>Soda</h2>
+      
+      <ul>
+        <li data-q="coke, coke zero, sprite zero ">
+          <div class="row"><span class="name">coke, coke zero, sprite zero</span><span class="price">$5</span></div>
+          
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>Please be aware that cross-contamination is possible. Vegetarian (v), Gluten-free (gf), Dairy-free (df). Only at request: Vegan (vf*), Gluten-free (gf*), Dairy-free (df*)</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Chur Bae.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Chur Bae menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's US$29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for US$29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

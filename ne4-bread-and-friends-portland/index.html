@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Bread &amp; Friends Menu</title>
+<meta name="description" content="Menu for Bread &amp; Friends, Old Port (Fore Street).">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Bread &amp; Friends</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=505%20Fore%20Street%2C%20Portland%2C%20ME%2004101">505 Fore Street, Portland, ME 04101</a><a href="tel:2075364399">(207) 536-4399</a><span>Bakery: Friday-Monday 8am-2:30pm; Tuesday-Thursday 8am-1pm. Brunch (walk-ins only): Monday-Friday 8:30am-1pm; Saturday &amp; Sunday 8am-1pm. Dinner (walk-ins &amp; reservations): Thursday-Sunday 5:30pm-9pm. Happy hour Saturday &amp; Sunday 12pm-2:30pm and Thursday-Sunday 5:30pm-6:30pm</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#dinner" data-sec="dinner">Dinner</a><a href="#brunch-to-share" data-sec="brunch-to-share">Brunch: To Share</a><a href="#brunch-sides" data-sec="brunch-sides">Brunch: Sides</a><a href="#bakery-bread-to-take-home" data-sec="bakery-bread-to-take-home">Bakery: Bread to Take Home</a><a href="#bakery-house-milled-flour" data-sec="bakery-house-milled-flour">Bakery: House-Milled Flour</a><a href="#bakery-savory-snacks" data-sec="bakery-savory-snacks">Bakery: Savory Snacks</a><a href="#bakery-pastry" data-sec="bakery-pastry">Bakery: Pastry</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="dinner" class="sec">
+      <h2>Dinner</h2>
+      <p class="note">September 2026. Thursday-Sunday 5:30pm-9pm.</p>
+      <ul>
+        <li data-q="love point oysters on the half shell, grilled kelp butter, shiro dashi pearls, pickled green apple. raw or undercooked.">
+          <div class="row"><span class="name">Love Point Oysters on the Half Shell, Grilled</span><span class="price">$11 for 2</span></div>
+          <p class="desc">Kelp butter, shiro dashi pearls, pickled green apple. Raw or undercooked.</p>
+        </li>
+        <li data-q="love point oysters on the half shell, raw cocktail sauce, peach &amp; pink peppercorn mignonette, lemon. raw or undercooked.">
+          <div class="row"><span class="name">Love Point Oysters on the Half Shell, Raw</span></div>
+          <p class="desc">Cocktail sauce, peach &amp; pink peppercorn mignonette, lemon. Raw or undercooked.</p><div class="prices"><span class="pp"><b>$18 half dozen</b></span></div>
+        </li>
+        <li data-q="maine bluefin toro nuoc cham marinated bumbleroot farm tomatoes, green crab-chili aioli, roasted kombu oil, black lime. raw or undercooked.">
+          <div class="row"><span class="name">Maine Bluefin Toro</span><span class="price">$21</span></div>
+          <p class="desc">Nuoc cham marinated bumbleroot farm tomatoes, green crab-chili aioli, roasted kombu oil, black lime. Raw or undercooked.</p>
+        </li>
+        <li data-q="country ham &amp; melon roasted cornito peppers, pixelato supremo cantaloupe, anise hyssop.">
+          <div class="row"><span class="name">Country Ham &amp; Melon</span><span class="price">$17</span></div>
+          <p class="desc">Roasted cornito peppers, pixelato supremo cantaloupe, anise hyssop.</p>
+        </li>
+        <li data-q="grilled savoy cabbage miso &amp; buttermilk &#39;ranch&#39;, delicata chips, apple, cider saba.">
+          <div class="row"><span class="name">Grilled Savoy Cabbage</span><span class="price">$17</span></div>
+          <p class="desc">Miso &amp; buttermilk &#39;ranch&#39;, delicata chips, apple, cider saba.</p>
+        </li>
+        <li data-q="maine uni toast tarragon egg yolk jam, sherry-miso sabayon.">
+          <div class="row"><span class="name">Maine Uni Toast</span><span class="price">$16 for 2</span></div>
+          <p class="desc">Tarragon egg yolk jam, sherry-miso sabayon.</p>
+        </li>
+        <li data-q="bread &amp; friends spelt parker house roll, pumpkin butter, aleppo carrot giardiniera.">
+          <div class="row"><span class="name">Bread &amp; Friends</span><span class="price">$20</span></div>
+          <p class="desc">Spelt parker house roll, pumpkin butter, aleppo carrot giardiniera.</p>
+        </li>
+        <li data-q="borlotti beans &amp; octopus a la plancha lacinato kale, &#39;nduja, blood orange.">
+          <div class="row"><span class="name">Borlotti Beans &amp; Octopus a la Plancha</span><span class="price">$25</span></div>
+          <p class="desc">Lacinato kale, &#39;nduja, blood orange.</p>
+        </li>
+        <li data-q="blue corn masa &amp; ricotta gnocchi grilled sweet corn &amp; long peppers, corn butter.">
+          <div class="row"><span class="name">Blue Corn Masa &amp; Ricotta Gnocchi</span><span class="price">$27</span></div>
+          <p class="desc">Grilled sweet corn &amp; long peppers, corn butter.</p>
+        </li>
+        <li data-q="braised lamb agnolotti &#39;baba ganoush&#39;, spice-crusted carrots, date agroldolce.">
+          <div class="row"><span class="name">Braised Lamb Agnolotti</span><span class="price">$29</span></div>
+          <p class="desc">&#39;Baba ganoush&#39;, spice-crusted carrots, date agroldolce.</p>
+        </li>
+        <li data-q="spanish dorade basque cider, jimmy nardellos, pickled apple, husk cherries, rouille. raw or undercooked.">
+          <div class="row"><span class="name">Spanish Dorade</span><span class="price">$43</span></div>
+          <p class="desc">Basque cider, jimmy nardellos, pickled apple, husk cherries, rouille. Raw or undercooked.</p>
+        </li>
+        <li data-q="harissa grilled hudson valley half chicken crispy roasted new potatoes, chermoula, summer chanterelles, confit garlic labneh, honey-vinegar jus. raw or undercooked.">
+          <div class="row"><span class="name">Harissa Grilled Hudson Valley Half Chicken</span><span class="price">$45</span></div>
+          <p class="desc">Crispy roasted new potatoes, chermoula, summer chanterelles, confit garlic labneh, honey-vinegar jus. Raw or undercooked.</p>
+        </li>
+        <li data-q="grilled pork collar creamy polenta, caramelized peaches, radicchio, summer truffle. raw or undercooked.">
+          <div class="row"><span class="name">Grilled Pork Collar</span><span class="price">$42</span></div>
+          <p class="desc">Creamy polenta, caramelized peaches, radicchio, summer truffle. Raw or undercooked.</p>
+        </li>
+        <li data-q="snell farm apple galette almond frangipane, whipped creme fraiche.">
+          <div class="row"><span class="name">Snell Farm Apple Galette</span><span class="price">$15</span></div>
+          <p class="desc">Almond frangipane, whipped creme fraiche.</p>
+        </li>
+        <li data-q="ice cream sundae mascarpone &amp; chocolate ice creams, hot fudge, chocolate sable crunch, cherry on top.">
+          <div class="row"><span class="name">Ice Cream Sundae</span><span class="price">$15</span></div>
+          <p class="desc">Mascarpone &amp; chocolate ice creams, hot fudge, chocolate sable crunch, cherry on top.</p>
+        </li></ul>
+    </section>
+    <section id="brunch-to-share" class="sec">
+      <h2>Brunch: To Share</h2>
+      <p class="note">Monday-Friday 8:30am-1pm; Saturday &amp; Sunday 8am-1pm.</p>
+      <ul>
+        <li data-q="&#39;deviled egg&#39; black vinegar, chili crisp, parmesan. raw or undercooked.">
+          <div class="row"><span class="name">&#39;Deviled Egg&#39;</span><span class="price">$7.50</span></div>
+          <p class="desc">Black vinegar, chili crisp, parmesan. Raw or undercooked.</p>
+        </li>
+        <li data-q="snell farm pear salad endive, hazelnut, shaved taliah sheep&#39;s milk cheese, orange-brown butter vinnaigrette.">
+          <div class="row"><span class="name">Snell Farm Pear Salad</span><span class="price">$10</span></div>
+          <p class="desc">Endive, hazelnut, shaved taliah sheep&#39;s milk cheese, orange-brown butter vinnaigrette.</p>
+        </li>
+        <li data-q="griddled corn muffin stone-milled cornmeal, salted cultured butter, tomato jam.">
+          <div class="row"><span class="name">Griddled Corn Muffin</span><span class="price">$11</span></div>
+          <p class="desc">Stone-milled cornmeal, salted cultured butter, tomato jam.</p>
+        </li>
+        <li data-q="petite pastrami biscuits sauerkraut, aged gouda, yellow mustard.">
+          <div class="row"><span class="name">Petite Pastrami Biscuits</span><span class="price">$17 for 2</span></div>
+          <p class="desc">Sauerkraut, aged gouda, yellow mustard.</p>
+        </li>
+        <li data-q="japanese potato &amp; egg salad potato milk bread, cucumber tsukemono, smoked trout roe, furikake. raw or undercooked.">
+          <div class="row"><span class="name">Japanese Potato &amp; Egg Salad</span><span class="price">$14</span></div>
+          <p class="desc">Potato milk bread, cucumber tsukemono, smoked trout roe, furikake. Raw or undercooked.</p>
+        </li>
+        <li data-q="french toast creme fraiche, maine maple syrup. raw or undercooked.">
+          <div class="row"><span class="name">French Toast</span><span class="price">$16</span></div>
+          <p class="desc">Creme fraiche, maine maple syrup. Raw or undercooked.</p>
+        </li>
+        <li data-q="soft scrambled eggs caramelized onion jam, seeded sourdough. raw or undercooked. not available for take-out.">
+          <div class="row"><span class="name">Soft Scrambled Eggs</span><span class="price">$17</span></div>
+          <p class="desc">Caramelized onion jam, seeded sourdough. Raw or undercooked. Not available for take-out.</p>
+        </li>
+        <li data-q="mt. alice brie omelette brown-butter roasted shiitakes, crispy sunchokes, miso-celeriac cream. raw or undercooked. not available for take-out.">
+          <div class="row"><span class="name">Mt. Alice Brie Omelette</span><span class="price">$24</span></div>
+          <p class="desc">Brown-butter roasted shiitakes, crispy sunchokes, miso-celeriac cream. Raw or undercooked. Not available for take-out.</p>
+        </li>
+        <li data-q="roasted apple dutch baby mt. alice brie, roasted delicata squash, chicories, sunny side up egg. raw or undercooked.">
+          <div class="row"><span class="name">Roasted Apple Dutch Baby</span><span class="price">$19</span></div>
+          <p class="desc">Mt. alice brie, roasted delicata squash, chicories, sunny side up egg. Raw or undercooked.</p>
+        </li>
+        <li data-q="johnny cake tomatillo relish, blistered jimmy nardellos, agave-lime butter, cilantro. raw or undercooked.">
+          <div class="row"><span class="name">Johnny Cake</span><span class="price">$20</span></div>
+          <p class="desc">Tomatillo relish, blistered jimmy nardellos, agave-lime butter, cilantro. Raw or undercooked.</p>
+        </li></ul>
+    </section>
+    <section id="brunch-sides" class="sec">
+      <h2>Brunch: Sides</h2>
+      
+      <ul>
+        <li data-q="crispy spiced potatoes smoked poblano crema.">
+          <div class="row"><span class="name">Crispy Spiced Potatoes</span><span class="price">$7.50</span></div>
+          <p class="desc">Smoked poblano crema.</p>
+        </li>
+        <li data-q="smoked b&amp;f bacon maple-sherry glaze.">
+          <div class="row"><span class="name">Smoked B&amp;F Bacon</span><span class="price">$9</span></div>
+          <p class="desc">Maple-sherry glaze.</p>
+        </li>
+        <li data-q="hot sauce like it spicy?">
+          <div class="row"><span class="name">Hot Sauce</span></div>
+          <p class="desc">Like it spicy?</p><div class="prices"><span class="pp"><b>$1.50</b></span><span class="pp"><span class="pl">5oz bottle</span> <b>$8</b></span></div>
+        </li>
+        <li data-q="chili crisp like it spicy?">
+          <div class="row"><span class="name">Chili Crisp</span><span class="price">$1.50</span></div>
+          <p class="desc">Like it spicy?</p>
+        </li></ul>
+    </section>
+    <section id="bakery-bread-to-take-home" class="sec">
+      <h2>Bakery: Bread to Take Home</h2>
+      <p class="note">Sourdough. Naturally leavened, stone-milled, wood-fired. Take $1 off any loaf to take home.</p>
+      <ul>
+        <li data-q="country ">
+          <div class="row"><span class="name">Country</span><span class="price">$9</span></div>
+          
+        </li>
+        <li data-q="marble rye ">
+          <div class="row"><span class="name">Marble Rye</span><span class="price">$9.50</span></div>
+          
+        </li>
+        <li data-q="seeded ">
+          <div class="row"><span class="name">Seeded</span><span class="price">$10</span></div>
+          
+        </li>
+        <li data-q="olive saturday and sunday only.">
+          <div class="row"><span class="name">Olive</span><span class="price">$10.50</span></div>
+          <p class="desc">Saturday and Sunday only.</p>
+        </li>
+        <li data-q="spelt/rye ">
+          <div class="row"><span class="name">Spelt/Rye</span><span class="price">$9.50</span></div>
+          
+        </li>
+        <li data-q="whole wheat sesame ">
+          <div class="row"><span class="name">Whole Wheat Sesame</span><span class="price">$10</span></div>
+          
+        </li>
+        <li data-q="chocolate saturday and sunday only.">
+          <div class="row"><span class="name">Chocolate</span><span class="price">$6</span></div>
+          <p class="desc">Saturday and Sunday only.</p>
+        </li>
+        <li data-q="khorasan baguette ">
+          <div class="row"><span class="name">Khorasan Baguette</span><span class="price">$5</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="bakery-house-milled-flour" class="sec">
+      <h2>Bakery: House-Milled Flour</h2>
+      <p class="note">2 lb bags.</p>
+      <ul>
+        <li data-q="whole wheat ">
+          <div class="row"><span class="name">Whole Wheat</span><span class="price">$7</span></div>
+          
+        </li>
+        <li data-q="sifted bread ">
+          <div class="row"><span class="name">Sifted Bread</span><span class="price">$7</span></div>
+          
+        </li>
+        <li data-q="whole rye ">
+          <div class="row"><span class="name">Whole Rye</span><span class="price">$7</span></div>
+          
+        </li>
+        <li data-q="whole spelt ">
+          <div class="row"><span class="name">Whole Spelt</span><span class="price">$9</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="bakery-savory-snacks" class="sec">
+      <h2>Bakery: Savory Snacks</h2>
+      
+      <ul>
+        <li data-q="garlic fougasse saturday and sunday only.">
+          <div class="row"><span class="name">Garlic Fougasse</span><span class="price">$5</span></div>
+          <p class="desc">Saturday and Sunday only.</p>
+        </li>
+        <li data-q="market veg focaccia ">
+          <div class="row"><span class="name">Market Veg Focaccia</span><span class="price">$6</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="bakery-pastry" class="sec">
+      <h2>Bakery: Pastry</h2>
+      <p class="note">For here &amp; to take home.</p>
+      <ul>
+        <li data-q="traditional croissant ">
+          <div class="row"><span class="name">Traditional Croissant</span><span class="price">$5.50</span></div>
+          
+        </li>
+        <li data-q="chocolate croissant ">
+          <div class="row"><span class="name">Chocolate Croissant</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="morning bun ">
+          <div class="row"><span class="name">Morning Bun</span><span class="price">$6.50</span></div>
+          
+        </li>
+        <li data-q="ham &amp; cheese croissant ">
+          <div class="row"><span class="name">Ham &amp; Cheese Croissant</span><span class="price">$7.50</span></div>
+          
+        </li>
+        <li data-q="everything pull apart ">
+          <div class="row"><span class="name">Everything Pull Apart</span><span class="price">$6.50</span></div>
+          
+        </li>
+        <li data-q="mixed berry &#39;cheesecake&#39; kouign-amman ">
+          <div class="row"><span class="name">Mixed Berry &#39;Cheesecake&#39; Kouign-Amman</span><span class="price">$7.50</span></div>
+          
+        </li>
+        <li data-q="almond croissant friday-sunday only.">
+          <div class="row"><span class="name">Almond Croissant</span><span class="price">$7</span></div>
+          <p class="desc">Friday-Sunday only.</p>
+        </li>
+        <li data-q="&#39;cannoli&#39; croissant friday-sunday only.">
+          <div class="row"><span class="name">&#39;Cannoli&#39; Croissant</span><span class="price">$7</span></div>
+          <p class="desc">Friday-Sunday only.</p>
+        </li>
+        <li data-q="chocolate chip cookie ">
+          <div class="row"><span class="name">Chocolate Chip Cookie</span><span class="price">$4</span></div>
+          
+        </li>
+        <li data-q="tahini, miso &amp; peanut butter cookie ">
+          <div class="row"><span class="name">Tahini, Miso &amp; Peanut Butter Cookie</span><span class="price">$4</span></div>
+          
+        </li>
+        <li data-q="sour cherry &amp; pistachio pop tart ">
+          <div class="row"><span class="name">Sour Cherry &amp; Pistachio Pop Tart</span><span class="price">$7.50</span></div>
+          
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>All checks have a 5% fair wage fee included. This is not a gratuity, and the entirety of this fee is distributed to all staff to support a living wage. Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness. Bakery: take $1 off any loaf to take home. Email us for bakery catering.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Bread &amp; Friends.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Bread &amp; Friends menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

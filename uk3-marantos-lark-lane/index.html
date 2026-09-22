@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Maranto&#39;s Menu</title>
+<meta name="description" content="Menu for Maranto&#39;s, Lark Lane, Aigburth, Liverpool.">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Maranto&#39;s</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=57-63%20Lark%20Lane%2C%20Liverpool%2C%20L17%208UP">57-63 Lark Lane, Liverpool, L17 8UP</a><a href="tel:01517277200">0151 727 7200</a><span>Mon-Fri from 1pm. Sat-Sun from 12pm</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#appetisers" data-sec="appetisers">Appetisers</a><a href="#risotto" data-sec="risotto">Risotto</a><a href="#pasta" data-sec="pasta">Pasta</a><a href="#steaks" data-sec="steaks">Steaks</a><a href="#mains" data-sec="mains">Mains</a><a href="#burgers" data-sec="burgers">Burgers</a><a href="#classic-pizza" data-sec="classic-pizza">Classic Pizza</a><a href="#sides" data-sec="sides">Sides</a><a href="#salads" data-sec="salads">Salads</a><a href="#daytime-specials-brunch" data-sec="daytime-specials-brunch">Daytime Specials: Brunch</a><a href="#daytime-specials-sandwiches-wraps" data-sec="daytime-specials-sandwiches-wraps">Daytime Specials: Sandwiches &amp; Wraps</a><a href="#sundays-at-maranto-s" data-sec="sundays-at-maranto-s">Sundays at Maranto&#39;s</a><a href="#kids" data-sec="kids">Kids</a><a href="#desserts" data-sec="desserts">Desserts</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="appetisers" class="sec">
+      <h2>Appetisers</h2>
+      <p class="note">Small plates to start things off or share with the table</p>
+      <ul>
+        <li data-q="popcorn cauliflower (ve) battered cauliflower, chilli, ginger, maple, sesame">
+          <div class="row"><span class="name">Popcorn Cauliflower (VE)</span><span class="price">£8</span></div>
+          <p class="desc">Battered cauliflower, chilli, ginger, maple, sesame</p>
+        </li>
+        <li data-q="bruschetta (ve) ciabatta, cherry tomatoes, garlic, basil, balsamic glaze and evoo">
+          <div class="row"><span class="name">Bruschetta (VE)</span><span class="price">£6</span></div>
+          <p class="desc">Ciabatta, cherry tomatoes, garlic, basil, balsamic glaze and EVOO</p>
+        </li>
+        <li data-q="baby back ribs pork ribs, bbq sauce, pickled cucumbers">
+          <div class="row"><span class="name">Baby Back Ribs</span><span class="price">£10</span></div>
+          <p class="desc">Pork ribs, BBQ sauce, pickled cucumbers</p>
+        </li>
+        <li data-q="chicken wings choose between buffalo, bbq, asian zing, or hot habanero">
+          <div class="row"><span class="name">Chicken Wings</span><span class="price">£9</span></div>
+          <p class="desc">Choose between buffalo, BBQ, asian zing, or hot habanero</p>
+        </li>
+        <li data-q="king prawns (gfo) chilli, ginger, garlic, sambuca, focaccia">
+          <div class="row"><span class="name">King Prawns (GFO)</span><span class="price">£12</span></div>
+          <p class="desc">Chilli, ginger, garlic, sambuca, focaccia</p>
+        </li>
+        <li data-q="meatballs (gfo) beef, chorizo, parmesan, napoli sauce, focaccia">
+          <div class="row"><span class="name">Meatballs (GFO)</span><span class="price">£10</span></div>
+          <p class="desc">Beef, chorizo, parmesan, napoli sauce, focaccia</p>
+        </li>
+        <li data-q="calamari squid, garlic mayo, grilled lemon">
+          <div class="row"><span class="name">Calamari</span><span class="price">£10</span></div>
+          <p class="desc">Squid, garlic mayo, grilled lemon</p>
+        </li>
+        <li data-q="mushrooms with a twist (v) (veo) (gfo) button mushrooms, garlic, napoli sauce, mozzarella, cream">
+          <div class="row"><span class="name">Mushrooms With A Twist (V) (VEO) (GFO)</span><span class="price">£8</span></div>
+          <p class="desc">Button mushrooms, garlic, napoli sauce, mozzarella, cream</p>
+        </li>
+        <li data-q="funghi crostini (v) oyster and button mushrooms, parsley, lemon, garlic, ciabatta">
+          <div class="row"><span class="name">Funghi Crostini (V)</span><span class="price">£8</span></div>
+          <p class="desc">Oyster and button mushrooms, parsley, lemon, garlic, ciabatta</p>
+        </li>
+        <li data-q="black pudding and chorizo red onion marmalade, ciabatta, rocket">
+          <div class="row"><span class="name">Black Pudding and Chorizo</span><span class="price">£9</span></div>
+          <p class="desc">Red onion marmalade, ciabatta, rocket</p>
+        </li></ul>
+    </section>
+    <section id="risotto" class="sec">
+      <h2>Risotto</h2>
+      
+      <ul>
+        <li data-q="seafood risotto (gf) arborio rice, king prawns, mussels, garlic, tomato, cream">
+          <div class="row"><span class="name">Seafood Risotto (GF)</span><span class="price">£17</span></div>
+          <p class="desc">Arborio rice, king prawns, mussels, garlic, tomato, cream</p>
+        </li>
+        <li data-q="risotto piselli (v) (veo) (gf) arborio rice, pea puree, mint, garlic, onions, white wine, mascarpone cheese">
+          <div class="row"><span class="name">Risotto Piselli (V) (VEO) (GF)</span><span class="price">£15</span></div>
+          <p class="desc">Arborio rice, pea puree, mint, garlic, onions, white wine, mascarpone cheese</p>
+        </li>
+        <li data-q="risotto funghi (v) (veo) (gf) arborio rice, oyster and button mushrooms, white wine, cream">
+          <div class="row"><span class="name">Risotto Funghi (V) (VEO) (GF)</span><span class="price">£15</span></div>
+          <p class="desc">Arborio rice, oyster and button mushrooms, white wine, cream</p>
+        </li></ul>
+    </section>
+    <section id="pasta" class="sec">
+      <h2>Pasta</h2>
+      <p class="note">Hearty pasta dishes just like nonna used to make. Our pastas are available in smaller sizes.</p>
+      <ul>
+        <li data-q="maranto&#39;s famous lasagne nonna&#39;s original bolognese sauce, creamy bechamel topped with mozzarella and oven baked">
+          <div class="row"><span class="name">Maranto&#39;s Famous Lasagne</span></div>
+          <p class="desc">Nonna&#39;s original bolognese sauce, creamy bechamel topped with mozzarella and oven baked</p><div class="prices"><span class="pp"><span class="pl">Small</span> <b>£12</b></span><span class="pp"><span class="pl">Large</span> <b>£15</b></span></div>
+        </li>
+        <li data-q="arrabbiata (gfo) (veo) penne, &#39;nduja, chilli, tomato">
+          <div class="row"><span class="name">Arrabbiata (GFO) (VEO)</span></div>
+          <p class="desc">Penne, &#39;nduja, chilli, tomato</p><div class="prices"><span class="pp"><span class="pl">Small</span> <b>£12</b></span><span class="pp"><span class="pl">Large</span> <b>£15</b></span></div>
+        </li>
+        <li data-q="pollo e broccoli (gfo) penne, chicken breast, broccoli, onions, garlic, cream, mozzarella">
+          <div class="row"><span class="name">Pollo e Broccoli (GFO)</span></div>
+          <p class="desc">Penne, chicken breast, broccoli, onions, garlic, cream, mozzarella</p><div class="prices"><span class="pp"><span class="pl">Small</span> <b>£12</b></span><span class="pp"><span class="pl">Large</span> <b>£15</b></span></div>
+        </li>
+        <li data-q="tortellini con spinaci (v) spinach, ricotta, garlic, onion, cream, mozzarella">
+          <div class="row"><span class="name">Tortellini con Spinaci (V)</span></div>
+          <p class="desc">Spinach, ricotta, garlic, onion, cream, mozzarella</p><div class="prices"><span class="pp"><span class="pl">Small</span> <b>£12</b></span><span class="pp"><span class="pl">Large</span> <b>£15</b></span></div>
+        </li>
+        <li data-q="chicken tagliatelle (gfo) tagliatelle, chicken breast, courgettes, mushrooms, garlic, chilli, ginger, tomato">
+          <div class="row"><span class="name">Chicken Tagliatelle (GFO)</span></div>
+          <p class="desc">Tagliatelle, chicken breast, courgettes, mushrooms, garlic, chilli, ginger, tomato</p><div class="prices"><span class="pp"><span class="pl">Small</span> <b>£12</b></span><span class="pp"><span class="pl">Large</span> <b>£15</b></span></div>
+        </li>
+        <li data-q="carbonara (gfo) spaghetti, pancetta, cream, egg yolk, parmesan cheese">
+          <div class="row"><span class="name">Carbonara (GFO)</span></div>
+          <p class="desc">Spaghetti, pancetta, cream, egg yolk, parmesan cheese</p><div class="prices"><span class="pp"><span class="pl">Small</span> <b>£12</b></span><span class="pp"><span class="pl">Large</span> <b>£15</b></span></div>
+        </li>
+        <li data-q="bolognese (gfo) spaghetti, beef steak mince, tomato, garlic">
+          <div class="row"><span class="name">Bolognese (GFO)</span></div>
+          <p class="desc">Spaghetti, beef steak mince, tomato, garlic</p><div class="prices"><span class="pp"><span class="pl">Small</span> <b>£11</b></span><span class="pp"><span class="pl">Large</span> <b>£14</b></span></div>
+        </li>
+        <li data-q="jackfruit ragu (ve) (gfo) spaghetti, lentils, jackfruit, tomato, garlic">
+          <div class="row"><span class="name">Jackfruit Ragu (VE) (GFO)</span></div>
+          <p class="desc">Spaghetti, lentils, jackfruit, tomato, garlic</p><div class="prices"><span class="pp"><span class="pl">Small</span> <b>£12</b></span><span class="pp"><span class="pl">Large</span> <b>£15</b></span></div>
+        </li>
+        <li data-q="polpettine (gfo) spaghetti, all beef meatballs, parmesan, tomato">
+          <div class="row"><span class="name">Polpettine (GFO)</span></div>
+          <p class="desc">Spaghetti, all beef meatballs, parmesan, tomato</p><div class="prices"><span class="pp"><span class="pl">Small</span> <b>£12</b></span><span class="pp"><span class="pl">Large</span> <b>£15</b></span></div>
+        </li>
+        <li data-q="marinara (gfo) spaghetti, king prawns, mussels, garlic, olives, tomato">
+          <div class="row"><span class="name">Marinara (GFO)</span></div>
+          <p class="desc">Spaghetti, king prawns, mussels, garlic, olives, tomato</p><div class="prices"><span class="pp"><span class="pl">Small</span> <b>£14</b></span><span class="pp"><span class="pl">Large</span> <b>£17</b></span></div>
+        </li></ul>
+    </section>
+    <section id="steaks" class="sec">
+      <h2>Steaks</h2>
+      <p class="note">Served with choice of potato and a rocket and balsamic garnish</p>
+      <ul>
+        <li data-q="16 oz t bone (gf) ">
+          <div class="row"><span class="name">16 oz T Bone (GF)</span><span class="price">£35</span></div>
+          
+        </li>
+        <li data-q="8 oz ribeye (gf) ">
+          <div class="row"><span class="name">8 oz Ribeye (GF)</span><span class="price">£25</span></div>
+          
+        </li>
+        <li data-q="8 oz sirloin (gf) ">
+          <div class="row"><span class="name">8 oz Sirloin (GF)</span><span class="price">£25</span></div>
+          
+        </li>
+        <li data-q="add a sauce peppercorn, diane, or blue cheese">
+          <div class="row"><span class="name">Add a sauce</span><span class="price">£3.50</span></div>
+          <p class="desc">Peppercorn, Diane, or Blue Cheese</p>
+        </li></ul>
+    </section>
+    <section id="mains" class="sec">
+      <h2>Mains</h2>
+      <p class="note">Our signature dishes. Go big or go home.</p>
+      <ul>
+        <li data-q="minted lamb slow braised lamb shank, minted gravy, mashed potatoes">
+          <div class="row"><span class="name">Minted Lamb</span><span class="price">£21</span></div>
+          <p class="desc">Slow braised lamb shank, minted gravy, mashed potatoes</p>
+        </li>
+        <li data-q="chicken parmesan breaded chicken breast, mozzarella, napoli sauce, and spaghetti pomodoro">
+          <div class="row"><span class="name">Chicken Parmesan</span><span class="price">£18</span></div>
+          <p class="desc">Breaded chicken breast, mozzarella, napoli sauce, and spaghetti pomodoro</p>
+        </li>
+        <li data-q="oven roasted cod herb crumb, sautéed onions, balsamic reduction, mustard mash">
+          <div class="row"><span class="name">Oven Roasted Cod</span><span class="price">£19</span></div>
+          <p class="desc">Herb crumb, sautéed onions, balsamic reduction, mustard mash</p>
+        </li>
+        <li data-q="maranto&#39;s baby back ribs full rack of ribs barbecued just like we did back in 1983, served with homemade coleslaw and choice of potato">
+          <div class="row"><span class="name">Maranto&#39;s Baby Back Ribs</span><span class="price">£21</span></div>
+          <p class="desc">Full rack of ribs barbecued just like we did back in 1983, served with homemade coleslaw and choice of potato</p>
+        </li>
+        <li data-q="ribs and chicken half rack of ribs, quarter of a chicken, coleslaw, choice of potato">
+          <div class="row"><span class="name">Ribs and Chicken</span><span class="price">£25</span></div>
+          <p class="desc">Half rack of ribs, quarter of a chicken, coleslaw, choice of potato</p>
+        </li></ul>
+    </section>
+    <section id="burgers" class="sec">
+      <h2>Burgers</h2>
+      <p class="note">Served with choice of hand cut chips, curly, or skinny fries. Feeling hungry? Double up any burger for an extra £5 for a full pound of meat.</p>
+      <ul>
+        <li data-q="classic half pound beef patty, lettuce, tomato, onion, brioche bun. add cheese 60p / add bacon 60p, add both £1">
+          <div class="row"><span class="name">Classic</span><span class="price">£15</span></div>
+          <p class="desc">Half pound beef patty, lettuce, tomato, onion, brioche bun. Add cheese 60p / add bacon 60p, add both £1</p>
+        </li>
+        <li data-q="messy giuseppe classic burger with mushrooms, bolognese, mozzarella, brioche bun">
+          <div class="row"><span class="name">Messy Giuseppe</span><span class="price">£17</span></div>
+          <p class="desc">Classic burger with mushrooms, bolognese, mozzarella, brioche bun</p>
+        </li>
+        <li data-q="maranto&#39;s chicago beef slow cooked, thinly sliced, roast beef, pickled peppers and onions, au jus, hoagie roll">
+          <div class="row"><span class="name">Maranto&#39;s Chicago Beef</span><span class="price">£15</span></div>
+          <p class="desc">Slow cooked, thinly sliced, roast beef, pickled peppers and onions, au jus, hoagie roll</p>
+        </li>
+        <li data-q="etna classic burger with nduja, jalapeños, cheese, sriracha mayo, brioche bun">
+          <div class="row"><span class="name">Etna</span><span class="price">£17</span></div>
+          <p class="desc">Classic burger with nduja, jalapeños, cheese, sriracha mayo, brioche bun</p>
+        </li>
+        <li data-q="the goat classic burger with goat&#39;s cheese, red onion marmalade, brioche bun">
+          <div class="row"><span class="name">The Goat</span><span class="price">£17</span></div>
+          <p class="desc">Classic burger with goat&#39;s cheese, red onion marmalade, brioche bun</p>
+        </li>
+        <li data-q="the cowboy classic burger with bacon, onion rings, cheese, bbq sauce, brioche bun">
+          <div class="row"><span class="name">The Cowboy</span><span class="price">£17</span></div>
+          <p class="desc">Classic burger with bacon, onion rings, cheese, BBQ sauce, brioche bun</p>
+        </li>
+        <li data-q="hot chicken fried chicken, buffalo sauce, pickles, lettuce, tomato, onion, ranch, brioche bun">
+          <div class="row"><span class="name">Hot Chicken</span><span class="price">£17</span></div>
+          <p class="desc">Fried chicken, buffalo sauce, pickles, lettuce, tomato, onion, ranch, brioche bun</p>
+        </li>
+        <li data-q="grilled chicken chicken breast, lettuce, tomato, onion, brioche bun. add cheese 60p / add bacon 60p, add both £1">
+          <div class="row"><span class="name">Grilled Chicken</span><span class="price">£16</span></div>
+          <p class="desc">Chicken breast, lettuce, tomato, onion, brioche bun. Add cheese 60p / add bacon 60p, add both £1</p>
+        </li></ul>
+    </section>
+    <section id="classic-pizza" class="sec">
+      <h2>Classic Pizza</h2>
+      <p class="note">Our classic hand-stretched dough since 1983. Make it Sicilian: a thicker, hand-made focaccia base with crispy edges.</p>
+      <ul>
+        <li data-q="margherita (v) (veo) tomato, mozzarella, oregano">
+          <div class="row"><span class="name">Margherita (V) (VEO)</span></div>
+          <p class="desc">Tomato, mozzarella, oregano</p><div class="prices"><span class="pp"><span class="pl">Classic</span> <b>£12</b></span><span class="pp"><span class="pl">Sicilian</span> <b>£17</b></span></div>
+        </li>
+        <li data-q="maranto&#39;s classic bbq, pulled pork, chicken, mozzarella">
+          <div class="row"><span class="name">Maranto&#39;s Classic</span></div>
+          <p class="desc">BBQ, pulled pork, chicken, mozzarella</p><div class="prices"><span class="pp"><span class="pl">Classic</span> <b>£15</b></span><span class="pp"><span class="pl">Sicilian</span> <b>£20</b></span></div>
+        </li>
+        <li data-q="meat feast bolognese, meatballs, ham, pepperoni, mozzarella">
+          <div class="row"><span class="name">Meat Feast</span></div>
+          <p class="desc">Bolognese, meatballs, ham, pepperoni, mozzarella</p><div class="prices"><span class="pp"><span class="pl">Classic</span> <b>£15</b></span><span class="pp"><span class="pl">Sicilian</span> <b>£20</b></span></div>
+        </li>
+        <li data-q="hot and spicy tomato, pepperoni, spicy beef, fresh chillies, mozzarella">
+          <div class="row"><span class="name">Hot and Spicy</span></div>
+          <p class="desc">Tomato, pepperoni, spicy beef, fresh chillies, mozzarella</p><div class="prices"><span class="pp"><span class="pl">Classic</span> <b>£15</b></span><span class="pp"><span class="pl">Sicilian</span> <b>£20</b></span></div>
+        </li>
+        <li data-q="colorato (v) (veo) tomato, courgettes, peppers, red onion, fresh tomatoes, mozzarella">
+          <div class="row"><span class="name">Colorato (V) (VEO)</span></div>
+          <p class="desc">Tomato, courgettes, peppers, red onion, fresh tomatoes, mozzarella</p><div class="prices"><span class="pp"><span class="pl">Classic</span> <b>£15</b></span><span class="pp"><span class="pl">Sicilian</span> <b>£20</b></span></div>
+        </li>
+        <li data-q="buffalo chicken frank&#39;s red hot, ranch, chicken, peppers, onions, mozzarella">
+          <div class="row"><span class="name">Buffalo Chicken</span></div>
+          <p class="desc">Frank&#39;s red hot, ranch, chicken, peppers, onions, mozzarella</p><div class="prices"><span class="pp"><span class="pl">Classic</span> <b>£15</b></span><span class="pp"><span class="pl">Sicilian</span> <b>£20</b></span></div>
+        </li>
+        <li data-q="diavolo (v) (veo) tomato, nduja, jalapeños, hot honey, mozzarella">
+          <div class="row"><span class="name">Diavolo (V) (VEO)</span></div>
+          <p class="desc">Tomato, nduja, jalapeños, hot honey, mozzarella</p><div class="prices"><span class="pp"><span class="pl">Classic</span> <b>£15</b></span><span class="pp"><span class="pl">Sicilian</span> <b>£20</b></span></div>
+        </li>
+        <li data-q="pescatore tomato, anchovy, olives, onion, mozzarella">
+          <div class="row"><span class="name">Pescatore</span></div>
+          <p class="desc">Tomato, anchovy, olives, onion, mozzarella</p><div class="prices"><span class="pp"><span class="pl">Classic</span> <b>£15</b></span><span class="pp"><span class="pl">Sicilian</span> <b>£20</b></span></div>
+        </li>
+        <li data-q="hawaiian bbq, ham, pineapple, jalapeños, mozzarella (don&#39;t tell nonno)">
+          <div class="row"><span class="name">Hawaiian</span></div>
+          <p class="desc">BBQ, ham, pineapple, jalapeños, mozzarella (don&#39;t tell nonno)</p><div class="prices"><span class="pp"><span class="pl">Classic</span> <b>£15</b></span><span class="pp"><span class="pl">Sicilian</span> <b>£20</b></span></div>
+        </li>
+        <li data-q="pizza of choice select any four toppings or double them up: pepperoni, ham, chicken, peppers, mushrooms, onions, sweetcorn, anchovies, olives, spicy beef, nduja, pineapple, hot honey">
+          <div class="row"><span class="name">Pizza of Choice</span></div>
+          <p class="desc">Select any four toppings or double them up: Pepperoni, ham, chicken, peppers, mushrooms, onions, sweetcorn, anchovies, olives, spicy beef, nduja, pineapple, hot honey</p><div class="prices"><span class="pp"><span class="pl">Classic</span> <b>£15</b></span><span class="pp"><span class="pl">Sicilian</span> <b>£20</b></span></div>
+        </li></ul>
+    </section>
+    <section id="sides" class="sec">
+      <h2>Sides</h2>
+      <p class="note">Skinny, chunky or curly, the choice is yours</p>
+      <ul>
+        <li data-q="garlic bread ">
+          <div class="row"><span class="name">Garlic Bread</span><span class="price">£5</span></div>
+          
+        </li>
+        <li data-q="garlic bread with cheese ">
+          <div class="row"><span class="name">Garlic Bread with Cheese</span><span class="price">£5.50</span></div>
+          
+        </li>
+        <li data-q="garlic pizza ">
+          <div class="row"><span class="name">Garlic Pizza</span><span class="price">£7</span></div>
+          
+        </li>
+        <li data-q="garlic pizza with cheese ">
+          <div class="row"><span class="name">Garlic Pizza with Cheese</span><span class="price">£8</span></div>
+          
+        </li>
+        <li data-q="olives ">
+          <div class="row"><span class="name">Olives</span><span class="price">£6</span></div>
+          
+        </li>
+        <li data-q="skinny fries ">
+          <div class="row"><span class="name">Skinny Fries</span><span class="price">£4</span></div>
+          
+        </li>
+        <li data-q="hand cut chips ">
+          <div class="row"><span class="name">Hand Cut Chips</span><span class="price">£4</span></div>
+          
+        </li>
+        <li data-q="curly fries ">
+          <div class="row"><span class="name">Curly Fries</span><span class="price">£4</span></div>
+          
+        </li>
+        <li data-q="beer battered onion rings ">
+          <div class="row"><span class="name">Beer Battered Onion Rings</span><span class="price">£5</span></div>
+          
+        </li>
+        <li data-q="coleslaw ">
+          <div class="row"><span class="name">Coleslaw</span><span class="price">£4</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="salads" class="sec">
+      <h2>Salads</h2>
+      
+      <ul>
+        <li data-q="chopped (gf) (veo) mixed greens, tomato, onion, cucumber, avocado, blue cheese, bacon, vinaigrette. add chicken £5">
+          <div class="row"><span class="name">Chopped (GF) (VEO)</span><span class="price">£13</span></div>
+          <p class="desc">Mixed greens, tomato, onion, cucumber, avocado, blue cheese, bacon, vinaigrette. Add chicken £5</p>
+        </li>
+        <li data-q="caesar lettuce, focaccia croutons, parmesan, half pound of grilled chicken, caesar dressing">
+          <div class="row"><span class="name">Caesar</span><span class="price">£16</span></div>
+          <p class="desc">Lettuce, focaccia croutons, parmesan, half pound of grilled chicken, caesar dressing</p>
+        </li>
+        <li data-q="apple walnut (v) mixed greens, pickled red onion, walnut, apple, goat&#39;s cheese, vinaigrette">
+          <div class="row"><span class="name">Apple Walnut (V)</span><span class="price">£13</span></div>
+          <p class="desc">Mixed greens, pickled red onion, walnut, apple, goat&#39;s cheese, vinaigrette</p>
+        </li></ul>
+    </section>
+    <section id="daytime-specials-brunch" class="sec">
+      <h2>Daytime Specials: Brunch</h2>
+      <p class="note">Alongside our main menu. Served till 3pm Mon-Fri, till 1pm Sat-Sun</p>
+      <ul>
+        <li data-q="full english two eggs, sausage, bacon, black pudding, mushrooms, beans, grilled tomato, toast">
+          <div class="row"><span class="name">Full English</span><span class="price">£13</span></div>
+          <p class="desc">Two eggs, sausage, bacon, black pudding, mushrooms, beans, grilled tomato, toast</p>
+        </li>
+        <li data-q="eggs benedict (vo) two poached eggs, choice of bacon or spinach, hollandaise, focaccia">
+          <div class="row"><span class="name">Eggs Benedict (VO)</span><span class="price">£11</span></div>
+          <p class="desc">Two poached eggs, choice of bacon or spinach, hollandaise, focaccia</p>
+        </li>
+        <li data-q="breakfast bap fried egg, bacon, cheese, brioche">
+          <div class="row"><span class="name">Breakfast Bap</span><span class="price">£8</span></div>
+          <p class="desc">Fried egg, bacon, cheese, brioche</p>
+        </li>
+        <li data-q="avocado toast (v) (veo) focaccia, avocado, scrambled eggs">
+          <div class="row"><span class="name">Avocado Toast (V) (VEO)</span><span class="price">£9</span></div>
+          <p class="desc">Focaccia, avocado, scrambled eggs</p>
+        </li>
+        <li data-q="chicken and waffles fried chicken, buttermilk waffles, hot honey">
+          <div class="row"><span class="name">Chicken and Waffles</span><span class="price">£15</span></div>
+          <p class="desc">Fried chicken, buttermilk waffles, hot honey</p>
+        </li>
+        <li data-q="buttermilk waffles (v) with whipped butter and maple syrup">
+          <div class="row"><span class="name">Buttermilk Waffles (V)</span><span class="price">£10</span></div>
+          <p class="desc">With whipped butter and maple syrup</p>
+        </li></ul>
+    </section>
+    <section id="daytime-specials-sandwiches-wraps" class="sec">
+      <h2>Daytime Specials: Sandwiches &amp; Wraps</h2>
+      <p class="note">Served till 3pm Mon-Fri, till 1pm Sat-Sun. Add chips for £3</p>
+      <ul>
+        <li data-q="chicken caesar wrap grilled chicken, lettuce, parmesan cheese, caesar dressing">
+          <div class="row"><span class="name">Chicken Caesar Wrap</span><span class="price">£10</span></div>
+          <p class="desc">Grilled chicken, lettuce, parmesan cheese, caesar dressing</p>
+        </li>
+        <li data-q="buffalo wrap fried chicken, frank&#39;s red hot, lettuce, onion, tomato, ranch">
+          <div class="row"><span class="name">Buffalo Wrap</span><span class="price">£10</span></div>
+          <p class="desc">Fried chicken, Frank&#39;s Red Hot, lettuce, onion, tomato, ranch</p>
+        </li>
+        <li data-q="chicago beef thinly sliced, slow cooked beef, pickled peppers, onions, hoagie roll">
+          <div class="row"><span class="name">Chicago Beef</span><span class="price">£12</span></div>
+          <p class="desc">Thinly sliced, slow cooked beef, pickled peppers, onions, hoagie roll</p>
+        </li>
+        <li data-q="caprese (v) mozzarella, tomato, basil, rocket, balsamic, focaccia">
+          <div class="row"><span class="name">Caprese (V)</span><span class="price">£9</span></div>
+          <p class="desc">Mozzarella, tomato, basil, rocket, balsamic, focaccia</p>
+        </li>
+        <li data-q="meatball sub meatballs, marinara sauce, mozzarella, hoagie roll">
+          <div class="row"><span class="name">Meatball Sub</span><span class="price">£11</span></div>
+          <p class="desc">Meatballs, marinara sauce, mozzarella, hoagie roll</p>
+        </li>
+        <li data-q="chicken melt grilled chicken breast, bacon, cheese, bbq sauce, lettuce, onion, tomato, brioche bun">
+          <div class="row"><span class="name">Chicken Melt</span><span class="price">£12</span></div>
+          <p class="desc">Grilled Chicken breast, bacon, cheese, bbq sauce, lettuce, onion, tomato, brioche bun</p>
+        </li></ul>
+    </section>
+    <section id="sundays-at-maranto-s" class="sec">
+      <h2>Sundays at Maranto&#39;s</h2>
+      <p class="note">Served with tenderstem broccoli, parsnips, carrots, roast potatoes, Yorkshire pudding, and gravy</p>
+      <ul>
+        <li data-q="roast sirloin of beef ">
+          <div class="row"><span class="name">Roast Sirloin of Beef</span><span class="price">£18</span></div>
+          
+        </li>
+        <li data-q="rolled pork belly ">
+          <div class="row"><span class="name">Rolled Pork Belly</span><span class="price">£18</span></div>
+          
+        </li>
+        <li data-q="half a chicken ">
+          <div class="row"><span class="name">Half a Chicken</span><span class="price">£18</span></div>
+          
+        </li>
+        <li data-q="veggie roast ">
+          <div class="row"><span class="name">Veggie Roast</span><span class="price">£18</span></div>
+          
+        </li>
+        <li data-q="cauliflower cheese ">
+          <div class="row"><span class="name">Cauliflower Cheese</span><span class="price">£5</span></div>
+          
+        </li>
+        <li data-q="pigs in blanket ">
+          <div class="row"><span class="name">Pigs in Blanket</span><span class="price">£5</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="kids" class="sec">
+      <h2>Kids</h2>
+      <p class="note">And an ice cream cone for dessert!</p>
+      <ul>
+        <li data-q="bbq ribs with chips or skinny fries, peas or beans">
+          <div class="row"><span class="name">BBQ Ribs</span><span class="price">£7</span></div>
+          <p class="desc">With chips or skinny fries, peas or beans</p>
+        </li>
+        <li data-q="kids burger with chips or skinny fries, peas or beans">
+          <div class="row"><span class="name">Kids Burger</span><span class="price">£7</span></div>
+          <p class="desc">With chips or skinny fries, peas or beans</p>
+        </li>
+        <li data-q="housemade nuggets with chips or skinny fries, peas or beans">
+          <div class="row"><span class="name">Housemade Nuggets</span><span class="price">£7</span></div>
+          <p class="desc">With chips or skinny fries, peas or beans</p>
+        </li>
+        <li data-q="jackfruit ragu (ve) (gfo) spaghetti, lentils, jackfruit, tomato, garlic">
+          <div class="row"><span class="name">Jackfruit Ragu (VE) (GFO)</span><span class="price">£7</span></div>
+          <p class="desc">Spaghetti, lentils, jackfruit, tomato, garlic</p>
+        </li>
+        <li data-q="mini pizza (veo) plain cheese, ham, spicy pepperoni, or mushroom">
+          <div class="row"><span class="name">Mini Pizza (VEO)</span><span class="price">£7</span></div>
+          <p class="desc">Plain cheese, ham, spicy pepperoni, or mushroom</p>
+        </li>
+        <li data-q="mac &#39;n&#39; cheese (gfo) ">
+          <div class="row"><span class="name">Mac &#39;n&#39; Cheese (GFO)</span><span class="price">£7</span></div>
+          
+        </li>
+        <li data-q="spaghetti bolognese (gfo) ">
+          <div class="row"><span class="name">Spaghetti Bolognese (GFO)</span><span class="price">£7</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="desserts" class="sec">
+      <h2>Desserts</h2>
+      
+      <ul>
+        <li data-q="affogato (veo) vanilla ice cream, espresso, amaretto liqueur">
+          <div class="row"><span class="name">Affogato (VEO)</span><span class="price">£7</span></div>
+          <p class="desc">Vanilla ice cream, espresso, amaretto liqueur</p>
+        </li>
+        <li data-q="sticky toffee pudding (v) warm date sponge, toffee sauce, vanilla ice cream or custard">
+          <div class="row"><span class="name">Sticky Toffee Pudding (V)</span><span class="price">£7</span></div>
+          <p class="desc">Warm date sponge, toffee sauce, vanilla ice cream or custard</p>
+        </li>
+        <li data-q="tiramisu (v) espresso soaked ladyfingers, tia maria, kahlua, mascarpone, cocoa">
+          <div class="row"><span class="name">Tiramisu (V)</span><span class="price">£7</span></div>
+          <p class="desc">Espresso soaked ladyfingers, tia maria, kahlua, mascarpone, cocoa</p>
+        </li>
+        <li data-q="berry pavlova (v) (gf) crisp meringue, strawberry ice cream, whipped cream, mixed berries">
+          <div class="row"><span class="name">Berry Pavlova (V) (GF)</span><span class="price">£7</span></div>
+          <p class="desc">Crisp meringue, strawberry ice cream, whipped cream, mixed berries</p>
+        </li>
+        <li data-q="chocolate brownie (v) warm chocolate brownie, vanilla ice cream">
+          <div class="row"><span class="name">Chocolate Brownie (V)</span><span class="price">£7</span></div>
+          <p class="desc">Warm chocolate brownie, vanilla ice cream</p>
+        </li>
+        <li data-q="hot fudge sundae (v) vanilla ice cream, brownie chunks, hot fudge sauce, whipped cream">
+          <div class="row"><span class="name">Hot Fudge Sundae (V)</span><span class="price">£7</span></div>
+          <p class="desc">Vanilla ice cream, brownie chunks, hot fudge sauce, whipped cream</p>
+        </li>
+        <li data-q="selection of northern bloc ice creams ">
+          <div class="row"><span class="name">Selection of Northern Bloc Ice Creams</span></div>
+          <div class="prices"><span class="pp"><span class="pl">1 scoop</span> <b>£3</b></span><span class="pp"><span class="pl">3 scoops</span> <b>£6</b></span></div>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>(V) Vegetarian (VE) Vegan (VEO) Vegan option available (GF) Gluten free (GFO) Gluten free option available. Allergen menu is available on request. Please note that not all of our ingredients are listed. If you have any dietary or allergy requirements, please tell a member of staff.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Maranto&#39;s.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Maranto&#39;s menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's US$29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for US$29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

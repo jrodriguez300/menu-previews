@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Myth Restaurant Menu</title>
+<meta name="description" content="Menu for Myth Restaurant, King West (King St W at Portland).">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Myth Restaurant</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=522%20King%20St%20W%2C%20Toronto%2C%20ON%20M5V%201L7">522 King St W, Toronto, ON M5V 1L7</a><a href="tel:4167032800">416-703-2800</a><span>Monday to Sunday: 5pm till Close</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#happy-hour-mezzedes" data-sec="happy-hour-mezzedes">Happy Hour Mezzedes</a><a href="#happy-hour-cocktails" data-sec="happy-hour-cocktails">Happy Hour Cocktails</a><a href="#alifes-spreads" data-sec="alifes-spreads">Alifes | Spreads</a><a href="#oma-raw" data-sec="oma-raw">Oma | Raw</a><a href="#salates-salads" data-sec="salates-salads">Salates | Salads</a><a href="#mezedes-starters" data-sec="mezedes-starters">Mezedes | Starters</a><a href="#thalassina-from-the-sea" data-sec="thalassina-from-the-sea">Thalassina | From the Sea</a><a href="#gaia-from-the-land" data-sec="gaia-from-the-land">Gaia | From the Land</a><a href="#sinodeftika-sides" data-sec="sinodeftika-sides">Sinodeftika | Sides</a><a href="#desserts" data-sec="desserts">Desserts</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="happy-hour-mezzedes" class="sec">
+      <h2>Happy Hour Mezzedes</h2>
+      <p class="note">5PM-7PM</p>
+      <ul>
+        <li data-q="myth meze platter hummus, tirokafteri, taramasalata, bread basket">
+          <div class="row"><span class="name">Myth Meze Platter</span><span class="price">$16</span></div>
+          <p class="desc">Hummus, Tirokafteri, Taramasalata, Bread Basket</p>
+        </li>
+        <li data-q="tónos tartare watermelon dressing, cherry tomato, cucumber, baby gem">
+          <div class="row"><span class="name">Tónos Tartare</span><span class="price">$14</span></div>
+          <p class="desc">Watermelon Dressing, Cherry Tomato, Cucumber, Baby Gem</p>
+        </li>
+        <li data-q="halloumi souvlaki grilled halloumi, mushroom, za&#39;atar, truffle honey">
+          <div class="row"><span class="name">Halloumi Souvlaki</span><span class="price">$15</span></div>
+          <p class="desc">Grilled Halloumi, Mushroom, Za&#39;atar, Truffle Honey</p>
+        </li>
+        <li data-q="keftedakia beef meatballs, tzatziki, lemon">
+          <div class="row"><span class="name">Keftedakia</span><span class="price">$16</span></div>
+          <p class="desc">Beef Meatballs, Tzatziki, Lemon</p>
+        </li>
+        <li data-q="calamari battered squid, lemon aioli, smoked paprika">
+          <div class="row"><span class="name">Calamari</span><span class="price">$16</span></div>
+          <p class="desc">Battered Squid, Lemon Aioli, Smoked Paprika</p>
+        </li></ul>
+    </section>
+    <section id="happy-hour-cocktails" class="sec">
+      <h2>Happy Hour Cocktails</h2>
+      <p class="note">5PM-7PM</p>
+      <ul>
+        <li data-q="lychee martini ketel one vodka, soho lychee, lemon">
+          <div class="row"><span class="name">Lychee Martini</span><span class="price">$10</span></div>
+          <p class="desc">Ketel One Vodka, Soho Lychee, Lemon</p>
+        </li>
+        <li data-q="greek violet spritz butterfly pea flower infused st germain, prosecco, lime juice, soda">
+          <div class="row"><span class="name">Greek Violet Spritz</span><span class="price">$10</span></div>
+          <p class="desc">Butterfly Pea Flower Infused St Germain, Prosecco, Lime Juice, Soda</p>
+        </li>
+        <li data-q="margarita cazadores blanco, triple sec, lime juice, simple syrup">
+          <div class="row"><span class="name">Margarita</span><span class="price">$10</span></div>
+          <p class="desc">Cazadores Blanco, Triple Sec, Lime Juice, Simple Syrup</p>
+        </li>
+        <li data-q="2023, cabernet sauvignon/agiorgitiko, thalia, peloponnese, greece ">
+          <div class="row"><span class="name">2023, Cabernet Sauvignon/Agiorgitiko, Thalia, Peloponnese, Greece</span><span class="price">$10</span></div>
+          
+        </li>
+        <li data-q="2023, sauvignon blanc/assyrtiko, thalia, peloponnese, greece ">
+          <div class="row"><span class="name">2023, Sauvignon Blanc/Assyrtiko, Thalia, Peloponnese, Greece</span><span class="price">$10</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="alifes-spreads" class="sec">
+      <h2>Alifes | Spreads</h2>
+      
+      <ul>
+        <li data-q="myth meze platter hummus, tirokafteri, taramasalata, marinated olives. served with bread basket and seasonal vegetables">
+          <div class="row"><span class="name">Myth Meze Platter</span><span class="price">$35</span></div>
+          <p class="desc">Hummus, Tirokafteri, Taramasalata, Marinated Olives. Served with Bread Basket and Seasonal Vegetables</p>
+        </li>
+        <li data-q="individual dips ">
+          <div class="row"><span class="name">Individual Dips</span><span class="price">$10</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="oma-raw" class="sec">
+      <h2>Oma | Raw</h2>
+      
+      <ul>
+        <li data-q="dozen oysters chef&#39;s choice, horseradish, lemon, mignonette, tabasco">
+          <div class="row"><span class="name">Dozen Oysters</span><span class="price">Market price</span></div>
+          <p class="desc">Chef&#39;s Choice, Horseradish, Lemon, Mignonette, Tabasco</p>
+        </li>
+        <li data-q="yellowtail sashimi cherry tomato vierge, lemon oil, caper leaf, radish">
+          <div class="row"><span class="name">Yellowtail Sashimi</span><span class="price">$29</span></div>
+          <p class="desc">Cherry Tomato Vierge, Lemon Oil, Caper Leaf, Radish</p>
+        </li>
+        <li data-q="tónos tartare watermelon dressing, cherry tomato, cucumber, coriander, baby gem, crisp">
+          <div class="row"><span class="name">Tónos Tartare</span><span class="price">$28</span></div>
+          <p class="desc">Watermelon Dressing, Cherry Tomato, Cucumber, Coriander, Baby Gem, Crisp</p>
+        </li>
+        <li data-q="beef carpaccio black garlic skordalia, cretan graviera cheese, pickled onion, crispy phyllo kantaifi, black truffle">
+          <div class="row"><span class="name">Beef Carpaccio</span><span class="price">$30</span></div>
+          <p class="desc">Black Garlic Skordalia, Cretan Graviera Cheese, Pickled Onion, Crispy Phyllo Kantaifi, Black Truffle</p>
+        </li>
+        <li data-q="beef tartare kalamata olive, caper, shallot, oregano, semi-dried tomato, confit garlic aioli, country-style phyllo">
+          <div class="row"><span class="name">Beef Tartare</span><span class="price">$27</span></div>
+          <p class="desc">Kalamata Olive, Caper, Shallot, Oregano, Semi-dried Tomato, Confit Garlic Aioli, Country-style Phyllo</p>
+        </li></ul>
+    </section>
+    <section id="salates-salads" class="sec">
+      <h2>Salates | Salads</h2>
+      
+      <ul>
+        <li data-q="mykonian cherry tomato, fresh strawberry, goat cheese, strawberry dressing">
+          <div class="row"><span class="name">Mykonian</span><span class="price">$22</span></div>
+          <p class="desc">Cherry Tomato, Fresh Strawberry, Goat Cheese, Strawberry Dressing</p>
+        </li>
+        <li data-q="baby gem baby gem lettuce, mushroom, olive oil breadcrumb, kefalograviera cheese, florina pepper dressing">
+          <div class="row"><span class="name">Baby Gem</span><span class="price">$23</span></div>
+          <p class="desc">Baby Gem Lettuce, Mushroom, Olive Oil Breadcrumb, Kefalograviera Cheese, Florina Pepper Dressing</p>
+        </li>
+        <li data-q="horiatiki seasonal tomato, green pepper, kalamata olive, caper, cucumber, rusk, feta">
+          <div class="row"><span class="name">Horiatiki</span><span class="price">$24</span></div>
+          <p class="desc">Seasonal Tomato, Green Pepper, Kalamata Olive, Caper, Cucumber, Rusk, Feta</p>
+        </li></ul>
+    </section>
+    <section id="mezedes-starters" class="sec">
+      <h2>Mezedes | Starters</h2>
+      
+      <ul>
+        <li data-q="spanakopita spinach, variety of greek cheeses, chive yogurt">
+          <div class="row"><span class="name">Spanakopita</span><span class="price">$25</span></div>
+          <p class="desc">Spinach, Variety of Greek Cheeses, Chive Yogurt</p>
+        </li>
+        <li data-q="keftedes beef meatballs, manouri cheese, baby gem, tomato relish, cucumber, pickled red onion">
+          <div class="row"><span class="name">Keftedes</span><span class="price">$26</span></div>
+          <p class="desc">Beef Meatballs, Manouri Cheese, Baby Gem, Tomato Relish, Cucumber, Pickled Red Onion</p>
+        </li>
+        <li data-q="pastitsio paccheri pasta, slow-cooked short rib, graviera cheese foam">
+          <div class="row"><span class="name">Pastitsio</span><span class="price">$28</span></div>
+          <p class="desc">Paccheri Pasta, Slow-cooked Short Rib, Graviera Cheese Foam</p>
+        </li>
+        <li data-q="shrimp saganaki black tiger shrimp, bisque, tomato sauce, ouzo, feta cheese, sourdough flatbread">
+          <div class="row"><span class="name">Shrimp Saganaki</span><span class="price">$29</span></div>
+          <p class="desc">Black Tiger Shrimp, Bisque, Tomato Sauce, Ouzo, Feta Cheese, Sourdough Flatbread</p>
+        </li>
+        <li data-q="calamari battered squid, lemon aioli, smoked paprika">
+          <div class="row"><span class="name">Calamari</span><span class="price">$27</span></div>
+          <p class="desc">Battered Squid, Lemon Aioli, Smoked Paprika</p>
+        </li>
+        <li data-q="htapodi grilled octopus, fava cream, farro, variety of greek pulses">
+          <div class="row"><span class="name">Htapodi</span><span class="price">$38</span></div>
+          <p class="desc">Grilled Octopus, Fava Cream, Farro, Variety of Greek Pulses</p>
+        </li>
+        <li data-q="iberico pork souvlaki iberico pluma pork, kopanisti, politiki cabbage salad">
+          <div class="row"><span class="name">Iberico Pork Souvlaki</span><span class="price">$29</span></div>
+          <p class="desc">Iberico Pluma Pork, Kopanisti, Politiki Cabbage Salad</p>
+        </li>
+        <li data-q="saganaki fried kefalograviera cheese, lemon">
+          <div class="row"><span class="name">Saganaki</span><span class="price">$23</span></div>
+          <p class="desc">Fried Kefalograviera Cheese, Lemon</p>
+        </li>
+        <li data-q="halloumi souvlaki grilled halloumi, mushroom, za&#39;atar, truffle honey, black truffle">
+          <div class="row"><span class="name">Halloumi Souvlaki</span><span class="price">$26</span></div>
+          <p class="desc">Grilled Halloumi, Mushroom, Za&#39;atar, Truffle Honey, Black Truffle</p>
+        </li>
+        <li data-q="myth chips crispy zucchini, tzatziki">
+          <div class="row"><span class="name">Myth Chips</span><span class="price">$23</span></div>
+          <p class="desc">Crispy Zucchini, Tzatziki</p>
+        </li></ul>
+    </section>
+    <section id="thalassina-from-the-sea" class="sec">
+      <h2>Thalassina | From the Sea</h2>
+      
+      <ul>
+        <li data-q="garidomakaronada linguini pasta, shrimp, ouzo, fennel, smoked metsovone cheese cream">
+          <div class="row"><span class="name">Garidomakaronada</span><span class="price">$57</span></div>
+          <p class="desc">Linguini Pasta, Shrimp, Ouzo, Fennel, Smoked Metsovone Cheese Cream</p>
+        </li>
+        <li data-q="seafood risotto grilled calamari &amp; mussel skewer, lemon, chermoula, fennel, ouzo">
+          <div class="row"><span class="name">Seafood Risotto</span><span class="price">$55</span></div>
+          <p class="desc">Grilled Calamari &amp; Mussel Skewer, Lemon, Chermoula, Fennel, Ouzo</p>
+        </li>
+        <li data-q="lavraki 1.5lbs sea bass, wild greens, thyme lemon oil">
+          <div class="row"><span class="name">Lavraki 1.5LBS</span><span class="price">$65</span></div>
+          <p class="desc">Sea Bass, Wild Greens, Thyme Lemon Oil</p>
+        </li></ul>
+    </section>
+    <section id="gaia-from-the-land" class="sec">
+      <h2>Gaia | From the Land</h2>
+      
+      <ul>
+        <li data-q="beef kebab filet mignon kebab, florina pepper marinade, yogurt, spiced salt">
+          <div class="row"><span class="name">Beef Kebab</span><span class="price">$55</span></div>
+          <p class="desc">Filet Mignon Kebab, Florina Pepper Marinade, Yogurt, Spiced Salt</p>
+        </li>
+        <li data-q="paidakia lamb chops, eggplant salad agiorgitiki, tzatziki">
+          <div class="row"><span class="name">Paidakia</span><span class="price">$75</span></div>
+          <p class="desc">Lamb Chops, Eggplant Salad Agiorgitiki, Tzatziki</p>
+        </li>
+        <li data-q="t-bone steak 32oz ontario aaa t-bone steak, oregano chimichurri, smoked sea salt">
+          <div class="row"><span class="name">T-Bone Steak 32oz</span><span class="price">$145</span></div>
+          <p class="desc">Ontario AAA T-Bone Steak, Oregano Chimichurri, Smoked Sea Salt</p>
+        </li>
+        <li data-q="ribeye steak 16oz ontario aaa ribeye, oregano chimichurri, smoked sea salt">
+          <div class="row"><span class="name">Ribeye Steak 16oz</span><span class="price">$98</span></div>
+          <p class="desc">Ontario AAA Ribeye, Oregano Chimichurri, Smoked Sea Salt</p>
+        </li>
+        <li data-q="short rib yiouvetsi slow-cooked short rib, orzo pasta, red wine jus, cretan graviera cheese">
+          <div class="row"><span class="name">Short Rib Yiouvetsi</span><span class="price">$65</span></div>
+          <p class="desc">Slow-Cooked Short Rib, Orzo Pasta, Red Wine Jus, Cretan Graviera Cheese</p>
+        </li>
+        <li data-q="roasted chicken mediterranean marinated half chicken, lemon yogurt, grilled seasonal vegetables">
+          <div class="row"><span class="name">Roasted Chicken</span><span class="price">$45</span></div>
+          <p class="desc">Mediterranean Marinated Half Chicken, Lemon Yogurt, Grilled Seasonal Vegetables</p>
+        </li>
+        <li data-q="mushroom tagliatelle variety of mushrooms, mushroom stock, petimezi, graviera cheese">
+          <div class="row"><span class="name">Mushroom Tagliatelle</span><span class="price">$39</span></div>
+          <p class="desc">Variety of Mushrooms, Mushroom Stock, Petimezi, Graviera Cheese</p>
+        </li>
+        <li data-q="tomahawk steak 45oz ontario prime tomahawk, oregano chimichurri, smoked sea salt">
+          <div class="row"><span class="name">Tomahawk Steak 45oz</span><span class="price">$260</span></div>
+          <p class="desc">Ontario Prime Tomahawk, Oregano Chimichurri, Smoked Sea Salt</p>
+        </li></ul>
+    </section>
+    <section id="sinodeftika-sides" class="sec">
+      <h2>Sinodeftika | Sides</h2>
+      
+      <ul>
+        <li data-q="broccolini florina pepper sauce, aged vinegar dressing, mizithra cheese">
+          <div class="row"><span class="name">Broccolini</span><span class="price">$19</span></div>
+          <p class="desc">Florina Pepper Sauce, Aged Vinegar Dressing, Mizithra Cheese</p>
+        </li>
+        <li data-q="grilled vegetables seasonal vegetables, pine nut, oregano chimichurri">
+          <div class="row"><span class="name">Grilled Vegetables</span><span class="price">$19</span></div>
+          <p class="desc">Seasonal Vegetables, Pine Nut, Oregano Chimichurri</p>
+        </li>
+        <li data-q="roasted potatoes roasted baby potatoes, lemon, thyme">
+          <div class="row"><span class="name">Roasted Potatoes</span><span class="price">$16</span></div>
+          <p class="desc">Roasted Baby Potatoes, Lemon, Thyme</p>
+        </li>
+        <li data-q="myth fries kefalograviera cheese, truffle aioli">
+          <div class="row"><span class="name">Myth Fries</span><span class="price">$16</span></div>
+          <p class="desc">Kefalograviera Cheese, Truffle Aioli</p>
+        </li>
+        <li data-q="add truffle ">
+          <div class="row"><span class="name">Add Truffle</span><span class="price">$8</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="desserts" class="sec">
+      <h2>Desserts</h2>
+      
+      <ul>
+        <li data-q="myth celebration platter rolled baklava, cheesecake, chocolate cremeux">
+          <div class="row"><span class="name">Myth Celebration Platter</span><span class="price">$55</span></div>
+          <p class="desc">Rolled Baklava, Cheesecake, Chocolate Cremeux</p>
+        </li>
+        <li data-q="rolled baklava cashews, coconut butter, cocoa nibs, chocolate-coconut sorbet">
+          <div class="row"><span class="name">Rolled Baklava</span><span class="price">$18</span></div>
+          <p class="desc">Cashews, Coconut Butter, Cocoa Nibs, Chocolate-Coconut Sorbet</p>
+        </li>
+        <li data-q="cheesecake greek yogurt cream, fresh strawberry compote">
+          <div class="row"><span class="name">Cheesecake</span><span class="price">$19</span></div>
+          <p class="desc">Greek Yogurt Cream, Fresh Strawberry Compote</p>
+        </li>
+        <li data-q="salted caramel galaktoboureko citrus cream, crispy phyllo, fior di latte ice cream, cinnamon, greek honey">
+          <div class="row"><span class="name">Salted Caramel Galaktoboureko</span><span class="price">$20</span></div>
+          <p class="desc">Citrus Cream, Crispy Phyllo, Fior di Latte Ice Cream, Cinnamon, Greek Honey</p>
+        </li>
+        <li data-q="chocolate cremeux gianduja ice cream, cocoa tuile, roasted hazelnut, sea salt">
+          <div class="row"><span class="name">Chocolate Cremeux</span><span class="price">$20</span></div>
+          <p class="desc">Gianduja Ice Cream, Cocoa Tuile, Roasted Hazelnut, Sea Salt</p>
+        </li>
+        <li data-q="selection of ice cream or sorbet ">
+          <div class="row"><span class="name">Selection of Ice Cream or Sorbet</span><span class="price">$15</span></div>
+          
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>Mezzedes Menu is served 5pm-7pm. Myth favours an elegant dress code; athleisure wear, running shoes and baseball caps are not permitted. Minors are welcome between 5PM-7PM on weekend evenings; all guests must be over 19 after 10PM on Friday and Saturday.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Myth Restaurant.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Myth Restaurant menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's US$29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for US$29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

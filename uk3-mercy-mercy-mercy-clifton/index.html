@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Mercy Mercy Mercy Menu</title>
+<meta name="description" content="Menu for Mercy Mercy Mercy, Clifton Village, Bristol.">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Mercy Mercy Mercy</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=6A%20Boyce's%20Avenue%2C%20Clifton%20Village%2C%20Bristol%2C%20BS8%204AA">6A Boyce&#39;s Avenue, Clifton Village, Bristol, BS8 4AA</a><span>Mon-Sat 8:00-17:00. Sun 9:00-17:00. Kitchen 9:00-16:00 daily</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#breakfast" data-sec="breakfast">Breakfast</a><a href="#add-ons-extras" data-sec="add-ons-extras">Add-ons / Extras</a><a href="#mercy-benny" data-sec="mercy-benny">Mercy Benny</a><a href="#lunch" data-sec="lunch">Lunch</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="breakfast" class="sec">
+      <h2>Breakfast</h2>
+      <p class="note">Served until noon</p>
+      <ul>
+        <li data-q="sourdough toast served with cultured butter and your choice of honey or house jam. gfo | vgo">
+          <div class="row"><span class="name">Sourdough Toast</span><span class="price">£5.90</span></div>
+          <p class="desc">Served with cultured butter and your choice of honey or house jam. GFO | VGO</p>
+        </li>
+        <li data-q="granola bowl house granola served with koko yogurt, mixed berries &amp; banana. gf | vg">
+          <div class="row"><span class="name">Granola Bowl</span><span class="price">£9</span></div>
+          <p class="desc">House granola served with Koko yogurt, mixed berries &amp; banana. GF | VG</p>
+        </li>
+        <li data-q="eggs any way two free-range eggs with mixed leaves &amp; chives with buttered sourdough toast. add avocado/halloumi +£3.8 | add smoked bacon/sausage +£4.1 | add smoked salmon +£4.8. v | gfo">
+          <div class="row"><span class="name">Eggs Any Way</span><span class="price">£11.50</span></div>
+          <p class="desc">Two free-range eggs with mixed leaves &amp; chives with buttered sourdough toast. Add avocado/halloumi +£3.8 | Add smoked bacon/sausage +£4.1 | Add smoked salmon +£4.8. V | GFO</p>
+        </li>
+        <li data-q="mushrooms on toast sautéed wild mushrooms with tarragon &amp; chilli butter on toasted sourdough. add avocado/halloumi +£3.8 | add smoked bacon/sausage +£4.1 | add smoked salmon +£4.8. gfo | v">
+          <div class="row"><span class="name">Mushrooms on Toast</span><span class="price">£12.50</span></div>
+          <p class="desc">Sautéed wild mushrooms with tarragon &amp; chilli butter on toasted sourdough. Add avocado/halloumi +£3.8 | Add smoked bacon/sausage +£4.1 | Add smoked salmon +£4.8. GFO | V</p>
+        </li>
+        <li data-q="turkish eggs poached free-range eggs, pickled cucumber, chipotle butter &amp; dill, served on garlic confit yoghurt with a warm flatbread. add avocado/halloumi +£3.8 | add smoked bacon/sausage +£4.1 | add smoked salmon +£4.8. gfo | v">
+          <div class="row"><span class="name">Turkish Eggs</span><span class="price">£13.50</span></div>
+          <p class="desc">Poached free-range eggs, pickled cucumber, chipotle butter &amp; dill, served on garlic confit yoghurt with a warm flatbread. Add avocado/halloumi +£3.8 | Add smoked bacon/sausage +£4.1 | Add smoked salmon +£4.8. GFO | V</p>
+        </li>
+        <li data-q="breakfast tacos two fried free-range eggs, refried beans, feta, smashed avocado &amp; crispy onions with a tomato &amp; coriander salsa served on corn tortillas. add halloumi/mushrooms/avocado +£3.8 | add fried chicken +£4.5. gf | vgo">
+          <div class="row"><span class="name">Breakfast Tacos</span><span class="price">£11.50</span></div>
+          <p class="desc">Two fried free-range eggs, refried beans, feta, smashed avocado &amp; crispy onions with a tomato &amp; coriander salsa served on corn tortillas. Add halloumi/mushrooms/avocado +£3.8 | Add fried chicken +£4.5. GF | VGO</p>
+        </li>
+        <li data-q="french toast house brioche soaked in a vanilla custard with your choice of topping.">
+          <div class="row"><span class="name">French Toast</span></div>
+          <p class="desc">House brioche soaked in a vanilla custard with your choice of topping.</p><div class="prices"><span class="pp"><span class="pl">Mixed berries &amp; chantilly cream</span> <b>£13</b></span><span class="pp"><span class="pl">Smoked bacon and maple syrup</span> <b>£15</b></span><span class="pp"><span class="pl">Buttermilk chicken &amp; hot honey</span> <b>£17.50</b></span></div>
+        </li>
+        <li data-q="breakfast bap choose from smoked back bacon, sausage patty or veggie sausages. served in a potato roll with chilli jam, cheddar cheese &amp; fried free-range egg. gfo | vgo">
+          <div class="row"><span class="name">Breakfast Bap</span><span class="price">£11.50</span></div>
+          <p class="desc">Choose from smoked back bacon, sausage patty or veggie sausages. Served in a potato roll with chilli jam, cheddar cheese &amp; fried free-range egg. GFO | VGO</p>
+        </li>
+        <li data-q="full mercy butcher&#39;s cumberland sausage, smoked back bacon, free-range eggs, mushrooms, tomato, beans &amp; black pudding served with buttered farmhouse toast. add hash browns +£3.5. gfo">
+          <div class="row"><span class="name">Full Mercy</span><span class="price">£17.50</span></div>
+          <p class="desc">Butcher&#39;s Cumberland sausage, smoked back bacon, free-range eggs, mushrooms, tomato, beans &amp; black pudding served with buttered farmhouse toast. Add hash browns +£3.5. GFO</p>
+        </li>
+        <li data-q="full veggie veggie sausages, halloumi, free-range eggs, tomato, beans &amp; mushrooms served with buttered farmhouse toast. add hash browns +£3.5. s">
+          <div class="row"><span class="name">Full Veggie</span><span class="price">£17.50</span></div>
+          <p class="desc">Veggie sausages, halloumi, free-range eggs, tomato, beans &amp; mushrooms served with buttered farmhouse toast. Add hash browns +£3.5. S</p>
+        </li></ul>
+    </section>
+    <section id="add-ons-extras" class="sec">
+      <h2>Add-ons / Extras</h2>
+      <p class="note">All day</p>
+      <ul>
+        <li data-q="rosemary fries with aioli ">
+          <div class="row"><span class="name">Rosemary fries with aioli</span><span class="price">£6</span></div>
+          
+        </li>
+        <li data-q="hash brown with house ketchup ">
+          <div class="row"><span class="name">Hash brown with house ketchup</span><span class="price">£3.50</span></div>
+          
+        </li>
+        <li data-q="fried chicken thigh with hot honey ">
+          <div class="row"><span class="name">Fried chicken thigh with hot honey</span><span class="price">£6.80</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="mercy-benny" class="sec">
+      <h2>Mercy Benny</h2>
+      <p class="note">Served until noon</p>
+      <ul>
+        <li data-q="mushroom wild mushrooms, soft poached free-range eggs with hollandaise on a toasted muffin. v">
+          <div class="row"><span class="name">Mushroom</span><span class="price">£14</span></div>
+          <p class="desc">Wild mushrooms, soft poached free-range eggs with hollandaise on a toasted muffin. V</p>
+        </li>
+        <li data-q="benedict honeyed ham hock, soft poached free-range eggs with hollandaise on a toasted muffin.">
+          <div class="row"><span class="name">Benedict</span><span class="price">£14.50</span></div>
+          <p class="desc">Honeyed ham hock, soft poached free-range eggs with hollandaise on a toasted muffin.</p>
+        </li>
+        <li data-q="royale smoked salmon, soft poached free-range eggs with hollandaise on a toasted muffin. f">
+          <div class="row"><span class="name">Royale</span><span class="price">£15.50</span></div>
+          <p class="desc">Smoked salmon, soft poached free-range eggs with hollandaise on a toasted muffin. F</p>
+        </li></ul>
+    </section>
+    <section id="lunch" class="sec">
+      <h2>Lunch</h2>
+      <p class="note">Served from noon</p>
+      <ul>
+        <li data-q="steak &amp; eggs 6oz sirloin steak, free-range fried eggs &amp; fries served with a café de paris sauce (contains anchovy). gf | f">
+          <div class="row"><span class="name">Steak &amp; Eggs</span><span class="price">£23</span></div>
+          <p class="desc">6oz sirloin steak, free-range fried eggs &amp; fries served with a Café de Paris sauce (contains anchovy). GF | F</p>
+        </li>
+        <li data-q="courgette fritters courgette, pea &amp; feta fritters, preserved lemon yogurt, house pickles, fresh herbs &amp; rocket. add halloumi/avocado +£3.8 | add crispy serrano/smoked salmon +£4.8. v | gf">
+          <div class="row"><span class="name">Courgette Fritters</span><span class="price">£13.80</span></div>
+          <p class="desc">Courgette, pea &amp; feta fritters, preserved lemon yogurt, house pickles, fresh herbs &amp; rocket. Add halloumi/avocado +£3.8 | Add crispy serrano/smoked salmon +£4.8. V | GF</p>
+        </li>
+        <li data-q="caprese toast heritage tomatoes, basil, rocket, salsa verde &amp; house ricotta served on garlic toasted sourdough. add avocado/halloumi +£3.8 | add crispy serrano/smoked salmon +£4.8. v">
+          <div class="row"><span class="name">Caprese Toast</span><span class="price">£12.50</span></div>
+          <p class="desc">Heritage tomatoes, basil, rocket, salsa verde &amp; house ricotta served on garlic toasted sourdough. Add avocado/halloumi +£3.8 | Add crispy serrano/smoked salmon +£4.8. V</p>
+        </li>
+        <li data-q="torched mackerel cornish mackerel fillet, new potatoes, capers &amp; fennel salad with a romesco sauce. gf | n | f">
+          <div class="row"><span class="name">Torched Mackerel</span><span class="price">£18</span></div>
+          <p class="desc">Cornish mackerel fillet, new potatoes, capers &amp; fennel salad with a Romesco sauce. GF | N | F</p>
+        </li>
+        <li data-q="grain bowl avocado, tomato, chilli cucumber, charred tenderstem &amp; fresh pomegranate served on buckwheat tabbouleh. add protein - shredded chicken/crispy serrano/smoked salmon +£4.8 | add avocado/halloumi +£3.8. gf | vg | s">
+          <div class="row"><span class="name">Grain Bowl</span><span class="price">£13.50</span></div>
+          <p class="desc">Avocado, tomato, chilli cucumber, charred tenderstem &amp; fresh pomegranate served on buckwheat tabbouleh. Add protein - shredded chicken/crispy serrano/smoked salmon +£4.8 | Add avocado/halloumi +£3.8. GF | VG | S</p>
+        </li>
+        <li data-q="green goddess salad french beans, fresh peas, spring onion, pickled radish, cucumber &amp; lettuce dressed in our house green goddess dressing. add avocado/halloumi +£3.8 | add shredded chicken/crispy serrano/smoked salmon +£4.8. gf | vg">
+          <div class="row"><span class="name">Green Goddess Salad</span><span class="price">£13</span></div>
+          <p class="desc">French beans, fresh peas, spring onion, pickled radish, cucumber &amp; lettuce dressed in our house green goddess dressing. Add avocado/halloumi +£3.8 | Add shredded chicken/crispy serrano/smoked salmon +£4.8. GF | VG</p>
+        </li>
+        <li data-q="caesar salad cos lettuce, parmesan, sea salt &amp; black pepper croutons dressed in our house caesar dressing (contains anchovy). add avocado/halloumi +£3.8 | add shredded chicken/crispy serrano/smoked salmon +£4.8. f">
+          <div class="row"><span class="name">Caesar Salad</span><span class="price">£12</span></div>
+          <p class="desc">Cos lettuce, parmesan, sea salt &amp; black pepper croutons dressed in our house Caesar dressing (contains anchovy). Add avocado/halloumi +£3.8 | Add shredded chicken/crispy serrano/smoked salmon +£4.8. F</p>
+        </li>
+        <li data-q="smash burger two 3oz beef patties, bacon jam, tomato, lettuce, cheddar, pickled cucumber &amp; house ketchup served in a potato roll with fries &amp; coleslaw. gfo">
+          <div class="row"><span class="name">Smash Burger</span><span class="price">£17.50</span></div>
+          <p class="desc">Two 3oz beef patties, bacon jam, tomato, lettuce, cheddar, pickled cucumber &amp; house ketchup served in a potato roll with fries &amp; coleslaw. GFO</p>
+        </li>
+        <li data-q="chicken burger fried buttermilk chicken thigh, smashed avocado, pico de gallo &amp; lettuce served in a potato roll with fries &amp; coleslaw. gfo">
+          <div class="row"><span class="name">Chicken Burger</span><span class="price">£16.50</span></div>
+          <p class="desc">Fried buttermilk chicken thigh, smashed avocado, pico de gallo &amp; lettuce served in a potato roll with fries &amp; coleslaw. GFO</p>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>Open seven days a week. Our menu is served from 9am - 4pm. Optional 12.5% service charge added to the bill; this applies to dine-in only, 100% goes to the team. Please make staff aware of any allergies or dietary needs you may have. GF - Gluten Free | DFO - Dairy free option | VG - Vegan | VGO - Vegan option | GFO - Gluten free option | SE - Sesame | E - Egg | F - Fish</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Mercy Mercy Mercy.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Mercy Mercy Mercy menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's US$29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for US$29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Press Cafe Menu</title>
+<meta name="description" content="Menu for Press Cafe, Clearfork (Edwards Ranch Rd, Trailhead on the Clearfork River).">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Press Cafe</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=4801%20Edwards%20Ranch%20Road%20%23105%2C%20Fort%20Worth%2C%20TX%2076109">4801 Edwards Ranch Road #105, Fort Worth, TX 76109</a><a href="tel:8175706002">817-570-6002</a><span>Sunday-Tuesday 7am - 9pm; Wednesday-Saturday 7am - 10pm. Brunch: Saturday &amp; Sunday 7am - 2pm. Happy Hour: Monday-Thursday 3pm - 6pm</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#starters" data-sec="starters">Starters</a><a href="#salads" data-sec="salads">Salads</a><a href="#sandwiches" data-sec="sandwiches">Sandwiches</a><a href="#cafe-specialties" data-sec="cafe-specialties">Cafe Specialties</a><a href="#extras" data-sec="extras">Extras</a><a href="#sweets" data-sec="sweets">Sweets</a><a href="#brunch-entr-es" data-sec="brunch-entr-es">Brunch Entrées</a><a href="#brunch-this-and-that" data-sec="brunch-this-and-that">Brunch - This and That</a><a href="#brunch-hydration" data-sec="brunch-hydration">Brunch - Hydration</a><a href="#breakfast-entr-es" data-sec="breakfast-entr-es">Breakfast Entrées</a><a href="#breakfast-burritos" data-sec="breakfast-burritos">Breakfast Burritos</a><a href="#breakfast-this-and-that" data-sec="breakfast-this-and-that">Breakfast - This and That</a><a href="#coffee-bar-specialty-coffee" data-sec="coffee-bar-specialty-coffee">Coffee Bar - Specialty Coffee</a><a href="#coffee-bar-coffee-cocktails" data-sec="coffee-bar-coffee-cocktails">Coffee Bar - Coffee Cocktails</a><a href="#coffee-bar-mocktails" data-sec="coffee-bar-mocktails">Coffee Bar - Mocktails</a><a href="#coffee-bar-classic-selections" data-sec="coffee-bar-classic-selections">Coffee Bar - Classic Selections</a><a href="#coffee-bar-quick-bites" data-sec="coffee-bar-quick-bites">Coffee Bar - Quick Bites</a><a href="#happy-hour" data-sec="happy-hour">Happy Hour</a><a href="#children-s-menu" data-sec="children-s-menu">Children&#39;s Menu</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="starters" class="sec">
+      <h2>Starters</h2>
+      
+      <ul>
+        <li data-q="house ricotta w/ toasted ciabatta ">
+          <div class="row"><span class="name">house ricotta w/ toasted ciabatta</span><span class="price">$14</span></div>
+          
+        </li>
+        <li data-q="broiled shishito peppers ">
+          <div class="row"><span class="name">broiled shishito peppers</span><span class="price">$15</span></div>
+          
+        </li>
+        <li data-q="avocado toast ">
+          <div class="row"><span class="name">avocado toast</span><span class="price">$16</span></div>
+          
+        </li>
+        <li data-q="baked goat cheese ">
+          <div class="row"><span class="name">baked goat cheese</span><span class="price">$16</span></div>
+          
+        </li>
+        <li data-q="caramelized brussels sprouts ">
+          <div class="row"><span class="name">caramelized brussels sprouts</span><span class="price">$16</span></div>
+          
+        </li>
+        <li data-q="house-made mac n&#39; cheese ">
+          <div class="row"><span class="name">house-made mac n&#39; cheese</span><span class="price">$16</span></div>
+          
+        </li>
+        <li data-q="parmesan truffle fries ">
+          <div class="row"><span class="name">parmesan truffle fries</span><span class="price">$16</span></div>
+          
+        </li>
+        <li data-q="famous medi dip* ">
+          <div class="row"><span class="name">famous medi dip*</span><span class="price">$17</span></div>
+          
+        </li>
+        <li data-q="charcuterie &amp; cheese board ">
+          <div class="row"><span class="name">charcuterie &amp; cheese board</span><span class="price">$22</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="salads" class="sec">
+      <h2>Salads</h2>
+      
+      <ul>
+        <li data-q="farmer&#39;s salad kale, peruvian quinoa, manchego cheese, pistachios, grapes, lemon vinaigrette">
+          <div class="row"><span class="name">farmer&#39;s salad</span><span class="price">$14</span></div>
+          <p class="desc">kale, peruvian quinoa, manchego cheese, pistachios, grapes, lemon vinaigrette</p>
+        </li>
+        <li data-q="trailhead chicken salad wild greens, avocado, tortilla strips, dates, bacon, blue cheese, pistachio dressing">
+          <div class="row"><span class="name">trailhead chicken salad</span><span class="price">$20</span></div>
+          <p class="desc">wild greens, avocado, tortilla strips, dates, bacon, blue cheese, pistachio dressing</p>
+        </li>
+        <li data-q="deconstructed tuna salad* bibb lettuce, whipped tuna, fresh fruit, tomato, port salut cheese">
+          <div class="row"><span class="name">deconstructed tuna salad*</span><span class="price">$22</span></div>
+          <p class="desc">bibb lettuce, whipped tuna, fresh fruit, tomato, Port Salut cheese</p>
+        </li>
+        <li data-q="steak salad* wild greens, tomatoes, haricot verts, beets, huntsman cheese">
+          <div class="row"><span class="name">steak salad*</span><span class="price">$26</span></div>
+          <p class="desc">wild greens, tomatoes, haricot verts, beets, Huntsman cheese</p>
+        </li>
+        <li data-q="salmon caesar salad* emerald kale, parmesan, house-made dressing, red beet coulis">
+          <div class="row"><span class="name">salmon caesar salad*</span><span class="price">$29</span></div>
+          <p class="desc">emerald kale, parmesan, house-made dressing, red beet coulis</p>
+        </li>
+        <li data-q="crab cake salad arugula, kale, tomatoes, corn, avocado, red onion, lemon dressing">
+          <div class="row"><span class="name">crab cake salad</span><span class="price">$35</span></div>
+          <p class="desc">arugula, kale, tomatoes, corn, avocado, red onion, lemon dressing</p>
+        </li></ul>
+    </section>
+    <section id="sandwiches" class="sec">
+      <h2>Sandwiches</h2>
+      <p class="note">all sandwiches served with house-made chips</p>
+      <ul>
+        <li data-q="chicken burger ground in house, fontina, arugula, tomatoes, special sauce">
+          <div class="row"><span class="name">chicken burger</span><span class="price">$19</span></div>
+          <p class="desc">ground in house, fontina, arugula, tomatoes, special sauce</p>
+        </li>
+        <li data-q="veggie burger house-made recipe with farro, roasted peppers, dates, garbanzo beans, cheddar">
+          <div class="row"><span class="name">veggie burger</span><span class="price">$19</span></div>
+          <p class="desc">house-made recipe with farro, roasted peppers, dates, garbanzo beans, cheddar</p>
+        </li>
+        <li data-q="grilled cheese &amp; tomato soup sourdough, artisan cheese, cup of classic tomato soup">
+          <div class="row"><span class="name">grilled cheese &amp; tomato soup</span><span class="price">$19</span></div>
+          <p class="desc">sourdough, artisan cheese, cup of classic tomato soup</p>
+        </li>
+        <li data-q="crispy chicken sandwich lightly fried chicken, house-made slaw, tomatoes, fontina cheese">
+          <div class="row"><span class="name">crispy chicken sandwich</span><span class="price">$19</span></div>
+          <p class="desc">lightly fried chicken, house-made slaw, tomatoes, fontina cheese</p>
+        </li>
+        <li data-q="classy burger* ground in house, served all the way, cheddar, special sauce">
+          <div class="row"><span class="name">classy burger*</span><span class="price">$20</span></div>
+          <p class="desc">ground in house, served all the way, cheddar, special sauce</p>
+        </li>
+        <li data-q="café burger* ground in house, arugula, caramelized onions, huntsman cheese, pickles">
+          <div class="row"><span class="name">café burger*</span><span class="price">$21</span></div>
+          <p class="desc">ground in house, arugula, caramelized onions, Huntsman cheese, pickles</p>
+        </li>
+        <li data-q="today&#39;s fish sandwich broiled white fish, arugula, tomatoes, pickles, aioli">
+          <div class="row"><span class="name">today&#39;s fish sandwich</span><span class="price">$22</span></div>
+          <p class="desc">broiled white fish, arugula, tomatoes, pickles, aioli</p>
+        </li>
+        <li data-q="wagyu smash burger* single or double patty, special sauce, pickles, grilled onion, american cheese">
+          <div class="row"><span class="name">wagyu smash burger*</span></div>
+          <p class="desc">single or double patty, special sauce, pickles, grilled onion, American cheese</p><div class="prices"><span class="pp"><span class="pl">Single</span> <b>$16</b></span><span class="pp"><span class="pl">Double</span> <b>$21</b></span></div>
+        </li></ul>
+    </section>
+    <section id="cafe-specialties" class="sec">
+      <h2>Cafe Specialties</h2>
+      
+      <ul>
+        <li data-q="ancient grain rice bowl sautéed fresh vegetables, farro, quinoa, bamboo rice, avocado, serrano peppers, soy glaze. add chicken $7, steak $9, or shrimp $11">
+          <div class="row"><span class="name">ancient grain rice bowl</span><span class="price">$20</span></div>
+          <p class="desc">sautéed fresh vegetables, farro, quinoa, bamboo rice, avocado, serrano peppers, soy glaze. Add chicken $7, steak $9, or shrimp $11</p>
+        </li>
+        <li data-q="pan seared chicken spinach, white beans, fennel, white wine sauce">
+          <div class="row"><span class="name">pan seared chicken</span><span class="price">$26</span></div>
+          <p class="desc">spinach, white beans, fennel, white wine sauce</p>
+        </li>
+        <li data-q="spicy rigatoni house-made vodka sauce, pecorino, crisp prosciutto, fresh kale">
+          <div class="row"><span class="name">spicy rigatoni</span><span class="price">$26</span></div>
+          <p class="desc">house-made vodka sauce, pecorino, crisp prosciutto, fresh kale</p>
+        </li>
+        <li data-q="chicken parmesan lightly fried chicken breast, mozzarella, spaghetti, house-made tomato ragu">
+          <div class="row"><span class="name">chicken parmesan</span><span class="price">$27</span></div>
+          <p class="desc">lightly fried chicken breast, mozzarella, spaghetti, house-made tomato ragu</p>
+        </li>
+        <li data-q="shrimp kabobs* blackened jumbo shrimp, served on a bed of couscous">
+          <div class="row"><span class="name">shrimp kabobs*</span><span class="price">$27</span></div>
+          <p class="desc">blackened jumbo shrimp, served on a bed of couscous</p>
+        </li>
+        <li data-q="beurre blanc salmon* pan seared and served with mashed potatoes and spinach">
+          <div class="row"><span class="name">beurre blanc salmon*</span><span class="price">$33</span></div>
+          <p class="desc">pan seared and served with mashed potatoes and spinach</p>
+        </li>
+        <li data-q="filet mignon broiled center cut filet, pommes purée, broccolini, herb butter">
+          <div class="row"><span class="name">filet mignon</span><span class="price">Market price</span></div>
+          <p class="desc">broiled center cut filet, pommes purée, broccolini, herb butter</p>
+        </li>
+        <li data-q="pasta of the day chef preparations change daily">
+          <div class="row"><span class="name">pasta of the day</span><span class="price">Market price</span></div>
+          <p class="desc">chef preparations change daily</p>
+        </li></ul>
+    </section>
+    <section id="extras" class="sec">
+      <h2>Extras</h2>
+      <p class="note">$7 each</p>
+      <ul>
+        <li data-q="haricot verts ">
+          <div class="row"><span class="name">haricot verts</span><span class="price">$7</span></div>
+          
+        </li>
+        <li data-q="sautéed broccolini ">
+          <div class="row"><span class="name">sautéed broccolini</span><span class="price">$7</span></div>
+          
+        </li>
+        <li data-q="pomme purée ">
+          <div class="row"><span class="name">pomme purée</span><span class="price">$7</span></div>
+          
+        </li>
+        <li data-q="fruit bowl ">
+          <div class="row"><span class="name">fruit bowl</span><span class="price">$7</span></div>
+          
+        </li>
+        <li data-q="veggie of the day ">
+          <div class="row"><span class="name">veggie of the day</span><span class="price">$7</span></div>
+          
+        </li>
+        <li data-q="couscous ">
+          <div class="row"><span class="name">couscous</span><span class="price">$7</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="sweets" class="sec">
+      <h2>Sweets</h2>
+      <p class="note">$12 each</p>
+      <ul>
+        <li data-q="chocolate nemesis ">
+          <div class="row"><span class="name">chocolate nemesis</span><span class="price">$12</span></div>
+          
+        </li>
+        <li data-q="penny&#39;s cake ">
+          <div class="row"><span class="name">penny&#39;s cake</span><span class="price">$12</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="brunch-entr-es" class="sec">
+      <h2>Brunch Entrées</h2>
+      <p class="note">Brunch: Saturday &amp; Sunday 7am - 2pm</p>
+      <ul>
+        <li data-q="avocado toast thick-cut ciabatta, house-made ricotta, arugula, radish, tomato">
+          <div class="row"><span class="name">avocado toast</span><span class="price">$16</span></div>
+          <p class="desc">thick-cut ciabatta, house-made ricotta, arugula, radish, tomato</p>
+        </li>
+        <li data-q="rise &amp; shine waffle waffle topped with crispy bacon, sunny side egg, fontina, shaved ham, maple syrup">
+          <div class="row"><span class="name">rise &amp; shine waffle</span><span class="price">$16</span></div>
+          <p class="desc">waffle topped with crispy bacon, sunny side egg, fontina, shaved ham, maple syrup</p>
+        </li>
+        <li data-q="medi dip* house-made hummus and muhummara, toasted naan, fresh crudités">
+          <div class="row"><span class="name">medi dip*</span><span class="price">$17</span></div>
+          <p class="desc">house-made hummus and muhummara, toasted naan, fresh crudités</p>
+        </li>
+        <li data-q="breakfast sandwich shaved cure 81 ham, over-easy egg, cheddar, arugula, tomato, dash of mayo, served with breakfast potatoes">
+          <div class="row"><span class="name">breakfast sandwich</span><span class="price">$18</span></div>
+          <p class="desc">shaved cure 81 ham, over-easy egg, cheddar, arugula, tomato, dash of mayo, served with breakfast potatoes</p>
+        </li>
+        <li data-q="day break omelette all natural turkey, cheddar, spinach, avocado salsa, served with fresh fruit">
+          <div class="row"><span class="name">day break omelette</span><span class="price">$18</span></div>
+          <p class="desc">all natural turkey, cheddar, spinach, avocado salsa, served with fresh fruit</p>
+        </li>
+        <li data-q="egg in a hole* prosciutto, cheddar, fontina, over easy egg, sourdough, served with breakfast potatoes">
+          <div class="row"><span class="name">egg in a hole*</span><span class="price">$18</span></div>
+          <p class="desc">prosciutto, cheddar, fontina, over easy egg, sourdough, served with breakfast potatoes</p>
+        </li>
+        <li data-q="stuffed french toast brioche, whipped mascarpone, macerated strawberries, vanilla crème">
+          <div class="row"><span class="name">stuffed french toast</span><span class="price">$18</span></div>
+          <p class="desc">brioche, whipped mascarpone, macerated strawberries, vanilla crème</p>
+        </li>
+        <li data-q="trailhead breakfast scrambled eggs, crispy bacon, fresh fruit, ciabatta">
+          <div class="row"><span class="name">trailhead breakfast</span><span class="price">$18</span></div>
+          <p class="desc">scrambled eggs, crispy bacon, fresh fruit, ciabatta</p>
+        </li>
+        <li data-q="chicken &amp; waffles waffle topped with crispy chicken and maple syrup">
+          <div class="row"><span class="name">chicken &amp; waffles</span><span class="price">$19</span></div>
+          <p class="desc">waffle topped with crispy chicken and maple syrup</p>
+        </li>
+        <li data-q="veggie burger house-made recipe with farro, roasted peppers, dates, garbanzo beans, cheddar">
+          <div class="row"><span class="name">veggie burger</span><span class="price">$19</span></div>
+          <p class="desc">house-made recipe with farro, roasted peppers, dates, garbanzo beans, cheddar</p>
+        </li>
+        <li data-q="classy burger* ground in house, served all the way, cheddar, special sauce">
+          <div class="row"><span class="name">classy burger*</span><span class="price">$20</span></div>
+          <p class="desc">ground in house, served all the way, cheddar, special sauce</p>
+        </li>
+        <li data-q="café burger* ground in house, arugula, caramelized onions, huntsman cheese, pickles">
+          <div class="row"><span class="name">café burger*</span><span class="price">$21</span></div>
+          <p class="desc">ground in house, arugula, caramelized onions, Huntsman cheese, pickles</p>
+        </li>
+        <li data-q="wagyu burger* double patty, special sauce, pickles, shaved onion, american cheese">
+          <div class="row"><span class="name">wagyu burger*</span><span class="price">$22</span></div>
+          <p class="desc">double patty, special sauce, pickles, shaved onion, American cheese</p>
+        </li>
+        <li data-q="trailhead chicken salad organic rotisserie chicken, avocado, wild greens, pistachios, bacon, blue cheese">
+          <div class="row"><span class="name">trailhead chicken salad</span><span class="price">$20</span></div>
+          <p class="desc">organic rotisserie chicken, avocado, wild greens, pistachios, bacon, blue cheese</p>
+        </li>
+        <li data-q="deconstructed tuna salad* bibb lettuce, whipped tuna, fresh fruit, tomato, port salut cheese">
+          <div class="row"><span class="name">deconstructed tuna salad*</span><span class="price">$22</span></div>
+          <p class="desc">bibb lettuce, whipped tuna, fresh fruit, tomato, Port Salut cheese</p>
+        </li>
+        <li data-q="quiche of the day chef preparations change daily, served with kale farmers salad. limited availability">
+          <div class="row"><span class="name">quiche of the day</span><span class="price">$22</span></div>
+          <p class="desc">chef preparations change daily, served with kale farmers salad. Limited availability</p>
+        </li>
+        <li data-q="steak salad* wild greens, tomatoes, haricot verts, beets, huntsman cheese">
+          <div class="row"><span class="name">steak salad*</span><span class="price">$26</span></div>
+          <p class="desc">wild greens, tomatoes, haricot verts, beets, Huntsman cheese</p>
+        </li>
+        <li data-q="salmon caesar salad* emerald kale, parmesan, house-made dressing, red beet coulis">
+          <div class="row"><span class="name">salmon caesar salad*</span><span class="price">$29</span></div>
+          <p class="desc">emerald kale, parmesan, house-made dressing, red beet coulis</p>
+        </li>
+        <li data-q="crab cake salad arugula, kale, tomatoes, corn, avocado, red onion, lemon dressing">
+          <div class="row"><span class="name">crab cake salad</span><span class="price">$35</span></div>
+          <p class="desc">arugula, kale, tomatoes, corn, avocado, red onion, lemon dressing</p>
+        </li>
+        <li data-q="filet mignon broiled center cut filet, pommes purée, broccolini, herb butter">
+          <div class="row"><span class="name">filet mignon</span><span class="price">Market price</span></div>
+          <p class="desc">broiled center cut filet, pommes purée, broccolini, herb butter</p>
+        </li></ul>
+    </section>
+    <section id="brunch-this-and-that" class="sec">
+      <h2>Brunch - This and That</h2>
+      
+      <ul>
+        <li data-q="toasted ciabatta ">
+          <div class="row"><span class="name">toasted ciabatta</span><span class="price">$4</span></div>
+          
+        </li>
+        <li data-q="breakfast potatoes ">
+          <div class="row"><span class="name">breakfast potatoes</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="broiled shishito peppers ">
+          <div class="row"><span class="name">broiled shishito peppers</span><span class="price">$14</span></div>
+          
+        </li>
+        <li data-q="house ricotta w/ toasted ciabatta ">
+          <div class="row"><span class="name">house ricotta w/ toasted ciabatta</span><span class="price">$13</span></div>
+          
+        </li>
+        <li data-q="crispy bacon ">
+          <div class="row"><span class="name">crispy bacon</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="fruit bowl ">
+          <div class="row"><span class="name">fruit bowl</span><span class="price">$6</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="brunch-hydration" class="sec">
+      <h2>Brunch - Hydration</h2>
+      
+      <ul>
+        <li data-q="espresso (double shot) ">
+          <div class="row"><span class="name">espresso (double shot)</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="cappuccino ">
+          <div class="row"><span class="name">cappuccino</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="iced coffee ">
+          <div class="row"><span class="name">iced coffee</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="latté ">
+          <div class="row"><span class="name">latté</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="coffee ">
+          <div class="row"><span class="name">coffee</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="pressed coffee pot ">
+          <div class="row"><span class="name">pressed coffee pot</span><span class="price">$7</span></div>
+          
+        </li>
+        <li data-q="grapefruit juice ">
+          <div class="row"><span class="name">grapefruit juice</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="apple juice ">
+          <div class="row"><span class="name">apple juice</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="orange juice ">
+          <div class="row"><span class="name">orange juice</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="bloody mary ">
+          <div class="row"><span class="name">bloody mary</span><span class="price">$11</span></div>
+          
+        </li>
+        <li data-q="mimosa ">
+          <div class="row"><span class="name">mimosa</span><span class="price">$11</span></div>
+          
+        </li>
+        <li data-q="michelada ">
+          <div class="row"><span class="name">michelada</span><span class="price">$8</span></div>
+          
+        </li>
+        <li data-q="kombucha ">
+          <div class="row"><span class="name">kombucha</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="hot tea ask for flavors">
+          <div class="row"><span class="name">hot tea</span><span class="price">$5</span></div>
+          <p class="desc">ask for flavors</p>
+        </li></ul>
+    </section>
+    <section id="breakfast-entr-es" class="sec">
+      <h2>Breakfast Entrées</h2>
+      
+      <ul>
+        <li data-q="granola &amp; yogurt house-made granola, greek yogurt, fresh fruit">
+          <div class="row"><span class="name">granola &amp; yogurt</span><span class="price">$13</span></div>
+          <p class="desc">house-made granola, greek yogurt, fresh fruit</p>
+        </li>
+        <li data-q="avocado toast thick-cut ciabatta, house-made ricotta, arugula, radish, tomato">
+          <div class="row"><span class="name">avocado toast</span><span class="price">$16</span></div>
+          <p class="desc">thick-cut ciabatta, house-made ricotta, arugula, radish, tomato</p>
+        </li>
+        <li data-q="rise &amp; shine waffle waffle topped with crispy bacon, sunny side egg, fontina, shaved ham, maple syrup">
+          <div class="row"><span class="name">rise &amp; shine waffle</span><span class="price">$16</span></div>
+          <p class="desc">waffle topped with crispy bacon, sunny side egg, fontina, shaved ham, maple syrup</p>
+        </li>
+        <li data-q="breakfast sandwich shaved cure 81 ham, over-easy egg, cheddar, arugula, tomato, dash of mayo, served with breakfast potatoes">
+          <div class="row"><span class="name">breakfast sandwich</span><span class="price">$18</span></div>
+          <p class="desc">shaved cure 81 ham, over-easy egg, cheddar, arugula, tomato, dash of mayo, served with breakfast potatoes</p>
+        </li>
+        <li data-q="day break omelette all natural turkey, cheddar, spinach, avocado salsa, served with fresh fruit">
+          <div class="row"><span class="name">day break omelette</span><span class="price">$18</span></div>
+          <p class="desc">all natural turkey, cheddar, spinach, avocado salsa, served with fresh fruit</p>
+        </li>
+        <li data-q="egg in a hole* prosciutto, jack, cheddar, fontina, farm house egg, sourdough, served with breakfast potatoes">
+          <div class="row"><span class="name">egg in a hole*</span><span class="price">$18</span></div>
+          <p class="desc">prosciutto, jack, cheddar, fontina, farm house egg, sourdough, served with breakfast potatoes</p>
+        </li>
+        <li data-q="stuffed french toast brioche, whipped mascarpone, macerated strawberries, vanilla crème">
+          <div class="row"><span class="name">stuffed french toast</span><span class="price">$18</span></div>
+          <p class="desc">brioche, whipped mascarpone, macerated strawberries, vanilla crème</p>
+        </li>
+        <li data-q="trailhead breakfast scrambled eggs, crispy bacon, fresh fruit, ciabatta">
+          <div class="row"><span class="name">trailhead breakfast</span><span class="price">$18</span></div>
+          <p class="desc">scrambled eggs, crispy bacon, fresh fruit, ciabatta</p>
+        </li>
+        <li data-q="trailhead chicken salad organic rotisserie chicken, avocado, wild greens, pistachios, bacon, blue cheese">
+          <div class="row"><span class="name">trailhead chicken salad</span><span class="price">$21</span></div>
+          <p class="desc">organic rotisserie chicken, avocado, wild greens, pistachios, bacon, blue cheese</p>
+        </li>
+        <li data-q="quiche of the day chef preparations change daily, served with kale farmer&#39;s salad. limited availability">
+          <div class="row"><span class="name">quiche of the day</span><span class="price">$22</span></div>
+          <p class="desc">chef preparations change daily, served with kale farmer&#39;s salad. Limited availability</p>
+        </li>
+        <li data-q="steak salad* wild greens, tomatoes, haricot verts, beets, huntsman cheese">
+          <div class="row"><span class="name">steak salad*</span><span class="price">$26</span></div>
+          <p class="desc">wild greens, tomatoes, haricot verts, beets, Huntsman cheese</p>
+        </li>
+        <li data-q="filet benedict english muffin, broiled filet, spinach, tomato, hollandaise">
+          <div class="row"><span class="name">filet benedict</span><span class="price">$27</span></div>
+          <p class="desc">english muffin, broiled filet, spinach, tomato, hollandaise</p>
+        </li></ul>
+    </section>
+    <section id="breakfast-burritos" class="sec">
+      <h2>Breakfast Burritos</h2>
+      
+      <ul>
+        <li data-q="the general scrambled eggs, butternut squash, spinach, cheddar">
+          <div class="row"><span class="name">the general</span><span class="price">$12</span></div>
+          <p class="desc">scrambled eggs, butternut squash, spinach, cheddar</p>
+        </li>
+        <li data-q="el cosmico scrambled eggs, chorizo, potatoes, poblano, cheddar">
+          <div class="row"><span class="name">el cosmico</span><span class="price">$12</span></div>
+          <p class="desc">scrambled eggs, chorizo, potatoes, poblano, cheddar</p>
+        </li>
+        <li data-q="the roadrunner scrambled egg whites, roasted chicken, avocado, cheddar">
+          <div class="row"><span class="name">the roadrunner</span><span class="price">$12</span></div>
+          <p class="desc">scrambled egg whites, roasted chicken, avocado, cheddar</p>
+        </li>
+        <li data-q="el capitan scrambled eggs, tenderloin, potatoes, poblano, cheddar">
+          <div class="row"><span class="name">el capitan</span><span class="price">$12</span></div>
+          <p class="desc">scrambled eggs, tenderloin, potatoes, poblano, cheddar</p>
+        </li>
+        <li data-q="el cubico scrambled eggs, country ham, quinoa, cheddar, spinach, butternut squash, avocado">
+          <div class="row"><span class="name">el cubico</span><span class="price">$16</span></div>
+          <p class="desc">scrambled eggs, country ham, quinoa, cheddar, spinach, butternut squash, avocado</p>
+        </li></ul>
+    </section>
+    <section id="breakfast-this-and-that" class="sec">
+      <h2>Breakfast - This and That</h2>
+      
+      <ul>
+        <li data-q="toasted ciabatta ">
+          <div class="row"><span class="name">toasted ciabatta</span><span class="price">$4</span></div>
+          
+        </li>
+        <li data-q="breakfast potatoes ">
+          <div class="row"><span class="name">breakfast potatoes</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="house ricotta w/ toasted ciabatta ">
+          <div class="row"><span class="name">house ricotta w/ toasted ciabatta</span><span class="price">$13</span></div>
+          
+        </li>
+        <li data-q="crispy bacon ">
+          <div class="row"><span class="name">crispy bacon</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="fruit bowl ">
+          <div class="row"><span class="name">fruit bowl</span><span class="price">$6</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="coffee-bar-specialty-coffee" class="sec">
+      <h2>Coffee Bar - Specialty Coffee</h2>
+      <p class="note">Proudly serving Cafes Richard coffee with house-made flavored syrups. Extra shot $2.50</p>
+      <ul>
+        <li data-q="shaken brown sugar cinnamon ">
+          <div class="row"><span class="name">shaken brown sugar cinnamon</span><span class="price">$6.25</span></div>
+          
+        </li>
+        <li data-q="salted caramel mocha ">
+          <div class="row"><span class="name">salted caramel mocha</span><span class="price">$6.25</span></div>
+          
+        </li>
+        <li data-q="honey bee breve ">
+          <div class="row"><span class="name">honey bee breve</span><span class="price">$6.25</span></div>
+          
+        </li>
+        <li data-q="toasted coconut mocha ">
+          <div class="row"><span class="name">toasted coconut mocha</span><span class="price">$6.25</span></div>
+          
+        </li>
+        <li data-q="dirty lavender chai ">
+          <div class="row"><span class="name">dirty lavender chai</span><span class="price">$6.25</span></div>
+          
+        </li>
+        <li data-q="strawberry matcha ">
+          <div class="row"><span class="name">strawberry matcha</span><span class="price">$6.25</span></div>
+          
+        </li>
+        <li data-q="coconut horchata chai ">
+          <div class="row"><span class="name">coconut horchata chai</span><span class="price">$6.25</span></div>
+          
+        </li>
+        <li data-q="affogato ">
+          <div class="row"><span class="name">affogato</span><span class="price">$7.50</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="coffee-bar-coffee-cocktails" class="sec">
+      <h2>Coffee Bar - Coffee Cocktails</h2>
+      
+      <ul>
+        <li data-q="espresso martini ">
+          <div class="row"><span class="name">espresso martini</span><span class="price">$16</span></div>
+          
+        </li>
+        <li data-q="irish coffee ">
+          <div class="row"><span class="name">irish coffee</span><span class="price">$15</span></div>
+          
+        </li>
+        <li data-q="top o&#39; the morning ">
+          <div class="row"><span class="name">top o&#39; the morning</span><span class="price">$15</span></div>
+          
+        </li>
+        <li data-q="carajillo ">
+          <div class="row"><span class="name">carajillo</span><span class="price">$15</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="coffee-bar-mocktails" class="sec">
+      <h2>Coffee Bar - Mocktails</h2>
+      
+      <ul>
+        <li data-q="dreamsicle ">
+          <div class="row"><span class="name">dreamsicle</span><span class="price">$8</span></div>
+          
+        </li>
+        <li data-q="tropical lemonade ">
+          <div class="row"><span class="name">tropical lemonade</span><span class="price">$8</span></div>
+          
+        </li>
+        <li data-q="summer haze ">
+          <div class="row"><span class="name">summer haze</span><span class="price">$8</span></div>
+          
+        </li>
+        <li data-q="piña colada ">
+          <div class="row"><span class="name">piña colada</span><span class="price">$8</span></div>
+          
+        </li>
+        <li data-q="strawberry hibiscus spritz ">
+          <div class="row"><span class="name">strawberry hibiscus spritz</span><span class="price">$8</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="coffee-bar-classic-selections" class="sec">
+      <h2>Coffee Bar - Classic Selections</h2>
+      <p class="note">Flavor options $0.75: vanilla, strawberry, lavender honey, salted caramel, coconut, mocha. Milk options $1: whole, breve, oat, almond, soy, coconut. Whipped cream $0.50</p>
+      <ul>
+        <li data-q="latté ">
+          <div class="row"><span class="name">latté</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="cappuccino ">
+          <div class="row"><span class="name">cappuccino</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="cortado ">
+          <div class="row"><span class="name">cortado</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="americano ">
+          <div class="row"><span class="name">americano</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="espresso ">
+          <div class="row"><span class="name">espresso</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="drip ">
+          <div class="row"><span class="name">drip</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="press pot ">
+          <div class="row"><span class="name">press pot</span><span class="price">$7</span></div>
+          
+        </li>
+        <li data-q="cold brew ">
+          <div class="row"><span class="name">cold brew</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="hot chocolate ">
+          <div class="row"><span class="name">hot chocolate</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="hot tea ask for flavors">
+          <div class="row"><span class="name">hot tea</span><span class="price">$5</span></div>
+          <p class="desc">ask for flavors</p>
+        </li>
+        <li data-q="london fog ">
+          <div class="row"><span class="name">london fog</span><span class="price">$5.50</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="coffee-bar-quick-bites" class="sec">
+      <h2>Coffee Bar - Quick Bites</h2>
+      
+      <ul>
+        <li data-q="blueberry muffin ">
+          <div class="row"><span class="name">blueberry muffin</span><span class="price">$4</span></div>
+          
+        </li>
+        <li data-q="banana loaf ">
+          <div class="row"><span class="name">banana loaf</span><span class="price">$4</span></div>
+          
+        </li>
+        <li data-q="croissant ">
+          <div class="row"><span class="name">croissant</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="ham &amp; cheese croissant ">
+          <div class="row"><span class="name">ham &amp; cheese croissant</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="pain au chocolat ">
+          <div class="row"><span class="name">pain au chocolat</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="cinnamon roll ">
+          <div class="row"><span class="name">cinnamon roll</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="pastry trio select any 3">
+          <div class="row"><span class="name">pastry trio</span><span class="price">$11</span></div>
+          <p class="desc">select any 3</p>
+        </li></ul>
+    </section>
+    <section id="happy-hour" class="sec">
+      <h2>Happy Hour</h2>
+      <p class="note">Monday - Thursday 3pm - 6pm. 25% off wine. Half off appetizers: medi dip*, avocado toast, brussels sprouts, house ricotta w/ toasted ciabatta, broiled shishito peppers, parmesan truffle fries</p>
+      <ul>
+        <li data-q="specialty cocktails ">
+          <div class="row"><span class="name">specialty cocktails</span><span class="price">$7.50</span></div>
+          
+        </li>
+        <li data-q="house mixed drinks ">
+          <div class="row"><span class="name">house mixed drinks</span><span class="price">$5.50</span></div>
+          
+        </li>
+        <li data-q="domestic beer ">
+          <div class="row"><span class="name">domestic beer</span><span class="price">$4</span></div>
+          
+        </li>
+        <li data-q="cheese board ">
+          <div class="row"><span class="name">cheese board</span><span class="price">$12.50</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="children-s-menu" class="sec">
+      <h2>Children&#39;s Menu</h2>
+      <p class="note">all items include choice of soda, milk, or lemonade, potato chips, and scoop of local ice cream or fruit</p>
+      <ul>
+        <li data-q="cheeseburger ">
+          <div class="row"><span class="name">cheeseburger</span><span class="price">$13</span></div>
+          
+        </li>
+        <li data-q="butter noodles ">
+          <div class="row"><span class="name">butter noodles</span><span class="price">$13</span></div>
+          
+        </li>
+        <li data-q="grilled cheese ">
+          <div class="row"><span class="name">grilled cheese</span><span class="price">$13</span></div>
+          
+        </li>
+        <li data-q="crispy chicken tenders ">
+          <div class="row"><span class="name">crispy chicken tenders</span><span class="price">$13</span></div>
+          
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>*Consuming raw or undercooked, meat, seafood, or eggs may increase your risk of a foodborne illness. If you have any allergies, please alert us as not all ingredients are listed.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Press Cafe.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Press Cafe menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

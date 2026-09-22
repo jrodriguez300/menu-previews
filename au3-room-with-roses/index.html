@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Room with Roses Menu</title>
+<meta name="description" content="Menu for Room with Roses, Brisbane CBD (Brisbane Arcade, Queen Street Mall), Brisbane.">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Room with Roses</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=Gallery%20Level%2C%20Brisbane%20Arcade%2C%20entrance%20via%20160%20Queen%20Street%20or%20111-117%20Adelaide%20Street%2C%20Queen%20Street%20Mall%2C%20Brisbane%20QLD%204000">Gallery Level, Brisbane Arcade, entrance via 160 Queen Street or 111-117 Adelaide Street, Queen Street Mall, Brisbane QLD 4000</a><a href="tel:0732297050">07 3229 7050</a><span>Monday to Saturday: 9.30am – 2.30pm</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#high-tea" data-sec="high-tea">High Tea</a><a href="#breakfast" data-sec="breakfast">Breakfast</a><a href="#breakfast-sides" data-sec="breakfast-sides">Breakfast Sides +</a><a href="#sandwiches" data-sec="sandwiches">Sandwiches</a><a href="#sandwich-sides" data-sec="sandwich-sides">Sandwich Sides +</a><a href="#lunch-to-start" data-sec="lunch-to-start">Lunch – To Start</a><a href="#lunch-light-meals" data-sec="lunch-light-meals">Lunch – Light Meals</a><a href="#lunch-more-substantial-meals" data-sec="lunch-more-substantial-meals">Lunch – More Substantial Meals</a><a href="#lunch-sides" data-sec="lunch-sides">Lunch Sides +</a><a href="#cakes-desserts" data-sec="cakes-desserts">Cakes &amp; Desserts</a><a href="#specialty-loose-leaf-teas" data-sec="specialty-loose-leaf-teas">Specialty Loose Leaf Teas</a><a href="#herbal-loose-leaf-teas" data-sec="herbal-loose-leaf-teas">Herbal Loose Leaf Teas</a><a href="#standard-coffee" data-sec="standard-coffee">Standard Coffee</a><a href="#specialty-hot-drinks" data-sec="specialty-hot-drinks">Specialty Hot Drinks</a><a href="#specialty-cold-drinks" data-sec="specialty-cold-drinks">Specialty Cold Drinks</a><a href="#cocktails-spirits-beer" data-sec="cocktails-spirits-beer">Cocktails, Spirits &amp; Beer</a><a href="#wine" data-sec="wine">Wine</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="high-tea" class="sec">
+      <h2>High Tea</h2>
+      <p class="note">As our High Teas are a set menu, we can cater for only a few special dietary requirements with a min 24 hours&#39; notice (some charges apply): Gluten free +5pp; Vegetarian/Halal +3pp; Nut or Seafood Allergy – no charge. Share High Tea +7pp (max of 1 extra guest per High Tea - excludes extra beverage). No charge for children up to 8 years to share with an adult. High Tea duration is 1¾ hours from booking commencement time. A $30 per person deposit is required at the time of booking.</p>
+      <ul>
+        <li data-q="deluxe high tea 2 ribbon sandwiches (all no seafood), 3 warm savouries (all no seafood), 2 raspberry scones with house made raspberry jam and chantilly cream, 3 housemade sweet treats (chef&#39;s selection), 1 pot of tea or 1 cup of coffee or 1 soft drink">
+          <div class="row"><span class="name">Deluxe High Tea</span></div>
+          <p class="desc">2 Ribbon Sandwiches (all no seafood), 3 Warm Savouries (all no seafood), 2 Raspberry Scones with house made raspberry jam and Chantilly cream, 3 Housemade Sweet Treats (Chef&#39;s Selection), 1 Pot of Tea or 1 Cup of Coffee or 1 Soft Drink</p><div class="prices"><span class="pp"><b>$65 per person</b></span></div>
+        </li>
+        <li data-q="chocolate high tea 2 ribbon sandwiches (all no seafood), 3 warm savouries (all no seafood), 2 raspberry scones with house made raspberry jam and chantilly cream, 3 housemade chocolate treats (chef&#39;s selection), 1 pot of tea or 1 cup of coffee or 1 soft drink">
+          <div class="row"><span class="name">Chocolate High Tea</span></div>
+          <p class="desc">2 Ribbon Sandwiches (all no seafood), 3 Warm Savouries (all no seafood), 2 Raspberry Scones with house made raspberry jam and Chantilly cream, 3 Housemade Chocolate Treats (Chef&#39;s Selection), 1 Pot of Tea or 1 Cup of Coffee or 1 Soft Drink</p><div class="prices"><span class="pp"><b>$68 per person</b></span></div>
+        </li>
+        <li data-q="ultimate chocolate fondue high tea 2 ribbon sandwiches (all no seafood), 3 warm savouries (all no seafood), 2 raspberry scones with house made raspberry jam and chantilly cream, house made chocolate fondue with strawberries, banana, dried apricots, biscotti and marshmallows to dip, 1 pot of tea or 1 cup of coffee or 1 soft drink">
+          <div class="row"><span class="name">Ultimate Chocolate Fondue High Tea</span></div>
+          <p class="desc">2 Ribbon Sandwiches (all no seafood), 3 Warm Savouries (all no seafood), 2 Raspberry Scones with house made raspberry jam and Chantilly cream, House made Chocolate Fondue with strawberries, banana, dried apricots, biscotti and marshmallows to dip, 1 Pot of Tea or 1 Cup of Coffee or 1 Soft Drink</p><div class="prices"><span class="pp"><b>$72 per person</b></span></div>
+        </li>
+        <li data-q="champagne with high tea: 1 glass of premium brut bubbles add to any high tea">
+          <div class="row"><span class="name">Champagne with High Tea: 1 glass of Premium Brut Bubbles</span></div>
+          <p class="desc">Add to any High Tea</p><div class="prices"><span class="pp"><b>$13 per glass</b></span></div>
+        </li>
+        <li data-q="champagne with high tea: 1 glass of french brut de brut bubbles or french sparkling rose add to any high tea">
+          <div class="row"><span class="name">Champagne with High Tea: 1 glass of French Brut de Brut Bubbles or French Sparkling Rose</span></div>
+          <p class="desc">Add to any High Tea</p><div class="prices"><span class="pp"><b>$17 per glass</b></span></div>
+        </li></ul>
+    </section>
+    <section id="breakfast" class="sec">
+      <h2>Breakfast</h2>
+      <p class="note">Available until 11.00 am. Share Breakfast +5 extra person. No charge for children up to 8 years to share with adult.</p>
+      <ul>
+        <li data-q="fresh fruit bowl seasonal fruits served with vanilla yoghurt (gf, v)">
+          <div class="row"><span class="name">Fresh Fruit Bowl</span><span class="price">$18</span></div>
+          <p class="desc">seasonal fruits served with vanilla yoghurt (gf, v)</p>
+        </li>
+        <li data-q="croissant french toast butter croissant pan fried, topped with a berry and fruit compote, drizzled maple syrup and extra thick vanilla yoghurt (v)">
+          <div class="row"><span class="name">Croissant French Toast</span><span class="price">$22</span></div>
+          <p class="desc">butter croissant pan fried, topped with a berry and fruit compote, drizzled maple syrup and extra thick vanilla yoghurt (v)</p>
+        </li>
+        <li data-q="breakfast corn cakes house made corn cake stack with avocado fan, poached eggs and our own tomato relish (v, gfo) with your choice of options: sauteed mushrooms (v) or ham or bacon +7; smoked salmon +9">
+          <div class="row"><span class="name">Breakfast Corn Cakes</span><span class="price">$25</span></div>
+          <p class="desc">house made corn cake stack with avocado fan, poached eggs and our own tomato relish (v, gfo) with your choice of options: Sauteed mushrooms (v) or Ham or Bacon +7; Smoked Salmon +9</p>
+        </li>
+        <li data-q="avocado &amp; feta smash avocado and danish feta on toasted sourdough with dukkah and balsamic glaze (gfo, v)">
+          <div class="row"><span class="name">Avocado &amp; Feta Smash</span><span class="price">$22</span></div>
+          <p class="desc">avocado and Danish feta on toasted sourdough with dukkah and balsamic glaze (gfo, v)</p>
+        </li>
+        <li data-q="breakfast bruschetta avocado smash, cherry tomato salsa, grilled halloumi, dukkah, caramelised balsamic (v, gfo) served with your choice of options: sauteed mushrooms (v) or ham or bacon +7; smoked salmon +9">
+          <div class="row"><span class="name">Breakfast Bruschetta</span><span class="price">$29</span></div>
+          <p class="desc">avocado smash, cherry tomato salsa, grilled halloumi, dukkah, caramelised balsamic (v, gfo) served with your choice of options: Sauteed mushrooms (v) or Ham or Bacon +7; Smoked Salmon +9</p>
+        </li>
+        <li data-q="eggs your way eggs (fried/poached/scrambled), with blistered cherry tomatoes, our house made tomato chutney &amp; toast (gfo, v)">
+          <div class="row"><span class="name">Eggs Your Way</span><span class="price">$22</span></div>
+          <p class="desc">eggs (fried/poached/scrambled), with blistered cherry tomatoes, our house made tomato chutney &amp; toast (gfo, v)</p>
+        </li>
+        <li data-q="garlic thyme mushrooms sauteed, served with toasted sourdough (gfo, v) with your choice of options: eggs (v) or ham or bacon +7; smoked salmon +9">
+          <div class="row"><span class="name">Garlic Thyme Mushrooms</span><span class="price">$29</span></div>
+          <p class="desc">sauteed, served with toasted sourdough (gfo, v) with your choice of options: Eggs (v) or Ham or Bacon +7; Smoked Salmon +9</p>
+        </li>
+        <li data-q="eggs benedict poached eggs, buttered spinach on toasted sourdough with our freshly made hollandaise sauce (gfo, v) with your choice of options: sauteed mushrooms (v) or ham or bacon +7; smoked salmon +9">
+          <div class="row"><span class="name">Eggs Benedict</span><span class="price">$25</span></div>
+          <p class="desc">poached eggs, buttered spinach on toasted sourdough with our freshly made hollandaise sauce (gfo, v) with your choice of options: Sauteed mushrooms (v) or Ham or Bacon +7; Smoked Salmon +9</p>
+        </li>
+        <li data-q="savoury mince on toast a hearty favourite made from our own recipe with tomato, onions and parsley served with toast (gfo)">
+          <div class="row"><span class="name">Savoury Mince on Toast</span><span class="price">$36</span></div>
+          <p class="desc">a hearty favourite made from our own recipe with tomato, onions and parsley served with toast (gfo)</p>
+        </li>
+        <li data-q="build your own breakfast eggs your way (poached, fried or scrambled), blistered cherry tomatoes &amp; our house made tomato chutney with toast + 3 sides of your choice (gfo)">
+          <div class="row"><span class="name">Build Your Own Breakfast</span><span class="price">$36</span></div>
+          <p class="desc">eggs your way (poached, fried or scrambled), blistered cherry tomatoes &amp; our house made tomato chutney with toast + 3 sides of your choice (gfo)</p>
+        </li>
+        <li data-q="very veuve breakfast 1 glass french bubbles, mini fresh fruit plate with vanilla yoghurt, any cooked breakfast, 1 pot of tea or 1 cup of coffee">
+          <div class="row"><span class="name">Very Veuve Breakfast</span></div>
+          <p class="desc">1 glass French bubbles, Mini fresh fruit plate with vanilla yoghurt, Any cooked breakfast, 1 pot of tea or 1 cup of coffee</p><div class="prices"><span class="pp"><b>$70 per person</b></span></div>
+        </li></ul>
+    </section>
+    <section id="breakfast-sides" class="sec">
+      <h2>Breakfast Sides +</h2>
+      <p class="note">Side orders are served only with a meal – we do not make meals out of side orders</p>
+      <ul>
+        <li data-q="extra toast; hollandaise sauce; tomato chutney; gluten free option; turkish bread ">
+          <div class="row"><span class="name">extra toast; Hollandaise sauce; tomato chutney; gluten free option; Turkish bread</span><span class="price">$3</span></div>
+          
+        </li>
+        <li data-q="1 egg; grilled tomato; buttered spinach ">
+          <div class="row"><span class="name">1 egg; grilled tomato; buttered spinach</span><span class="price">$4</span></div>
+          
+        </li>
+        <li data-q="2 eggs; bacon; ham; savoury mince; haloumi; garlic thyme mushrooms; half avocado ">
+          <div class="row"><span class="name">2 eggs; bacon; ham; savoury mince; haloumi; garlic thyme mushrooms; half avocado</span><span class="price">$7</span></div>
+          
+        </li>
+        <li data-q="smoked salmon ">
+          <div class="row"><span class="name">smoked salmon</span><span class="price">$9</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="sandwiches" class="sec">
+      <h2>Sandwiches</h2>
+      <p class="note">Available until 2.00 pm. All sandwiches accompanied by side salad &amp; dressing. Share Any Sandwich +5 extra person. No charge for children up to 8 years to share with adult.</p>
+      <ul>
+        <li data-q="roses dainty ribbons freshly poached chicken breast, mayonnaise &amp; avocado; triple smoked leg ham, mayonnaise, chutney &amp; avocado; egg, mayonnaise &amp; cos lettuce">
+          <div class="row"><span class="name">Roses Dainty Ribbons</span><span class="price">$25</span></div>
+          <p class="desc">Freshly poached chicken breast, mayonnaise &amp; avocado; Triple smoked leg ham, mayonnaise, chutney &amp; avocado; Egg, mayonnaise &amp; cos lettuce</p>
+        </li>
+        <li data-q="chicken breast chicken breast, avocado, semi dried tomato with our mayonnaise (gfo)">
+          <div class="row"><span class="name">Chicken Breast</span><span class="price">$27.50</span></div>
+          <p class="desc">chicken breast, avocado, semi dried tomato with our mayonnaise (gfo)</p>
+        </li>
+        <li data-q="leg ham leg ham, avocado, semi dried tomato &amp; our mayonnaise (gfo)">
+          <div class="row"><span class="name">Leg Ham</span><span class="price">$27.50</span></div>
+          <p class="desc">leg ham, avocado, semi dried tomato &amp; our mayonnaise (gfo)</p>
+        </li>
+        <li data-q="croque monsieur triple smoked ham, swiss cheese, dijon mustard with cheesy bechamel sauce on toasted sourdough (gfo)">
+          <div class="row"><span class="name">Croque Monsieur</span><span class="price">$29</span></div>
+          <p class="desc">triple smoked ham, Swiss cheese, Dijon mustard with cheesy bechamel sauce on toasted sourdough (gfo)</p>
+        </li>
+        <li data-q="blta crispy bacon, lettuce, tomato &amp; avocado on toasted turkish bread with our own mayonnaise (gfo)">
+          <div class="row"><span class="name">BLTA</span><span class="price">$29</span></div>
+          <p class="desc">crispy bacon, lettuce, tomato &amp; avocado on toasted Turkish bread with our own mayonnaise (gfo)</p>
+        </li>
+        <li data-q="reuben home cooked corned beef, swiss cheese, caramelised cabbage and our own russian dressing, served on toasted sourdough (gfo)">
+          <div class="row"><span class="name">Reuben</span><span class="price">$32</span></div>
+          <p class="desc">home cooked corned beef, Swiss cheese, caramelised cabbage and our own Russian dressing, served on toasted sourdough (gfo)</p>
+        </li>
+        <li data-q="roses club bacon, chicken breast, cheddar cheese, fresh tomato, lettuce and our own mayonnaise, served toasted (gfo)">
+          <div class="row"><span class="name">Roses Club</span><span class="price">$32</span></div>
+          <p class="desc">bacon, chicken breast, cheddar cheese, fresh tomato, lettuce and our own mayonnaise, served toasted (gfo)</p>
+        </li>
+        <li data-q="open smoked salmon smoked salmon, cream cheese, shaved spanish onion, capers on toasted sourdough (gfo)">
+          <div class="row"><span class="name">Open Smoked Salmon</span><span class="price">$33</span></div>
+          <p class="desc">smoked salmon, cream cheese, shaved Spanish onion, capers on toasted sourdough (gfo)</p>
+        </li></ul>
+    </section>
+    <section id="sandwich-sides" class="sec">
+      <h2>Sandwich Sides +</h2>
+      <p class="note">Side orders are served only with a sandwich – we do not make sandwiches out of side orders</p>
+      <ul>
+        <li data-q="toasting; cheese; tomato; lettuce; onion ">
+          <div class="row"><span class="name">toasting; cheese; tomato; lettuce; onion</span><span class="price">$1</span></div>
+          
+        </li>
+        <li data-q="gluten free option; sourdough; turkish bread ">
+          <div class="row"><span class="name">gluten free option; sourdough; Turkish bread</span><span class="price">$3</span></div>
+          
+        </li>
+        <li data-q="ham; bacon; chicken; half avocado; grilled asparagus ">
+          <div class="row"><span class="name">ham; bacon; chicken; half avocado; grilled asparagus</span><span class="price">$7</span></div>
+          
+        </li>
+        <li data-q="smoked salmon ">
+          <div class="row"><span class="name">smoked salmon</span><span class="price">$9</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="lunch-to-start" class="sec">
+      <h2>Lunch – To Start</h2>
+      <p class="note">Lunch available between 11.30 am – 2.00 pm. Salads and side salads are lightly dressed with our own balsamic reduction mayonnaise</p>
+      <ul>
+        <li data-q="warm garlic bread with house made confit garlic butter and parsley on sourdough">
+          <div class="row"><span class="name">Warm Garlic Bread</span><span class="price">$10.50</span></div>
+          <p class="desc">with house made confit garlic butter and parsley on sourdough</p>
+        </li>
+        <li data-q="warm crusty bread with house made caramelised balsamic vinegar &amp; extra virgin olive oil (v, vn)">
+          <div class="row"><span class="name">Warm Crusty Bread</span><span class="price">$13.50</span></div>
+          <p class="desc">with house made caramelised balsamic vinegar &amp; extra virgin olive oil (v, vn)</p>
+        </li>
+        <li data-q="housemade soup served with toasted sourdough">
+          <div class="row"><span class="name">Housemade Soup</span></div>
+          <p class="desc">served with toasted sourdough</p><div class="prices"><span class="pp"><b>$16.50</b></span><span class="pp"><span class="pl">Main size</span> <b>$27.50</b></span></div>
+        </li></ul>
+    </section>
+    <section id="lunch-light-meals" class="sec">
+      <h2>Lunch – Light Meals</h2>
+      
+      <ul>
+        <li data-q="grain salad tossed leaves, quinoa, chickpeas, carrot and salad vegetables with classic vinaigrette dressing (v, vn). add chicken, bacon or ham +7; smoked salmon +9">
+          <div class="row"><span class="name">Grain Salad</span><span class="price">$27.50</span></div>
+          <p class="desc">tossed leaves, quinoa, chickpeas, carrot and salad vegetables with classic vinaigrette dressing (v, vn). Add Chicken, bacon or ham +7; Smoked salmon +9</p>
+        </li>
+        <li data-q="chicken &amp; avocado salad with tossed leaves, cashew nuts &amp; mango dressing (gf, df)">
+          <div class="row"><span class="name">Chicken &amp; Avocado Salad</span><span class="price">$35</span></div>
+          <p class="desc">with tossed leaves, cashew nuts &amp; mango dressing (gf, df)</p>
+        </li>
+        <li data-q="smoked salmon &amp; asparagus salad with boiled egg, capers, tossed leaves &amp; lemon wedges (gf, df)">
+          <div class="row"><span class="name">Smoked Salmon &amp; Asparagus Salad</span><span class="price">$40</span></div>
+          <p class="desc">with boiled egg, capers, tossed leaves &amp; lemon wedges (gf, df)</p>
+        </li>
+        <li data-q="smoked salmon cakes made to our own special recipe with smoked salmon, with side salad, sour cream and lemon wedge">
+          <div class="row"><span class="name">Smoked Salmon Cakes</span><span class="price">$40</span></div>
+          <p class="desc">made to our own special recipe with smoked salmon, with side salad, sour cream and lemon wedge</p>
+        </li>
+        <li data-q="corncakes with our own corn relish, sour cream and side salad, with your choice of:">
+          <div class="row"><span class="name">Corncakes</span></div>
+          <p class="desc">with our own corn relish, sour cream and side salad, with your choice of:</p><div class="prices"><span class="pp"><span class="pl">Grilled Asparagus (v) or Crispy Bacon</span> <b>$37</b></span><span class="pp"><span class="pl">Smoked Salmon with lemon wedges</span> <b>$40</b></span></div>
+        </li>
+        <li data-q="quiche of the day chef&#39;s selected ingredients enveloped in a rich &#39;royal&#39; custard served with side salad">
+          <div class="row"><span class="name">Quiche of the Day</span><span class="price">$35</span></div>
+          <p class="desc">chef&#39;s selected ingredients enveloped in a rich &#39;royal&#39; custard served with side salad</p>
+        </li></ul>
+    </section>
+    <section id="lunch-more-substantial-meals" class="sec">
+      <h2>Lunch – More Substantial Meals</h2>
+      <p class="note">Share Lunch +5 extra person. No charge for children up to 8 years to share with adult.</p>
+      <ul>
+        <li data-q="savoury crepes french style crepes, served with side salad and your choice of: chicken and mushroom – poached chicken, fresh mushrooms &amp; leeks in a cream sauce (gf); vegetarian – chef&#39;s selection of vegetables in a cream sauce (gf, v)">
+          <div class="row"><span class="name">Savoury Crepes</span><span class="price">$38.50</span></div>
+          <p class="desc">French style crepes, served with side salad and your choice of: Chicken and Mushroom – Poached chicken, fresh mushrooms &amp; leeks in a cream sauce (gf); Vegetarian – Chef&#39;s selection of vegetables in a cream sauce (gf, v)</p>
+        </li>
+        <li data-q="sweet rich curry served with toasted coconut flakes, banana, dried apricots, cashews &amp; steamed rice and pappadams with your choice of: chicken (gf); vegetarian – chef&#39;s selection of vegetables (gf, v)">
+          <div class="row"><span class="name">Sweet Rich Curry</span><span class="price">$38.50</span></div>
+          <p class="desc">served with toasted coconut flakes, banana, dried apricots, cashews &amp; steamed rice and pappadams with your choice of: Chicken (gf); Vegetarian – Chef&#39;s selection of vegetables (gf, v)</p>
+        </li>
+        <li data-q="corned beef fritters served with our own corn relish, sour cream and side salad">
+          <div class="row"><span class="name">Corned Beef Fritters</span><span class="price">$38.50</span></div>
+          <p class="desc">served with our own corn relish, sour cream and side salad</p>
+        </li>
+        <li data-q="home style shepherd&#39;s pie served with grilled asparagus and field mushrooms and side salad">
+          <div class="row"><span class="name">Home Style Shepherd&#39;s Pie</span><span class="price">$40</span></div>
+          <p class="desc">served with grilled asparagus and field mushrooms and side salad</p>
+        </li>
+        <li data-q="corned beef cooked in our own marinade, served with mashed potato, carrots, honey roasted pumpkin, caramelised cabbage and dijon white sauce (gf)">
+          <div class="row"><span class="name">Corned Beef</span><span class="price">$40</span></div>
+          <p class="desc">cooked in our own marinade, served with mashed potato, carrots, honey roasted pumpkin, caramelised cabbage and Dijon white sauce (gf)</p>
+        </li>
+        <li data-q="dish of the day please ask our wait staff for details (often gf)">
+          <div class="row"><span class="name">Dish of the Day</span><span class="price">$40</span></div>
+          <p class="desc">Please ask our wait staff for details (often gf)</p>
+        </li></ul>
+    </section>
+    <section id="lunch-sides" class="sec">
+      <h2>Lunch Sides +</h2>
+      <p class="note">Side orders are served only with a lunch – we do not make a lunch out of side orders</p>
+      <ul>
+        <li data-q="gluten free option; sourdough bread; turkish bread ">
+          <div class="row"><span class="name">gluten free option; sourdough bread; Turkish bread</span><span class="price">$3</span></div>
+          
+        </li>
+        <li data-q="ham; bacon; chicken; half avocado; grilled asparagus; steamed vegetables ">
+          <div class="row"><span class="name">ham; bacon; chicken; half avocado; grilled asparagus; steamed vegetables</span><span class="price">$7</span></div>
+          
+        </li>
+        <li data-q="smoked salmon ">
+          <div class="row"><span class="name">smoked salmon</span><span class="price">$9</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="cakes-desserts" class="sec">
+      <h2>Cakes &amp; Desserts</h2>
+      <p class="note">Made on the premises and available all day. Share cake or dessert +2. Birthday / special event cakes may be brought in with prior agreement by Room with Roses management and a cakeage fee applies per person (+5pp).</p>
+      <ul>
+        <li data-q="raspberry scones with fresh raspberries baked in, our signature scones served with our own raspberry jam and chantilly cream. to share +2 pp">
+          <div class="row"><span class="name">Raspberry Scones</span></div>
+          <p class="desc">with fresh raspberries baked in, our signature scones served with our own raspberry jam and Chantilly cream. To Share +2 pp</p><div class="prices"><span class="pp"><b>$14</b></span><span class="pp"><span class="pl">gf</span> <b>$15</b></span></div>
+        </li>
+        <li data-q="ginger scones with chips of crystallised ginger, served with butter &amp; our lime &amp; ginger marmalade. to share +2 pp">
+          <div class="row"><span class="name">Ginger Scones</span></div>
+          <p class="desc">with chips of crystallised ginger, served with butter &amp; our lime &amp; ginger marmalade. To Share +2 pp</p><div class="prices"><span class="pp"><b>$14</b></span><span class="pp"><span class="pl">gf</span> <b>$15</b></span></div>
+        </li>
+        <li data-q="deluxe cup cake varies daily, please ask our wait staff">
+          <div class="row"><span class="name">Deluxe Cup Cake</span></div>
+          <p class="desc">varies daily, please ask our wait staff</p><div class="prices"><span class="pp"><b>$10</b></span><span class="pp"><span class="pl">gf</span> <b>$11</b></span></div>
+        </li>
+        <li data-q="flourless chocolate heaven cake served warm with ice cream and mixed berries (gf, df, v, vn)">
+          <div class="row"><span class="name">Flourless Chocolate Heaven Cake</span><span class="price">$17.50</span></div>
+          <p class="desc">served warm with ice cream and mixed berries (gf, df, v, vn)</p>
+        </li>
+        <li data-q="passionfruit sponge our signature freshly baked sponge, sandwiched with chantilly cream and passionfruit coulis">
+          <div class="row"><span class="name">Passionfruit Sponge</span><span class="price">$17.50</span></div>
+          <p class="desc">our signature freshly baked sponge, sandwiched with Chantilly cream and passionfruit coulis</p>
+        </li>
+        <li data-q="lemon curd roulade soft meringue rolled with our own lemon curd &amp; chantilly cream and toasted almond flakes (gf)">
+          <div class="row"><span class="name">Lemon Curd Roulade</span><span class="price">$17.50</span></div>
+          <p class="desc">soft meringue rolled with our own lemon curd &amp; Chantilly cream and toasted almond flakes (gf)</p>
+        </li>
+        <li data-q="pear &amp; walnut shortcake pears, topped with walnuts on an orange frangipane base served with berries (gf, df, v)">
+          <div class="row"><span class="name">Pear &amp; Walnut Shortcake</span><span class="price">$17.50</span></div>
+          <p class="desc">pears, topped with walnuts on an orange frangipane base served with berries (gf, df, v)</p>
+        </li>
+        <li data-q="cake of the day varies daily, please ask our wait staff (often gf)">
+          <div class="row"><span class="name">Cake of the Day</span><span class="price">$18.50</span></div>
+          <p class="desc">varies daily, please ask our wait staff (often gf)</p>
+        </li>
+        <li data-q="petit fours chef&#39;s choice of four delights from our delightful sweets&#39; selection">
+          <div class="row"><span class="name">Petit Fours</span></div>
+          <p class="desc">chef&#39;s choice of four delights from our delightful sweets&#39; selection</p><div class="prices"><span class="pp"><b>$21</b></span><span class="pp"><span class="pl">Individual pieces</span> <b>$5.50</b></span></div>
+        </li>
+        <li data-q="sweet crepes apple &amp; cinnamon served with butterscotch sauce and chantilly cream (gf, v)">
+          <div class="row"><span class="name">Sweet Crepes</span><span class="price">$18.50</span></div>
+          <p class="desc">Apple &amp; Cinnamon served with butterscotch sauce and Chantilly cream (gf, v)</p>
+        </li>
+        <li data-q="belgian waffle berries – mixed berries in coulis served with ice cream; banana and chocolate – served with ice cream">
+          <div class="row"><span class="name">Belgian Waffle</span><span class="price">$21</span></div>
+          <p class="desc">Berries – mixed berries in coulis served with ice cream; Banana and Chocolate – served with ice cream</p>
+        </li>
+        <li data-q="house made chocolate fondue with strawberries, banana, dried apricots, biscuit batons and marshmallows for dipping (gfo, v)">
+          <div class="row"><span class="name">House made Chocolate Fondue</span><span class="price">$24</span></div>
+          <p class="desc">with strawberries, banana, dried apricots, biscuit batons and marshmallows for dipping (gfo, v)</p>
+        </li>
+        <li data-q="extra jam; extra chantilly cream; extra butter ">
+          <div class="row"><span class="name">Extra jam; extra Chantilly cream; extra butter</span><span class="price">$1</span></div>
+          
+        </li>
+        <li data-q="1 scoop premium ice cream; extra berries; maple syrup ">
+          <div class="row"><span class="name">1 scoop premium ice cream; extra berries; maple syrup</span><span class="price">$3</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="specialty-loose-leaf-teas" class="sec">
+      <h2>Specialty Loose Leaf Teas</h2>
+      
+      <ul>
+        <li data-q="english breakfast blend of north assam, south indian, east african and ceylon teas.">
+          <div class="row"><span class="name">English Breakfast</span><span class="price">$8</span></div>
+          <p class="desc">Blend of North Assam, South Indian, east African and Ceylon teas.</p>
+        </li>
+        <li data-q="irish breakfast blend of assam teas with a strong full flavour.">
+          <div class="row"><span class="name">Irish Breakfast</span><span class="price">$8</span></div>
+          <p class="desc">Blend of Assam teas with a strong full flavour.</p>
+        </li>
+        <li data-q="earl grey china blend with oil of bergamot.">
+          <div class="row"><span class="name">Earl Grey</span><span class="price">$8</span></div>
+          <p class="desc">China blend with oil of bergamot.</p>
+        </li>
+        <li data-q="rose grey an exclusive blend and very popular earl grey with a hint of vanilla and pink rose petals.">
+          <div class="row"><span class="name">Rose Grey</span><span class="price">$8</span></div>
+          <p class="desc">An exclusive blend and very popular Earl Grey with a hint of vanilla and pink rose petals.</p>
+        </li>
+        <li data-q="darjeeling from the foothills of the himalayas, often considered the champagne of teas. clean, light in colour with a light muscatel aftertaste.">
+          <div class="row"><span class="name">Darjeeling</span><span class="price">$8</span></div>
+          <p class="desc">From the foothills of the Himalayas, often considered the Champagne of teas. Clean, light in colour with a light muscatel aftertaste.</p>
+        </li>
+        <li data-q="orange pekoe &quot;lovers leap&quot; an estate tea, high grown from the nuwara eliya area with a soft and high aromatic flavour.">
+          <div class="row"><span class="name">Orange Pekoe</span><span class="price">$8</span></div>
+          <p class="desc">&quot;Lovers Leap&quot; An estate tea, high grown from the Nuwara Eliya area with a soft and high aromatic flavour.</p>
+        </li></ul>
+    </section>
+    <section id="herbal-loose-leaf-teas" class="sec">
+      <h2>Herbal Loose Leaf Teas</h2>
+      
+      <ul>
+        <li data-q="peppermint leaves great served hot in winter or summer. excellent for digestion and settling upset stomachs (decaf.)">
+          <div class="row"><span class="name">Peppermint Leaves</span><span class="price">$9</span></div>
+          <p class="desc">Great served hot in winter or summer. Excellent for digestion and settling upset stomachs (decaf.)</p>
+        </li>
+        <li data-q="lemongrass &amp; ginger the ginger is warm and fragrant and the lemongrass provides a fresh nippy flavour. a lightly balanced, light bodied herbal infusion with hints of coriander &amp; sweet barley sugar (decaf.)">
+          <div class="row"><span class="name">Lemongrass &amp; Ginger</span><span class="price">$9</span></div>
+          <p class="desc">The ginger is warm and fragrant and the lemongrass provides a fresh nippy flavour. A lightly balanced, light bodied herbal infusion with hints of coriander &amp; sweet barley sugar (decaf.)</p>
+        </li>
+        <li data-q="green a semi-fermented chinese tea with jasmine fragrances and flowers.">
+          <div class="row"><span class="name">Green</span><span class="price">$9</span></div>
+          <p class="desc">A semi-fermented Chinese tea with jasmine fragrances and flowers.</p>
+        </li>
+        <li data-q="spiced black chai the perfect balance between an authentic indian chai and a single origin orange pekoe.">
+          <div class="row"><span class="name">Spiced Black Chai</span><span class="price">$9</span></div>
+          <p class="desc">The perfect balance between an authentic Indian Chai and a single origin Orange Pekoe.</p>
+        </li>
+        <li data-q="turkish apple a sweet apple taste on a delicious basis of apple and pineapple. it is like a short trip to the regions of sunny turkey (decaf.) also makes a tasty iced tea with no sweetening required!">
+          <div class="row"><span class="name">Turkish Apple</span><span class="price">$9</span></div>
+          <p class="desc">A sweet apple taste on a delicious basis of apple and pineapple. It is like a short trip to the regions of sunny Turkey (decaf.) Also makes a tasty iced tea with no sweetening required!</p>
+        </li></ul>
+    </section>
+    <section id="standard-coffee" class="sec">
+      <h2>Standard Coffee</h2>
+      
+      <ul>
+        <li data-q="cappuccino / flat white / latte ">
+          <div class="row"><span class="name">Cappuccino / Flat White / Latte</span><span class="price">$7</span></div>
+          
+        </li>
+        <li data-q="long black / long macchiato ">
+          <div class="row"><span class="name">Long Black / Long Macchiato</span><span class="price">$6.50</span></div>
+          
+        </li>
+        <li data-q="short black / short macchiato ">
+          <div class="row"><span class="name">Short Black / Short Macchiato</span><span class="price">$6</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="specialty-hot-drinks" class="sec">
+      <h2>Specialty Hot Drinks</h2>
+      
+      <ul>
+        <li data-q="chai latte / mocha / vienna coffee / hot chocolate hot chocolate with chocolate ganache and marshmallows">
+          <div class="row"><span class="name">Chai Latte / Mocha / Vienna Coffee / Hot Chocolate</span><span class="price">$9.50</span></div>
+          <p class="desc">Hot Chocolate with chocolate ganache and marshmallows</p>
+        </li>
+        <li data-q="extras mug; extra shot; decaf coffee; soya/lactose free milk; syrups; milk on the side; cream; extra marshmallows">
+          <div class="row"><span class="name">Extras</span><span class="price">.5</span></div>
+          <p class="desc">mug; extra shot; decaf coffee; soya/lactose free milk; syrups; milk on the side; cream; extra marshmallows</p>
+        </li></ul>
+    </section>
+    <section id="specialty-cold-drinks" class="sec">
+      <h2>Specialty Cold Drinks</h2>
+      
+      <ul>
+        <li data-q="home style lemon, lime and bitters with our house made lime juice cordial">
+          <div class="row"><span class="name">Home style Lemon, Lime and Bitters</span><span class="price">$10</span></div>
+          <p class="desc">with our house made lime juice cordial</p>
+        </li>
+        <li data-q="fresh raspberry &amp; fruit punch with crushed berries, lemonade and fresh fruit">
+          <div class="row"><span class="name">Fresh Raspberry &amp; Fruit Punch</span><span class="price">$11</span></div>
+          <p class="desc">with crushed berries, lemonade and fresh fruit</p>
+        </li>
+        <li data-q="fruit juice cloudy apple / orange">
+          <div class="row"><span class="name">Fruit Juice</span><span class="price">$11</span></div>
+          <p class="desc">Cloudy Apple / Orange</p>
+        </li>
+        <li data-q="magnificent milk shakes chocolate / strawberry / caramel / vanilla">
+          <div class="row"><span class="name">Magnificent Milk Shakes</span><span class="price">$12.50</span></div>
+          <p class="desc">Chocolate / Strawberry / Caramel / Vanilla</p>
+        </li>
+        <li data-q="real iced coffee with espresso coffee">
+          <div class="row"><span class="name">Real Iced Coffee</span><span class="price">$15</span></div>
+          <p class="desc">with espresso coffee</p>
+        </li>
+        <li data-q="iced chocolate supreme with chocolate ganache">
+          <div class="row"><span class="name">Iced Chocolate Supreme</span><span class="price">$15</span></div>
+          <p class="desc">with chocolate ganache</p>
+        </li>
+        <li data-q="sparkling or still mineral water ">
+          <div class="row"><span class="name">Sparkling or Still Mineral Water</span></div>
+          <div class="prices"><span class="pp"><span class="pl">sml</span> <b>$6</b></span><span class="pp"><span class="pl">lg</span> <b>$11</b></span></div>
+        </li>
+        <li data-q="house made iced tea (naturally sweetened) turkish apple">
+          <div class="row"><span class="name">House made Iced Tea (naturally sweetened)</span><span class="price">$9.50</span></div>
+          <p class="desc">Turkish Apple</p>
+        </li>
+        <li data-q="soft drinks lemonade / ginger ale / coke / diet coke / coke no sugar">
+          <div class="row"><span class="name">Soft Drinks</span><span class="price">$7</span></div>
+          <p class="desc">Lemonade / Ginger Ale / Coke / Diet Coke / Coke No Sugar</p>
+        </li>
+        <li data-q="bundaberg drinks ginger beer / passionfruit / blood orange">
+          <div class="row"><span class="name">Bundaberg Drinks</span><span class="price">$10</span></div>
+          <p class="desc">Ginger Beer / Passionfruit / Blood Orange</p>
+        </li></ul>
+    </section>
+    <section id="cocktails-spirits-beer" class="sec">
+      <h2>Cocktails, Spirits &amp; Beer</h2>
+      
+      <ul>
+        <li data-q="room with roses champagne cocktail with turkish delight garnish">
+          <div class="row"><span class="name">Room with Roses Champagne Cocktail</span><span class="price">$20</span></div>
+          <p class="desc">with Turkish Delight garnish</p>
+        </li>
+        <li data-q="aperol spritzer with prosecco and soda water">
+          <div class="row"><span class="name">Aperol Spritzer</span><span class="price">$20</span></div>
+          <p class="desc">with Prosecco and soda water</p>
+        </li>
+        <li data-q="classic pimm&#39;s &amp; dry with ginger ale, refreshing cucumber &amp; fruit">
+          <div class="row"><span class="name">Classic Pimm&#39;s &amp; Dry</span></div>
+          <p class="desc">with ginger ale, refreshing cucumber &amp; fruit</p><div class="prices"><span class="pp"><b>$17</b></span><span class="pp"><span class="pl">Jug for 4</span> <b>$55</b></span></div>
+        </li>
+        <li data-q="bombay sapphire gin with mixer">
+          <div class="row"><span class="name">Bombay Sapphire Gin</span><span class="price">$14</span></div>
+          <p class="desc">with mixer</p>
+        </li>
+        <li data-q="hahn premium light ">
+          <div class="row"><span class="name">Hahn Premium Light</span><span class="price">$10</span></div>
+          
+        </li>
+        <li data-q="crown lager ">
+          <div class="row"><span class="name">Crown Lager</span><span class="price">$12</span></div>
+          
+        </li>
+        <li data-q="corona ">
+          <div class="row"><span class="name">Corona</span><span class="price">$12</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="wine" class="sec">
+      <h2>Wine</h2>
+      <p class="note">Med glass 150 ml, Lge glass 200 ml</p>
+      <ul>
+        <li data-q="premium brut house bubbles ">
+          <div class="row"><span class="name">Premium Brut House Bubbles</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Med glass</span> <b>$13</b></span><span class="pp"><span class="pl">Btl</span> <b>$49</b></span></div>
+        </li>
+        <li data-q="veuve du vernay blanc de blanc france">
+          <div class="row"><span class="name">Veuve Du Vernay Blanc de Blanc</span></div>
+          <p class="desc">France</p><div class="prices"><span class="pp"><span class="pl">Med glass</span> <b>$17</b></span><span class="pp"><span class="pl">Btl</span> <b>$65</b></span></div>
+        </li>
+        <li data-q="veuve du vernay sparkling brut france">
+          <div class="row"><span class="name">Veuve Du Vernay Sparkling Brut</span></div>
+          <p class="desc">France</p><div class="prices"><span class="pp"><span class="pl">Med glass</span> <b>$17</b></span><span class="pp"><span class="pl">Btl</span> <b>$65</b></span></div>
+        </li>
+        <li data-q="moet &amp; chandon imperial brut champagne n/v champagne, france">
+          <div class="row"><span class="name">Moet &amp; Chandon Imperial Brut Champagne N/V</span><span class="price">Btl | 135</span></div>
+          <p class="desc">Champagne, France</p>
+        </li>
+        <li data-q="house white - sauvignon blanc ">
+          <div class="row"><span class="name">House White - Sauvignon Blanc</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Med glass</span> <b>$13</b></span><span class="pp"><span class="pl">Lge glass</span> <b>$16</b></span><span class="pp"><span class="pl">Btl</span> <b>$49</b></span></div>
+        </li>
+        <li data-q="rewild organic chardonnay murray darling">
+          <div class="row"><span class="name">Rewild Organic Chardonnay</span></div>
+          <p class="desc">Murray Darling</p><div class="prices"><span class="pp"><span class="pl">Med glass</span> <b>$15</b></span><span class="pp"><span class="pl">Lge glass</span> <b>$18</b></span><span class="pp"><span class="pl">Btl</span> <b>$55</b></span></div>
+        </li>
+        <li data-q="vigneti del sole pinot grigio italy">
+          <div class="row"><span class="name">Vigneti Del Sole Pinot Grigio</span></div>
+          <p class="desc">Italy</p><div class="prices"><span class="pp"><span class="pl">Med glass</span> <b>$15</b></span><span class="pp"><span class="pl">Lge glass</span> <b>$18</b></span><span class="pp"><span class="pl">Btl</span> <b>$55</b></span></div>
+        </li>
+        <li data-q="villa maria private bin sauvignon blanc nz">
+          <div class="row"><span class="name">Villa Maria Private Bin Sauvignon Blanc</span></div>
+          <p class="desc">NZ</p><div class="prices"><span class="pp"><span class="pl">Med glass</span> <b>$17</b></span><span class="pp"><span class="pl">Lge glass</span> <b>$20</b></span><span class="pp"><span class="pl">Btl</span> <b>$59</b></span></div>
+        </li>
+        <li data-q="house red – cabernet merlot ">
+          <div class="row"><span class="name">House Red – Cabernet Merlot</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Med glass</span> <b>$13</b></span><span class="pp"><span class="pl">Lge glass</span> <b>$16</b></span><span class="pp"><span class="pl">Btl</span> <b>$49</b></span></div>
+        </li>
+        <li data-q="listel rosé languedoc, france">
+          <div class="row"><span class="name">Listel Rosé</span></div>
+          <p class="desc">Languedoc, France</p><div class="prices"><span class="pp"><span class="pl">Med glass</span> <b>$17</b></span><span class="pp"><span class="pl">Lge glass</span> <b>$20</b></span><span class="pp"><span class="pl">Btl</span> <b>$59</b></span></div>
+        </li>
+        <li data-q="riddoch shiraz sth aus (187ml)">
+          <div class="row"><span class="name">Riddoch Shiraz</span><span class="price">$16</span></div>
+          <p class="desc">Sth Aus (187ml)</p>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>Strictly one bill per table, max 4 payments accepted. Payments - Credit / Debit Card add 1.65%. (gf) Gluten Free, (gfo) Gluten Free Option available, (df) Dairy Free, (v) Vegetarian, (vn) Vegan. Prices subject to change without notice. Our kitchen caters for an extensive menu and whilst we take every precaution, our food may contain traces of gluten, egg, nuts and seafood.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Room with Roses.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Room with Roses menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's US$29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for US$29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Bread Créateur Menu</title>
+<meta name="description" content="Menu for Bread Créateur, Bukit Timah (The Hillford).">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Bread Créateur</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=The%20Hillford%2C%20182%20Jalan%20Jurong%20Kechil%2C%20%2301-51%2C%20Singapore%20596152">The Hillford, 182 Jalan Jurong Kechil, #01-51, Singapore 596152</a><span>Monday Closed. Tuesday – Sunday 9am – 4.30pm</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#brunch" data-sec="brunch">Brunch</a><a href="#weekends-special-sat-sun-ph" data-sec="weekends-special-sat-sun-ph">Weekends Special (Sat/Sun/PH)</a><a href="#add-on-sides" data-sec="add-on-sides">Add On Sides</a><a href="#coffee" data-sec="coffee">Coffee</a><a href="#hot-tea" data-sec="hot-tea">Hot Tea</a><a href="#non-caffeine" data-sec="non-caffeine">Non-Caffeine</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="brunch" class="sec">
+      <h2>Brunch</h2>
+      <p class="note">Served daily till 3pm</p>
+      <ul>
+        <li data-q="scrambled eggs set croissant, creamy scrambled eggs, streaky bacon, mixed greens">
+          <div class="row"><span class="name">Scrambled Eggs Set</span></div>
+          <p class="desc">Croissant, creamy scrambled eggs, streaky bacon, mixed greens</p>
+        </li>
+        <li data-q="ham and cheese charcoal ciabatta, muscle ham, emmental cheese, baked zucchini, mixed greens">
+          <div class="row"><span class="name">Ham and Cheese</span></div>
+          <p class="desc">Charcoal ciabatta, muscle ham, emmental cheese, baked zucchini, mixed greens</p>
+        </li>
+        <li data-q="classic tuna croissant, tuna mayo, japanese cucumber, baked tomatoes, mixed greens">
+          <div class="row"><span class="name">Classic Tuna</span><span class="price">$12.90</span></div>
+          <p class="desc">Croissant, tuna mayo, Japanese cucumber, baked tomatoes, mixed greens</p>
+        </li>
+        <li data-q="b.l.t toasted sourdough, streaky bacon, emmental cheese, roasted tomatoes, mixed greens">
+          <div class="row"><span class="name">B.L.T</span><span class="price">$15.90</span></div>
+          <p class="desc">Toasted sourdough, streaky bacon, emmental cheese, roasted tomatoes, mixed greens</p>
+        </li>
+        <li data-q="club sandwich ciabatta, baked cajun chicken, streaky bacon, sunny-side up egg, mixed greens">
+          <div class="row"><span class="name">Club Sandwich</span><span class="price">$17.90</span></div>
+          <p class="desc">Ciabatta, baked cajun chicken, streaky bacon, sunny-side up egg, mixed greens</p>
+        </li>
+        <li data-q="smoked salmon bagel italian mixed herbs bagel, salmon gravlax, red onions, mixed greens">
+          <div class="row"><span class="name">Smoked Salmon Bagel</span><span class="price">$18.90</span></div>
+          <p class="desc">Italian mixed herbs bagel, salmon gravlax, red onions, mixed greens</p>
+        </li>
+        <li data-q="caprese (veg) olive ciabatta, italian buffalo mozzarella, baked tomatoes, olive tapenade, mixed greens">
+          <div class="row"><span class="name">Caprese (Veg)</span></div>
+          <p class="desc">Olive ciabatta, Italian buffalo mozzarella, baked tomatoes, olive tapenade, mixed greens</p>
+        </li>
+        <li data-q="bread basket croissant and assorted bread of the day served with butter and fruit jam*">
+          <div class="row"><span class="name">Bread Basket</span><span class="price">$11.90</span></div>
+          <p class="desc">Croissant and assorted bread of the day served with butter and fruit jam*</p>
+        </li></ul>
+    </section>
+    <section id="weekends-special-sat-sun-ph" class="sec">
+      <h2>Weekends Special (Sat/Sun/PH)</h2>
+      
+      <ul>
+        <li data-q="bread créateur breakfast toasted sourdough, german pork sausage, streaky bacon, scrambled eggs, sautéed button mushrooms, roasted tomatoes, mixed greens">
+          <div class="row"><span class="name">Bread Créateur Breakfast</span></div>
+          <p class="desc">Toasted sourdough, German pork sausage, streaky bacon, scrambled eggs, sautéed button mushrooms, roasted tomatoes, mixed greens</p>
+        </li></ul>
+    </section>
+    <section id="add-on-sides" class="sec">
+      <h2>Add On Sides</h2>
+      
+      <ul>
+        <li data-q="bacon ">
+          <div class="row"><span class="name">Bacon</span><span class="price">$3</span></div>
+          
+        </li>
+        <li data-q="sunny-side up egg ">
+          <div class="row"><span class="name">Sunny-side up egg</span><span class="price">$2</span></div>
+          
+        </li>
+        <li data-q="tomatoes ">
+          <div class="row"><span class="name">Tomatoes</span><span class="price">$2</span></div>
+          
+        </li>
+        <li data-q="mixed greens ">
+          <div class="row"><span class="name">Mixed greens</span><span class="price">$2</span></div>
+          
+        </li>
+        <li data-q="emmental cheese ">
+          <div class="row"><span class="name">Emmental cheese</span><span class="price">$3</span></div>
+          
+        </li>
+        <li data-q="muscle ham ">
+          <div class="row"><span class="name">Muscle ham</span><span class="price">$4</span></div>
+          
+        </li>
+        <li data-q="cajun chicken ">
+          <div class="row"><span class="name">Cajun chicken</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="salmon gravlax ">
+          <div class="row"><span class="name">Salmon gravlax</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="creamy scrambled eggs ">
+          <div class="row"><span class="name">Creamy scrambled eggs</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="pork sausage weekends only">
+          <div class="row"><span class="name">Pork sausage</span><span class="price">$4</span></div>
+          <p class="desc">weekends only</p>
+        </li>
+        <li data-q="sautéed button mushrooms weekends only">
+          <div class="row"><span class="name">Sautéed button mushrooms</span><span class="price">$4</span></div>
+          <p class="desc">weekends only</p>
+        </li></ul>
+    </section>
+    <section id="coffee" class="sec">
+      <h2>Coffee</h2>
+      <p class="note">Hot / Iced</p>
+      <ul>
+        <li data-q="americano ">
+          <div class="row"><span class="name">Americano</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Hot</span> <b>$4.50</b></span><span class="pp"><span class="pl">Iced</span> <b>$5.50</b></span></div>
+        </li>
+        <li data-q="latte ">
+          <div class="row"><span class="name">Latte</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Hot</span> <b>$5.50</b></span><span class="pp"><span class="pl">Iced</span> <b>$6.50</b></span></div>
+        </li>
+        <li data-q="mocha ">
+          <div class="row"><span class="name">Mocha</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Hot</span> <b>$6</b></span><span class="pp"><span class="pl">Iced</span> <b>$7</b></span></div>
+        </li>
+        <li data-q="cappuccino/flat white ">
+          <div class="row"><span class="name">Cappuccino/Flat White</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Hot</span> <b>$5.50</b></span><span class="pp"><span class="pl">Iced</span> <b>$6.50</b></span></div>
+        </li>
+        <li data-q="espresso ">
+          <div class="row"><span class="name">Espresso</span><span class="price">$3.50</span></div>
+          
+        </li>
+        <li data-q="extra espresso shot ">
+          <div class="row"><span class="name">Extra Espresso Shot</span><span class="price">$1.50</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="hot-tea" class="sec">
+      <h2>Hot Tea</h2>
+      <p class="note">Hot / Iced</p>
+      <ul>
+        <li data-q="english breakfast ">
+          <div class="row"><span class="name">English Breakfast</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Hot</span> <b>$4</b></span><span class="pp"><span class="pl">Iced</span> <b>$5</b></span></div>
+        </li>
+        <li data-q="earl grey ">
+          <div class="row"><span class="name">Earl Grey</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Hot</span> <b>$4</b></span><span class="pp"><span class="pl">Iced</span> <b>$5</b></span></div>
+        </li>
+        <li data-q="pure camomile ">
+          <div class="row"><span class="name">Pure Camomile</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Hot</span> <b>$4</b></span><span class="pp"><span class="pl">Iced</span> <b>$5</b></span></div>
+        </li>
+        <li data-q="pure peppermint ">
+          <div class="row"><span class="name">Pure Peppermint</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Hot</span> <b>$4</b></span><span class="pp"><span class="pl">Iced</span> <b>$5</b></span></div>
+        </li></ul>
+    </section>
+    <section id="non-caffeine" class="sec">
+      <h2>Non-Caffeine</h2>
+      
+      <ul>
+        <li data-q="orange juice ">
+          <div class="row"><span class="name">Orange Juice</span><span class="price">$3.50</span></div>
+          
+        </li>
+        <li data-q="hot chocolate ">
+          <div class="row"><span class="name">Hot Chocolate</span><span class="price">$5.50</span></div>
+          
+        </li>
+        <li data-q="iced chocolate ">
+          <div class="row"><span class="name">Iced Chocolate</span><span class="price">$6.50</span></div>
+          
+        </li>
+        <li data-q="babycinno/cold milk ">
+          <div class="row"><span class="name">Babycinno/Cold Milk</span><span class="price">$4</span></div>
+          
+        </li>
+        <li data-q="san pellegrino (assorted) ">
+          <div class="row"><span class="name">San Pellegrino (Assorted)</span><span class="price">$4</span></div>
+          
+        </li>
+        <li data-q="coke ">
+          <div class="row"><span class="name">Coke</span><span class="price">$3</span></div>
+          
+        </li>
+        <li data-q="bottled mineral water ">
+          <div class="row"><span class="name">Bottled Mineral Water</span><span class="price">$2</span></div>
+          
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>ALL PRICES ARE NETT. NO SERVICE CHARGE OR GST. *Extra serving of butter or jam chargeable at $1</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Bread Créateur.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Bread Créateur menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's US$29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for US$29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

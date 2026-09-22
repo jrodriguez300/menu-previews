@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>The Roosevelt Menu</title>
+<meta name="description" content="Menu for The Roosevelt, Church Hill (North 25th Street).">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>The Roosevelt</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=623%20North%2025th%20Street%2C%20Richmond%2C%20Virginia%2023223">623 North 25th Street, Richmond, Virginia 23223</a><a href="tel:8046581935">(804) 658-1935</a><span>Dinner Monday-Thursday 5pm-10pm; Friday &amp; Saturday 5pm-11pm; Sunday 5pm-9pm. Brunch Sunday 10:30am-2pm</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#small-plates" data-sec="small-plates">Small Plates</a><a href="#entrees" data-sec="entrees">Entrees</a><a href="#sides" data-sec="sides">Sides</a><a href="#desserts" data-sec="desserts">Desserts</a><a href="#fortified-dessert" data-sec="fortified-dessert">Fortified &amp; Dessert</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="small-plates" class="sec">
+      <h2>Small Plates</h2>
+      
+      <ul>
+        <li data-q="cornbread sweet style, whipped maple butter. v">
+          <div class="row"><span class="name">Cornbread</span><span class="price">$5</span></div>
+          <p class="desc">Sweet style, whipped maple butter. V</p>
+        </li>
+        <li data-q="shugs potato bread seasonal butter, brian&#39;s preserves. vo">
+          <div class="row"><span class="name">Shugs Potato Bread</span><span class="price">$6</span></div>
+          <p class="desc">Seasonal butter, Brian&#39;s preserves. VO</p>
+        </li>
+        <li data-q="bbq spiced chicken wings alabama white sauce. gf">
+          <div class="row"><span class="name">BBQ Spiced Chicken Wings</span><span class="price">$14</span></div>
+          <p class="desc">Alabama white sauce. GF</p>
+        </li>
+        <li data-q="chilled watermelon sweet tea onion, hibiscus dressing, sunflower crisps, yard long beans, sorghum molasses. gf / v / vego">
+          <div class="row"><span class="name">Chilled Watermelon</span><span class="price">$11</span></div>
+          <p class="desc">Sweet tea onion, hibiscus dressing, sunflower crisps, yard long beans, sorghum molasses. GF / V / VEGO</p>
+        </li>
+        <li data-q="deviled eggs tomato crunch oil, corn salad. gf / v">
+          <div class="row"><span class="name">Deviled Eggs</span><span class="price">$13</span></div>
+          <p class="desc">Tomato crunch oil, corn salad. GF / V</p>
+        </li>
+        <li data-q="fried okra pickles jade sauce, confit garlic, sour corn. gf / veg">
+          <div class="row"><span class="name">Fried Okra Pickles</span><span class="price">$11</span></div>
+          <p class="desc">Jade sauce, confit garlic, sour corn. GF / VEG</p>
+        </li>
+        <li data-q="chicken liver mousse cracklins, brian&#39;s preserves, sub rosa bread. gfo">
+          <div class="row"><span class="name">Chicken Liver Mousse</span><span class="price">$15</span></div>
+          <p class="desc">Cracklins, Brian&#39;s preserves, Sub Rosa bread. GFO</p>
+        </li>
+        <li data-q="nashville hot parsnips cream pea hummus, pickled daikon. gf / vo">
+          <div class="row"><span class="name">Nashville Hot Parsnips</span><span class="price">$13</span></div>
+          <p class="desc">Cream pea hummus, pickled daikon. GF / VO</p>
+        </li>
+        <li data-q="brisket stuffed carmen pepper sweet potato leaf pesto, peach cashew macha. gf">
+          <div class="row"><span class="name">Brisket Stuffed Carmen Pepper</span><span class="price">$14</span></div>
+          <p class="desc">Sweet potato leaf pesto, peach cashew macha. GF</p>
+        </li>
+        <li data-q="pig head terrine watermelon relish, rye crunch, bread. gfo">
+          <div class="row"><span class="name">Pig Head Terrine</span><span class="price">$13</span></div>
+          <p class="desc">Watermelon relish, rye crunch, bread. GFO</p>
+        </li>
+        <li data-q="chicken fried pig ear creamed corn, fresno, basil. gf">
+          <div class="row"><span class="name">Chicken Fried Pig Ear</span><span class="price">$11</span></div>
+          <p class="desc">Creamed corn, fresno, basil. GF</p>
+        </li>
+        <li data-q="grilled baby gem caesar sub rosa bread, crispy chicken skin, pickled peppers, parmesan. gfo">
+          <div class="row"><span class="name">Grilled Baby Gem Caesar</span><span class="price">$10</span></div>
+          <p class="desc">Sub Rosa bread, crispy chicken skin, pickled peppers, parmesan. GFO</p>
+        </li>
+        <li data-q="crispy brussels sprouts moondrop grapes, confit garlic, melted peppers, schmaltz dressing. gf / vo">
+          <div class="row"><span class="name">Crispy Brussels Sprouts</span><span class="price">$13</span></div>
+          <p class="desc">Moondrop grapes, confit garlic, melted peppers, schmaltz dressing. GF / VO</p>
+        </li></ul>
+    </section>
+    <section id="entrees" class="sec">
+      <h2>Entrees</h2>
+      
+      <ul>
+        <li data-q="double cheeseburger brioche bun, rooster sauce, house pickles, bacon jam, fries. may be cooked to order. gfo +2">
+          <div class="row"><span class="name">Double Cheeseburger</span><span class="price">$18</span></div>
+          <p class="desc">Brioche bun, rooster sauce, house pickles, bacon jam, fries. May be cooked to order. GFO +2</p>
+        </li>
+        <li data-q="crispy eggplant heart of palm, garlic smashed potato, easterday mushrooms, tomato crunch oil, jade sauce. gf / veg">
+          <div class="row"><span class="name">Crispy Eggplant</span><span class="price">$23</span></div>
+          <p class="desc">Heart of palm, garlic smashed potato, easterday mushrooms, tomato crunch oil, jade sauce. GF / VEG</p>
+        </li>
+        <li data-q="fried catfish butter rice, tomato bacon gravy, hot pickles, urfa gloss. gf">
+          <div class="row"><span class="name">Fried Catfish</span><span class="price">$24</span></div>
+          <p class="desc">Butter rice, tomato bacon gravy, hot pickles, urfa gloss. GF</p>
+        </li>
+        <li data-q="mikael&#39;s catch ajo blanco, dates, tomato &amp; melon salad, tarragon everything seasoning. may be cooked to order. gf">
+          <div class="row"><span class="name">Mikael&#39;s Catch</span><span class="price">$28</span></div>
+          <p class="desc">Ajo blanco, dates, tomato &amp; melon salad, tarragon everything seasoning. May be cooked to order. GF</p>
+        </li>
+        <li data-q="buttermilk braised brisket good mother stallard beans, house bbq sauce, potato salad, rosa lunga onion.">
+          <div class="row"><span class="name">Buttermilk Braised Brisket</span><span class="price">$30</span></div>
+          <p class="desc">Good Mother Stallard beans, house BBQ sauce, potato salad, rosa lunga onion.</p>
+        </li>
+        <li data-q="grilled half chicken jerk glaze, crispy sweet potatoes, basil salad, melted shishito peppers.">
+          <div class="row"><span class="name">Grilled Half Chicken</span><span class="price">$26</span></div>
+          <p class="desc">Jerk glaze, crispy sweet potatoes, basil salad, melted shishito peppers.</p>
+        </li>
+        <li data-q="grilled pork belly deb&#39;s nana&#39;s collards, sub rosa grits, jade sauce, pickled pepper. gf">
+          <div class="row"><span class="name">Grilled Pork Belly</span><span class="price">$28</span></div>
+          <p class="desc">Deb&#39;s Nana&#39;s collards, Sub Rosa grits, jade sauce, pickled pepper. GF</p>
+        </li>
+        <li data-q="pan roasted scallops butter rice, crawfish mull, tobacco onion, ramp butter. may be cooked to order. gf">
+          <div class="row"><span class="name">Pan Roasted Scallops</span><span class="price">$36</span></div>
+          <p class="desc">Butter rice, crawfish mull, tobacco onion, ramp butter. May be cooked to order. GF</p>
+        </li></ul>
+    </section>
+    <section id="sides" class="sec">
+      <h2>Sides</h2>
+      
+      <ul>
+        <li data-q="hot pickles - seasonal veg / gf">
+          <div class="row"><span class="name">Hot Pickles - Seasonal</span><span class="price">$5</span></div>
+          <p class="desc">VEG / GF</p>
+        </li>
+        <li data-q="sub rosa grits v / gf">
+          <div class="row"><span class="name">Sub Rosa Grits</span><span class="price">$6</span></div>
+          <p class="desc">V / GF</p>
+        </li>
+        <li data-q="fries veg / gf">
+          <div class="row"><span class="name">Fries</span><span class="price">$6</span></div>
+          <p class="desc">VEG / GF</p>
+        </li>
+        <li data-q="potato salad ">
+          <div class="row"><span class="name">Potato Salad</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="butter rice w/ spiced peanuts v / gf">
+          <div class="row"><span class="name">Butter Rice w/ Spiced Peanuts</span><span class="price">$6</span></div>
+          <p class="desc">V / GF</p>
+        </li>
+        <li data-q="good mother stallard beans gf">
+          <div class="row"><span class="name">Good Mother Stallard Beans</span><span class="price">$6</span></div>
+          <p class="desc">GF</p>
+        </li>
+        <li data-q="deb&#39;s nana&#39;s collards gf">
+          <div class="row"><span class="name">Deb&#39;s Nana&#39;s Collards</span><span class="price">$6</span></div>
+          <p class="desc">GF</p>
+        </li></ul>
+    </section>
+    <section id="desserts" class="sec">
+      <h2>Desserts</h2>
+      
+      <ul>
+        <li data-q="cheerwine cake yellow cake, cheerwine frosting, amerena. veg">
+          <div class="row"><span class="name">Cheerwine Cake</span><span class="price">$8</span></div>
+          <p class="desc">Yellow cake, Cheerwine frosting, amerena. VEG</p>
+        </li>
+        <li data-q="chocolate cloud semifreddo brown butter whipped cream, brian&#39;s preserves. v / gf">
+          <div class="row"><span class="name">Chocolate Cloud Semifreddo</span><span class="price">$10</span></div>
+          <p class="desc">Brown butter whipped cream, Brian&#39;s preserves. V / GF</p>
+        </li>
+        <li data-q="bekah&#39;s walnut spice cake poached pear, whipped honey, cider glaze. v">
+          <div class="row"><span class="name">Bekah&#39;s Walnut Spice Cake</span><span class="price">$10</span></div>
+          <p class="desc">Poached pear, whipped honey, cider glaze. V</p>
+        </li>
+        <li data-q="blackberry buckle lemon icing, elderberry curd. v">
+          <div class="row"><span class="name">Blackberry Buckle</span><span class="price">$10</span></div>
+          <p class="desc">Lemon icing, elderberry curd. V</p>
+        </li>
+        <li data-q="miso banana panna cotta miso caramel. gf">
+          <div class="row"><span class="name">Miso Banana Panna Cotta</span><span class="price">$7</span></div>
+          <p class="desc">Miso caramel. GF</p>
+        </li></ul>
+    </section>
+    <section id="fortified-dessert" class="sec">
+      <h2>Fortified &amp; Dessert</h2>
+      
+      <ul>
+        <li data-q="dow&#39;s 10 year tawny port fresh cherry, raisin, fig, nutmeg, coriander.">
+          <div class="row"><span class="name">Dow&#39;s 10 Year Tawny Port</span><span class="price">$11</span></div>
+          <p class="desc">Fresh cherry, raisin, fig, nutmeg, coriander.</p>
+        </li>
+        <li data-q="manoella 20 year tawny port baked apple, bruised plum, marshmallow, hazelnut and pie crust.">
+          <div class="row"><span class="name">Manoella 20 Year Tawny Port</span><span class="price">$18</span></div>
+          <p class="desc">Baked apple, bruised plum, marshmallow, hazelnut and pie crust.</p>
+        </li>
+        <li data-q="dow&#39;s 30 year tawny port baked cherry, bruised plum, marshmallow, hazelnut and pie crust.">
+          <div class="row"><span class="name">Dow&#39;s 30 Year Tawny Port</span><span class="price">$41</span></div>
+          <p class="desc">Baked cherry, bruised plum, marshmallow, hazelnut and pie crust.</p>
+        </li>
+        <li data-q="channing daughters vervino vermouth floral herbaceous bouquet, honeysuckle, apricot, candied lemon.">
+          <div class="row"><span class="name">Channing Daughters Vervino Vermouth</span><span class="price">$15</span></div>
+          <p class="desc">Floral herbaceous bouquet, honeysuckle, apricot, candied lemon.</p>
+        </li>
+        <li data-q="orleans apertif herbal cider heirloom apples, basil, anise hyssop.">
+          <div class="row"><span class="name">Orleans Apertif Herbal Cider</span><span class="price">$12</span></div>
+          <p class="desc">Heirloom apples, basil, anise hyssop.</p>
+        </li>
+        <li data-q="eden vermont ice cider apple compote, pineapple, citrus and turbinado.">
+          <div class="row"><span class="name">Eden Vermont Ice Cider</span><span class="price">$13</span></div>
+          <p class="desc">Apple compote, pineapple, citrus and turbinado.</p>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>If you have a food allergy, please notify us. Automatic gratuity of 20% for parties of 6 or more may be applied. Items marked * may be cooked to order; consuming raw or undercooked meat, poultry, seafood, shellfish, or eggs may increase your risk of food borne illness. Executive Chef Leah Branch. Owners Mark Herndon &amp; Kendra Feather.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for The Roosevelt.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The The Roosevelt menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

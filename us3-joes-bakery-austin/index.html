@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Joe&#39;s Bakery &amp; Coffee Shop Menu</title>
+<meta name="description" content="Menu for Joe&#39;s Bakery &amp; Coffee Shop, East Austin (E 7th St).">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Joe&#39;s Bakery &amp; Coffee Shop</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=2305%20E%207th%20St%2C%20Austin%2C%20TX%2078702">2305 E 7th St, Austin, TX 78702</a><a href="tel:5124720017">(512) 472-0017</a><span>Tuesday-Sunday 6:00 AM - 2:00 PM; Monday closed</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#breakfast" data-sec="breakfast">Breakfast</a><a href="#tacos" data-sec="tacos">Tacos</a><a href="#lunch" data-sec="lunch">Lunch</a><a href="#sides" data-sec="sides">Sides</a><a href="#beverages" data-sec="beverages">Beverages</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="breakfast" class="sec">
+      <h2>Breakfast</h2>
+      <p class="note">Served all day</p>
+      <ul>
+        <li data-q="joey rocha plate two eggs* any style with side of pork carne guisada, potatoes, beans, sausage or bacon, &amp; two tortiilas">
+          <div class="row"><span class="name">Joey Rocha Plate</span><span class="price">$15.25</span></div>
+          <p class="desc">Two eggs* any style with side of pork carne guisada, potatoes, beans, sausage or bacon, &amp; two tortiilas</p>
+        </li>
+        <li data-q="barbacoa plate (s) two eggs* any style with side of barbacoa, beans, potatoes, &amp; two tortillas">
+          <div class="row"><span class="name">Barbacoa Plate (S)</span><span class="price">$15.25</span></div>
+          <p class="desc">Two eggs* any style with side of barbacoa, beans, potatoes, &amp; two tortillas</p>
+        </li>
+        <li data-q="pork chop plate two eggs* any style with 4 oz. breaded pork chop, side of beans, potatoes, &amp; two tortillas">
+          <div class="row"><span class="name">Pork Chop Plate</span><span class="price">$15.25</span></div>
+          <p class="desc">Two eggs* any style with 4 oz. breaded pork chop, side of beans, potatoes, &amp; two tortillas</p>
+        </li>
+        <li data-q="miga con todo plate (s) two scrambled eggs with corn chips, onions, tomatoes, &amp; jalapenos topped with cheese, side of beans, &amp; two tortillas">
+          <div class="row"><span class="name">Miga Con Todo Plate (S)</span><span class="price">$14.25</span></div>
+          <p class="desc">Two scrambled eggs with corn chips, onions, tomatoes, &amp; jalapenos topped with cheese, side of beans, &amp; two tortillas</p>
+        </li>
+        <li data-q="miga plate (s) two scrambled eggs with corn chips &amp; topped with cheese, side of beans, &amp; two tortillas">
+          <div class="row"><span class="name">Miga Plate (S)</span><span class="price">$12.00</span></div>
+          <p class="desc">Two scrambled eggs with corn chips &amp; topped with cheese, side of beans, &amp; two tortillas</p>
+        </li>
+        <li data-q="chicharrone plate (s) two eggs* any style with side of fried pork skins cooked in salsa, side of beans, potatoes, &amp; two tortillas">
+          <div class="row"><span class="name">Chicharrone Plate (S)</span><span class="price">$14.25</span></div>
+          <p class="desc">Two eggs* any style with side of fried pork skins cooked in salsa, side of beans, potatoes, &amp; two tortillas</p>
+        </li>
+        <li data-q="huevos rancheros plate (s) two eggs* any style with ranchero sauce, side of beans, potatoes, bacon or sausage, &amp; two tortillas">
+          <div class="row"><span class="name">Huevos Rancheros Plate (S)</span><span class="price">$14.25</span></div>
+          <p class="desc">Two eggs* any style with ranchero sauce, side of beans, potatoes, bacon or sausage, &amp; two tortillas</p>
+        </li>
+        <li data-q="huevos a la mexicana plate (s) two scrambled eggs mixed with tomato, onions, &amp; jalapenos, side of beans, bacon, &amp; two tortillas">
+          <div class="row"><span class="name">Huevos A La Mexicana Plate (S)</span><span class="price">$14.25</span></div>
+          <p class="desc">Two scrambled eggs mixed with tomato, onions, &amp; jalapenos, side of beans, bacon, &amp; two tortillas</p>
+        </li>
+        <li data-q="smaller plate (s) smaller portion of (s) marked plates">
+          <div class="row"><span class="name">Smaller Plate (S)</span><span class="price">$8.00</span></div>
+          <p class="desc">Smaller portion of (S) marked plates</p>
+        </li>
+        <li data-q="childs plate (12 &amp; under) one egg any style with one bacon or sausage, beans or potatoes, &amp; one tortilla">
+          <div class="row"><span class="name">Childs Plate (12 &amp; Under)</span><span class="price">$7.25</span></div>
+          <p class="desc">One egg any style with one bacon or sausage, beans or potatoes, &amp; one tortilla</p>
+        </li>
+        <li data-q="oatmeal with raisins and brown sugar, toast or tortilla">
+          <div class="row"><span class="name">Oatmeal</span><span class="price">$6.50</span></div>
+          <p class="desc">with raisins and brown sugar, toast or tortilla</p>
+        </li>
+        <li data-q="menudo beef tripe &amp; hominy cooked in spices. served with flour or corn tortillas lemon &amp; onion.">
+          <div class="row"><span class="name">Menudo</span></div>
+          <p class="desc">Beef tripe &amp; hominy cooked in spices. Served with flour or corn tortillas lemon &amp; onion.</p><div class="prices"><span class="pp"><span class="pl">Pint</span> <b>$8.25</b></span><span class="pp"><span class="pl">Quart</span> <b>$16.50</b></span></div>
+        </li>
+        <li data-q="caldo beef soup with vegetables. served with rice, flour or corn tortillas lemon &amp; onion.">
+          <div class="row"><span class="name">Caldo</span></div>
+          <p class="desc">Beef soup with vegetables. Served with rice, flour or corn tortillas lemon &amp; onion.</p><div class="prices"><span class="pp"><span class="pl">Pint</span> <b>$8.25</b></span><span class="pp"><span class="pl">Quart</span> <b>$16.50</b></span></div>
+        </li>
+        <li data-q="extra meat ">
+          <div class="row"><span class="name">Extra Meat</span><span class="price">$2.50</span></div>
+          
+        </li>
+        <li data-q="extra hominy/veg. ">
+          <div class="row"><span class="name">Extra Hominy/Veg.</span><span class="price">$2.00</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="tacos" class="sec">
+      <h2>Tacos</h2>
+      <p class="note">All tacos come on homemade flour tortilla (corn tortilla available upon request).</p>
+      <ul>
+        <li data-q="additional items ">
+          <div class="row"><span class="name">Additional Items</span><span class="price">$.60</span></div>
+          
+        </li>
+        <li data-q="bacon &amp; egg ">
+          <div class="row"><span class="name">Bacon &amp; Egg</span><span class="price">$2.75</span></div>
+          
+        </li>
+        <li data-q="sausage &amp; egg ">
+          <div class="row"><span class="name">Sausage &amp; Egg</span><span class="price">$2.75</span></div>
+          
+        </li>
+        <li data-q="chorizo &amp; egg ">
+          <div class="row"><span class="name">Chorizo &amp; Egg</span><span class="price">$2.75</span></div>
+          
+        </li>
+        <li data-q="potato &amp; egg ">
+          <div class="row"><span class="name">Potato &amp; Egg</span><span class="price">$2.75</span></div>
+          
+        </li>
+        <li data-q="bean &amp; egg ">
+          <div class="row"><span class="name">Bean &amp; Egg</span><span class="price">$2.75</span></div>
+          
+        </li>
+        <li data-q="bean &amp; cheese ">
+          <div class="row"><span class="name">Bean &amp; Cheese</span><span class="price">$2.75</span></div>
+          
+        </li>
+        <li data-q="carne guisada ">
+          <div class="row"><span class="name">Carne Guisada</span><span class="price">$2.75</span></div>
+          
+        </li>
+        <li data-q="chicharrone ">
+          <div class="row"><span class="name">Chicharrone</span><span class="price">$2.75</span></div>
+          
+        </li>
+        <li data-q="picadillo ">
+          <div class="row"><span class="name">Picadillo</span><span class="price">$2.75</span></div>
+          
+        </li>
+        <li data-q="barbacoa ">
+          <div class="row"><span class="name">Barbacoa</span><span class="price">$2.75</span></div>
+          
+        </li>
+        <li data-q="miga ">
+          <div class="row"><span class="name">Miga</span><span class="price">$3.00</span></div>
+          
+        </li>
+        <li data-q="miga con todo ">
+          <div class="row"><span class="name">Miga Con Todo</span><span class="price">$3.75</span></div>
+          
+        </li>
+        <li data-q="huevos a la mexicana ">
+          <div class="row"><span class="name">Huevos A La Mexicana</span><span class="price">$3.75</span></div>
+          
+        </li>
+        <li data-q="pork chop ">
+          <div class="row"><span class="name">Pork Chop</span><span class="price">$5.00</span></div>
+          
+        </li>
+        <li data-q="egg ">
+          <div class="row"><span class="name">Egg</span><span class="price">$2.35</span></div>
+          
+        </li>
+        <li data-q="r-potato ">
+          <div class="row"><span class="name">R-Potato</span><span class="price">$2.35</span></div>
+          
+        </li>
+        <li data-q="bean ">
+          <div class="row"><span class="name">Bean</span><span class="price">$2.35</span></div>
+          
+        </li>
+        <li data-q="rice ">
+          <div class="row"><span class="name">Rice</span><span class="price">$2.35</span></div>
+          
+        </li>
+        <li data-q="guacamole ">
+          <div class="row"><span class="name">Guacamole</span><span class="price">$3.00</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="lunch" class="sec">
+      <h2>Lunch</h2>
+      <p class="note">After 10:30 AM</p>
+      <ul>
+        <li data-q="daily special (tuesday - friday) served with tea">
+          <div class="row"><span class="name">Daily Special</span><span class="price">$11.75</span></div>
+          <p class="desc">(Tuesday - Friday) Served with tea</p>
+        </li>
+        <li data-q="carne guisada plate pork carne guisada with rice, beans, salad, &amp; two tortillas">
+          <div class="row"><span class="name">Carne Guisada Plate</span><span class="price">$15.25</span></div>
+          <p class="desc">Pork carne guisada with rice, beans, salad, &amp; two tortillas</p>
+        </li>
+        <li data-q="barbacoa plate (s) barbacoa with pico de gallo, rice, beans, salad, &amp; two tortillas">
+          <div class="row"><span class="name">Barbacoa Plate (S)</span><span class="price">$15.25</span></div>
+          <p class="desc">Barbacoa with pico de gallo, rice, beans, salad, &amp; two tortillas</p>
+        </li>
+        <li data-q="chicken quesadilla plate grilled chicken &amp; cheese quesadilla with pico de gallo, guacamole, rice, &amp; beans">
+          <div class="row"><span class="name">Chicken Quesadilla Plate</span><span class="price">$16.50</span></div>
+          <p class="desc">Grilled chicken &amp; cheese quesadilla with pico de gallo, guacamole, rice, &amp; beans</p>
+        </li>
+        <li data-q="mexican dinner plate one beef crispy taco, two enchiladas choice of beef, chicken, or cheese with rice, beans, &amp; two tortillas">
+          <div class="row"><span class="name">Mexican Dinner Plate</span><span class="price">$15.25</span></div>
+          <p class="desc">One beef crispy taco, two enchiladas choice of beef, chicken, or cheese with rice, beans, &amp; two tortillas</p>
+        </li>
+        <li data-q="beef taco plate (s) three picadillo tacos served on flour tortilla, corn tortilla, or crispy shell with lettuce, tomato, cheese, rice, &amp; beans.">
+          <div class="row"><span class="name">Beef Taco Plate (S)</span><span class="price">$14.25</span></div>
+          <p class="desc">Three picadillo tacos served on flour tortilla, corn tortilla, or crispy shell with lettuce, tomato, cheese, rice, &amp; beans.</p>
+        </li>
+        <li data-q="chicken taco plate (s) three tacos your choice of chicken guisada or grill chicken served on flour tortilla, corn tortilla, or crispy shell with lettuce, tomato, cheese, rice, &amp; beans.">
+          <div class="row"><span class="name">Chicken Taco Plate (S)</span><span class="price">$15.50</span></div>
+          <p class="desc">Three tacos your choice of chicken guisada or grill chicken served on flour tortilla, corn tortilla, or crispy shell with lettuce, tomato, cheese, rice, &amp; beans.</p>
+        </li>
+        <li data-q="enchildada plate (s) three beef, chicken, or cheese, enchiladas served with rice, beans, &amp; two tortillas. onions available upon request.">
+          <div class="row"><span class="name">Enchildada Plate (S)</span><span class="price">$13.50</span></div>
+          <p class="desc">Three beef, chicken, or cheese, enchiladas served with rice, beans, &amp; two tortillas. Onions available upon request.</p>
+        </li>
+        <li data-q="combo enchilada plate ">
+          <div class="row"><span class="name">Combo Enchilada Plate</span><span class="price">$15.25</span></div>
+          
+        </li>
+        <li data-q="smaller plate (s) smaller portion of (s) marked plates">
+          <div class="row"><span class="name">Smaller Plate (S)</span><span class="price">$8.00</span></div>
+          <p class="desc">Smaller portion of (S) marked plates</p>
+        </li>
+        <li data-q="guacamole salad iceberg lettuce, tomatoes, &amp; guacamole">
+          <div class="row"><span class="name">Guacamole Salad</span><span class="price">$8.50</span></div>
+          <p class="desc">Iceberg lettuce, tomatoes, &amp; guacamole</p>
+        </li>
+        <li data-q="childs plate (12 &amp; under) one enchilada or one beef or chicken taco served with rice, or beans.">
+          <div class="row"><span class="name">Childs Plate (12 &amp; Under)</span><span class="price">$7.25</span></div>
+          <p class="desc">One enchilada or one beef or chicken taco served with rice, or beans.</p>
+        </li></ul>
+    </section>
+    <section id="sides" class="sec">
+      <h2>Sides</h2>
+      <p class="note">Served all day</p>
+      <ul>
+        <li data-q="chips &amp; salsa ">
+          <div class="row"><span class="name">Chips &amp; Salsa</span><span class="price">$3.50</span></div>
+          
+        </li>
+        <li data-q="chips &amp; guacamole ">
+          <div class="row"><span class="name">Chips &amp; Guacamole</span><span class="price">$7.00</span></div>
+          
+        </li>
+        <li data-q="chips &amp; queso ">
+          <div class="row"><span class="name">Chips &amp; Queso</span><span class="price">$6.50</span></div>
+          
+        </li>
+        <li data-q="bacon or sausage ">
+          <div class="row"><span class="name">Bacon or Sausage</span><span class="price">$5.00</span></div>
+          
+        </li>
+        <li data-q="pork chop ">
+          <div class="row"><span class="name">Pork Chop</span><span class="price">$5.00</span></div>
+          
+        </li>
+        <li data-q="carne guisada ">
+          <div class="row"><span class="name">Carne Guisada</span><span class="price">$5.00</span></div>
+          
+        </li>
+        <li data-q="chicken guisada ">
+          <div class="row"><span class="name">Chicken Guisada</span><span class="price">$5.00</span></div>
+          
+        </li>
+        <li data-q="picadillo ">
+          <div class="row"><span class="name">Picadillo</span><span class="price">$5.00</span></div>
+          
+        </li>
+        <li data-q="barbacoa ">
+          <div class="row"><span class="name">Barbacoa</span><span class="price">$5.00</span></div>
+          
+        </li>
+        <li data-q="beans ">
+          <div class="row"><span class="name">Beans</span><span class="price">$3.75</span></div>
+          
+        </li>
+        <li data-q="rice ">
+          <div class="row"><span class="name">Rice</span><span class="price">$3.75</span></div>
+          
+        </li>
+        <li data-q="r-potatoes ">
+          <div class="row"><span class="name">R-Potatoes</span><span class="price">$3.75</span></div>
+          
+        </li>
+        <li data-q="guacamole ">
+          <div class="row"><span class="name">Guacamole</span><span class="price">$5.50</span></div>
+          
+        </li>
+        <li data-q="egg ">
+          <div class="row"><span class="name">Egg</span><span class="price">$2.00</span></div>
+          
+        </li>
+        <li data-q="cheese ">
+          <div class="row"><span class="name">Cheese</span><span class="price">$2.00</span></div>
+          
+        </li>
+        <li data-q="pico de gallo ">
+          <div class="row"><span class="name">Pico de Gallo</span><span class="price">$2.50</span></div>
+          
+        </li>
+        <li data-q="jalapenos ">
+          <div class="row"><span class="name">Jalapenos</span><span class="price">$2.00</span></div>
+          
+        </li>
+        <li data-q="cilantro ">
+          <div class="row"><span class="name">Cilantro</span><span class="price">$.75</span></div>
+          
+        </li>
+        <li data-q="lemon ">
+          <div class="row"><span class="name">Lemon</span><span class="price">$.50</span></div>
+          
+        </li>
+        <li data-q="onion ">
+          <div class="row"><span class="name">Onion</span><span class="price">$.50</span></div>
+          
+        </li>
+        <li data-q="tortilla ">
+          <div class="row"><span class="name">Tortilla</span><span class="price">$.50</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="beverages" class="sec">
+      <h2>Beverages</h2>
+      
+      <ul>
+        <li data-q="coffee ">
+          <div class="row"><span class="name">Coffee</span><span class="price">$3.00</span></div>
+          
+        </li>
+        <li data-q="tea ">
+          <div class="row"><span class="name">Tea</span><span class="price">$2.75</span></div>
+          
+        </li>
+        <li data-q="fountain drink ">
+          <div class="row"><span class="name">Fountain Drink</span><span class="price">$2.75</span></div>
+          
+        </li>
+        <li data-q="bottled soda ">
+          <div class="row"><span class="name">Bottled Soda</span><span class="price">$3.00</span></div>
+          
+        </li>
+        <li data-q="bottled water ">
+          <div class="row"><span class="name">Bottled Water</span><span class="price">$3.00</span></div>
+          
+        </li>
+        <li data-q="juice ">
+          <div class="row"><span class="name">Juice</span><span class="price">$3.00</span></div>
+          
+        </li>
+        <li data-q="milk ">
+          <div class="row"><span class="name">Milk</span><span class="price">$3.00</span></div>
+          
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>No separate checks. Additional charge for plate substitutions. Packaging fee included on all orders. Smaller &amp; child plates dine-in only. Gratuity included on all parties of 5 or more. Take-out fee included on large take-out orders. * Consuming raw or undercooked eggs may increase risk of foodborne illness.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Joe&#39;s Bakery &amp; Coffee Shop.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Joe&#39;s Bakery &amp; Coffee Shop menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

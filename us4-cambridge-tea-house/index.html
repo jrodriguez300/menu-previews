@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Cambridge Tea House Menu</title>
+<meta name="description" content="Menu for Cambridge Tea House, West 5th Avenue (Grandview Heights / Marble Cliff area).">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Cambridge Tea House</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=1885%20W.%205th%20Ave.%2C%20Columbus%2C%20OH%2043212">1885 W. 5th Ave., Columbus, OH 43212</a><a href="tel:6144866464">614-486-6464</a><span>Wednesday-Friday 11:00am - 3:00pm; Saturday-Sunday 10:00am - 3:00pm (kitchen closes at 2 PM)</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#breakfast" data-sec="breakfast">Breakfast</a><a href="#salads" data-sec="salads">Salads</a><a href="#a-la-carte" data-sec="a-la-carte">A la carte</a><a href="#sandwiches" data-sec="sandwiches">Sandwiches</a><a href="#prince-or-princess-tea" data-sec="prince-or-princess-tea">Prince or Princess Tea</a><a href="#tea-service" data-sec="tea-service">Tea Service</a><a href="#tea-service-appetizers" data-sec="tea-service-appetizers">Tea Service Appetizers</a><a href="#tea-lattes" data-sec="tea-lattes">Tea Lattes</a><a href="#beverages" data-sec="beverages">Beverages</a><a href="#seasonal-libations" data-sec="seasonal-libations">Seasonal Libations</a><a href="#cans" data-sec="cans">Cans</a><a href="#wine" data-sec="wine">Wine</a><a href="#beer-cocktails" data-sec="beer-cocktails">Beer Cocktails</a><a href="#beer-beer" data-sec="beer-beer">Beer Beer</a><a href="#sunday-funday-mocktails" data-sec="sunday-funday-mocktails">Sunday Funday Mocktails</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="breakfast" class="sec">
+      <h2>Breakfast</h2>
+      
+      <ul>
+        <li data-q="fresh baked scones cream, currant, or scone of the day. our clotted cream $1.25. jam $.75, butter $.50">
+          <div class="row"><span class="name">Fresh Baked Scones</span><span class="price">$4.00</span></div>
+          <p class="desc">Cream, currant, or scone of the day. Our clotted cream $1.25. Jam $.75, butter $.50</p>
+        </li>
+        <li data-q="quiche du jour with fresh fruit and 2 slices of tea bread. substitute a scone for the tea bread +$1.00">
+          <div class="row"><span class="name">Quiche du Jour</span><span class="price">$13.50</span></div>
+          <p class="desc">With fresh fruit and 2 slices of tea bread. Substitute a scone for the tea bread +$1.00</p>
+        </li>
+        <li data-q="seasonal vegetable frittata (v, gf) with berries and balsamic side green salad">
+          <div class="row"><span class="name">Seasonal Vegetable Frittata (V, GF)</span><span class="price">$13.00</span></div>
+          <p class="desc">With berries and balsamic side green salad</p>
+        </li>
+        <li data-q="tea house cottage cheese plate (v) a just-baked scone served with cottage cheese and fresh fruit">
+          <div class="row"><span class="name">Tea House Cottage Cheese Plate (V)</span><span class="price">$13.00</span></div>
+          <p class="desc">A just-baked scone served with cottage cheese and fresh fruit</p>
+        </li>
+        <li data-q="tea house bacon plate a just-baked scone served with two slices of crispy applewood smoked bacon and fresh fruit">
+          <div class="row"><span class="name">Tea House Bacon Plate</span><span class="price">$12.50</span></div>
+          <p class="desc">A just-baked scone served with two slices of crispy Applewood smoked bacon and fresh fruit</p>
+        </li></ul>
+    </section>
+    <section id="salads" class="sec">
+      <h2>Salads</h2>
+      <p class="note">Served with flax seed crackers (GF available upon request.) Add avocado or bacon to any salad: +$4.00</p>
+      <ul>
+        <li data-q="house green (v) mixed greens in house-made balsamic vinaigrette with sliced strawberries, toasted almonds and goat cheese">
+          <div class="row"><span class="name">House Green (V)</span></div>
+          <p class="desc">Mixed greens in house-made balsamic vinaigrette with sliced strawberries, toasted almonds and goat cheese</p><div class="prices"><span class="pp"><span class="pl">Side</span> <b>$5.50</b></span><span class="pp"><span class="pl">Entree</span> <b>$10.00</b></span></div>
+        </li>
+        <li data-q="buttermilk herb salad (v) mixed greens, grape tomato, cucumber, radish, hard boiled egg, red onion and cheddar cheese in buttermilk herb dressing">
+          <div class="row"><span class="name">Buttermilk Herb Salad (V)</span></div>
+          <p class="desc">Mixed greens, grape tomato, cucumber, radish, hard boiled egg, red onion and cheddar cheese in buttermilk herb dressing</p><div class="prices"><span class="pp"><span class="pl">Side</span> <b>$7.00</b></span><span class="pp"><span class="pl">Entree</span> <b>$13.50</b></span></div>
+        </li>
+        <li data-q="beet salad (v) mixed greens, roasted beets, orange supremes, dried cranberries, toasted walnuts &amp; goat cheese in our sweet &amp; sour dressing">
+          <div class="row"><span class="name">Beet Salad (V)</span><span class="price">$14.00</span></div>
+          <p class="desc">Mixed greens, roasted beets, orange supremes, dried cranberries, toasted walnuts &amp; goat cheese in our sweet &amp; sour dressing</p>
+        </li>
+        <li data-q="apple-cheddar salad mixed greens, aged cheddar cheese, diced apples, bacon and candied pecans in house-made balsamic vinaigrette">
+          <div class="row"><span class="name">Apple-Cheddar Salad</span><span class="price">$14.00</span></div>
+          <p class="desc">Mixed greens, aged cheddar cheese, diced apples, bacon and candied pecans in house-made balsamic vinaigrette</p>
+        </li>
+        <li data-q="salad trio pick 3: curried egg, orange chicken, lemony tuna, cottage cheese, carrot salad, fresh fruit, side house green salad, seasonal side, or a cup of soup (add $1.50 for side buttermilk herb)">
+          <div class="row"><span class="name">Salad Trio</span><span class="price">$14.75</span></div>
+          <p class="desc">Pick 3: curried egg, orange chicken, lemony tuna, cottage cheese, carrot salad, fresh fruit, side house green salad, seasonal side, or a cup of soup (add $1.50 for side buttermilk herb)</p>
+        </li></ul>
+    </section>
+    <section id="a-la-carte" class="sec">
+      <h2>A la carte</h2>
+      
+      <ul>
+        <li data-q="seasonal soup served with house-made crackers">
+          <div class="row"><span class="name">Seasonal Soup</span></div>
+          <p class="desc">Served with house-made crackers</p><div class="prices"><span class="pp"><span class="pl">Cup</span> <b>$5.00</b></span><span class="pp"><span class="pl">Bowl</span> <b>$6.50</b></span></div>
+        </li>
+        <li data-q="signature carrot salad ">
+          <div class="row"><span class="name">Signature carrot salad</span><span class="price">$3.50</span></div>
+          
+        </li>
+        <li data-q="2 slices of our house-made tea bread ">
+          <div class="row"><span class="name">2 slices of our house-made tea bread</span><span class="price">$3.50</span></div>
+          
+        </li>
+        <li data-q="house-made toast w/butter &amp; jam ">
+          <div class="row"><span class="name">House-made toast w/butter &amp; jam</span><span class="price">$3.50</span></div>
+          
+        </li>
+        <li data-q="fresh fruit cup ">
+          <div class="row"><span class="name">Fresh fruit cup</span><span class="price">$4.75</span></div>
+          
+        </li>
+        <li data-q="side of cottage cheese ">
+          <div class="row"><span class="name">Side of cottage cheese</span><span class="price">$4.75</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="sandwiches" class="sec">
+      <h2>Sandwiches</h2>
+      <p class="note">Served on house-made bread accompanied by our signature carrot salad. Substitute a fruit cup, cottage cheese or seasonal side: $1.25. Substitute a cup of soup or side house green: $1.75. Substitute a side buttermilk herb salad $2.25. Substitute gluten free bread: $2.50. Add sliced deli turkey, bacon or avocado to any sandwich: +$4.00</p>
+      <ul>
+        <li data-q="curried egg salad (v) lightly curried, with romaine lettuce">
+          <div class="row"><span class="name">Curried Egg Salad (V)</span><span class="price">$13.50</span></div>
+          <p class="desc">Lightly curried, with romaine lettuce</p>
+        </li>
+        <li data-q="orange chicken salad tea-poached chicken breasts, orange juice, grapes &amp; pecans in a horseradish mayonnaise with romaine lettuce">
+          <div class="row"><span class="name">Orange Chicken Salad</span><span class="price">$14.00</span></div>
+          <p class="desc">Tea-poached chicken breasts, orange juice, grapes &amp; pecans in a horseradish mayonnaise with romaine lettuce</p>
+        </li>
+        <li data-q="fresh veggie (vegan) lemon hummus, avocado, shredded carrots, fresh shredded beets and sliced cucumber">
+          <div class="row"><span class="name">Fresh Veggie (vegan)</span><span class="price">$12.50</span></div>
+          <p class="desc">Lemon hummus, avocado, shredded carrots, fresh shredded beets and sliced cucumber</p>
+        </li>
+        <li data-q="lemony tuna albacore tuna salad made with house-made hummus, celery, onion &amp; dill, with romaine lettuce">
+          <div class="row"><span class="name">Lemony Tuna</span><span class="price">$14.00</span></div>
+          <p class="desc">Albacore tuna salad made with house-made hummus, celery, onion &amp; dill, with romaine lettuce</p>
+        </li>
+        <li data-q="bacon avocado crispy bacon, cream cheese, fresh avocado &amp; house-pickled red onion">
+          <div class="row"><span class="name">Bacon Avocado</span><span class="price">$14.50</span></div>
+          <p class="desc">Crispy bacon, cream cheese, fresh avocado &amp; house-pickled red onion</p>
+        </li>
+        <li data-q="grilled brie &amp; apple (v) melty french brie with honeycrisp apples and fig jam">
+          <div class="row"><span class="name">Grilled Brie &amp; Apple (V)</span><span class="price">$14.50</span></div>
+          <p class="desc">Melty French Brie with Honeycrisp apples and fig jam</p>
+        </li>
+        <li data-q="grilled swiss &amp; pear (v) with apricot-dijon spread and toasted sliced almonds">
+          <div class="row"><span class="name">Grilled Swiss &amp; Pear (V)</span><span class="price">$14.50</span></div>
+          <p class="desc">with apricot-dijon spread and toasted sliced almonds</p>
+        </li>
+        <li data-q="good grilled turkey with swiss cheese, bacon, caramelized onion and sun-dried tomato aioli">
+          <div class="row"><span class="name">Good Grilled Turkey</span><span class="price">$15.50</span></div>
+          <p class="desc">With swiss cheese, bacon, caramelized onion and sun-dried tomato aioli</p>
+        </li>
+        <li data-q="grilled pimento &amp; tomato (v) house-made pimento cheese griddled on house-made bread with roasted tomato slices">
+          <div class="row"><span class="name">Grilled Pimento &amp; Tomato (V)</span><span class="price">$13.50</span></div>
+          <p class="desc">House-made pimento cheese griddled on house-made bread with roasted tomato slices</p>
+        </li></ul>
+    </section>
+    <section id="prince-or-princess-tea" class="sec">
+      <h2>Prince or Princess Tea</h2>
+      <p class="note">for our guests 10 and under. Choose one sandwich or entree. Includes a crown/tiara, fruit, tea cookies, and a children&#39;s beverage in a tea cup: raspberry iced tea (herbal,) yellow &amp; blue hot tea (herbal,) peppermint hot tea (herbal,) Indigo punch hot tea (herbal,) apple juice, orange juice, chocolate milk or lavender lemonade</p>
+      <ul>
+        <li data-q="heart-shaped peanut butter and grape jam sandwiches ">
+          <div class="row"><span class="name">Heart-shaped peanut butter and grape jam sandwiches</span><span class="price">$9.75</span></div>
+          
+        </li>
+        <li data-q="cream cheese &amp; pickles-or-cucumber tea sandwiches ">
+          <div class="row"><span class="name">Cream cheese &amp; pickles-or-cucumber tea sandwiches</span><span class="price">$9.75</span></div>
+          
+        </li>
+        <li data-q="grilled cheddar cheese sandwich add turkey +$1">
+          <div class="row"><span class="name">Grilled cheddar cheese sandwich</span><span class="price">$9.75</span></div>
+          <p class="desc">add turkey +$1</p>
+        </li>
+        <li data-q="turkey &amp; swiss tea sandwiches ">
+          <div class="row"><span class="name">Turkey &amp; swiss tea sandwiches</span><span class="price">$10.75</span></div>
+          
+        </li>
+        <li data-q="scrambled egg &amp; kid&#39;s toast ">
+          <div class="row"><span class="name">Scrambled egg &amp; kid&#39;s toast</span><span class="price">$10.75</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="tea-service" class="sec">
+      <h2>Tea Service</h2>
+      <p class="note">Tea Services are priced per person. Additional charge for shared service $3.00. See our libations menu for additional celebratory beverages!</p>
+      <ul>
+        <li data-q="afternoon tea served in the traditional style on a three-tiered tray with a small pot of freshly brewed harney &amp; sons loose leaf tea (additional charge applies for premium teas): a full-sized scone with our clotted cream and strawberry jam, a duo of house-made miniature desserts (chef&#39;s choice,) and your choice of three savory finger sandwiches, from: curried egg salad triangles (veg); orange chicken salad finger sandwich; bacon avocado tea sandwich w/cream cheese &amp; pickled red onion; herbed goat cheese &amp; cucumber canape (veg); turkey, swiss cheese &amp; sun-dried tomato aioli tea sandwich; lemony tuna on dark rye tea sandwich; pimento cheese &amp; tomato on sourdough tea sandwich; garden veggie with hummus &amp; avocado tea sandwich (veg); brie &amp; fig jam vol-au-vent (veg). add an additional savory tea sandwich $3.50. note for parties of 5 or more: to better serve everyone, each guest will receive your choice of the same three savory finger sandwiches.">
+          <div class="row"><span class="name">Afternoon Tea</span></div>
+          <p class="desc">Served in the traditional style on a three-tiered tray with a small pot of freshly brewed Harney &amp; Sons loose leaf tea (additional charge applies for premium teas): A full-sized scone with our clotted cream and strawberry jam, a duo of house-made miniature desserts (chef&#39;s choice,) and your choice of three savory finger sandwiches, from: curried egg salad triangles (veg); orange chicken salad finger sandwich; bacon avocado tea sandwich w/cream cheese &amp; pickled red onion; herbed goat cheese &amp; cucumber canape (veg); turkey, swiss cheese &amp; sun-dried tomato aioli tea sandwich; lemony tuna on dark rye tea sandwich; pimento cheese &amp; tomato on sourdough tea sandwich; garden veggie with hummus &amp; avocado tea sandwich (veg); Brie &amp; fig jam vol-au-vent (veg). Add an additional savory tea sandwich $3.50. Note for parties of 5 or more: To better serve everyone, each guest will receive your choice of the same three savory finger sandwiches.</p><div class="prices"><span class="pp"><b>$30 per person</b></span></div>
+        </li>
+        <li data-q="tea and sweets a two-tiered tray: a full-sized scone with our clotted cream and strawberry jam and three house-made miniature desserts. includes a small pot of tea">
+          <div class="row"><span class="name">Tea and Sweets</span></div>
+          <p class="desc">A two-tiered tray: A full-sized scone with our clotted cream and strawberry jam and three house-made miniature desserts. Includes a small pot of tea</p><div class="prices"><span class="pp"><b>$22 per person</b></span></div>
+        </li>
+        <li data-q="cambridge cream tea two full-sized scones with our clotted cream and strawberry jam. includes a small pot of tea">
+          <div class="row"><span class="name">Cambridge Cream Tea</span></div>
+          <p class="desc">Two full-sized scones with our clotted cream and strawberry jam. Includes a small pot of tea</p><div class="prices"><span class="pp"><b>$18 per person</b></span></div>
+        </li>
+        <li data-q="junior tea for our guests 12 and under. served on a two-tiered tray. same as above with savory finger sandwiches substituted by choice of one kid-friendly sandwich: grilled cheddar, grilled cheese &amp; turkey, pb &amp; j, cream cheese &amp; pickles or cucumber, or turkey &amp; swiss">
+          <div class="row"><span class="name">Junior Tea</span></div>
+          <p class="desc">for our guests 12 and under. Served on a two-tiered tray. Same as above with savory finger sandwiches substituted by choice of one kid-friendly sandwich: grilled cheddar, grilled cheese &amp; turkey, pb &amp; j, cream cheese &amp; pickles or cucumber, or turkey &amp; swiss</p><div class="prices"><span class="pp"><b>$23 per person</b></span></div>
+        </li></ul>
+    </section>
+    <section id="tea-service-appetizers" class="sec">
+      <h2>Tea Service Appetizers</h2>
+      
+      <ul>
+        <li data-q="fruit cup or seasonal side ">
+          <div class="row"><span class="name">Fruit cup or seasonal side</span><span class="price">$4.75</span></div>
+          
+        </li>
+        <li data-q="cup of soup ">
+          <div class="row"><span class="name">Cup of soup</span><span class="price">$5.00</span></div>
+          
+        </li>
+        <li data-q="slice of quiche du jour ">
+          <div class="row"><span class="name">Slice of quiche du jour</span><span class="price">$6.75</span></div>
+          
+        </li>
+        <li data-q="side house green salad ">
+          <div class="row"><span class="name">Side House Green salad</span><span class="price">$5.50</span></div>
+          
+        </li>
+        <li data-q="side buttermilk herb salad ">
+          <div class="row"><span class="name">Side Buttermilk Herb salad</span><span class="price">$7.00</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="tea-lattes" class="sec">
+      <h2>Tea Lattes</h2>
+      <p class="note">Made with whole milk. Sub almond or oat milk at no charge.</p>
+      <ul>
+        <li data-q="london fog earl grey, lavender &amp; vanilla">
+          <div class="row"><span class="name">London Fog</span><span class="price">$5.25</span></div>
+          <p class="desc">Earl Grey, lavender &amp; vanilla</p>
+        </li>
+        <li data-q="french toast hot cinnamon spice tea &amp; vanilla">
+          <div class="row"><span class="name">French Toast</span><span class="price">$5.25</span></div>
+          <p class="desc">Hot cinnamon spice tea &amp; vanilla</p>
+        </li>
+        <li data-q="chai concentrated sweet tea blend with warm spices">
+          <div class="row"><span class="name">Chai</span><span class="price">$5.25</span></div>
+          <p class="desc">concentrated sweet tea blend with warm spices</p>
+        </li>
+        <li data-q="matcha sweetened green tea">
+          <div class="row"><span class="name">Matcha</span><span class="price">$5.25</span></div>
+          <p class="desc">sweetened green tea</p>
+        </li></ul>
+    </section>
+    <section id="beverages" class="sec">
+      <h2>Beverages</h2>
+      
+      <ul>
+        <li data-q="coca cola, diet coca cola, or sprite (can) ">
+          <div class="row"><span class="name">Coca Cola, Diet Coca Cola, or Sprite (can)</span><span class="price">$2.50</span></div>
+          
+        </li>
+        <li data-q="bottled spring water ">
+          <div class="row"><span class="name">Bottled spring water</span><span class="price">$3.00</span></div>
+          
+        </li>
+        <li data-q="bottled sparkling water ">
+          <div class="row"><span class="name">Bottled sparkling water</span><span class="price">$3.00</span></div>
+          
+        </li>
+        <li data-q="bubly flavored sparkling water ">
+          <div class="row"><span class="name">Bubly flavored sparkling water</span><span class="price">$2.50</span></div>
+          
+        </li>
+        <li data-q="freshly brewed iced tea free refills">
+          <div class="row"><span class="name">Freshly brewed iced tea</span><span class="price">$4.00</span></div>
+          <p class="desc">free refills</p>
+        </li>
+        <li data-q="roaming goat cold brew coffee ">
+          <div class="row"><span class="name">Roaming Goat cold brew coffee</span><span class="price">$5.25</span></div>
+          
+        </li>
+        <li data-q="roaming goat coffee or decaf, free refills">
+          <div class="row"><span class="name">Roaming Goat coffee</span><span class="price">$4.50</span></div>
+          <p class="desc">or decaf, free refills</p>
+        </li>
+        <li data-q="orange juice ">
+          <div class="row"><span class="name">Orange Juice</span><span class="price">$4.00</span></div>
+          
+        </li>
+        <li data-q="lavender lemonade ">
+          <div class="row"><span class="name">Lavender Lemonade</span><span class="price">$4.50</span></div>
+          
+        </li>
+        <li data-q="pink palmer ½ lavender lemondae, ½ raspberry herbal iced tea">
+          <div class="row"><span class="name">Pink Palmer</span><span class="price">$4.50</span></div>
+          <p class="desc">½ lavender lemondae, ½ raspberry herbal iced tea</p>
+        </li></ul>
+    </section>
+    <section id="seasonal-libations" class="sec">
+      <h2>Seasonal Libations</h2>
+      <p class="note">available Wednesday through Saturday</p>
+      <ul>
+        <li data-q="prosecco mimosa ">
+          <div class="row"><span class="name">Prosecco Mimosa</span><span class="price">$10</span></div>
+          
+        </li>
+        <li data-q="blueberry lavender lem-mosa house-made blueberry syrup, lavender lemonade &amp; prosecco">
+          <div class="row"><span class="name">Blueberry Lavender Lem-mosa</span><span class="price">$11</span></div>
+          <p class="desc">House-made blueberry syrup, lavender lemonade &amp; prosecco</p>
+        </li>
+        <li data-q="bellini: peach, blackberry, or mango real fruit purees &amp; prosecco">
+          <div class="row"><span class="name">Bellini: Peach, Blackberry, or Mango</span><span class="price">$11</span></div>
+          <p class="desc">Real fruit purees &amp; prosecco</p>
+        </li>
+        <li data-q="strawberry aperol spritz prosecco, aperol, strawberry, club soda">
+          <div class="row"><span class="name">Strawberry Aperol Spritz</span><span class="price">$12</span></div>
+          <p class="desc">prosecco, aperol, strawberry, club soda</p>
+        </li>
+        <li data-q="elderflower spritz prosecco, elderflower, limoncello, club soda">
+          <div class="row"><span class="name">Elderflower Spritz</span><span class="price">$12</span></div>
+          <p class="desc">prosecco, elderflower, limoncello, club soda</p>
+        </li>
+        <li data-q="spiked pink palmer vodka, lavender lemonade &amp; raspberry iced tea">
+          <div class="row"><span class="name">Spiked Pink Palmer</span><span class="price">$12</span></div>
+          <p class="desc">vodka, lavender lemonade &amp; raspberry iced tea</p>
+        </li></ul>
+    </section>
+    <section id="cans" class="sec">
+      <h2>Cans</h2>
+      <p class="note">available Wednesday through Sunday</p>
+      <ul>
+        <li data-q="sun cruiser classic iced tea, lemonade + iced tea, peach, raspberry">
+          <div class="row"><span class="name">Sun Cruiser</span><span class="price">$6</span></div>
+          <p class="desc">Classic iced tea, lemonade + iced tea, Peach, Raspberry</p>
+        </li>
+        <li data-q="loncaro finnish citrus long drink">
+          <div class="row"><span class="name">Loncaro</span><span class="price">$6</span></div>
+          <p class="desc">Finnish citrus long drink</p>
+        </li>
+        <li data-q="angry orchard crisp apple cider">
+          <div class="row"><span class="name">Angry Orchard</span><span class="price">$6</span></div>
+          <p class="desc">crisp apple cider</p>
+        </li></ul>
+    </section>
+    <section id="wine" class="sec">
+      <h2>Wine</h2>
+      <p class="note">available Wednesday through Saturday</p>
+      <ul>
+        <li data-q="red: cabernet sauvignon, castle rock winery &#39;20 ">
+          <div class="row"><span class="name">Red: Cabernet Sauvignon, Castle Rock Winery &#39;20</span><span class="price">$8</span></div>
+          
+        </li>
+        <li data-q="white: riesling, willamette valley, or &#39;22 ">
+          <div class="row"><span class="name">White: Riesling, Willamette Valley, OR &#39;22</span><span class="price">$11</span></div>
+          
+        </li>
+        <li data-q="white: chardonnay, buehler vineyards ca &#39;22 ">
+          <div class="row"><span class="name">White: Chardonnay, Buehler Vineyards CA &#39;22</span><span class="price">$13</span></div>
+          
+        </li>
+        <li data-q="white: scarpetta pinot grigio, italy &#39;22 ">
+          <div class="row"><span class="name">White: Scarpetta Pinot Grigio, Italy &#39;22</span><span class="price">$10</span></div>
+          
+        </li>
+        <li data-q="rose: chateau de campuget &#39;23 ">
+          <div class="row"><span class="name">Rose: Chateau de Campuget &#39;23</span><span class="price">$9</span></div>
+          
+        </li>
+        <li data-q="orange: le cigare orange, bonny doon, ca &#39;23 ">
+          <div class="row"><span class="name">Orange: Le Cigare Orange, Bonny Doon, CA &#39;23</span><span class="price">$10</span></div>
+          
+        </li>
+        <li data-q="bubbly: acinum prosecco, extra dry ">
+          <div class="row"><span class="name">Bubbly: Acinum Prosecco, Extra Dry</span><span class="price">$9</span></div>
+          
+        </li>
+        <li data-q="small format bubbly: codorniu blanc de blancs brut cava, spain (187 ml) ">
+          <div class="row"><span class="name">Small format bubbly: Codorniu Blanc de Blancs Brut Cava, Spain (187 ml)</span><span class="price">$8</span></div>
+          
+        </li>
+        <li data-q="small format bubbly: canella prosecco superiore, italy (187 ml) ">
+          <div class="row"><span class="name">Small format bubbly: Canella Prosecco Superiore, Italy (187 ml)</span><span class="price">$10</span></div>
+          
+        </li>
+        <li data-q="small format bubbly: canella prosecco lido rose, italy (187 ml) ">
+          <div class="row"><span class="name">Small format bubbly: Canella Prosecco Lido Rose, Italy (187 ml)</span><span class="price">$10</span></div>
+          
+        </li>
+        <li data-q="small format bubbly: scarpetta, frico frizzante, italy (250 ml can) ">
+          <div class="row"><span class="name">Small format bubbly: Scarpetta, Frico Frizzante, Italy (250 ml can)</span><span class="price">$6</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="beer-cocktails" class="sec">
+      <h2>Beer Cocktails</h2>
+      <p class="note">available Wednesday through Sunday</p>
+      <ul>
+        <li data-q="beermosa 7 oz miller high life with orange juice in a champagne flute">
+          <div class="row"><span class="name">Beermosa</span><span class="price">$6</span></div>
+          <p class="desc">7 oz miller high life with orange juice in a champagne flute</p>
+        </li>
+        <li data-q="blueberry lavender beer lem-mosa 7 oz miller high life with lavender lemonade &amp; house-made blueberry syrup in a champagne flute">
+          <div class="row"><span class="name">Blueberry Lavender Beer Lem-mosa</span><span class="price">$8</span></div>
+          <p class="desc">7 oz miller high life with lavender lemonade &amp; house-made blueberry syrup in a champagne flute</p>
+        </li>
+        <li data-q="peach, blackberry, or mango shandy 7 oz miller high life with real fruit puree">
+          <div class="row"><span class="name">Peach, Blackberry, or Mango Shandy</span><span class="price">$7</span></div>
+          <p class="desc">7 oz miller high life with real fruit puree</p>
+        </li></ul>
+    </section>
+    <section id="beer-beer" class="sec">
+      <h2>Beer Beer</h2>
+      
+      <ul>
+        <li data-q="blue moon belgian white">
+          <div class="row"><span class="name">Blue Moon</span><span class="price">$5</span></div>
+          <p class="desc">Belgian white</p>
+        </li>
+        <li data-q="michelob ultra light lager">
+          <div class="row"><span class="name">Michelob Ultra</span><span class="price">$4</span></div>
+          <p class="desc">Light lager</p>
+        </li>
+        <li data-q="busch light light lager">
+          <div class="row"><span class="name">Busch Light</span><span class="price">$4</span></div>
+          <p class="desc">Light lager</p>
+        </li>
+        <li data-q="miller high life light lager (7 oz)">
+          <div class="row"><span class="name">Miller High Life</span><span class="price">$4</span></div>
+          <p class="desc">Light lager (7 oz)</p>
+        </li></ul>
+    </section>
+    <section id="sunday-funday-mocktails" class="sec">
+      <h2>Sunday Funday Mocktails</h2>
+      <p class="note">Sunday only</p>
+      <ul>
+        <li data-q="blackberry, mango or pear italian soda real fruit puree &amp; club soda. make it dirty with a splash of heavy cream +1">
+          <div class="row"><span class="name">Blackberry, Mango or Pear Italian Soda</span><span class="price">$6</span></div>
+          <p class="desc">Real fruit puree &amp; club soda. Make it dirty with a splash of heavy cream +1</p>
+        </li>
+        <li data-q="blueberry lem-mosa mocktail house-made blueberry simple, lemonade &amp; club soda">
+          <div class="row"><span class="name">Blueberry Lem-mosa mocktail</span><span class="price">$8</span></div>
+          <p class="desc">House-made blueberry simple, lemonade &amp; club soda</p>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>Please alert your server of any allergies/dietary restrictions when ordering. Tea Services are priced per person; additional charge for shared service $3.00.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Cambridge Tea House.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Cambridge Tea House menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Dear Jervois Menu</title>
+<meta name="description" content="Menu for Dear Jervois, Herne Bay, Auckland.">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Dear Jervois</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=234%20Jervois%20Road%2C%20Herne%20Bay%2C%20Auckland%2C%20New%20Zealand">234 Jervois Road, Herne Bay, Auckland, New Zealand</a><a href="tel:093767278">09 376 7278</a><span>Monday to Friday 7am to 4pm. Saturday and Sunday 8am to 4pm</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#all-day" data-sec="all-day">All Day</a><a href="#sides" data-sec="sides">Sides</a><a href="#bread" data-sec="bread">Bread</a><a href="#espresso" data-sec="espresso">Espresso</a><a href="#alternatives" data-sec="alternatives">Alternatives</a><a href="#tea" data-sec="tea">Tea</a><a href="#juice" data-sec="juice">Juice</a><a href="#smoothies" data-sec="smoothies">Smoothies</a><a href="#specials" data-sec="specials">Specials</a><a href="#soft-drinks" data-sec="soft-drinks">Soft Drinks</a><a href="#wine-beer" data-sec="wine-beer">Wine &amp; Beer</a><a href="#bubbles-cocktails" data-sec="bubbles-cocktails">Bubbles &amp; Cocktails</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="all-day" class="sec">
+      <h2>All Day</h2>
+      
+      <ul>
+        <li data-q="eggs on toast eggs your way, sourdough (fr)">
+          <div class="row"><span class="name">Eggs on toast</span><span class="price">$17</span></div>
+          <p class="desc">eggs your way, sourdough (fr)</p>
+        </li>
+        <li data-q="eggs benedict potato rosti, sautéed silverbeet, house-made hollandaise sauce, sourdough. ask your server for choice of protein (fr)">
+          <div class="row"><span class="name">Eggs Benedict</span><span class="price">$28.50</span></div>
+          <p class="desc">potato rosti, sautéed silverbeet, house-made hollandaise sauce, sourdough. Ask your server for choice of protein (fr)</p>
+        </li>
+        <li data-q="half eggs benedict one poached egg, potato rosti, sautéed silverbeet, house-made hollandaise sauce. ask your server for choice of protein (fr)">
+          <div class="row"><span class="name">Half Eggs Benedict</span><span class="price">$21.50</span></div>
+          <p class="desc">one poached egg, potato rosti, sautéed silverbeet, house-made hollandaise sauce. Ask your server for choice of protein (fr)</p>
+        </li>
+        <li data-q="smashed avocado on sourdough fresh avocado spread, sourdough, poached eggs, whipped beetroot feta, dukkah (fr, vg - can be df, v)">
+          <div class="row"><span class="name">Smashed Avocado on Sourdough</span><span class="price">$27.50</span></div>
+          <p class="desc">fresh avocado spread, sourdough, poached eggs, whipped beetroot feta, dukkah (fr, VG - can be DF, V)</p>
+        </li>
+        <li data-q="creamy mushrooms portobello mushrooms, thyme &amp; oregano, bacon, mascarpone parmesan, sourdough (fr)">
+          <div class="row"><span class="name">Creamy Mushrooms</span><span class="price">$28.50</span></div>
+          <p class="desc">portobello mushrooms, thyme &amp; oregano, bacon, mascarpone parmesan, sourdough (fr)</p>
+        </li>
+        <li data-q="dj complete poached eggs, pork &amp; fennel sausage, bacon, roasted tomatoes, mushrooms, house-made baked beans, potato rosti, sourdough (fr, df)">
+          <div class="row"><span class="name">DJ Complete</span><span class="price">$31.50</span></div>
+          <p class="desc">poached eggs, pork &amp; fennel sausage, bacon, roasted tomatoes, mushrooms, house-made baked beans, potato rosti, sourdough (fr, DF)</p>
+        </li>
+        <li data-q="chilli scramble eggs grilled artichoke, kale chips, jalapeno, dill yogurt, house-made chilli oil, artisan bread (fr - can be df)">
+          <div class="row"><span class="name">Chilli Scramble Eggs</span><span class="price">$27</span></div>
+          <p class="desc">grilled artichoke, kale chips, jalapeno, dill yogurt, house-made chilli oil, artisan bread (fr - can be DF)</p>
+        </li>
+        <li data-q="cilbir turkish eggs two poached eggs, dill yogurt, house-made chilli oil, dukkah, turkish bread (fr - contains nuts)">
+          <div class="row"><span class="name">Cilbir Turkish Eggs</span><span class="price">$27</span></div>
+          <p class="desc">two poached eggs, dill yogurt, house-made chilli oil, dukkah, turkish bread (fr - contains nuts)</p>
+        </li>
+        <li data-q="mince on toast classic kiwi-style beef mince, one poached egg, turkish bread, olive oil (fr, df)">
+          <div class="row"><span class="name">Mince on Toast</span><span class="price">$28</span></div>
+          <p class="desc">classic kiwi-style beef mince, one poached egg, Turkish bread, olive oil (fr, DF)</p>
+        </li>
+        <li data-q="dj burger two smash patties, lettuce, tomato, swiss cheese, pickles, fried egg. served with shoestring fries (fr)">
+          <div class="row"><span class="name">DJ Burger</span><span class="price">$29</span></div>
+          <p class="desc">two smash patties, lettuce, tomato, swiss cheese, pickles, fried egg. Served with shoestring fries (fr)</p>
+        </li>
+        <li data-q="kimchi fried rice fried chicken, two poached eggs, sesame seeds, nori (fr - can be vg)">
+          <div class="row"><span class="name">Kimchi Fried Rice</span><span class="price">$27.50</span></div>
+          <p class="desc">fried chicken, two poached eggs, sesame seeds, nori (fr - can be VG)</p>
+        </li>
+        <li data-q="cheese &amp; chorizo elbow macaroni, chorizo, cheesy sauce, parmesan topped with herbed crumb (can be vg)">
+          <div class="row"><span class="name">Cheese &amp; Chorizo</span><span class="price">$27</span></div>
+          <p class="desc">elbow macaroni, chorizo, cheesy sauce, parmesan topped with herbed crumb (can be VG)</p>
+        </li>
+        <li data-q="corn fritter lemon zest sour cream, roasted pepper salsa, shaved fennel, parmesan (fr)">
+          <div class="row"><span class="name">Corn Fritter</span><span class="price">$26</span></div>
+          <p class="desc">lemon zest sour cream, roasted pepper salsa, shaved fennel, parmesan (fr)</p>
+        </li>
+        <li data-q="open omelet a classic open fluffy omelet filled with mozzarella cheese, caramelised onions &amp; fresh tomatoes (fr - can be df). add-on: mushrooms +7, bacon +7, chorizo +7">
+          <div class="row"><span class="name">Open omelet</span><span class="price">$22.50</span></div>
+          <p class="desc">a classic open fluffy omelet filled with mozzarella cheese, caramelised onions &amp; fresh tomatoes (fr - can be DF). Add-on: mushrooms +7, bacon +7, chorizo +7</p>
+        </li>
+        <li data-q="poke bowl fresh sashimi salmon, one poached egg, black rice, pickle ginger, edamame beans, sauerkraut, mesclun salad, soy chilli sauce (fr, df, wf - can be v)">
+          <div class="row"><span class="name">Poke Bowl</span><span class="price">$28.50</span></div>
+          <p class="desc">fresh sashimi salmon, one poached egg, black rice, pickle ginger, edamame beans, sauerkraut, mesclun salad, soy chilli sauce (fr, DF, WF - can be V)</p>
+        </li>
+        <li data-q="dj waffles banana, bacon, berry mascarpone, seasonal fruit, maple syrup (fr)">
+          <div class="row"><span class="name">DJ Waffles</span><span class="price">$27.50</span></div>
+          <p class="desc">banana, bacon, berry mascarpone, seasonal fruit, maple syrup (fr)</p>
+        </li>
+        <li data-q="super food cruesli coconut yogurt, house-made granola, fresh seasonal fruits, berry compote">
+          <div class="row"><span class="name">Super Food Cruesli</span><span class="price">$25</span></div>
+          <p class="desc">coconut yogurt, house-made granola, fresh seasonal fruits, berry compote</p>
+        </li></ul>
+    </section>
+    <section id="sides" class="sec">
+      <h2>Sides</h2>
+      
+      <ul>
+        <li data-q="shoestring fries aioli sauce (v)">
+          <div class="row"><span class="name">Shoestring fries</span><span class="price">$8.50</span></div>
+          <p class="desc">aioli sauce (V)</p>
+        </li>
+        <li data-q="waffles fries aioli sauce (v)">
+          <div class="row"><span class="name">Waffles fries</span><span class="price">$8.50</span></div>
+          <p class="desc">aioli sauce (V)</p>
+        </li></ul>
+    </section>
+    <section id="bread" class="sec">
+      <h2>Bread</h2>
+      
+      <ul>
+        <li data-q="sourdough ">
+          <div class="row"><span class="name">Sourdough</span><span class="price">$3</span></div>
+          
+        </li>
+        <li data-q="mixed grain ">
+          <div class="row"><span class="name">Mixed Grain</span><span class="price">$3</span></div>
+          
+        </li>
+        <li data-q="gluten free bread ">
+          <div class="row"><span class="name">Gluten Free Bread</span><span class="price">$3</span></div>
+          
+        </li>
+        <li data-q="turkish bread ">
+          <div class="row"><span class="name">Turkish Bread</span><span class="price">$3</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="espresso" class="sec">
+      <h2>Espresso</h2>
+      <p class="note">Above are all regular prices, large extra 0.5, small 0.5 less.</p>
+      <ul>
+        <li data-q="ibiraci single origin - espresso/long black/americano tastes of dried apple, hokey pokey, and hazelnut">
+          <div class="row"><span class="name">Ibiraci Single Origin - espresso/long black/americano</span><span class="price">$5</span></div>
+          <p class="desc">tastes of dried apple, hokey pokey, and hazelnut</p>
+        </li>
+        <li data-q="ibiraci single origin - short macchiato/long macchiato/piccolo ">
+          <div class="row"><span class="name">Ibiraci Single Origin - short macchiato/long macchiato/piccolo</span><span class="price">$5.50</span></div>
+          
+        </li>
+        <li data-q="standard blend - flat white, latte/cappuccino, mocha tastes of cocoa, vanilla, and orange blossom">
+          <div class="row"><span class="name">Standard Blend - flat white, latte/cappuccino, mocha</span></div>
+          <p class="desc">tastes of cocoa, vanilla, and orange blossom</p><div class="prices"><span class="pp"><span class="pl">Regular</span> <b>$6</b></span><span class="pp"><span class="pl">Large</span> <b>$6.50</b></span></div>
+        </li>
+        <li data-q="served over ice - iced latte/iced mocha/iced americano ">
+          <div class="row"><span class="name">Served over ice - iced latte/iced mocha/iced americano</span><span class="price">$7</span></div>
+          
+        </li>
+        <li data-q="affogato ">
+          <div class="row"><span class="name">Affogato</span><span class="price">$8</span></div>
+          
+        </li>
+        <li data-q="decaf ">
+          <div class="row"><span class="name">Decaf</span><span class="price">+$0.50</span></div>
+          
+        </li>
+        <li data-q="alternative milk oat - soy - coconut - almond">
+          <div class="row"><span class="name">Alternative milk</span><span class="price">+$0.50</span></div>
+          <p class="desc">oat - soy - coconut - almond</p>
+        </li></ul>
+    </section>
+    <section id="alternatives" class="sec">
+      <h2>Alternatives</h2>
+      
+      <ul>
+        <li data-q="hakanoa handmade spicy chai ">
+          <div class="row"><span class="name">Hakanoa Handmade spicy chai</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Hot</span> <b>$6</b></span><span class="pp"><span class="pl">Iced</span> <b>$6.50</b></span></div>
+        </li>
+        <li data-q="shott handmade lemon, ginger, &amp; honey ">
+          <div class="row"><span class="name">Shott Handmade lemon, ginger, &amp; honey</span><span class="price">$5.50</span></div>
+          
+        </li>
+        <li data-q="hot chocolate ">
+          <div class="row"><span class="name">Hot chocolate</span><span class="price">$5.50</span></div>
+          
+        </li>
+        <li data-q="iced chocolate ">
+          <div class="row"><span class="name">Iced chocolate</span><span class="price">$7</span></div>
+          
+        </li>
+        <li data-q="matcha latte ">
+          <div class="row"><span class="name">Matcha Latte</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Hot</span> <b>$8</b></span><span class="pp"><span class="pl">Over ice</span> <b>$9</b></span></div>
+        </li></ul>
+    </section>
+    <section id="tea" class="sec">
+      <h2>Tea</h2>
+      
+      <ul>
+        <li data-q="herbal/fruit strawberry kiwifruit, peppermint, lemon herbal">
+          <div class="row"><span class="name">Herbal/Fruit</span><span class="price">$5.50</span></div>
+          <p class="desc">strawberry kiwifruit, peppermint, lemon herbal</p>
+        </li>
+        <li data-q="green genmaicha, jasmine">
+          <div class="row"><span class="name">Green</span><span class="price">$5.50</span></div>
+          <p class="desc">genmaicha, jasmine</p>
+        </li>
+        <li data-q="black english breakfast, earl grey">
+          <div class="row"><span class="name">Black</span><span class="price">$5.50</span></div>
+          <p class="desc">english breakfast, earl grey</p>
+        </li></ul>
+    </section>
+    <section id="juice" class="sec">
+      <h2>Juice</h2>
+      <p class="note">Raw Juice by Homegrown</p>
+      <ul>
+        <li data-q="orange ">
+          <div class="row"><span class="name">Orange</span><span class="price">$7</span></div>
+          
+        </li>
+        <li data-q="apple ">
+          <div class="row"><span class="name">Apple</span><span class="price">$7</span></div>
+          
+        </li>
+        <li data-q="probio mango apple, mango &amp; orange">
+          <div class="row"><span class="name">Probio mango</span><span class="price">$8.50</span></div>
+          <p class="desc">apple, mango &amp; orange</p>
+        </li>
+        <li data-q="immunity carrot, orange, apple, lemon &amp; turmeric">
+          <div class="row"><span class="name">Immunity</span><span class="price">$9.50</span></div>
+          <p class="desc">carrot, orange, apple, lemon &amp; turmeric</p>
+        </li></ul>
+    </section>
+    <section id="smoothies" class="sec">
+      <h2>Smoothies</h2>
+      <p class="note">House-made Organic Smoothies</p>
+      <ul>
+        <li data-q="activated charcoal pineapple, cucumber, ginger, mint, coconut water, &amp; activated charcoal">
+          <div class="row"><span class="name">Activated charcoal</span><span class="price">$13</span></div>
+          <p class="desc">pineapple, cucumber, ginger, mint, coconut water, &amp; activated charcoal</p>
+        </li>
+        <li data-q="superfood peanut butter blueberry peanut butter, banana, blueberries, honey, organic almond milk">
+          <div class="row"><span class="name">Superfood peanut butter blueberry</span><span class="price">$13</span></div>
+          <p class="desc">peanut butter, banana, blueberries, honey, organic almond milk</p>
+        </li>
+        <li data-q="super berry blueberries, raspberries, banana, honey, lemon juice &amp; soy milk">
+          <div class="row"><span class="name">Super berry</span><span class="price">$13</span></div>
+          <p class="desc">blueberries, raspberries, banana, honey, lemon juice &amp; soy milk</p>
+        </li></ul>
+    </section>
+    <section id="specials" class="sec">
+      <h2>Specials</h2>
+      
+      <ul>
+        <li data-q="strawberry matcha matcha, strawberry syrup, milk of your choice (over ice). alternative milk +0.5">
+          <div class="row"><span class="name">Strawberry Matcha</span><span class="price">$9.50</span></div>
+          <p class="desc">Matcha, strawberry syrup, milk of your choice (over ice). Alternative milk +0.5</p>
+        </li>
+        <li data-q="cold foam coconut latte double shot espresso foam, coconut cream, coconut syrup, coconut water (over ice)">
+          <div class="row"><span class="name">Cold Foam Coconut Latte</span><span class="price">$8.50</span></div>
+          <p class="desc">double shot espresso foam, coconut cream, coconut syrup, coconut water (over ice)</p>
+        </li></ul>
+    </section>
+    <section id="soft-drinks" class="sec">
+      <h2>Soft Drinks</h2>
+      
+      <ul>
+        <li data-q="coca cola ">
+          <div class="row"><span class="name">Coca Cola</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="coca cola zero ">
+          <div class="row"><span class="name">Coca Cola Zero</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="sprite ">
+          <div class="row"><span class="name">Sprite</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="sprite zero ">
+          <div class="row"><span class="name">Sprite Zero</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="g. beer ">
+          <div class="row"><span class="name">G. Beer</span><span class="price">$8</span></div>
+          
+        </li>
+        <li data-q="good buzz kombucha feijoa/pineapple &amp; mango">
+          <div class="row"><span class="name">Good Buzz Kombucha</span><span class="price">$9</span></div>
+          <p class="desc">feijoa/pineapple &amp; mango</p>
+        </li>
+        <li data-q="san pellegrino ">
+          <div class="row"><span class="name">San Pellegrino</span></div>
+          <div class="prices"><span class="pp"><span class="pl">250ml</span> <b>$6.50</b></span><span class="pp"><span class="pl">500ml</span> <b>$12</b></span></div>
+        </li></ul>
+    </section>
+    <section id="wine-beer" class="sec">
+      <h2>Wine &amp; Beer</h2>
+      <p class="note">Wine prices are glass / bottle.</p>
+      <ul>
+        <li data-q="yealands sauvignon blanc, marlborough ">
+          <div class="row"><span class="name">Yealands Sauvignon Blanc, Marlborough</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$15</b></span><span class="pp"><span class="pl">Bottle</span> <b>$50</b></span></div>
+        </li>
+        <li data-q="yealands chardonnay, marlborough ">
+          <div class="row"><span class="name">Yealands Chardonnay, Marlborough</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$15</b></span><span class="pp"><span class="pl">Bottle</span> <b>$50</b></span></div>
+        </li>
+        <li data-q="yealands pinot gris, marlborough ">
+          <div class="row"><span class="name">Yealands Pinot Gris, Marlborough</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$15</b></span><span class="pp"><span class="pl">Bottle</span> <b>$50</b></span></div>
+        </li>
+        <li data-q="yealands rosé, marlborough ">
+          <div class="row"><span class="name">Yealands Rosé, Marlborough</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$15</b></span><span class="pp"><span class="pl">Bottle</span> <b>$50</b></span></div>
+        </li>
+        <li data-q="yealands merlot, hawke&#39;s bay ">
+          <div class="row"><span class="name">Yealands Merlot, Hawke&#39;s Bay</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$15</b></span><span class="pp"><span class="pl">Bottle</span> <b>$50</b></span></div>
+        </li>
+        <li data-q="corona extra 4.5% pale lager">
+          <div class="row"><span class="name">Corona Extra 4.5%</span><span class="price">$11</span></div>
+          <p class="desc">pale lager</p>
+        </li>
+        <li data-q="heineken 5% ">
+          <div class="row"><span class="name">Heineken 5%</span><span class="price">$11</span></div>
+          
+        </li>
+        <li data-q="steinlager light 2.5% ">
+          <div class="row"><span class="name">Steinlager light 2.5%</span><span class="price">$11</span></div>
+          
+        </li>
+        <li data-q="kirin ichiban japanese beer 5% ">
+          <div class="row"><span class="name">Kirin Ichiban Japanese Beer 5%</span><span class="price">$11</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="bubbles-cocktails" class="sec">
+      <h2>Bubbles &amp; Cocktails</h2>
+      
+      <ul>
+        <li data-q="mimosa ">
+          <div class="row"><span class="name">Mimosa</span><span class="price">$16</span></div>
+          
+        </li>
+        <li data-q="mango mimosa ">
+          <div class="row"><span class="name">Mango Mimosa</span><span class="price">$16</span></div>
+          
+        </li>
+        <li data-q="aperol spritz ">
+          <div class="row"><span class="name">Aperol Spritz</span><span class="price">$16</span></div>
+          
+        </li>
+        <li data-q="espresso martini ">
+          <div class="row"><span class="name">Espresso Martini</span><span class="price">$20</span></div>
+          
+        </li>
+        <li data-q="leonardo prosecco treviso ">
+          <div class="row"><span class="name">Leonardo Prosecco Treviso</span><span class="price">$17</span></div>
+          
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>VG - Vegetarian | DF - Dairy free | WF - Wheat Free | V - Vegan | fr - Free Range. We are unable to guarantee that our dishes will be 100% free of nuts, gluten or shellfish traces. 1.7% paywave/credit card surcharge applies.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Dear Jervois.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Dear Jervois menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's US$29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for US$29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

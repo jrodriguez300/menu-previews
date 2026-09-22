@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Cafe Fili Menu</title>
+<meta name="description" content="Menu for Cafe Fili, NoMa / Capitol Hill (Second Street NE).">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Cafe Fili</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=701%20Second%20Street%20NE%2C%20Washington%2C%20DC%2020002">701 Second Street NE, Washington, DC 20002</a><a href="tel:2026292816">(202) 629 2816</a><span>7 days a week. Sunday-Thursday 11:00am-9:00pm; Friday-Saturday 11:00am-10:00pm</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#soups" data-sec="soups">Soups</a><a href="#hummus-emporium" data-sec="hummus-emporium">Hummus Emporium</a><a href="#mezze-dips" data-sec="mezze-dips">Mezze &amp; Dips</a><a href="#kebabs-entrees" data-sec="kebabs-entrees">Kebabs &amp; Entrees</a><a href="#levant-bowls" data-sec="levant-bowls">Levant Bowls</a><a href="#garden-salads" data-sec="garden-salads">Garden Salads</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="soups" class="sec">
+      <h2>Soups</h2>
+      <p class="note">Served with pita chips.</p>
+      <ul>
+        <li data-q="maghreb lemon chicken spices, chickpeas, vermicelli, cilantro, lemon confit.">
+          <div class="row"><span class="name">Maghreb Lemon Chicken</span><span class="price">$11</span></div>
+          <p class="desc">Spices, chickpeas, vermicelli, cilantro, lemon confit.</p>
+        </li>
+        <li data-q="turkish yellow lentil soup roasted root vegetables, seasonings, topped w/ herb-labne.">
+          <div class="row"><span class="name">Turkish Yellow Lentil Soup</span><span class="price">$10</span></div>
+          <p class="desc">Roasted root vegetables, seasonings, topped w/ herb-labne.</p>
+        </li>
+        <li data-q="gazpacho chilled tomato soup.">
+          <div class="row"><span class="name">Gazpacho</span><span class="price">$11</span></div>
+          <p class="desc">Chilled tomato soup.</p>
+        </li></ul>
+    </section>
+    <section id="hummus-emporium" class="sec">
+      <h2>Hummus Emporium</h2>
+      <p class="note">Served with pita bread or pita chips.</p>
+      <ul>
+        <li data-q="fili hummus classic, red pepper harissa or black bean. add: spicy lamb 3, falafel 2, feta cheese 2, tomato-cucumber-pepper-olive salsa 2.">
+          <div class="row"><span class="name">Fili Hummus</span><span class="price">$10</span></div>
+          <p class="desc">Classic, Red Pepper Harissa or Black Bean. Add: spicy lamb 3, falafel 2, feta cheese 2, tomato-cucumber-pepper-olive salsa 2.</p>
+        </li>
+        <li data-q="hummus trio classic / red pepper harissa / black bean.">
+          <div class="row"><span class="name">Hummus Trio</span><span class="price">$18</span></div>
+          <p class="desc">Classic / Red Pepper Harissa / Black Bean.</p>
+        </li>
+        <li data-q="fili sampler hummus trio, imam bayildi dip, labne-feta dip, grape leaves.">
+          <div class="row"><span class="name">Fili Sampler</span><span class="price">$24</span></div>
+          <p class="desc">Hummus Trio, Imam Bayildi Dip, Labne-Feta Dip, Grape Leaves.</p>
+        </li></ul>
+    </section>
+    <section id="mezze-dips" class="sec">
+      <h2>Mezze &amp; Dips</h2>
+      
+      <ul>
+        <li data-q="labne-feta dip ttomato-cucumber-pepper-olive salsa, sumac, garlic.">
+          <div class="row"><span class="name">Labne-Feta Dip</span><span class="price">$11</span></div>
+          <p class="desc">Ttomato-cucumber-pepper-olive salsa, sumac, garlic.</p>
+        </li>
+        <li data-q="imam bayildi dip roasted eggplant, peppers, onions, spices, paprika pine nuts.">
+          <div class="row"><span class="name">Imam Bayildi Dip</span><span class="price">$12</span></div>
+          <p class="desc">Roasted eggplant, peppers, onions, spices, paprika pine nuts.</p>
+        </li>
+        <li data-q="lamb sliders 3 each. sumac garlic aioli, za&#39;taar fries.">
+          <div class="row"><span class="name">Lamb Sliders</span><span class="price">$20</span></div>
+          <p class="desc">3 each. Sumac garlic aioli, za&#39;taar fries.</p>
+        </li>
+        <li data-q="chermoula grilled shrimp oven roasted tomatoes, toum sauce, fried shallots.">
+          <div class="row"><span class="name">Chermoula Grilled Shrimp</span><span class="price">$14</span></div>
+          <p class="desc">Oven roasted tomatoes, toum sauce, fried shallots.</p>
+        </li>
+        <li data-q="grape leaves seasonal vegetables, basmati rice, chickpeas, tzatziki (3 pc).">
+          <div class="row"><span class="name">Grape Leaves</span><span class="price">$13</span></div>
+          <p class="desc">Seasonal vegetables, basmati rice, chickpeas, tzatziki (3 pc).</p>
+        </li>
+        <li data-q="shrimp &amp; artichoke bake in a creamy tomato-basil sauce.">
+          <div class="row"><span class="name">Shrimp &amp; Artichoke Bake</span><span class="price">$14</span></div>
+          <p class="desc">In a creamy tomato-basil sauce.</p>
+        </li>
+        <li data-q="fried halloumi cheese roasted garlic tomatoes, basil pesto aioli.">
+          <div class="row"><span class="name">Fried Halloumi Cheese</span><span class="price">$14</span></div>
+          <p class="desc">Roasted garlic tomatoes, basil pesto aioli.</p>
+        </li></ul>
+    </section>
+    <section id="kebabs-entrees" class="sec">
+      <h2>Kebabs &amp; Entrees</h2>
+      <p class="note">With soft pita or pita chips.</p>
+      <ul>
+        <li data-q="chermoula shrimp kabob yellow basmati rice, fatoosh salad, classic hummus, pickled veggies, spicy aleppo sauce.">
+          <div class="row"><span class="name">Chermoula Shrimp Kabob</span><span class="price">$26</span></div>
+          <p class="desc">Yellow basmati rice, fatoosh salad, classic hummus, pickled veggies, spicy Aleppo sauce.</p>
+        </li>
+        <li data-q="aleppo pepper beef kebab yellow basmati rice, fatoosh salad, pickled vegetables, classic hummus, spicy aleppo sauce, basil pesto aioli, fried onions.">
+          <div class="row"><span class="name">Aleppo Pepper Beef Kebab</span><span class="price">$24</span></div>
+          <p class="desc">Yellow basmati rice, fatoosh salad, pickled vegetables, classic hummus, spicy Aleppo sauce, basil pesto aioli, fried onions.</p>
+        </li>
+        <li data-q="spiced chicken tawook yellow basmati rice, chopped salad, hummus, pickled veggies, fili sauce, toum sauce, fried chickpeas.">
+          <div class="row"><span class="name">Spiced Chicken Tawook</span><span class="price">$22</span></div>
+          <p class="desc">Yellow basmati rice, chopped salad, hummus, pickled veggies, Fili sauce, toum sauce, fried chickpeas.</p>
+        </li>
+        <li data-q="roasted lamb kafta seasoned ground lamb, yellow basmati rice, pistachios, greek salad, imam bayildi, pickled turnip, tahini sauce &amp; spicy aleppo sauce.">
+          <div class="row"><span class="name">Roasted Lamb Kafta</span><span class="price">$24</span></div>
+          <p class="desc">Seasoned ground lamb, yellow basmati rice, pistachios, Greek salad, imam bayildi, pickled turnip, tahini sauce &amp; spicy Aleppo sauce.</p>
+        </li>
+        <li data-q="tomato-basil pasta gemelli pasta, spinach, caramelized onions, peppers in a creamy &amp; spicy tomato-garlic sauce, parmesan cheese. add shrimp 10, add chicken 5.">
+          <div class="row"><span class="name">Tomato-Basil Pasta</span><span class="price">$18</span></div>
+          <p class="desc">Gemelli pasta, spinach, caramelized onions, peppers in a creamy &amp; spicy tomato-garlic sauce, parmesan cheese. Add Shrimp 10, Add Chicken 5.</p>
+        </li>
+        <li data-q="touareg lamb tagine spiced lamb stew simmered in a rich tomato curry garlic sauce, spinach, cannellini beans, pearl couscous, fatoosh salad.">
+          <div class="row"><span class="name">Touareg Lamb Tagine</span><span class="price">$24</span></div>
+          <p class="desc">Spiced lamb stew simmered in a rich tomato curry garlic sauce, spinach, cannellini beans, pearl couscous, fatoosh salad.</p>
+        </li>
+        <li data-q="spiced grilled salmon yellow basmati rice, chopped salad, wilted spinach, pickled vegetables, tahini sauce.">
+          <div class="row"><span class="name">Spiced Grilled Salmon</span><span class="price">$24</span></div>
+          <p class="desc">Yellow basmati rice, chopped salad, wilted spinach, pickled vegetables, tahini sauce.</p>
+        </li>
+        <li data-q="za&#39;taar-lemon pepper fries fili sauce, toum, tahini, spicy aleppo, tzatziki 3 each.">
+          <div class="row"><span class="name">Za&#39;taar-Lemon Pepper Fries</span><span class="price">$8</span></div>
+          <p class="desc">Fili Sauce, Toum, Tahini, Spicy Aleppo, Tzatziki 3 each.</p>
+        </li></ul>
+    </section>
+    <section id="levant-bowls" class="sec">
+      <h2>Levant Bowls</h2>
+      <p class="note">With pita bread or pita chips.</p>
+      <ul>
+        <li data-q="falafel pearl couscous, fatoosh salad, za&#39;taar cauliflower, classic hummus, pickled turnip, tahini sauce &amp; spicy aleppo sauce.">
+          <div class="row"><span class="name">Falafel</span><span class="price">$19</span></div>
+          <p class="desc">Pearl couscous, fatoosh salad, za&#39;taar cauliflower, classic hummus, pickled turnip, tahini sauce &amp; spicy Aleppo sauce.</p>
+        </li>
+        <li data-q="tandoor chicken shawarma yellow basmati rice, chopped salad, classic hummus, za&#39;taar cauliflower, pickled veggies, fili sauce &amp; garlic sauce.">
+          <div class="row"><span class="name">Tandoor Chicken Shawarma</span><span class="price">$22</span></div>
+          <p class="desc">Yellow basmati rice, chopped salad, classic hummus, za&#39;taar cauliflower, pickled veggies, Fili sauce &amp; garlic sauce.</p>
+        </li>
+        <li data-q="spiced lamb shawarma yellow basmati, greek salad, imam bayildi, pickled turnip, curry aioli, za&#39;taar cualiflower, fried artichokes.">
+          <div class="row"><span class="name">Spiced Lamb Shawarma</span><span class="price">$22</span></div>
+          <p class="desc">Yellow basmati, Greek salad, imam bayildi, pickled turnip, curry aioli, za&#39;taar cualiflower, fried artichokes.</p>
+        </li></ul>
+    </section>
+    <section id="garden-salads" class="sec">
+      <h2>Garden Salads</h2>
+      <p class="note">Add: Chicken 5, Gyro 7, Lamb 7, Falafel 4. Complete with a cup of soup +5.</p>
+      <ul>
+        <li data-q="tunisian mix mixed greens, tomatoes, goat cheese, dates, pine nuts, croutons, balsamic vinaigrette.">
+          <div class="row"><span class="name">Tunisian Mix</span><span class="price">$16</span></div>
+          <p class="desc">Mixed greens, tomatoes, goat cheese, dates, pine nuts, croutons, balsamic vinaigrette.</p>
+        </li>
+        <li data-q="fatoosh romaine lettuce, cucumber, tomato, onion, fresh mint, parsley, celery, pita crunch, lemony sumac garlic dressing.">
+          <div class="row"><span class="name">Fatoosh</span><span class="price">$15</span></div>
+          <p class="desc">Romaine lettuce, cucumber, tomato, onion, fresh mint, parsley, celery, pita crunch, lemony sumac garlic dressing.</p>
+        </li>
+        <li data-q="greek salad romaine, vine ripe tomatoes, cucumber, red onion, peppers, kalamata, sheep feta, crispy chickpeas, olive tapenade dressing.">
+          <div class="row"><span class="name">Greek Salad</span><span class="price">$16</span></div>
+          <p class="desc">Romaine, vine ripe tomatoes, cucumber, red onion, peppers, kalamata, sheep feta, crispy chickpeas, olive tapenade dressing.</p>
+        </li>
+        <li data-q="fili caesar kale, romaine lettuce, carrots, red onion, croutons, parmesan, smoked garlic dressing.">
+          <div class="row"><span class="name">Fili Caesar</span><span class="price">$15</span></div>
+          <p class="desc">Kale, romaine lettuce, carrots, red onion, croutons, parmesan, smoked garlic dressing.</p>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>Please inform your server if you have any nut allergies. A 20% gratuity will be added to parties 6 or more. Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Cafe Fili.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Cafe Fili menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

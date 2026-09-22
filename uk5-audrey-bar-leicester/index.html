@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Audrey Menu</title>
+<meta name="description" content="Menu for Audrey, St Nicholas Place, Leicester city centre.">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Audrey</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=19-21%20St%20Nicholas%20Place%2C%20Leicester%20LE1%204LD">19-21 St Nicholas Place, Leicester LE1 4LD</a><span>Fri 12pm-12am. Sat 12pm-1am. Sun-Thu closed (private hire)</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#toasties-sandwiches" data-sec="toasties-sandwiches">Toasties &amp; Sandwiches</a><a href="#soup-and-salad" data-sec="soup-and-salad">Soup and Salad</a><a href="#make-your-meal" data-sec="make-your-meal">Make Your Meal</a><a href="#loaded-chips" data-sec="loaded-chips">Loaded Chips</a><a href="#picky-bits-and-sides" data-sec="picky-bits-and-sides">Picky Bits and Sides</a><a href="#taco-s" data-sec="taco-s">Taco&#39;s</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="toasties-sandwiches" class="sec">
+      <h2>Toasties &amp; Sandwiches</h2>
+      <p class="note">Available before 4pm. Toasties or sandwich on bloomer.</p>
+      <ul>
+        <li data-q="ham and cheddar (gfa) ">
+          <div class="row"><span class="name">Ham and cheddar (GFA)</span><span class="price">£6.00</span></div>
+          
+        </li>
+        <li data-q="all the cheeses (gfa) ">
+          <div class="row"><span class="name">All the cheeses (GFA)</span><span class="price">£4.50</span></div>
+          
+        </li>
+        <li data-q="cheddar and spring onion (gfa) ">
+          <div class="row"><span class="name">Cheddar and spring onion (GFA)</span><span class="price">£5.00</span></div>
+          
+        </li>
+        <li data-q="sweet potato and beetroot falafel with hummus (vegan) ">
+          <div class="row"><span class="name">Sweet potato and beetroot falafel with hummus (Vegan)</span><span class="price">£6.50</span></div>
+          
+        </li>
+        <li data-q="pulled pork, cheddar, spring onions, jalapenos (gfa) ">
+          <div class="row"><span class="name">Pulled pork, cheddar, spring onions, jalapenos (GFA)</span><span class="price">£6.50</span></div>
+          
+        </li>
+        <li data-q="pulled beef brisket, cheddar, spring onions, jalapenos (gfa) ">
+          <div class="row"><span class="name">Pulled beef brisket, cheddar, spring onions, jalapenos (GFA)</span><span class="price">£7.00</span></div>
+          
+        </li>
+        <li data-q="pulled chicken, cheddar, spring onions, salsa (gfa) ">
+          <div class="row"><span class="name">Pulled chicken, cheddar, spring onions, salsa (GFA)</span><span class="price">£6.50</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="soup-and-salad" class="sec">
+      <h2>Soup and Salad</h2>
+      
+      <ul>
+        <li data-q="soup of the day (vegan, gfa) homemade soup of the day served with bloomer bread. upgrade your soup with any toastie +£4.00">
+          <div class="row"><span class="name">Soup of the day (Vegan, GFA)</span><span class="price">£5.50</span></div>
+          <p class="desc">Homemade soup of the day served with bloomer bread. Upgrade your soup with any toastie +£4.00</p>
+        </li>
+        <li data-q="chicken caesar salad iceberg lettuce, crispy chicken tenders, bacon bits, caesar dressing, parmesan, cheesy garlic bread">
+          <div class="row"><span class="name">Chicken Caesar Salad</span><span class="price">£11.25</span></div>
+          <p class="desc">Iceberg lettuce, crispy chicken tenders, bacon bits, Caesar dressing, Parmesan, cheesy garlic bread</p>
+        </li></ul>
+    </section>
+    <section id="make-your-meal" class="sec">
+      <h2>Make Your Meal</h2>
+      <p class="note">Choose 1 x main, 1 x side, 1 x fries. Sides: beer battered onion rings; cheesy garlic bread (GFA, VA); Asian slaw, sweet, sour and spicy raw vegetable slaw (VA, GF); mozzarella sticks drizzled with sweet chilli sauce (GFA). Fries (GF), choose your seasoning: piri-piri, chicken salt, lemon pepper, sea salt &amp; malt vinegar, Jamaican jerk or just salt.</p>
+      <ul>
+        <li data-q="crispy cauliflower (vegan) chunks of cauliflower with your choice of sauce served with sesame, crispy onions, spring onions, red chilli and coriander. korean (spicy), katsu (gfa) or bbq (gf)">
+          <div class="row"><span class="name">Crispy Cauliflower (Vegan)</span><span class="price">£13</span></div>
+          <p class="desc">Chunks of cauliflower with your choice of sauce served with sesame, crispy onions, spring onions, red chilli and coriander. Korean (spicy), Katsu (GFA) or BBQ (GF)</p>
+        </li>
+        <li data-q="fried chicken chunks of chicken with your choice of sauce served with sesame, crispy onions, spring onions, red chilli and coriander. korean (spicy), katsu (gfa) or bbq (gf)">
+          <div class="row"><span class="name">Fried Chicken</span><span class="price">£14.50</span></div>
+          <p class="desc">Chunks of chicken with your choice of sauce served with sesame, crispy onions, spring onions, red chilli and coriander. Korean (spicy), Katsu (GFA) or BBQ (GF)</p>
+        </li>
+        <li data-q="taco&#39;s slow cooked meat with lettuce, cheddar, pickled onions, crispy onions, chives and spring onions. bbq pulled pork, beef brisket, cajun chicken or veggie bean (va)">
+          <div class="row"><span class="name">Taco&#39;s</span><span class="price">£16.50</span></div>
+          <p class="desc">Slow cooked meat with lettuce, cheddar, pickled onions, crispy onions, chives and spring onions. BBQ pulled pork, beef brisket, Cajun chicken or veggie bean (VA)</p>
+        </li>
+        <li data-q="sweet chilli chicken wrap shredded chicken strips, mayo, cheddar, spring onion, crispy onions, cucumber &amp; sweet chilli">
+          <div class="row"><span class="name">Sweet Chilli Chicken Wrap</span><span class="price">£14.50</span></div>
+          <p class="desc">Shredded chicken strips, mayo, cheddar, spring onion, crispy onions, cucumber &amp; sweet chilli</p>
+        </li>
+        <li data-q="chicken tenders (gfa) audrey&#39;s favourite. crispy cajun chicken breast fillets with mayo, sriracha and coriander">
+          <div class="row"><span class="name">Chicken Tenders (GFA)</span><span class="price">£14.50</span></div>
+          <p class="desc">Audrey&#39;s favourite. Crispy Cajun chicken breast fillets with mayo, sriracha and coriander</p>
+        </li>
+        <li data-q="bbq no&#39;meatballs (vegan) plant based meatballs in our homemade bbq sauce with crispy onions, spring onions and chives">
+          <div class="row"><span class="name">BBQ no&#39;Meatballs (Vegan)</span><span class="price">£13</span></div>
+          <p class="desc">Plant based meatballs in our homemade BBQ sauce with crispy onions, spring onions and chives</p>
+        </li></ul>
+    </section>
+    <section id="loaded-chips" class="sec">
+      <h2>Loaded Chips</h2>
+      <p class="note">Main for one or sharing for 2-4 people. Add and upgrade: chicken strips +£6, pulled pork or pulled chicken +£5, pulled beef +£6.</p>
+      <ul>
+        <li data-q="cheeky cheese (gfa) cheese sauce, mozzarella, cheddar, parmesan, crispy onions">
+          <div class="row"><span class="name">Cheeky Cheese (GFA)</span><span class="price">£8.50</span></div>
+          <p class="desc">Cheese sauce, mozzarella, cheddar, Parmesan, crispy onions</p>
+        </li>
+        <li data-q="bbq pulled pork (gfa) pulled pork, bbq sauce, cheddar, parmesan, pickled pink onions, crispy onions">
+          <div class="row"><span class="name">BBQ Pulled Pork (GFA)</span><span class="price">£9.50</span></div>
+          <p class="desc">Pulled pork, BBQ sauce, cheddar, Parmesan, pickled pink onions, crispy onions</p>
+        </li>
+        <li data-q="vegan (vegan, gfa) all things vegan: cheese, mayo, mustard, sriracha, spring onions, coriander, sesame seeds, crispy onions, chillies, chives">
+          <div class="row"><span class="name">Vegan (Vegan, GFA)</span><span class="price">£8.50</span></div>
+          <p class="desc">All things vegan: cheese, mayo, mustard, sriracha, spring onions, coriander, sesame seeds, crispy onions, chillies, chives</p>
+        </li>
+        <li data-q="fully loaded (gfa) mozzarella, cheddar, mustard, mayo, sriracha, spring onions, coriander, sesame, crispy onions, chillies, chives">
+          <div class="row"><span class="name">Fully Loaded (GFA)</span><span class="price">£8.50</span></div>
+          <p class="desc">Mozzarella, cheddar, mustard, mayo, sriracha, spring onions, coriander, sesame, crispy onions, chillies, chives</p>
+        </li>
+        <li data-q="korean (spicy) korean sauce, mayo, spring onions, coriander, sesame, crispy onions, chillies">
+          <div class="row"><span class="name">Korean (spicy)</span><span class="price">£8.50</span></div>
+          <p class="desc">Korean sauce, mayo, spring onions, coriander, sesame, crispy onions, chillies</p>
+        </li></ul>
+    </section>
+    <section id="picky-bits-and-sides" class="sec">
+      <h2>Picky Bits and Sides</h2>
+      
+      <ul>
+        <li data-q="skinny fries choose your flavour: piri piri, lemon pepper, sea salt &amp; malt vinegar, jamaican jerk, chicken salt or just salt">
+          <div class="row"><span class="name">Skinny Fries</span><span class="price">£3.50</span></div>
+          <p class="desc">Choose your flavour: piri piri, lemon pepper, sea salt &amp; malt vinegar, Jamaican jerk, chicken salt or just salt</p>
+        </li>
+        <li data-q="asian slaw (gf, va) ">
+          <div class="row"><span class="name">Asian Slaw (GF, VA)</span><span class="price">£2.50</span></div>
+          
+        </li>
+        <li data-q="beer batter onion rings ">
+          <div class="row"><span class="name">Beer Batter Onion Rings</span><span class="price">£4.50</span></div>
+          
+        </li>
+        <li data-q="vegetable samosa&#39;s ">
+          <div class="row"><span class="name">Vegetable Samosa&#39;s</span><span class="price">£5.00</span></div>
+          
+        </li>
+        <li data-q="mozzerella sticks (gfa) ">
+          <div class="row"><span class="name">Mozzerella Sticks (GFA)</span><span class="price">£4.50</span></div>
+          
+        </li>
+        <li data-q="chinese vegetable spring rolls ">
+          <div class="row"><span class="name">Chinese Vegetable Spring Rolls</span><span class="price">£3.00</span></div>
+          
+        </li>
+        <li data-q="garlic bread (gfa, vegan) ">
+          <div class="row"><span class="name">Garlic Bread (GFA, Vegan)</span><span class="price">£3.00</span></div>
+          
+        </li>
+        <li data-q="cheesy garlic bread (gfa, va) ">
+          <div class="row"><span class="name">Cheesy Garlic Bread (GFA, VA)</span><span class="price">£4.00</span></div>
+          
+        </li>
+        <li data-q="chicken strips crispy cajun chicken breast fillets with coriander and lime. choose your dipping sauce: katsu curry (gfa), sweet and spicy korean, barbeque (gf), garlic mayo (gf), sweet chilli (gf)">
+          <div class="row"><span class="name">Chicken Strips</span></div>
+          <p class="desc">Crispy Cajun chicken breast fillets with coriander and lime. Choose your dipping sauce: Katsu curry (GFA), sweet and spicy Korean, barbeque (GF), garlic mayo (GF), sweet chilli (GF)</p><div class="prices"><span class="pp"><span class="pl">3 for</span> <b>£6.50</b></span><span class="pp"><span class="pl">5 for</span> <b>£9.00</b></span><span class="pp"><span class="pl">8 for</span> <b>£13.50</b></span></div>
+        </li></ul>
+    </section>
+    <section id="taco-s" class="sec">
+      <h2>Taco&#39;s</h2>
+      <p class="note">Soft shell taco&#39;s: 3 x slow cooked with lettuce, cheddar, pickled onions, crispy onions, chives &amp; spring onions.</p>
+      <ul>
+        <li data-q="bbq pulled pork tacos ">
+          <div class="row"><span class="name">BBQ Pulled Pork Tacos</span><span class="price">£9.00</span></div>
+          
+        </li>
+        <li data-q="beef brisket tacos ">
+          <div class="row"><span class="name">Beef Brisket Tacos</span><span class="price">£9.00</span></div>
+          
+        </li>
+        <li data-q="cajun chicken tacos ">
+          <div class="row"><span class="name">Cajun Chicken Tacos</span><span class="price">£9.00</span></div>
+          
+        </li>
+        <li data-q="veggie bean tacos ">
+          <div class="row"><span class="name">Veggie Bean Tacos</span><span class="price">£8.50</span></div>
+          
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>GF gluten free. GFA gluten free alternative available. VA vegan alternative available. Please inform your server of any dietary requirements or allergies. Toasties and sandwiches available before 4pm. Afternoon tea £25pp includes 2 glasses of prosecco each (book in advance). We host birthdays, baby showers, hen do&#39;s and much more; private hire Sunday to Thursday.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Audrey.</strong> Not the official menu. Copied from their public menu on 2026-09-22. This preview expires October 6.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Audrey menu preview was free to look at until October 6. To turn it into a live page with a QR code and print-ready PDF, it's US$29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for US$29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-06T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

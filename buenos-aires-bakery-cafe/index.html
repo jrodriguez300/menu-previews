@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Buenos Aires Bakery &amp; Cafe Menu</title>
+<meta name="description" content="Menu for Buenos Aires Bakery &amp; Cafe, North Beach, Miami Beach (71st Street).">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Buenos Aires Bakery &amp; Cafe</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=230%2071%20Street%2C%20Miami%20Beach%2C%20FL%2033141">230 71 Street, Miami Beach, FL 33141</a><a href="tel:3058617887">305-861-7887</a><span>Mon - Sun 7:00am - 9:00pm</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#breakfast" data-sec="breakfast">Breakfast</a><a href="#sandwiches" data-sec="sandwiches">Sandwiches</a><a href="#pizza" data-sec="pizza">Pizza</a><a href="#entrees" data-sec="entrees">Entrees</a><a href="#wraps-salads-tarts" data-sec="wraps-salads-tarts">Wraps/Salads/Tarts</a><a href="#kids-menu" data-sec="kids-menu">Kids Menu</a><a href="#sides" data-sec="sides">Sides</a><a href="#drink-menu-coffee" data-sec="drink-menu-coffee">Drink Menu - Coffee</a><a href="#drink-menu-espresso" data-sec="drink-menu-espresso">Drink Menu - Espresso</a><a href="#drink-menu-tea" data-sec="drink-menu-tea">Drink Menu - Tea</a><a href="#drink-menu-chocolate" data-sec="drink-menu-chocolate">Drink Menu - Chocolate</a><a href="#drink-menu-blended-iced-coffee" data-sec="drink-menu-blended-iced-coffee">Drink Menu - Blended Iced Coffee</a><a href="#drink-menu-juices" data-sec="drink-menu-juices">Drink Menu - Juices</a><a href="#drink-menu-milk-extras" data-sec="drink-menu-milk-extras">Drink Menu - Milk &amp; Extras</a><a href="#cake-menu-vanilla-cake" data-sec="cake-menu-vanilla-cake">Cake Menu - Vanilla Cake</a><a href="#cake-menu-chocolate-cake" data-sec="cake-menu-chocolate-cake">Cake Menu - Chocolate Cake</a><a href="#cake-menu-classica-tortas-argentina" data-sec="cake-menu-classica-tortas-argentina">Cake Menu - Classica Tortas Argentina</a><a href="#cake-menu-mousse-cakes" data-sec="cake-menu-mousse-cakes">Cake Menu - Mousse Cakes</a><a href="#catering" data-sec="catering">Catering</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="breakfast" class="sec">
+      <h2>Breakfast</h2>
+      
+      <ul>
+        <li data-q="buenos aires deluxe 2 eggs, bacon sausage links, mini french bread and choice of side with a hot drink">
+          <div class="row"><span class="name">Buenos Aires Deluxe</span><span class="price">$15.99</span></div>
+          <p class="desc">2 eggs, bacon sausage links, mini French bread and choice of side with a hot drink</p>
+        </li>
+        <li data-q="breakfast of champions entraña steak topped with 2 runny eggs and choice of side">
+          <div class="row"><span class="name">Breakfast of Champions</span><span class="price">$34.99</span></div>
+          <p class="desc">Entraña steak topped with 2 runny eggs and choice of side</p>
+        </li>
+        <li data-q="breakfast sandwich scrambled egg and cheese on french bread">
+          <div class="row"><span class="name">Breakfast Sandwich</span><span class="price">$8.99</span></div>
+          <p class="desc">Scrambled egg and cheese on French bread</p>
+        </li>
+        <li data-q="deluxe medialuna runny egg, mozzarella and prosciutto on a medialuna">
+          <div class="row"><span class="name">Deluxe Medialuna</span><span class="price">$11.00</span></div>
+          <p class="desc">Runny egg, mozzarella and prosciutto on a medialuna</p>
+        </li>
+        <li data-q="breakfast medialuna scrambled egg and cheese on a homemade medialuna">
+          <div class="row"><span class="name">Breakfast Medialuna</span><span class="price">$5.20</span></div>
+          <p class="desc">Scrambled egg and cheese on a homemade medialuna</p>
+        </li>
+        <li data-q="buenos aires medialuna runny egg, cheese and bacon">
+          <div class="row"><span class="name">Buenos Aires Medialuna</span><span class="price">$6.60</span></div>
+          <p class="desc">Runny egg, cheese and bacon</p>
+        </li>
+        <li data-q="simple breakfast eggs any style with mini french bread">
+          <div class="row"><span class="name">Simple Breakfast</span><span class="price">$5.99</span></div>
+          <p class="desc">Eggs any style with mini French bread</p>
+        </li>
+        <li data-q="ham &amp; cheese medialuna ">
+          <div class="row"><span class="name">Ham &amp; Cheese Medialuna</span><span class="price">$3.99</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="sandwiches" class="sec">
+      <h2>Sandwiches</h2>
+      <p class="note">Sandwiches served on French bread with lettuce, tomato, mayo and side</p>
+      <ul>
+        <li data-q="ultimate buenos aires burger runny egg, american and swiss cheese, bacon, lettuce, tomato, mayo and ketchup with fries">
+          <div class="row"><span class="name">Ultimate Buenos Aires Burger</span><span class="price">$16.99</span></div>
+          <p class="desc">Runny egg, American and Swiss cheese, bacon, lettuce, tomato, mayo and ketchup with fries</p>
+        </li>
+        <li data-q="classic cheeseburger american cheese, lettuce, tomato, and mayo served with fries">
+          <div class="row"><span class="name">Classic Cheeseburger</span><span class="price">$12.99</span></div>
+          <p class="desc">American cheese, lettuce, tomato, and mayo served with fries</p>
+        </li>
+        <li data-q="milanesa sandwich breaded chicken or steak">
+          <div class="row"><span class="name">Milanesa Sandwich</span><span class="price">$15.70</span></div>
+          <p class="desc">Breaded chicken or steak</p>
+        </li>
+        <li data-q="entraña steak sandwich ">
+          <div class="row"><span class="name">Entraña Steak Sandwich</span><span class="price">$17.99</span></div>
+          
+        </li>
+        <li data-q="salami and cheese sandwich ">
+          <div class="row"><span class="name">Salami and Cheese Sandwich</span><span class="price">$8.99</span></div>
+          
+        </li>
+        <li data-q="milanesa napolitana sandwich breaded chicken or steak with tomato sauce and melted cheese">
+          <div class="row"><span class="name">Milanesa Napolitana Sandwich</span><span class="price">$16.50</span></div>
+          <p class="desc">Breaded chicken or steak with tomato sauce and melted cheese</p>
+        </li>
+        <li data-q="choripan argentinean-style grilled chorizo">
+          <div class="row"><span class="name">Choripan</span><span class="price">$14.25</span></div>
+          <p class="desc">Argentinean-style grilled chorizo</p>
+        </li>
+        <li data-q="grilled chicken sandwich seasoned grilled chicken">
+          <div class="row"><span class="name">Grilled Chicken Sandwich</span><span class="price">$11.99</span></div>
+          <p class="desc">Seasoned grilled chicken</p>
+        </li>
+        <li data-q="prosciutto and cheese sandwich ">
+          <div class="row"><span class="name">Prosciutto and Cheese Sandwich</span><span class="price">$10.99</span></div>
+          
+        </li>
+        <li data-q="matambre sandwich ">
+          <div class="row"><span class="name">Matambre Sandwich</span><span class="price">$12.99</span></div>
+          
+        </li>
+        <li data-q="ham and cheese sandwich ">
+          <div class="row"><span class="name">Ham and Cheese Sandwich</span><span class="price">$9.99</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="pizza" class="sec">
+      <h2>Pizza</h2>
+      <p class="note">We offer 8&quot; and 14&quot; sizes</p>
+      <ul>
+        <li data-q="mozzarella ">
+          <div class="row"><span class="name">Mozzarella</span></div>
+          <div class="prices"><span class="pp"><span class="pl">8&quot;</span> <b>$8.50</b></span><span class="pp"><span class="pl">14&quot;</span> <b>$17.99</b></span></div>
+        </li>
+        <li data-q="napolitana mozzarella, ham and tomato sauce">
+          <div class="row"><span class="name">Napolitana</span></div>
+          <p class="desc">Mozzarella, ham and tomato sauce</p><div class="prices"><span class="pp"><span class="pl">8&quot;</span> <b>$9.99</b></span><span class="pp"><span class="pl">14&quot;</span> <b>$20.99</b></span></div>
+        </li>
+        <li data-q="fugazza argentiean-style onion pizza with mozzarella">
+          <div class="row"><span class="name">Fugazza</span></div>
+          <p class="desc">Argentiean-style onion pizza with mozzarella</p><div class="prices"><span class="pp"><span class="pl">8&quot;</span> <b>$8.99</b></span><span class="pp"><span class="pl">14&quot;</span> <b>$19.99</b></span></div>
+        </li></ul>
+    </section>
+    <section id="entrees" class="sec">
+      <h2>Entrees</h2>
+      <p class="note">Served with your choice of side</p>
+      <ul>
+        <li data-q="milanesa al plato breaded chicken or steak">
+          <div class="row"><span class="name">Milanesa al Plato</span><span class="price">$17.99</span></div>
+          <p class="desc">Breaded chicken or steak</p>
+        </li>
+        <li data-q="milanesa napolitana breaded chicken or steak with tomato sauce and melted cheese">
+          <div class="row"><span class="name">Milanesa Napolitana</span><span class="price">$20.99</span></div>
+          <p class="desc">Breaded chicken or steak with tomato sauce and melted cheese</p>
+        </li>
+        <li data-q="milanesa &quot;a caballo&quot; breaded chicken or steak with 2 fried eggs on top">
+          <div class="row"><span class="name">Milanesa &quot;A Caballo&quot;</span><span class="price">$21.99</span></div>
+          <p class="desc">Breaded chicken or steak with 2 fried eggs on top</p>
+        </li>
+        <li data-q="grilled chicken ">
+          <div class="row"><span class="name">Grilled Chicken</span><span class="price">$14.99</span></div>
+          
+        </li>
+        <li data-q="entraña steak al plato ">
+          <div class="row"><span class="name">Entraña Steak al Plato</span><span class="price">$32.99</span></div>
+          
+        </li>
+        <li data-q="matambre al plato ">
+          <div class="row"><span class="name">Matambre al Plato</span><span class="price">$14.99</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="wraps-salads-tarts" class="sec">
+      <h2>Wraps/Salads/Tarts</h2>
+      
+      <ul>
+        <li data-q="chicken caesar wrap or salad grilled chicken. lettuce, parmesan, bacon and caesar dressing">
+          <div class="row"><span class="name">Chicken Caesar wrap or salad</span><span class="price">$13.99</span></div>
+          <p class="desc">Grilled chicken. lettuce, parmesan, bacon and caesar dressing</p>
+        </li>
+        <li data-q="tortilla de papa ">
+          <div class="row"><span class="name">Tortilla de papa</span><span class="price">$7.99</span></div>
+          
+        </li>
+        <li data-q="tarta de espinaca ">
+          <div class="row"><span class="name">Tarta de espinaca</span><span class="price">$7.99</span></div>
+          
+        </li>
+        <li data-q="buenos aires wrap or salad lettuce, tomato, carrots, and red onion with your choice of dressing">
+          <div class="row"><span class="name">Buenos Aires wrap or salad</span><span class="price">$8.99</span></div>
+          <p class="desc">Lettuce, tomato, carrots, and red onion with your choice of dressing</p>
+        </li>
+        <li data-q="buenos aires wrap or salad - grilled chicken ">
+          <div class="row"><span class="name">Buenos Aires wrap or salad - Grilled chicken</span><span class="price">$13.99</span></div>
+          
+        </li>
+        <li data-q="buenos aires wrap or salad - ham and cheese ">
+          <div class="row"><span class="name">Buenos Aires wrap or salad - Ham and Cheese</span><span class="price">$11.99</span></div>
+          
+        </li>
+        <li data-q="buenos aires wrap or salad - steak ">
+          <div class="row"><span class="name">Buenos Aires wrap or salad - Steak</span><span class="price">$17.99</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="kids-menu" class="sec">
+      <h2>Kids Menu</h2>
+      
+      <ul>
+        <li data-q="mini milanesa sandwich breaded chicken or steak on french bread with mayo, lettuce and tomato with a side of fries">
+          <div class="row"><span class="name">Mini Milanesa Sandwich</span><span class="price">$7.99</span></div>
+          <p class="desc">Breaded chicken or steak on French bread with mayo, lettuce and tomato with a side of fries</p>
+        </li>
+        <li data-q="milanesa strips breaded chicken or steak cut into strips with a side of french fries">
+          <div class="row"><span class="name">Milanesa Strips</span><span class="price">$7.99</span></div>
+          <p class="desc">Breaded chicken or steak cut into strips with a side of French fries</p>
+        </li>
+        <li data-q="mini sandwich de miga mini version of our classic ham and cheese miga with a side of fries">
+          <div class="row"><span class="name">Mini Sandwich de Miga</span><span class="price">$7.99</span></div>
+          <p class="desc">Mini version of our classic ham and cheese miga with a side of fries</p>
+        </li></ul>
+    </section>
+    <section id="sides" class="sec">
+      <h2>Sides</h2>
+      
+      <ul>
+        <li data-q="crispy fries ">
+          <div class="row"><span class="name">Crispy Fries</span><span class="price">$3.00</span></div>
+          
+        </li>
+        <li data-q="ensalada rusa ">
+          <div class="row"><span class="name">Ensalada Rusa</span><span class="price">$4.00</span></div>
+          
+        </li>
+        <li data-q="house salad ">
+          <div class="row"><span class="name">House Salad</span><span class="price">$3.00</span></div>
+          
+        </li>
+        <li data-q="crispy fries &quot;provenzal&quot; ">
+          <div class="row"><span class="name">Crispy Fries &quot;Provenzal&quot;</span><span class="price">$4.75</span></div>
+          
+        </li>
+        <li data-q="tomato salad ">
+          <div class="row"><span class="name">Tomato Salad</span><span class="price">$3.00</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="drink-menu-coffee" class="sec">
+      <h2>Drink Menu - Coffee</h2>
+      
+      <ul>
+        <li data-q="drip coffee ">
+          <div class="row"><span class="name">Drip Coffee</span><span class="price">$2.69</span></div>
+          
+        </li>
+        <li data-q="café au lait ">
+          <div class="row"><span class="name">Café au Lait</span><span class="price">$3.50</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="drink-menu-espresso" class="sec">
+      <h2>Drink Menu - Espresso</h2>
+      
+      <ul>
+        <li data-q="espresso (double shot) ">
+          <div class="row"><span class="name">Espresso (Double Shot)</span><span class="price">$2.75</span></div>
+          
+        </li>
+        <li data-q="macchiato ">
+          <div class="row"><span class="name">Macchiato</span><span class="price">$2.50</span></div>
+          
+        </li>
+        <li data-q="cortado ">
+          <div class="row"><span class="name">Cortado</span><span class="price">$3.00</span></div>
+          
+        </li>
+        <li data-q="colada ">
+          <div class="row"><span class="name">Colada</span><span class="price">$2.75</span></div>
+          
+        </li>
+        <li data-q="cappuccino ">
+          <div class="row"><span class="name">Cappuccino</span><span class="price">$5.00</span></div>
+          
+        </li>
+        <li data-q="americano (hot or iced) ">
+          <div class="row"><span class="name">Americano (Hot or Iced)</span><span class="price">$3.50</span></div>
+          
+        </li>
+        <li data-q="café con leche (latte) (hot or iced) ">
+          <div class="row"><span class="name">Café con Leche (Latte) (Hot or Iced)</span><span class="price">$4.75</span></div>
+          
+        </li>
+        <li data-q="mocha (hot or iced) ">
+          <div class="row"><span class="name">Mocha (Hot or Iced)</span><span class="price">$5.25</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="drink-menu-tea" class="sec">
+      <h2>Drink Menu - Tea</h2>
+      <p class="note">Assorted MEM Teas. Cup (12 oz) $3.00 / Pot $5.00. Caffeinated: Blue Flower Earl Grey, English Breakfast, Golden Green. Herbal: Lemon Chamomile, Mate Cocido.</p>
+      <ul>
+        <li data-q="assorted mem teas - cup (12 oz) ">
+          <div class="row"><span class="name">Assorted MEM Teas - Cup (12 oz)</span><span class="price">$3.00</span></div>
+          
+        </li>
+        <li data-q="assorted mem teas - pot ">
+          <div class="row"><span class="name">Assorted MEM Teas - Pot</span><span class="price">$5.00</span></div>
+          
+        </li>
+        <li data-q="iced tea (white peach or blood orange) ">
+          <div class="row"><span class="name">Iced Tea (White peach or Blood orange)</span><span class="price">$3.50</span></div>
+          
+        </li>
+        <li data-q="matcha latte (hot or iced) ">
+          <div class="row"><span class="name">Matcha Latte (Hot or Iced)</span><span class="price">$5.00</span></div>
+          
+        </li>
+        <li data-q="chai latte (hot or iced) ">
+          <div class="row"><span class="name">Chai Latte (Hot or Iced)</span><span class="price">$5.00</span></div>
+          
+        </li>
+        <li data-q="london fog ">
+          <div class="row"><span class="name">London Fog</span><span class="price">$3.75</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="drink-menu-chocolate" class="sec">
+      <h2>Drink Menu - Chocolate</h2>
+      
+      <ul>
+        <li data-q="hot chocolate ">
+          <div class="row"><span class="name">Hot Chocolate</span><span class="price">$5.00</span></div>
+          
+        </li>
+        <li data-q="chocolate milk ">
+          <div class="row"><span class="name">Chocolate Milk</span><span class="price">$5.00</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="drink-menu-blended-iced-coffee" class="sec">
+      <h2>Drink Menu - Blended Iced Coffee</h2>
+      
+      <ul>
+        <li data-q="cookies n cream ">
+          <div class="row"><span class="name">Cookies N Cream</span><span class="price">$6.99</span></div>
+          
+        </li>
+        <li data-q="mocha ">
+          <div class="row"><span class="name">Mocha</span><span class="price">$6.99</span></div>
+          
+        </li>
+        <li data-q="toffee ">
+          <div class="row"><span class="name">Toffee</span><span class="price">$6.99</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="drink-menu-juices" class="sec">
+      <h2>Drink Menu - Juices</h2>
+      <p class="note">Freshly squeezed in-store</p>
+      <ul>
+        <li data-q="orange juice ">
+          <div class="row"><span class="name">Orange Juice</span><span class="price">$6.50</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="drink-menu-milk-extras" class="sec">
+      <h2>Drink Menu - Milk &amp; Extras</h2>
+      
+      <ul>
+        <li data-q="steamed milk ">
+          <div class="row"><span class="name">Steamed Milk</span><span class="price">$3.00</span></div>
+          
+        </li>
+        <li data-q="cold milk ">
+          <div class="row"><span class="name">Cold Milk</span><span class="price">$3.00</span></div>
+          
+        </li>
+        <li data-q="almond milk (substitute) ">
+          <div class="row"><span class="name">Almond Milk (Substitute)</span><span class="price">$0.75</span></div>
+          
+        </li>
+        <li data-q="oat milk (substitute) ">
+          <div class="row"><span class="name">Oat Milk (Substitute)</span><span class="price">$0.75</span></div>
+          
+        </li>
+        <li data-q="whipped cream ">
+          <div class="row"><span class="name">Whipped Cream</span><span class="price">$0.75</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="cake-menu-vanilla-cake" class="sec">
+      <h2>Cake Menu - Vanilla Cake</h2>
+      
+      <ul>
+        <li data-q="tropical cake dulce de leche peaches">
+          <div class="row"><span class="name">Tropical Cake</span></div>
+          <p class="desc">Dulce de leche peaches</p><div class="prices"><span class="pp"><span class="pl">7&quot;</span> <b>$34.99</b></span><span class="pp"><span class="pl">10&quot;</span> <b>$50.99</b></span></div>
+        </li>
+        <li data-q="delicia dulce de leche mousse dulce de leche crushed walnuts">
+          <div class="row"><span class="name">Delicia</span></div>
+          <p class="desc">Dulce de leche mousse dulce de leche crushed walnuts</p><div class="prices"><span class="pp"><span class="pl">7&quot;</span> <b>$35.99</b></span><span class="pp"><span class="pl">10&quot;</span> <b>$51.99</b></span></div>
+        </li>
+        <li data-q="temptation dulce de leche-peaches">
+          <div class="row"><span class="name">Temptation</span></div>
+          <p class="desc">Dulce de leche-peaches</p><div class="prices"><span class="pp"><span class="pl">7&quot;</span> <b>$36.99</b></span><span class="pp"><span class="pl">10&quot;</span> <b>$52.99</b></span></div>
+        </li>
+        <li data-q="tres leches vanilla cake soaked in three milks-whipped cream">
+          <div class="row"><span class="name">Tres Leches</span><span class="price">7&quot; | $37.99</span></div>
+          <p class="desc">Vanilla cake soaked in three milks-whipped cream</p>
+        </li>
+        <li data-q="strawberry shortcake whipped cream strawberry jam">
+          <div class="row"><span class="name">Strawberry Shortcake</span></div>
+          <p class="desc">Whipped cream strawberry jam</p><div class="prices"><span class="pp"><span class="pl">7&quot;</span> <b>$32.99</b></span><span class="pp"><span class="pl">10&quot;</span> <b>$48.99</b></span></div>
+        </li></ul>
+    </section>
+    <section id="cake-menu-chocolate-cake" class="sec">
+      <h2>Cake Menu - Chocolate Cake</h2>
+      
+      <ul>
+        <li data-q="selva negra dulce de leche chocolate mousse">
+          <div class="row"><span class="name">Selva Negra</span></div>
+          <p class="desc">Dulce de leche chocolate mousse</p><div class="prices"><span class="pp"><span class="pl">7&quot;</span> <b>$39.99</b></span><span class="pp"><span class="pl">10&quot;</span> <b>$55.99</b></span></div>
+        </li>
+        <li data-q="sacher dulce de leche">
+          <div class="row"><span class="name">Sacher</span></div>
+          <p class="desc">Dulce De Leche</p><div class="prices"><span class="pp"><span class="pl">7&quot;</span> <b>$39.99</b></span><span class="pp"><span class="pl">10&quot;</span> <b>$55.99</b></span></div>
+        </li>
+        <li data-q="oreo whipped cream oreo mousse">
+          <div class="row"><span class="name">Oreo</span></div>
+          <p class="desc">Whipped cream Oreo Mousse</p><div class="prices"><span class="pp"><span class="pl">7&quot;</span> <b>$32.99</b></span><span class="pp"><span class="pl">10&quot;</span> <b>$48.99</b></span></div>
+        </li></ul>
+    </section>
+    <section id="cake-menu-classica-tortas-argentina" class="sec">
+      <h2>Cake Menu - Classica Tortas Argentina</h2>
+      
+      <ul>
+        <li data-q="rogel puff pastry dulce de leche italian merengue">
+          <div class="row"><span class="name">Rogel</span><span class="price">$33.99</span></div>
+          <p class="desc">Puff pastry dulce de leche Italian merengue</p>
+        </li>
+        <li data-q="balcarce pionono, whipped cream, merengue, walnuts, peaches, dulce de leche">
+          <div class="row"><span class="name">Balcarce</span></div>
+          <p class="desc">Pionono, whipped cream, merengue, walnuts, peaches, dulce de leche</p><div class="prices"><span class="pp"><span class="pl">7&quot;</span> <b>$26.99</b></span><span class="pp"><span class="pl">8x8&quot;</span> <b>$32.99</b></span><span class="pp"><span class="pl">10x10&quot;</span> <b>$46.99</b></span></div>
+        </li>
+        <li data-q="imperial russo pionono, hojaldre whipped cream, merengue, dulce de leche, peaches, strawberry jam">
+          <div class="row"><span class="name">Imperial Russo</span></div>
+          <p class="desc">Pionono, hojaldre whipped cream, merengue, dulce de leche, peaches, strawberry jam</p><div class="prices"><span class="pp"><span class="pl">Small (6 servings)</span> <b>$21.99</b></span><span class="pp"><span class="pl">Large (10 servings)</span> <b>$37.99</b></span></div>
+        </li>
+        <li data-q="mil hojas hojaldre dulce de leche">
+          <div class="row"><span class="name">Mil Hojas</span><span class="price">7&quot; | $32.99</span></div>
+          <p class="desc">Hojaldre dulce de leche</p>
+        </li>
+        <li data-q="flan 9&quot;">
+          <div class="row"><span class="name">Flan</span><span class="price">$32.99</span></div>
+          <p class="desc">9&quot;</p>
+        </li>
+        <li data-q="tiramisu cocoa, espresso, mascarpone">
+          <div class="row"><span class="name">Tiramisu</span></div>
+          <p class="desc">cocoa, espresso, mascarpone</p><div class="prices"><span class="pp"><span class="pl">8&quot;x8&quot; (10 servings)</span> <b>$47.30</b></span></div>
+        </li></ul>
+    </section>
+    <section id="cake-menu-mousse-cakes" class="sec">
+      <h2>Cake Menu - Mousse Cakes</h2>
+      
+      <ul>
+        <li data-q="passion mousse vanilla cake layer - passion mousse">
+          <div class="row"><span class="name">Passion Mousse</span><span class="price">8&quot; | $38.99</span></div>
+          <p class="desc">Vanilla cake layer - passion mousse</p>
+        </li>
+        <li data-q="chocolate mousse chocolate cake layer - chocolate mousse">
+          <div class="row"><span class="name">Chocolate Mousse</span><span class="price">8&quot; | $38.99</span></div>
+          <p class="desc">Chocolate cake layer - chocolate mousse</p>
+        </li>
+        <li data-q="strawberry mousse vanilla cake layer - strawberry mousse">
+          <div class="row"><span class="name">Strawberry Mousse</span><span class="price">8&quot; | $38.99</span></div>
+          <p class="desc">Vanilla cake layer - strawberry mousse</p>
+        </li></ul>
+    </section>
+    <section id="catering" class="sec">
+      <h2>Catering</h2>
+      
+      <ul>
+        <li data-q="16 mini milanesa sandwich platter breaded chicken or steak on french bread with mayo, lettuce and tomato">
+          <div class="row"><span class="name">16 Mini Milanesa Sandwich Platter</span><span class="price">$56.00</span></div>
+          <p class="desc">Breaded chicken or steak on French bread with mayo, lettuce and tomato</p>
+        </li>
+        <li data-q="25 fosforitos sweet puffed pastry coated in a crunchy merengue with ham and cheese, and mayo">
+          <div class="row"><span class="name">25 Fosforitos</span><span class="price">$45.99</span></div>
+          <p class="desc">Sweet puffed pastry coated in a crunchy merengue with ham and cheese, and mayo</p>
+        </li>
+        <li data-q="25 mini empanadas mini version of our classic empanadas available in beef, ham and cheese, chicken, or spinach">
+          <div class="row"><span class="name">25 Mini Empanadas</span><span class="price">$43.47</span></div>
+          <p class="desc">Mini version of our classic empanadas available in beef, ham and cheese, chicken, or spinach</p>
+        </li>
+        <li data-q="25 ships soft rolls filled with an assortment of matambre, prosciutto, cheese and tomato.">
+          <div class="row"><span class="name">25 Ships</span><span class="price">$37.50</span></div>
+          <p class="desc">Soft rolls filled with an assortment of matambre, prosciutto, cheese and tomato.</p>
+        </li>
+        <li data-q="25 mini arrolladitos primavera bite-sized sweet rolls with ham and cheese, mayo, peppers, eggs, olives and heart of palm">
+          <div class="row"><span class="name">25 Mini Arrolladitos Primavera</span><span class="price">$30.99</span></div>
+          <p class="desc">Bite-sized sweet rolls with ham and cheese, mayo, peppers, eggs, olives and heart of palm</p>
+        </li>
+        <li data-q="25 jesuitas burnt sugar puffed pastry with prosciutto and cheese">
+          <div class="row"><span class="name">25 Jesuitas</span><span class="price">$29.99</span></div>
+          <p class="desc">Burnt sugar puffed pastry with prosciutto and cheese</p>
+        </li>
+        <li data-q="50 mini sandwich de miga jamon y queso or an assortment of prosciutto &amp; tomato, corn &amp; cheese, asparagus &amp; cheese, hearts of palm &amp; cheese, artichoke &amp; cheese, and turkey &amp; red pepper">
+          <div class="row"><span class="name">50 Mini Sandwich de Miga</span></div>
+          <p class="desc">Jamon y queso or an assortment of prosciutto &amp; tomato, corn &amp; cheese, asparagus &amp; cheese, hearts of palm &amp; cheese, artichoke &amp; cheese, and turkey &amp; red pepper</p><div class="prices"><span class="pp"><b>$35.00 / $40.00</b></span></div>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>*Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness, especially if you have certain medical conditions. Cake sizes: 7&quot; (7 servings), 8&quot; (10 servings), 9&quot; (13 servings), 10&quot; (15 servings).</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Buenos Aires Bakery &amp; Cafe.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Buenos Aires Bakery &amp; Cafe menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

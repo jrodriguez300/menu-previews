@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Bibik Violet Menu</title>
+<meta name="description" content="Menu for Bibik Violet, Orchard Road (Temasek Shophouse).">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Bibik Violet</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=28%20Orchard%20Road%2C%20Temasek%20Shophouse%2C%20Singapore%20238832">28 Orchard Road, Temasek Shophouse, Singapore 238832</a><span>Mon-Fri: 8:00am - 9:30pm (last order 9pm). Sat, Sun &amp; Public Holidays: 10:00am - 9:30pm</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#breakfast-time" data-sec="breakfast-time">Breakfast Time</a><a href="#one-dish-meals" data-sec="one-dish-meals">One Dish Meals</a><a href="#bibik-s-small-plates" data-sec="bibik-s-small-plates">Bibik&#39;s Small Plates</a><a href="#meat" data-sec="meat">Meat</a><a href="#seafood" data-sec="seafood">Seafood</a><a href="#vegetables" data-sec="vegetables">Vegetables</a><a href="#add-on-sides" data-sec="add-on-sides">Add-on / Sides</a><a href="#bakes-desserts" data-sec="bakes-desserts">Bakes &amp; Desserts</a><a href="#classic-beverages" data-sec="classic-beverages">Classic Beverages</a><a href="#bibik-s-thirst-quenchers" data-sec="bibik-s-thirst-quenchers">Bibik&#39;s Thirst Quenchers</a><a href="#soft-drinks" data-sec="soft-drinks">Soft Drinks</a><a href="#water-refillable" data-sec="water-refillable">Water (Refillable)</a><a href="#house-wines-beer" data-sec="house-wines-beer">House Wines &amp; Beer</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="breakfast-time" class="sec">
+      <h2>Breakfast Time</h2>
+      <p class="note">TOAST IS SERVED FROM 8:00AM–11:00AM ON WEEKDAYS &amp; 3:00PM–5:30PM DAILY. MEE SIAM &amp; PRATA ARE SERVED FROM 8:00AM–11:00AM ON WEEKDAYS.</p>
+      <ul>
+        <li data-q="kaya toast set a classic singapore breakfast set featuring kaya toast, soft-boiled eggs, and a cup of freshly brewed kopi.">
+          <div class="row"><span class="name">Kaya Toast Set</span><span class="price">$7.20</span></div>
+          <p class="desc">A classic Singapore breakfast set featuring kaya toast, soft-boiled eggs, and a cup of freshly brewed Kopi.</p>
+        </li>
+        <li data-q="kaya toast toasted bread with kaya and butter.">
+          <div class="row"><span class="name">Kaya Toast</span><span class="price">$3.00</span></div>
+          <p class="desc">Toasted bread with kaya and butter.</p>
+        </li>
+        <li data-q="peanut butter toast toasted bread with peanut butter.">
+          <div class="row"><span class="name">Peanut Butter Toast</span><span class="price">$3.50</span></div>
+          <p class="desc">Toasted bread with peanut butter.</p>
+        </li>
+        <li data-q="hae bee hiam toast toasted bread with spicy dried shrimp paste.">
+          <div class="row"><span class="name">Hae Bee Hiam Toast</span><span class="price">$5.50</span></div>
+          <p class="desc">Toasted bread with spicy dried shrimp paste.</p>
+        </li>
+        <li data-q="half boiled eggs (2 eggs) soft-boiled eggs served with soy sauce and pepper.">
+          <div class="row"><span class="name">Half Boiled Eggs (2 Eggs)</span><span class="price">$2.90</span></div>
+          <p class="desc">Soft-boiled eggs served with soy sauce and pepper.</p>
+        </li>
+        <li data-q="prata with fish curry gravy fluffy prata served with fish curry gravy.">
+          <div class="row"><span class="name">Prata with Fish Curry Gravy</span><span class="price">$7.00</span></div>
+          <p class="desc">Fluffy prata served with fish curry gravy.</p>
+        </li>
+        <li data-q="mee siam rice vermicelli in a tangy, spicy, and flavourful gravy, topped with prawn, egg, and tau pok.">
+          <div class="row"><span class="name">Mee Siam</span><span class="price">$7.50</span></div>
+          <p class="desc">Rice vermicelli in a tangy, spicy, and flavourful gravy, topped with prawn, egg, and tau pok.</p>
+        </li></ul>
+    </section>
+    <section id="one-dish-meals" class="sec">
+      <h2>One Dish Meals</h2>
+      <p class="note">SERVED FROM 11:00AM–3:00PM &amp; 5:30PM–9:00PM ON WEEKDAYS. SERVED FROM 10:00AM–3:00PM &amp; 5:30PM–9:00PM ON WEEKENDS</p>
+      <ul>
+        <li data-q="nasi lemak classic fragrant coconut rice served with sambal, crispy anchovies, peanuts, cucumber and egg.">
+          <div class="row"><span class="name">Nasi Lemak Classic</span><span class="price">$7.90</span></div>
+          <p class="desc">Fragrant coconut rice served with sambal, crispy anchovies, peanuts, cucumber and egg.</p>
+        </li>
+        <li data-q="nasi lemak with ayam berempah crispy fried chicken, marinated in aromatic herbs and spices, served with fragrant coconut rice, sambal, crispy anchovies, peanuts, cucumber and egg.">
+          <div class="row"><span class="name">Nasi Lemak with Ayam Berempah</span><span class="price">$14.90</span></div>
+          <p class="desc">Crispy fried chicken, marinated in aromatic herbs and spices, served with fragrant coconut rice, sambal, crispy anchovies, peanuts, cucumber and egg.</p>
+        </li>
+        <li data-q="nasi lemak with rendang beef slow-cooked in coconut milk and spices, infused with kaffir lime leaves, served with fragrant coconut rice, sambal, crispy anchovies, peanuts, cucumber and egg.">
+          <div class="row"><span class="name">Nasi Lemak with Rendang</span><span class="price">$18.90</span></div>
+          <p class="desc">Beef slow-cooked in coconut milk and spices, infused with kaffir lime leaves, served with fragrant coconut rice, sambal, crispy anchovies, peanuts, cucumber and egg.</p>
+        </li>
+        <li data-q="laksa rice noodles in a fragrant coconut-spiced broth with prawns, fishcake, tau pok, and bean sprouts, topped with fresh laksa leaves.">
+          <div class="row"><span class="name">Laksa</span><span class="price">$13.50</span></div>
+          <p class="desc">Rice noodles in a fragrant coconut-spiced broth with prawns, fishcake, tau pok, and bean sprouts, topped with fresh laksa leaves.</p>
+        </li>
+        <li data-q="nyonya prawn mee rich and flavourful prawn broth with yellow noodles, prawns, sliced pork, bean sprouts, and kang kong topped with crispy pork lard.">
+          <div class="row"><span class="name">Nyonya Prawn Mee</span><span class="price">$15.50</span></div>
+          <p class="desc">Rich and flavourful prawn broth with yellow noodles, prawns, sliced pork, bean sprouts, and kang kong topped with crispy pork lard.</p>
+        </li>
+        <li data-q="chicken macaroni comforting chicken broth with macaroni, shredded chicken, and crispy croutons.">
+          <div class="row"><span class="name">Chicken Macaroni</span><span class="price">$9.90</span></div>
+          <p class="desc">Comforting chicken broth with macaroni, shredded chicken, and crispy croutons.</p>
+        </li></ul>
+    </section>
+    <section id="bibik-s-small-plates" class="sec">
+      <h2>Bibik&#39;s Small Plates</h2>
+      <p class="note">Makan Kechil, the small eats of the Peranakan kitchen, bold, soulful, and deeply satisfying.</p>
+      <ul>
+        <li data-q="achar pickled vegetables, tossed with spices topped with peanut.">
+          <div class="row"><span class="name">Achar</span><span class="price">$4.00</span></div>
+          <p class="desc">Pickled vegetables, tossed with spices topped with peanut.</p>
+        </li>
+        <li data-q="tauhu goreng fried tofu topped with peanut sauce, cucumber, and bean sprouts.">
+          <div class="row"><span class="name">Tauhu Goreng</span><span class="price">$8.00</span></div>
+          <p class="desc">Fried tofu topped with peanut sauce, cucumber, and bean sprouts.</p>
+        </li>
+        <li data-q="kueh pie tee crisp shell with shredded turnip, carrot, tofu and bamboo shoots, topped with egg, chilli and sweet sauce. $8.50 for 4 pieces.">
+          <div class="row"><span class="name">Kueh Pie Tee</span><span class="price">$8.50</span></div>
+          <p class="desc">Crisp shell with shredded turnip, carrot, tofu and bamboo shoots, topped with egg, chilli and sweet sauce. $8.50 for 4 pieces.</p>
+        </li>
+        <li data-q="ngoh hiang deep-fried five-spice pork and prawn rolls wrapped in beancurd skin, served with sweet sauce.">
+          <div class="row"><span class="name">Ngoh Hiang</span><span class="price">$9.00</span></div>
+          <p class="desc">Deep-fried five-spice pork and prawn rolls wrapped in beancurd skin, served with sweet sauce.</p>
+        </li>
+        <li data-q="chicken satay (6 sticks) grilled skewers of marinated chicken, served with peanut sauce, cucumber, and ketupat.">
+          <div class="row"><span class="name">Chicken Satay (6 sticks)</span><span class="price">$14.50</span></div>
+          <p class="desc">Grilled skewers of marinated chicken, served with peanut sauce, cucumber, and ketupat.</p>
+        </li></ul>
+    </section>
+    <section id="meat" class="sec">
+      <h2>Meat</h2>
+      <p class="note">Fiesty flavours that pack a punch, for you to enjoy from Bibik&#39;s treasured recipes.</p>
+      <ul>
+        <li data-q="ayam goreng berempah crispy fried chicken marinated with turmeric and aromatic spices.">
+          <div class="row"><span class="name">Ayam Goreng Berempah</span><span class="price">$8.50</span></div>
+          <p class="desc">Crispy fried chicken marinated with turmeric and aromatic spices.</p>
+        </li>
+        <li data-q="ayam goreng chilli crispy fried chicken topped with a spicy chili and garlic sambal.">
+          <div class="row"><span class="name">Ayam Goreng Chilli</span><span class="price">$9.50</span></div>
+          <p class="desc">Crispy fried chicken topped with a spicy chili and garlic sambal.</p>
+        </li>
+        <li data-q="chicken curry fragrant coconut curry with chicken.">
+          <div class="row"><span class="name">Chicken Curry</span><span class="price">$14.90</span></div>
+          <p class="desc">Fragrant coconut curry with chicken.</p>
+        </li>
+        <li data-q="babi pongteh slow-braised pork belly in fermented soybean sauce with bamboo shoots, and potatoes.">
+          <div class="row"><span class="name">Babi Pongteh</span><span class="price">$14.50</span></div>
+          <p class="desc">Slow-braised pork belly in fermented soybean sauce with bamboo shoots, and potatoes.</p>
+        </li>
+        <li data-q="buah keluak soft rib braised pork ribs in a rich buah keluak sauce.">
+          <div class="row"><span class="name">Buah Keluak Soft Rib</span><span class="price">$19.50</span></div>
+          <p class="desc">Braised pork ribs in a rich buah keluak sauce.</p>
+        </li>
+        <li data-q="beef rendang beef slow-cooked in coconut milk and spices, infused with kaffir lime leaves.">
+          <div class="row"><span class="name">Beef Rendang</span><span class="price">$19.90</span></div>
+          <p class="desc">Beef slow-cooked in coconut milk and spices, infused with kaffir lime leaves.</p>
+        </li></ul>
+    </section>
+    <section id="seafood" class="sec">
+      <h2>Seafood</h2>
+      
+      <ul>
+        <li data-q="udang assam nanas prawns and pineapple cooked in fragrant, tangy [text cut off in source]">
+          <div class="row"><span class="name">Udang Assam Nanas</span><span class="price">$18.50</span></div>
+          <p class="desc">Prawns and pineapple cooked in fragrant, tangy [text cut off in source]</p>
+        </li>
+        <li data-q="ikan panggang sambal grilled barramundi topped with fragrant, tangy sambal sauce">
+          <div class="row"><span class="name">Ikan Panggang Sambal</span><span class="price">$18.00</span></div>
+          <p class="desc">Grilled barramundi topped with fragrant, tangy sambal sauce</p>
+        </li>
+        <li data-q="fish curry tangy coconut-based fish curry with tamarind and [text cut off in source]">
+          <div class="row"><span class="name">Fish Curry</span><span class="price">$16.50</span></div>
+          <p class="desc">Tangy coconut-based fish curry with tamarind and [text cut off in source]</p>
+        </li></ul>
+    </section>
+    <section id="vegetables" class="sec">
+      <h2>Vegetables</h2>
+      
+      <ul>
+        <li data-q="chap chye mixed vegetable stew with cabbage, mushrooms, and glass noodles in tau cheo gravy.">
+          <div class="row"><span class="name">Chap Chye</span><span class="price">$8.50</span></div>
+          <p class="desc">Mixed vegetable stew with cabbage, mushrooms, and glass noodles in tau cheo gravy.</p>
+        </li>
+        <li data-q="vegetable curry hearty vegetable curry with coconut milk, tau pok, long beans, and cabbage.">
+          <div class="row"><span class="name">Vegetable Curry</span><span class="price">$9.00</span></div>
+          <p class="desc">Hearty vegetable curry with coconut milk, tau pok, long beans, and cabbage.</p>
+        </li>
+        <li data-q="ladies fingers sambal chilled okra in spicy piquant hae bee sambal, topped with crispy ikan bilis.">
+          <div class="row"><span class="name">Ladies Fingers Sambal</span><span class="price">$9.00</span></div>
+          <p class="desc">Chilled okra in spicy piquant hae bee sambal, topped with crispy ikan bilis.</p>
+        </li></ul>
+    </section>
+    <section id="add-on-sides" class="sec">
+      <h2>Add-on / Sides</h2>
+      
+      <ul>
+        <li data-q="sambal belacan ">
+          <div class="row"><span class="name">Sambal Belacan</span><span class="price">$1.00</span></div>
+          
+        </li>
+        <li data-q="jasmine rice ">
+          <div class="row"><span class="name">Jasmine Rice</span><span class="price">$1.50</span></div>
+          
+        </li>
+        <li data-q="prata ">
+          <div class="row"><span class="name">Prata</span><span class="price">$1.90</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="bakes-desserts" class="sec">
+      <h2>Bakes &amp; Desserts</h2>
+      <p class="note">BAKES ARE SERVED ALL-DAY. DESSERTS ARE SERVED FROM 11.00AM–9.30PM. CHECK THE COUNTER FOR TODAY&#39;S BAKES, MADE FRESH AND IN LIMITED BATCHES.</p>
+      <ul>
+        <li data-q="almond jelly ">
+          <div class="row"><span class="name">Almond Jelly</span><span class="price">$6.90</span></div>
+          
+        </li>
+        <li data-q="sago gula melaka chilled sago pearls in creamy [text cut off in source]">
+          <div class="row"><span class="name">Sago Gula Melaka</span><span class="price">$4.90</span></div>
+          <p class="desc">Chilled sago pearls in creamy [text cut off in source]</p>
+        </li></ul>
+    </section>
+    <section id="classic-beverages" class="sec">
+      <h2>Classic Beverages</h2>
+      <p class="note">Hot / Cold</p>
+      <ul>
+        <li data-q="kopi coffee with condensed milk and sugar.">
+          <div class="row"><span class="name">Kopi</span><span class="price">Hot | $2.70</span></div>
+          <p class="desc">Coffee with condensed milk and sugar.</p>
+        </li>
+        <li data-q="kopi c coffee with evaporated milk and sugar.">
+          <div class="row"><span class="name">Kopi C</span><span class="price">Hot | $2.70</span></div>
+          <p class="desc">Coffee with evaporated milk and sugar.</p>
+        </li>
+        <li data-q="kopi o black coffee with sugar.">
+          <div class="row"><span class="name">Kopi O</span><span class="price">Hot | $2.50</span></div>
+          <p class="desc">Black coffee with sugar.</p>
+        </li>
+        <li data-q="teh black tea with condensed milk and sugar.">
+          <div class="row"><span class="name">Teh</span><span class="price">Hot | $2.70</span></div>
+          <p class="desc">Black tea with condensed milk and sugar.</p>
+        </li>
+        <li data-q="teh c black tea with evaporated milk and sugar.">
+          <div class="row"><span class="name">Teh C</span><span class="price">Hot | $2.70</span></div>
+          <p class="desc">Black tea with evaporated milk and sugar.</p>
+        </li>
+        <li data-q="teh o black tea with sugar.">
+          <div class="row"><span class="name">Teh O</span><span class="price">Hot | $2.50</span></div>
+          <p class="desc">Black tea with sugar.</p>
+        </li>
+        <li data-q="milo chocolate malt drink.">
+          <div class="row"><span class="name">Milo</span><span class="price">Hot | $2.90</span></div>
+          <p class="desc">Chocolate malt drink.</p>
+        </li>
+        <li data-q="iced lemon tea refreshing black tea with a zesty lemon twist.">
+          <div class="row"><span class="name">Iced Lemon Tea</span></div>
+          <p class="desc">Refreshing black tea with a zesty lemon twist.</p>
+        </li></ul>
+    </section>
+    <section id="bibik-s-thirst-quenchers" class="sec">
+      <h2>Bibik&#39;s Thirst Quenchers</h2>
+      
+      <ul>
+        <li data-q="barley ">
+          <div class="row"><span class="name">Barley</span><span class="price">$3.90</span></div>
+          
+        </li>
+        <li data-q="rosella lime ">
+          <div class="row"><span class="name">Rosella Lime</span><span class="price">$3.90</span></div>
+          
+        </li>
+        <li data-q="calamansi sour plum ">
+          <div class="row"><span class="name">Calamansi Sour Plum</span><span class="price">$3.90</span></div>
+          
+        </li>
+        <li data-q="water chestnut sugarcane ">
+          <div class="row"><span class="name">Water Chestnut Sugarcane</span><span class="price">$3.90</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="soft-drinks" class="sec">
+      <h2>Soft Drinks</h2>
+      
+      <ul>
+        <li data-q="coke ">
+          <div class="row"><span class="name">Coke</span><span class="price">$3.80</span></div>
+          
+        </li>
+        <li data-q="coke zero ">
+          <div class="row"><span class="name">Coke Zero</span><span class="price">$4.00</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="water-refillable" class="sec">
+      <h2>Water (Refillable)</h2>
+      
+      <ul>
+        <li data-q="still per pax">
+          <div class="row"><span class="name">Still</span><span class="price">$1.00</span></div>
+          <p class="desc">Per Pax</p>
+        </li>
+        <li data-q="sparkling per pax">
+          <div class="row"><span class="name">Sparkling</span><span class="price">$1.00</span></div>
+          <p class="desc">Per Pax</p>
+        </li></ul>
+    </section>
+    <section id="house-wines-beer" class="sec">
+      <h2>House Wines &amp; Beer</h2>
+      
+      <ul>
+        <li data-q="house red smooth with medium body finish, pairs well with meats, rich sauces or hearty vegetable dishes.">
+          <div class="row"><span class="name">House Red</span></div>
+          <p class="desc">Smooth with medium body finish, pairs well with meats, rich sauces or hearty vegetable dishes.</p><div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$14.00</b></span><span class="pp"><span class="pl">Bottle</span> <b>$68.00</b></span></div>
+        </li>
+        <li data-q="house white light and crips body, complements seafood, tangy chilli and spiced curies or stews.">
+          <div class="row"><span class="name">House White</span></div>
+          <p class="desc">Light and crips body, complements seafood, tangy chilli and spiced curies or stews.</p><div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$14.00</b></span><span class="pp"><span class="pl">Bottle</span> <b>$68.00</b></span></div>
+        </li>
+        <li data-q="tiger beer crisp and refreshing lager, perfect with spicy, savoury dishes. 330ml bottle">
+          <div class="row"><span class="name">Tiger Beer</span><span class="price">$12.00</span></div>
+          <p class="desc">Crisp and refreshing lager, perfect with spicy, savoury dishes. 330ml Bottle</p>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>PRICES ARE SUBJECT TO 10% SERVICE CHARGE AND 9% GST. Check the counter for today&#39;s bakes and kueh, made fresh and in limited batches.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Bibik Violet.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Bibik Violet menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's US$29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for US$29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

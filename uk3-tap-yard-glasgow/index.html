@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>The Tap Yard Menu</title>
+<meta name="description" content="Menu for The Tap Yard, City Centre, Glasgow.">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>The Tap Yard</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=22-24%20West%20Nile%20Street%2C%20Glasgow%2C%20G1%202PW%20(also%2017%20Bell%20Street%2C%20Merchant%20Square%2C%20Glasgow%2C%20G1%201NU)">22-24 West Nile Street, Glasgow, G1 2PW (also 17 Bell Street, Merchant Square, Glasgow, G1 1NU)</a><a href="tel:01416110045">0141 611 0045</a></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#small-plates" data-sec="small-plates">Small Plates</a><a href="#tap-yard-tacos" data-sec="tap-yard-tacos">Tap Yard Tacos</a><a href="#half-time-sharers" data-sec="half-time-sharers">Half-Time Sharers</a><a href="#loaded-fries" data-sec="loaded-fries">Loaded Fries</a><a href="#burgers" data-sec="burgers">Burgers</a><a href="#choose-your-fries-upgrade" data-sec="choose-your-fries-upgrade">Choose your Fries Upgrade</a><a href="#sides" data-sec="sides">Sides</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="small-plates" class="sec">
+      <h2>Small Plates</h2>
+      
+      <ul>
+        <li data-q="homemade chicken wings choose your sauce: bbq, dragon, buffalo, salt &amp; chilli or super hot">
+          <div class="row"><span class="name">Homemade Chicken Wings</span></div>
+          <p class="desc">Choose your sauce: BBQ, dragon, buffalo, salt &amp; chilli or super hot</p><div class="prices"><span class="pp"><span class="pl">6 Wings</span> <b>£9</b></span><span class="pp"><span class="pl">9 Wings</span> <b>£13</b></span><span class="pp"><span class="pl">12 Wings</span> <b>£15</b></span></div>
+        </li>
+        <li data-q="tap yard nachos (v) (gfo) with guacamole, pepper salsa, pickled jalapenos, sour cream &amp; cheese sauce (vegan option available). add brisket 4, chicken 4, spicy beef chilli 4 or spicy bean chilli 3">
+          <div class="row"><span class="name">Tap Yard Nachos (V) (gfo)</span><span class="price">£8</span></div>
+          <p class="desc">with guacamole, pepper salsa, pickled jalapenos, sour cream &amp; cheese sauce (vegan option available). Add Brisket 4, Chicken 4, Spicy Beef Chilli 4 or Spicy Bean Chilli 3</p>
+        </li>
+        <li data-q="dripping buffalo tenders homemade buffalo sauce &amp; crispy salad">
+          <div class="row"><span class="name">Dripping Buffalo Tenders</span><span class="price">£12</span></div>
+          <p class="desc">Homemade Buffalo sauce &amp; crispy salad</p>
+        </li>
+        <li data-q="crispy panko king prawns with sweet chilli dip &amp; lemon">
+          <div class="row"><span class="name">Crispy Panko King Prawns</span><span class="price">£12</span></div>
+          <p class="desc">with sweet chilli dip &amp; lemon</p>
+        </li>
+        <li data-q="korean fried cauliflower (ve) with sweet &amp; spicy secret sauce">
+          <div class="row"><span class="name">Korean Fried Cauliflower (Ve)</span><span class="price">£8</span></div>
+          <p class="desc">with sweet &amp; spicy secret sauce</p>
+        </li>
+        <li data-q="haddock mini fillets tap yard batter, tartar sauce &amp; lemon">
+          <div class="row"><span class="name">Haddock Mini Fillets</span><span class="price">£9</span></div>
+          <p class="desc">Tap Yard batter, tartar sauce &amp; lemon</p>
+        </li>
+        <li data-q="mozzarella bites (v) with spicy tomato sugo">
+          <div class="row"><span class="name">Mozzarella Bites (V)</span><span class="price">£8</span></div>
+          <p class="desc">with spicy tomato sugo</p>
+        </li>
+        <li data-q="panko haggis baws with salad &amp; peppercorn sauce">
+          <div class="row"><span class="name">Panko Haggis Baws</span><span class="price">£8</span></div>
+          <p class="desc">with salad &amp; peppercorn sauce</p>
+        </li>
+        <li data-q="grilled chicken skewers smoked paprika cajun seasoning, salad served with sriracha mayo">
+          <div class="row"><span class="name">Grilled Chicken Skewers</span><span class="price">£11</span></div>
+          <p class="desc">smoked paprika cajun seasoning, salad served with sriracha mayo</p>
+        </li>
+        <li data-q="tap yard smash sliders 2 slider style smash burgers, cheese, lettuce, red onion &amp; tomato relish">
+          <div class="row"><span class="name">Tap Yard Smash Sliders</span><span class="price">£12</span></div>
+          <p class="desc">2 slider style smash burgers, cheese, lettuce, red onion &amp; tomato relish</p>
+        </li>
+        <li data-q="southern fried popcorn chicken with black garlic alioli dip">
+          <div class="row"><span class="name">Southern Fried Popcorn Chicken</span><span class="price">£9</span></div>
+          <p class="desc">with black garlic alioli dip</p>
+        </li>
+        <li data-q="philly cheesesteak spring rolls with maple sriracha mayo">
+          <div class="row"><span class="name">Philly Cheesesteak Spring Rolls</span><span class="price">£11</span></div>
+          <p class="desc">with maple sriracha mayo</p>
+        </li></ul>
+    </section>
+    <section id="tap-yard-tacos" class="sec">
+      <h2>Tap Yard Tacos</h2>
+      <p class="note">2 soft corn tacos with guacamole, pickled red cabbage, salsa &amp; sour cream (gfo)</p>
+      <ul>
+        <li data-q="chicken ">
+          <div class="row"><span class="name">Chicken</span><span class="price">£8.50</span></div>
+          
+        </li>
+        <li data-q="brisket ">
+          <div class="row"><span class="name">Brisket</span><span class="price">£9</span></div>
+          
+        </li>
+        <li data-q="fish ">
+          <div class="row"><span class="name">Fish</span><span class="price">£8.50</span></div>
+          
+        </li>
+        <li data-q="spicy bean chilli ">
+          <div class="row"><span class="name">Spicy Bean Chilli</span><span class="price">£8</span></div>
+          
+        </li>
+        <li data-q="extra taco ">
+          <div class="row"><span class="name">Extra Taco</span><span class="price">£4</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="half-time-sharers" class="sec">
+      <h2>Half-Time Sharers</h2>
+      <p class="note">Chefs tap picks - Serves 2 to 3 people. All sharers served with portion of naked fries</p>
+      <ul>
+        <li data-q="the flying scotsman haddock mini fillets supper, haggis baws, 2 highlander sliders, whisky peppercorn &amp; brown sauce">
+          <div class="row"><span class="name">The Flying Scotsman</span><span class="price">£35</span></div>
+          <p class="desc">Haddock mini fillets supper, haggis baws, 2 Highlander sliders, whisky peppercorn &amp; brown sauce</p>
+        </li>
+        <li data-q="glazed texan bbq 6 bbq chicken wings, 6 crispy coated tenders &amp; popcorn chicken all covered in our house texan bbq sauce">
+          <div class="row"><span class="name">Glazed Texan BBQ</span><span class="price">£30</span></div>
+          <p class="desc">6 BBQ chicken wings, 6 crispy coated tenders &amp; popcorn chicken all covered in our house texan bbq sauce</p>
+        </li>
+        <li data-q="the meaty mitre 6 homemade chicken wings, philly cheesesteak spring rolls &amp; 2 beef sliders">
+          <div class="row"><span class="name">The Meaty Mitre</span><span class="price">£30</span></div>
+          <p class="desc">6 homemade chicken wings, philly cheesesteak spring rolls &amp; 2 Beef Sliders</p>
+        </li>
+        <li data-q="the mexican choose your 6 tacos - served with cheesy spicy nachos">
+          <div class="row"><span class="name">The Mexican</span><span class="price">£32</span></div>
+          <p class="desc">Choose your 6 tacos - served with Cheesy Spicy Nachos</p>
+        </li>
+        <li data-q="first team wings feast 22 wings in two flavours of your choice served with naked fries">
+          <div class="row"><span class="name">First Team Wings Feast</span><span class="price">£26</span></div>
+          <p class="desc">22 Wings in two flavours of your choice served with naked fries</p>
+        </li>
+        <li data-q="cheesy feast nachos, chorizo mac &#39;n&#39; cheese &amp; mozzarella sticks">
+          <div class="row"><span class="name">Cheesy Feast</span><span class="price">£24</span></div>
+          <p class="desc">Nachos, chorizo mac &#39;n&#39; cheese &amp; mozzarella sticks</p>
+        </li></ul>
+    </section>
+    <section id="loaded-fries" class="sec">
+      <h2>Loaded Fries</h2>
+      
+      <ul>
+        <li data-q="slow cooked brisket fries slow cooked beef, peppercorn sauce, cheese, spring &amp; crispy onions">
+          <div class="row"><span class="name">Slow Cooked Brisket Fries</span><span class="price">£12</span></div>
+          <p class="desc">Slow cooked beef, peppercorn sauce, cheese, spring &amp; crispy onions</p>
+        </li>
+        <li data-q="philly cheesesteak fries pulled brisket, melted cheese, cheese sauce with drizzled mustard, ketchup &amp; sour cream">
+          <div class="row"><span class="name">Philly Cheesesteak Fries</span><span class="price">£12</span></div>
+          <p class="desc">Pulled brisket, melted cheese, cheese sauce with drizzled mustard, ketchup &amp; sour cream</p>
+        </li>
+        <li data-q="salt &amp; chilli chicken curry fries salt &amp; chilli chicken, chinese curry sauce &amp; melted cheese">
+          <div class="row"><span class="name">Salt &amp; Chilli Chicken Curry Fries</span><span class="price">£12</span></div>
+          <p class="desc">Salt &amp; Chilli chicken, Chinese curry sauce &amp; melted cheese</p>
+        </li>
+        <li data-q="buffalo chicken fries chicken tenders coated in buffalo sauce topped with spring onions &amp; fresh chillies">
+          <div class="row"><span class="name">Buffalo Chicken Fries</span><span class="price">£11</span></div>
+          <p class="desc">Chicken tenders coated in buffalo sauce topped with spring onions &amp; fresh chillies</p>
+        </li>
+        <li data-q="hat-trick cheese &amp; bacon fries melted mature cheddar, mozzarella and parmesan with crispy streaky bacon">
+          <div class="row"><span class="name">Hat-Trick Cheese &amp; Bacon Fries</span><span class="price">£10</span></div>
+          <p class="desc">Melted mature cheddar, mozzarella and parmesan with crispy streaky bacon</p>
+        </li>
+        <li data-q="southern fried chicken fries crispy chicken, fresh chillies, spring onions &amp; black garlic alioli">
+          <div class="row"><span class="name">Southern Fried Chicken Fries</span><span class="price">£11</span></div>
+          <p class="desc">Crispy chicken, fresh chillies, spring onions &amp; black garlic alioli</p>
+        </li>
+        <li data-q="beef chilli cheese fries ground beef, tomato, red pepper, mixed beans, mexican seasoning &amp; melted cheese">
+          <div class="row"><span class="name">Beef Chilli Cheese Fries</span><span class="price">£12</span></div>
+          <p class="desc">Ground beef, tomato, red pepper, mixed beans, Mexican seasoning &amp; melted cheese</p>
+        </li>
+        <li data-q="mac &#39;n&#39; cheese fries (v) topped with panko &amp; herb breadcrumb">
+          <div class="row"><span class="name">Mac &#39;n&#39; Cheese Fries (V)</span><span class="price">£9</span></div>
+          <p class="desc">topped with panko &amp; herb breadcrumb</p>
+        </li></ul>
+    </section>
+    <section id="burgers" class="sec">
+      <h2>Burgers</h2>
+      <p class="note">All served with Lightly Salted Fries</p>
+      <ul>
+        <li data-q="tap yard breakfast burger available 12-1.30pm everyday. single beef patty, bacon, egg, hash browns, cheese &amp; choice of sauce">
+          <div class="row"><span class="name">Tap Yard Breakfast Burger</span><span class="price">£9</span></div>
+          <p class="desc">Available 12-1.30pm everyday. Single beef patty, bacon, egg, hash browns, cheese &amp; choice of sauce</p>
+        </li>
+        <li data-q="highland burger double beef burger, haggis, grilled cheese, lettuce, sautéed onions &amp; whisky peppercorn sauce">
+          <div class="row"><span class="name">Highland Burger</span><span class="price">£18.50</span></div>
+          <p class="desc">Double beef burger, haggis, grilled cheese, lettuce, sautéed onions &amp; whisky peppercorn sauce</p>
+        </li>
+        <li data-q="buffalo chicken burger crispy chicken dipped in buffalo sauce, cheese, lettuce &amp; red onion">
+          <div class="row"><span class="name">Buffalo Chicken Burger</span><span class="price">£17.50</span></div>
+          <p class="desc">Crispy chicken dipped in buffalo sauce, cheese, lettuce &amp; red onion</p>
+        </li>
+        <li data-q="tap yard smash burger double cheese beef burger, lettuce, gherkins, red onion &amp; tomato relish">
+          <div class="row"><span class="name">Tap Yard Smash Burger</span><span class="price">£16.50</span></div>
+          <p class="desc">Double cheese beef burger, lettuce, gherkins, red onion &amp; tomato relish</p>
+        </li>
+        <li data-q="honey bbq chicken burger crispy chicken coated in homemade honey bbq sauce with pink slaw and gherkins">
+          <div class="row"><span class="name">Honey BBQ Chicken Burger</span><span class="price">£17.50</span></div>
+          <p class="desc">Crispy chicken coated in homemade honey bbq sauce with pink slaw and gherkins</p>
+        </li>
+        <li data-q="classic chicken burger southern fried chicken, lettuce, tomato, cool mayo">
+          <div class="row"><span class="name">Classic Chicken Burger</span><span class="price">£16.50</span></div>
+          <p class="desc">Southern Fried Chicken, lettuce, tomato, cool mayo</p>
+        </li>
+        <li data-q="grilled club &amp; avo burger grilled chicken, bacon, lettuce and smashed avocado with sriracha mayo">
+          <div class="row"><span class="name">Grilled Club &amp; Avo Burger</span><span class="price">£17.50</span></div>
+          <p class="desc">Grilled Chicken, Bacon, lettuce and smashed Avocado with sriracha mayo</p>
+        </li>
+        <li data-q="the triple stack chicken, beef, bacon, cheese, shredded lettuce, onion &amp; maple sriracha mayo">
+          <div class="row"><span class="name">The Triple Stack</span><span class="price">£17.50</span></div>
+          <p class="desc">Chicken, beef, bacon, cheese, shredded lettuce, onion &amp; maple sriracha mayo</p>
+        </li>
+        <li data-q="chorizo &amp; mozzarella burger double beef burger, mozarella, chorizo, lettuce, gherkins, red onion &amp; tomato relish">
+          <div class="row"><span class="name">Chorizo &amp; Mozzarella Burger</span><span class="price">£17.50</span></div>
+          <p class="desc">Double beef burger, mozarella, chorizo, lettuce, gherkins, red onion &amp; tomato relish</p>
+        </li>
+        <li data-q="salt &amp; chilli chicken burger crispy salt &amp; chilli chicken, chinese curry sauce, lettuce, spring onion and chilli with curry dip">
+          <div class="row"><span class="name">Salt &amp; Chilli Chicken Burger</span><span class="price">£17.50</span></div>
+          <p class="desc">Crispy salt &amp; chilli chicken, Chinese curry sauce, lettuce, spring onion and chilli with curry dip</p>
+        </li>
+        <li data-q="bbq bacon burger double cheese burger, bbq sauce, smoked bacon, lettuce, gherkins, red onion &amp; tomato relish">
+          <div class="row"><span class="name">BBQ Bacon Burger</span><span class="price">£18.50</span></div>
+          <p class="desc">Double cheese burger, BBQ sauce, smoked bacon, lettuce, gherkins, red onion &amp; tomato relish</p>
+        </li>
+        <li data-q="sticky korean fried chicken burger sweet and sticky secret sauce, asian slaw &amp; kimchi">
+          <div class="row"><span class="name">Sticky Korean Fried Chicken Burger</span><span class="price">£17.50</span></div>
+          <p class="desc">Sweet and sticky secret sauce, asian slaw &amp; kimchi</p>
+        </li>
+        <li data-q="plant based burger (ve) vegan brioche bun, vegan cheese, lettuce, red onion &amp; relish (ve)">
+          <div class="row"><span class="name">Plant Based Burger (Ve)</span><span class="price">£16.50</span></div>
+          <p class="desc">Vegan brioche bun, vegan cheese, lettuce, red onion &amp; relish (Ve)</p>
+        </li></ul>
+    </section>
+    <section id="choose-your-fries-upgrade" class="sec">
+      <h2>Choose your Fries Upgrade</h2>
+      
+      <ul>
+        <li data-q="any loaded fries ">
+          <div class="row"><span class="name">Any Loaded Fries</span><span class="price">£6</span></div>
+          
+        </li>
+        <li data-q="salt &amp; chilli fries ">
+          <div class="row"><span class="name">Salt &amp; Chilli Fries</span><span class="price">£1</span></div>
+          
+        </li>
+        <li data-q="add cheese ">
+          <div class="row"><span class="name">Add Cheese</span><span class="price">£1</span></div>
+          
+        </li>
+        <li data-q="add bacon ">
+          <div class="row"><span class="name">Add Bacon</span><span class="price">£2</span></div>
+          
+        </li>
+        <li data-q="add 3 chicken wings ">
+          <div class="row"><span class="name">Add 3 Chicken Wings</span><span class="price">£4.50</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="sides" class="sec">
+      <h2>Sides</h2>
+      
+      <ul>
+        <li data-q="jalapeno poppers (v) served with tomato sugo">
+          <div class="row"><span class="name">Jalapeno Poppers (V)</span><span class="price">£6.50</span></div>
+          <p class="desc">served with tomato sugo</p>
+        </li>
+        <li data-q="crispy garlic mushrooms (v) with salad &amp; confit garlic sauce">
+          <div class="row"><span class="name">Crispy Garlic Mushrooms (V)</span><span class="price">£4.50</span></div>
+          <p class="desc">with salad &amp; confit garlic sauce</p>
+        </li>
+        <li data-q="truffle mac &#39;n&#39; cheese (v) with panko &amp; herb breadcrumb. add chorizo 2, add bacon 2">
+          <div class="row"><span class="name">Truffle Mac &#39;n&#39; Cheese (V)</span><span class="price">£4.50</span></div>
+          <p class="desc">with panko &amp; herb breadcrumb. Add Chorizo 2, Add Bacon 2</p>
+        </li>
+        <li data-q="naked fries (ve) (gf) add melted cheese sauce &amp; grilled cheddar 2">
+          <div class="row"><span class="name">Naked Fries (Ve) (gf)</span><span class="price">£4.50</span></div>
+          <p class="desc">Add melted cheese sauce &amp; grilled cheddar 2</p>
+        </li>
+        <li data-q="salt &amp; chilli fries (v) (gf) mixed chilli spices topped with spring onions &amp; fresh chillies">
+          <div class="row"><span class="name">Salt &amp; Chilli Fries (V) (gf)</span><span class="price">£5</span></div>
+          <p class="desc">Mixed chilli spices topped with spring onions &amp; fresh chillies</p>
+        </li>
+        <li data-q="mixed leaf salad (ve) (gf) ">
+          <div class="row"><span class="name">Mixed Leaf Salad (Ve) (gf)</span><span class="price">£4</span></div>
+          
+        </li>
+        <li data-q="beer batter onion rings ">
+          <div class="row"><span class="name">Beer Batter Onion Rings</span><span class="price">£4.50</span></div>
+          
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>Please ask our server for any further food allergen information. (V) = Vegetarian (Ve) = Vegan (gf) = Gluten-Free (gfo) = Gluten-Free Option</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for The Tap Yard.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The The Tap Yard menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's US$29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for US$29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

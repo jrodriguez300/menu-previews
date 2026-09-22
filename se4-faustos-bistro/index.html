@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Fausto&#39;s Bistro Menu</title>
+<meta name="description" content="Menu for Fausto&#39;s Bistro, Metairie (Veterans Memorial Blvd), New Orleans area.">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Fausto&#39;s Bistro</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=530%20Veterans%20Memorial%20Blvd.%2C%20Metairie%2C%20LA%2070005">530 Veterans Memorial Blvd., Metairie, LA 70005</a><a href="tel:5048337121">(504) 833-7121</a><span>Monday-Thursday 11:00 AM - 9:00 PM; Friday 11:00 AM - 10:00 PM; Saturday 5:00 PM - 10:00 PM. Happy Hour weekdays 3:00 PM - 6:00 PM</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#antipasti-appetizers" data-sec="antipasti-appetizers">Antipasti (Appetizers)</a><a href="#insalata-salad" data-sec="insalata-salad">Insalata (Salad)</a><a href="#zuppa-soup" data-sec="zuppa-soup">Zuppa (Soup)</a><a href="#pastas-baked-dishes" data-sec="pastas-baked-dishes">Pastas &amp; Baked Dishes</a><a href="#vitello-veal" data-sec="vitello-veal">Vitello (Veal)</a><a href="#pollo-chicken" data-sec="pollo-chicken">Pollo (Chicken)</a><a href="#frutti-di-mare-seafood" data-sec="frutti-di-mare-seafood">Frutti Di Mare (Seafood)</a><a href="#sides-add-ons" data-sec="sides-add-ons">Sides &amp; Add Ons</a><a href="#bambini-kids-12-under" data-sec="bambini-kids-12-under">Bambini (Kids 12 &amp; under)</a><a href="#lunch-daily-specials" data-sec="lunch-daily-specials">Lunch Daily Specials</a><a href="#lunch-entrees" data-sec="lunch-entrees">Lunch Entrees</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="antipasti-appetizers" class="sec">
+      <h2>Antipasti (Appetizers)</h2>
+      
+      <ul>
+        <li data-q="eggplant stix fried &amp; served with marinara sauce">
+          <div class="row"><span class="name">Eggplant Stix</span><span class="price">$12.95</span></div>
+          <p class="desc">Fried &amp; served with marinara sauce</p>
+        </li>
+        <li data-q="calamari fritti lightly battered &amp; golden fried. served with a lemon garlic butter sauce &amp; marinara sauce">
+          <div class="row"><span class="name">Calamari Fritti</span><span class="price">$14.95</span></div>
+          <p class="desc">Lightly battered &amp; golden fried. Served with a lemon garlic butter sauce &amp; marinara sauce</p>
+        </li>
+        <li data-q="crab claws sautéed in a lemon butter sauce w/ mushrooms, onions &amp; green peppers">
+          <div class="row"><span class="name">Crab Claws</span><span class="price">$15.95</span></div>
+          <p class="desc">Sautéed in a lemon butter sauce w/ mushrooms, onions &amp; green peppers</p>
+        </li>
+        <li data-q="crabmeat seafood balls (3) served with a creamy lemon butter sauce">
+          <div class="row"><span class="name">Crabmeat Seafood Balls (3)</span><span class="price">$12.95</span></div>
+          <p class="desc">Served with a creamy lemon butter sauce</p>
+        </li>
+        <li data-q="arancini rice stuffed w/ ground beef &amp; pork, green peas, mozzarella &amp; our italian seasoning. served w/ marinara sauce &amp; grated cheese">
+          <div class="row"><span class="name">Arancini</span><span class="price">$15.95</span></div>
+          <p class="desc">Rice stuffed w/ ground beef &amp; pork, green peas, mozzarella &amp; our Italian seasoning. Served w/ marinara sauce &amp; grated cheese</p>
+        </li>
+        <li data-q="stuffed mushrooms (3) mushroom caps w/ crabmeat stuffing. baked with our special buttery sauce.">
+          <div class="row"><span class="name">Stuffed Mushrooms (3)</span><span class="price">$13.95</span></div>
+          <p class="desc">Mushroom caps w/ crabmeat stuffing. Baked with our special buttery sauce.</p>
+        </li>
+        <li data-q="meatballs (3) meatballs topped with marinara sauce &amp; mozzarella cheese.">
+          <div class="row"><span class="name">Meatballs (3)</span><span class="price">$13.95</span></div>
+          <p class="desc">Meatballs topped with marinara sauce &amp; mozzarella cheese.</p>
+        </li></ul>
+    </section>
+    <section id="insalata-salad" class="sec">
+      <h2>Insalata (Salad)</h2>
+      
+      <ul>
+        <li data-q="sicilian salad mixed greens topped with tomatoes, olive salad mix and a sliced salami &amp; mozzarella roll. served w/ house vinaigrette">
+          <div class="row"><span class="name">Sicilian Salad</span><span class="price">$16.95</span></div>
+          <p class="desc">Mixed greens topped with tomatoes, olive salad mix and a sliced salami &amp; mozzarella roll. Served w/ house vinaigrette</p>
+        </li>
+        <li data-q="mozzarella caprese fresh mozzarella cheese slices, tomatoes, prosciutto &amp; fresh basil. topped balsamic vinegar &amp; extra virgin olive oil">
+          <div class="row"><span class="name">Mozzarella Caprese</span><span class="price">$16.95</span></div>
+          <p class="desc">Fresh mozzarella cheese slices, tomatoes, Prosciutto &amp; fresh basil. Topped balsamic vinegar &amp; extra virgin olive oil</p>
+        </li>
+        <li data-q="classic caesar add grilled or panéed chicken breast $9.00. add fried or grilled shrimp $10.00">
+          <div class="row"><span class="name">Classic Caesar</span></div>
+          <p class="desc">Add grilled or panéed chicken breast $9.00. Add fried or grilled shrimp $10.00</p><div class="prices"><span class="pp"><span class="pl">Small</span> <b>$9.50</b></span><span class="pp"><span class="pl">Large</span> <b>$11.50</b></span></div>
+        </li>
+        <li data-q="house salad mixed greens, tomatoes &amp; olives served w/ house vinaigrette, blue cheese or ranch">
+          <div class="row"><span class="name">House Salad</span><span class="price">$8.95</span></div>
+          <p class="desc">Mixed greens, tomatoes &amp; olives served w/ house vinaigrette, blue cheese or ranch</p>
+        </li></ul>
+    </section>
+    <section id="zuppa-soup" class="sec">
+      <h2>Zuppa (Soup)</h2>
+      
+      <ul>
+        <li data-q="zuppa del giorno ">
+          <div class="row"><span class="name">Zuppa Del Giorno</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Cup</span> <b>$8</b></span><span class="pp"><span class="pl">Bowl</span> <b>$10</b></span></div>
+        </li></ul>
+    </section>
+    <section id="pastas-baked-dishes" class="sec">
+      <h2>Pastas &amp; Baked Dishes</h2>
+      <p class="note">Gluten-free spaghetti $5</p>
+      <ul>
+        <li data-q="manicotti pasta tubes stuffed w/ seasoned ricotta cheese. baked &amp; topped w/ mozzarella &amp; marinara sauce">
+          <div class="row"><span class="name">Manicotti</span><span class="price">$21.95</span></div>
+          <p class="desc">Pasta tubes stuffed w/ seasoned ricotta cheese. Baked &amp; topped w/ mozzarella &amp; marinara sauce</p>
+        </li>
+        <li data-q="chicken fettuccine alfredo fettuccine pasta tossed in our special blend of creamy alfredo sauce. topped w/ grilled or panéed chicken breast">
+          <div class="row"><span class="name">Chicken Fettuccine Alfredo</span><span class="price">$23.95</span></div>
+          <p class="desc">Fettuccine pasta tossed in our special blend of creamy Alfredo sauce. Topped w/ grilled or panéed chicken breast</p>
+        </li>
+        <li data-q="lasagna a classic italian favorite">
+          <div class="row"><span class="name">Lasagna</span><span class="price">$23.95</span></div>
+          <p class="desc">A classic Italian favorite</p>
+        </li>
+        <li data-q="eggplant parmigiana lightly battered eggplant, baked in layers of mozzarella &amp; marinara sauce. served w/ angel hair pasta">
+          <div class="row"><span class="name">Eggplant Parmigiana</span><span class="price">$21.95</span></div>
+          <p class="desc">Lightly battered eggplant, baked in layers of mozzarella &amp; marinara sauce. Served w/ angel hair pasta</p>
+        </li>
+        <li data-q="spaghetti &amp; meatballs a tasteful treat of perfectly seasoned ground chuck like mama used to make. served w/ angel hair pasta">
+          <div class="row"><span class="name">Spaghetti &amp; Meatballs</span><span class="price">$21.95</span></div>
+          <p class="desc">A tasteful treat of perfectly seasoned ground chuck like mama used to make. Served w/ angel hair pasta</p>
+        </li>
+        <li data-q="spaghetti &amp; italian sausage ">
+          <div class="row"><span class="name">Spaghetti &amp; Italian Sausage</span><span class="price">$22.95</span></div>
+          
+        </li>
+        <li data-q="italian sausage &amp; peppers sautéed w/ bell peppers, mushrooms, garlic, italian herbs and marinara sauce. served over angel hair pasta">
+          <div class="row"><span class="name">Italian Sausage &amp; Peppers</span><span class="price">$22.95</span></div>
+          <p class="desc">Sautéed w/ bell peppers, mushrooms, garlic, Italian herbs and marinara sauce. Served over angel hair pasta</p>
+        </li>
+        <li data-q="linguine primavera linguine pasta tossed w/ fresh vegetables, garlic, italian herbs and olive oil. add grilled or panéed chicken breast $9.00">
+          <div class="row"><span class="name">Linguine Primavera</span><span class="price">$18.95</span></div>
+          <p class="desc">Linguine pasta tossed w/ fresh vegetables, garlic, Italian herbs and olive oil. Add grilled or panéed chicken breast $9.00</p>
+        </li></ul>
+    </section>
+    <section id="vitello-veal" class="sec">
+      <h2>Vitello (Veal)</h2>
+      <p class="note">Gluten-free spaghetti $5</p>
+      <ul>
+        <li data-q="veal parmigiana a traditional favorite. served w/ angel hair pasta">
+          <div class="row"><span class="name">Veal Parmigiana</span><span class="price">$25.95</span></div>
+          <p class="desc">A traditional favorite. Served w/ angel hair pasta</p>
+        </li>
+        <li data-q="veal piccata tender veal medallions, lightly sautéed w/ extra virgin olive oil in a lemon butter sauce w/ capers. served w/ angel hair pasta marinara">
+          <div class="row"><span class="name">Veal Piccata</span><span class="price">$26.95</span></div>
+          <p class="desc">Tender veal medallions, lightly sautéed w/ extra virgin olive oil in a lemon butter sauce w/ capers. Served w/ angel hair pasta marinara</p>
+        </li>
+        <li data-q="veal panéed alfredo served w/ fettuccine pasta">
+          <div class="row"><span class="name">Veal Panéed Alfredo</span><span class="price">$26.95</span></div>
+          <p class="desc">Served w/ fettuccine pasta</p>
+        </li>
+        <li data-q="veal saltimbocca tender veal medallions, sautéed w/ fresh mushrooms, italian herbs &amp; crowned w/ prosciutto &amp; mozzarella. flamed in marsala wine. served w/ angel hair marinara">
+          <div class="row"><span class="name">Veal Saltimbocca</span><span class="price">$28.95</span></div>
+          <p class="desc">Tender veal medallions, sautéed w/ fresh mushrooms, Italian herbs &amp; crowned w/ prosciutto &amp; mozzarella. Flamed in Marsala wine. Served w/ angel hair marinara</p>
+        </li>
+        <li data-q="veal marsala tender veal medallions, sautéed w/ fresh mushrooms, green onions &amp; italian herbs. flamed in marsala wine. served w/ angel hair marinara">
+          <div class="row"><span class="name">Veal Marsala</span><span class="price">$26.95</span></div>
+          <p class="desc">Tender veal medallions, sautéed w/ fresh mushrooms, green onions &amp; Italian herbs. Flamed in Marsala wine. Served w/ angel hair marinara</p>
+        </li>
+        <li data-q="veal scallopini tender veal medallions, sautéed w/ extra virgin olive oil, mushrooms &amp; artichoke hearts then simmered in our own delicate sauce. served w/ penne bordelaise">
+          <div class="row"><span class="name">Veal Scallopini</span><span class="price">$26.95</span></div>
+          <p class="desc">Tender veal medallions, sautéed w/ extra virgin olive oil, mushrooms &amp; artichoke hearts then simmered in our own delicate sauce. Served w/ penne bordelaise</p>
+        </li>
+        <li data-q="veal vittorio pan seared veal w/ sautéed garlic in extra virgin olive oil &amp; topped w/ lump crabmeat. served w/ penne bordelaise">
+          <div class="row"><span class="name">Veal Vittorio</span><span class="price">$29.95</span></div>
+          <p class="desc">Pan seared veal w/ sautéed garlic in extra virgin olive oil &amp; topped w/ lump crabmeat. Served w/ penne bordelaise</p>
+        </li></ul>
+    </section>
+    <section id="pollo-chicken" class="sec">
+      <h2>Pollo (Chicken)</h2>
+      <p class="note">Gluten-free spaghetti $5</p>
+      <ul>
+        <li data-q="chicken parmigiana served w/ angel hair pasta">
+          <div class="row"><span class="name">Chicken Parmigiana</span><span class="price">$22.95</span></div>
+          <p class="desc">Served w/ angel hair pasta</p>
+        </li>
+        <li data-q="chicken limone tender boneless chicken breast, lightly dusted w/ flour and sautéed w/ extra virgin olive oil in a lemon butter sauce. served w/ angel hair pasta">
+          <div class="row"><span class="name">Chicken Limone</span><span class="price">$22.95</span></div>
+          <p class="desc">Tender boneless chicken breast, lightly dusted w/ flour and sautéed w/ extra virgin olive oil in a lemon butter sauce. Served w/ angel hair pasta</p>
+        </li>
+        <li data-q="chicken sorrentino panéed chicken breast topped w/ a layer of eggplant and mozzarella. flamed w/ marsala wine &amp; mushrooms. served w/ angel hair marinara">
+          <div class="row"><span class="name">Chicken Sorrentino</span><span class="price">$25.95</span></div>
+          <p class="desc">Panéed chicken breast topped w/ a layer of eggplant and mozzarella. Flamed w/ Marsala wine &amp; mushrooms. Served w/ angel hair marinara</p>
+        </li>
+        <li data-q="chicken louisiana grilled chicken breast topped w/ mushrooms, zucchini, tomatoes, gulf shrimp, crawfish tails and melted mozzarella, in a white garlic cream sauce. served with angel hair marinara">
+          <div class="row"><span class="name">Chicken Louisiana</span><span class="price">$27.95</span></div>
+          <p class="desc">Grilled chicken breast topped w/ mushrooms, zucchini, tomatoes, Gulf shrimp, crawfish tails and melted mozzarella, in a white garlic cream sauce. Served with angel hair marinara</p>
+        </li>
+        <li data-q="chicken marsala chicken breast sautéed w/ fresh mushrooms, green onions &amp; italian herbs. flamed in marsala wine. served w/ angel hair marinara">
+          <div class="row"><span class="name">Chicken Marsala</span><span class="price">$24.95</span></div>
+          <p class="desc">Chicken breast sautéed w/ fresh mushrooms, green onions &amp; Italian herbs. Flamed in Marsala wine. Served w/ angel hair marinara</p>
+        </li>
+        <li data-q="caper chicken breast panéed chicken breast drizzled w/ a lemon butter caper sauce. served w/ penne bordelaise">
+          <div class="row"><span class="name">Caper Chicken Breast</span><span class="price">$23.95</span></div>
+          <p class="desc">Panéed chicken breast drizzled w/ a lemon butter caper sauce. Served w/ penne bordelaise</p>
+        </li></ul>
+    </section>
+    <section id="frutti-di-mare-seafood" class="sec">
+      <h2>Frutti Di Mare (Seafood)</h2>
+      <p class="note">Gluten-free spaghetti $5</p>
+      <ul>
+        <li data-q="fettuccine carciofo gulf shrimp &amp; artichoke hearts sautéed w/ kalamata olives, fresh italian herbs, garlic and onions. tossed w/ fettuccine pasta">
+          <div class="row"><span class="name">Fettuccine Carciofo</span><span class="price">$25.95</span></div>
+          <p class="desc">Gulf shrimp &amp; artichoke hearts sautéed w/ kalamata olives, fresh Italian herbs, garlic and onions. Tossed w/ fettuccine pasta</p>
+        </li>
+        <li data-q="shrimp calabrese gulf shrimp &amp; fresh broccoli, sautéed w/ fresh italian herbs &amp; a garlic sauce. tossed w/ rigatoni pasta">
+          <div class="row"><span class="name">Shrimp Calabrese</span><span class="price">$25.95</span></div>
+          <p class="desc">Gulf shrimp &amp; fresh broccoli, sautéed w/ fresh Italian herbs &amp; a garlic sauce. Tossed w/ rigatoni pasta</p>
+        </li>
+        <li data-q="shrimp marinara gulf shrimp sautéed w/ green peppers, onions, mushrooms, fresh italian herbs and marinara sauce. served over angel hair pasta">
+          <div class="row"><span class="name">Shrimp Marinara</span><span class="price">$24.95</span></div>
+          <p class="desc">Gulf shrimp sautéed w/ green peppers, onions, mushrooms, fresh Italian herbs and marinara sauce. Served over angel hair pasta</p>
+        </li>
+        <li data-q="shrimp scampi gulf shrimp sautéed w/ green bell peppers, onions mushrooms &amp; a lemon butter sauce. served over angel hair pasta">
+          <div class="row"><span class="name">Shrimp Scampi</span><span class="price">$24.95</span></div>
+          <p class="desc">Gulf shrimp sautéed w/ green bell peppers, onions mushrooms &amp; a lemon butter sauce. Served over angel hair pasta</p>
+        </li>
+        <li data-q="pesce siciliana pan seared fish sautéed in a light lemon butter sauce. crowned with gulf shrimp and capers. served w/ penne bordelaise">
+          <div class="row"><span class="name">Pesce Siciliana</span><span class="price">$28.95</span></div>
+          <p class="desc">Pan seared fish sautéed in a light lemon butter sauce. Crowned with Gulf shrimp and capers. Served w/ penne bordelaise</p>
+        </li>
+        <li data-q="pesce limone pan seared fish lightly sautéed in a light lemon butter sauce. served w/ penne bordelaise">
+          <div class="row"><span class="name">Pesce Limone</span><span class="price">$25.95</span></div>
+          <p class="desc">Pan seared fish lightly sautéed in a light lemon butter sauce. Served w/ penne bordelaise</p>
+        </li>
+        <li data-q="fish vittorio pan seared fish sautéed in garlic w/ extra virgin olive oil &amp; topped w/ lump crab meat. served w/ penne bordelaise.">
+          <div class="row"><span class="name">Fish Vittorio</span><span class="price">$29.95</span></div>
+          <p class="desc">Pan seared fish sautéed in garlic w/ extra virgin olive oil &amp; topped w/ lump crab meat. Served w/ penne bordelaise.</p>
+        </li>
+        <li data-q="pesce almondine pan seared fish in a light meuniere sauce. topped w/ roasted sliced almonds. served w/ penne bordelaise">
+          <div class="row"><span class="name">Pesce Almondine</span><span class="price">$26.95</span></div>
+          <p class="desc">Pan seared fish in a light meuniere sauce. Topped w/ roasted sliced almonds. Served w/ penne bordelaise</p>
+        </li></ul>
+    </section>
+    <section id="sides-add-ons" class="sec">
+      <h2>Sides &amp; Add Ons</h2>
+      
+      <ul>
+        <li data-q="meatballs (2) ">
+          <div class="row"><span class="name">Meatballs (2)</span><span class="price">$8.95</span></div>
+          
+        </li>
+        <li data-q="italian sausage (2) ">
+          <div class="row"><span class="name">Italian Sausage (2)</span><span class="price">$9.95</span></div>
+          
+        </li>
+        <li data-q="pasta ">
+          <div class="row"><span class="name">Pasta</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="chicken breast (grilled or panéed) ">
+          <div class="row"><span class="name">Chicken Breast (Grilled or Panéed)</span><span class="price">$9</span></div>
+          
+        </li>
+        <li data-q="lump crabmeat ">
+          <div class="row"><span class="name">Lump Crabmeat</span><span class="price">$11</span></div>
+          
+        </li>
+        <li data-q="gulf shrimp (5) ">
+          <div class="row"><span class="name">Gulf Shrimp (5)</span><span class="price">$10</span></div>
+          
+        </li>
+        <li data-q="veggies (sautéed) ">
+          <div class="row"><span class="name">Veggies (sautéed)</span><span class="price">$6.50</span></div>
+          
+        </li>
+        <li data-q="1/2 garlic loaf w/ mozzarella ">
+          <div class="row"><span class="name">1/2 Garlic loaf w/ mozzarella</span><span class="price">$7.95</span></div>
+          
+        </li>
+        <li data-q="fettuccine alfredo ">
+          <div class="row"><span class="name">Fettuccine Alfredo</span><span class="price">$8.50</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="bambini-kids-12-under" class="sec">
+      <h2>Bambini (Kids 12 &amp; under)</h2>
+      
+      <ul>
+        <li data-q="spaghetti &amp; meatball ">
+          <div class="row"><span class="name">Spaghetti &amp; Meatball</span><span class="price">$11.95</span></div>
+          
+        </li>
+        <li data-q="fettuccine alfredo ">
+          <div class="row"><span class="name">Fettuccine Alfredo</span><span class="price">$11.95</span></div>
+          
+        </li>
+        <li data-q="fried chicken breast w/ pasta ">
+          <div class="row"><span class="name">Fried chicken breast w/ pasta</span><span class="price">$11.95</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="lunch-daily-specials" class="sec">
+      <h2>Lunch Daily Specials</h2>
+      <p class="note">Lunch menu</p>
+      <ul>
+        <li data-q="monday: eggplant rollatini fried eggplant rolled w/ fresh ricotta. topped w/ marinara &amp; mozzarella. served w/ angel hair marinara">
+          <div class="row"><span class="name">Monday: Eggplant Rollatini</span><span class="price">$17.95</span></div>
+          <p class="desc">Fried eggplant rolled w/ fresh ricotta. Topped w/ marinara &amp; mozzarella. Served w/ angel hair marinara</p>
+        </li>
+        <li data-q="tuesday: chicken cacciatore slow cooked bone-in chicken. served over angel hair pasta">
+          <div class="row"><span class="name">Tuesday: Chicken Cacciatore</span><span class="price">$18.95</span></div>
+          <p class="desc">Slow cooked bone-in chicken. Served over angel hair pasta</p>
+        </li>
+        <li data-q="wednesday: involtini di pollo chicken breast rolled w/ spinach &amp; mozzarella. topped w/ a mushroom cream sauce and served w/ angel hair marinara">
+          <div class="row"><span class="name">Wednesday: Involtini di Pollo</span><span class="price">$19.95</span></div>
+          <p class="desc">Chicken breast rolled w/ spinach &amp; mozzarella. Topped w/ a mushroom cream sauce and served w/ angel hair marinara</p>
+        </li>
+        <li data-q="thursday: slow cooked brisket served w/ cabbage, new potatoes, carrots &amp; cornbread">
+          <div class="row"><span class="name">Thursday: Slow cooked Brisket</span><span class="price">$20.95</span></div>
+          <p class="desc">Served w/ cabbage, new potatoes, carrots &amp; cornbread</p>
+        </li>
+        <li data-q="friday: seafood pasta shrimp, crawfish tails &amp; crab claws sautéed in a white cream seafood sauce. tossed w/ fettuccine pasta">
+          <div class="row"><span class="name">Friday: Seafood Pasta</span><span class="price">$20.95</span></div>
+          <p class="desc">Shrimp, crawfish tails &amp; crab claws sautéed in a white cream seafood sauce. Tossed w/ fettuccine pasta</p>
+        </li></ul>
+    </section>
+    <section id="lunch-entrees" class="sec">
+      <h2>Lunch Entrees</h2>
+      <p class="note">Sub gluten free spaghetti $5</p>
+      <ul>
+        <li data-q="chicken parmigiana served w/ pasta">
+          <div class="row"><span class="name">Chicken Parmigiana</span><span class="price">$17.95</span></div>
+          <p class="desc">Served w/ pasta</p>
+        </li>
+        <li data-q="panéed chicken limone lemon caper sauce w/ pasta">
+          <div class="row"><span class="name">Panéed Chicken Limone</span><span class="price">$17.95</span></div>
+          <p class="desc">Lemon caper sauce w/ pasta</p>
+        </li>
+        <li data-q="chicken limone served w/ pasta">
+          <div class="row"><span class="name">Chicken Limone</span><span class="price">$17.95</span></div>
+          <p class="desc">Served w/ pasta</p>
+        </li>
+        <li data-q="chicken fettuccine alfredo grilled or panéed">
+          <div class="row"><span class="name">Chicken Fettuccine Alfredo</span><span class="price">$18.95</span></div>
+          <p class="desc">Grilled or panéed</p>
+        </li>
+        <li data-q="spaghetti &amp; meatballs ">
+          <div class="row"><span class="name">Spaghetti &amp; Meatballs</span><span class="price">$16.95</span></div>
+          
+        </li>
+        <li data-q="spaghetti &amp; italian sausage ">
+          <div class="row"><span class="name">Spaghetti &amp; Italian Sausage</span><span class="price">$17.95</span></div>
+          
+        </li>
+        <li data-q="italian sausage &amp; peppers over pasta ">
+          <div class="row"><span class="name">Italian Sausage &amp; Peppers over pasta</span><span class="price">$18.95</span></div>
+          
+        </li>
+        <li data-q="eggplant parmigiana served w/ pasta">
+          <div class="row"><span class="name">Eggplant Parmigiana</span><span class="price">$17.95</span></div>
+          <p class="desc">Served w/ pasta</p>
+        </li>
+        <li data-q="lasagna al forno ">
+          <div class="row"><span class="name">Lasagna al Forno</span><span class="price">$18.95</span></div>
+          
+        </li>
+        <li data-q="catch of the day limone served w/ pasta">
+          <div class="row"><span class="name">Catch of the day Limone</span><span class="price">$17.95</span></div>
+          <p class="desc">Served w/ pasta</p>
+        </li>
+        <li data-q="catch of the day marsala served w/ pasta">
+          <div class="row"><span class="name">Catch of the day Marsala</span><span class="price">$18.95</span></div>
+          <p class="desc">Served w/ pasta</p>
+        </li>
+        <li data-q="grilled chicken bordelaise served over pasta">
+          <div class="row"><span class="name">Grilled Chicken Bordelaise</span><span class="price">$17.95</span></div>
+          <p class="desc">Served over pasta</p>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>All entrees served w/ Italian Twist bread. Choice of: House salad or soup with Entree / add $5.95. Consumer Advisory: Consumption of undercooked meat, poultry, eggs, or seafood may increase the risk of food-borne illnesses. Alert your server if you have special dietary requirements.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Fausto&#39;s Bistro.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Fausto&#39;s Bistro menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

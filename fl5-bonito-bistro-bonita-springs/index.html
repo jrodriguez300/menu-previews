@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Bonito Bistro Menu</title>
+<meta name="description" content="Menu for Bonito Bistro, Bonita Beach Road, Bonita Springs (Fort Myers / Naples area).">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Bonito Bistro</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=4450%20Bonita%20Beach%20Road%20%2310%2C%20Bonita%20Springs%2C%20FL%2034134">4450 Bonita Beach Road #10, Bonita Springs, FL 34134</a><a href="tel:2392217001">(239) 221-7001</a><span>Tuesday-Saturday: Happy Hour 5:00-6:00 PM, Dinner 5:00-8:30 PM</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#starters-shared-plates" data-sec="starters-shared-plates">Starters &amp; Shared Plates</a><a href="#entr-es" data-sec="entr-es">Entrées</a><a href="#happy-hour-food" data-sec="happy-hour-food">Happy Hour Food</a><a href="#happy-hour-drinks" data-sec="happy-hour-drinks">Happy Hour Drinks</a><a href="#specialty-cocktails" data-sec="specialty-cocktails">Specialty Cocktails</a><a href="#desserts" data-sec="desserts">Desserts</a><a href="#red-wine" data-sec="red-wine">Red Wine</a><a href="#white-wine-port" data-sec="white-wine-port">White Wine &amp; Port</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="starters-shared-plates" class="sec">
+      <h2>Starters &amp; Shared Plates</h2>
+      
+      <ul>
+        <li data-q="white truffle tallow fries golden tallow fries, parmigiano reggiano, white truffle oil, herbs">
+          <div class="row"><span class="name">White Truffle Tallow Fries</span></div>
+          <p class="desc">Golden tallow fries, Parmigiano Reggiano, white truffle oil, herbs</p><div class="prices"><span class="pp"><span class="pl">Truffle</span> <b>$8</b></span><span class="pp"><span class="pl">Plain tallow fries</span> <b>$6</b></span></div>
+        </li>
+        <li data-q="roasted carrots roasted baby carrots with whipped cashew butter, toasted nuts, warm herbs, honey, and balsamic">
+          <div class="row"><span class="name">Roasted Carrots</span><span class="price">$12</span></div>
+          <p class="desc">Roasted baby carrots with whipped cashew butter, toasted nuts, warm herbs, honey, and balsamic</p>
+        </li>
+        <li data-q="tuna crudo fresh ahi tuna with yuzu ponzu, sesame oil, pickled red onions, crispy shallots, served with house potato chips">
+          <div class="row"><span class="name">Tuna Crudo</span><span class="price">$18</span></div>
+          <p class="desc">Fresh ahi tuna with yuzu ponzu, sesame oil, pickled red onions, crispy shallots, served with house potato chips</p>
+        </li>
+        <li data-q="demkota beef carpaccio thin sliced raw demkota ranch filet mignon, shaved parmesan, crispy capers, garden greens, focaccia, extra virgin olive oil, maldon sea salt">
+          <div class="row"><span class="name">DemKota Beef Carpaccio</span><span class="price">$19</span></div>
+          <p class="desc">Thin sliced raw DemKota Ranch filet mignon, shaved Parmesan, crispy capers, garden greens, focaccia, extra virgin olive oil, Maldon sea salt</p>
+        </li>
+        <li data-q="bonito caesar salad crisp romaine, shaved parmigiano-reggiano, lemon, and buttery garlic croutons">
+          <div class="row"><span class="name">Bonito Caesar Salad</span><span class="price">$13</span></div>
+          <p class="desc">Crisp romaine, shaved Parmigiano-Reggiano, lemon, and buttery garlic croutons</p>
+        </li>
+        <li data-q="golden beet salad garden greens topped with roasted golden beets, whipped ricotta, florida orange, and toasted hazelnuts">
+          <div class="row"><span class="name">Golden Beet Salad</span><span class="price">$15</span></div>
+          <p class="desc">Garden greens topped with roasted golden beets, whipped ricotta, Florida orange, and toasted hazelnuts</p>
+        </li>
+        <li data-q="burrata alla caprese creamy burrata, local tomatoes, garden greens, castelvetrano olives, fresh basil, basil pistachio pesto, toasted focaccia croutons, extra virgin olive oil, maldon sea salt">
+          <div class="row"><span class="name">Burrata alla Caprese</span><span class="price">$19</span></div>
+          <p class="desc">Creamy burrata, local tomatoes, garden greens, Castelvetrano olives, fresh basil, basil pistachio pesto, toasted focaccia croutons, extra virgin olive oil, Maldon sea salt</p>
+        </li>
+        <li data-q="spanish octopus &amp; pork belly crispy spanish octopus and cheshire pork belly, black garlic aioli, warm castelvetrano olive and chorizo vinaigrette, finished with extra virgin olive oil">
+          <div class="row"><span class="name">Spanish Octopus &amp; Pork Belly</span><span class="price">$20</span></div>
+          <p class="desc">Crispy Spanish octopus and Cheshire pork belly, black garlic aioli, warm Castelvetrano olive and chorizo vinaigrette, finished with extra virgin olive oil</p>
+        </li></ul>
+    </section>
+    <section id="entr-es" class="sec">
+      <h2>Entrées</h2>
+      <p class="note">Add a side of house salad or Caesar +$6 to any entrée. Substitute fries for potatoes upon request. Add proteins to any salad or entrée: Today&#39;s Fresh Catch MP, Premium 8 oz Filet Mignon +$32, Antarctic Salmon +$20, Pork Chop +$19, Chicken Breast +$10</p>
+      <ul>
+        <li data-q="bonito smashburger demkota beef smash patties, sharp cheddar, house pickles, bonito sauce, tallow fries. add egg +$2, bacon +$3, or both +$4">
+          <div class="row"><span class="name">Bonito Smashburger</span><span class="price">$21</span></div>
+          <p class="desc">DemKota beef smash patties, sharp cheddar, house pickles, Bonito sauce, tallow fries. Add egg +$2, bacon +$3, or both +$4</p>
+        </li>
+        <li data-q="lamb smashburger fossil farms lamb patties topped with pickled red onions, tomato, garden greens, and fresh tzatziki, served with tallow fries">
+          <div class="row"><span class="name">Lamb Smashburger</span><span class="price">$25</span></div>
+          <p class="desc">Fossil Farms lamb patties topped with pickled red onions, tomato, garden greens, and fresh tzatziki, served with tallow fries</p>
+        </li>
+        <li data-q="bonito roasted chicken herb-lemon roasted half chicken with garden vegetables, sweet corn purée, tallow potatoes, and a delicate garlic-parsley beurre blanc">
+          <div class="row"><span class="name">Bonito Roasted Chicken</span><span class="price">$28</span></div>
+          <p class="desc">Herb-lemon roasted half chicken with garden vegetables, sweet corn purée, tallow potatoes, and a delicate garlic-parsley beurre blanc</p>
+        </li>
+        <li data-q="antarctic salmon seared antarctic salmon with tallow potatoes, garden vegetables, parsnip purée, brown butter, and crispy shallots">
+          <div class="row"><span class="name">Antarctic Salmon</span><span class="price">$34</span></div>
+          <p class="desc">Seared Antarctic salmon with tallow potatoes, garden vegetables, parsnip purée, brown butter, and crispy shallots</p>
+        </li>
+        <li data-q="demkota ranch 8 oz filet mignon shallot herb butter, white truffle tallow potatoes, seasonal vegetables, red wine demi-glace">
+          <div class="row"><span class="name">DemKota Ranch 8 oz Filet Mignon</span><span class="price">$49</span></div>
+          <p class="desc">Shallot herb butter, white truffle tallow potatoes, seasonal vegetables, red wine demi-glace</p>
+        </li>
+        <li data-q="risotto alla vodka carnaroli risotto with tomato cream sauce, parmesan, and basil pistachio pesto. add burrata +$5">
+          <div class="row"><span class="name">Risotto alla Vodka</span><span class="price">$25</span></div>
+          <p class="desc">Carnaroli risotto with tomato cream sauce, Parmesan, and basil pistachio pesto. Add burrata +$5</p>
+        </li>
+        <li data-q="piemonte carnaroli risotto creamy risotto with roasted corn, wild mushrooms, parmigiano reggiano, topped with white truffle oil">
+          <div class="row"><span class="name">Piemonte Carnaroli Risotto</span><span class="price">$26</span></div>
+          <p class="desc">Creamy risotto with roasted corn, wild mushrooms, Parmigiano Reggiano, topped with white truffle oil</p>
+        </li>
+        <li data-q="bonito 14 oz pork chop bone in cheshire pork chop, cherry pineapple chutney, tallow roasted potatoes, seasonal vegetables, bourbon demi glace">
+          <div class="row"><span class="name">Bonito 14 oz Pork Chop</span><span class="price">$41</span></div>
+          <p class="desc">Bone in Cheshire pork chop, cherry pineapple chutney, tallow roasted potatoes, seasonal vegetables, bourbon demi glace</p>
+        </li></ul>
+    </section>
+    <section id="happy-hour-food" class="sec">
+      <h2>Happy Hour Food</h2>
+      <p class="note">Happy Hour 5-6 PM daily</p>
+      <ul>
+        <li data-q="bonito smashburger single demkota beef smash patty, sharp cheddar, house pickles, bonito sauce, served with tallow fries">
+          <div class="row"><span class="name">Bonito Smashburger</span><span class="price">$15</span></div>
+          <p class="desc">Single DemKota beef smash patty, sharp cheddar, house pickles, Bonito sauce, served with tallow fries</p>
+        </li>
+        <li data-q="lamb smashburger single fossil farms lamb patty, topped with pickled red onions, tomato, garden greens, and fresh tzatziki, served with tallow fries">
+          <div class="row"><span class="name">Lamb Smashburger</span><span class="price">$17</span></div>
+          <p class="desc">Single Fossil Farms lamb patty, topped with pickled red onions, tomato, garden greens, and fresh tzatziki, served with tallow fries</p>
+        </li>
+        <li data-q="half tuna crudo fresh ahi tuna, bright ponzu, sesame oil, pickled red onions, and crispy shallots with house potato chips">
+          <div class="row"><span class="name">Half Tuna Crudo</span><span class="price">$11</span></div>
+          <p class="desc">Fresh ahi tuna, bright ponzu, sesame oil, pickled red onions, and crispy shallots with house potato chips</p>
+        </li>
+        <li data-q="bonito caesar crisp romaine, shaved parmesan, lemon, buttery garlic croutons">
+          <div class="row"><span class="name">Bonito Caesar</span><span class="price">$9</span></div>
+          <p class="desc">Crisp romaine, shaved parmesan, lemon, buttery garlic croutons</p>
+        </li>
+        <li data-q="white truffle tallow fries golden tallow fries, parmigiano reggiano, white truffle oil, herbs">
+          <div class="row"><span class="name">White Truffle Tallow Fries</span><span class="price">$6</span></div>
+          <p class="desc">Golden tallow fries, Parmigiano Reggiano, white truffle oil, herbs</p>
+        </li>
+        <li data-q="burrata alla caprese creamy burrata, local tomatoes, garden greens, castelvetrano olives, pistachio pesto, focaccia croutons, extra virgin olive oil, maldon sea salt">
+          <div class="row"><span class="name">Burrata alla Caprese</span><span class="price">$14</span></div>
+          <p class="desc">Creamy burrata, local tomatoes, garden greens, Castelvetrano olives, pistachio pesto, focaccia croutons, extra virgin olive oil, Maldon sea salt</p>
+        </li>
+        <li data-q="half roasted carrots baby carrots over whipped cashew butter, topped with toasted nuts, herb salad, maple syrup, and a touch of balsamic">
+          <div class="row"><span class="name">Half Roasted Carrots</span><span class="price">$9</span></div>
+          <p class="desc">Baby carrots over whipped cashew butter, topped with toasted nuts, herb salad, maple syrup, and a touch of balsamic</p>
+        </li></ul>
+    </section>
+    <section id="happy-hour-drinks" class="sec">
+      <h2>Happy Hour Drinks</h2>
+      <p class="note">Enjoy 20% off bottles of house wine during Happy Hour</p>
+      <ul>
+        <li data-q="draft beers ">
+          <div class="row"><span class="name">Draft Beers</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Domestic</span> <b>$5</b></span><span class="pp"><span class="pl">Imports</span> <b>$6</b></span></div>
+        </li>
+        <li data-q="bottled beer ">
+          <div class="row"><span class="name">Bottled Beer</span><span class="price">$4</span></div>
+          
+        </li>
+        <li data-q="house wines ">
+          <div class="row"><span class="name">House Wines</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="four roses old fashioned ">
+          <div class="row"><span class="name">Four Roses Old Fashioned</span><span class="price">$8</span></div>
+          
+        </li>
+        <li data-q="happy hour martini ">
+          <div class="row"><span class="name">Happy Hour Martini</span><span class="price">$9</span></div>
+          
+        </li>
+        <li data-q="regular menu cocktails ">
+          <div class="row"><span class="name">Regular Menu Cocktails</span><span class="price">$12</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="specialty-cocktails" class="sec">
+      <h2>Specialty Cocktails</h2>
+      
+      <ul>
+        <li data-q="pear drop a floral fusion of grey goose pear vodka, elderflower, and melon that sips like candy">
+          <div class="row"><span class="name">Pear Drop</span><span class="price">$16</span></div>
+          <p class="desc">A floral fusion of Grey Goose pear vodka, elderflower, and melon that sips like candy</p>
+        </li>
+        <li data-q="naked on a plane a twist on a classic: smoky mezcal meets bright lime, bittersweet aperol, and the herbal warmth of yellow chartreuse. or stick with a classic paper plane for $16">
+          <div class="row"><span class="name">Naked on a Plane</span><span class="price">$17</span></div>
+          <p class="desc">A twist on a classic: smoky mezcal meets bright lime, bittersweet Aperol, and the herbal warmth of yellow Chartreuse. Or stick with a classic Paper Plane for $16</p>
+        </li>
+        <li data-q="espresso martini vanilla vodka and fresh espresso shaken cold with cocoa for a rich take on the classic pick-me-up. add baileys for a softer sweeter finish +$2">
+          <div class="row"><span class="name">Espresso Martini</span><span class="price">$16</span></div>
+          <p class="desc">Vanilla vodka and fresh espresso shaken cold with cocoa for a rich take on the classic pick-me-up. Add Baileys for a softer sweeter finish +$2</p>
+        </li>
+        <li data-q="white flame cristalino tequila, passion fruit liqueur, agave, fresh lime juice, orange bitters, and muddled jalapeños for a bold, tropical kick">
+          <div class="row"><span class="name">White Flame</span><span class="price">$16</span></div>
+          <p class="desc">Cristalino Tequila, passion fruit liqueur, agave, fresh lime juice, orange bitters, and muddled jalapeños for a bold, tropical kick</p>
+        </li>
+        <li data-q="el fumar mezcal, aperol, luxardo, lime, and agave, for a smoky, citrus-forward finish">
+          <div class="row"><span class="name">El Fumar</span><span class="price">$16</span></div>
+          <p class="desc">Mezcal, Aperol, Luxardo, lime, and agave, for a smoky, citrus-forward finish</p>
+        </li>
+        <li data-q="lemon berry bliss tito&#39;s handmade vodka, blueberry jam, limoncello, and fresh lemon juice, balanced with bright citrus and rich berry notes">
+          <div class="row"><span class="name">Lemon Berry Bliss</span><span class="price">$16</span></div>
+          <p class="desc">Tito&#39;s Handmade Vodka, blueberry jam, limoncello, and fresh lemon juice, balanced with bright citrus and rich berry notes</p>
+        </li>
+        <li data-q="the last whisper green chartreuse, gin, maraschino liqueur, lime, and egg white, elegantly balanced with a smooth herbal finish">
+          <div class="row"><span class="name">The Last Whisper</span><span class="price">$17</span></div>
+          <p class="desc">Green Chartreuse, gin, maraschino liqueur, lime, and egg white, elegantly balanced with a smooth herbal finish</p>
+        </li>
+        <li data-q="the conquistador a daring reposado old fashioned with rich coffee, vanilla, cocoa, and a hint of orange bitters">
+          <div class="row"><span class="name">The Conquistador</span><span class="price">$16</span></div>
+          <p class="desc">A daring reposado Old Fashioned with rich coffee, vanilla, cocoa, and a hint of orange bitters</p>
+        </li>
+        <li data-q="the diplomat diplomatico rum balanced with herbal green chartreuse, honey, bright lime, and crowned with a twist of orange">
+          <div class="row"><span class="name">The Diplomat</span><span class="price">$16</span></div>
+          <p class="desc">Diplomatico rum balanced with herbal green Chartreuse, honey, bright lime, and crowned with a twist of orange</p>
+        </li>
+        <li data-q="aviation a timeless classic of gin, maraschino liqueur, crème de violette, and fresh lemon; floral, citrus finish with a soft lavender hue">
+          <div class="row"><span class="name">Aviation</span><span class="price">$16</span></div>
+          <p class="desc">A timeless classic of gin, maraschino liqueur, crème de violette, and fresh lemon; floral, citrus finish with a soft lavender hue</p>
+        </li>
+        <li data-q="smore&#39;s old fashioned bourbon blended with cocoa and angostura bitters, honey syrup, and a toasted marshmallow on top">
+          <div class="row"><span class="name">Smore&#39;s Old Fashioned</span><span class="price">$16</span></div>
+          <p class="desc">Bourbon blended with cocoa and Angostura bitters, honey syrup, and a toasted marshmallow on top</p>
+        </li>
+        <li data-q="whale song sour grey whale gin shaken with raspberry, lemon, and chambord, finished with egg white for a silky texture and bright, balanced citrus finish">
+          <div class="row"><span class="name">Whale Song Sour</span><span class="price">$16</span></div>
+          <p class="desc">Grey Whale Gin shaken with raspberry, lemon, and Chambord, finished with egg white for a silky texture and bright, balanced citrus finish</p>
+        </li></ul>
+    </section>
+    <section id="desserts" class="sec">
+      <h2>Desserts</h2>
+      
+      <ul>
+        <li data-q="chocolate chip cookies house baked chocolate chip cookies, warm, soft centered, loaded with rich chocolate chips. add vanilla ice cream +$5">
+          <div class="row"><span class="name">Chocolate Chip Cookies</span><span class="price">$8</span></div>
+          <p class="desc">House baked chocolate chip cookies, warm, soft centered, loaded with rich chocolate chips. Add vanilla ice cream +$5</p>
+        </li>
+        <li data-q="cheesecake today&#39;s cheesecake, chef&#39;s choice; ask your server about today&#39;s sweet surprise">
+          <div class="row"><span class="name">Cheesecake</span><span class="price">$13</span></div>
+          <p class="desc">Today&#39;s cheesecake, chef&#39;s choice; ask your server about today&#39;s sweet surprise</p>
+        </li>
+        <li data-q="classic crème brûlée silky infused vanilla custard topped with a crisp caramelized sugar crust">
+          <div class="row"><span class="name">Classic Crème Brûlée</span><span class="price">$11</span></div>
+          <p class="desc">Silky infused vanilla custard topped with a crisp caramelized sugar crust</p>
+        </li>
+        <li data-q="chocolate indulgence cake rich flourless chocolate cake, deep cocoa flavor, topped with chocolate drizzle and whipped cream">
+          <div class="row"><span class="name">Chocolate Indulgence Cake</span><span class="price">$12</span></div>
+          <p class="desc">Rich flourless chocolate cake, deep cocoa flavor, topped with chocolate drizzle and whipped cream</p>
+        </li></ul>
+    </section>
+    <section id="red-wine" class="sec">
+      <h2>Red Wine</h2>
+      <p class="note">Any unfinished bottle can be taken home to enjoy</p>
+      <ul>
+        <li data-q="state &amp; rush pinot noir ">
+          <div class="row"><span class="name">State &amp; Rush Pinot Noir</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$8</b></span><span class="pp"><span class="pl">Bottle</span> <b>$30</b></span></div>
+        </li>
+        <li data-q="state &amp; rush cabernet sauvignon ">
+          <div class="row"><span class="name">State &amp; Rush Cabernet Sauvignon</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$8</b></span><span class="pp"><span class="pl">Bottle</span> <b>$30</b></span></div>
+        </li>
+        <li data-q="sterling meritage ">
+          <div class="row"><span class="name">Sterling Meritage</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$9</b></span><span class="pp"><span class="pl">Bottle</span> <b>$34</b></span></div>
+        </li>
+        <li data-q="sterling merlot ">
+          <div class="row"><span class="name">Sterling Merlot</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$9</b></span><span class="pp"><span class="pl">Bottle</span> <b>$34</b></span></div>
+        </li>
+        <li data-q="juggernaut cabernet sauvignon ">
+          <div class="row"><span class="name">Juggernaut Cabernet Sauvignon</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$12</b></span><span class="pp"><span class="pl">Bottle</span> <b>$40</b></span></div>
+        </li>
+        <li data-q="joel gott cabernet sauvignon ">
+          <div class="row"><span class="name">Joel Gott Cabernet Sauvignon</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$13</b></span><span class="pp"><span class="pl">Bottle</span> <b>$45</b></span></div>
+        </li>
+        <li data-q="decoy pinot noir ">
+          <div class="row"><span class="name">Decoy Pinot Noir</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$15</b></span><span class="pp"><span class="pl">Bottle</span> <b>$52</b></span></div>
+        </li>
+        <li data-q="caymus the walking fool (red blend) ">
+          <div class="row"><span class="name">Caymus The Walking Fool (Red Blend)</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$18</b></span><span class="pp"><span class="pl">Bottle</span> <b>$60</b></span></div>
+        </li>
+        <li data-q="the prisoner (red blend) ">
+          <div class="row"><span class="name">The Prisoner (Red Blend)</span><span class="price">Bottle | $82</span></div>
+          
+        </li>
+        <li data-q="2021 silver oak ">
+          <div class="row"><span class="name">2021 Silver Oak</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Bottle</span> <b>$138</b></span></div>
+        </li>
+        <li data-q="2024 caymus (1l) ">
+          <div class="row"><span class="name">2024 Caymus (1L)</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Bottle</span> <b>$152</b></span></div>
+        </li></ul>
+    </section>
+    <section id="white-wine-port" class="sec">
+      <h2>White Wine &amp; Port</h2>
+      
+      <ul>
+        <li data-q="state &amp; rush chardonnay ">
+          <div class="row"><span class="name">State &amp; Rush Chardonnay</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$8</b></span><span class="pp"><span class="pl">Bottle</span> <b>$30</b></span></div>
+        </li>
+        <li data-q="silvergate pinot grigio ">
+          <div class="row"><span class="name">Silvergate Pinot Grigio</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$9</b></span><span class="pp"><span class="pl">Bottle</span> <b>$34</b></span></div>
+        </li>
+        <li data-q="josh cellars prosecco ">
+          <div class="row"><span class="name">Josh Cellars Prosecco</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$10</b></span><span class="pp"><span class="pl">Bottle</span> <b>$38</b></span></div>
+        </li>
+        <li data-q="kim crawford sauvignon blanc new zealand">
+          <div class="row"><span class="name">Kim Crawford Sauvignon Blanc</span></div>
+          <p class="desc">New Zealand</p><div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$11</b></span><span class="pp"><span class="pl">Bottle</span> <b>$38</b></span></div>
+        </li>
+        <li data-q="juggernaut chardonnay ">
+          <div class="row"><span class="name">Juggernaut Chardonnay</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$11</b></span><span class="pp"><span class="pl">Bottle</span> <b>$38</b></span></div>
+        </li>
+        <li data-q="sonoma cutrer chardonnay russian river">
+          <div class="row"><span class="name">Sonoma Cutrer Chardonnay</span></div>
+          <p class="desc">Russian River</p><div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$12</b></span><span class="pp"><span class="pl">Bottle</span> <b>$50</b></span></div>
+        </li>
+        <li data-q="warre&#39;s otima 10yr tawny port ">
+          <div class="row"><span class="name">Warre&#39;s Otima 10yr Tawny Port</span><span class="price">Glass | $15</span></div>
+          
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>Our kitchen handles common allergens, and consuming raw or undercooked meats, seafood, or eggs may increase your risk of foodborne illness; please inform your server of any concerns. Our fried items are cooked exclusively in 100% beef tallow. Ask about our specials.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Bonito Bistro.</strong> Not the official menu. Copied from their public menu on 2026-09-22. This preview expires October 6.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Bonito Bistro menu preview was free to look at until October 6. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-06T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

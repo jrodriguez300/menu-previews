@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>The Flying Fig Deli Menu</title>
+<meta name="description" content="Menu for The Flying Fig Deli, North Adelaide, Adelaide.">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>The Flying Fig Deli</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=161%20Jeffcott%20St%2C%20North%20Adelaide%20SA%205006">161 Jeffcott St, North Adelaide SA 5006</a><a href="tel:0872261788">(08) 7226 1788</a><span>Mon – Thur: 7.30am – 3.00pm. Fri – Sat: 7.30am – 3.00pm. Sun: 8am – 3.00pm. Kitchen closes at 2:00pm</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#signature-house-made-bagels" data-sec="signature-house-made-bagels">Signature House made Bagels</a><a href="#classic-reubens" data-sec="classic-reubens">Classic Reubens</a><a href="#fresh-salads" data-sec="fresh-salads">Fresh Salads</a><a href="#egg-specialties" data-sec="egg-specialties">Egg &amp; Specialties</a><a href="#gourmet-burgers" data-sec="gourmet-burgers">Gourmet Burgers</a><a href="#the-flying-fig-signature-specialties" data-sec="the-flying-fig-signature-specialties">The Flying Fig Signature Specialties</a><a href="#extras" data-sec="extras">Extras</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="signature-house-made-bagels" class="sec">
+      <h2>Signature House made Bagels</h2>
+      
+      <ul>
+        <li data-q="breakfast bagel house-smoked bacon, fried egg and relish (gfo) (dfo)">
+          <div class="row"><span class="name">Breakfast Bagel</span><span class="price">$19.50</span></div>
+          <p class="desc">House-smoked bacon, fried egg and relish (GFO) (DFO)</p>
+        </li>
+        <li data-q="chicken bagel grilled chicken tenderloin, avocado, lettuce and neufchatel (gfo) (dfo)">
+          <div class="row"><span class="name">Chicken Bagel</span></div>
+          <p class="desc">Grilled chicken tenderloin, avocado, lettuce and neufchatel (GFO) (DFO)</p><div class="prices"><span class="pp"><b>$20.50</b></span><span class="pp"><span class="pl">Add Coleslaw (Extra)</span> <b>$23.90</b></span></div>
+        </li>
+        <li data-q="lox bagel (i) our house-cured salmon, pickled red onion, fresh cucumber ribbons, capers and neufchatel (gfo) (dfo)">
+          <div class="row"><span class="name">Lox Bagel (I)</span><span class="price">$20.50</span></div>
+          <p class="desc">Our house-cured salmon, pickled red onion, fresh cucumber ribbons, capers and Neufchatel (GFO) (DFO)</p>
+        </li>
+        <li data-q="pumpkin bagel smoky roasted pumpkin, sauteed spinach, crumbled persian feta, dukkah and fresh pesto (gfo) (dfo)">
+          <div class="row"><span class="name">Pumpkin Bagel</span><span class="price">$20.50</span></div>
+          <p class="desc">Smoky roasted pumpkin, sauteed spinach, crumbled Persian feta, dukkah and fresh pesto (GFO) (DFO)</p>
+        </li>
+        <li data-q="green delight bagel avocado, cucumber, persian feta, mint, lettuce and pesto (gfo) (dfo)">
+          <div class="row"><span class="name">Green Delight Bagel</span><span class="price">$18.90</span></div>
+          <p class="desc">Avocado, cucumber, Persian feta, mint, lettuce and pesto (GFO) (DFO)</p>
+        </li>
+        <li data-q="schmear bagel neufchatel and preserve (gfo) (dfo)">
+          <div class="row"><span class="name">Schmear Bagel</span><span class="price">$11.90</span></div>
+          <p class="desc">Neufchatel and preserve (GFO) (DFO)</p>
+        </li></ul>
+    </section>
+    <section id="classic-reubens" class="sec">
+      <h2>Classic Reubens</h2>
+      
+      <ul>
+        <li data-q="pastrami reuben house-smoked pastrami, kohlrabi and caraway sauerkraut, swiss cheese, spicy russian dressing with chilli flakes on dark rye sourdough (gfo) (dfo)">
+          <div class="row"><span class="name">Pastrami Reuben</span></div>
+          <p class="desc">House-smoked pastrami, kohlrabi and caraway sauerkraut, Swiss cheese, spicy Russian dressing with chilli flakes on dark rye sourdough (GFO) (DFO)</p><div class="prices"><span class="pp"><b>$29.50</b></span><span class="pp"><span class="pl">Pastrami on Rye</span> <b>$24.50</b></span></div>
+        </li>
+        <li data-q="original reuben grilled corned beef, sauerkraut blend, swiss cheese, spicy russian dressing with chilli flakes on dark rye sourdough (gfo) (dfo)">
+          <div class="row"><span class="name">Original Reuben</span><span class="price">$28.50</span></div>
+          <p class="desc">Grilled corned beef, sauerkraut blend, Swiss cheese, spicy Russian dressing with chilli flakes on dark rye sourdough (GFO) (DFO)</p>
+        </li>
+        <li data-q="lamb reuben 24-hour slow-cooked lamb shoulder, house sauerkraut, grilled halloumi, spicy russian dressing with chilli flakes (gfo) (dfo)">
+          <div class="row"><span class="name">Lamb Reuben</span><span class="price">$30.50</span></div>
+          <p class="desc">24-hour slow-cooked lamb shoulder, house sauerkraut, grilled halloumi, spicy Russian dressing with chilli flakes (GFO) (DFO)</p>
+        </li>
+        <li data-q="vegetarian reuben grilled vegetables with sauerkraut, swiss cheese, chrain, spicy russian dressing with chilli flakes on dark rye sourdough (gfo) (dfo)">
+          <div class="row"><span class="name">Vegetarian Reuben</span><span class="price">$28.50</span></div>
+          <p class="desc">Grilled vegetables with sauerkraut, Swiss cheese, chrain, spicy Russian dressing with chilli flakes on dark rye sourdough (GFO) (DFO)</p>
+        </li></ul>
+    </section>
+    <section id="fresh-salads" class="sec">
+      <h2>Fresh Salads</h2>
+      
+      <ul>
+        <li data-q="chicken salad chicken tenderloin, mediterranean salad with roasted chickpeas, balsamic glaze, feta, labneh and pita bread (gfo)(dfo)">
+          <div class="row"><span class="name">Chicken Salad</span><span class="price">$27.90</span></div>
+          <p class="desc">Chicken tenderloin, mediterranean salad with roasted chickpeas, balsamic glaze, Feta, labneh and pita bread (GFO)(DFO)</p>
+        </li>
+        <li data-q="falafel salad four house-made falafels, sweet potato hummus, mediterranean salad, radish, mint and lemon puree, pita bread (gfo)">
+          <div class="row"><span class="name">Falafel Salad</span><span class="price">$27.90</span></div>
+          <p class="desc">Four house-made falafels, sweet potato hummus, mediterranean salad, radish, mint and lemon puree, pita bread (GFO)</p>
+        </li></ul>
+    </section>
+    <section id="egg-specialties" class="sec">
+      <h2>Egg &amp; Specialties</h2>
+      
+      <ul>
+        <li data-q="classic eggs your choice of fried, poached, or scrambled eggs, served with sourdough rye, butter and traditional chrain (gfo) (dfo)">
+          <div class="row"><span class="name">Classic Eggs</span><span class="price">$16.50</span></div>
+          <p class="desc">Your choice of fried, poached, or scrambled eggs, served with sourdough rye, butter and traditional chrain (GFO) (DFO)</p>
+        </li>
+        <li data-q="middle eastern eggs three skillet-fried eggs, persian feta, spicy schug, preserved lemon puree, hazelnut dukkah, fresh chilli, dark rye (gfo) (dfo)">
+          <div class="row"><span class="name">Middle Eastern Eggs</span><span class="price">$25.50</span></div>
+          <p class="desc">Three skillet-fried eggs, Persian feta, spicy schug, preserved lemon puree, hazelnut dukkah, fresh chilli, dark rye (GFO) (DFO)</p>
+        </li>
+        <li data-q="summer shashuka baked eggs in spiced tomato sauce, persian feta, schug, fresh chilli, pita bread (gfo) (dfo)">
+          <div class="row"><span class="name">Summer Shashuka</span></div>
+          <p class="desc">Baked eggs in spiced tomato sauce, Persian feta, schug, fresh chilli, pita bread (GFO) (DFO)</p><div class="prices"><span class="pp"><b>$26.90</b></span><span class="pp"><span class="pl">Choice of pulled beef with sujuk</span> <b>$28.90</b></span></div>
+        </li>
+        <li data-q="pumpkin meal grilled pumpkin with mixed herbs, poached eggs, spinach, persian feta, pumpkin pesto, pomegranate molasses, crispy kale, chilli on dark rye (gfo) (dfo)">
+          <div class="row"><span class="name">Pumpkin Meal</span><span class="price">$27.50</span></div>
+          <p class="desc">Grilled pumpkin with mixed herbs, poached eggs, spinach, Persian feta, pumpkin pesto, pomegranate molasses, crispy kale, chilli on dark rye (GFO) (DFO)</p>
+        </li>
+        <li data-q="queen breakfast two poached eggs, avocado, grilled zucchini, warm bacon in whipped goat cheese, chermoula, herbs, nut mix on dark rye (gfo)">
+          <div class="row"><span class="name">Queen Breakfast</span><span class="price">$28.50</span></div>
+          <p class="desc">Two poached eggs, avocado, grilled zucchini, warm bacon in whipped goat cheese, chermoula, herbs, nut mix on dark rye (GFO)</p>
+        </li>
+        <li data-q="balsamic mushrooms mushroom medley, goat curd, confit garlic, balsamic glaze, hazelnut dukkah, fried enoki, two poached eggs, dark rye (gfo) (dfo)">
+          <div class="row"><span class="name">Balsamic Mushrooms</span><span class="price">$27.90</span></div>
+          <p class="desc">Mushroom medley, goat curd, confit garlic, balsamic glaze, hazelnut dukkah, fried enoki, two poached eggs, dark rye (GFO) (DFO)</p>
+        </li>
+        <li data-q="sweet potato latke crispy latkes, smashed avocado, herb yogurt, sauteed spinach, halloumi, sweet potato &amp; kale crisps, two poached eggs">
+          <div class="row"><span class="name">Sweet Potato Latke</span><span class="price">$27.90</span></div>
+          <p class="desc">Crispy latkes, smashed avocado, Herb Yogurt, Sauteed Spinach, Halloumi, sweet potato &amp; kale crisps, two Poached Eggs</p>
+        </li>
+        <li data-q="challah french toast challah, ricotta &amp; crème fraîche, caramelised banana, pistachio, halwa, pomegranate arils, cinnamon maple, brûléed orange">
+          <div class="row"><span class="name">Challah French Toast</span><span class="price">$26.90</span></div>
+          <p class="desc">Challah, ricotta &amp; crème fraîche, caramelised banana, pistachio, halwa, pomegranate arils, Cinnamon maple, Brûléed orange</p>
+        </li>
+        <li data-q="hash brown stack crispy potato hash brown layered with spinach, smoky maple bacon with two poached eggs and hollandaise, finished with fresh herbs.">
+          <div class="row"><span class="name">Hash Brown Stack</span><span class="price">$25.50</span></div>
+          <p class="desc">Crispy potato hash brown layered with spinach, smoky maple bacon with two poached eggs and hollandaise, finished with fresh herbs.</p>
+        </li>
+        <li data-q="porridge overnight soaked oats cooked in oat milk, blueberry compote, oat crumble, green apple and mint salsa.">
+          <div class="row"><span class="name">Porridge</span><span class="price">$21.90</span></div>
+          <p class="desc">Overnight soaked oats cooked in oat milk, blueberry compote, oat crumble, green apple and mint salsa.</p>
+        </li>
+        <li data-q="potato rösti &amp; cured salmon crispy potato rösti topped with crème fraiche, house-cured salmon, pomegranate molasses drizzle, dill leaves and a fried egg. (dfo)">
+          <div class="row"><span class="name">Potato Rösti &amp; Cured Salmon</span><span class="price">$25.50</span></div>
+          <p class="desc">Crispy potato rösti topped with crème fraiche, house-cured salmon, pomegranate molasses drizzle, dill leaves and a fried egg. (DFO)</p>
+        </li></ul>
+    </section>
+    <section id="gourmet-burgers" class="sec">
+      <h2>Gourmet Burgers</h2>
+      
+      <ul>
+        <li data-q="brisket cheeseburger beef brisket patty, swiss cheese, bacon, b+b pickles, caramelised onion, tomato, lettuce, burger sauce on brioche served with fries (gfo)">
+          <div class="row"><span class="name">Brisket Cheeseburger</span><span class="price">$28.90</span></div>
+          <p class="desc">Beef brisket patty, swiss cheese, bacon, B+B pickles, caramelised onion, tomato, lettuce, burger sauce on brioche served with fries (GFO)</p>
+        </li>
+        <li data-q="chicken burger grilled/fried chicken tenderloin, coleslaw, b+b pickles, caramelized onion, lettuce, chipotle sauce on brioche served with fries (gfo)">
+          <div class="row"><span class="name">Chicken Burger</span><span class="price">$27.90</span></div>
+          <p class="desc">Grilled/fried chicken tenderloin, coleslaw, B+B pickles, caramelized onion, lettuce, chipotle sauce on brioche served with fries (GFO)</p>
+        </li></ul>
+    </section>
+    <section id="the-flying-fig-signature-specialties" class="sec">
+      <h2>The Flying Fig Signature Specialties</h2>
+      
+      <ul>
+        <li data-q="chilli scramble chilli scrambled eggs, smash avocado, beetroot hummus, feta, dukkah, herb salad with pickled carrots and beetroot on brioche bread (gfo) (dfo)">
+          <div class="row"><span class="name">Chilli Scramble</span><span class="price">$27.90</span></div>
+          <p class="desc">Chilli scrambled Eggs, Smash Avocado, Beetroot Hummus, Feta, Dukkah, Herb Salad with Pickled Carrots and Beetroot on Brioche Bread (GFO) (DFO)</p>
+        </li>
+        <li data-q="tff ottoman scrambled eggs, spinach, avocado, halloumi, tahini yoghurt, house-made sweet chilli sauce, tomato powder herb salad and challah bread (dfo) (gfo)">
+          <div class="row"><span class="name">TFF Ottoman</span><span class="price">$27.90</span></div>
+          <p class="desc">Scrambled eggs, spinach, avocado, halloumi, tahini yoghurt, house-made sweet chilli sauce, tomato powder herb salad and challah bread (DFO) (GFO)</p>
+        </li>
+        <li data-q="tff benny waffle tabasco-milk fried chicken, freshly made waffle, wilted spinach, poached eggs, pomegranate molasses, dukkah, hollandaise sauce and chilli oil">
+          <div class="row"><span class="name">TFF Benny Waffle</span><span class="price">$27.90</span></div>
+          <p class="desc">Tabasco-milk fried chicken, freshly made waffle, wilted spinach, poached eggs, pomegranate molasses, dukkah, hollandaise sauce and chilli oil</p>
+        </li>
+        <li data-q="tff house granola our artisanal house-made granola blend, served with caramelized coconut yogurt and seasonal berries. (dfo)">
+          <div class="row"><span class="name">TFF House Granola</span><span class="price">$22.90</span></div>
+          <p class="desc">Our artisanal house-made granola blend, served with caramelized coconut yogurt and seasonal berries. (DFO)</p>
+        </li>
+        <li data-q="tff waffles house-made sweet potato waffles, cinnamon maple syrup, cookies ice cream, blueberry compote, seasonal berries and sweet potato crisps (dfo)">
+          <div class="row"><span class="name">TFF Waffles</span><span class="price">$26.90</span></div>
+          <p class="desc">House-made sweet potato waffles, cinnamon maple syrup, cookies ice cream, blueberry compote, seasonal berries and sweet potato crisps (DFO)</p>
+        </li>
+        <li data-q="chicken souvlaki grilled chicken with tzatziki sauce, salad with onion, pomegranate molasses, capsicum and served with hot chips and pita bread.">
+          <div class="row"><span class="name">Chicken Souvlaki</span></div>
+          <p class="desc">Grilled chicken with Tzatziki sauce, salad with onion, pomegranate molasses, capsicum and served with hot chips and pita bread.</p><div class="prices"><span class="pp"><b>$26.90</b></span><span class="pp"><span class="pl">Option: Lamb Souvlaki (24-hour slow cooked lamb)</span> <b>$30.50</b></span></div>
+        </li></ul>
+    </section>
+    <section id="extras" class="sec">
+      <h2>Extras</h2>
+      
+      <ul>
+        <li data-q="ketchup ">
+          <div class="row"><span class="name">Ketchup</span><span class="price">$3.50</span></div>
+          
+        </li>
+        <li data-q="relish ">
+          <div class="row"><span class="name">Relish</span><span class="price">$3.50</span></div>
+          
+        </li>
+        <li data-q="bread / gf ">
+          <div class="row"><span class="name">Bread / GF</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Bread</span> <b>$2.90</b></span><span class="pp"><span class="pl">GF</span> <b>$4.00</b></span></div>
+        </li>
+        <li data-q="egg ">
+          <div class="row"><span class="name">Egg</span><span class="price">$3.00</span></div>
+          
+        </li>
+        <li data-q="chocolate sauce ">
+          <div class="row"><span class="name">Chocolate Sauce</span><span class="price">$4.00</span></div>
+          
+        </li>
+        <li data-q="aioli ">
+          <div class="row"><span class="name">Aioli</span><span class="price">$4.50</span></div>
+          
+        </li>
+        <li data-q="hollandaise sauce ">
+          <div class="row"><span class="name">Hollandaise Sauce</span><span class="price">$4.50</span></div>
+          
+        </li>
+        <li data-q="spinach ">
+          <div class="row"><span class="name">Spinach</span><span class="price">$4.50</span></div>
+          
+        </li>
+        <li data-q="persian feta ">
+          <div class="row"><span class="name">Persian Feta</span><span class="price">$6.00</span></div>
+          
+        </li>
+        <li data-q="chrain ">
+          <div class="row"><span class="name">Chrain</span><span class="price">$5.00</span></div>
+          
+        </li>
+        <li data-q="fries small / large ">
+          <div class="row"><span class="name">Fries Small / Large</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Fries Small</span> <b>$6.50</b></span><span class="pp"><span class="pl">Large</span> <b>$12.50</b></span></div>
+        </li>
+        <li data-q="goat curd ">
+          <div class="row"><span class="name">Goat Curd</span><span class="price">$6.50</span></div>
+          
+        </li>
+        <li data-q="mushrooms ">
+          <div class="row"><span class="name">Mushrooms</span><span class="price">$6.80</span></div>
+          
+        </li>
+        <li data-q="dill pickle ">
+          <div class="row"><span class="name">Dill Pickle</span><span class="price">$6.00</span></div>
+          
+        </li>
+        <li data-q="sweet chilli sauce ">
+          <div class="row"><span class="name">Sweet Chilli Sauce</span><span class="price">$4.50</span></div>
+          
+        </li>
+        <li data-q="tomato ">
+          <div class="row"><span class="name">Tomato</span><span class="price">$5.00</span></div>
+          
+        </li>
+        <li data-q="hashbrowns ">
+          <div class="row"><span class="name">Hashbrowns</span><span class="price">$4.50</span></div>
+          
+        </li>
+        <li data-q="avocado ">
+          <div class="row"><span class="name">Avocado</span><span class="price">$5.50</span></div>
+          
+        </li>
+        <li data-q="bacon / lox / corned beef ">
+          <div class="row"><span class="name">Bacon / Lox / Corned Beef</span><span class="price">$8.50</span></div>
+          
+        </li>
+        <li data-q="halloumi ">
+          <div class="row"><span class="name">Halloumi</span><span class="price">$7.50</span></div>
+          
+        </li>
+        <li data-q="pastrami / lamb ">
+          <div class="row"><span class="name">Pastrami / Lamb</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Pastrami</span> <b>$9.50</b></span><span class="pp"><span class="pl">Lamb</span> <b>$10.50</b></span></div>
+        </li>
+        <li data-q="coleslaw ">
+          <div class="row"><span class="name">Coleslaw</span><span class="price">$5.00</span></div>
+          
+        </li>
+        <li data-q="chicken ">
+          <div class="row"><span class="name">Chicken</span><span class="price">$6.50</span></div>
+          
+        </li>
+        <li data-q="schug ">
+          <div class="row"><span class="name">Schug</span><span class="price">$4.00</span></div>
+          
+        </li>
+        <li data-q="sauerkraut ">
+          <div class="row"><span class="name">Sauerkraut</span><span class="price">$5.00</span></div>
+          
+        </li>
+        <li data-q="latke (2) ">
+          <div class="row"><span class="name">Latke (2)</span><span class="price">$7.00</span></div>
+          
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>Please inform our staff of any dietary requirements. GFO = Gluten-Free Option Available | DFO = Dairy-Free Option Available | VEGO = Vegetarian Option Available | VO = Vegan Option Available | (I) = Imported Fish. No-Split Bill on weekend/public holiday. 15% surcharges applies on Public holidays.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for The Flying Fig Deli.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The The Flying Fig Deli menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's US$29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for US$29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

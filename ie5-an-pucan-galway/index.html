@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>An Púcán Menu</title>
+<meta name="description" content="Menu for An Púcán, Forster Street, Eyre Square, Galway.">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>An Púcán</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=11%20Forster%20Street%2C%20Galway%20H91%20P65D">11 Forster Street, Galway H91 P65D</a><a href="tel:+35391376561">+353 91 376561</a><span>Mon-Thu 10:30am-11:30pm. Fri-Sat 10:30am-2am. Sun 10:30am-11pm. Breakfast served daily until 4pm</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#breakfast" data-sec="breakfast">Breakfast</a><a href="#starters" data-sec="starters">Starters</a><a href="#oysters-mussels" data-sec="oysters-mussels">Oysters &amp; Mussels</a><a href="#salads" data-sec="salads">Salads</a><a href="#gourmet-sandwiches" data-sec="gourmet-sandwiches">Gourmet Sandwiches</a><a href="#mains" data-sec="mains">Mains</a><a href="#sides" data-sec="sides">Sides</a><a href="#an-p-c-n-classics" data-sec="an-p-c-n-classics">An Púcán Classics</a><a href="#desserts" data-sec="desserts">Desserts</a><a href="#kids-menu" data-sec="kids-menu">Kids Menu</a><a href="#wines" data-sec="wines">Wines</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="breakfast" class="sec">
+      <h2>Breakfast</h2>
+      <p class="note">Served daily until 4pm</p>
+      <ul>
+        <li data-q="an púcán full irish craft loughnanes butcher sausages, bacon, black and white pudding, beans, scrambled eggs, potato cubes, toast. served with tea/coffee (1w, 3, 6, 7, 9, 10, 12)">
+          <div class="row"><span class="name">An Púcán Full Irish</span><span class="price">€14.90</span></div>
+          <p class="desc">Craft Loughnanes butcher sausages, bacon, black and white pudding, beans, scrambled eggs, potato cubes, toast. Served with tea/coffee (1w, 3, 6, 7, 9, 10, 12)</p>
+        </li>
+        <li data-q="an púcán mini breakfast a smaller take on our full irish. served with tea/coffee (1w, 3, 6, 7, 9, 10, 12)">
+          <div class="row"><span class="name">An Púcán Mini Breakfast</span><span class="price">€12.90</span></div>
+          <p class="desc">A smaller take on our full Irish. Served with tea/coffee (1w, 3, 6, 7, 9, 10, 12)</p>
+        </li>
+        <li data-q="vegetarian breakfast vegan sausage, grilled tomato, mushroom, falafel, beans, scrambled eggs, potato cubes, toast (1w, 3, 6, 7, 12)">
+          <div class="row"><span class="name">Vegetarian Breakfast</span><span class="price">€12.90</span></div>
+          <p class="desc">Vegan sausage, grilled tomato, mushroom, falafel, beans, scrambled eggs, potato cubes, toast (1w, 3, 6, 7, 12)</p>
+        </li>
+        <li data-q="breakfast burger mcgraths breakfast 6oz breakfast sausage patty with bacon and fried egg, crispy potato hash, onion relish, served on an onion bap (1w, 3, 6, 7, 11, 12)">
+          <div class="row"><span class="name">Breakfast Burger</span><span class="price">€13.90</span></div>
+          <p class="desc">McGraths breakfast 6oz breakfast sausage patty with bacon and fried egg, crispy potato hash, onion relish, served on an onion bap (1w, 3, 6, 7, 11, 12)</p>
+        </li>
+        <li data-q="brioche french toast orange mascarpone, blueberry and apple compote. add bacon +€2.50 (1w, 3, 6, 7)">
+          <div class="row"><span class="name">Brioche French Toast</span><span class="price">€10.90</span></div>
+          <p class="desc">Orange mascarpone, blueberry and apple compote. Add bacon +€2.50 (1w, 3, 6, 7)</p>
+        </li>
+        <li data-q="scrambled eggs with toast only (1w, 3, 6, 7)">
+          <div class="row"><span class="name">Scrambled Eggs with toast only</span><span class="price">€8.00</span></div>
+          <p class="desc">(1w, 3, 6, 7)</p>
+        </li>
+        <li data-q="scrambled eggs with bacon and toast (1w, 3, 6, 7)">
+          <div class="row"><span class="name">Scrambled Eggs with bacon and toast</span><span class="price">€10.50</span></div>
+          <p class="desc">(1w, 3, 6, 7)</p>
+        </li>
+        <li data-q="scrambled eggs with smoked salmon and toast (1w, 3, 4, 6, 7)">
+          <div class="row"><span class="name">Scrambled Eggs with smoked salmon and toast</span><span class="price">€12.95</span></div>
+          <p class="desc">(1w, 3, 4, 6, 7)</p>
+        </li></ul>
+    </section>
+    <section id="starters" class="sec">
+      <h2>Starters</h2>
+      
+      <ul>
+        <li data-q="homemade soup of the day served with homemade guinness and treacle brown bread (1o, 1w, 7, 9)">
+          <div class="row"><span class="name">Homemade Soup of the Day</span><span class="price">€7.50</span></div>
+          <p class="desc">Served with homemade Guinness and treacle brown bread (1o, 1w, 7, 9)</p>
+        </li>
+        <li data-q="galway bay seafood chowder creamy and hearty, packed with the freshest catch from galway bay. served with homemade guinness and treacle brown bread (1o, 1w, 4, 7, 9, 14)">
+          <div class="row"><span class="name">Galway Bay Seafood Chowder</span><span class="price">€9.50</span></div>
+          <p class="desc">Creamy and hearty, packed with the freshest catch from Galway Bay. Served with homemade Guinness and treacle brown bread (1o, 1w, 4, 7, 9, 14)</p>
+        </li>
+        <li data-q="an púcán chicken wings buffalo hot sauce / irish whiskey bbq sauce. served with cashel blue cheese dip (1w, 3, 6, 7, 9, 10)">
+          <div class="row"><span class="name">An Púcán Chicken Wings</span></div>
+          <p class="desc">Buffalo hot sauce / Irish whiskey BBQ sauce. Served with Cashel blue cheese dip (1w, 3, 6, 7, 9, 10)</p><div class="prices"><span class="pp"><span class="pl">Small</span> <b>€12.50</b></span><span class="pp"><span class="pl">Large</span> <b>€16.90</b></span></div>
+        </li>
+        <li data-q="crispy fried calamari golden panko-breaded calamari rings served with fresh tossed leaves and a zesty lime &amp; coriander mayo (1w, 3, 4, 6, 7, 10)">
+          <div class="row"><span class="name">Crispy Fried Calamari</span><span class="price">€11.90</span></div>
+          <p class="desc">Golden panko-breaded calamari rings served with fresh tossed leaves and a zesty lime &amp; coriander mayo (1w, 3, 4, 6, 7, 10)</p>
+        </li></ul>
+    </section>
+    <section id="oysters-mussels" class="sec">
+      <h2>Oysters &amp; Mussels</h2>
+      
+      <ul>
+        <li data-q="pacific oysters natural from the famous oyster beds of kelly&#39;s of kilcolgan (1b, 1o, 3, 7, 12, 14)">
+          <div class="row"><span class="name">Pacific Oysters Natural</span></div>
+          <p class="desc">From the famous oyster beds of Kelly&#39;s of Kilcolgan (1b, 1o, 3, 7, 12, 14)</p><div class="prices"><span class="pp"><span class="pl">Quarter dozen</span> <b>€10.00</b></span><span class="pp"><span class="pl">Half dozen</span> <b>€16.50</b></span><span class="pp"><span class="pl">Dozen</span> <b>€30.00</b></span></div>
+        </li>
+        <li data-q="steamed wild mussels &amp; chips meuniere - steamed with white wine, garlic butter and bay leaf. a la creme - steamed with white wine, garlic butter, bay leaf and cream. served with guinness and treacle brown bread for mopping (1o, 1w, 3, 4, 6, 7, 12, 14)">
+          <div class="row"><span class="name">Steamed Wild Mussels &amp; Chips</span><span class="price">€18.50</span></div>
+          <p class="desc">Meuniere - steamed with white wine, garlic butter and bay leaf. A la creme - steamed with white wine, garlic butter, bay leaf and cream. Served with Guinness and treacle brown bread for mopping (1o, 1w, 3, 4, 6, 7, 12, 14)</p>
+        </li></ul>
+    </section>
+    <section id="salads" class="sec">
+      <h2>Salads</h2>
+      
+      <ul>
+        <li data-q="an púcán power house salad mixed leaves, olives, cucumber, avocado, feta cheese, chickpeas, tomato, carrot, red onion, red pepper, honey and mustard dressing, pumpkin seeds, sunflower seeds (7, 10)">
+          <div class="row"><span class="name">An Púcán Power House Salad</span><span class="price">€14.90</span></div>
+          <p class="desc">Mixed leaves, olives, cucumber, avocado, feta cheese, chickpeas, tomato, carrot, red onion, red pepper, honey and mustard dressing, pumpkin seeds, sunflower seeds (7, 10)</p>
+        </li>
+        <li data-q="warm crispy goats cheese salad golden crispy goats cheese, ballymaloe relish on a bed of red onion, cherry tomato, red pepper, sunflower seeds, pumpkin seeds, mixed leaves, honey mustard dressing (1w, 3, 7, 10)">
+          <div class="row"><span class="name">Warm Crispy Goats Cheese Salad</span><span class="price">€14.90</span></div>
+          <p class="desc">Golden crispy goats cheese, Ballymaloe relish on a bed of red onion, cherry tomato, red pepper, sunflower seeds, pumpkin seeds, mixed leaves, honey mustard dressing (1w, 3, 7, 10)</p>
+        </li>
+        <li data-q="smoked bacon caesar salad mixed leaves, smoked streaky bacon, parmigiano, cherry tomatoes, garlic croutons and our creamy homemade caesar dressing. add chicken or atlantic prawns +€3 (1w, 3, 5, 7, 10)">
+          <div class="row"><span class="name">Smoked Bacon Caesar Salad</span><span class="price">€14.90</span></div>
+          <p class="desc">Mixed leaves, smoked streaky bacon, parmigiano, cherry tomatoes, garlic croutons and our creamy homemade Caesar dressing. Add chicken or Atlantic prawns +€3 (1w, 3, 5, 7, 10)</p>
+        </li></ul>
+    </section>
+    <section id="gourmet-sandwiches" class="sec">
+      <h2>Gourmet Sandwiches</h2>
+      
+      <ul>
+        <li data-q="the cuban beef pastrami, jalapeno, gherkins, roasted peppers, smoked cheese, spiced mayo, served on a ciabatta with chips and tossed salad (1w, 1r, 3, 7, 10)">
+          <div class="row"><span class="name">The Cuban</span><span class="price">€15.90</span></div>
+          <p class="desc">Beef pastrami, jalapeno, gherkins, roasted peppers, smoked cheese, spiced mayo, served on a ciabatta with chips and tossed salad (1w, 1r, 3, 7, 10)</p>
+        </li>
+        <li data-q="bbq pulled pork spiced apple, cajun mayo, emmental cheese, red onion with rocket served on a ciabatta with chips (1w, 3, 6, 7)">
+          <div class="row"><span class="name">BBQ Pulled Pork</span><span class="price">€15.90</span></div>
+          <p class="desc">Spiced apple, cajun mayo, Emmental cheese, red onion with rocket served on a ciabatta with chips (1w, 3, 6, 7)</p>
+        </li></ul>
+    </section>
+    <section id="mains" class="sec">
+      <h2>Mains</h2>
+      
+      <ul>
+        <li data-q="galway seafood plate galway bay smoked salmon, pacific oysters, peppered smoked mackerel, atlantic prawns, west coast crab meat, tossed leaves, homemade red slaw, potato salad, guinness and treacle brown bread (1o, 1w, 2, 3, 4, 7, 10, 14)">
+          <div class="row"><span class="name">Galway Seafood Plate</span><span class="price">€30.00</span></div>
+          <p class="desc">Galway Bay smoked salmon, Pacific oysters, peppered smoked mackerel, Atlantic prawns, West Coast crab meat, tossed leaves, homemade red slaw, potato salad, Guinness and treacle brown bread (1o, 1w, 2, 3, 4, 7, 10, 14)</p>
+        </li>
+        <li data-q="galway hooker beer battered fish of the day beer battered fish served with homemade tartare sauce, mint mushy peas, chips (1b, 1w, 3, 4, 6, 7, 10)">
+          <div class="row"><span class="name">Galway Hooker Beer Battered Fish of the Day</span><span class="price">€21.50</span></div>
+          <p class="desc">Beer battered fish served with homemade tartare sauce, mint mushy peas, chips (1b, 1w, 3, 4, 6, 7, 10)</p>
+        </li>
+        <li data-q="bangers &amp; mash irish pork sausages served on a bed of creamy mash, smothered in a guinness and sweet onion gravy (1b, 7, 9, 10, 12)">
+          <div class="row"><span class="name">Bangers &amp; Mash</span><span class="price">€17.90</span></div>
+          <p class="desc">Irish pork sausages served on a bed of creamy mash, smothered in a Guinness and sweet onion gravy (1b, 7, 9, 10, 12)</p>
+        </li>
+        <li data-q="bacon &amp; cheese beef burger 8oz beef patty topped with melted emmental cheese, on a toasted brioche bun, tomato relish, mixed leaves, chips (1r, 1w, 3, 6, 7, 9, 10, 12, 13)">
+          <div class="row"><span class="name">Bacon &amp; Cheese Beef Burger</span><span class="price">€18.90</span></div>
+          <p class="desc">8oz beef patty topped with melted Emmental cheese, on a toasted brioche bun, tomato relish, mixed leaves, chips (1r, 1w, 3, 6, 7, 9, 10, 12, 13)</p>
+        </li>
+        <li data-q="the chimichurri burger 8oz beef patty, emmental cheese, baby gem, tomato, chimichurri, on a toasted brioche bun and chips (1r, 1w, 3, 6, 7, 9, 10, 12, 13)">
+          <div class="row"><span class="name">The Chimichurri Burger</span><span class="price">€18.90</span></div>
+          <p class="desc">8oz beef patty, Emmental cheese, baby gem, tomato, chimichurri, on a toasted brioche bun and chips (1r, 1w, 3, 6, 7, 9, 10, 12, 13)</p>
+        </li>
+        <li data-q="buttermilk chicken burger korean slaw, lettuce, tomato, jalapeno mayo, chips (1w, 3, 6, 7)">
+          <div class="row"><span class="name">Buttermilk Chicken Burger</span><span class="price">€18.90</span></div>
+          <p class="desc">Korean slaw, lettuce, tomato, jalapeno mayo, chips (1w, 3, 6, 7)</p>
+        </li>
+        <li data-q="beetroot veggie burger a vibrant beetroot burger stacked with cheese, tomato, lettuce, burger sauce, a toasted brioche bun, chips (1w, 6, 10)">
+          <div class="row"><span class="name">Beetroot Veggie Burger</span><span class="price">€16.90</span></div>
+          <p class="desc">A vibrant beetroot burger stacked with cheese, tomato, lettuce, burger sauce, a toasted brioche bun, chips (1w, 6, 10)</p>
+        </li>
+        <li data-q="cajun chicken penne pasta wilted spinach &amp; roasted peppers, red pesto, creme fraiche and parmesan, served with garlic bread. add chorizo +€2 (1w, 1r, 3, 6, 7, 8c, 8pn)">
+          <div class="row"><span class="name">Cajun Chicken Penne Pasta</span><span class="price">€18.50</span></div>
+          <p class="desc">Wilted spinach &amp; roasted peppers, red pesto, creme fraiche and Parmesan, served with garlic bread. Add chorizo +€2 (1w, 1r, 3, 6, 7, 8c, 8pn)</p>
+        </li>
+        <li data-q="traditional irish stew slow cooked lamb with seasonal vegetables in a broth served with homemade guinness and treacle bread (1w, 1o, 9)">
+          <div class="row"><span class="name">Traditional Irish Stew</span><span class="price">€18.50</span></div>
+          <p class="desc">Slow cooked lamb with seasonal vegetables in a broth served with homemade Guinness and treacle bread (1w, 1o, 9)</p>
+        </li>
+        <li data-q="bacon and cabbage slow cooked bacon served with tender cabbage, creamy mashed potatoes and a rich parsley sauce (1w, 7)">
+          <div class="row"><span class="name">Bacon and Cabbage</span><span class="price">€18.50</span></div>
+          <p class="desc">Slow cooked bacon served with tender cabbage, creamy mashed potatoes and a rich parsley sauce (1w, 7)</p>
+        </li>
+        <li data-q="6oz sirloin steak sandwich prime irish grilled sirloin steak with sauteed onions, mushrooms, on a sourdough ciabatta, pepper sauce, tossed salad, chips (1r, 1w, 6, 7, 10)">
+          <div class="row"><span class="name">6oz Sirloin Steak Sandwich</span><span class="price">€21.90</span></div>
+          <p class="desc">Prime Irish grilled sirloin steak with sauteed onions, mushrooms, on a sourdough ciabatta, pepper sauce, tossed salad, chips (1r, 1w, 6, 7, 10)</p>
+        </li>
+        <li data-q="10oz prime irish sirloin steak juicy 10oz sirloin grilled to your liking, served with tossed salad, onion rings, mushrooms, pepper sauce, chips (1r, 1w, 6, 7, 10)">
+          <div class="row"><span class="name">10oz Prime Irish Sirloin Steak</span><span class="price">€32.50</span></div>
+          <p class="desc">Juicy 10oz sirloin grilled to your liking, served with tossed salad, onion rings, mushrooms, pepper sauce, chips (1r, 1w, 6, 7, 10)</p>
+        </li>
+        <li data-q="butter chicken curry tender chicken in a traditional sweet spiced sauce with rice and coriander flat bread (1w, 7, 9, 10)">
+          <div class="row"><span class="name">Butter Chicken Curry</span><span class="price">€18.50</span></div>
+          <p class="desc">Tender chicken in a traditional sweet spiced sauce with rice and coriander flat bread (1w, 7, 9, 10)</p>
+        </li>
+        <li data-q="proper scampi &amp; fries fresh crumbed prawns, old bay marie rose sauce, mixed leaves, fries (1w, 2, 3, 6, 9, 10)">
+          <div class="row"><span class="name">Proper Scampi &amp; Fries</span><span class="price">€21.90</span></div>
+          <p class="desc">Fresh crumbed prawns, Old Bay Marie Rose sauce, mixed leaves, fries (1w, 2, 3, 6, 9, 10)</p>
+        </li>
+        <li data-q="panfried seabass salsa verde, sauteed spiced baby potatoes, with greens and sun dried tomatoes (4, 7, 11)">
+          <div class="row"><span class="name">Panfried Seabass</span><span class="price">€22.50</span></div>
+          <p class="desc">Salsa verde, sauteed spiced baby potatoes, with greens and sun dried tomatoes (4, 7, 11)</p>
+        </li></ul>
+    </section>
+    <section id="sides" class="sec">
+      <h2>Sides</h2>
+      
+      <ul>
+        <li data-q="cajun fries (6, 9, 10)">
+          <div class="row"><span class="name">Cajun Fries</span><span class="price">€4.90</span></div>
+          <p class="desc">(6, 9, 10)</p>
+        </li>
+        <li data-q="fiery fries (3, 6)">
+          <div class="row"><span class="name">Fiery Fries</span><span class="price">€4.90</span></div>
+          <p class="desc">(3, 6)</p>
+        </li>
+        <li data-q="mashed potatoes (7)">
+          <div class="row"><span class="name">Mashed Potatoes</span><span class="price">€4.50</span></div>
+          <p class="desc">(7)</p>
+        </li>
+        <li data-q="chips (6)">
+          <div class="row"><span class="name">Chips</span><span class="price">€4.50</span></div>
+          <p class="desc">(6)</p>
+        </li>
+        <li data-q="onion rings (1w, 3, 6, 7)">
+          <div class="row"><span class="name">Onion Rings</span><span class="price">€4.50</span></div>
+          <p class="desc">(1w, 3, 6, 7)</p>
+        </li>
+        <li data-q="garlic bread (1r, 1w, 7)">
+          <div class="row"><span class="name">Garlic Bread</span><span class="price">€4.50</span></div>
+          <p class="desc">(1r, 1w, 7)</p>
+        </li>
+        <li data-q="garlic bread with cheese (1r, 1w, 7)">
+          <div class="row"><span class="name">Garlic Bread with Cheese</span><span class="price">€5.50</span></div>
+          <p class="desc">(1r, 1w, 7)</p>
+        </li>
+        <li data-q="tossed salad (10)">
+          <div class="row"><span class="name">Tossed Salad</span><span class="price">€4.50</span></div>
+          <p class="desc">(10)</p>
+        </li>
+        <li data-q="brown bread (1w, 1b, 7)">
+          <div class="row"><span class="name">Brown Bread</span><span class="price">€2.00</span></div>
+          <p class="desc">(1w, 1b, 7)</p>
+        </li>
+        <li data-q="vegetables (7)">
+          <div class="row"><span class="name">Vegetables</span><span class="price">€4.50</span></div>
+          <p class="desc">(7)</p>
+        </li></ul>
+    </section>
+    <section id="an-p-c-n-classics" class="sec">
+      <h2>An Púcán Classics</h2>
+      
+      <ul>
+        <li data-q="burger and a draught pint cheese burger or veggie burger with your choice of a draught pint (1r, 1, 3, 6, 7, 9, 10, 12, 13)">
+          <div class="row"><span class="name">Burger and a Draught Pint</span><span class="price">€15.50</span></div>
+          <p class="desc">Cheese burger or veggie burger with your choice of a draught pint (1r, 1, 3, 6, 7, 9, 10, 12, 13)</p>
+        </li>
+        <li data-q="beef nachos tortilla chips, loaded with chilli beef, melted cheese, salsa, garlic mayo, sour cream and jalapenos (3, 6, 7)">
+          <div class="row"><span class="name">Beef Nachos</span><span class="price">€16.00</span></div>
+          <p class="desc">Tortilla chips, loaded with chilli beef, melted cheese, salsa, garlic mayo, sour cream and jalapenos (3, 6, 7)</p>
+        </li>
+        <li data-q="veggie nachos tortilla chips, loaded with chilli mixed beans, melted cheese, salsa, garlic mayo, sour cream and jalapenos (3, 6, 7)">
+          <div class="row"><span class="name">Veggie Nachos</span><span class="price">€16.00</span></div>
+          <p class="desc">Tortilla chips, loaded with chilli mixed beans, melted cheese, salsa, garlic mayo, sour cream and jalapenos (3, 6, 7)</p>
+        </li>
+        <li data-q="loaded wedges spicy wedges with garlic mayo, smoked streaky bacon, melted cheddar cheese (6, 7, 10)">
+          <div class="row"><span class="name">Loaded Wedges</span><span class="price">€14.00</span></div>
+          <p class="desc">Spicy wedges with garlic mayo, smoked streaky bacon, melted cheddar cheese (6, 7, 10)</p>
+        </li>
+        <li data-q="garlic butter and parmesan cheese fries (3, 7)">
+          <div class="row"><span class="name">Garlic Butter and Parmesan Cheese Fries</span><span class="price">€12.00</span></div>
+          <p class="desc">(3, 7)</p>
+        </li>
+        <li data-q="spice bag crispy chicken pieces, golden fries, sliced chili, onion, and a serious dusting of spicy salt, with a rich curry sauce (1w, 3, 7)">
+          <div class="row"><span class="name">Spice Bag</span><span class="price">€15.00</span></div>
+          <p class="desc">Crispy chicken pieces, golden fries, sliced chili, onion, and a serious dusting of spicy salt, with a rich curry sauce (1w, 3, 7)</p>
+        </li>
+        <li data-q="chicken tenders crispy, golden chicken tenders with crispy wedges. with your choice of dipping sauces (1w, 3, 7)">
+          <div class="row"><span class="name">Chicken Tenders</span><span class="price">€15.00</span></div>
+          <p class="desc">Crispy, golden chicken tenders with crispy wedges. With your choice of dipping sauces (1w, 3, 7)</p>
+        </li>
+        <li data-q="bits to dip a platter of chicken goujons, cocktail sausages, veggie spring rolls, onion rings and chips, served with sweet chilli sauce and garlic mayo (1b, 1w, 3, 6, 7, 9, 10, 12)">
+          <div class="row"><span class="name">Bits to Dip</span><span class="price">€17.50</span></div>
+          <p class="desc">A platter of chicken goujons, cocktail sausages, veggie spring rolls, onion rings and chips, served with sweet chilli sauce and garlic mayo (1b, 1w, 3, 6, 7, 9, 10, 12)</p>
+        </li>
+        <li data-q="veggie bits to dip a vegetarian spread of onion rings, veggie spring rolls, vegan sausage, falafel and chips, served with sweet chilli sauce and garlic mayo (1w, 3, 6, 7)">
+          <div class="row"><span class="name">Veggie Bits to Dip</span><span class="price">€16.50</span></div>
+          <p class="desc">A vegetarian spread of onion rings, veggie spring rolls, vegan sausage, falafel and chips, served with sweet chilli sauce and garlic mayo (1w, 3, 6, 7)</p>
+        </li></ul>
+    </section>
+    <section id="desserts" class="sec">
+      <h2>Desserts</h2>
+      
+      <ul>
+        <li data-q="selection of ice cream a trio of vanilla, chocolate and strawberry ice cream with caramel and chocolate sauce (1, 3, 7)">
+          <div class="row"><span class="name">Selection of Ice Cream</span><span class="price">€6.50</span></div>
+          <p class="desc">A trio of vanilla, chocolate and strawberry ice cream with caramel and chocolate sauce (1, 3, 7)</p>
+        </li>
+        <li data-q="warm apple tart served with caramel sauce and fresh cream (1w, 3, 7)">
+          <div class="row"><span class="name">Warm Apple Tart</span><span class="price">€7.50</span></div>
+          <p class="desc">Served with caramel sauce and fresh cream (1w, 3, 7)</p>
+        </li>
+        <li data-q="chocolate brownie rich, fudgy brownie, sweet crumb, chocolate sauce and vanilla ice cream (1w, 3, 7)">
+          <div class="row"><span class="name">Chocolate Brownie</span><span class="price">€7.50</span></div>
+          <p class="desc">Rich, fudgy brownie, sweet crumb, chocolate sauce and vanilla ice cream (1w, 3, 7)</p>
+        </li>
+        <li data-q="an púcán eat n&#39;mess a mixture of crushed meringue, blueberry, fresh cream, sweet orange mascarpone and biscuit crumb (1w, 3, 7)">
+          <div class="row"><span class="name">An Púcán Eat n&#39;Mess</span><span class="price">€7.50</span></div>
+          <p class="desc">A mixture of crushed meringue, blueberry, fresh cream, sweet orange mascarpone and biscuit crumb (1w, 3, 7)</p>
+        </li>
+        <li data-q="sweet waffle warm belgian-style waffle topped with vanilla ice cream, caramel sauce, white chocolate and a mixed berry compote (1w, 3, 7)">
+          <div class="row"><span class="name">Sweet Waffle</span><span class="price">€7.50</span></div>
+          <p class="desc">Warm Belgian-style waffle topped with vanilla ice cream, caramel sauce, white chocolate and a mixed berry compote (1w, 3, 7)</p>
+        </li></ul>
+    </section>
+    <section id="kids-menu" class="sec">
+      <h2>Kids Menu</h2>
+      <p class="note">Kid&#39;s favourites all €7.50. Each meal includes a free cordial.</p>
+      <ul>
+        <li data-q="chicken goujons and chips (1w, 3, 6)">
+          <div class="row"><span class="name">Chicken Goujons and Chips</span><span class="price">€7.50</span></div>
+          <p class="desc">(1w, 3, 6)</p>
+        </li>
+        <li data-q="mini burger and chips (1w, 1r, 3, 6, 7, 9, 12, 13)">
+          <div class="row"><span class="name">Mini Burger and Chips</span><span class="price">€7.50</span></div>
+          <p class="desc">(1w, 1r, 3, 6, 7, 9, 12, 13)</p>
+        </li>
+        <li data-q="sausages and chips (1w, 3, 6, 7, 9, 10, 12)">
+          <div class="row"><span class="name">Sausages and Chips</span><span class="price">€7.50</span></div>
+          <p class="desc">(1w, 3, 6, 7, 9, 10, 12)</p>
+        </li>
+        <li data-q="buttered pasta and garlic bread (1w, 3, 7)">
+          <div class="row"><span class="name">Buttered Pasta and Garlic Bread</span><span class="price">€7.50</span></div>
+          <p class="desc">(1w, 3, 7)</p>
+        </li>
+        <li data-q="pasta in tomato sauce with chicken (1w, 3, 7)">
+          <div class="row"><span class="name">Pasta in Tomato Sauce with Chicken</span><span class="price">€7.50</span></div>
+          <p class="desc">(1w, 3, 7)</p>
+        </li>
+        <li data-q="fish and chips (1w, 1b, 3, 4, 6)">
+          <div class="row"><span class="name">Fish and Chips</span><span class="price">€7.50</span></div>
+          <p class="desc">(1w, 1b, 3, 4, 6)</p>
+        </li>
+        <li data-q="scoop of ice cream choose from vanilla, strawberry or chocolate with sprinkles (3, 7)">
+          <div class="row"><span class="name">Scoop of Ice Cream</span><span class="price">€2.50</span></div>
+          <p class="desc">Choose from vanilla, strawberry or chocolate with sprinkles (3, 7)</p>
+        </li></ul>
+    </section>
+    <section id="wines" class="sec">
+      <h2>Wines</h2>
+      
+      <ul>
+        <li data-q="villa del lago pinot grigio, italy (white) light, crisp and refreshing, with delicate citrus and fresh fruit notes">
+          <div class="row"><span class="name">Villa del Lago Pinot Grigio, Italy (white)</span></div>
+          <p class="desc">Light, crisp and refreshing, with delicate citrus and fresh fruit notes</p><div class="prices"><span class="pp"><span class="pl">Glass</span> <b>€8.50</b></span><span class="pp"><span class="pl">Bottle</span> <b>€33</b></span></div>
+        </li>
+        <li data-q="koangi marlborough sauvignon blanc, new zealand (white) fresh and vibrant, with tropical fruit and citrus flavours and a crisp, refreshing finish">
+          <div class="row"><span class="name">Koangi Marlborough Sauvignon Blanc, New Zealand (white)</span></div>
+          <p class="desc">Fresh and vibrant, with tropical fruit and citrus flavours and a crisp, refreshing finish</p><div class="prices"><span class="pp"><span class="pl">Glass</span> <b>€10</b></span><span class="pp"><span class="pl">Bottle</span> <b>€39</b></span></div>
+        </li>
+        <li data-q="navah noh organic tempranillo, spain (red) smooth and fruity with ripe red fruit, subtle spice and a well-balanced finish">
+          <div class="row"><span class="name">Navah Noh Organic Tempranillo, Spain (red)</span></div>
+          <p class="desc">Smooth and fruity with ripe red fruit, subtle spice and a well-balanced finish</p><div class="prices"><span class="pp"><span class="pl">Glass</span> <b>€8.50</b></span><span class="pp"><span class="pl">Bottle</span> <b>€33</b></span></div>
+        </li>
+        <li data-q="casa agostino malbec, argentina (red) rich, smooth and fruit-forward, with ripe dark fruit flavours and a soft, rounded finish">
+          <div class="row"><span class="name">Casa Agostino Malbec, Argentina (red)</span></div>
+          <p class="desc">Rich, smooth and fruit-forward, with ripe dark fruit flavours and a soft, rounded finish</p><div class="prices"><span class="pp"><span class="pl">Glass</span> <b>€10</b></span><span class="pp"><span class="pl">Bottle</span> <b>€39</b></span></div>
+        </li>
+        <li data-q="villa del lago pinot grigio rose, italy light, fresh and delicate, with soft red berry and fruity notes">
+          <div class="row"><span class="name">Villa del Lago Pinot Grigio Rose, Italy</span></div>
+          <p class="desc">Light, fresh and delicate, with soft red berry and fruity notes</p><div class="prices"><span class="pp"><span class="pl">Glass</span> <b>€8.50</b></span><span class="pp"><span class="pl">Bottle</span> <b>€33</b></span></div>
+        </li>
+        <li data-q="whispering angel grenache, france (rose) ">
+          <div class="row"><span class="name">Whispering Angel Grenache, France (rose)</span><span class="price">Bottle | €45</span></div>
+          
+        </li>
+        <li data-q="alba luna prosecco frizzante, veneto, italy ">
+          <div class="row"><span class="name">Alba Luna Prosecco Frizzante, Veneto, Italy</span><span class="price">Bottle | €10</span></div>
+          
+        </li>
+        <li data-q="conti d&#39;arco prosecco ">
+          <div class="row"><span class="name">Conti d&#39;Arco Prosecco</span><span class="price">Bottle | €39</span></div>
+          
+        </li>
+        <li data-q="moet &amp; chandon imperial nv, france ">
+          <div class="row"><span class="name">Moet &amp; Chandon Imperial NV, France</span><span class="price">Bottle | €80</span></div>
+          
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>Allergens: 1b gluten-barley, 1o gluten-oats, 1r gluten-rye, 1w gluten-wheat, 2 crustacean, 3 egg, 4 fish, 5 peanut, 6 soybean, 7 dairy, 8a nuts/almonds, 8c nuts/cashew, 8p nuts/peanuts, 8pn nuts/pine nuts, 8w nuts/walnuts, 9 celery, 10 mustard, 11 sesame seeds, 12 sulphur, 13 lupin, 14 molluscs. Gluten free options available on request. A multi award winning bar since 2014; live music seven nights a week, all day dining, big screens. Proud menu partner: Galway Hooker brewery.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for An Púcán.</strong> Not the official menu. Copied from their public menu on 2026-09-22. This preview expires October 6.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The An Púcán menu preview was free to look at until October 6. To turn it into a live page with a QR code and print-ready PDF, it's US$29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for US$29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-06T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

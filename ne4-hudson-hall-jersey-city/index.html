@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Hudson Hall Menu</title>
+<meta name="description" content="Menu for Hudson Hall, Downtown Jersey City (Marin Boulevard).">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Hudson Hall</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=364%20Marin%20Blvd%2C%20Jersey%20City%2C%20NJ%2007302">364 Marin Blvd, Jersey City, NJ 07302</a><a href="tel:8482835175">(848) 283-5175</a><span>Monday-Thursday 11:30am-11:00pm; Friday 11:30am-1:00am; Saturday 11:00am-1:00am; Sunday 11:00am-11:00pm</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#snacks" data-sec="snacks">Snacks</a><a href="#sliders" data-sec="sliders">Sliders</a><a href="#2-haus-dogs" data-sec="2-haus-dogs">2 Haus Dogs</a><a href="#ribs" data-sec="ribs">Ribs</a><a href="#smoked-meats" data-sec="smoked-meats">Smoked Meats</a><a href="#tacos" data-sec="tacos">Tacos</a><a href="#burgers" data-sec="burgers">Burgers</a><a href="#salads" data-sec="salads">Salads</a><a href="#sandos" data-sec="sandos">Sandos</a><a href="#sides" data-sec="sides">Sides</a><a href="#towers" data-sec="towers">Towers</a><a href="#kids-in-the-hall" data-sec="kids-in-the-hall">Kids in the Hall</a><a href="#sweets" data-sec="sweets">Sweets</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="snacks" class="sec">
+      <h2>Snacks</h2>
+      
+      <ul>
+        <li data-q="big pretzel [v] haus cheese + mustard.">
+          <div class="row"><span class="name">Big Pretzel</span><span class="price">$15</span></div>
+          <p class="desc">[V] Haus cheese + mustard.</p>
+        </li>
+        <li data-q="chicken nuggets beer battered, honey mustard + bbq.">
+          <div class="row"><span class="name">Chicken Nuggets</span><span class="price">$16</span></div>
+          <p class="desc">Beer battered, honey mustard + BBQ.</p>
+        </li>
+        <li data-q="nachos chicken, steak, chili or pork; cheese, beans, pico, crema, guac.">
+          <div class="row"><span class="name">Nachos</span><span class="price">$18</span></div>
+          <p class="desc">Chicken, steak, chili or pork; cheese, beans, pico, crema, guac.</p>
+        </li>
+        <li data-q="loaded tater tots haus queso, chopped bacon, chives.">
+          <div class="row"><span class="name">Loaded Tater Tots</span><span class="price">$16</span></div>
+          <p class="desc">Haus queso, chopped bacon, chives.</p>
+        </li>
+        <li data-q="mozzarella sticks [v] marinara + parmesan.">
+          <div class="row"><span class="name">Mozzarella Sticks</span><span class="price">$14</span></div>
+          <p class="desc">[V] Marinara + parmesan.</p>
+        </li>
+        <li data-q="haus wings dry rub, buffalo, or thai chili; bleu cheese or ranch.">
+          <div class="row"><span class="name">Haus Wings</span><span class="price">$16</span></div>
+          <p class="desc">Dry rub, Buffalo, or Thai chili; bleu cheese or ranch.</p>
+        </li>
+        <li data-q="spinach artichoke dip [v] mozzarella, haus chips.">
+          <div class="row"><span class="name">Spinach Artichoke Dip</span><span class="price">$13</span></div>
+          <p class="desc">[V] Mozzarella, haus chips.</p>
+        </li>
+        <li data-q="fried pickles [v] chipotle aioli.">
+          <div class="row"><span class="name">Fried Pickles</span><span class="price">$12</span></div>
+          <p class="desc">[V] Chipotle aioli.</p>
+        </li>
+        <li data-q="fish &amp; chips tartar, malt vinegar.">
+          <div class="row"><span class="name">Fish &amp; Chips</span><span class="price">$19</span></div>
+          <p class="desc">Tartar, malt vinegar.</p>
+        </li>
+        <li data-q="chips guacamole [v] haus made corn tortilla chips.">
+          <div class="row"><span class="name">Chips Guacamole</span><span class="price">$15</span></div>
+          <p class="desc">[V] Haus made corn tortilla chips.</p>
+        </li>
+        <li data-q="pierogies [v] potato + cheese, onion, sour cream.">
+          <div class="row"><span class="name">Pierogies</span><span class="price">$15</span></div>
+          <p class="desc">[V] Potato + cheese, onion, sour cream.</p>
+        </li>
+        <li data-q="buffalo shrimp ">
+          <div class="row"><span class="name">Buffalo Shrimp</span><span class="price">$18</span></div>
+          
+        </li>
+        <li data-q="philly egg rolls steak, onions, cheese.">
+          <div class="row"><span class="name">Philly Egg Rolls</span><span class="price">$16</span></div>
+          <p class="desc">Steak, onions, cheese.</p>
+        </li></ul>
+    </section>
+    <section id="sliders" class="sec">
+      <h2>Sliders</h2>
+      
+      <ul>
+        <li data-q="cheeseburger pickles, ketchup.">
+          <div class="row"><span class="name">Cheeseburger</span><span class="price">$18</span></div>
+          <p class="desc">Pickles, ketchup.</p>
+        </li>
+        <li data-q="pulled pork pickles, onions, bbq.">
+          <div class="row"><span class="name">Pulled Pork</span><span class="price">$18</span></div>
+          <p class="desc">Pickles, onions, BBQ.</p>
+        </li>
+        <li data-q="pastrami swiss, mustard.">
+          <div class="row"><span class="name">Pastrami</span><span class="price">$22</span></div>
+          <p class="desc">Swiss, mustard.</p>
+        </li>
+        <li data-q="crispy chicken cheddar, mustard.">
+          <div class="row"><span class="name">Crispy Chicken</span><span class="price">$18</span></div>
+          <p class="desc">Cheddar, mustard.</p>
+        </li></ul>
+    </section>
+    <section id="2-haus-dogs" class="sec">
+      <h2>2 Haus Dogs</h2>
+      <p class="note">Includes two garnishes, served with fries. Choice of: ketchup, mustard, kraut, onion, tomato, jalapeno, pickle, relish, cheese, bacon, BBQ, pastrami +.50.</p>
+      <ul>
+        <li data-q="2 haus dogs includes two garnishes, served with fries.">
+          <div class="row"><span class="name">2 Haus Dogs</span><span class="price">$14</span></div>
+          <p class="desc">Includes two garnishes, served with fries.</p>
+        </li>
+        <li data-q="flatbread of the day ">
+          <div class="row"><span class="name">Flatbread of the Day</span><span class="price">$14</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="ribs" class="sec">
+      <h2>Ribs</h2>
+      <p class="note">Comes with your choice of fries or salad. Wet or dry? Wet: thick, sweet tomato-based, sticky &amp; smokey. Dry: dry rubbed heavy, lightly sauced.</p>
+      <ul>
+        <li data-q="full slab ">
+          <div class="row"><span class="name">Full Slab</span><span class="price">$37</span></div>
+          
+        </li>
+        <li data-q="half slab ">
+          <div class="row"><span class="name">Half Slab</span><span class="price">$19</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="smoked-meats" class="sec">
+      <h2>Smoked Meats</h2>
+      <p class="note">Complete with dijon, BBQ sauce, cole slaw, bread. Choice of fries or salad.</p>
+      <ul>
+        <li data-q="pulled pork ">
+          <div class="row"><span class="name">Pulled Pork</span><span class="price">$17</span></div>
+          
+        </li>
+        <li data-q="brats 3 links.">
+          <div class="row"><span class="name">Brats</span><span class="price">$18</span></div>
+          <p class="desc">3 links.</p>
+        </li>
+        <li data-q="pastrami ">
+          <div class="row"><span class="name">Pastrami</span><span class="price">$24</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="tacos" class="sec">
+      <h2>Tacos</h2>
+      <p class="note">3 tacos; corn [GF] or flour.</p>
+      <ul>
+        <li data-q="shrimp cabbage, aioli, pico.">
+          <div class="row"><span class="name">Shrimp</span><span class="price">$22</span></div>
+          <p class="desc">Cabbage, aioli, pico.</p>
+        </li>
+        <li data-q="crispy fish cabbage, aioli, pico.">
+          <div class="row"><span class="name">Crispy Fish</span><span class="price">$21</span></div>
+          <p class="desc">Cabbage, aioli, pico.</p>
+        </li>
+        <li data-q="steak chimichurri, guacamole, lime.">
+          <div class="row"><span class="name">Steak</span><span class="price">$22</span></div>
+          <p class="desc">Chimichurri, guacamole, lime.</p>
+        </li></ul>
+    </section>
+    <section id="burgers" class="sec">
+      <h2>Burgers</h2>
+      <p class="note">Add cheese: cheddar, American or Swiss +2; bleu, goat or mozzarella +3. Additional add ons: bacon +3, avocado +4, fried egg +3, chili +3, sweet onion +2, mushroom +2, sliced jalapeno +2.</p>
+      <ul>
+        <li data-q="signature haus blend grassfed, lettuce, tomato, onion.">
+          <div class="row"><span class="name">Signature Haus Blend</span><span class="price">$19</span></div>
+          <p class="desc">Grassfed, lettuce, tomato, onion.</p>
+        </li>
+        <li data-q="haus veggie [v] quinoa, black bean, mushroom.">
+          <div class="row"><span class="name">Haus Veggie</span><span class="price">$19</span></div>
+          <p class="desc">[V] Quinoa, black bean, mushroom.</p>
+        </li></ul>
+    </section>
+    <section id="salads" class="sec">
+      <h2>Salads</h2>
+      <p class="note">Add: grilled or crispy chicken +7, pastrami or steak +12, blackened salmon +12.</p>
+      <ul>
+        <li data-q="grain bowl [v, gf] quinoa, spinach, avocado, cherry tomato, goat cheese, beet, balsamic vinaigrette.">
+          <div class="row"><span class="name">Grain Bowl</span><span class="price">$15</span></div>
+          <p class="desc">[V, GF] Quinoa, spinach, avocado, cherry tomato, goat cheese, beet, balsamic vinaigrette.</p>
+        </li>
+        <li data-q="caesar [v] romaine, croutons, parmesan.">
+          <div class="row"><span class="name">Caesar</span><span class="price">$16</span></div>
+          <p class="desc">[V] Romaine, croutons, parmesan.</p>
+        </li>
+        <li data-q="that&#39;s my yam roasted sweet potatoes, gorgonzola, walnut, dried cranberry, balsamic vinaigrette.">
+          <div class="row"><span class="name">That&#39;s My Yam</span><span class="price">$16</span></div>
+          <p class="desc">Roasted sweet potatoes, gorgonzola, walnut, dried cranberry, balsamic vinaigrette.</p>
+        </li></ul>
+    </section>
+    <section id="sandos" class="sec">
+      <h2>Sandos</h2>
+      <p class="note">Make any sandwich a gluten free wrap +2.</p>
+      <ul>
+        <li data-q="baja shrimp burrito avocado, lettuce, pico, spicy mayo, jalapeno.">
+          <div class="row"><span class="name">Baja Shrimp Burrito</span><span class="price">$20</span></div>
+          <p class="desc">Avocado, lettuce, pico, spicy mayo, jalapeno.</p>
+        </li>
+        <li data-q="crispy chicken schnitzel cheddar, avocado, bacon, lettuce, honey mustard.">
+          <div class="row"><span class="name">Crispy Chicken Schnitzel</span><span class="price">$18</span></div>
+          <p class="desc">Cheddar, avocado, bacon, lettuce, honey mustard.</p>
+        </li>
+        <li data-q="chicken caesar wrap grilled or crispy; romaine, parmesan croutons.">
+          <div class="row"><span class="name">Chicken Caesar Wrap</span><span class="price">$17</span></div>
+          <p class="desc">Grilled or crispy; romaine, parmesan croutons.</p>
+        </li>
+        <li data-q="cheesesteak chicken or philly; mushroom, jalapeno, onion.">
+          <div class="row"><span class="name">Cheesesteak</span><span class="price">$19</span></div>
+          <p class="desc">Chicken or Philly; mushroom, jalapeno, onion.</p>
+        </li>
+        <li data-q="chicken club haus bacon, avocado, lettuce, tomato, swiss, mayo, rye.">
+          <div class="row"><span class="name">Chicken Club</span><span class="price">$19</span></div>
+          <p class="desc">Haus bacon, avocado, lettuce, tomato, Swiss, mayo, rye.</p>
+        </li>
+        <li data-q="the beef braised, mozzarella, caramelized onion, au jus.">
+          <div class="row"><span class="name">The Beef</span><span class="price">$19</span></div>
+          <p class="desc">Braised, mozzarella, caramelized onion, au jus.</p>
+        </li>
+        <li data-q="pastrami reuben thousand island, swiss, kraut, rye.">
+          <div class="row"><span class="name">Pastrami Reuben</span><span class="price">$23</span></div>
+          <p class="desc">Thousand Island, Swiss, kraut, rye.</p>
+        </li>
+        <li data-q="buffalo soldier buffalo chicken, lettuce, tomato, bleu cheese, wrap.">
+          <div class="row"><span class="name">Buffalo Soldier</span><span class="price">$17</span></div>
+          <p class="desc">Buffalo chicken, lettuce, tomato, bleu cheese, wrap.</p>
+        </li>
+        <li data-q="blackened salmon wrap avocado, lettuce, tomato, lemon.">
+          <div class="row"><span class="name">Blackened Salmon Wrap</span><span class="price">$19</span></div>
+          <p class="desc">Avocado, lettuce, tomato, lemon.</p>
+        </li>
+        <li data-q="bbq pulled pork slaw, pickles.">
+          <div class="row"><span class="name">BBQ Pulled Pork</span><span class="price">$18</span></div>
+          <p class="desc">Slaw, pickles.</p>
+        </li>
+        <li data-q="hot chicken lettuce, pickles, ranch.">
+          <div class="row"><span class="name">Hot Chicken</span><span class="price">$19</span></div>
+          <p class="desc">Lettuce, pickles, ranch.</p>
+        </li></ul>
+    </section>
+    <section id="sides" class="sec">
+      <h2>Sides</h2>
+      
+      <ul>
+        <li data-q="sweet potato fries [v]">
+          <div class="row"><span class="name">Sweet Potato Fries</span><span class="price">$8</span></div>
+          <p class="desc">[V]</p>
+        </li>
+        <li data-q="french fries [v]">
+          <div class="row"><span class="name">French Fries</span><span class="price">$8</span></div>
+          <p class="desc">[V]</p>
+        </li>
+        <li data-q="truffle fries [v]">
+          <div class="row"><span class="name">Truffle Fries</span><span class="price">$11</span></div>
+          <p class="desc">[V]</p>
+        </li>
+        <li data-q="mac &amp; cheese [v]">
+          <div class="row"><span class="name">Mac &amp; Cheese</span><span class="price">$10</span></div>
+          <p class="desc">[V]</p>
+        </li>
+        <li data-q="haus slaw [v, gf]">
+          <div class="row"><span class="name">Haus Slaw</span><span class="price">$6</span></div>
+          <p class="desc">[V, GF]</p>
+        </li></ul>
+    </section>
+    <section id="towers" class="sec">
+      <h2>Towers</h2>
+      
+      <ul>
+        <li data-q="weiners 7 hot dogs, f*#k-ton-o-fries. ketchup, pickles, bbq, mustard, queso, relish.">
+          <div class="row"><span class="name">Weiners</span><span class="price">$44</span></div>
+          <p class="desc">7 hot dogs, f*#k-ton-o-fries. Ketchup, pickles, BBQ, mustard, queso, relish.</p>
+        </li>
+        <li data-q="sliders 3 cheeseburger, 3 pastrami, 3 chicken, 3 pork, f*#k-ton-o-fries. ketchup, pickles, bbq, mustard.">
+          <div class="row"><span class="name">Sliders</span><span class="price">$64</span></div>
+          <p class="desc">3 cheeseburger, 3 pastrami, 3 chicken, 3 pork, f*#k-ton-o-fries. Ketchup, pickles, BBQ, mustard.</p>
+        </li>
+        <li data-q="grand 5 hot dogs, 6 sliders, 6 chicken tenders, f*#k-ton-o-fries. ketchup, pickles, queso, mustard, chipotle aioli.">
+          <div class="row"><span class="name">Grand</span><span class="price">$84</span></div>
+          <p class="desc">5 hot dogs, 6 sliders, 6 chicken tenders, f*#k-ton-o-fries. Ketchup, pickles, queso, mustard, chipotle aioli.</p>
+        </li></ul>
+    </section>
+    <section id="kids-in-the-hall" class="sec">
+      <h2>Kids in the Hall</h2>
+      <p class="note">All served with fries.</p>
+      <ul>
+        <li data-q="chicken tendies ">
+          <div class="row"><span class="name">Chicken Tendies</span><span class="price">$16</span></div>
+          
+        </li>
+        <li data-q="two hot dogs ">
+          <div class="row"><span class="name">Two Hot Dogs</span><span class="price">$14</span></div>
+          
+        </li>
+        <li data-q="grilled cheese ">
+          <div class="row"><span class="name">Grilled Cheese</span><span class="price">$16</span></div>
+          
+        </li>
+        <li data-q="mac &amp; cheese ">
+          <div class="row"><span class="name">Mac &amp; Cheese</span><span class="price">$16</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="sweets" class="sec">
+      <h2>Sweets</h2>
+      
+      <ul>
+        <li data-q="hot, fresh donuts 3 donuts; choice of powdered sugar, cinnamon-sugar, glazed.">
+          <div class="row"><span class="name">Hot, Fresh Donuts</span><span class="price">$12</span></div>
+          <p class="desc">3 donuts; choice of powdered sugar, cinnamon-sugar, glazed.</p>
+        </li>
+        <li data-q="donut ice cream sandwich vanilla ice cream.">
+          <div class="row"><span class="name">Donut Ice Cream Sandwich</span><span class="price">$14</span></div>
+          <p class="desc">Vanilla ice cream.</p>
+        </li>
+        <li data-q="ice cream vanilla or dulce de leche.">
+          <div class="row"><span class="name">Ice Cream</span><span class="price">$8</span></div>
+          <p class="desc">Vanilla or dulce de leche.</p>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>20% gratuity will be added to all groups of 6 guests or more. Please inform our staff if you have any food allergies. 3% surcharge will be added to all credit card transactions.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Hudson Hall.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Hudson Hall menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

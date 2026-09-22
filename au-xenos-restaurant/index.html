@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Xenos Restaurant Menu</title>
+<meta name="description" content="Menu for Xenos Restaurant, Crows Nest, Sydney.">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Xenos Restaurant</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=7%20Burlington%20Street%2C%20Crows%20Nest%20NSW%202065">7 Burlington Street, Crows Nest NSW 2065</a><a href="tel:0294391748">(02) 9439 1748</a><span>Monday 7am–3pm. Tuesday–Saturday 7am–9pm. Sunday 8am–3pm. Hours may vary during public holidays</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#lunch-dinner" data-sec="lunch-dinner">Lunch &amp; Dinner</a><a href="#sides" data-sec="sides">Sides</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="lunch-dinner" class="sec">
+      <h2>Lunch &amp; Dinner</h2>
+      
+      <ul>
+        <li data-q="garlic panini ">
+          <div class="row"><span class="name">Garlic Panini</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="olive bread ">
+          <div class="row"><span class="name">Olive Bread</span><span class="price">$8</span></div>
+          
+        </li>
+        <li data-q="chalcidice olives hand stuffed, served with grissini">
+          <div class="row"><span class="name">Chalcidice Olives</span><span class="price">$15</span></div>
+          <p class="desc">hand stuffed, served with grissini</p>
+        </li>
+        <li data-q="bruschetta (2 pieces) a la caprese ">
+          <div class="row"><span class="name">Bruschetta (2 pieces) a la caprese</span><span class="price">$15</span></div>
+          
+        </li>
+        <li data-q="trio of dips served with toasted pita bread">
+          <div class="row"><span class="name">Trio of Dips</span><span class="price">$14</span></div>
+          <p class="desc">served with toasted Pita bread</p>
+        </li>
+        <li data-q="sydney rock oysters (a) served natural with verjuice dressing or kilpatrick or mornay">
+          <div class="row"><span class="name">Sydney Rock Oysters (A)</span></div>
+          <p class="desc">served Natural with verjuice dressing or Kilpatrick or Mornay</p><div class="prices"><span class="pp"><span class="pl">Half dozen</span> <b>$36</b></span><span class="pp"><span class="pl">Dozen</span> <b>$72</b></span></div>
+        </li>
+        <li data-q="spring bay mussels (a) in tomato, white wine, chilli, garlic &amp; shallots served with wood fired bread">
+          <div class="row"><span class="name">Spring Bay Mussels (A)</span><span class="price">$38</span></div>
+          <p class="desc">in tomato, white wine, chilli, garlic &amp; shallots served with wood fired bread</p>
+        </li>
+        <li data-q="local octopus bbq&#39;d (a) in a garlic, balsamic glaze">
+          <div class="row"><span class="name">Local Octopus BBQ&#39;d (A)</span><span class="price">$32</span></div>
+          <p class="desc">in a garlic, balsamic glaze</p>
+        </li>
+        <li data-q="salt &amp; pepper squid (a) served with a sweet chilli sauce">
+          <div class="row"><span class="name">Salt &amp; Pepper Squid (A)</span><span class="price">$30</span></div>
+          <p class="desc">served with a sweet chilli sauce</p>
+        </li>
+        <li data-q="arancini balls filled with mushroom and spinach with tomato concasse &amp; grana padano">
+          <div class="row"><span class="name">Arancini Balls filled with Mushroom and Spinach</span><span class="price">$21</span></div>
+          <p class="desc">with tomato concasse &amp; Grana Padano</p>
+        </li>
+        <li data-q="mezze plate for two (a) grilled cypriot haloumi, spinach pastry, keftedes, kefalograviera cheese, dolmades, olives, grilled chorizo, octopus vinaigrette, pickled veg, feta filled peppers and dips with charred pita bread.">
+          <div class="row"><span class="name">Mezze Plate for two (A)</span><span class="price">$39</span></div>
+          <p class="desc">Grilled Cypriot Haloumi, spinach pastry, keftedes, Kefalograviera cheese, dolmades, olives, grilled chorizo, octopus vinaigrette, pickled veg, feta filled peppers and dips with charred pita bread.</p>
+        </li>
+        <li data-q="smoked salmon salad (a) with avocado, capers, spanish onion &amp; vinaigrette">
+          <div class="row"><span class="name">Smoked Salmon Salad (A)</span><span class="price">$24 / $34</span></div>
+          <p class="desc">with avocado, capers, Spanish onion &amp; vinaigrette</p>
+        </li>
+        <li data-q="caesar salad cos, boiled egg, bacon, croutons">
+          <div class="row"><span class="name">Caesar Salad</span><span class="price">$21</span></div>
+          <p class="desc">cos, boiled egg, bacon, croutons</p>
+        </li>
+        <li data-q="caesar salad with grilled chicken added ">
+          <div class="row"><span class="name">Caesar Salad With grilled chicken added</span><span class="price">$30</span></div>
+          
+        </li>
+        <li data-q="greek salad mesclun, tomato, cucumber, capsicum, feta cheese, onion, kalamata olives, vinaigrette.">
+          <div class="row"><span class="name">Greek Salad</span><span class="price">$15 / $23</span></div>
+          <p class="desc">mesclun, tomato, cucumber, capsicum, Feta cheese, onion, Kalamata olives, vinaigrette.</p>
+        </li>
+        <li data-q="chicken, quinoa &amp; haloumi salad with roast pumpkin, pine nuts, rocket &amp; spicy parsley vinaigrette">
+          <div class="row"><span class="name">Chicken, Quinoa &amp; Haloumi Salad</span><span class="price">$30</span></div>
+          <p class="desc">with roast pumpkin, pine nuts, rocket &amp; spicy parsley vinaigrette</p>
+        </li>
+        <li data-q="spanakopita baked silver beet spinach, feta cheese in filo pastry served with greek salad">
+          <div class="row"><span class="name">Spanakopita</span><span class="price">$30</span></div>
+          <p class="desc">baked silver beet spinach, feta cheese in Filo pastry served with Greek salad</p>
+        </li>
+        <li data-q="moussaka baked layers of ground lamb, eggplant, potato, zucchini &amp; topped with béchamel. with greek salad">
+          <div class="row"><span class="name">Moussaka</span><span class="price">$35</span></div>
+          <p class="desc">baked layers of ground lamb, eggplant, potato, zucchini &amp; topped with béchamel. With Greek salad</p>
+        </li>
+        <li data-q="souvlaki skewers bbq&#39;d lamb with capsicum &amp; onion served with pita bread, greek salad &amp; tzatziki">
+          <div class="row"><span class="name">Souvlaki Skewers</span><span class="price">$39</span></div>
+          <p class="desc">BBQ&#39;d Lamb with capsicum &amp; onion served with pita bread, Greek salad &amp; tzatziki</p>
+        </li>
+        <li data-q="penne vegetarian with seasonal greens, garlic, chilli, shallots &amp; creamy neapolitana sauce">
+          <div class="row"><span class="name">Penne Vegetarian</span><span class="price">$23 / $27</span></div>
+          <p class="desc">with seasonal greens, garlic, chilli, shallots &amp; creamy neapolitana sauce</p>
+        </li>
+        <li data-q="spinach &amp; ricotta filled pasta shells with tomato">
+          <div class="row"><span class="name">Spinach &amp; Ricotta filled Pasta Shells</span><span class="price">$30</span></div>
+          <p class="desc">with tomato</p>
+        </li>
+        <li data-q="spaghetti bolognese rich beef ragu in tomato sauce with grated parmesan">
+          <div class="row"><span class="name">Spaghetti Bolognese</span><span class="price">$24 / $30</span></div>
+          <p class="desc">rich beef ragu in tomato sauce with grated parmesan</p>
+        </li>
+        <li data-q="fettuccine boscaiola bacon, mushroom &amp; garlic in white wine and cream sauce">
+          <div class="row"><span class="name">Fettuccine Boscaiola</span><span class="price">$24 / $30</span></div>
+          <p class="desc">bacon, mushroom &amp; garlic in white wine and cream sauce</p>
+        </li>
+        <li data-q="pappardelle chicken mushrooms, shallots, sun dried tomatoes, pesto cream sauce">
+          <div class="row"><span class="name">Pappardelle Chicken</span><span class="price">$25 / $31</span></div>
+          <p class="desc">mushrooms, shallots, sun dried tomatoes, pesto cream sauce</p>
+        </li>
+        <li data-q="prawn, crab &amp; lobster ravioli (m) with saffron, burnt butter, chilli, sun-dried tomatoes and shallots">
+          <div class="row"><span class="name">Prawn, Crab &amp; Lobster Ravioli (M)</span><span class="price">$49</span></div>
+          <p class="desc">with saffron, burnt butter, chilli, sun-dried tomatoes and shallots</p>
+        </li>
+        <li data-q="linguine prawns (a) with chorizo, peas, cherry tomato, chilli and garlic">
+          <div class="row"><span class="name">Linguine Prawns (A)</span><span class="price">$33 / $42</span></div>
+          <p class="desc">with chorizo, peas, cherry tomato, chilli and garlic</p>
+        </li>
+        <li data-q="potato gnocchi with lamb ragu in tomato, truffle oil and shaved grana padana.">
+          <div class="row"><span class="name">Potato Gnocchi</span><span class="price">$34</span></div>
+          <p class="desc">with lamb ragu in tomato, truffle oil and shaved Grana Padana.</p>
+        </li>
+        <li data-q="seafood risotto (a) fresh local seafood with garlic, chilli, white wine &amp; neapolitana sauce">
+          <div class="row"><span class="name">Seafood Risotto (A)</span><span class="price">$48</span></div>
+          <p class="desc">fresh local seafood with garlic, chilli, white wine &amp; Neapolitana sauce</p>
+        </li>
+        <li data-q="fish&#39;n&#39;chips (m) fish fillet in beer batter served with chips and tartare sauce">
+          <div class="row"><span class="name">Fish&#39;n&#39;Chips (M)</span><span class="price">$41</span></div>
+          <p class="desc">fish fillet in beer batter served with chips and Tartare sauce</p>
+        </li>
+        <li data-q="whole snapper (a) grilled with lemon, oregano, olive oil with greek salad and chips">
+          <div class="row"><span class="name">Whole Snapper (A)</span><span class="price">$49</span></div>
+          <p class="desc">grilled with lemon, oregano, olive oil with Greek salad and chips</p>
+        </li>
+        <li data-q="chia seed crusted salmon fillet (a) grilled on roast fennel, green vegetables, lemon butter">
+          <div class="row"><span class="name">Chia Seed Crusted Salmon Fillet (A)</span><span class="price">$46</span></div>
+          <p class="desc">grilled on roast fennel, green vegetables, lemon butter</p>
+        </li>
+        <li data-q="queensland barramundi fillet (a) grilled with parisian butter, potatoes and seasonal vegetables">
+          <div class="row"><span class="name">Queensland Barramundi Fillet (A)</span><span class="price">$46</span></div>
+          <p class="desc">grilled with Parisian butter, potatoes and seasonal vegetables</p>
+        </li>
+        <li data-q="lamb shanks slow cooked in tomato, with mirepoix vegetables and mashed potato.">
+          <div class="row"><span class="name">Lamb Shanks</span><span class="price">$46</span></div>
+          <p class="desc">slow cooked in tomato, with mirepoix vegetables and mashed potato.</p>
+        </li>
+        <li data-q="greek style slow roast lamb shoulder with baked potatoes and chicory.">
+          <div class="row"><span class="name">Greek Style Slow Roast Lamb shoulder</span><span class="price">$42</span></div>
+          <p class="desc">with baked potatoes and chicory.</p>
+        </li>
+        <li data-q="crispy skin pork belly mash, cabbage, apple, jus">
+          <div class="row"><span class="name">Crispy Skin Pork Belly</span><span class="price">$42</span></div>
+          <p class="desc">mash, cabbage, apple, jus</p>
+        </li>
+        <li data-q="moroccan spiced spring chicken butterflied and bbq&#39;d with pita, greek salad and tzatziki">
+          <div class="row"><span class="name">Moroccan Spiced Spring Chicken</span><span class="price">$42</span></div>
+          <p class="desc">butterflied and BBQ&#39;d with pita, Greek salad and tzatziki</p>
+        </li>
+        <li data-q="veal scaloppine with seasonal vegetables, roast chats, jus topped with hollandaise sauce">
+          <div class="row"><span class="name">Veal Scaloppine</span><span class="price">$42</span></div>
+          <p class="desc">with seasonal vegetables, roast chats, jus topped with hollandaise sauce</p>
+        </li>
+        <li data-q="schnitzel veal or chicken panko crumbed with mashed potato &amp; vegetables. *choice of peppercorn or mushroom sauce">
+          <div class="row"><span class="name">Schnitzel</span><span class="price">$40</span></div>
+          <p class="desc">Veal or Chicken panko crumbed with mashed potato &amp; vegetables. *choice of peppercorn or mushroom sauce</p>
+        </li>
+        <li data-q="beef sirloin steak with broccolini, chats, green peppercorn sauce.">
+          <div class="row"><span class="name">Beef Sirloin Steak</span><span class="price">$49</span></div>
+          <p class="desc">with broccolini, chats, green peppercorn sauce.</p>
+        </li></ul>
+    </section>
+    <section id="sides" class="sec">
+      <h2>Sides</h2>
+      
+      <ul>
+        <li data-q="garden salad ">
+          <div class="row"><span class="name">Garden Salad</span><span class="price">$10 / $16</span></div>
+          
+        </li>
+        <li data-q="steamed seasonal vegetables ">
+          <div class="row"><span class="name">Steamed Seasonal Vegetables</span><span class="price">$15</span></div>
+          
+        </li>
+        <li data-q="rocket &amp; parmesan salad ">
+          <div class="row"><span class="name">Rocket &amp; Parmesan Salad</span><span class="price">$15</span></div>
+          
+        </li>
+        <li data-q="roasted chats seasoned with rosemary salt ">
+          <div class="row"><span class="name">Roasted Chats seasoned with rosemary salt</span><span class="price">$15</span></div>
+          
+        </li>
+        <li data-q="potato chips ">
+          <div class="row"><span class="name">Potato Chips</span><span class="price">$13</span></div>
+          
+        </li>
+        <li data-q="kumara chips ">
+          <div class="row"><span class="name">Kumara Chips</span><span class="price">$15</span></div>
+          
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>NO BYO, 15% Public Holiday Surcharge, Sourced; (A) Australian, (I) Imported, (M) Mixed. (Prices online are subject to change without notice)</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Xenos Restaurant.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Xenos Restaurant menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's US$29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for US$29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

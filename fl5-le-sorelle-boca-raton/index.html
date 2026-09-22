@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Le Sorelle Menu</title>
+<meta name="description" content="Menu for Le Sorelle, Downtown Boca Raton (SE Mizner Blvd).">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Le Sorelle</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=507%20SE%20Mizner%20Blvd%2C%20Boca%20Raton%2C%20FL%2033432">507 SE Mizner Blvd, Boca Raton, FL 33432</a><a href="tel:5614305110">(561) 430-5110</a><span>Daily 12:00 PM - 10:00 PM</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#antipasti-terra" data-sec="antipasti-terra">Antipasti Terra</a><a href="#antipasti-mare" data-sec="antipasti-mare">Antipasti Mare</a><a href="#salad" data-sec="salad">Salad</a><a href="#soup" data-sec="soup">Soup</a><a href="#pizze-rosse" data-sec="pizze-rosse">Pizze Rosse</a><a href="#pizze-bianche" data-sec="pizze-bianche">Pizze Bianche</a><a href="#calzoni" data-sec="calzoni">Calzoni</a><a href="#paste-homemade-terra" data-sec="paste-homemade-terra">Paste Homemade Terra</a><a href="#paste-homemade-mare" data-sec="paste-homemade-mare">Paste Homemade Mare</a><a href="#entrees-di-carne" data-sec="entrees-di-carne">Entrees di Carne</a><a href="#steak-in-the-brick-oven" data-sec="steak-in-the-brick-oven">Steak in the Brick Oven</a><a href="#entrees-di-pesce" data-sec="entrees-di-pesce">Entrees di Pesce</a><a href="#sides" data-sec="sides">Sides</a><a href="#beverages" data-sec="beverages">Beverages</a><a href="#beers" data-sec="beers">Beers</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="antipasti-terra" class="sec">
+      <h2>Antipasti Terra</h2>
+      
+      <ul>
+        <li data-q="tagliere (gf) cured meats and parmesan cheese">
+          <div class="row"><span class="name">Tagliere (GF)</span><span class="price">$29</span></div>
+          <p class="desc">Cured meats and parmesan cheese</p>
+        </li>
+        <li data-q="burrata &amp; prosciutto (gf) burratina, prosciutto crudo di parma, arugula and cherry tomatoes">
+          <div class="row"><span class="name">Burrata &amp; Prosciutto (GF)</span><span class="price">$24</span></div>
+          <p class="desc">Burratina, Prosciutto crudo di Parma, arugula and cherry tomatoes</p>
+        </li>
+        <li data-q="eggplant parmigiana (v) eggplant, buffalo mozzarella, tomato sauce, basil, parmesan cheese">
+          <div class="row"><span class="name">Eggplant Parmigiana (V)</span><span class="price">$23</span></div>
+          <p class="desc">Eggplant, Buffalo mozzarella, tomato sauce, basil, parmesan cheese</p>
+        </li>
+        <li data-q="meatball mushroom homemade beef meatball, tomato sauce, shitaki mushroom, parmesan cheese and ricotta">
+          <div class="row"><span class="name">Meatball Mushroom</span><span class="price">$23</span></div>
+          <p class="desc">Homemade beef meatball, tomato sauce, shitaki mushroom, parmesan cheese and ricotta</p>
+        </li>
+        <li data-q="caprese (v) mozzarella di bufala, tomato and basil">
+          <div class="row"><span class="name">Caprese (V)</span><span class="price">$24</span></div>
+          <p class="desc">Mozzarella di Bufala, tomato and basil</p>
+        </li>
+        <li data-q="beef carpaccio sliced beef, arugula, parmesan, evoo">
+          <div class="row"><span class="name">Beef Carpaccio</span><span class="price">$26</span></div>
+          <p class="desc">Sliced beef, arugula, parmesan, EVOO</p>
+        </li></ul>
+    </section>
+    <section id="antipasti-mare" class="sec">
+      <h2>Antipasti Mare</h2>
+      
+      <ul>
+        <li data-q="zuppa di pesce mixed seafood in light red sauce">
+          <div class="row"><span class="name">Zuppa di Pesce</span><span class="price">$32</span></div>
+          <p class="desc">Mixed seafood in light red sauce</p>
+        </li>
+        <li data-q="frittura calamari e gamberi fried calamari, shrimp, zucchini, carrot">
+          <div class="row"><span class="name">Frittura Calamari e Gamberi</span><span class="price">$26</span></div>
+          <p class="desc">Fried calamari, shrimp, zucchini, carrot</p>
+        </li>
+        <li data-q="sautè cozze e vongole (tarantina or impepata) (hot) mussels and clams sautéed, cooked in red sauce or white">
+          <div class="row"><span class="name">Sautè Cozze e Vongole (Tarantina or Impepata) (hot)</span><span class="price">$29</span></div>
+          <p class="desc">Mussels and clams sautéed, cooked in red sauce or white</p>
+        </li>
+        <li data-q="vitello tonnato thinly sliced roasted veal, tuna sauce, capers, arugula">
+          <div class="row"><span class="name">Vitello Tonnato</span><span class="price">$27</span></div>
+          <p class="desc">Thinly sliced roasted veal, tuna sauce, capers, arugula</p>
+        </li>
+        <li data-q="polpo con patate (gf) grilled octopus over baked potatoes, olives, cherry tomato">
+          <div class="row"><span class="name">Polpo con Patate (GF)</span><span class="price">$28</span></div>
+          <p class="desc">Grilled octopus over baked potatoes, olives, cherry tomato</p>
+        </li>
+        <li data-q="insalata di mare (gf) mixed seafood salad">
+          <div class="row"><span class="name">Insalata di Mare (GF)</span><span class="price">$24</span></div>
+          <p class="desc">Mixed seafood salad</p>
+        </li></ul>
+    </section>
+    <section id="salad" class="sec">
+      <h2>Salad</h2>
+      
+      <ul>
+        <li data-q="caesar salad romaine lettuce, croutons, parmesan, caesar dressing (add chicken $5, add shrimp $7)">
+          <div class="row"><span class="name">Caesar Salad</span><span class="price">$15</span></div>
+          <p class="desc">Romaine lettuce, croutons, parmesan, caesar dressing (Add chicken $5, add shrimp $7)</p>
+        </li>
+        <li data-q="tropical (gf) green mixed salad, mango, cucumber, feta cheese, cherry tomatoes, evoo">
+          <div class="row"><span class="name">Tropical (GF)</span><span class="price">$18</span></div>
+          <p class="desc">Green mixed salad, mango, cucumber, feta cheese, cherry tomatoes, EVOO</p>
+        </li>
+        <li data-q="le sorelle lettuce, radicchio, arugula, black olives, cherry tomatoes, mozzarella di bufala, boiled eggs, parmigiano reggiano">
+          <div class="row"><span class="name">Le Sorelle</span><span class="price">$17</span></div>
+          <p class="desc">Lettuce, radicchio, arugula, black olives, cherry tomatoes, mozzarella di bufala, boiled eggs, parmigiano reggiano</p>
+        </li>
+        <li data-q="beet salad beet, romaine lettuce, cherry tomatoes, onion and fennel">
+          <div class="row"><span class="name">Beet Salad</span><span class="price">$18</span></div>
+          <p class="desc">Beet, romaine lettuce, cherry tomatoes, onion and fennel</p>
+        </li></ul>
+    </section>
+    <section id="soup" class="sec">
+      <h2>Soup</h2>
+      
+      <ul>
+        <li data-q="pasta e fagioli classic italian soup made primarily with pasta and beans">
+          <div class="row"><span class="name">Pasta e Fagioli</span><span class="price">$15</span></div>
+          <p class="desc">Classic Italian soup made primarily with pasta and beans</p>
+        </li>
+        <li data-q="zuppa di lenticchie classic italian lentil soup">
+          <div class="row"><span class="name">Zuppa di Lenticchie</span><span class="price">$15</span></div>
+          <p class="desc">Classic Italian lentil soup</p>
+        </li></ul>
+    </section>
+    <section id="pizze-rosse" class="sec">
+      <h2>Pizze Rosse</h2>
+      <p class="note">Cauliflower pizza (gluten free) +$6</p>
+      <ul>
+        <li data-q="margherita (v) dop san marzano tomato sauce, mozzarella and basil">
+          <div class="row"><span class="name">Margherita (V)</span><span class="price">$20</span></div>
+          <p class="desc">DOP San Marzano tomato sauce, mozzarella and basil</p>
+        </li>
+        <li data-q="marinara (vegan) dop san marzano tomato sauce, garlic, oregano and basil">
+          <div class="row"><span class="name">Marinara (Vegan)</span><span class="price">$18</span></div>
+          <p class="desc">DOP San Marzano tomato sauce, garlic, oregano and basil</p>
+        </li>
+        <li data-q="diavola (hot) dop san marzano tomato sauce, calabrese soppressata spicy salami, mozzarella, basil">
+          <div class="row"><span class="name">Diavola (hot)</span><span class="price">$23</span></div>
+          <p class="desc">DOP San Marzano tomato sauce, Calabrese soppressata spicy salami, mozzarella, basil</p>
+        </li>
+        <li data-q="capricciosa dop san marzano tomato sauce, mozzarella, artichoke, mushroom, olives, ham">
+          <div class="row"><span class="name">Capricciosa</span><span class="price">$28</span></div>
+          <p class="desc">DOP San Marzano tomato sauce, mozzarella, artichoke, mushroom, olives, ham</p>
+        </li></ul>
+    </section>
+    <section id="pizze-bianche" class="sec">
+      <h2>Pizze Bianche</h2>
+      <p class="note">Cauliflower pizza (gluten free) +$6</p>
+      <ul>
+        <li data-q="le sorelle mozzarella, arugula, prosciutto di parma, cherry tomatoes, shaved parmesan">
+          <div class="row"><span class="name">Le Sorelle</span><span class="price">$27</span></div>
+          <p class="desc">Mozzarella, arugula, Prosciutto di Parma, cherry tomatoes, shaved parmesan</p>
+        </li>
+        <li data-q="quattro formaggi (v) mozzarella di bufala, fiordilatte, pecorino romano, parmigiano reggiano">
+          <div class="row"><span class="name">Quattro Formaggi (V)</span><span class="price">$22</span></div>
+          <p class="desc">Mozzarella di Bufala, Fiordilatte, Pecorino Romano, Parmigiano Reggiano</p>
+        </li>
+        <li data-q="salsiccia e broccoli mozzarella, italian sausage, broccoli rapini">
+          <div class="row"><span class="name">Salsiccia e Broccoli</span><span class="price">$25</span></div>
+          <p class="desc">Mozzarella, Italian sausage, broccoli rapini</p>
+        </li>
+        <li data-q="funghi porcini mozzarella, funghi porcini">
+          <div class="row"><span class="name">Funghi Porcini</span><span class="price">$29</span></div>
+          <p class="desc">Mozzarella, funghi porcini</p>
+        </li>
+        <li data-q="vegetariana (red or white) all vegetables of the day, d.o.p san marzano, mozzarella">
+          <div class="row"><span class="name">Vegetariana (Red or White)</span><span class="price">$24</span></div>
+          <p class="desc">All vegetables of the day, D.O.P San Marzano, mozzarella</p>
+        </li></ul>
+    </section>
+    <section id="calzoni" class="sec">
+      <h2>Calzoni</h2>
+      
+      <ul>
+        <li data-q="classico dop san marzano tomato sauce, ricotta cheese, mozzarella, ham">
+          <div class="row"><span class="name">Classico</span><span class="price">$30</span></div>
+          <p class="desc">DOP San Marzano tomato sauce, ricotta cheese, mozzarella, ham</p>
+        </li>
+        <li data-q="fritto fried calzone with mozzarella, ricotta cheese, spicy salami, black pepper">
+          <div class="row"><span class="name">Fritto</span><span class="price">$32</span></div>
+          <p class="desc">Fried calzone with mozzarella, ricotta cheese, spicy salami, black pepper</p>
+        </li></ul>
+    </section>
+    <section id="paste-homemade-terra" class="sec">
+      <h2>Paste Homemade Terra</h2>
+      
+      <ul>
+        <li data-q="fettuccine alla bolognese homemade fettuccine with beef ragù bolognese sauce">
+          <div class="row"><span class="name">Fettuccine alla Bolognese</span><span class="price">$30</span></div>
+          <p class="desc">Homemade fettuccine with beef ragù Bolognese sauce</p>
+        </li>
+        <li data-q="lasagna homemade pasta lasagna with beef ragù bolognese sauce, mozzarella di bufala, besciamella and grated parmigiano">
+          <div class="row"><span class="name">Lasagna</span><span class="price">$30</span></div>
+          <p class="desc">Homemade pasta lasagna with beef ragù Bolognese sauce, Mozzarella di Bufala, besciamella and grated Parmigiano</p>
+        </li>
+        <li data-q="fettuccine alla carbonara homemade fettuccine prepared with guanciale, eggs and pecorino romano cheese, salt pepper">
+          <div class="row"><span class="name">Fettuccine alla Carbonara</span><span class="price">$30</span></div>
+          <p class="desc">Homemade fettuccine prepared with guanciale, eggs and Pecorino Romano cheese, salt pepper</p>
+        </li>
+        <li data-q="fiocchetti 4 formaggi e pera fresh pasta fiocchetti stuffed with pear and gorgonzola, with 4 cheese sauce (gorgonzola dolce, pecorino, parmigiano reggiano), topped with prosciutto and pear slices">
+          <div class="row"><span class="name">Fiocchetti 4 Formaggi e Pera</span><span class="price">$39</span></div>
+          <p class="desc">Fresh pasta fiocchetti stuffed with pear and Gorgonzola, with 4 cheese sauce (Gorgonzola Dolce, Pecorino, Parmigiano Reggiano), topped with Prosciutto and pear slices</p>
+        </li>
+        <li data-q="strozzapreti all&#39;amatriciana homemade strozzapreti prepared with pomodori pelati san marzano sauce, cherry tomatoes, pecorino romano and guanciale">
+          <div class="row"><span class="name">Strozzapreti all&#39;Amatriciana</span><span class="price">$33</span></div>
+          <p class="desc">Homemade strozzapreti prepared with Pomodori Pelati San Marzano sauce, cherry tomatoes, Pecorino Romano and guanciale</p>
+        </li>
+        <li data-q="orecchiette broccoli e salsiccia homemade orecchiette cooked with sausage, broccoli rabe, and parmesan cheese">
+          <div class="row"><span class="name">Orecchiette Broccoli e Salsiccia</span><span class="price">$32</span></div>
+          <p class="desc">Homemade orecchiette cooked with sausage, broccoli rabe, and parmesan cheese</p>
+        </li></ul>
+    </section>
+    <section id="paste-homemade-mare" class="sec">
+      <h2>Paste Homemade Mare</h2>
+      
+      <ul>
+        <li data-q="linguine le sorelle homemade linguine with pomodori, calamari, shrimps, mussels and clams and a king prawn">
+          <div class="row"><span class="name">Linguine Le Sorelle</span><span class="price">$49</span></div>
+          <p class="desc">Homemade linguine with pomodori, calamari, shrimps, mussels and clams and a king prawn</p>
+        </li>
+        <li data-q="risotto le sorelle with pomodori, calamari, shrimps, mussels and clams and a king prawn">
+          <div class="row"><span class="name">Risotto Le Sorelle</span><span class="price">$49</span></div>
+          <p class="desc">With pomodori, calamari, shrimps, mussels and clams and a king prawn</p>
+        </li>
+        <li data-q="linguine vongole in white or red sauce homemade linguine prepared with fresh clams, cooked in red sauce or white">
+          <div class="row"><span class="name">Linguine Vongole in White or Red Sauce</span><span class="price">$36</span></div>
+          <p class="desc">Homemade linguine prepared with fresh clams, cooked in red sauce or white</p>
+        </li>
+        <li data-q="gnocchi pesto e gamberi homemade gnocchi di ricotta, with shrimps and fresh pesto genovese">
+          <div class="row"><span class="name">Gnocchi Pesto e Gamberi</span><span class="price">$36</span></div>
+          <p class="desc">Homemade gnocchi di ricotta, with shrimps and fresh Pesto Genovese</p>
+        </li>
+        <li data-q="strozzapreti gamberi e calamari homemade strozzapreti with shrimps and calamari, zucchini, cherry tomatoes">
+          <div class="row"><span class="name">Strozzapreti Gamberi e Calamari</span><span class="price">$36</span></div>
+          <p class="desc">Homemade strozzapreti with shrimps and calamari, zucchini, cherry tomatoes</p>
+        </li>
+        <li data-q="linguine luigi homemade linguine with 2 king prawns cooked in garlic and oil">
+          <div class="row"><span class="name">Linguine Luigi</span><span class="price">$49</span></div>
+          <p class="desc">Homemade linguine with 2 king prawns cooked in garlic and oil</p>
+        </li>
+        <li data-q="spaghetti pomodoro spaghetti with fresh cherry tomatoes, olive oil, garlic and basil">
+          <div class="row"><span class="name">Spaghetti Pomodoro</span><span class="price">$29</span></div>
+          <p class="desc">Spaghetti with fresh cherry tomatoes, olive oil, garlic and basil</p>
+        </li></ul>
+    </section>
+    <section id="entrees-di-carne" class="sec">
+      <h2>Entrees di Carne</h2>
+      
+      <ul>
+        <li data-q="chicken parmigiana tender chicken breast pounded, breaded and fried thin with mozzarella, parmesan cheese, and tomato sauce">
+          <div class="row"><span class="name">Chicken Parmigiana</span><span class="price">$35</span></div>
+          <p class="desc">Tender chicken breast pounded, breaded and fried thin with mozzarella, parmesan cheese, and tomato sauce</p>
+        </li>
+        <li data-q="chicken milanese tender chicken breast pounded, breaded and fried, served with cherry tomato, arugula and shaved parmesan">
+          <div class="row"><span class="name">Chicken Milanese</span><span class="price">$35</span></div>
+          <p class="desc">Tender chicken breast pounded, breaded and fried, served with cherry tomato, arugula and shaved parmesan</p>
+        </li>
+        <li data-q="veal parmigiana tender veal pounded, breaded and fried thin with mozzarella, parmesan, and tomato sauce">
+          <div class="row"><span class="name">Veal Parmigiana</span><span class="price">$39</span></div>
+          <p class="desc">Tender veal pounded, breaded and fried thin with mozzarella, parmesan, and tomato sauce</p>
+        </li>
+        <li data-q="veal milanese tender veal pounded, breaded and fried, served with cherry tomato, arugula and shaved parmesan">
+          <div class="row"><span class="name">Veal Milanese</span><span class="price">$39</span></div>
+          <p class="desc">Tender veal pounded, breaded and fried, served with cherry tomato, arugula and shaved parmesan</p>
+        </li></ul>
+    </section>
+    <section id="steak-in-the-brick-oven" class="sec">
+      <h2>Steak in the Brick Oven</h2>
+      <p class="note">Premium 100% grass-fed certified Black Angus American beef. Served with broccoli or roast potatoes.</p>
+      <ul>
+        <li data-q="braciola di manzo sliced ribeye steak stuffed with broccoli rabe, prosciutto san daniele, parmesan cheese and mozzarella">
+          <div class="row"><span class="name">Braciola di Manzo</span><span class="price">$69</span></div>
+          <p class="desc">Sliced ribeye steak stuffed with broccoli rabe, prosciutto San Daniele, parmesan cheese and mozzarella</p>
+        </li>
+        <li data-q="veal chop 16oz ">
+          <div class="row"><span class="name">Veal Chop 16oz</span><span class="price">$69</span></div>
+          
+        </li>
+        <li data-q="tomahawk 32oz ">
+          <div class="row"><span class="name">Tomahawk 32oz</span><span class="price">$149</span></div>
+          
+        </li>
+        <li data-q="ribeye wagyu 30oz ">
+          <div class="row"><span class="name">Ribeye Wagyu 30oz</span><span class="price">$199</span></div>
+          
+        </li>
+        <li data-q="ribeye steak 16oz ">
+          <div class="row"><span class="name">Ribeye Steak 16oz</span><span class="price">$79</span></div>
+          
+        </li>
+        <li data-q="new york steak 14oz ">
+          <div class="row"><span class="name">New York Steak 14oz</span><span class="price">$69</span></div>
+          
+        </li>
+        <li data-q="filet mignon 8oz ">
+          <div class="row"><span class="name">Filet Mignon 8oz</span><span class="price">$69</span></div>
+          
+        </li>
+        <li data-q="fiorentina 48oz for two people">
+          <div class="row"><span class="name">Fiorentina 48oz</span><span class="price">$169</span></div>
+          <p class="desc">For two people</p>
+        </li></ul>
+    </section>
+    <section id="entrees-di-pesce" class="sec">
+      <h2>Entrees di Pesce</h2>
+      
+      <ul>
+        <li data-q="branzino al sale fresh branzino cooked in a brick oven under rock salt">
+          <div class="row"><span class="name">Branzino al Sale</span><span class="price">$69</span></div>
+          <p class="desc">Fresh branzino cooked in a brick oven under rock salt</p>
+        </li>
+        <li data-q="branzino alla griglia (gf) grilled fresh branzino topped with grated bread">
+          <div class="row"><span class="name">Branzino alla Griglia (GF)</span><span class="price">$65</span></div>
+          <p class="desc">Grilled fresh branzino topped with grated bread</p>
+        </li>
+        <li data-q="gamberoni al forno (gf) shrimp salt pepper: 4 king prawn shrimp cooked in brick oven with garlic and parsley in white lemon sauce, served with mixed salad">
+          <div class="row"><span class="name">Gamberoni al Forno (GF)</span><span class="price">$59</span></div>
+          <p class="desc">Shrimp salt pepper: 4 king prawn shrimp cooked in brick oven with garlic and parsley in white lemon sauce, served with mixed salad</p>
+        </li>
+        <li data-q="salmone (gf) salmon baked in a brick oven served with broccoli in lemon sauce, salt pepper">
+          <div class="row"><span class="name">Salmone (GF)</span><span class="price">$49</span></div>
+          <p class="desc">Salmon baked in a brick oven served with broccoli in lemon sauce, salt pepper</p>
+        </li></ul>
+    </section>
+    <section id="sides" class="sec">
+      <h2>Sides</h2>
+      <p class="note">All sides vegetarian, vegan and gluten free</p>
+      <ul>
+        <li data-q="patate al forno fresh potatoes baked with olio extravergine di oliva, black pepper, salt, rosemary">
+          <div class="row"><span class="name">Patate al Forno</span><span class="price">$14</span></div>
+          <p class="desc">Fresh potatoes baked with olio extravergine di oliva, black pepper, salt, rosemary</p>
+        </li>
+        <li data-q="broccoli rabe fresh broccoli sautéed in a pan with olio extravergine di oliva, garlic, salt, and black pepper">
+          <div class="row"><span class="name">Broccoli Rabe</span><span class="price">$14</span></div>
+          <p class="desc">Fresh broccoli sautéed in a pan with olio extravergine di oliva, garlic, salt, and black pepper</p>
+        </li>
+        <li data-q="broccoli ripassati ">
+          <div class="row"><span class="name">Broccoli Ripassati</span><span class="price">$14</span></div>
+          
+        </li>
+        <li data-q="mix mushroom ">
+          <div class="row"><span class="name">Mix Mushroom</span><span class="price">$14</span></div>
+          
+        </li>
+        <li data-q="spinaci spinach sautéed in a pan with olio extravergine di oliva, garlic, salt and black pepper">
+          <div class="row"><span class="name">Spinaci</span><span class="price">$14</span></div>
+          <p class="desc">Spinach sautéed in a pan with olio extravergine di oliva, garlic, salt and black pepper</p>
+        </li>
+        <li data-q="melanzane e zucchine alla griglia fresh zucchini and eggplant cut and grilled, served with olio extravergine di oliva, salt, and black pepper">
+          <div class="row"><span class="name">Melanzane e Zucchine alla Griglia</span><span class="price">$14</span></div>
+          <p class="desc">Fresh zucchini and eggplant cut and grilled, served with olio extravergine di oliva, salt, and black pepper</p>
+        </li></ul>
+    </section>
+    <section id="beverages" class="sec">
+      <h2>Beverages</h2>
+      
+      <ul>
+        <li data-q="acqua panna bottle 1 liter">
+          <div class="row"><span class="name">Acqua Panna</span><span class="price">$8</span></div>
+          <p class="desc">Bottle 1 liter</p>
+        </li>
+        <li data-q="acqua san pellegrino bottle 1 liter">
+          <div class="row"><span class="name">Acqua San Pellegrino</span><span class="price">$8</span></div>
+          <p class="desc">Bottle 1 liter</p>
+        </li>
+        <li data-q="coca cola can 330 ml">
+          <div class="row"><span class="name">Coca Cola</span><span class="price">$3</span></div>
+          <p class="desc">Can 330 ml</p>
+        </li>
+        <li data-q="coca cola light can 330 ml">
+          <div class="row"><span class="name">Coca Cola Light</span><span class="price">$3</span></div>
+          <p class="desc">Can 330 ml</p>
+        </li>
+        <li data-q="sprite can 330 ml">
+          <div class="row"><span class="name">Sprite</span><span class="price">$3</span></div>
+          <p class="desc">Can 330 ml</p>
+        </li>
+        <li data-q="lemonade glass">
+          <div class="row"><span class="name">Lemonade</span><span class="price">$4</span></div>
+          <p class="desc">Glass</p>
+        </li>
+        <li data-q="ice tea glass">
+          <div class="row"><span class="name">Ice Tea</span><span class="price">$4</span></div>
+          <p class="desc">Glass</p>
+        </li>
+        <li data-q="tea ">
+          <div class="row"><span class="name">Tea</span><span class="price">$3</span></div>
+          
+        </li>
+        <li data-q="caffè espresso ">
+          <div class="row"><span class="name">Caffè Espresso</span><span class="price">$3</span></div>
+          
+        </li>
+        <li data-q="cappuccino ">
+          <div class="row"><span class="name">Cappuccino</span><span class="price">$4</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="beers" class="sec">
+      <h2>Beers</h2>
+      
+      <ul>
+        <li data-q="heineken ">
+          <div class="row"><span class="name">Heineken</span><span class="price">$8</span></div>
+          
+        </li>
+        <li data-q="peroni ">
+          <div class="row"><span class="name">Peroni</span><span class="price">$8</span></div>
+          
+        </li>
+        <li data-q="miller light ">
+          <div class="row"><span class="name">Miller Light</span><span class="price">$8</span></div>
+          
+        </li>
+        <li data-q="viola ">
+          <div class="row"><span class="name">Viola</span><span class="price">$14</span></div>
+          
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>Prices reflect cash payments; credit card payments include an additional processing fee reflected on your receipt. 20% gratuity added for parties of 6 and over. Corkage fee $40 per bottle. Le Sorelle also at 20 SE 5th Avenue, Delray Beach and 6020 N Federal Highway, Boca Raton.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Le Sorelle.</strong> Not the official menu. Copied from their public menu on 2026-09-22. This preview expires October 6.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Le Sorelle menu preview was free to look at until October 6. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-06T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Creedmoor Cafe Menu</title>
+<meta name="description" content="Menu for Creedmoor Cafe, North Raleigh (Creedmoor Road).">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Creedmoor Cafe</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=8315%20Creedmoor%20Road%2C%20Raleigh%2C%20NC%2027613">8315 Creedmoor Road, Raleigh, NC 27613</a><a href="tel:9198484808">(919) 848-4808</a><span>Tuesday-Sunday 7:00 AM - 2:00 PM; Monday closed</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#breakfast-sandwiches" data-sec="breakfast-sandwiches">Breakfast Sandwiches</a><a href="#breakfast-platters" data-sec="breakfast-platters">Breakfast Platters</a><a href="#pancakes-waffles" data-sec="pancakes-waffles">Pancakes &amp; Waffles</a><a href="#create-your-own-omelette" data-sec="create-your-own-omelette">Create Your Own Omelette</a><a href="#omelette-lover" data-sec="omelette-lover">Omelette Lover</a><a href="#side-orders" data-sec="side-orders">Side Orders</a><a href="#burger-corner" data-sec="burger-corner">Burger Corner</a><a href="#salads" data-sec="salads">Salads</a><a href="#wraps" data-sec="wraps">Wraps</a><a href="#club-sandwiches" data-sec="club-sandwiches">Club Sandwiches</a><a href="#specialty-sandwiches" data-sec="specialty-sandwiches">Specialty Sandwiches</a><a href="#drinks" data-sec="drinks">Drinks</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="breakfast-sandwiches" class="sec">
+      <h2>Breakfast Sandwiches</h2>
+      
+      <ul>
+        <li data-q="breakfast on a roll two fried eggs on a hard roll with melted american cheese and your choice of grilled ham, bacon or sausage">
+          <div class="row"><span class="name">Breakfast on a Roll</span><span class="price">$10.50</span></div>
+          <p class="desc">Two fried eggs on a hard roll with melted American cheese and your choice of grilled ham, bacon or sausage</p>
+        </li>
+        <li data-q="alex muffin two fried eggs on an english muffin with sliced canadian bacon and melted american cheese">
+          <div class="row"><span class="name">Alex Muffin</span><span class="price">$10.99</span></div>
+          <p class="desc">Two fried eggs on an English muffin with sliced Canadian bacon and melted American cheese</p>
+        </li>
+        <li data-q="western egg sandwich two egg omelette with ham, peppers and onions on your choice of bread">
+          <div class="row"><span class="name">Western Egg Sandwich</span><span class="price">$10.50</span></div>
+          <p class="desc">Two egg omelette with ham, peppers and onions on your choice of bread</p>
+        </li>
+        <li data-q="eggs benedict homemade hollandaise sauce over two poached eggs on an english muffin with sliced canadian bacon and served with home fries">
+          <div class="row"><span class="name">Eggs Benedict</span><span class="price">$11.99</span></div>
+          <p class="desc">Homemade hollandaise sauce over two poached eggs on an English muffin with sliced Canadian bacon and Served with Home Fries</p>
+        </li>
+        <li data-q="egg &amp; cheese sandwich two egg (fried or scambled) with american cheese sandwich on your choice of bread">
+          <div class="row"><span class="name">Egg &amp; Cheese Sandwich</span><span class="price">$7.99</span></div>
+          <p class="desc">Two egg (fried or scambled) with American cheese sandwich on your choice of bread</p>
+        </li></ul>
+    </section>
+    <section id="breakfast-platters" class="sec">
+      <h2>Breakfast Platters</h2>
+      <p class="note">Served with home fries and choice of toast. Egg Whites: An extra $1.99 is added to the price for egg whites as an extra egg is added to make up the volume.</p>
+      <ul>
+        <li data-q="2 eggs* (any style) ">
+          <div class="row"><span class="name">2 Eggs* (any style)</span><span class="price">$9.00</span></div>
+          
+        </li>
+        <li data-q="2 eggs* with choice of: sausage, ham or bacon ">
+          <div class="row"><span class="name">2 Eggs* with choice of: Sausage, Ham or Bacon</span><span class="price">$10.49</span></div>
+          
+        </li>
+        <li data-q="2 eggs* with flat iron steak (8oz.) ">
+          <div class="row"><span class="name">2 Eggs* with Flat Iron Steak (8oz.)</span><span class="price">$18.49</span></div>
+          
+        </li>
+        <li data-q="2 eggs* with country ham steak (8oz.) ">
+          <div class="row"><span class="name">2 Eggs* with Country Ham Steak (8oz.)</span><span class="price">$12.49</span></div>
+          
+        </li>
+        <li data-q="big combo breakfast two pancakes or two slices of french toast or a belgian waffle served with two eggs* any style with sausage, bacon or ham">
+          <div class="row"><span class="name">Big Combo Breakfast</span><span class="price">$13.99</span></div>
+          <p class="desc">Two pancakes or two slices of French Toast or a Belgian Waffle served with two eggs* any style with sausage, bacon or ham</p>
+        </li></ul>
+    </section>
+    <section id="pancakes-waffles" class="sec">
+      <h2>Pancakes &amp; Waffles</h2>
+      <p class="note">With banana, chocolate chips, blueberry or walnuts $1.49 extra</p>
+      <ul>
+        <li data-q="belgian waffle ">
+          <div class="row"><span class="name">Belgian Waffle</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Plain</span> <b>$8.50</b></span><span class="pp"><span class="pl">With choice of sausage, ham or bacon</span> <b>$9.99</b></span></div>
+        </li>
+        <li data-q="full stack of pancakes ">
+          <div class="row"><span class="name">Full Stack of Pancakes</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Plain</span> <b>$8.99</b></span><span class="pp"><span class="pl">With choice of sausage, ham or bacon</span> <b>$10.50</b></span></div>
+        </li>
+        <li data-q="short stack of pancakes (2) ">
+          <div class="row"><span class="name">Short Stack of Pancakes (2)</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Plain</span> <b>$7.99</b></span><span class="pp"><span class="pl">With choice of sausage, ham or bacon</span> <b>$9.50</b></span></div>
+        </li>
+        <li data-q="challah bread french toast ">
+          <div class="row"><span class="name">Challah Bread French Toast</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Plain</span> <b>$11.99</b></span><span class="pp"><span class="pl">With choice of sausage, ham or bacon</span> <b>$13.50</b></span></div>
+        </li>
+        <li data-q="chicken &amp; waffles served with chicken tenders and sweet and spicy honey dressing">
+          <div class="row"><span class="name">Chicken &amp; Waffles</span><span class="price">$13.50</span></div>
+          <p class="desc">Served with chicken tenders and sweet and spicy honey dressing</p>
+        </li></ul>
+    </section>
+    <section id="create-your-own-omelette" class="sec">
+      <h2>Create Your Own Omelette</h2>
+      <p class="note">All omelettes are prepared with 3 eggs and served with home fries and choice of toast. Add any of the following: Feta Cheese, American Cheese, Mozzarella Cheese, Cheddar Cheese, Ham, Bacon, Sausage, Tomatoes, Jalapeños, Spinach, Mushrooms, Broccoli, Onions, Peppers. First filling at no charge, each additional filling add an extra $1.00 to the price.</p>
+      <ul>
+        <li data-q="3 egg omelette your way ">
+          <div class="row"><span class="name">3 Egg Omelette Your Way</span><span class="price">$10.50</span></div>
+          
+        </li>
+        <li data-q="buffalo chicken omelette grilled onions, crumbled bleu cheese and our buffalo chicken tenders folded in to our three egg omelette. finished with a drizzle of buffalo sauce">
+          <div class="row"><span class="name">Buffalo Chicken Omelette</span><span class="price">$12.50</span></div>
+          <p class="desc">Grilled onions, crumbled bleu cheese and our buffalo chicken tenders folded in to our three egg omelette. Finished with a drizzle of buffalo sauce</p>
+        </li>
+        <li data-q="greeks fries our golden browned fries topped with lemon juice, feta cheese and oregano">
+          <div class="row"><span class="name">Greeks Fries</span></div>
+          <p class="desc">Our golden browned fries topped with lemon juice, feta cheese and oregano</p><div class="prices"><span class="pp"><span class="pl">Small</span> <b>$5.99</b></span><span class="pp"><span class="pl">Large</span> <b>$7.99</b></span></div>
+        </li></ul>
+    </section>
+    <section id="omelette-lover" class="sec">
+      <h2>Omelette Lover</h2>
+      <p class="note">All omelettes are prepared with 3 eggs and served with home fries and choice of toast</p>
+      <ul>
+        <li data-q="chicken &amp; tomato omelette fresh chicken breast and tomato">
+          <div class="row"><span class="name">Chicken &amp; Tomato Omelette</span><span class="price">$12.50</span></div>
+          <p class="desc">Fresh chicken breast and tomato</p>
+        </li>
+        <li data-q="combination omelette onions, peppers, ham, bacon and american cheese mixed together">
+          <div class="row"><span class="name">Combination Omelette</span><span class="price">$13.50</span></div>
+          <p class="desc">Onions, peppers, ham, bacon and American cheese mixed together</p>
+        </li>
+        <li data-q="western omelette onions, peppers and ham">
+          <div class="row"><span class="name">Western Omelette</span><span class="price">$10.50</span></div>
+          <p class="desc">Onions, peppers and ham</p>
+        </li>
+        <li data-q="veggie omelette mushrooms, onions, tomatoes and peppers">
+          <div class="row"><span class="name">Veggie Omelette</span><span class="price">$11.50</span></div>
+          <p class="desc">Mushrooms, onions, tomatoes and peppers</p>
+        </li>
+        <li data-q="athenian omelette spinach, feta cheese, and onions">
+          <div class="row"><span class="name">Athenian Omelette</span><span class="price">$10.99</span></div>
+          <p class="desc">Spinach, feta cheese, and onions</p>
+        </li>
+        <li data-q="nova scotia lox omelette fresh nova scotia lox and spanish onions">
+          <div class="row"><span class="name">Nova Scotia Lox Omelette</span><span class="price">$12.99</span></div>
+          <p class="desc">Fresh Nova Scotia Lox and Spanish onions</p>
+        </li>
+        <li data-q="beef gyro omelette our 3 egg omelet made with our beef gyro meat, onions, tomatoes and feta cheese served with a side of tzatziki sauce">
+          <div class="row"><span class="name">Beef Gyro Omelette</span><span class="price">$12.50</span></div>
+          <p class="desc">Our 3 egg omelet made with our beef gyro meat, onions, tomatoes and feta cheese served with a side of tzatziki sauce</p>
+        </li>
+        <li data-q="jalapeno popper omelette jalapenos, onions, bacon, cheddar cheese and cream cheese">
+          <div class="row"><span class="name">Jalapeno Popper Omelette</span><span class="price">$13.99</span></div>
+          <p class="desc">Jalapenos, onions, bacon, cheddar cheese and cream cheese</p>
+        </li></ul>
+    </section>
+    <section id="side-orders" class="sec">
+      <h2>Side Orders</h2>
+      
+      <ul>
+        <li data-q="bacon ">
+          <div class="row"><span class="name">Bacon</span><span class="price">$3.99</span></div>
+          
+        </li>
+        <li data-q="sausage links (2) ">
+          <div class="row"><span class="name">Sausage Links (2)</span><span class="price">$3.25</span></div>
+          
+        </li>
+        <li data-q="susage patties ">
+          <div class="row"><span class="name">Susage Patties</span><span class="price">$2.99</span></div>
+          
+        </li>
+        <li data-q="turkey sausage patties (1) ">
+          <div class="row"><span class="name">Turkey Sausage Patties (1)</span><span class="price">$2.99</span></div>
+          
+        </li>
+        <li data-q="ham ">
+          <div class="row"><span class="name">Ham</span><span class="price">$3.25</span></div>
+          
+        </li>
+        <li data-q="canadian bacon ">
+          <div class="row"><span class="name">Canadian Bacon</span><span class="price">$2.99</span></div>
+          
+        </li>
+        <li data-q="corned beef hash ">
+          <div class="row"><span class="name">Corned Beef Hash</span><span class="price">$4.99</span></div>
+          
+        </li>
+        <li data-q="regular grits ">
+          <div class="row"><span class="name">Regular Grits</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Small</span> <b>$2.75</b></span><span class="pp"><span class="pl">Large</span> <b>$3.75</b></span></div>
+        </li>
+        <li data-q="cheesy grits ">
+          <div class="row"><span class="name">Cheesy Grits</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Small</span> <b>$3.50</b></span><span class="pp"><span class="pl">Large</span> <b>$4.25</b></span></div>
+        </li>
+        <li data-q="baklava (small) ">
+          <div class="row"><span class="name">Baklava (small)</span><span class="price">$3.99</span></div>
+          
+        </li>
+        <li data-q="baklava (large) ">
+          <div class="row"><span class="name">Baklava (large)</span><span class="price">$4.99</span></div>
+          
+        </li>
+        <li data-q="stuffed grape leaves (4) ">
+          <div class="row"><span class="name">Stuffed Grape Leaves (4)</span><span class="price">$3.99</span></div>
+          
+        </li>
+        <li data-q="coleslaw ">
+          <div class="row"><span class="name">Coleslaw</span><span class="price">$2.50</span></div>
+          
+        </li>
+        <li data-q="side of salsa ">
+          <div class="row"><span class="name">Side of Salsa</span><span class="price">$1.50</span></div>
+          
+        </li>
+        <li data-q="side salad ">
+          <div class="row"><span class="name">Side Salad</span><span class="price">$4.50</span></div>
+          
+        </li>
+        <li data-q="side sour cream ">
+          <div class="row"><span class="name">Side Sour Cream</span><span class="price">$0.75</span></div>
+          
+        </li>
+        <li data-q="bagel ">
+          <div class="row"><span class="name">Bagel</span><span class="price">$2.99</span></div>
+          
+        </li>
+        <li data-q="bagel with cream cheese ">
+          <div class="row"><span class="name">Bagel with Cream Cheese</span><span class="price">$3.75</span></div>
+          
+        </li>
+        <li data-q="toast ">
+          <div class="row"><span class="name">Toast</span><span class="price">$1.69</span></div>
+          
+        </li>
+        <li data-q="english muffin ">
+          <div class="row"><span class="name">English Muffin</span><span class="price">$2.25</span></div>
+          
+        </li>
+        <li data-q="pita bread ">
+          <div class="row"><span class="name">Pita Bread</span><span class="price">$1.99</span></div>
+          
+        </li>
+        <li data-q="gluten free toast ">
+          <div class="row"><span class="name">Gluten Free Toast</span><span class="price">$3.25</span></div>
+          
+        </li>
+        <li data-q="home fries ">
+          <div class="row"><span class="name">Home Fries</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Small</span> <b>$2.99</b></span><span class="pp"><span class="pl">Large</span> <b>$4.99</b></span></div>
+        </li>
+        <li data-q="french fries ">
+          <div class="row"><span class="name">French Fries</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Small</span> <b>$3.75</b></span><span class="pp"><span class="pl">Large</span> <b>$4.74</b></span></div>
+        </li>
+        <li data-q="onion rings (small) ">
+          <div class="row"><span class="name">Onion Rings (small)</span><span class="price">$3.99</span></div>
+          
+        </li>
+        <li data-q="onion rings (large) ">
+          <div class="row"><span class="name">Onion Rings (large)</span><span class="price">$4.99</span></div>
+          
+        </li>
+        <li data-q="fruit ">
+          <div class="row"><span class="name">Fruit</span><span class="price">$3.99</span></div>
+          
+        </li>
+        <li data-q="oatmeal ">
+          <div class="row"><span class="name">Oatmeal</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Small</span> <b>$2.99</b></span><span class="pp"><span class="pl">Large</span> <b>$3.99</b></span></div>
+        </li>
+        <li data-q="soup ">
+          <div class="row"><span class="name">Soup</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Small</span> <b>$5.99</b></span><span class="pp"><span class="pl">Large</span> <b>$7.99</b></span></div>
+        </li></ul>
+    </section>
+    <section id="burger-corner" class="sec">
+      <h2>Burger Corner</h2>
+      <p class="note">All burgers are served with your choice of fries, onion rings or coleslaw with a cup of soup</p>
+      <ul>
+        <li data-q="american classic* usda choice ground beef cooked to your liking. served on a toasted sesame roll with american cheese, lettuce and tomato">
+          <div class="row"><span class="name">American Classic*</span><span class="price">$11.99</span></div>
+          <p class="desc">USDA choice ground beef cooked to your liking. Served on a toasted sesame roll with American cheese, lettuce and tomato</p>
+        </li>
+        <li data-q="patty melt* a burger topped with swiss cheese and red onion on grilled rye">
+          <div class="row"><span class="name">Patty Melt*</span><span class="price">$11.99</span></div>
+          <p class="desc">A burger topped with swiss cheese and red onion on grilled rye</p>
+        </li>
+        <li data-q="california veggie a vegetarian burger with a side of tomato and lettuce">
+          <div class="row"><span class="name">California Veggie</span><span class="price">$12.25</span></div>
+          <p class="desc">A vegetarian burger with a side of tomato and lettuce</p>
+        </li>
+        <li data-q="turkey burger fresh ground turkey on a toasted roll with lettuce and tomato">
+          <div class="row"><span class="name">Turkey Burger</span><span class="price">$12.25</span></div>
+          <p class="desc">Fresh ground turkey on a toasted roll with lettuce and tomato</p>
+        </li>
+        <li data-q="pizza burger* usda choice ground beef topped with pizza sauce, mozzarella cheese and sliced pepperoni">
+          <div class="row"><span class="name">Pizza Burger*</span><span class="price">$11.99</span></div>
+          <p class="desc">USDA choice ground beef topped with pizza sauce, mozzarella cheese and sliced pepperoni</p>
+        </li>
+        <li data-q="midtown burger* melted blue cheese and sautéed onions. served on a toasted sesame bun with lettuce and tomato">
+          <div class="row"><span class="name">Midtown Burger*</span><span class="price">$12.50</span></div>
+          <p class="desc">Melted blue cheese and sautéed onions. Served on a toasted sesame bun with lettuce and tomato</p>
+        </li>
+        <li data-q="breakfast burger* usda choice ground beef cooked to your liking toped with an over hard egg, american cheese, avocado and bacon.">
+          <div class="row"><span class="name">Breakfast Burger*</span><span class="price">$14.50</span></div>
+          <p class="desc">USDA choice ground beef cooked to your liking toped with an over hard egg, American cheese, avocado and bacon.</p>
+        </li>
+        <li data-q="meatloaf burger* a premium seasoned meatloaf patty topped with mushrooms, sautéed onions and brown gravy.">
+          <div class="row"><span class="name">Meatloaf Burger*</span><span class="price">$12.99</span></div>
+          <p class="desc">A premium seasoned meatloaf patty topped with mushrooms, sautéed onions and brown gravy.</p>
+        </li>
+        <li data-q="gyros beef or chicken gyro made with feta cheese, lettuce, tomato, onion and tzatziki sauce on a greek pita served with your choice of fries, onion rings or coleslaw and a cup of soup">
+          <div class="row"><span class="name">Gyros</span><span class="price">$13.25</span></div>
+          <p class="desc">Beef or Chicken gyro made with feta cheese, lettuce, tomato, onion and tzatziki sauce on a Greek pita served with your choice of fries, onion rings or coleslaw and a cup of soup</p>
+        </li>
+        <li data-q="grilled reuben your choice of: fresh corned beef or lean pastrami or thin-sliced turkey with melted cheese, sauerkraut and russian dressing on grilled rye. served with your choice of fries, onion rings or coleslaw and a cup of soup">
+          <div class="row"><span class="name">Grilled Reuben</span><span class="price">$13.25</span></div>
+          <p class="desc">Your choice of: fresh corned beef or lean pastrami or thin-sliced turkey with melted cheese, sauerkraut and Russian dressing on grilled rye. Served with your choice of fries, onion rings or coleslaw and a cup of soup</p>
+        </li></ul>
+    </section>
+    <section id="salads" class="sec">
+      <h2>Salads</h2>
+      <p class="note">Add Grilled Chicken: $2.99 | Add Steak: $3.99 | Extra Dressing: $.50</p>
+      <ul>
+        <li data-q="apple &amp; walnut salad chopped walnuts, fresh apples, red onions and crumbled bleu cheese tossed with romaine lettuce and tomatoes">
+          <div class="row"><span class="name">Apple &amp; Walnut Salad</span><span class="price">$11.99</span></div>
+          <p class="desc">Chopped walnuts, fresh apples, red onions and crumbled bleu cheese tossed with romaine lettuce and tomatoes</p>
+        </li>
+        <li data-q="caesar salad fresh romaine lettuce tossed with our homemade caesar dressing, fresh parmesan cheese and croutons">
+          <div class="row"><span class="name">Caesar Salad</span><span class="price">$9.99</span></div>
+          <p class="desc">Fresh romaine lettuce tossed with our homemade Caesar dressing, fresh Parmesan cheese and croutons</p>
+        </li>
+        <li data-q="greek salad lettuce, tomatoes, onions, cucumbers, peppers, carrots, kalamata olives, sliced egg, feta cheese, anchovies and stuffed grape leaves">
+          <div class="row"><span class="name">Greek Salad</span><span class="price">$11.99</span></div>
+          <p class="desc">Lettuce, tomatoes, onions, cucumbers, peppers, carrots, Kalamata olives, sliced egg, feta cheese, anchovies and stuffed grape leaves</p>
+        </li>
+        <li data-q="large tossed salad lettuce, tomatoes, onions, cucumbers, peppers, carrots, sliced egg and croutons">
+          <div class="row"><span class="name">Large Tossed Salad</span><span class="price">$10.99</span></div>
+          <p class="desc">Lettuce, tomatoes, onions, cucumbers, peppers, carrots, sliced egg and croutons</p>
+        </li>
+        <li data-q="chef salad sliced roast beef, sliced egg, turkey, ham and swiss cheese over a fresh tossed salad">
+          <div class="row"><span class="name">Chef Salad</span><span class="price">$11.99</span></div>
+          <p class="desc">Sliced roast beef, sliced egg, turkey, ham and Swiss cheese over a fresh tossed salad</p>
+        </li>
+        <li data-q="creedmoor salad w/ grilled chicken marinated grilled chicken, romaine lettuce, bacon, feta cheese, avocado, carrots and tomatoes">
+          <div class="row"><span class="name">Creedmoor Salad w/ Grilled Chicken</span><span class="price">$14.25</span></div>
+          <p class="desc">Marinated grilled chicken, romaine lettuce, bacon, feta cheese, avocado, carrots and tomatoes</p>
+        </li>
+        <li data-q="chicken souvlaki salad marinated and broiled chicken souvlaki on a specially prepared greek salad (olives, feta, tomatoes, peppers) with greek dressing">
+          <div class="row"><span class="name">Chicken Souvlaki Salad</span><span class="price">$12.99</span></div>
+          <p class="desc">Marinated and broiled chicken souvlaki on a specially prepared Greek salad (olives, feta, tomatoes, peppers) with Greek dressing</p>
+        </li></ul>
+    </section>
+    <section id="wraps" class="sec">
+      <h2>Wraps</h2>
+      <p class="note">All wraps are served with your choice of fries, onion rings or coleslaw and a cup of soup</p>
+      <ul>
+        <li data-q="buffalo chicken wrap chicken tenders with hot wing sauce rolled in a wrap with lettuce and crumbled bleu cheese. bleu cheese dressing on the side">
+          <div class="row"><span class="name">Buffalo Chicken Wrap</span><span class="price">$11.25</span></div>
+          <p class="desc">Chicken tenders with hot wing sauce rolled in a wrap with lettuce and crumbled bleu cheese. Bleu cheese dressing on the side</p>
+        </li>
+        <li data-q="creedmoor wrap chicken tenders, bacon, lettuce, tomato, melted mozzaella cheese and mayo. all wrapped up and served with a side of bbq sauce">
+          <div class="row"><span class="name">Creedmoor Wrap</span><span class="price">$13.99</span></div>
+          <p class="desc">Chicken tenders, bacon, lettuce, tomato, melted mozzaella cheese and mayo. All wrapped up and served with a side of BBQ sauce</p>
+        </li>
+        <li data-q="caesar wrap chopped chicken tenders, romaine lettuce and tomatoes wrapped with our homemade caesar dressing">
+          <div class="row"><span class="name">Caesar Wrap</span><span class="price">$10.99</span></div>
+          <p class="desc">Chopped chicken tenders, romaine lettuce and tomatoes wrapped with our homemade Caesar dressing</p>
+        </li>
+        <li data-q="philly wrap philly steak with peppers, onions, mushrooms and mozzarella cheese all rolled up in a wrap">
+          <div class="row"><span class="name">Philly Wrap</span><span class="price">$12.25</span></div>
+          <p class="desc">Philly steak with peppers, onions, mushrooms and mozzarella cheese all rolled up in a wrap</p>
+        </li>
+        <li data-q="cordon bleu wrap chicken tenders, grilled ham, melted swiss cheese, lettuce, tomato and honey mustard dressing on the side">
+          <div class="row"><span class="name">Cordon Bleu Wrap</span><span class="price">$11.99</span></div>
+          <p class="desc">Chicken tenders, grilled ham, melted Swiss cheese, lettuce, tomato and honey mustard dressing on the side</p>
+        </li>
+        <li data-q="wake-up wrap 2 scrambled eggs with your choice of cheese and bacon or ham or sausage served in our garlic or wheat wrap with a side of homefries.">
+          <div class="row"><span class="name">Wake-up Wrap</span><span class="price">$10.99</span></div>
+          <p class="desc">2 scrambled eggs with your choice of cheese and bacon or ham or sausage served in our garlic or wheat wrap with a side of homefries.</p>
+        </li></ul>
+    </section>
+    <section id="club-sandwiches" class="sec">
+      <h2>Club Sandwiches</h2>
+      <p class="note">All triple-decker sandwiches are made on your choice of white, wheat, rye or sourdough, mayo, bacon, lettuce and tomato are served with your choice of fries, onion rings or coleslaw with a cup of soup</p>
+      <ul>
+        <li data-q="cajun chicken club ">
+          <div class="row"><span class="name">Cajun Chicken Club</span><span class="price">$12.99</span></div>
+          
+        </li>
+        <li data-q="roast turkey club ">
+          <div class="row"><span class="name">Roast Turkey Club</span><span class="price">$11.50</span></div>
+          
+        </li>
+        <li data-q="ham and swiss club ">
+          <div class="row"><span class="name">Ham and Swiss Club</span><span class="price">$11.50</span></div>
+          
+        </li>
+        <li data-q="cheeseburger club ">
+          <div class="row"><span class="name">Cheeseburger Club</span><span class="price">$12.99</span></div>
+          
+        </li>
+        <li data-q="traditional club ">
+          <div class="row"><span class="name">Traditional Club</span><span class="price">$12.50</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="specialty-sandwiches" class="sec">
+      <h2>Specialty Sandwiches</h2>
+      
+      <ul>
+        <li data-q="chicken parmesan sandwich our lightly breaded chicken tenders, mozzarella cheese and marinara sauce served on a toasted hogie roll. served with your choice of fries, onion rings or coleslaw and a cup of soup">
+          <div class="row"><span class="name">Chicken Parmesan Sandwich</span><span class="price">$12.50</span></div>
+          <p class="desc">Our lightly breaded chicken tenders, mozzarella cheese and marinara sauce served on a toasted hogie roll. Served with your choice of fries, onion rings or coleslaw and a cup of soup</p>
+        </li>
+        <li data-q="b.l.t. bacon, lettuce and tomato on your choice of bread. served with side or fries or onion rings and a cup of soup.">
+          <div class="row"><span class="name">B.L.T.</span><span class="price">$9.99</span></div>
+          <p class="desc">Bacon, Lettuce and Tomato on your choice of bread. Served with side or fries or onion rings and a cup of soup.</p>
+        </li>
+        <li data-q="monte cristo sliced turkey, ham and swiss cheese grilled between two slices of homemade challah bread. served with side of fries or onion rings and a cup of soup">
+          <div class="row"><span class="name">Monte Cristo</span><span class="price">$13.50</span></div>
+          <p class="desc">Sliced turkey, ham and Swiss cheese grilled between two slices of homemade Challah bread. Served with side of fries or onion rings and a cup of soup</p>
+        </li>
+        <li data-q="the cuban deluxe roasted pork, smoked ham and sliced pickles with melted mozzarella and swiss cheese. served with fries, onion rings or coleslaw and a cup of soup">
+          <div class="row"><span class="name">The Cuban Deluxe</span><span class="price">$13.25</span></div>
+          <p class="desc">Roasted pork, smoked ham and sliced pickles with melted mozzarella and Swiss cheese. Served with fries, onion rings or coleslaw and a cup of soup</p>
+        </li>
+        <li data-q="grilled cheese served with side of fries or onion rings and a cup of soup.">
+          <div class="row"><span class="name">Grilled Cheese</span><span class="price">$10.99</span></div>
+          <p class="desc">Served with side of fries or onion rings and a cup of soup.</p>
+        </li>
+        <li data-q="chicken supreme sandwich our marinated grilled chicken breast topped with grilled onions and chopped bacon on our toasted hard roll">
+          <div class="row"><span class="name">Chicken Supreme Sandwich</span><span class="price">$11.99</span></div>
+          <p class="desc">Our marinated grilled chicken breast topped with grilled onions and chopped bacon on our toasted hard roll</p>
+        </li></ul>
+    </section>
+    <section id="drinks" class="sec">
+      <h2>Drinks</h2>
+      
+      <ul>
+        <li data-q="coffee (free refills) ">
+          <div class="row"><span class="name">Coffee (Free Refills)</span><span class="price">$3.40</span></div>
+          
+        </li>
+        <li data-q="decaf (free refills) ">
+          <div class="row"><span class="name">Decaf (Free Refills)</span><span class="price">$3.25</span></div>
+          
+        </li>
+        <li data-q="hot chocolate ">
+          <div class="row"><span class="name">Hot Chocolate</span><span class="price">$2.99</span></div>
+          
+        </li>
+        <li data-q="soda (free refills) ">
+          <div class="row"><span class="name">Soda (Free Refills)</span><span class="price">$3.25</span></div>
+          
+        </li>
+        <li data-q="iced tea (free refills) ">
+          <div class="row"><span class="name">Iced Tea (Free Refills)</span><span class="price">$3.25</span></div>
+          
+        </li>
+        <li data-q="regular milk ">
+          <div class="row"><span class="name">Regular Milk</span><span class="price">$2.85</span></div>
+          
+        </li>
+        <li data-q="chocolate milk ">
+          <div class="row"><span class="name">Chocolate Milk</span><span class="price">$2.95</span></div>
+          
+        </li>
+        <li data-q="juice (small) ">
+          <div class="row"><span class="name">Juice (small)</span><span class="price">$2.85</span></div>
+          
+        </li>
+        <li data-q="juice (large) ">
+          <div class="row"><span class="name">Juice (large)</span><span class="price">$3.25</span></div>
+          
+        </li>
+        <li data-q="hot tea (per bag) ">
+          <div class="row"><span class="name">Hot Tea (per bag)</span><span class="price">$3.35</span></div>
+          
+        </li>
+        <li data-q="bottle water ">
+          <div class="row"><span class="name">Bottle Water</span><span class="price">$1.85</span></div>
+          
+        </li>
+        <li data-q="green tea ">
+          <div class="row"><span class="name">Green Tea</span><span class="price">$3.35</span></div>
+          
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>*Items are cooked to order. Can not be served raw or undercooked. Consuming raw or undercooked eggs, poultry, seafood, or meat may increase your risk of foodborne illness.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Creedmoor Cafe.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Creedmoor Cafe menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

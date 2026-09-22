@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>City Restaurant Menu</title>
+<meta name="description" content="Menu for City Restaurant, Southside (Nicolson Street), Edinburgh.">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>City Restaurant</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=35%20Nicolson%20Street%2C%20Edinburgh%20EH8%209BE">35 Nicolson Street, Edinburgh EH8 9BE</a><a href="tel:01316672819">0131 667 2819</a><span>Open 7 days: 11.30am – 10pm</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#starters-light-bites" data-sec="starters-light-bites">Starters &amp; Light Bites</a><a href="#fish-chips" data-sec="fish-chips">Fish &amp; Chips</a><a href="#tasty-burgers" data-sec="tasty-burgers">Tasty Burgers</a><a href="#stone-baked-pizza" data-sec="stone-baked-pizza">Stone Baked Pizza</a><a href="#home-comforts-grill" data-sec="home-comforts-grill">Home Comforts &amp; Grill</a><a href="#chippy-classics" data-sec="chippy-classics">Chippy Classics</a><a href="#city-sides" data-sec="city-sides">City Sides</a><a href="#chips-condiments" data-sec="chips-condiments">Chips &amp; Condiments</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="starters-light-bites" class="sec">
+      <h2>Starters &amp; Light Bites</h2>
+      
+      <ul>
+        <li data-q="lentil soup (v,gf) served with bread.">
+          <div class="row"><span class="name">Lentil Soup (V,GF)</span><span class="price">£5.95</span></div>
+          <p class="desc">Served with bread.</p>
+        </li>
+        <li data-q="bread &amp; olives (v) seasoned green and black olives with breads.">
+          <div class="row"><span class="name">Bread &amp; Olives (V)</span><span class="price">£6.45</span></div>
+          <p class="desc">Seasoned green and black olives with breads.</p>
+        </li>
+        <li data-q="haggis bon bons panko breaded haggis balls served with whisky sauce.">
+          <div class="row"><span class="name">Haggis Bon Bons</span><span class="price">£6.95</span></div>
+          <p class="desc">Panko breaded haggis balls served with Whisky sauce.</p>
+        </li>
+        <li data-q="tempura king prawns starter tempura battered king prawns (5) served with sweet chilli dip.">
+          <div class="row"><span class="name">Tempura King Prawns Starter</span><span class="price">£7.95</span></div>
+          <p class="desc">Tempura battered king prawns (5) served with sweet chilli dip.</p>
+        </li>
+        <li data-q="salt and pepper squid starter battered squid pieces with a garlic mayo dip.">
+          <div class="row"><span class="name">Salt and Pepper Squid Starter</span><span class="price">£7.95</span></div>
+          <p class="desc">Battered squid pieces with a garlic mayo dip.</p>
+        </li>
+        <li data-q="caprese salad (v) mozzarella di bufala, cherry tomatoes with balsamic and olive oil dressing.">
+          <div class="row"><span class="name">Caprese Salad (V)</span><span class="price">£8.95</span></div>
+          <p class="desc">Mozzarella Di Bufala, cherry tomatoes with balsamic and olive oil dressing.</p>
+        </li>
+        <li data-q="fish cake starter smoked haddock with mozzarella &amp; spring onion filling coated in breadcrumbs, on a bed of mash potatoes served with tartare sauce.">
+          <div class="row"><span class="name">Fish Cake Starter</span><span class="price">£7.95</span></div>
+          <p class="desc">Smoked haddock with mozzarella &amp; spring onion filling coated in breadcrumbs, on a bed of mash potatoes served with tartare sauce.</p>
+        </li>
+        <li data-q="garlic pizza (v) pizza base with garlic and herb butter.">
+          <div class="row"><span class="name">Garlic Pizza (V)</span></div>
+          <p class="desc">Pizza base with garlic and herb butter.</p><div class="prices"><span class="pp"><span class="pl">8&quot;</span> <b>£4.45</b></span><span class="pp"><span class="pl">12&quot;</span> <b>£7.95</b></span></div>
+        </li>
+        <li data-q="add mozzarella ">
+          <div class="row"><span class="name">Add mozzarella</span></div>
+          <div class="prices"><span class="pp"><span class="pl">8&quot;</span> <b>£1.00</b></span><span class="pp"><span class="pl">12&quot;</span> <b>£2.00</b></span></div>
+        </li></ul>
+    </section>
+    <section id="fish-chips" class="sec">
+      <h2>Fish &amp; Chips</h2>
+      <p class="note">Fresh &amp; delicious. All our fish dishes are served with our homemade chips and mushy peas. Gluten free option with batter cooked in separate vegetable oil. Crispy Batter, Succulent Fish and Scrummy Chips.</p>
+      <ul>
+        <li data-q="battered fish &amp; chips – haddock (our traditional) ">
+          <div class="row"><span class="name">Battered Fish &amp; Chips – Haddock (our traditional)</span><span class="price">£16.95</span></div>
+          
+        </li>
+        <li data-q="battered fish &amp; chips – seabass (skin on) ">
+          <div class="row"><span class="name">Battered Fish &amp; Chips – Seabass (skin on)</span><span class="price">£17.95</span></div>
+          
+        </li>
+        <li data-q="breaded fish &amp; chips – haddock lightly battered and coated in panko breadcrumbs.">
+          <div class="row"><span class="name">Breaded Fish &amp; Chips – Haddock</span><span class="price">£17.95</span></div>
+          <p class="desc">Lightly battered and coated in panko breadcrumbs.</p>
+        </li>
+        <li data-q="breaded fish &amp; chips – seabass (skin on) lightly battered and coated in panko breadcrumbs.">
+          <div class="row"><span class="name">Breaded Fish &amp; Chips – Seabass (skin on)</span><span class="price">£18.95</span></div>
+          <p class="desc">Lightly battered and coated in panko breadcrumbs.</p>
+        </li>
+        <li data-q="gluten free fish &amp; chips – haddock using a crisp rice and potato flour batter.">
+          <div class="row"><span class="name">Gluten Free Fish &amp; Chips – Haddock</span><span class="price">£17.95</span></div>
+          <p class="desc">Using a crisp rice and potato flour batter.</p>
+        </li>
+        <li data-q="gluten free fish &amp; chips – seabass (skin on) using a crisp rice and potato flour batter.">
+          <div class="row"><span class="name">Gluten Free Fish &amp; Chips – Seabass (skin on)</span><span class="price">£18.95</span></div>
+          <p class="desc">Using a crisp rice and potato flour batter.</p>
+        </li>
+        <li data-q="fish butty (gfa) battered haddock mini fillets in a toasted brioche bun with tartare sauce and lettuce.">
+          <div class="row"><span class="name">Fish Butty (GFA)</span><span class="price">£15.45</span></div>
+          <p class="desc">Battered haddock mini fillets in a toasted brioche bun with tartare sauce and lettuce.</p>
+        </li>
+        <li data-q="scampi wholetail scampi in crispy breadcrumbs.">
+          <div class="row"><span class="name">Scampi</span><span class="price">£14.95</span></div>
+          <p class="desc">Wholetail scampi in crispy breadcrumbs.</p>
+        </li>
+        <li data-q="salt and pepper squid battered squid pieces with a garlic mayo dip.">
+          <div class="row"><span class="name">Salt and Pepper Squid</span><span class="price">£14.95</span></div>
+          <p class="desc">Battered squid pieces with a garlic mayo dip.</p>
+        </li>
+        <li data-q="tempura king prawns king prawns in tempura batter (7) served with chilli dip.">
+          <div class="row"><span class="name">Tempura King Prawns</span><span class="price">£14.95</span></div>
+          <p class="desc">King prawns in tempura batter (7) served with chilli dip.</p>
+        </li>
+        <li data-q="fish cakes two smoked haddock with mozzarella &amp; spring onion filling coated in breadcrumbs.">
+          <div class="row"><span class="name">Fish Cakes</span><span class="price">£14.45</span></div>
+          <p class="desc">Two smoked haddock with mozzarella &amp; spring onion filling coated in breadcrumbs.</p>
+        </li>
+        <li data-q="grilled seabass (gf) fillet of seabass served on seasoned mashed potatoes, with garlic &amp; herb butter and mushy peas.">
+          <div class="row"><span class="name">Grilled Seabass (GF)</span><span class="price">£20.95</span></div>
+          <p class="desc">Fillet of seabass served on seasoned mashed potatoes, with garlic &amp; herb butter and mushy peas.</p>
+        </li></ul>
+    </section>
+    <section id="tasty-burgers" class="sec">
+      <h2>Tasty Burgers</h2>
+      <p class="note">We use 6oz patties from our local craft butchers, 100% beef with seasoning, burgers are cooked well done, served in a brioche bun with lettuce and pickled gherkin. Served with chips.</p>
+      <ul>
+        <li data-q="classic burger (gfa) bacon, monterey jack cheese &amp; burger sauce.">
+          <div class="row"><span class="name">Classic Burger (GFA)</span><span class="price">£14.95</span></div>
+          <p class="desc">Bacon, Monterey Jack cheese &amp; burger sauce.</p>
+        </li>
+        <li data-q="grilled onion burger (gfa) beef burger with monterey jack cheese, grilled onions &amp; burger sauce.">
+          <div class="row"><span class="name">Grilled Onion Burger (GFA)</span><span class="price">£14.95</span></div>
+          <p class="desc">Beef burger with Monterey Jack cheese, grilled onions &amp; burger sauce.</p>
+        </li>
+        <li data-q="gorgonzola burger gorgonzola cheese, bacon &amp; caramelized red onion chutney.">
+          <div class="row"><span class="name">Gorgonzola Burger</span><span class="price">£15.95</span></div>
+          <p class="desc">Gorgonzola cheese, bacon &amp; caramelized red onion chutney.</p>
+        </li>
+        <li data-q="chipotle burger (spicy) beef burger with jalapeños, chipotle mayo, monterey jack cheese and bacon.">
+          <div class="row"><span class="name">Chipotle Burger (Spicy)</span><span class="price">£15.95</span></div>
+          <p class="desc">Beef burger with jalapeños, chipotle mayo, Monterey Jack cheese and bacon.</p>
+        </li>
+        <li data-q="kilted burger topped with hornigs haggis, bacon and pepper cream sauce.">
+          <div class="row"><span class="name">Kilted Burger</span><span class="price">£15.95</span></div>
+          <p class="desc">Topped with Hornigs haggis, bacon and pepper cream sauce.</p>
+        </li>
+        <li data-q="bbq pulled pork burger beef burger with pulled pork in bbq sauce, monterey jack cheese and bacon.">
+          <div class="row"><span class="name">BBQ Pulled Pork Burger</span><span class="price">£15.95</span></div>
+          <p class="desc">Beef burger with pulled pork in bbq sauce, Monterey Jack cheese and bacon.</p>
+        </li>
+        <li data-q="hawaiian burger (gfa) monterey jack cheese, bacon, grilled pineapple, fried egg &amp; burger sauce.">
+          <div class="row"><span class="name">Hawaiian Burger (GFA)</span><span class="price">£16.95</span></div>
+          <p class="desc">Monterey Jack cheese, bacon, grilled pineapple, fried egg &amp; burger sauce.</p>
+        </li>
+        <li data-q="city burger (gfa) filled with two aberdeen angus burgers, double monterey jack cheese, battered onion ring, bacon &amp; burger sauce.">
+          <div class="row"><span class="name">City Burger (GFA)</span><span class="price">£18.95</span></div>
+          <p class="desc">Filled with two Aberdeen Angus burgers, double Monterey Jack cheese, battered onion ring, bacon &amp; burger sauce.</p>
+        </li>
+        <li data-q="chicken fillet burger battered chicken breast fillets topped with monterey jack cheese &amp; mayo.">
+          <div class="row"><span class="name">Chicken Fillet Burger</span><span class="price">£15.95</span></div>
+          <p class="desc">Battered chicken breast fillets topped with Monterey Jack cheese &amp; mayo.</p>
+        </li>
+        <li data-q="vegetarian burger (v) mixed vegetable burger with monterey jack cheese &amp; mayo.">
+          <div class="row"><span class="name">Vegetarian Burger (V)</span><span class="price">£14.95</span></div>
+          <p class="desc">Mixed vegetable burger with Monterey Jack cheese &amp; mayo.</p>
+        </li>
+        <li data-q="falafel &amp; spinach burger (gfa, vga) grilled falafel burger with grilled onions &amp; mayo.">
+          <div class="row"><span class="name">Falafel &amp; Spinach Burger (GFA, VGA)</span><span class="price">£14.95</span></div>
+          <p class="desc">Grilled falafel burger with grilled onions &amp; mayo.</p>
+        </li>
+        <li data-q="extra fillings: grilled onions, pineapple, haggis, bacon, prosciutto, grilled egg, vegetarian haggis ">
+          <div class="row"><span class="name">Extra fillings: Grilled onions, pineapple, haggis, bacon, prosciutto, grilled egg, vegetarian haggis</span><span class="price">£1.00</span></div>
+          
+        </li>
+        <li data-q="extra fillings: bbq pulled pork ">
+          <div class="row"><span class="name">Extra fillings: BBQ pulled pork</span><span class="price">£2.50</span></div>
+          
+        </li>
+        <li data-q="change your chips to: cheesy chips ">
+          <div class="row"><span class="name">Change your chips to: Cheesy chips</span><span class="price">£1.50</span></div>
+          
+        </li>
+        <li data-q="change your chips to: sweet potato fries ">
+          <div class="row"><span class="name">Change your chips to: Sweet potato fries</span><span class="price">£1.50</span></div>
+          
+        </li>
+        <li data-q="change your chips to: onion rings ">
+          <div class="row"><span class="name">Change your chips to: Onion rings</span><span class="price">£2.00</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="stone-baked-pizza" class="sec">
+      <h2>Stone Baked Pizza</h2>
+      <p class="note">Made fresh with our homemade dough and seasoned tomato sauce. Approx size is 12&quot;/30cm.</p>
+      <ul>
+        <li data-q="margherita (v) classic mozzarella &amp; seasoned tomato sauce.">
+          <div class="row"><span class="name">Margherita (V)</span><span class="price">£10.95</span></div>
+          <p class="desc">Classic mozzarella &amp; seasoned tomato sauce.</p>
+        </li>
+        <li data-q="funghi (v) closed cup mushrooms.">
+          <div class="row"><span class="name">Funghi (V)</span><span class="price">£12.45</span></div>
+          <p class="desc">Closed cup mushrooms.</p>
+        </li>
+        <li data-q="pepperoni spicy neapolitan sausage.">
+          <div class="row"><span class="name">Pepperoni</span><span class="price">£13.45</span></div>
+          <p class="desc">Spicy neapolitan sausage.</p>
+        </li>
+        <li data-q="the scotsman (va) hornigs haggis.">
+          <div class="row"><span class="name">The Scotsman (VA)</span><span class="price">£13.45</span></div>
+          <p class="desc">Hornigs haggis.</p>
+        </li>
+        <li data-q="quattro formaggi mozzarella, gorgonzola, grana padano &amp; mild cheddar.">
+          <div class="row"><span class="name">Quattro Formaggi</span><span class="price">£14.45</span></div>
+          <p class="desc">Mozzarella, gorgonzola, grana padano &amp; mild cheddar.</p>
+        </li>
+        <li data-q="pollo chicken, closed cup mushrooms &amp; red onions.">
+          <div class="row"><span class="name">Pollo</span><span class="price">£14.95</span></div>
+          <p class="desc">Chicken, closed cup mushrooms &amp; red onions.</p>
+        </li>
+        <li data-q="hawaiian pizza boiled ham &amp; sweet pineapple.">
+          <div class="row"><span class="name">Hawaiian Pizza</span><span class="price">£14.95</span></div>
+          <p class="desc">Boiled ham &amp; sweet pineapple.</p>
+        </li>
+        <li data-q="vegetariana (v) mixed peppers, closed cup mushrooms, black olives &amp; red onion.">
+          <div class="row"><span class="name">Vegetariana (V)</span><span class="price">£14.95</span></div>
+          <p class="desc">Mixed peppers, closed cup mushrooms, black olives &amp; red onion.</p>
+        </li>
+        <li data-q="puttanesca anchovies, capers &amp; black olives.">
+          <div class="row"><span class="name">Puttanesca</span><span class="price">£15.45</span></div>
+          <p class="desc">Anchovies, capers &amp; black olives.</p>
+        </li>
+        <li data-q="ponte melfa pepperoni sausage, closed cup mushrooms &amp; red onion.">
+          <div class="row"><span class="name">Ponte Melfa</span><span class="price">£15.45</span></div>
+          <p class="desc">Pepperoni sausage, closed cup mushrooms &amp; red onion.</p>
+        </li>
+        <li data-q="diavolo pepperoni sausage, smoked pancetta, jalapeños peppers.">
+          <div class="row"><span class="name">Diavolo</span><span class="price">£15.45</span></div>
+          <p class="desc">Pepperoni sausage, smoked pancetta, jalapeños peppers.</p>
+        </li>
+        <li data-q="carne smoked pancetta, pepperoni sausage, smoked sausage, boiled ham &amp; chicken.">
+          <div class="row"><span class="name">Carne</span><span class="price">£16.95</span></div>
+          <p class="desc">Smoked pancetta, pepperoni sausage, smoked sausage, boiled ham &amp; chicken.</p>
+        </li>
+        <li data-q="the italian parma ham, artichoke, sun blushed tomatoes &amp; grana padano.">
+          <div class="row"><span class="name">The Italian</span><span class="price">£16.95</span></div>
+          <p class="desc">Parma ham, artichoke, sun blushed tomatoes &amp; grana padano.</p>
+        </li>
+        <li data-q="extra toppings: onion, mushroom, peppers, capers, jalapeños, pineapple, black olives. ">
+          <div class="row"><span class="name">Extra toppings: Onion, mushroom, peppers, capers, jalapeños, pineapple, black olives.</span><span class="price">£1.50</span></div>
+          
+        </li>
+        <li data-q="extra toppings: pancetta, smoked sausage, pepperoni, chicken, boiled ham, haggis, anchovies, parma ham. ">
+          <div class="row"><span class="name">Extra toppings: Pancetta, smoked sausage, pepperoni, chicken, boiled ham, haggis, anchovies, Parma ham.</span><span class="price">£2.50</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="home-comforts-grill" class="sec">
+      <h2>Home Comforts &amp; Grill</h2>
+      
+      <ul>
+        <li data-q="haggis, neeps and tatties (va) a scottish traditional dish of haggis, turnips and mashed potatoes served with whisky sauce.">
+          <div class="row"><span class="name">Haggis, Neeps and Tatties (VA)</span><span class="price">£15.95</span></div>
+          <p class="desc">A Scottish traditional dish of haggis, turnips and mashed potatoes served with whisky sauce.</p>
+        </li>
+        <li data-q="sausage &amp; mash pork sausages on seasoned mashed potatoes, topped with grilled onions and gravy.">
+          <div class="row"><span class="name">Sausage &amp; Mash</span><span class="price">£15.95</span></div>
+          <p class="desc">Pork sausages on seasoned mashed potatoes, topped with grilled onions and gravy.</p>
+        </li>
+        <li data-q="steak pie traditional seasoned beef steak filling with puff pastry, served with homemade chips, garden peas and gravy.">
+          <div class="row"><span class="name">Steak Pie</span><span class="price">£18.95</span></div>
+          <p class="desc">Traditional seasoned beef steak filling with puff pastry, served with homemade chips, garden peas and gravy.</p>
+        </li>
+        <li data-q="caesar salad grilled chicken, grana padano with caesar salad dressing and toasted garlic bread. add anchovies 2.50">
+          <div class="row"><span class="name">Caesar Salad</span><span class="price">£15.95</span></div>
+          <p class="desc">Grilled chicken, grana padano with Caesar salad dressing and toasted garlic bread. Add anchovies 2.50</p>
+        </li>
+        <li data-q="italian salad prosciutto, artichoke, gorgonzola cheese, sun blush tomatoes and mozzarella di bufala on a mixed salad with grana padano shavings, balsamic and olive oil dressing. served with white bloomer and malt bread.">
+          <div class="row"><span class="name">Italian Salad</span><span class="price">£18.95</span></div>
+          <p class="desc">Prosciutto, artichoke, gorgonzola cheese, sun blush tomatoes and mozzarella di bufala on a mixed salad with grana padano shavings, balsamic and olive oil dressing. Served with white bloomer and malt bread.</p>
+        </li>
+        <li data-q="lasagne pasta layers with minced beef in tomato and béchamel sauce, topped with mozzarella. served with garlic bread.">
+          <div class="row"><span class="name">Lasagne</span><span class="price">£16.95</span></div>
+          <p class="desc">Pasta layers with minced beef in tomato and béchamel sauce, topped with mozzarella. Served with garlic bread.</p>
+        </li>
+        <li data-q="macaroni cheese (v) pasta shells in a creamy homemade cheese sauce baked with cheddar cheese. add crispy smoked pancetta 2.50">
+          <div class="row"><span class="name">Macaroni Cheese (V)</span><span class="price">£13.95</span></div>
+          <p class="desc">Pasta shells in a creamy homemade cheese sauce baked with cheddar cheese. Add crispy smoked pancetta 2.50</p>
+        </li>
+        <li data-q="cannelloni (v) pasta rolls with spinach and ricotta filling, tomato sauce and topped with mozzarella. served with garlic bread.">
+          <div class="row"><span class="name">Cannelloni (V)</span><span class="price">£15.95</span></div>
+          <p class="desc">Pasta rolls with spinach and ricotta filling, tomato sauce and topped with mozzarella. Served with garlic bread.</p>
+        </li>
+        <li data-q="gammon steak (gf) grilled smoked gammon topped with pineapple &amp; fried egg served with garnish, chips and garden peas.">
+          <div class="row"><span class="name">Gammon Steak (GF)</span><span class="price">£18.95</span></div>
+          <p class="desc">Grilled smoked gammon topped with pineapple &amp; fried egg served with garnish, chips and garden peas.</p>
+        </li>
+        <li data-q="sausage, bacon, egg &amp; chips two rashers of bacon, two pork sausages and a fried egg, served with chips and garden peas.">
+          <div class="row"><span class="name">Sausage, Bacon, Egg &amp; Chips</span><span class="price">£14.95</span></div>
+          <p class="desc">Two rashers of bacon, two pork sausages and a fried egg, served with chips and garden peas.</p>
+        </li>
+        <li data-q="city omelette (va, gf) made with 3 eggs and parsley. choice from 3 fillings; cheese, mushroom, bacon, onion, ham, chicken. served with chips and garden peas.">
+          <div class="row"><span class="name">City Omelette (VA, GF)</span><span class="price">£13.95</span></div>
+          <p class="desc">Made with 3 eggs and parsley. Choice from 3 fillings; cheese, mushroom, bacon, onion, ham, chicken. Served with chips and garden peas.</p>
+        </li>
+        <li data-q="ribeye steak 10oz/280g of scottish beef and a minimum of 36 days matured. chargrilled and served with our house chips, garden salad and pepper cream sauce.">
+          <div class="row"><span class="name">Ribeye Steak</span><span class="price">£29.95</span></div>
+          <p class="desc">10oz/280g of Scottish beef and a minimum of 36 days matured. Chargrilled and served with our house chips, garden salad and pepper cream sauce.</p>
+        </li></ul>
+    </section>
+    <section id="chippy-classics" class="sec">
+      <h2>Chippy Classics</h2>
+      <p class="note">All served with our house chips</p>
+      <ul>
+        <li data-q="small ½ chicken (fried on the bone) ">
+          <div class="row"><span class="name">Small ½ Chicken (Fried On The Bone)</span><span class="price">£12.95</span></div>
+          
+        </li>
+        <li data-q="chicken goujons (mini chicken breast fillets in batter) ">
+          <div class="row"><span class="name">Chicken Goujons (Mini Chicken Breast Fillets In Batter)</span><span class="price">£10.95</span></div>
+          
+        </li>
+        <li data-q="battered haggis supper ">
+          <div class="row"><span class="name">Battered Haggis Supper</span><span class="price">£10.95</span></div>
+          
+        </li>
+        <li data-q="battered pork sausages supper ">
+          <div class="row"><span class="name">Battered Pork Sausages Supper</span><span class="price">£10.95</span></div>
+          
+        </li>
+        <li data-q="white pudding supper ">
+          <div class="row"><span class="name">White Pudding Supper</span><span class="price">£10.95</span></div>
+          
+        </li>
+        <li data-q="black pudding supper ">
+          <div class="row"><span class="name">Black Pudding Supper</span><span class="price">£10.95</span></div>
+          
+        </li>
+        <li data-q="smoked sausage supper ">
+          <div class="row"><span class="name">Smoked Sausage Supper</span><span class="price">£10.95</span></div>
+          
+        </li>
+        <li data-q="battered hamburgers supper ">
+          <div class="row"><span class="name">Battered Hamburgers Supper</span><span class="price">£10.95</span></div>
+          
+        </li>
+        <li data-q="battered king rib supper ">
+          <div class="row"><span class="name">Battered King Rib Supper</span><span class="price">£10.95</span></div>
+          
+        </li>
+        <li data-q="mince pie supper ">
+          <div class="row"><span class="name">Mince Pie Supper</span><span class="price">£10.95</span></div>
+          
+        </li>
+        <li data-q="cheese &amp; tomato fried pizza supper ">
+          <div class="row"><span class="name">Cheese &amp; Tomato Fried Pizza Supper</span><span class="price">£10.95</span></div>
+          
+        </li>
+        <li data-q="½ cheese &amp; tomato fried pizza supper ">
+          <div class="row"><span class="name">½ Cheese &amp; Tomato Fried Pizza Supper</span><span class="price">£8.95</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="city-sides" class="sec">
+      <h2>City Sides</h2>
+      
+      <ul>
+        <li data-q="mozzarella sticks with marinara sauce (v) ">
+          <div class="row"><span class="name">Mozzarella Sticks with Marinara Sauce (V)</span><span class="price">£5.95</span></div>
+          
+        </li>
+        <li data-q="mac &amp; cheese side (v) ">
+          <div class="row"><span class="name">Mac &amp; Cheese Side (V)</span><span class="price">£6.45</span></div>
+          
+        </li>
+        <li data-q="battered onion rings (v) ">
+          <div class="row"><span class="name">Battered Onion Rings (V)</span><span class="price">£4.95</span></div>
+          
+        </li>
+        <li data-q="battered mushrooms (v) ">
+          <div class="row"><span class="name">Battered Mushrooms (V)</span><span class="price">£4.95</span></div>
+          
+        </li>
+        <li data-q="garlic bread ">
+          <div class="row"><span class="name">Garlic Bread</span><span class="price">£1.95</span></div>
+          
+        </li>
+        <li data-q="garlic bread &amp; mozzarella (v) ">
+          <div class="row"><span class="name">Garlic Bread &amp; Mozzarella (V)</span><span class="price">£2.95</span></div>
+          
+        </li>
+        <li data-q="garden salad (v,gf) ">
+          <div class="row"><span class="name">Garden Salad (V,GF)</span><span class="price">£4.95</span></div>
+          
+        </li>
+        <li data-q="bread &amp; butter ">
+          <div class="row"><span class="name">Bread &amp; Butter</span><span class="price">£1.50</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="chips-condiments" class="sec">
+      <h2>Chips &amp; Condiments</h2>
+      
+      <ul>
+        <li data-q="house chips (v,gf) ">
+          <div class="row"><span class="name">House chips (V,GF)</span><span class="price">£4.45</span></div>
+          
+        </li>
+        <li data-q="cheesy chips (v,gf) chips topped with melted cheddar cheese.">
+          <div class="row"><span class="name">Cheesy Chips (V,GF)</span><span class="price">£5.95</span></div>
+          <p class="desc">Chips topped with melted cheddar cheese.</p>
+        </li>
+        <li data-q="chili chips (v,gf) melted cheddar cheese, jalapeños and chipotle mayo.">
+          <div class="row"><span class="name">Chili Chips (V,GF)</span><span class="price">£6.95</span></div>
+          <p class="desc">Melted Cheddar cheese, jalapeños and chipotle mayo.</p>
+        </li>
+        <li data-q="curry cheesy chips (v) chips, cheddar cheese, topped with curry sauce.">
+          <div class="row"><span class="name">Curry Cheesy Chips (V)</span><span class="price">£6.95</span></div>
+          <p class="desc">Chips, cheddar cheese, topped with curry sauce.</p>
+        </li>
+        <li data-q="sweet potato fries (v,gf) ">
+          <div class="row"><span class="name">Sweet Potato Fries (V,GF)</span><span class="price">£5.45</span></div>
+          
+        </li>
+        <li data-q="curry sauce (v) ">
+          <div class="row"><span class="name">Curry Sauce (V)</span><span class="price">£2.20</span></div>
+          
+        </li>
+        <li data-q="mushy peas (v,gf) ">
+          <div class="row"><span class="name">Mushy Peas (V,GF)</span><span class="price">£2.50</span></div>
+          
+        </li>
+        <li data-q="gravy (v) ">
+          <div class="row"><span class="name">Gravy (V)</span><span class="price">£1.90</span></div>
+          
+        </li>
+        <li data-q="coleslaw (v,gf) ">
+          <div class="row"><span class="name">Coleslaw (V,GF)</span><span class="price">£2.50</span></div>
+          
+        </li>
+        <li data-q="pickled onion (v,gf) ">
+          <div class="row"><span class="name">Pickled Onion (V,GF)</span><span class="price">£0.80</span></div>
+          
+        </li>
+        <li data-q="pickled egg (v,gf) ">
+          <div class="row"><span class="name">Pickled Egg (V,GF)</span><span class="price">£1.40</span></div>
+          
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>V – VEGETARIAN DISH. VA – VEGETARIAN OPTION AVAILABLE. GF – GLUTEN FREE DISH. GFA – GLUTEN FREE OPTION AVAILABLE. VG – VEGAN. VGA – VEGAN OPTION AVAILABLE. SERVICE CHARGE IS NOT INCLUDED. Although we have meals that are specific allergen free, we do work in an environment that contains mixed ingredients, please make your server aware of any serious allergies. We have gift vouchers available at £20 &amp; £50 denominations.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for City Restaurant.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The City Restaurant menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's US$29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for US$29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

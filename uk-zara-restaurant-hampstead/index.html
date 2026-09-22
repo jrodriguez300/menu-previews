@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Zara Restaurant Menu</title>
+<meta name="description" content="Menu for Zara Restaurant, Hampstead Heath, London.">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Zara Restaurant</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=11%20South%20End%20Road%2C%20Hampstead%20Heath%2C%20London%2C%20NW3%202PT">11 South End Road, Hampstead Heath, London, NW3 2PT</a><a href="tel:02077945498">020 7794 5498</a></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#cold-meze" data-sec="cold-meze">Cold Meze</a><a href="#hot-meze" data-sec="hot-meze">Hot Meze</a><a href="#main-courses-kebabs-grills" data-sec="main-courses-kebabs-grills">Main Courses - Kebabs &amp; Grills</a><a href="#traditional-anatolian-dishes" data-sec="traditional-anatolian-dishes">Traditional Anatolian Dishes</a><a href="#fish-dishes" data-sec="fish-dishes">Fish Dishes</a><a href="#vegetarian-vegan-dishes" data-sec="vegetarian-vegan-dishes">Vegetarian &amp; Vegan Dishes</a><a href="#sides-extras" data-sec="sides-extras">Sides / Extras</a><a href="#desserts" data-sec="desserts">Desserts</a><a href="#soft-beverages" data-sec="soft-beverages">Soft Beverages</a><a href="#coffee-tea" data-sec="coffee-tea">Coffee &amp; Tea</a><a href="#beers" data-sec="beers">Beers</a><a href="#turkish-raki" data-sec="turkish-raki">Turkish Raki</a><a href="#spirits" data-sec="spirits">Spirits</a><a href="#red-wines" data-sec="red-wines">Red Wines</a><a href="#white-wines" data-sec="white-wines">White Wines</a><a href="#ros-sparkling" data-sec="ros-sparkling">Rosé &amp; Sparkling</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="cold-meze" class="sec">
+      <h2>Cold Meze</h2>
+      
+      <ul>
+        <li data-q="1. kısır ve. crushed wheat salad, with finely chopped tomato, onion, parsley, green pepper and celery.">
+          <div class="row"><span class="name">1. Kısır</span><span class="price">£7.50</span></div>
+          <p class="desc">VE. Crushed wheat salad, with finely chopped tomato, onion, parsley, green pepper and celery.</p>
+        </li>
+        <li data-q="2. ispanak salata v gf. fresh spinach in yoghurt, with garlic and olive oil.">
+          <div class="row"><span class="name">2. Ispanak Salata</span><span class="price">£7.50</span></div>
+          <p class="desc">V GF. Fresh spinach in yoghurt, with garlic and olive oil.</p>
+        </li>
+        <li data-q="3. cacık v gf. diced cucumber with mint and a touch of garlic in yoghurt.">
+          <div class="row"><span class="name">3. Cacık</span><span class="price">£7.50</span></div>
+          <p class="desc">V GF. Diced cucumber with mint and a touch of garlic in yoghurt.</p>
+        </li>
+        <li data-q="4. babaganoush ve gf. charcoal-grilled aubergine, puréed with tahini, red pepper and olive oil.">
+          <div class="row"><span class="name">4. Babaganoush</span><span class="price">£7.50</span></div>
+          <p class="desc">VE GF. Charcoal-grilled aubergine, puréed with tahini, red pepper and olive oil.</p>
+        </li>
+        <li data-q="5. tabule ve. parsely, tomato, onions and green pepper, with lemon and olive oil.">
+          <div class="row"><span class="name">5. Tabule</span><span class="price">£6.00</span></div>
+          <p class="desc">VE. Parsely, tomato, onions and green pepper, with lemon and olive oil.</p>
+        </li>
+        <li data-q="6. humus ve gf. chickpea and tahini dip with garlic, lemon juice and olive oil.">
+          <div class="row"><span class="name">6. Humus</span><span class="price">£7.00</span></div>
+          <p class="desc">VE GF. Chickpea and tahini dip with garlic, lemon juice and olive oil.</p>
+        </li>
+        <li data-q="7. tarama cod roe with vegetable oil and lemon juice.">
+          <div class="row"><span class="name">7. Tarama</span><span class="price">£6.50</span></div>
+          <p class="desc">Cod roe with vegetable oil and lemon juice.</p>
+        </li>
+        <li data-q="8. coban salata ve gf. shepherd&#39;s salad - finely chopped cucumber, tomato, pepper and spring onion with a touch of sumac.">
+          <div class="row"><span class="name">8. Coban Salata</span><span class="price">£8.50</span></div>
+          <p class="desc">VE GF. Shepherd&#39;s salad - finely chopped cucumber, tomato, pepper and spring onion with a touch of sumac.</p>
+        </li>
+        <li data-q="9. greek salad v gf. tomatoes, cucumber and red onion with feta cheese.">
+          <div class="row"><span class="name">9. Greek Salad</span><span class="price">£12.00</span></div>
+          <p class="desc">V GF. Tomatoes, cucumber and red onion with feta cheese.</p>
+        </li>
+        <li data-q="10. patlıcan salata v gf. smoked aubergine with smoked pepper, tomato, garlic and olive oil.">
+          <div class="row"><span class="name">10. Patlıcan Salata</span><span class="price">£7.50</span></div>
+          <p class="desc">V GF. Smoked aubergine with smoked pepper, tomato, garlic and olive oil.</p>
+        </li>
+        <li data-q="11. meze platter (v gf optional) mixed meze platter, with humus, tarama, kisir, cacik, tabule, falafel and muska börek.">
+          <div class="row"><span class="name">11. Meze Platter</span><span class="price">£15.50</span></div>
+          <p class="desc">(V GF OPTIONAL) Mixed meze platter, with humus, tarama, kisir, cacik, tabule, falafel and muska börek.</p>
+        </li></ul>
+    </section>
+    <section id="hot-meze" class="sec">
+      <h2>Hot Meze</h2>
+      
+      <ul>
+        <li data-q="12. mercimek çorbası (lentil soup) ve">
+          <div class="row"><span class="name">12. Mercimek Çorbası (Lentil Soup)</span><span class="price">£7.50</span></div>
+          <p class="desc">VE</p>
+        </li>
+        <li data-q="13. taze fasülye ve gf. green beans cooked in olive oil with carrots and onion.">
+          <div class="row"><span class="name">13. Taze Fasülye</span><span class="price">£7.50</span></div>
+          <p class="desc">VE GF. Green beans cooked in olive oil with carrots and onion.</p>
+        </li>
+        <li data-q="14. enginar ve. artichoke heart cooked with olive oil, peas, carrot and potato.">
+          <div class="row"><span class="name">14. Enginar</span><span class="price">£8.80</span></div>
+          <p class="desc">VE. Artichoke heart cooked with olive oil, peas, carrot and potato.</p>
+        </li>
+        <li data-q="15. i̇mam bayıldı ve gf. cooked tomato, green pepper and onions, on a bed of aubergine.">
+          <div class="row"><span class="name">15. İmam Bayıldı</span><span class="price">£10.50</span></div>
+          <p class="desc">VE GF. Cooked tomato, green pepper and onions, on a bed of aubergine.</p>
+        </li>
+        <li data-q="16. falafel ve gf. broad beans, chickpeas, onion, peppers and herbs, crushed and deep fried, served with humus.">
+          <div class="row"><span class="name">16. Falafel</span><span class="price">£8.50</span></div>
+          <p class="desc">VE GF. Broad beans, chickpeas, onion, peppers and herbs, crushed and deep fried, served with humus.</p>
+        </li>
+        <li data-q="17. mücver v. courgette, feta, egg, mint and dill, mixed and deep fried into a fritter.">
+          <div class="row"><span class="name">17. Mücver</span><span class="price">£8.50</span></div>
+          <p class="desc">V. Courgette, feta, egg, mint and dill, mixed and deep fried into a fritter.</p>
+        </li>
+        <li data-q="18. yoğurtlu kızartma v gf. fried vegetables (aubergine, courgette, potato and pepper) with halep sauce, topped with yoghurt.">
+          <div class="row"><span class="name">18. Yoğurtlu Kızartma</span><span class="price">£9.00</span></div>
+          <p class="desc">V GF. Fried vegetables (aubergine, courgette, potato and pepper) with halep sauce, topped with yoghurt.</p>
+        </li>
+        <li data-q="19. hellim izgara v gf. grilled hellim cheese.">
+          <div class="row"><span class="name">19. Hellim Izgara</span><span class="price">£8.50</span></div>
+          <p class="desc">V GF. Grilled hellim cheese.</p>
+        </li>
+        <li data-q="20. muska böreği v. pastry rolls, filled with feta cheese and parsley.">
+          <div class="row"><span class="name">20. Muska Böreği</span><span class="price">£7.50</span></div>
+          <p class="desc">V. Pastry rolls, filled with feta cheese and parsley.</p>
+        </li>
+        <li data-q="21. fırında sucuk gf. spicy oven-baked turkish sausage, with tomato and potatoes.">
+          <div class="row"><span class="name">21. Fırında Sucuk</span><span class="price">£9.00</span></div>
+          <p class="desc">GF. Spicy oven-baked Turkish sausage, with tomato and potatoes.</p>
+        </li>
+        <li data-q="22. sucuk izgara gf. grilled spicy turkish sausage.">
+          <div class="row"><span class="name">22. Sucuk Izgara</span><span class="price">£8.50</span></div>
+          <p class="desc">GF. Grilled spicy Turkish sausage.</p>
+        </li>
+        <li data-q="23. arnavut ciğeri albanian style liver served with onion salad.">
+          <div class="row"><span class="name">23. Arnavut Ciğeri</span><span class="price">£8.50</span></div>
+          <p class="desc">Albanian style liver served with onion salad.</p>
+        </li>
+        <li data-q="24. kalamar deep fried squid with bread crumbs, served with white sauce.">
+          <div class="row"><span class="name">24. Kalamar</span><span class="price">£9.50</span></div>
+          <p class="desc">Deep fried squid with bread crumbs, served with white sauce.</p>
+        </li>
+        <li data-q="25. mixed hot &amp; cold meze for 2 people (v gf optional) (add an extra person for £10 each) kisir, humus, cacik, borek, hellim and falafel.">
+          <div class="row"><span class="name">25. Mixed Hot &amp; Cold Meze For 2 People</span><span class="price">£25.00</span></div>
+          <p class="desc">(V GF OPTIONAL) (Add an extra person for £10 each) Kisir, Humus, Cacik, Borek, Hellim and Falafel.</p>
+        </li></ul>
+    </section>
+    <section id="main-courses-kebabs-grills" class="sec">
+      <h2>Main Courses - Kebabs &amp; Grills</h2>
+      
+      <ul>
+        <li data-q="1. mixed grill gf option. lamb shish, chicken shish, köfte &amp; lamb chop grilled over charcoal. served with rice &amp; mixed salad.">
+          <div class="row"><span class="name">1. Mixed Grill</span><span class="price">£29.50</span></div>
+          <p class="desc">GF OPTION. Lamb shish, chicken shish, köfte &amp; lamb chop grilled over charcoal. Served with rice &amp; mixed salad.</p>
+        </li>
+        <li data-q="2. pirzola gf. lamb chops grilled over charcoal. served with mixed salad &amp; rice or chips.">
+          <div class="row"><span class="name">2. Pirzola</span><span class="price">£25.00</span></div>
+          <p class="desc">GF. Lamb chops grilled over charcoal. Served with mixed salad &amp; rice or chips.</p>
+        </li>
+        <li data-q="3. külbastı gf. fillet of lamb grilled with herbs. served with mixed salad &amp; rice.">
+          <div class="row"><span class="name">3. Külbastı</span><span class="price">£23.00</span></div>
+          <p class="desc">GF. Fillet of lamb grilled with herbs. Served with mixed salad &amp; rice.</p>
+        </li>
+        <li data-q="4. i̇negöl köfte minced lamb meatballs, grilled in the traditional style of the turkish city of inegöl. served with mixed salad &amp; rice.">
+          <div class="row"><span class="name">4. İnegöl Köfte</span><span class="price">£18.00</span></div>
+          <p class="desc">Minced lamb meatballs, grilled in the traditional style of the Turkish city of Inegöl. Served with mixed salad &amp; rice.</p>
+        </li>
+        <li data-q="5. tavuk shish gf. diced chicken specially marinated and grilled over charcoal. served with rice &amp; mixed salad.">
+          <div class="row"><span class="name">5. Tavuk Shish</span><span class="price">£17.90</span></div>
+          <p class="desc">GF. Diced chicken specially marinated and grilled over charcoal. Served with rice &amp; mixed salad.</p>
+        </li>
+        <li data-q="6. chicken fillet gf. chicken fillet with rice &amp; mixed salad.">
+          <div class="row"><span class="name">6. Chicken Fillet</span><span class="price">£17.90</span></div>
+          <p class="desc">GF. Chicken fillet with rice &amp; mixed salad.</p>
+        </li>
+        <li data-q="7. tavuk i̇skender gf*. chicken on a bed of pitta bread, topped with tomato sauce, yoghurt and parsley.">
+          <div class="row"><span class="name">7. Tavuk İskender</span><span class="price">£18.50</span></div>
+          <p class="desc">GF*. Chicken on a bed of pitta bread, topped with tomato sauce, yoghurt and parsley.</p>
+        </li>
+        <li data-q="8. i̇skender kebab gf*. shish köfte and lamb served with pitta bread soaked in yoghurt, topped with tomato sauce and parsley.">
+          <div class="row"><span class="name">8. İskender Kebab</span><span class="price">£20.00</span></div>
+          <p class="desc">GF*. Shish köfte and lamb served with pitta bread soaked in yoghurt, topped with tomato sauce and parsley.</p>
+        </li>
+        <li data-q="9. shish köfte gf. tender minced lamb, marinated, skewered and grilled over charcoal. served with mixed salad &amp; rice.">
+          <div class="row"><span class="name">9. Shish Köfte</span><span class="price">£21.00</span></div>
+          <p class="desc">GF. Tender minced lamb, marinated, skewered and grilled over charcoal. Served with mixed salad &amp; rice.</p>
+        </li>
+        <li data-q="10. shish kebab gf. marinated lamb pieces grilled over charcoal. served with rice &amp; mixed salad">
+          <div class="row"><span class="name">10. Shish Kebab</span><span class="price">£23.00</span></div>
+          <p class="desc">GF. Marinated lamb pieces grilled over charcoal. Served with rice &amp; mixed salad</p>
+        </li></ul>
+    </section>
+    <section id="traditional-anatolian-dishes" class="sec">
+      <h2>Traditional Anatolian Dishes</h2>
+      
+      <ul>
+        <li data-q="11. kuzu fırın gf. oven-cooked joint of lamb with tomato sauce, onion, green peppers, mushroom, carrots, and potato. served with salad &amp; rice.">
+          <div class="row"><span class="name">11. Kuzu Fırın</span><span class="price">£25.00</span></div>
+          <p class="desc">GF. Oven-cooked joint of lamb with tomato sauce, onion, green peppers, mushroom, carrots, and potato. Served with salad &amp; rice.</p>
+        </li>
+        <li data-q="12. i̇slim kebabı gf. diced lamb wrapped with fried aubergine, green peppers &amp; tomatoes.">
+          <div class="row"><span class="name">12. İslim Kebabı</span><span class="price">£19.00</span></div>
+          <p class="desc">GF. Diced lamb wrapped with fried aubergine, green peppers &amp; tomatoes.</p>
+        </li>
+        <li data-q="13. güveç gf. oven baked lamb or chicken with a mixture of fresh vegetables in a rich tomato sauce.">
+          <div class="row"><span class="name">13. Güveç</span><span class="price">£19.00</span></div>
+          <p class="desc">GF. Oven baked lamb or chicken with a mixture of fresh vegetables in a rich tomato sauce.</p>
+        </li>
+        <li data-q="14. musakka layers of sliced aubergine, potatoes, green peppers, mushrooms, tomatoes, courgette and minced lamb, oven-cooked and finished with cheese and a creamy sauce.">
+          <div class="row"><span class="name">14. Musakka</span><span class="price">£18.50</span></div>
+          <p class="desc">Layers of sliced aubergine, potatoes, green peppers, mushrooms, tomatoes, courgette and minced lamb, oven-cooked and finished with cheese and a creamy sauce.</p>
+        </li>
+        <li data-q="15. tavuk tava gf. pan-fried chicken breast in a cream sauce, with red and green peppers, mushrooms and garlic.">
+          <div class="row"><span class="name">15. Tavuk Tava</span><span class="price">£18.95</span></div>
+          <p class="desc">GF. Pan-fried chicken breast in a cream sauce, with red and green peppers, mushrooms and garlic.</p>
+        </li>
+        <li data-q="16. karides tava gf. king prawns in a cream sauce, pan-fried with red and green peppers, mushrooms and garlic.">
+          <div class="row"><span class="name">16. Karides Tava</span><span class="price">£22.00</span></div>
+          <p class="desc">GF. King prawns in a cream sauce, pan-fried with red and green peppers, mushrooms and garlic.</p>
+        </li></ul>
+    </section>
+    <section id="fish-dishes" class="sec">
+      <h2>Fish Dishes</h2>
+      <p class="note">All fishs are grilled &amp; served with rice and salad.</p>
+      <ul>
+        <li data-q="17. levrek (sea bass) gf*">
+          <div class="row"><span class="name">17. Levrek (Sea Bass)</span><span class="price">£22.50</span></div>
+          <p class="desc">GF*</p>
+        </li>
+        <li data-q="18. somon (salmon steak) gf*">
+          <div class="row"><span class="name">18. Somon (Salmon Steak)</span><span class="price">£22.00</span></div>
+          <p class="desc">GF*</p>
+        </li>
+        <li data-q="19. çupra (sea bream) gf*">
+          <div class="row"><span class="name">19. Çupra (Sea Bream)</span><span class="price">£22.50</span></div>
+          <p class="desc">GF*</p>
+        </li></ul>
+    </section>
+    <section id="vegetarian-vegan-dishes" class="sec">
+      <h2>Vegetarian &amp; Vegan Dishes</h2>
+      
+      <ul>
+        <li data-q="20. enginar ve gf. artichoke heart cooked with potato, peas, and carrot in olive oil.">
+          <div class="row"><span class="name">20. Enginar</span><span class="price">£19.00</span></div>
+          <p class="desc">VE GF. Artichoke heart cooked with potato, peas, and carrot in olive oil.</p>
+        </li>
+        <li data-q="21. güveç ve gf. aubergine, green beans, courgette, potato, green pepper, tomatoes and onions, oven baked in a rich tomato sauce. served with salad &amp; rice.">
+          <div class="row"><span class="name">21. Güveç</span><span class="price">£17.50</span></div>
+          <p class="desc">VE GF. Aubergine, green beans, courgette, potato, green pepper, tomatoes and onions, oven baked in a rich tomato sauce. Served with salad &amp; rice.</p>
+        </li>
+        <li data-q="22. falafel ve gf. broad beans, chickpeas, onion, green and red pepper, coriander, parsley and garlic, crushed and deep-fried. served with salad &amp; humus.">
+          <div class="row"><span class="name">22. Falafel</span><span class="price">£17.50</span></div>
+          <p class="desc">VE GF. Broad beans, chickpeas, onion, green and red pepper, coriander, parsley and garlic, crushed and deep-fried. Served with salad &amp; humus.</p>
+        </li>
+        <li data-q="23. mücver v gf. courgette, egg and feta cheese, mixed with herbs and deep-fried to give a crispy finish. served with salad &amp; kısır.">
+          <div class="row"><span class="name">23. Mücver</span><span class="price">£18.00</span></div>
+          <p class="desc">V GF. Courgette, egg and feta cheese, mixed with herbs and deep-fried to give a crispy finish. Served with salad &amp; kısır.</p>
+        </li>
+        <li data-q="24. yoğurtlu kızartma ve option gf. fried aubergine, courgette, potatoes, carrot and green peppers, served with a rich tomato sauce and topped with yoghurt. yoghurt can be substituted for a vegan option.">
+          <div class="row"><span class="name">24. Yoğurtlu Kızartma</span><span class="price">£18.00</span></div>
+          <p class="desc">VE OPTION GF. Fried aubergine, courgette, potatoes, carrot and green peppers, served with a rich tomato sauce and topped with yoghurt. Yoghurt can be substituted for a vegan option.</p>
+        </li>
+        <li data-q="25. vegetarian musakka v gf. potatoes, courgette, carrot, peas, and mushroom, topped and baked with cheddar cheese and a delicious cream sauce.">
+          <div class="row"><span class="name">25. Vegetarian Musakka</span><span class="price">£17.50</span></div>
+          <p class="desc">V GF. Potatoes, courgette, carrot, peas, and mushroom, topped and baked with cheddar cheese and a delicious cream sauce.</p>
+        </li>
+        <li data-q="26. taze fasülye ve gf. green beans cooked in olive oil with carrots, onions &amp; herbs. served with rice &amp; salad.">
+          <div class="row"><span class="name">26. Taze Fasülye</span><span class="price">£16.50</span></div>
+          <p class="desc">VE GF. Green beans cooked in olive oil with carrots, onions &amp; herbs. Served with rice &amp; salad.</p>
+        </li>
+        <li data-q="27. hellim tava v gf. pan-fried hellim cheese with mushrooms, red and green peppers, and a touch of herbs, cooked in a cream sauce. served with salad &amp; rice.">
+          <div class="row"><span class="name">27. Hellim Tava</span><span class="price">£21.00</span></div>
+          <p class="desc">V GF. Pan-fried hellim cheese with mushrooms, red and green peppers, and a touch of herbs, cooked in a cream sauce. Served with salad &amp; rice.</p>
+        </li>
+        <li data-q="28. grilled goat cheese salad v gf">
+          <div class="row"><span class="name">28. Grilled Goat Cheese Salad</span><span class="price">£15.00</span></div>
+          <p class="desc">V GF</p>
+        </li>
+        <li data-q="29. bamya (okra) v gf. okra cooked with onion, tomato and garlic">
+          <div class="row"><span class="name">29. Bamya (Okra)</span><span class="price">£15.00</span></div>
+          <p class="desc">V GF. Okra cooked with onion, tomato and garlic</p>
+        </li></ul>
+    </section>
+    <section id="sides-extras" class="sec">
+      <h2>Sides / Extras</h2>
+      
+      <ul>
+        <li data-q="30. side salad v">
+          <div class="row"><span class="name">30. Side Salad</span><span class="price">£4</span></div>
+          <p class="desc">V</p>
+        </li>
+        <li data-q="31. chips v">
+          <div class="row"><span class="name">31. Chips</span><span class="price">£3</span></div>
+          <p class="desc">V</p>
+        </li>
+        <li data-q="32. rice v">
+          <div class="row"><span class="name">32. Rice</span><span class="price">£3</span></div>
+          <p class="desc">V</p>
+        </li></ul>
+    </section>
+    <section id="desserts" class="sec">
+      <h2>Desserts</h2>
+      
+      <ul>
+        <li data-q="1. yoghurt dessert gf*. yoghurt prepared with honey and walnuts.">
+          <div class="row"><span class="name">1. Yoghurt Dessert</span><span class="price">£5.95</span></div>
+          <p class="desc">GF*. Yoghurt prepared with honey and walnuts.</p>
+        </li>
+        <li data-q="2. baklava iconic turkish pastry with layers of honey and pistachio. add a scoop of ice cream for £1.50">
+          <div class="row"><span class="name">2. Baklava</span><span class="price">£5.95</span></div>
+          <p class="desc">Iconic Turkish pastry with layers of honey and pistachio. Add a scoop of ice cream for £1.50</p>
+        </li>
+        <li data-q="3. kabak seasonal gf*. pumpkin oven-baked with honey syrup, cinnamon and cloves. add a scoop of ice cream for £1.50">
+          <div class="row"><span class="name">3. Kabak</span><span class="price">£5.95</span></div>
+          <p class="desc">SEASONAL GF*. Pumpkin oven-baked with honey syrup, cinnamon and cloves. Add a scoop of ice cream for £1.50</p>
+        </li>
+        <li data-q="4. kayısı gf*. apricots soaked in syrup and filled with whipped cream and nuts.">
+          <div class="row"><span class="name">4. Kayısı</span><span class="price">£5.95</span></div>
+          <p class="desc">GF*. Apricots soaked in syrup and filled with whipped cream and nuts.</p>
+        </li>
+        <li data-q="5. armut tatlısı gf*. fresh pear cooked in syrup, topped with cream, luxurious chocolate and nuts.">
+          <div class="row"><span class="name">5. Armut Tatlısı</span><span class="price">£5.95</span></div>
+          <p class="desc">GF*. Fresh pear cooked in syrup, topped with cream, luxurious chocolate and nuts.</p>
+        </li>
+        <li data-q="6. sütlaç gf*. turkish-style rice pudding, oven baked in a terracotta pot.">
+          <div class="row"><span class="name">6. Sütlaç</span><span class="price">£4.95</span></div>
+          <p class="desc">GF*. Turkish-style rice pudding, oven baked in a terracotta pot.</p>
+        </li></ul>
+    </section>
+    <section id="soft-beverages" class="sec">
+      <h2>Soft Beverages</h2>
+      
+      <ul>
+        <li data-q="orange juice • apple juice ">
+          <div class="row"><span class="name">Orange Juice • Apple Juice</span><span class="price">£3.20</span></div>
+          
+        </li>
+        <li data-q="cherry nectar • apricot nectar ">
+          <div class="row"><span class="name">Cherry Nectar • Apricot Nectar</span><span class="price">£3.20</span></div>
+          
+        </li>
+        <li data-q="still / sparkling mineral water ">
+          <div class="row"><span class="name">Still / Sparkling Mineral Water</span></div>
+          <div class="prices"><span class="pp"><span class="pl">330ml</span> <b>£2.90</b></span><span class="pp"><span class="pl">1 litre</span> <b>£3.80</b></span></div>
+        </li>
+        <li data-q="cola • diet coke • 7 up • fanta ">
+          <div class="row"><span class="name">Cola • Diet Coke • 7 Up • Fanta</span><span class="price">£3.20</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="coffee-tea" class="sec">
+      <h2>Coffee &amp; Tea</h2>
+      
+      <ul>
+        <li data-q="cappuccino ">
+          <div class="row"><span class="name">Cappuccino</span><span class="price">£3.50</span></div>
+          
+        </li>
+        <li data-q="espresso ">
+          <div class="row"><span class="name">Espresso</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Single</span> <b>£2.50</b></span><span class="pp"><span class="pl">Double</span> <b>£3.20</b></span></div>
+        </li>
+        <li data-q="latte ">
+          <div class="row"><span class="name">Latte</span><span class="price">£3.50</span></div>
+          
+        </li>
+        <li data-q="americano ">
+          <div class="row"><span class="name">Americano</span><span class="price">£2.90</span></div>
+          
+        </li>
+        <li data-q="hot chocolate ">
+          <div class="row"><span class="name">Hot Chocolate</span><span class="price">£4</span></div>
+          
+        </li>
+        <li data-q="turkish coffee ">
+          <div class="row"><span class="name">Turkish Coffee</span><span class="price">£4</span></div>
+          
+        </li>
+        <li data-q="turkish tea ">
+          <div class="row"><span class="name">Turkish Tea</span><span class="price">£2.20</span></div>
+          
+        </li>
+        <li data-q="english breakfast tea ">
+          <div class="row"><span class="name">English Breakfast Tea</span><span class="price">£2.50</span></div>
+          
+        </li>
+        <li data-q="earl grey tea ">
+          <div class="row"><span class="name">Earl Grey Tea</span><span class="price">£2.50</span></div>
+          
+        </li>
+        <li data-q="fresh mint tea ">
+          <div class="row"><span class="name">Fresh Mint Tea</span><span class="price">£3</span></div>
+          
+        </li>
+        <li data-q="herbal tea ">
+          <div class="row"><span class="name">Herbal Tea</span><span class="price">£3</span></div>
+          
+        </li>
+        <li data-q="apple tea ">
+          <div class="row"><span class="name">Apple Tea</span><span class="price">£3</span></div>
+          
+        </li>
+        <li data-q="green tea ">
+          <div class="row"><span class="name">Green Tea</span><span class="price">£3</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="beers" class="sec">
+      <h2>Beers</h2>
+      
+      <ul>
+        <li data-q="efes pilsen (turkish) ">
+          <div class="row"><span class="name">Efes Pilsen (Turkish)</span><span class="price">£5.50</span></div>
+          
+        </li>
+        <li data-q="mytos (greek) ">
+          <div class="row"><span class="name">Mytos (Greek)</span><span class="price">£5.50</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="turkish-raki" class="sec">
+      <h2>Turkish Raki</h2>
+      <p class="note">Raki is an unsweetened, aniseed spirit that is regarded as Turkey&#39;s signature drink.</p>
+      <ul>
+        <li data-q="yeni raki ">
+          <div class="row"><span class="name">Yeni Raki</span></div>
+          <div class="prices"><span class="pp"><span class="pl">25ml</span> <b>£5.50</b></span><span class="pp"><span class="pl">50ml</span> <b>£7.50</b></span><span class="pp"><span class="pl">35cl</span> <b>£43</b></span><span class="pp"><span class="pl">70cl</span> <b>£79</b></span></div>
+        </li>
+        <li data-q="yani raki (yeni seri) ">
+          <div class="row"><span class="name">Yani Raki (Yeni Seri)</span></div>
+          <div class="prices"><span class="pp"><span class="pl">25ml</span> <b>£5.50</b></span><span class="pp"><span class="pl">50ml</span> <b>£7.50</b></span><span class="pp"><span class="pl">35cl</span> <b>£48</b></span><span class="pp"><span class="pl">70cl</span> <b>£85</b></span></div>
+        </li></ul>
+    </section>
+    <section id="spirits" class="sec">
+      <h2>Spirits</h2>
+      
+      <ul>
+        <li data-q="whiskey ">
+          <div class="row"><span class="name">Whiskey</span><span class="price">£5.8 / £7.8</span></div>
+          
+        </li>
+        <li data-q="vodka ">
+          <div class="row"><span class="name">Vodka</span><span class="price">£5.8 / £7.8</span></div>
+          
+        </li>
+        <li data-q="gin ">
+          <div class="row"><span class="name">Gin</span><span class="price">£5.8 / £7.8</span></div>
+          
+        </li>
+        <li data-q="brandy ">
+          <div class="row"><span class="name">Brandy</span><span class="price">£5.8 / £7.8</span></div>
+          
+        </li>
+        <li data-q="metaxa ">
+          <div class="row"><span class="name">Metaxa</span><span class="price">£5.8 / £7.8</span></div>
+          
+        </li>
+        <li data-q="add a mixer ">
+          <div class="row"><span class="name">Add a mixer</span><span class="price">£2</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="red-wines" class="sec">
+      <h2>Red Wines</h2>
+      <p class="note">175ml / Bottle</p>
+      <ul>
+        <li data-q="house red turkish or french">
+          <div class="row"><span class="name">House Red</span></div>
+          <p class="desc">Turkish or French</p><div class="prices"><span class="pp"><span class="pl">175ml</span> <b>£7.00</b></span><span class="pp"><span class="pl">Bottle</span> <b>£25.00</b></span></div>
+        </li>
+        <li data-q="angora red aegean a round and well-balanced wine.">
+          <div class="row"><span class="name">Angora Red AEGEAN</span></div>
+          <p class="desc">A round and well-balanced wine.</p><div class="prices"><span class="pp"><span class="pl">175ml</span> <b>£7.50</b></span><span class="pp"><span class="pl">Bottle</span> <b>£26.00</b></span></div>
+        </li>
+        <li data-q="yakut ankara/elazig a distinctive red wine with a rich aroma, well-balanced with soft cherry flavours.">
+          <div class="row"><span class="name">Yakut ANKARA/ELAZIG</span></div>
+          <p class="desc">A distinctive red wine with a rich aroma, well-balanced with soft cherry flavours.</p><div class="prices"><span class="pp"><span class="pl">175ml</span> <b>£7.75</b></span><span class="pp"><span class="pl">Bottle</span> <b>£29.50</b></span></div>
+        </li>
+        <li data-q="villa doluca eastern anatolia an excellent dry wine.">
+          <div class="row"><span class="name">Villa Doluca EASTERN ANATOLIA</span></div>
+          <p class="desc">An excellent dry wine.</p><div class="prices"><span class="pp"><span class="pl">175ml</span> <b>£7.75</b></span><span class="pp"><span class="pl">Bottle</span> <b>£29.50</b></span></div>
+        </li>
+        <li data-q="buzbag elazig/diyarbakir a turkish red of the öküzgözü variety with a fruity and driven character and cherry and fruit flavours.">
+          <div class="row"><span class="name">Buzbag ELAZIG/DIYARBAKIR</span></div>
+          <p class="desc">A Turkish red of the Öküzgözü variety with a fruity and driven character and cherry and fruit flavours.</p><div class="prices"><span class="pp"><span class="pl">175ml</span> <b>£7.75</b></span><span class="pp"><span class="pl">Bottle</span> <b>£30.00</b></span></div>
+        </li>
+        <li data-q="malbec argentina a full-bodied wine with dark fruity flavours, perfect with lamb.">
+          <div class="row"><span class="name">Malbec ARGENTINA</span><span class="price">£35.00</span></div>
+          <p class="desc">A full-bodied wine with dark fruity flavours, perfect with lamb.</p>
+        </li></ul>
+    </section>
+    <section id="white-wines" class="sec">
+      <h2>White Wines</h2>
+      <p class="note">175ml / Bottle</p>
+      <ul>
+        <li data-q="house wine french or turkish">
+          <div class="row"><span class="name">House Wine</span></div>
+          <p class="desc">French or Turkish</p><div class="prices"><span class="pp"><span class="pl">175ml</span> <b>£7.00</b></span><span class="pp"><span class="pl">Bottle</span> <b>£25.00</b></span></div>
+        </li>
+        <li data-q="angora a fresh and lively wine with an aromatic character.">
+          <div class="row"><span class="name">Angora</span></div>
+          <p class="desc">A fresh and lively wine with an aromatic character.</p><div class="prices"><span class="pp"><span class="pl">175ml</span> <b>£7.50</b></span><span class="pp"><span class="pl">Bottle</span> <b>£26.00</b></span></div>
+        </li>
+        <li data-q="çankaya an elegant and well-balanced wine, perfect with seafood, chicken and cheese dishes.">
+          <div class="row"><span class="name">Çankaya</span></div>
+          <p class="desc">An elegant and well-balanced wine, perfect with seafood, chicken and cheese dishes.</p><div class="prices"><span class="pp"><span class="pl">175ml</span> <b>£7.75</b></span><span class="pp"><span class="pl">Bottle</span> <b>£29.50</b></span></div>
+        </li>
+        <li data-q="villa doluca a mellow turkish white, with a crisp and smooth flavour.">
+          <div class="row"><span class="name">Villa Doluca</span></div>
+          <p class="desc">A mellow Turkish white, with a crisp and smooth flavour.</p><div class="prices"><span class="pp"><span class="pl">175ml</span> <b>£7.75</b></span><span class="pp"><span class="pl">Bottle</span> <b>£29.50</b></span></div>
+        </li>
+        <li data-q="pinot grigio light and crisp with smooth, silk-like overtones.">
+          <div class="row"><span class="name">Pinot Grigio</span></div>
+          <p class="desc">Light and crisp with smooth, silk-like overtones.</p><div class="prices"><span class="pp"><span class="pl">175ml</span> <b>£7.00</b></span><span class="pp"><span class="pl">Bottle</span> <b>£28.50</b></span></div>
+        </li>
+        <li data-q="buzbag an anatolian wine with a delicate and rich flavour. a refreshing and well-balanced palate of crisp apples and pears with aromas of lemon flower and grapefruit.">
+          <div class="row"><span class="name">Buzbag</span></div>
+          <p class="desc">An Anatolian wine with a delicate and rich flavour. A refreshing and well-balanced palate of crisp apples and pears with aromas of lemon flower and grapefruit.</p><div class="prices"><span class="pp"><span class="pl">175ml</span> <b>£7.75</b></span><span class="pp"><span class="pl">Bottle</span> <b>£30.00</b></span></div>
+        </li></ul>
+    </section>
+    <section id="ros-sparkling" class="sec">
+      <h2>Rosé &amp; Sparkling</h2>
+      <p class="note">175ml / Bottle</p>
+      <ul>
+        <li data-q="kavaklidere lal a fruity rosé with strawberry flavours and natural acidity.">
+          <div class="row"><span class="name">Kavaklidere Lal</span></div>
+          <p class="desc">A fruity rosé with strawberry flavours and natural acidity.</p><div class="prices"><span class="pp"><span class="pl">175ml</span> <b>£7.75</b></span><span class="pp"><span class="pl">Bottle</span> <b>£29.00</b></span></div>
+        </li>
+        <li data-q="pinot grigio blush an aromatic, semi-sweet and well-balanced rosé.">
+          <div class="row"><span class="name">Pinot Grigio Blush</span><span class="price">£29.00</span></div>
+          <p class="desc">An aromatic, semi-sweet and well-balanced rosé.</p>
+        </li>
+        <li data-q="prosecco 250 ml ">
+          <div class="row"><span class="name">Prosecco 250 ml</span></div>
+          <div class="prices"><span class="pp"><span class="pl">250ml</span> <b>£9.00</b></span><span class="pp"><span class="pl">Bottle</span> <b>£30.00</b></span></div>
+        </li>
+        <li data-q="moet &amp; chandon - brut imperial a delightful crisp and classic champagne with citrus aromas.">
+          <div class="row"><span class="name">Moet &amp; Chandon - Brut Imperial</span><span class="price">£105.00</span></div>
+          <p class="desc">A delightful crisp and classic champagne with citrus aromas.</p>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>FOOD ALLERGIES AND INTOLERANCES: Please speak to our staff about ingredients in your meal, when making your order. All our vegetables and meat are selected and purchased by us personally to ensure the highest quality. Our meals are freshly cooked on the premises. Vegetarian dishes are prepared with extra virgin olive oil. None of our products use GM ingredients. A suggested service charge of 12.5% will be added to your bill. This is voluntary and need not be paid if our service has fallen below your expectations. V Vegetarian | VE Vegan | GF Gluten Free | GF* Gluten Free Optional</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Zara Restaurant.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Zara Restaurant menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's US$29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for US$29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

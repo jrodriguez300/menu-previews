@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Spice N&#39; Vybe Menu</title>
+<meta name="description" content="Menu for Spice N&#39; Vybe, Oakland Park (E Commercial Blvd).">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Spice N&#39; Vybe</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=1538%20E%20Commercial%20Blvd%2C%20Oakland%20Park%2C%20FL%2033334">1538 E Commercial Blvd, Oakland Park, FL 33334</a><a href="tel:9546785665">954-678-5665</a><span>Sun, Tues-Thurs 11:00 am - 9:00 pm; Fri-Sat 11:00 am - 12:00 am; Closed on Monday</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#signature-wings" data-sec="signature-wings">Signature Wings</a><a href="#wings-only-qty" data-sec="wings-only-qty">Wings Only (Qty.)</a><a href="#grilled-wings" data-sec="grilled-wings">Grilled Wings</a><a href="#sides" data-sec="sides">Sides</a><a href="#premium-sides" data-sec="premium-sides">Premium Sides</a><a href="#sandwiches" data-sec="sandwiches">Sandwiches</a><a href="#seafood" data-sec="seafood">Seafood</a><a href="#chicken-tenders" data-sec="chicken-tenders">Chicken Tenders</a><a href="#bowls-salads" data-sec="bowls-salads">Bowls &amp; Salads</a><a href="#jollof-wraps" data-sec="jollof-wraps">Jollof Wraps</a><a href="#the-oakland-pack" data-sec="the-oakland-pack">The Oakland Pack</a><a href="#frozen-drinks" data-sec="frozen-drinks">Frozen Drinks</a><a href="#soft-drinks" data-sec="soft-drinks">Soft Drinks</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="signature-wings" class="sec">
+      <h2>Signature Wings</h2>
+      <p class="note">Perfectly breaded/naked and uniquely fried for a bold, crispy texture.</p>
+      <ul>
+        <li data-q="plain perfectly breaded/naked and uniquely fried for a bold, crispy texture.">
+          <div class="row"><span class="name">Plain</span></div>
+          <p class="desc">Perfectly breaded/naked and uniquely fried for a bold, crispy texture.</p>
+        </li>
+        <li data-q="garlic parm tossed in savory garlic butter and sprinkled with heavenly parmesan cheese.">
+          <div class="row"><span class="name">Garlic Parm</span></div>
+          <p class="desc">Tossed in savory garlic butter and sprinkled with heavenly parmesan cheese.</p>
+        </li>
+        <li data-q="jazzie honey garlic parm the best combination of sweet and savory, a sweet and buttery garlic sauce.">
+          <div class="row"><span class="name">Jazzie Honey Garlic Parm</span></div>
+          <p class="desc">The best combination of sweet and savory, a sweet and buttery garlic sauce.</p>
+        </li>
+        <li data-q="lemon pepper one of our most popular flavors. our wings are tossed in our homemade lemon pepper butter that is made to crave.">
+          <div class="row"><span class="name">Lemon Pepper</span></div>
+          <p class="desc">One of our most popular flavors. Our wings are tossed in our homemade lemon pepper butter that is made to crave.</p>
+        </li>
+        <li data-q="vybe wings (perry wings) the og. our signature sweet and spicy sauce.">
+          <div class="row"><span class="name">Vybe Wings (Perry Wings)</span></div>
+          <p class="desc">THE OG. Our signature sweet and spicy sauce.</p>
+        </li>
+        <li data-q="vybe bbq (perry bbq) marinated wings, tossed in our sweet and mildly spicy bbq sauce.">
+          <div class="row"><span class="name">Vybe BBQ (Perry BBQ)</span></div>
+          <p class="desc">Marinated wings, tossed in our sweet and mildly spicy BBQ sauce.</p>
+        </li>
+        <li data-q="vybe k spice (perry k spice) a daring blend of vybe sauce and ginger k spice.">
+          <div class="row"><span class="name">Vybe K Spice (Perry K Spice)</span></div>
+          <p class="desc">A daring blend of Vybe Sauce and Ginger K Spice.</p>
+        </li>
+        <li data-q="tamarind chipotle bbq a bold combination of tamarind, smokey chipotle peppers and bbq sauce.">
+          <div class="row"><span class="name">Tamarind Chipotle BBQ</span></div>
+          <p class="desc">A bold combination of tamarind, smokey chipotle peppers and BBQ sauce.</p>
+        </li>
+        <li data-q="buffalo a hot classic, perfect for that sizzle you&#39;re craving.">
+          <div class="row"><span class="name">Buffalo</span></div>
+          <p class="desc">A hot classic, perfect for that sizzle you&#39;re craving.</p>
+        </li>
+        <li data-q="spicy lemon pepper a perfect blend of buffalo and tangy lemon pepper.">
+          <div class="row"><span class="name">Spicy Lemon Pepper</span></div>
+          <p class="desc">A perfect blend of buffalo and tangy lemon pepper.</p>
+        </li>
+        <li data-q="peppa layers of flavor that go far beyond simple heat. it&#39;s aromatic, rich, and unapologetically spicy.">
+          <div class="row"><span class="name">Peppa</span></div>
+          <p class="desc">Layers of flavor that go far beyond simple heat. It&#39;s aromatic, rich, and unapologetically spicy.</p>
+        </li>
+        <li data-q="vybe fire (perry fire) your favorite sauce just got a lot hotter.">
+          <div class="row"><span class="name">Vybe Fire (Perry Fire)</span></div>
+          <p class="desc">Your favorite sauce just got a lot hotter.</p>
+        </li>
+        <li data-q="flaming buffalo buffalo for the bold. our spiciest item on the menu.">
+          <div class="row"><span class="name">Flaming Buffalo</span></div>
+          <p class="desc">Buffalo for the Bold. Our spiciest item on the menu.</p>
+        </li></ul>
+    </section>
+    <section id="wings-only-qty" class="sec">
+      <h2>Wings Only (Qty.)</h2>
+      
+      <ul>
+        <li data-q="6 ">
+          <div class="row"><span class="name">6</span><span class="price">$9.50</span></div>
+          
+        </li>
+        <li data-q="10 ">
+          <div class="row"><span class="name">10</span><span class="price">$14.80</span></div>
+          
+        </li>
+        <li data-q="15 ">
+          <div class="row"><span class="name">15</span><span class="price">$21.90</span></div>
+          
+        </li>
+        <li data-q="20 ">
+          <div class="row"><span class="name">20</span><span class="price">$28.80</span></div>
+          
+        </li>
+        <li data-q="30 ">
+          <div class="row"><span class="name">30</span><span class="price">$42.60</span></div>
+          
+        </li>
+        <li data-q="40 ">
+          <div class="row"><span class="name">40</span><span class="price">$56.10</span></div>
+          
+        </li>
+        <li data-q="50 ">
+          <div class="row"><span class="name">50</span><span class="price">$69.20</span></div>
+          
+        </li>
+        <li data-q="100 ">
+          <div class="row"><span class="name">100</span><span class="price">$136.10</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="grilled-wings" class="sec">
+      <h2>Grilled Wings</h2>
+      <p class="note">6 pieces $13 / 10 pieces $19</p>
+      <ul>
+        <li data-q="gros islet perfectly marinated and grilled wings finished with our special bbq sauce.">
+          <div class="row"><span class="name">Gros Islet</span></div>
+          <p class="desc">Perfectly marinated and grilled wings finished with our special BBQ sauce.</p>
+        </li>
+        <li data-q="kingston our jerk-style wings grilled and finished with our house bbq sauce.">
+          <div class="row"><span class="name">Kingston</span></div>
+          <p class="desc">Our Jerk-style wings grilled and finished with our house BBQ sauce.</p>
+        </li>
+        <li data-q="cape town our uniquely grilled wings finished with peri-peri sauce.">
+          <div class="row"><span class="name">Cape Town</span></div>
+          <p class="desc">Our uniquely grilled wings finished with Peri-Peri sauce.</p>
+        </li>
+        <li data-q="accra grilled wings, dusted with suya spice (contains peanuts).">
+          <div class="row"><span class="name">Accra</span></div>
+          <p class="desc">Grilled wings, dusted with Suya Spice (contains peanuts).</p>
+        </li></ul>
+    </section>
+    <section id="sides" class="sec">
+      <h2>Sides</h2>
+      
+      <ul>
+        <li data-q="rice and peas plant-based. vybe favorite.">
+          <div class="row"><span class="name">Rice and Peas</span><span class="price">$4.95</span></div>
+          <p class="desc">Plant-based. Vybe Favorite.</p>
+        </li>
+        <li data-q="french fries plant-based. vybe favorite.">
+          <div class="row"><span class="name">French Fries</span><span class="price">$4.95</span></div>
+          <p class="desc">Plant-based. Vybe Favorite.</p>
+        </li>
+        <li data-q="cornbread ">
+          <div class="row"><span class="name">Cornbread</span><span class="price">$4.95</span></div>
+          
+        </li>
+        <li data-q="house salad plant-based.">
+          <div class="row"><span class="name">House Salad</span><span class="price">$4.95</span></div>
+          <p class="desc">Plant-based.</p>
+        </li>
+        <li data-q="sweet plantains plant-based.">
+          <div class="row"><span class="name">Sweet Plantains</span><span class="price">$4.25</span></div>
+          <p class="desc">Plant-based.</p>
+        </li>
+        <li data-q="avocado plant-based.">
+          <div class="row"><span class="name">Avocado</span><span class="price">$3.25</span></div>
+          <p class="desc">Plant-based.</p>
+        </li></ul>
+    </section>
+    <section id="premium-sides" class="sec">
+      <h2>Premium Sides</h2>
+      
+      <ul>
+        <li data-q="jollof rice plant-based. vybe favorite.">
+          <div class="row"><span class="name">Jollof Rice</span><span class="price">$6.25</span></div>
+          <p class="desc">Plant-based. Vybe Favorite.</p>
+        </li>
+        <li data-q="breadfruit tostones plant-based. vybe favorite.">
+          <div class="row"><span class="name">Breadfruit Tostones</span><span class="price">$8.50</span></div>
+          <p class="desc">Plant-based. Vybe Favorite.</p>
+        </li>
+        <li data-q="mac and cheese ">
+          <div class="row"><span class="name">Mac and Cheese</span><span class="price">$7.95</span></div>
+          
+        </li>
+        <li data-q="sweet potato fries plant-based.">
+          <div class="row"><span class="name">Sweet Potato Fries</span><span class="price">$6.95</span></div>
+          <p class="desc">Plant-based.</p>
+        </li>
+        <li data-q="fried yuca plant-based.">
+          <div class="row"><span class="name">Fried Yuca</span><span class="price">$5.95</span></div>
+          <p class="desc">Plant-based.</p>
+        </li>
+        <li data-q="curried quinoa plant-based.">
+          <div class="row"><span class="name">Curried Quinoa</span><span class="price">$6.95</span></div>
+          <p class="desc">Plant-based.</p>
+        </li>
+        <li data-q="sautéed coconut kale plant-based.">
+          <div class="row"><span class="name">Sautéed Coconut Kale</span><span class="price">$5.95</span></div>
+          <p class="desc">Plant-based.</p>
+        </li></ul>
+    </section>
+    <section id="sandwiches" class="sec">
+      <h2>Sandwiches</h2>
+      
+      <ul>
+        <li data-q="crispy chicken sandwich vybe favorite.">
+          <div class="row"><span class="name">Crispy Chicken Sandwich</span><span class="price">$13.95</span></div>
+          <p class="desc">Vybe Favorite.</p>
+        </li>
+        <li data-q="cheeseburger ">
+          <div class="row"><span class="name">Cheeseburger</span><span class="price">$12.95</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="seafood" class="sec">
+      <h2>Seafood</h2>
+      
+      <ul>
+        <li data-q="grilled shrimp ">
+          <div class="row"><span class="name">Grilled Shrimp</span><span class="price">MP</span></div>
+          
+        </li>
+        <li data-q="fried shrimp ">
+          <div class="row"><span class="name">Fried Shrimp</span><span class="price">MP</span></div>
+          
+        </li>
+        <li data-q="mahi bites ">
+          <div class="row"><span class="name">Mahi Bites</span><span class="price">MP</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="chicken-tenders" class="sec">
+      <h2>Chicken Tenders</h2>
+      
+      <ul>
+        <li data-q="chicken tenders and fries ">
+          <div class="row"><span class="name">Chicken Tenders and Fries</span><span class="price">$14.20</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="bowls-salads" class="sec">
+      <h2>Bowls &amp; Salads</h2>
+      
+      <ul>
+        <li data-q="krss bowl - grilled chicken choose your protein.">
+          <div class="row"><span class="name">KRSS Bowl - Grilled Chicken</span><span class="price">$18</span></div>
+          <p class="desc">Choose your protein.</p>
+        </li>
+        <li data-q="krss bowl - mahi bites choose your protein.">
+          <div class="row"><span class="name">KRSS Bowl - Mahi Bites</span><span class="price">MP</span></div>
+          <p class="desc">Choose your protein.</p>
+        </li>
+        <li data-q="krss bowl - shrimp choose your protein.">
+          <div class="row"><span class="name">KRSS Bowl - Shrimp</span><span class="price">MP</span></div>
+          <p class="desc">Choose your protein.</p>
+        </li>
+        <li data-q="chicken salad ">
+          <div class="row"><span class="name">Chicken Salad</span><span class="price">$14.95</span></div>
+          
+        </li>
+        <li data-q="shrimp salad ">
+          <div class="row"><span class="name">Shrimp Salad</span><span class="price">MP</span></div>
+          
+        </li>
+        <li data-q="mahi bites salad ">
+          <div class="row"><span class="name">Mahi Bites Salad</span><span class="price">MP</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="jollof-wraps" class="sec">
+      <h2>Jollof Wraps</h2>
+      <p class="note">All wraps come with jollof rice, sweet plantains, lettuce, cheese, and our signature KC sauce inside.</p>
+      <ul>
+        <li data-q="chicken vybe favorite.">
+          <div class="row"><span class="name">Chicken</span><span class="price">$12</span></div>
+          <p class="desc">Vybe Favorite.</p>
+        </li>
+        <li data-q="fish ">
+          <div class="row"><span class="name">Fish</span><span class="price">MP</span></div>
+          
+        </li>
+        <li data-q="shrimp ">
+          <div class="row"><span class="name">Shrimp</span><span class="price">MP</span></div>
+          
+        </li>
+        <li data-q="veggie (avocado) ">
+          <div class="row"><span class="name">Veggie (Avocado)</span><span class="price">$12</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="the-oakland-pack" class="sec">
+      <h2>The Oakland Pack</h2>
+      
+      <ul>
+        <li data-q="10 pc wings + fries + drink vybe favorite.">
+          <div class="row"><span class="name">10 pc Wings + Fries + Drink</span><span class="price">$22.50</span></div>
+          <p class="desc">Vybe Favorite.</p>
+        </li></ul>
+    </section>
+    <section id="frozen-drinks" class="sec">
+      <h2>Frozen Drinks</h2>
+      <p class="note">Frozen drink flavors are subject to change without notice.</p>
+      <ul>
+        <li data-q="mango ">
+          <div class="row"><span class="name">Mango</span></div>
+          
+        </li>
+        <li data-q="strawberry ">
+          <div class="row"><span class="name">Strawberry</span></div>
+          
+        </li>
+        <li data-q="blue raspberry ">
+          <div class="row"><span class="name">Blue Raspberry</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="soft-drinks" class="sec">
+      <h2>Soft Drinks</h2>
+      
+      <ul>
+        <li data-q="coke (regular or zero) ">
+          <div class="row"><span class="name">Coke (Regular or Zero)</span></div>
+          
+        </li>
+        <li data-q="sprite ">
+          <div class="row"><span class="name">Sprite</span></div>
+          
+        </li>
+        <li data-q="ginger ale ">
+          <div class="row"><span class="name">Ginger Ale</span></div>
+          
+        </li>
+        <li data-q="fanta pineapple ">
+          <div class="row"><span class="name">Fanta Pineapple</span></div>
+          
+        </li>
+        <li data-q="dasani 20 oz ">
+          <div class="row"><span class="name">Dasani 20 oz</span></div>
+          
+        </li>
+        <li data-q="pellegrino 16 oz ">
+          <div class="row"><span class="name">Pellegrino 16 oz</span></div>
+          
+        </li>
+        <li data-q="fruit punch ">
+          <div class="row"><span class="name">Fruit Punch</span></div>
+          
+        </li>
+        <li data-q="iced tea ">
+          <div class="row"><span class="name">Iced Tea</span></div>
+          
+        </li>
+        <li data-q="iced tea (unsweetened) ">
+          <div class="row"><span class="name">Iced Tea (Unsweetened)</span></div>
+          
+        </li>
+        <li data-q="lemonade ">
+          <div class="row"><span class="name">Lemonade</span></div>
+          
+        </li>
+        <li data-q="the flop vybe favorite. pick any combination of fruit punch, lemonade, iced tea (sweet or unsweetened)">
+          <div class="row"><span class="name">The Flop</span></div>
+          <p class="desc">Vybe Favorite. Pick any combination of Fruit Punch, Lemonade, Iced Tea (sweet or unsweetened)</p>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>MP Market Price. Frozen drink flavors are subject to change without notice. 2 HOUR CATERING! same-day service - your catering ready same day, in just 2 hours! Order online at spicenvybe.com.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Spice N&#39; Vybe.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Spice N&#39; Vybe menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

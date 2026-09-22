@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Bunny&#39;s Buckets &amp; Bubbles Menu</title>
+<meta name="description" content="Menu for Bunny&#39;s Buckets &amp; Bubbles, Fells Point (S Ann Street).">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Bunny&#39;s Buckets &amp; Bubbles</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=801%20S%20Ann%20St%2C%20Baltimore%2C%20MD%2021231">801 S Ann St, Baltimore, MD 21231</a><a href="tel:4437083861">443-708-3861</a><span>Restaurant: Monday-Thursday 4:00pm-11:30pm; Friday 11:00am-12:00am; Saturday-Sunday 10:00am-12:00am. Kitchen: Monday-Thursday 5:00pm-10:00pm; Friday 11:00am-11:00pm; Saturday 10:00am-3:00pm and 4:00pm-11:00pm; Sunday 10:00am-3:00pm and 4:00pm-9:00pm</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#starters-snacks" data-sec="starters-snacks">Starters &amp; Snacks</a><a href="#rabbit-food" data-sec="rabbit-food">Rabbit Food</a><a href="#gf-fried-chicken" data-sec="gf-fried-chicken">GF Fried Chicken</a><a href="#entrees" data-sec="entrees">Entrees</a><a href="#sandwiches" data-sec="sandwiches">Sandwiches</a><a href="#sides" data-sec="sides">Sides</a><a href="#drinks" data-sec="drinks">Drinks</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="starters-snacks" class="sec">
+      <h2>Starters &amp; Snacks</h2>
+      
+      <ul>
+        <li data-q="cream of crab soup with jumbo lump crab meat &amp; a drumstick.">
+          <div class="row"><span class="name">Cream of Crab Soup</span><span class="price">$15</span></div>
+          <p class="desc">With jumbo lump crab meat &amp; a drumstick.</p>
+        </li>
+        <li data-q="cornmeal fried oysters (6) with hot sauce mayo.">
+          <div class="row"><span class="name">Cornmeal Fried Oysters</span><span class="price">$16</span></div>
+          <p class="desc">(6) with hot sauce mayo.</p>
+        </li>
+        <li data-q="breaded wings choice of miso hot honey, buffalo hot honey or naked.">
+          <div class="row"><span class="name">Breaded Wings</span><span class="price">$16</span></div>
+          <p class="desc">Choice of miso hot honey, Buffalo hot honey or naked.</p>
+        </li>
+        <li data-q="nuggies pick your dipper.">
+          <div class="row"><span class="name">Nuggies</span><span class="price">$11</span></div>
+          <p class="desc">Pick your dipper.</p>
+        </li>
+        <li data-q="pimento cheese croquettes with chow chow relish &amp; honey mustard.">
+          <div class="row"><span class="name">Pimento Cheese Croquettes</span><span class="price">$12</span></div>
+          <p class="desc">With chow chow relish &amp; honey mustard.</p>
+        </li>
+        <li data-q="mac &amp; cheese 4 cheese blend with buttered ritz breadcrumbs.">
+          <div class="row"><span class="name">Mac &amp; Cheese</span><span class="price">$10</span></div>
+          <p class="desc">4 cheese blend with buttered Ritz breadcrumbs.</p>
+        </li>
+        <li data-q="waffle fry poutine waffle fries, crispy chicken nuggies, cheddar cheese curds, chicken gravy.">
+          <div class="row"><span class="name">Waffle Fry Poutine</span><span class="price">$18</span></div>
+          <p class="desc">Waffle fries, crispy chicken nuggies, cheddar cheese curds, chicken gravy.</p>
+        </li>
+        <li data-q="cornmeal hush puppies with honey butter.">
+          <div class="row"><span class="name">Cornmeal Hush Puppies</span><span class="price">$10</span></div>
+          <p class="desc">With honey butter.</p>
+        </li>
+        <li data-q="biscuits with honey butter.">
+          <div class="row"><span class="name">Biscuits</span><span class="price">$7</span></div>
+          <p class="desc">With honey butter.</p>
+        </li>
+        <li data-q="fells point sourdough parker house rolls (2) brushed with butter &amp; chives.">
+          <div class="row"><span class="name">Fells Point Sourdough Parker House Rolls</span><span class="price">$6</span></div>
+          <p class="desc">(2) brushed with butter &amp; chives.</p>
+        </li>
+        <li data-q="classic pickled veggies ">
+          <div class="row"><span class="name">Classic Pickled Veggies</span><span class="price">$7</span></div>
+          
+        </li>
+        <li data-q="pimento cheese dip with ritz butter crackers.">
+          <div class="row"><span class="name">Pimento Cheese Dip</span><span class="price">$10</span></div>
+          <p class="desc">With Ritz butter crackers.</p>
+        </li>
+        <li data-q="smoked trout dip with chives, roe and ritz crackers.">
+          <div class="row"><span class="name">Smoked Trout Dip</span><span class="price">$16</span></div>
+          <p class="desc">With chives, roe and Ritz crackers.</p>
+        </li>
+        <li data-q="deviled eggs (3) lump crab, traditional with pickled mustard seed, pimento cheese with crispy chicken skin crumbs, or a sampler of all three.">
+          <div class="row"><span class="name">Deviled Eggs (3)</span></div>
+          <p class="desc">Lump crab, traditional with pickled mustard seed, pimento cheese with crispy chicken skin crumbs, or a sampler of all three.</p><div class="prices"><span class="pp"><span class="pl">Lump Crab</span> <b>$12</b></span><span class="pp"><span class="pl">Traditional</span> <b>$8</b></span><span class="pp"><span class="pl">Pimento Cheese</span> <b>$10</b></span><span class="pp"><span class="pl">Sampler</span> <b>$10</b></span></div>
+        </li>
+        <li data-q="caviar service served with potato chips, creme fraiche &amp; chives.">
+          <div class="row"><span class="name">Caviar Service</span></div>
+          <p class="desc">Served with potato chips, creme fraiche &amp; chives.</p><div class="prices"><span class="pp"><span class="pl">Smoked Trout Roe</span> <b>$18</b></span><span class="pp"><span class="pl">American Wild Paddlefish</span> <b>$40</b></span></div>
+        </li>
+        <li data-q="clicquot &amp; caviar a bump of american wild paddlefish caviar and a shot of veuve clicquot!">
+          <div class="row"><span class="name">Clicquot &amp; Caviar</span></div>
+          <p class="desc">A bump of American Wild Paddlefish caviar and a shot of Veuve Clicquot!</p><div class="prices"><span class="pp"><b>$20 per person</b></span></div>
+        </li></ul>
+    </section>
+    <section id="rabbit-food" class="sec">
+      <h2>Rabbit Food</h2>
+      <p class="note">Add chicken nuggies +$8, crispy boneless thigh +$8, chicken cake +$10.</p>
+      <ul>
+        <li data-q="collard green caesar chopped collard greens, pickled red onion, boiled peanuts, cornbread croutons, hot sauce caesar dressing and parmesan.">
+          <div class="row"><span class="name">Collard Green Caesar</span><span class="price">$14</span></div>
+          <p class="desc">Chopped collard greens, pickled red onion, boiled peanuts, cornbread croutons, hot sauce Caesar dressing and parmesan.</p>
+        </li>
+        <li data-q="bunny&#39;s wedge iceberg, smokey blue cheese crumbles, blue cheese dressing, bacon lardons, tomato jam and chicken skin crunch.">
+          <div class="row"><span class="name">Bunny&#39;s Wedge</span><span class="price">$15</span></div>
+          <p class="desc">Iceberg, smokey blue cheese crumbles, blue cheese dressing, bacon lardons, tomato jam and chicken skin crunch.</p>
+        </li>
+        <li data-q="crab cobb salad chopped iceberg lettuce, ranch dressing, cherry tomatoes, egg, avocado, bacon, pimentos and jumbo lump crab.">
+          <div class="row"><span class="name">Crab Cobb Salad</span><span class="price">$28</span></div>
+          <p class="desc">Chopped iceberg lettuce, ranch dressing, cherry tomatoes, egg, avocado, bacon, pimentos and jumbo lump crab.</p>
+        </li></ul>
+    </section>
+    <section id="gf-fried-chicken" class="sec">
+      <h2>GF Fried Chicken</h2>
+      <p class="note">Gluten free. Additional biscuit +$2.5; all white meat for an extra charge. Pick a dipping sauce: miso-hot honey, house ranch, honey mustard, Buffalo hot honey, house-made hot sauce, gochujang bbq sauce (extra sauce +$1). Add a side $6: green beans with ham hocks, coleslaw, Jimmy Red grits, collard greens (V), waffle fries (truffle fries +$4), sour cream &amp; onion potato salad. Dunk your cluckin&#39; chicken in miso hot honey or Buffalo hot honey for an extra charge.</p>
+      <ul>
+        <li data-q="2 piece + 1 side + 1 biscuit + pickles + honey butter.">
+          <div class="row"><span class="name">2 Piece</span><span class="price">$18</span></div>
+          <p class="desc">+ 1 side + 1 biscuit + pickles + honey butter.</p>
+        </li>
+        <li data-q="half chicken 4 piece + 1 biscuit + pickles + honey butter.">
+          <div class="row"><span class="name">Half Chicken</span><span class="price">$23</span></div>
+          <p class="desc">4 piece + 1 biscuit + pickles + honey butter.</p>
+        </li>
+        <li data-q="whole chicken bucket 8 piece + 2 biscuits + pickles + honey butter.">
+          <div class="row"><span class="name">Whole Chicken Bucket</span><span class="price">$42</span></div>
+          <p class="desc">8 piece + 2 biscuits + pickles + honey butter.</p>
+        </li></ul>
+    </section>
+    <section id="entrees" class="sec">
+      <h2>Entrees</h2>
+      
+      <ul>
+        <li data-q="shrimp &amp; grits u-10 prawns, marsh hen mill jimmy red grits, bacon, celery, shrimp cream.">
+          <div class="row"><span class="name">Shrimp &amp; Grits</span><span class="price">$29</span></div>
+          <p class="desc">U-10 prawns, Marsh Hen Mill Jimmy Red grits, bacon, celery, shrimp cream.</p>
+        </li>
+        <li data-q="crab fried rice jasmine rice, jumbo lump crab meat, seasonal veg, old bay, egg, sesame, topped with scallions.">
+          <div class="row"><span class="name">Crab Fried Rice</span><span class="price">$32</span></div>
+          <p class="desc">Jasmine rice, jumbo lump crab meat, seasonal veg, Old Bay, egg, sesame, topped with scallions.</p>
+        </li>
+        <li data-q="chicken cake shredded chicken breast, seasoned like a crab cake, broiled with old bay fries &amp; coleslaw.">
+          <div class="row"><span class="name">Chicken Cake</span><span class="price">$24</span></div>
+          <p class="desc">Shredded chicken breast, seasoned like a crab cake, broiled with old bay fries &amp; coleslaw.</p>
+        </li>
+        <li data-q="fried chicken cassoulet black-eyed pea cassoulet with smoked pork belly, tomato, onion, garlic, breadcrumbs and fried chicken leg.">
+          <div class="row"><span class="name">Fried Chicken Cassoulet</span><span class="price">$28</span></div>
+          <p class="desc">Black-eyed pea cassoulet with smoked pork belly, tomato, onion, garlic, breadcrumbs and fried chicken leg.</p>
+        </li>
+        <li data-q="magret duck breast with cheesy carolina gold rice-sotto, mushrooms, spinach, cherry demi-glace.">
+          <div class="row"><span class="name">Magret Duck Breast</span><span class="price">$34</span></div>
+          <p class="desc">With cheesy Carolina gold rice-sotto, mushrooms, spinach, cherry demi-glace.</p>
+        </li>
+        <li data-q="pan seared black cod black bean, hominy &amp; pimento succotash, salsa verde.">
+          <div class="row"><span class="name">Pan Seared Black Cod</span><span class="price">$32</span></div>
+          <p class="desc">Black bean, hominy &amp; pimento succotash, salsa verde.</p>
+        </li>
+        <li data-q="14oz dry aged ribeye with truffle waffle fries.">
+          <div class="row"><span class="name">14oz Dry Aged Ribeye</span><span class="price">$60</span></div>
+          <p class="desc">With truffle waffle fries.</p>
+        </li></ul>
+    </section>
+    <section id="sandwiches" class="sec">
+      <h2>Sandwiches</h2>
+      
+      <ul>
+        <li data-q="crispy chicken roll crispy chicken nuggies, tossed in brown butter mayo with chives and pickles on a split top roll.">
+          <div class="row"><span class="name">Crispy Chicken Roll</span><span class="price">$17</span></div>
+          <p class="desc">Crispy chicken nuggies, tossed in brown butter mayo with chives and pickles on a split top roll.</p>
+        </li>
+        <li data-q="vegan chicken sammie vegan crispy chicken patty, white bbq sauce, shrettuce and pickles.">
+          <div class="row"><span class="name">Vegan Chicken Sammie</span><span class="price">$18</span></div>
+          <p class="desc">Vegan crispy chicken patty, white bbq sauce, shrettuce and pickles.</p>
+        </li>
+        <li data-q="chicken &amp; waffle sammie crispy chicken thigh, buffalo hot honey, ranch, pickles, pimento cheese, on liege waffles. available on a sesame seed bun, just ask!">
+          <div class="row"><span class="name">Chicken &amp; Waffle Sammie</span><span class="price">$18</span></div>
+          <p class="desc">Crispy chicken thigh, Buffalo hot honey, ranch, pickles, pimento cheese, on liege waffles. Available on a sesame seed bun, just ask!</p>
+        </li>
+        <li data-q="shrimp salad roll poached shrimp, old bay mayo, red onion, celery on a split top roll.">
+          <div class="row"><span class="name">Shrimp Salad Roll</span><span class="price">$20</span></div>
+          <p class="desc">Poached shrimp, Old Bay mayo, red onion, celery on a split top roll.</p>
+        </li>
+        <li data-q="fells point smashburger two all beef patties, shrettuce, cheese, pickles, onions, special sauce, on a sesame seed bun. extra patty $6, bacon $2, avocado $2, fried egg $3.">
+          <div class="row"><span class="name">Fells Point Smashburger</span><span class="price">$18</span></div>
+          <p class="desc">Two all beef patties, shrettuce, cheese, pickles, onions, special sauce, on a sesame seed bun. Extra patty $6, bacon $2, avocado $2, fried egg $3.</p>
+        </li>
+        <li data-q="impossible smashburger two impossible patties, shrettuce, cheese, pickles, onions, special sauce, on a sesame seed bun.">
+          <div class="row"><span class="name">Impossible Smashburger</span><span class="price">$20</span></div>
+          <p class="desc">Two impossible patties, shrettuce, cheese, pickles, onions, special sauce, on a sesame seed bun.</p>
+        </li>
+        <li data-q="catfish sammie cornflake crusted catfish, caviar buttermilk herb sauce, pickles, shrettuce, sesame seed bun.">
+          <div class="row"><span class="name">Catfish Sammie</span><span class="price">$20</span></div>
+          <p class="desc">Cornflake crusted catfish, caviar buttermilk herb sauce, pickles, shrettuce, sesame seed bun.</p>
+        </li></ul>
+    </section>
+    <section id="sides" class="sec">
+      <h2>Sides</h2>
+      
+      <ul>
+        <li data-q="green beans with ham hocks ">
+          <div class="row"><span class="name">Green Beans with Ham Hocks</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="coleslaw ">
+          <div class="row"><span class="name">Coleslaw</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="waffle fries truffle fries +$4.">
+          <div class="row"><span class="name">Waffle Fries</span><span class="price">$6</span></div>
+          <p class="desc">Truffle fries +$4.</p>
+        </li>
+        <li data-q="vegan collard greens ">
+          <div class="row"><span class="name">Vegan Collard Greens</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="sour cream &amp; onion potato salad ">
+          <div class="row"><span class="name">Sour Cream &amp; Onion Potato Salad</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="jimmy red grits ">
+          <div class="row"><span class="name">Jimmy Red Grits</span><span class="price">$6</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="drinks" class="sec">
+      <h2>Drinks</h2>
+      
+      <ul>
+        <li data-q="coke, diet coke, sprite, ginger ale, lemonade, unsweetened tea, cranberry juice ">
+          <div class="row"><span class="name">Coke, Diet Coke, Sprite, Ginger Ale, Lemonade, Unsweetened Tea, Cranberry Juice</span><span class="price">$3.50</span></div>
+          
+        </li>
+        <li data-q="abita root beer 12 oz bottle ">
+          <div class="row"><span class="name">Abita Root Beer 12 oz Bottle</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="saratoga sparkling water 28 oz bottle ">
+          <div class="row"><span class="name">Saratoga Sparkling Water 28 oz Bottle</span><span class="price">$5</span></div>
+          
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>For parties of 6 or more we add a gratuity of 20%. For large party &amp; event inquiries, please email events@bunnysbaltimore.com. We&#39;d be so effing bubbly if you tag us on the gram @bunnysbaltimore.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Bunny&#39;s Buckets &amp; Bubbles.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Bunny&#39;s Buckets &amp; Bubbles menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

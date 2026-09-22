@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>SYIP Cafe Menu</title>
+<meta name="description" content="Menu for SYIP Cafe, Farrer Park.">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>SYIP Cafe</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=79%20Owen%20Road%20Singapore%20218895">79 Owen Road Singapore 218895</a><span>Monday-Sunday: 9am-6pm (Last order 5.30pm)</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#brunch" data-sec="brunch">Brunch</a><a href="#mains" data-sec="mains">Mains</a><a href="#sweets" data-sec="sweets">Sweets</a><a href="#sides" data-sec="sides">Sides</a><a href="#espresso" data-sec="espresso">Espresso</a><a href="#tea-by-antea-social" data-sec="tea-by-antea-social">Tea by ANTEA SOCIAL</a><a href="#others" data-sec="others">Others</a><a href="#signature-ade" data-sec="signature-ade">Signature Ade</a><a href="#signature-cold-foam" data-sec="signature-cold-foam">Signature Cold Foam</a><a href="#add-ons" data-sec="add-ons">Add-ons</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="brunch" class="sec">
+      <h2>Brunch</h2>
+      
+      <ul>
+        <li data-q="syip big breakfast sourdough, sliced avocado, portobello mushroom, chicken cheese sausage, scrambled eggs, kale, tater tots, pancetta bacon">
+          <div class="row"><span class="name">SYIP Big Breakfast</span><span class="price">$26</span></div>
+          <p class="desc">sourdough, sliced avocado, portobello mushroom, chicken cheese sausage, scrambled eggs, kale, tater tots, pancetta bacon</p>
+        </li>
+        <li data-q="sliced avocado toast sourdough, sliced avocado, poached egg, nori kombu cream cheese">
+          <div class="row"><span class="name">Sliced Avocado Toast</span><span class="price">$19</span></div>
+          <p class="desc">sourdough, sliced avocado, poached egg, nori kombu cream cheese</p>
+        </li>
+        <li data-q="kani crab sando shokupan, kani crab mix, pickled cucumber, mentaiko mayo, bonito flakes, ikura">
+          <div class="row"><span class="name">Kani Crab Sando</span><span class="price">$22</span></div>
+          <p class="desc">shokupan, kani crab mix, pickled cucumber, mentaiko mayo, bonito flakes, ikura</p>
+        </li></ul>
+    </section>
+    <section id="mains" class="sec">
+      <h2>Mains</h2>
+      
+      <ul>
+        <li data-q="prawn bisque risotto arborio rice, prawn bisque, tiger prawn, rocket salad, cherry tomatoes, parmesan">
+          <div class="row"><span class="name">Prawn Bisque Risotto</span><span class="price">$24</span></div>
+          <p class="desc">arborio rice, prawn bisque, tiger prawn, rocket salad, cherry tomatoes, parmesan</p>
+        </li>
+        <li data-q="mentaiko scallop linguine linguine, pan seared hokkaido scallops, mentaiko cream, sakura ebi, ikura">
+          <div class="row"><span class="name">Mentaiko Scallop Linguine</span><span class="price">$27</span></div>
+          <p class="desc">linguine, pan seared hokkaido scallops, mentaiko cream, sakura ebi, ikura</p>
+        </li>
+        <li data-q="carbonara udon sanuki udon, pancetta bacon, egg yolk, mentaiko, parmesan">
+          <div class="row"><span class="name">Carbonara Udon</span><span class="price">$22</span></div>
+          <p class="desc">sanuki udon, pancetta bacon, egg yolk, mentaiko, parmesan</p>
+        </li>
+        <li data-q="sirloin steak rice bowl sirloin steak, furikake rice, saute mushroom, egg yolk, fried kale, yellow daikon">
+          <div class="row"><span class="name">Sirloin Steak Rice Bowl</span><span class="price">$22</span></div>
+          <p class="desc">sirloin steak, furikake rice, saute mushroom, egg yolk, fried kale, yellow daikon</p>
+        </li>
+        <li data-q="creamy chicken scrambled egg croissant croissant, scrambled eggs, creamy chicken, baby spinach, chicken cheese sausage, mushroom">
+          <div class="row"><span class="name">Creamy Chicken Scrambled Egg Croissant</span><span class="price">$20</span></div>
+          <p class="desc">croissant, scrambled eggs, creamy chicken, baby spinach, chicken cheese sausage, mushroom</p>
+        </li>
+        <li data-q="truffle ham &amp; cheese ciabatta ciabatta, truffle aioli, gammon ham, gruyere &amp; parmesan cheese, portobello mushroom, honey">
+          <div class="row"><span class="name">Truffle Ham &amp; Cheese Ciabatta</span><span class="price">$22</span></div>
+          <p class="desc">ciabatta, truffle aioli, gammon ham, gruyere &amp; parmesan cheese, portobello mushroom, honey</p>
+        </li>
+        <li data-q="wagyu slider egg benedict english muffin, wagyu beef patty, smoked cheddar, guacamole, onion jam, gherkin, poached eggs, hollandaise">
+          <div class="row"><span class="name">Wagyu Slider Egg Benedict</span><span class="price">$24</span></div>
+          <p class="desc">english muffin, wagyu beef patty, smoked cheddar, guacamole, onion jam, gherkin, poached eggs, hollandaise</p>
+        </li>
+        <li data-q="truffle steak risotto arborio rice, sauute mushroom, sirloin steak, parmesan, truffle oil, toasted hazelnut">
+          <div class="row"><span class="name">Truffle Steak Risotto</span><span class="price">$25</span></div>
+          <p class="desc">arborio rice, sauute mushroom, sirloin steak, parmesan, truffle oil, toasted hazelnut</p>
+        </li>
+        <li data-q="ikura kombu capellini capellini, sakura ebi, shio kombu, ikura, lump crab">
+          <div class="row"><span class="name">Ikura Kombu Capellini</span><span class="price">$21</span></div>
+          <p class="desc">capellini, sakura ebi, shio kombu, ikura, lump crab</p>
+        </li>
+        <li data-q="iberico jowl butadon pork jowl, furikake rice, sauute mushroom, egg yolk, yellow daikon">
+          <div class="row"><span class="name">Iberico Jowl Butadon</span><span class="price">$19</span></div>
+          <p class="desc">pork jowl, furikake rice, sauute mushroom, egg yolk, yellow daikon</p>
+        </li></ul>
+    </section>
+    <section id="sweets" class="sec">
+      <h2>Sweets</h2>
+      
+      <ul>
+        <li data-q="matcha french toast matcha ganache, strawberry, blueberry, crushed pistachio">
+          <div class="row"><span class="name">Matcha French Toast</span><span class="price">$18</span></div>
+          <p class="desc">matcha ganache, strawberry, blueberry, crushed pistachio</p>
+        </li>
+        <li data-q="earl grey pear french toast earl grey brioche, earl grey chantilly, poached pear, strawberry">
+          <div class="row"><span class="name">Earl Grey Pear French Toast</span><span class="price">$15</span></div>
+          <p class="desc">earl grey brioche, earl grey chantilly, poached pear, strawberry</p>
+        </li>
+        <li data-q="kahlua tiramisu ladyfinger, espresso, kahlua, mascarpone, cream, cocoa powder">
+          <div class="row"><span class="name">Kahlua Tiramisu</span><span class="price">$12</span></div>
+          <p class="desc">ladyfinger, espresso, kahlua, mascarpone, cream, cocoa powder</p>
+        </li>
+        <li data-q="hojicha black sesame tiramisu ladyfinger, hojicha, black sesame mascarpone, cream, hojicha &amp; black sesame powder">
+          <div class="row"><span class="name">Hojicha Black Sesame Tiramisu</span><span class="price">$12</span></div>
+          <p class="desc">ladyfinger, hojicha, black sesame mascarpone, cream, hojicha &amp; black sesame powder</p>
+        </li></ul>
+    </section>
+    <section id="sides" class="sec">
+      <h2>Sides</h2>
+      
+      <ul>
+        <li data-q="shoestring fries ">
+          <div class="row"><span class="name">Shoestring Fries</span><span class="price">$10</span></div>
+          
+        </li>
+        <li data-q="truffle kombu fries ">
+          <div class="row"><span class="name">Truffle Kombu Fries</span><span class="price">$14</span></div>
+          
+        </li>
+        <li data-q="mentaiko bonito fries ">
+          <div class="row"><span class="name">Mentaiko Bonito Fries</span><span class="price">$14</span></div>
+          
+        </li>
+        <li data-q="maple parmesan tater tots ">
+          <div class="row"><span class="name">Maple Parmesan Tater Tots</span><span class="price">$14</span></div>
+          
+        </li>
+        <li data-q="charred brussel sprouts ">
+          <div class="row"><span class="name">Charred Brussel Sprouts</span><span class="price">$14</span></div>
+          
+        </li>
+        <li data-q="honey garlic wings ">
+          <div class="row"><span class="name">Honey Garlic Wings</span><span class="price">$14</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="espresso" class="sec">
+      <h2>Espresso</h2>
+      <p class="note">Hot / Ice</p>
+      <ul>
+        <li data-q="double espresso ">
+          <div class="row"><span class="name">Double Espresso</span><span class="price">Hot | $4.5</span></div>
+          
+        </li>
+        <li data-q="black ">
+          <div class="row"><span class="name">Black</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Hot</span> <b>$5</b></span><span class="pp"><span class="pl">Iced</span> <b>$5.50</b></span></div>
+        </li>
+        <li data-q="white ">
+          <div class="row"><span class="name">White</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Hot</span> <b>$6</b></span><span class="pp"><span class="pl">Iced</span> <b>$6.50</b></span></div>
+        </li>
+        <li data-q="mocha ">
+          <div class="row"><span class="name">Mocha</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Hot</span> <b>$6.50</b></span><span class="pp"><span class="pl">Iced</span> <b>$7</b></span></div>
+        </li>
+        <li data-q="maple espresso sea salt foam ">
+          <div class="row"><span class="name">Maple Espresso Sea Salt Foam</span><span class="price">Iced | $8</span></div>
+          
+        </li>
+        <li data-q="maple latte maple, espresso, milk">
+          <div class="row"><span class="name">Maple Latte</span></div>
+          <p class="desc">maple, espresso, milk</p><div class="prices"><span class="pp"><span class="pl">Hot</span> <b>$7</b></span><span class="pp"><span class="pl">Iced</span> <b>$7.50</b></span></div>
+        </li>
+        <li data-q="dirty matcha matcha, milk, espresso">
+          <div class="row"><span class="name">Dirty Matcha</span></div>
+          <p class="desc">matcha, milk, espresso</p><div class="prices"><span class="pp"><span class="pl">Hot</span> <b>$6.50</b></span><span class="pp"><span class="pl">Iced</span> <b>$7</b></span></div>
+        </li>
+        <li data-q="syip black coffee espresso, whipped cream">
+          <div class="row"><span class="name">SYIP Black Coffee</span><span class="price">Iced | $7</span></div>
+          <p class="desc">espresso, whipped cream</p>
+        </li>
+        <li data-q="syip white coffee espresso, milk, whipped cream">
+          <div class="row"><span class="name">SYIP White Coffee</span><span class="price">Iced | $7.5</span></div>
+          <p class="desc">espresso, milk, whipped cream</p>
+        </li>
+        <li data-q="biscoff cream latte espresso, milk, biscoff cream">
+          <div class="row"><span class="name">Biscoff Cream Latte</span><span class="price">Iced | $7</span></div>
+          <p class="desc">espresso, milk, biscoff cream</p>
+        </li></ul>
+    </section>
+    <section id="tea-by-antea-social" class="sec">
+      <h2>Tea by ANTEA SOCIAL</h2>
+      <p class="note">Hot / Ice. *all hot teas are served in a teapot</p>
+      <ul>
+        <li data-q="camellia oolong ">
+          <div class="row"><span class="name">Camellia Oolong</span><span class="price">Hot | $7</span></div>
+          
+        </li>
+        <li data-q="kyoho grape oolong ">
+          <div class="row"><span class="name">Kyoho Grape Oolong</span><span class="price">Hot | $7</span></div>
+          
+        </li>
+        <li data-q="sunrise sencha ">
+          <div class="row"><span class="name">Sunrise Sencha</span><span class="price">Hot | $7</span></div>
+          
+        </li>
+        <li data-q="strawberry bergamot ">
+          <div class="row"><span class="name">Strawberry Bergamot</span><span class="price">Hot | $7</span></div>
+          
+        </li>
+        <li data-q="cold brew tea ">
+          <div class="row"><span class="name">Cold Brew Tea</span><span class="price">Iced | $6.5</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="others" class="sec">
+      <h2>Others</h2>
+      <p class="note">Hot / Ice</p>
+      <ul>
+        <li data-q="matcha premium matcha">
+          <div class="row"><span class="name">Matcha</span></div>
+          <p class="desc">premium matcha</p><div class="prices"><span class="pp"><span class="pl">Hot</span> <b>$7</b></span><span class="pp"><span class="pl">Iced</span> <b>$7.50</b></span></div>
+        </li>
+        <li data-q="matcha ceremonial matcha">
+          <div class="row"><span class="name">Matcha</span></div>
+          <p class="desc">ceremonial matcha</p><div class="prices"><span class="pp"><span class="pl">Hot</span> <b>$10</b></span><span class="pp"><span class="pl">Iced</span> <b>$10.50</b></span></div>
+        </li>
+        <li data-q="hojicha by niko neko akane hojicha">
+          <div class="row"><span class="name">Hojicha by Niko Neko</span></div>
+          <p class="desc">akane hojicha</p><div class="prices"><span class="pp"><span class="pl">Hot</span> <b>$6.50</b></span><span class="pp"><span class="pl">Iced</span> <b>$7</b></span></div>
+        </li>
+        <li data-q="genmaicha by niko neko mokuren genmaicha">
+          <div class="row"><span class="name">Genmaicha by Niko Neko</span></div>
+          <p class="desc">mokuren genmaicha</p><div class="prices"><span class="pp"><span class="pl">Hot</span> <b>$6.50</b></span><span class="pp"><span class="pl">Iced</span> <b>$7</b></span></div>
+        </li>
+        <li data-q="black sesame ">
+          <div class="row"><span class="name">Black Sesame</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Hot</span> <b>$6.50</b></span><span class="pp"><span class="pl">Iced</span> <b>$7</b></span></div>
+        </li>
+        <li data-q="chocolate ">
+          <div class="row"><span class="name">Chocolate</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Hot</span> <b>$6</b></span><span class="pp"><span class="pl">Iced</span> <b>$6.50</b></span></div>
+        </li>
+        <li data-q="matcha oolong milk tea ">
+          <div class="row"><span class="name">Matcha Oolong Milk Tea</span><span class="price">Iced | $7</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="signature-ade" class="sec">
+      <h2>Signature Ade</h2>
+      <p class="note">Ice</p>
+      <ul>
+        <li data-q="strawberry bergamot lemonade ">
+          <div class="row"><span class="name">Strawberry Bergamot Lemonade</span><span class="price">$7.50</span></div>
+          
+        </li>
+        <li data-q="elderflower pear ade ">
+          <div class="row"><span class="name">Elderflower Pear Ade</span><span class="price">$6.50</span></div>
+          
+        </li>
+        <li data-q="lychee mint lemonade ">
+          <div class="row"><span class="name">Lychee Mint Lemonade</span><span class="price">$7.50</span></div>
+          
+        </li>
+        <li data-q="pineapple sencha lemonade ">
+          <div class="row"><span class="name">Pineapple Sencha Lemonade</span><span class="price">$7.50</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="signature-cold-foam" class="sec">
+      <h2>Signature Cold Foam</h2>
+      <p class="note">Ice</p>
+      <ul>
+        <li data-q="osmanthus oolong matcha foam ">
+          <div class="row"><span class="name">Osmanthus Oolong Matcha Foam</span><span class="price">$7</span></div>
+          
+        </li>
+        <li data-q="strawberry bergamot matcha foam ">
+          <div class="row"><span class="name">Strawberry Bergamot Matcha Foam</span><span class="price">$7</span></div>
+          
+        </li>
+        <li data-q="genmaicha pistachio foam ">
+          <div class="row"><span class="name">Genmaicha Pistachio Foam</span><span class="price">$7.50</span></div>
+          
+        </li>
+        <li data-q="oolong milk tea pistachio foam ">
+          <div class="row"><span class="name">Oolong Milk Tea Pistachio Foam</span><span class="price">$7.50</span></div>
+          
+        </li>
+        <li data-q="chocolate pistachio foam ">
+          <div class="row"><span class="name">Chocolate Pistachio Foam</span><span class="price">$7</span></div>
+          
+        </li>
+        <li data-q="hojicha sea salt maple foam ">
+          <div class="row"><span class="name">Hojicha Sea Salt Maple Foam</span><span class="price">$7.50</span></div>
+          
+        </li>
+        <li data-q="matcha sea salt maple foam ">
+          <div class="row"><span class="name">Matcha Sea Salt Maple Foam</span><span class="price">$7.50</span></div>
+          
+        </li>
+        <li data-q="matcha strawberry cream foam ">
+          <div class="row"><span class="name">Matcha Strawberry Cream Foam</span><span class="price">$7.50</span></div>
+          
+        </li>
+        <li data-q="hojicha earl grey cream foam ">
+          <div class="row"><span class="name">Hojicha Earl Grey Cream Foam</span><span class="price">$8.50</span></div>
+          
+        </li>
+        <li data-q="matcha earl grey cream foam ">
+          <div class="row"><span class="name">Matcha Earl Grey Cream Foam</span><span class="price">$8.50</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="add-ons" class="sec">
+      <h2>Add-ons</h2>
+      
+      <ul>
+        <li data-q="additional shot ">
+          <div class="row"><span class="name">additional shot</span><span class="price">+1</span></div>
+          
+        </li>
+        <li data-q="oat milk (oatside) ">
+          <div class="row"><span class="name">oat milk (oatside)</span><span class="price">+1</span></div>
+          
+        </li>
+        <li data-q="soy milk (soyboy) ">
+          <div class="row"><span class="name">soy milk (soyboy)</span><span class="price">+1</span></div>
+          
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>*Prices exclude GST &amp; Service Charge. *Dining limit of 70mins applicable during peak periods.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for SYIP Cafe.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The SYIP Cafe menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's US$29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for US$29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

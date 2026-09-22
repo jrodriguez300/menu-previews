@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Michael&#39;s Grill Menu</title>
+<meta name="description" content="Menu for Michael&#39;s Grill, Carrollwood (N Dale Mabry Hwy).">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Michael&#39;s Grill</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=11720%20North%20Dale%20Mabry%20Highway%2C%20Tampa%2C%20FL%2033618">11720 North Dale Mabry Highway, Tampa, FL 33618</a><a href="tel:8139648334">813-964-8334</a><span>Monday-Thursday 11:00 AM - 9:00 PM; Friday-Saturday 11:00 AM - 10:00 PM; Sunday closed. Brunch Saturdays from 10:30 AM</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#share-start" data-sec="share-start">Share &amp; Start</a><a href="#lunch" data-sec="lunch">Lunch</a><a href="#house-specialties-dinner" data-sec="house-specialties-dinner">House Specialties - Dinner</a><a href="#brunch" data-sec="brunch">Brunch</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="share-start" class="sec">
+      <h2>Share &amp; Start</h2>
+      
+      <ul>
+        <li data-q="*caesar salad romaine lettuce, chef michael&#39;s famous caesar dressing. finished with grated parmesan &amp; house made herb croutons. *(contains raw eggs)">
+          <div class="row"><span class="name">*Caesar Salad</span><span class="price">$15</span></div>
+          <p class="desc">Romaine lettuce, Chef Michael&#39;s famous Caesar dressing. Finished with grated parmesan &amp; house made herb croutons. *(contains raw eggs)</p>
+        </li>
+        <li data-q="michael&#39;s house salad fresh artisan lettuce, cucumber, radish, cherry tomatoes, grated carrots, roasted beets, red onion ring &amp; feta cheese. house vinaigrette &amp; croutons">
+          <div class="row"><span class="name">Michael&#39;s House Salad</span><span class="price">$16</span></div>
+          <p class="desc">Fresh artisan lettuce, cucumber, radish, cherry tomatoes, grated carrots, roasted beets, red onion ring &amp; feta cheese. House vinaigrette &amp; croutons</p>
+        </li>
+        <li data-q="key west fish spread chef michael&#39;s fresh catch, tuna, salmon &amp; florida grouper blended together with zesty spices &amp; lime mayo topped with roasted red peppers. served with warm toasted crostinis.">
+          <div class="row"><span class="name">Key West Fish Spread</span><span class="price">$14</span></div>
+          <p class="desc">Chef Michael&#39;s fresh catch, Tuna, Salmon &amp; Florida Grouper blended together with zesty spices &amp; lime mayo topped with roasted red peppers. Served with warm toasted crostinis.</p>
+        </li>
+        <li data-q="miami conch fritters taste of the islands! chef michael&#39;s recipe from his miami days made with real conch, secret spices. the real deal! zesty island dipping sauce">
+          <div class="row"><span class="name">Miami Conch Fritters</span><span class="price">$16</span></div>
+          <p class="desc">Taste of the Islands! Chef Michael&#39;s recipe from his Miami days made with real conch, secret spices. The real deal! Zesty island dipping sauce</p>
+        </li>
+        <li data-q="chef michael&#39;s she crab bisque simmering toasty aromas from our kitchen for chef michael&#39;s secret roux which makes his creamy crab bisque. his velvety crab creation has a dash of cognac too. so delicious!!">
+          <div class="row"><span class="name">Chef Michael&#39;s She Crab Bisque</span><span class="price">$15</span></div>
+          <p class="desc">Simmering toasty aromas from our kitchen for Chef Michael&#39;s Secret Roux which makes his creamy crab bisque. His velvety crab creation has a dash of cognac too. So Delicious!!</p>
+        </li>
+        <li data-q="*wasabi crusted tuna appetizer chef michael&#39;s fresh ahi tuna brought in daily by his fisherman friend of many years. lightly crusted and pan seared rare. finished with a creamy soy ginger sauce *(rare)">
+          <div class="row"><span class="name">*Wasabi Crusted Tuna Appetizer</span><span class="price">$27</span></div>
+          <p class="desc">Chef Michael&#39;s fresh Ahi tuna brought in daily by his fisherman friend of many years. lightly crusted and pan seared rare. Finished with a creamy soy ginger sauce *(rare)</p>
+        </li>
+        <li data-q="michael&#39;s famous crab cakes two amazing crab cakes loaded with succulant lump crab and top secret ingrediants pan seared to perfection. (michael&#39;s recipe for 25 years) chef michael&#39;s tartar, zesty aoli &amp; shaved cucumber. (one crab cake $16)">
+          <div class="row"><span class="name">Michael&#39;s Famous Crab Cakes</span><span class="price">$30</span></div>
+          <p class="desc">Two amazing crab cakes loaded with succulant lump crab and top secret ingrediants pan seared to perfection. (Michael&#39;s recipe for 25 years) Chef Michael&#39;s tartar, zesty aoli &amp; shaved cucumber. (One Crab Cake $16)</p>
+        </li>
+        <li data-q="chef&#39;s baked escargot (is back!!) chef michael&#39;s sizzling escargot seated in mushroom caps with a buttery garlic burgundy wine sauce then topped with flakey puff pastry. baked to order yum!!">
+          <div class="row"><span class="name">Chef&#39;s Baked Escargot (IS BACK!!)</span><span class="price">$18</span></div>
+          <p class="desc">Chef Michael&#39;s sizzling Escargot seated in mushroom caps with a buttery garlic Burgundy wine sauce then topped with flakey puff pastry. Baked to order Yum!!</p>
+        </li>
+        <li data-q="jeff&#39;s fried brie four wedges of creamy french brie lightly breaded and deep fried. great to share! served with a stawberry habanero sauce">
+          <div class="row"><span class="name">Jeff&#39;s Fried Brie</span><span class="price">$16</span></div>
+          <p class="desc">Four wedges of creamy French Brie lightly breaded and deep fried. Great to share! served with a stawberry habanero sauce</p>
+        </li>
+        <li data-q="trio of meatballs three juicy meatballs with our trio toppings, chef&#39;s au poivre, house red sauce &amp; gorgonzola sauce.">
+          <div class="row"><span class="name">Trio Of Meatballs</span><span class="price">$18</span></div>
+          <p class="desc">Three juicy meatballs with our trio toppings, Chef&#39;s Au Poivre, House red sauce &amp; Gorgonzola sauce.</p>
+        </li>
+        <li data-q="chef&#39;s eggrolls made fresh daily, ask your server for today&#39;s selection">
+          <div class="row"><span class="name">Chef&#39;s Eggrolls</span><span class="price">$15</span></div>
+          <p class="desc">Made fresh daily, ask your server for today&#39;s selection</p>
+        </li>
+        <li data-q="fried zucchini fresh cut sticks of zucchini breaded to order and deep fried for everyone to share. served with our house creamy horseradish sauce">
+          <div class="row"><span class="name">Fried Zucchini</span><span class="price">$14</span></div>
+          <p class="desc">Fresh cut sticks of zucchini breaded to order and deep fried for everyone to share. served with our house creamy horseradish sauce</p>
+        </li>
+        <li data-q="tomato burrata roma tomatoes, house fresh pesto topped with beautiful soft italian burrata cheese, olive oil &amp; balsamic reduction. toasted crustinis">
+          <div class="row"><span class="name">Tomato Burrata</span><span class="price">$16</span></div>
+          <p class="desc">Roma tomatoes, house fresh pesto topped with beautiful soft Italian Burrata cheese, olive oil &amp; balsamic reduction. Toasted crustinis</p>
+        </li>
+        <li data-q="point judith calamari town dock wild caught calamari is hand breaded to order in our special breading &amp; deep fried with a key lime remoulade &amp; sweet chili sauce. rhode island">
+          <div class="row"><span class="name">Point Judith Calamari</span><span class="price">$20</span></div>
+          <p class="desc">Town Dock Wild caught calamari is hand breaded to order in our special breading &amp; deep fried with a Key Lime remoulade &amp; sweet chili sauce. Rhode Island</p>
+        </li>
+        <li data-q="michael&#39;s guacamole fresh &amp; simple smashed avocados with michael&#39;s seasonings for the best! guacamole. house made tortilla chips to order">
+          <div class="row"><span class="name">Michael&#39;s Guacamole</span><span class="price">$15</span></div>
+          <p class="desc">Fresh &amp; simple smashed avocados with Michael&#39;s seasonings for the BEST! guacamole. house made tortilla chips to order</p>
+        </li>
+        <li data-q="bubble bread crusty french bread, garlic butter, gorgonzola and mozzarella oozing with flavor, served with michael&#39;s red sauce for dipping">
+          <div class="row"><span class="name">Bubble Bread</span><span class="price">$15</span></div>
+          <p class="desc">Crusty French bread, garlic butter, Gorgonzola and Mozzarella oozing with flavor, served with Michael&#39;s red sauce for dipping</p>
+        </li></ul>
+    </section>
+    <section id="lunch" class="sec">
+      <h2>Lunch</h2>
+      <p class="note">Sandwiches &amp; Wraps have choice of, fruit, fries, slaw or potato salad. Sub cup of soup $4, Sub Crab bisque $9, Sub half house salad $5, Sub half caesar $4.</p>
+      <ul>
+        <li data-q="chef&#39;s soup of the day daily selection, cup or a bowl. (take some togo)">
+          <div class="row"><span class="name">Chef&#39;s Soup Of The Day</span></div>
+          <p class="desc">Daily selection, cup or a bowl. (take some togo)</p><div class="prices"><span class="pp"><span class="pl">Cup</span> <b>$7</b></span><span class="pp"><span class="pl">Bowl</span> <b>$12</b></span></div>
+        </li>
+        <li data-q="chef&#39;s quiche lorraine freshly baked daily quiche loaded with cheeses, virginia ham, applewood smoked bacon &amp; fresh herbs. yum !!!">
+          <div class="row"><span class="name">Chef&#39;s Quiche Lorraine</span><span class="price">$20</span></div>
+          <p class="desc">Freshly baked daily quiche loaded with cheeses, Virginia ham, applewood smoked bacon &amp; fresh herbs. Yum !!!</p>
+        </li>
+        <li data-q="reilly&#39;s angus burger juicy 8oz black angus burger grilled to your liking, nutty provolone, lettuce, tomato, sliced red onions, pickles &amp; chef michael&#39;s bbq mayo.">
+          <div class="row"><span class="name">Reilly&#39;s Angus Burger</span><span class="price">$22</span></div>
+          <p class="desc">Juicy 8oz Black Angus burger grilled to your liking, nutty provolone, lettuce, tomato, sliced red onions, pickles &amp; Chef Michael&#39;s BBQ mayo.</p>
+        </li>
+        <li data-q="black grouper tacos florida black grouper lightly blackened, tomatoes, mixed cheese, avocado slaw &amp; zesty aoli in two warm soft taco&#39;s. &quot;florida treat&quot;">
+          <div class="row"><span class="name">Black Grouper Tacos</span><span class="price">$29</span></div>
+          <p class="desc">Florida Black Grouper lightly blackened, tomatoes, mixed cheese, avocado slaw &amp; zesty aoli in two warm soft taco&#39;s. &quot;Florida Treat&quot;</p>
+        </li>
+        <li data-q="chicken julie sandwich grilled small farm chicken topped with our famous fried brie &amp; pear chutney on a toasted brioche bun">
+          <div class="row"><span class="name">Chicken Julie Sandwich</span><span class="price">$19</span></div>
+          <p class="desc">Grilled small farm chicken topped with our famous fried brie &amp; pear chutney on a toasted brioche bun</p>
+        </li>
+        <li data-q="the eiffle tower chef&#39;s in house roasted beef sliced perfectly, warmed in au jus &amp; served on toasted french bread with a side of creamy horseradish. au jus for dipping.">
+          <div class="row"><span class="name">The Eiffle Tower</span><span class="price">$20</span></div>
+          <p class="desc">Chef&#39;s In House Roasted Beef sliced perfectly, warmed in Au Jus &amp; served on toasted French bread with a side of creamy horseradish. Au Jus for dipping.</p>
+        </li>
+        <li data-q="the miami ruben michael&#39;s tasty version with house corn beef, swiss &amp; provolone cheese, thousand island dressing, crunchy slaw on grilled rye bread.">
+          <div class="row"><span class="name">The Miami Ruben</span><span class="price">$20</span></div>
+          <p class="desc">Michael&#39;s tasty version with house corn beef, Swiss &amp; Provolone cheese, thousand island dressing, crunchy slaw on grilled rye bread.</p>
+        </li>
+        <li data-q="florida black grouper sandwich chef michael&#39;s favorite catch &quot;jewel of forida&quot; black grouper, battered &amp; fried (with cheddar) or skillet blackened, served on a warm brioche bun, lettuce, tomato &amp; sliced red onion. house tartar sauce.">
+          <div class="row"><span class="name">Florida Black Grouper Sandwich</span><span class="price">$29</span></div>
+          <p class="desc">Chef Michael&#39;s favorite catch &quot;Jewel Of Forida&quot; Black Grouper, battered &amp; fried (with Cheddar) or skillet blackened, served on a warm Brioche bun, lettuce, tomato &amp; sliced red onion. House tartar sauce.</p>
+        </li>
+        <li data-q="wild shrimp pesto pasta wild gulf pink shrimp sauted in a white wine &amp; house pesto cream sauce with linguini, finished with parmesan. (sub chicken $26)">
+          <div class="row"><span class="name">Wild Shrimp Pesto Pasta</span><span class="price">$29</span></div>
+          <p class="desc">Wild Gulf pink shrimp sauted in a white wine &amp; house pesto cream sauce with linguini, finished with parmesan. (sub chicken $26)</p>
+        </li>
+        <li data-q="the mikey grilled all natural chicken, sun-dried tomatoes, provolone, house made pesto on a warm brioche bun">
+          <div class="row"><span class="name">The Mikey</span><span class="price">$18</span></div>
+          <p class="desc">Grilled all natural chicken, sun-dried tomatoes, provolone, house made pesto on a warm brioche bun</p>
+        </li>
+        <li data-q="roast beef wrap house roasted beef, gruyere swiss, creamy horseradish, tomato, spinach, applewood bacon &amp; caremalized onions. soft warm wrap.">
+          <div class="row"><span class="name">Roast Beef Wrap</span><span class="price">$22</span></div>
+          <p class="desc">House roasted beef, Gruyere Swiss, creamy horseradish, tomato, spinach, applewood bacon &amp; caremalized onions. Soft warm wrap.</p>
+        </li>
+        <li data-q="the city slicker salad crunchy romaine lettuce, grilled organic chicken, applewood smoked bacon, gorgonzola, tomatoes &amp; half an avocado. house vinaigrette.">
+          <div class="row"><span class="name">The City Slicker Salad</span><span class="price">$26</span></div>
+          <p class="desc">Crunchy romaine lettuce, grilled organic chicken, applewood smoked bacon, Gorgonzola, tomatoes &amp; half an avocado. House vinaigrette.</p>
+        </li>
+        <li data-q="salmon strawberry fields norwegian salmon lightly blackened over a bed of fresh artisan lettuce, tomatoes, pineapple, caramelized onions, crunchy apples, strawberries and almonds. strawberry vinaigrette">
+          <div class="row"><span class="name">Salmon Strawberry fields</span><span class="price">$32</span></div>
+          <p class="desc">Norwegian salmon lightly blackened over a bed of fresh artisan lettuce, tomatoes, pineapple, caramelized onions, crunchy apples, strawberries and almonds. Strawberry vinaigrette</p>
+        </li>
+        <li data-q="chicken &amp; avocado salad fresh mixed artisan lettuce daily, blackened organic chicken, tomatoes, avocado &amp; cheddar cheese. house made ranch dressing">
+          <div class="row"><span class="name">Chicken &amp; Avocado Salad</span><span class="price">$26</span></div>
+          <p class="desc">Fresh mixed artisan lettuce daily, blackened organic chicken, tomatoes, avocado &amp; cheddar cheese. House made ranch dressing</p>
+        </li>
+        <li data-q="garden vegetable quinoa bowl fluffy quinoa with a array of fresh mushrooms &amp; vegetables topped with avocado &amp; lemon viaigrette. (add chicken $26 add wild gulf shrimp $29)">
+          <div class="row"><span class="name">Garden Vegetable Quinoa Bowl</span><span class="price">$20</span></div>
+          <p class="desc">Fluffy quinoa with a array of fresh mushrooms &amp; vegetables topped with avocado &amp; lemon viaigrette. (add chicken $26 add Wild Gulf shrimp $29)</p>
+        </li></ul>
+    </section>
+    <section id="house-specialties-dinner" class="sec">
+      <h2>House Specialties - Dinner</h2>
+      
+      <ul>
+        <li data-q="wild shrimp pesto pasta wild gulf pink shrimp sautéed in a white wine &amp; house made pesto cream sauce with linguine. parmesan">
+          <div class="row"><span class="name">Wild Shrimp Pesto Pasta</span><span class="price">$38</span></div>
+          <p class="desc">Wild Gulf pink shrimp sautéed in a white wine &amp; house made pesto cream sauce with linguine. Parmesan</p>
+        </li>
+        <li data-q="dinner prime black angus burger chef&#39;s 8oz sizzling angus burger from creek stone farms, provolone cheese, smokey bacon, sautéed mushroom &amp; onion, artisan lettuce &amp; roma tomato with a side of chef michael&#39;s bbq mayo. sweet potato waffle fries.">
+          <div class="row"><span class="name">Dinner Prime Black Angus Burger</span><span class="price">$29</span></div>
+          <p class="desc">Chef&#39;s 8oz sizzling Angus burger from Creek Stone Farms, provolone cheese, smokey bacon, sautéed mushroom &amp; onion, artisan lettuce &amp; roma tomato with a side of Chef Michael&#39;s BBQ mayo. Sweet potato waffle fries.</p>
+        </li>
+        <li data-q="island lemon grouper bowl chef michael&#39;s favorite catch florida black grouper lightly blackened finished with a lemon beurre blanc &amp; house guacamole. island rice &amp; vegetables.">
+          <div class="row"><span class="name">Island Lemon Grouper Bowl</span><span class="price">$40</span></div>
+          <p class="desc">Chef Michael&#39;s favorite catch Florida Black Grouper lightly blackened finished with a lemon beurre blanc &amp; house guacamole. Island rice &amp; vegetables.</p>
+        </li>
+        <li data-q="chicken serrano grilled small farm chicken finsished with a silky roasted red pepper sauce topped with organic microgreens. rustic mashed potatoes &amp; vegetables.">
+          <div class="row"><span class="name">Chicken Serrano</span><span class="price">$32</span></div>
+          <p class="desc">Grilled small farm chicken finsished with a silky roasted red pepper sauce topped with organic microgreens. Rustic mashed potatoes &amp; vegetables.</p>
+        </li>
+        <li data-q="honey bourbon salmon fresh norwegian salmon brushed with a honey bourbon butter, served over a wilted spinach &amp; fresh grilled corn risotto. key lime dill remoulade">
+          <div class="row"><span class="name">Honey Bourbon Salmon</span><span class="price">$39</span></div>
+          <p class="desc">Fresh Norwegian salmon brushed with a honey bourbon butter, served over a wilted spinach &amp; fresh grilled corn risotto. Key lime dill remoulade</p>
+        </li>
+        <li data-q="michael&#39;s classic steak diane chef michael&#39;s hand cut (greater omaha upper choice 6 to 7oz) filet mignon grilled to perfection and finished with his famous brandy cream sauce and other secret ingredients, topped with sautéed onions &amp; lovely variety of unique mushrooms. rustic mashed potatoes &amp; vegetables.">
+          <div class="row"><span class="name">Michael&#39;s Classic Steak Diane</span><span class="price">$55</span></div>
+          <p class="desc">Chef Michael&#39;s hand cut (Greater Omaha upper choice 6 to 7oz) Filet Mignon grilled to perfection and finished with his famous Brandy cream sauce and other secret ingredients, topped with sautéed onions &amp; lovely variety of unique mushrooms. Rustic mashed potatoes &amp; vegetables.</p>
+        </li>
+        <li data-q="steak au poivre chef michael&#39;s generous hand cut (greater omaha upper choice 6 to 7oz) filet mignon finished with a zesty creamy peppercorn sauce topped with a mound of crispy vidalia onion rings. rustic mashed potatoes &amp; vegetables">
+          <div class="row"><span class="name">Steak Au Poivre</span><span class="price">$55</span></div>
+          <p class="desc">Chef Michael&#39;s generous hand cut (Greater Omaha upper choice 6 to 7oz) Filet Mignon finished with a zesty creamy peppercorn sauce topped with a mound of crispy Vidalia onion rings. Rustic mashed potatoes &amp; vegetables</p>
+        </li>
+        <li data-q="key west yellowtail snapper fresh in this beautiful florida fish is pan seared with a macadamia nut crust finished with a pineapple coconut rum butter. island rice &amp; vegetables">
+          <div class="row"><span class="name">Key West Yellowtail Snapper</span><span class="price">$47</span></div>
+          <p class="desc">Fresh in this beautiful Florida fish is pan seared with a Macadamia nut crust finished with a pineapple coconut rum butter. Island Rice &amp; vegetables</p>
+        </li>
+        <li data-q="*wasabi crusted tuna chef michael&#39;s fresh ahi tuna brought in daily from his fisherman friend of many years. lightly crusted and seared perfectly rare, finished with a creamy soy ginger glaze and shaved cucumbers. (served rare unless requested) island rice &amp; vegetables">
+          <div class="row"><span class="name">*Wasabi Crusted Tuna</span><span class="price">$54</span></div>
+          <p class="desc">Chef Michael&#39;s fresh ahi tuna brought in daily from his fisherman friend of many years. Lightly crusted and seared perfectly rare, finished with a creamy soy ginger glaze and shaved cucumbers. (served rare unless requested) Island rice &amp; vegetables</p>
+        </li>
+        <li data-q="blackberry duck breast organic farm duck pan seared crispy on the outside, juicy &amp; tender on the inside finished with our fresh blackberry sauce. rustic mashed potatoes &amp; vegetables">
+          <div class="row"><span class="name">Blackberry Duck Breast</span><span class="price">$38</span></div>
+          <p class="desc">Organic farm duck pan seared crispy on the outside, juicy &amp; tender on the inside finished with our fresh blackberry sauce. Rustic mashed potatoes &amp; vegetables</p>
+        </li>
+        <li data-q="pork tenderloin grilled marinated pork tenderloin with a creamy authentic gorgonzola &amp; zesty dijon sauce finished with a cherry balsamic. rustic mashed potatoes &amp; vegetables">
+          <div class="row"><span class="name">Pork Tenderloin</span><span class="price">$32</span></div>
+          <p class="desc">Grilled marinated pork tenderloin with a creamy authentic Gorgonzola &amp; zesty Dijon sauce finished with a cherry balsamic. Rustic mashed potatoes &amp; vegetables</p>
+        </li>
+        <li data-q="meatball fettucine ribbons of fettucine with a creamy red sauce, grilled italian sausage topped with two house meatballs &amp; pamesan cheese.">
+          <div class="row"><span class="name">Meatball Fettucine</span><span class="price">$36</span></div>
+          <p class="desc">Ribbons of fettucine with a creamy red sauce, grilled Italian sausage topped with two house meatballs &amp; pamesan cheese.</p>
+        </li>
+        <li data-q="chicken &amp; mushroom pasta an array of beautiful unique mushrooms tossed in a white wine cream sauce, fresh herbs, linguini pasta topped with grilled all natural chicken, bacon &amp; parmesan.">
+          <div class="row"><span class="name">Chicken &amp; Mushroom Pasta</span><span class="price">$32</span></div>
+          <p class="desc">An array of beautiful unique mushrooms tossed in a white wine cream sauce, fresh herbs, linguini pasta topped with grilled all natural chicken, bacon &amp; parmesan.</p>
+        </li></ul>
+    </section>
+    <section id="brunch" class="sec">
+      <h2>Brunch</h2>
+      <p class="note">Open Saturdays for brunch @ 10.30. Reservations excepted.</p>
+      <ul>
+        <li data-q="eggs benedict grilled canadian bacon two poached eggs on a toasted english muffin and creamy hollandaise. yukon smash or fresh fruit">
+          <div class="row"><span class="name">Eggs Benedict</span><span class="price">$20</span></div>
+          <p class="desc">Grilled Canadian bacon two poached eggs on a toasted English muffin and creamy Hollandaise. Yukon smash or fresh fruit</p>
+        </li>
+        <li data-q="cheese &amp; veggie omelette assorted fresh vegetables, mozzarella in a fluffy omelette topped with avocado. yukon smash or fresh fruit">
+          <div class="row"><span class="name">Cheese &amp; Veggie Omelette</span><span class="price">$20</span></div>
+          <p class="desc">Assorted fresh vegetables, mozzarella in a fluffy omelette topped with avocado. Yukon smash or fresh fruit</p>
+        </li>
+        <li data-q="wild gulf shrimp benedict grilled wild pink shrimp on a toasted muffin, poached eggs, chef&#39;s creamy hollandaise &amp; asparagus. fruit or yukon smash.">
+          <div class="row"><span class="name">Wild Gulf Shrimp Benedict</span><span class="price">$29</span></div>
+          <p class="desc">Grilled Wild pink shrimp on a toasted muffin, poached eggs, Chef&#39;s creamy hollandaise &amp; asparagus. Fruit or Yukon smash.</p>
+        </li>
+        <li data-q="brioche french toast thick buttery bread dipped in a cinnamon batter topped with berries &amp; cream. maple syrup">
+          <div class="row"><span class="name">Brioche French Toast</span><span class="price">$20</span></div>
+          <p class="desc">Thick buttery bread dipped in a cinnamon batter topped with berries &amp; cream. maple syrup</p>
+        </li>
+        <li data-q="michael&#39;s blt chef&#39;s applewood bacon, sliced tomato, artisan lettuce, gruyere swiss &amp; house thousand island dressing, served on a warm brioche bun. fries or fresh fruit">
+          <div class="row"><span class="name">Michael&#39;s BLT</span><span class="price">$20</span></div>
+          <p class="desc">Chef&#39;s applewood bacon, sliced tomato, artisan lettuce, Gruyere Swiss &amp; house thousand island dressing, served on a warm Brioche bun. Fries or fresh fruit</p>
+        </li>
+        <li data-q="steak &amp; gorgonzola omelette filet mignon, caramelized onions, gorgonzola in a fluffy ommelette. yukon smash &amp; choice of toast or a biscuit.">
+          <div class="row"><span class="name">Steak &amp; Gorgonzola Omelette</span><span class="price">$29</span></div>
+          <p class="desc">Filet Mignon, caramelized onions, Gorgonzola in a fluffy ommelette. Yukon smash &amp; choice of toast or a biscuit.</p>
+        </li>
+        <li data-q="shrimp &amp; crab ommelette wild gulf pink shrimp, succulant crab, spinach, mushrooms &amp; goat cheese in a fluffy ommelette. yukon smash, choice of toast or a biscuit.">
+          <div class="row"><span class="name">Shrimp &amp; Crab Ommelette</span><span class="price">$32</span></div>
+          <p class="desc">Wild Gulf pink shrimp, succulant crab, spinach, mushrooms &amp; goat cheese in a fluffy ommelette. Yukon smash, choice of toast or a biscuit.</p>
+        </li>
+        <li data-q="crab cake benedict our famous crabby crab cakes pan seared two poached eggs topped with chef michael&#39;s creamy hollandaise &amp; asparagus. fresh fruit or yukon smash">
+          <div class="row"><span class="name">Crab Cake Benedict</span><span class="price">$37</span></div>
+          <p class="desc">Our famous crabby crab cakes pan seared two poached eggs topped with Chef Michael&#39;s creamy hollandaise &amp; asparagus. Fresh Fruit or Yukon smash</p>
+        </li>
+        <li data-q="amigos breakfast bowl scrambled eggs, yukon smash, cheddar cheese, pico de gallo, guacamole, topped with apple wood bacon. tortilla chips">
+          <div class="row"><span class="name">Amigos Breakfast Bowl</span><span class="price">$26</span></div>
+          <p class="desc">Scrambled eggs, yukon smash, cheddar cheese, Pico de Gallo, guacamole, topped with apple wood bacon. Tortilla chips</p>
+        </li>
+        <li data-q="kids breakfast scrambled eggs, french toast and a strip of bacon. includes a drink (age 12 &amp; under)">
+          <div class="row"><span class="name">Kids Breakfast</span><span class="price">$15</span></div>
+          <p class="desc">scrambled eggs, french toast and a strip of bacon. includes a drink (age 12 &amp; under)</p>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>Michael&#39;s Grill Trusted For 25 Years.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Michael&#39;s Grill.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Michael&#39;s Grill menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

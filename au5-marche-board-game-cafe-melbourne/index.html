@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Marche Board Game Cafe Menu</title>
+<meta name="description" content="Menu for Marche Board Game Cafe, A&#39;Beckett Street, Melbourne CBD.">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Marche Board Game Cafe</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=63%20A'Beckett%20Street%2C%20Melbourne%20VIC%203000">63 A&#39;Beckett Street, Melbourne VIC 3000</a><a href="tel:0396638898">03 9663 8898</a><span>Sun-Thu 2pm-11pm. Fri-Sat 2pm-1am. Kitchen closes 9pm Sun-Thu, 10pm Fri-Sat; drink bar closes 10pm Sun-Thu, 12am Fri-Sat</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#rice-bowl" data-sec="rice-bowl">Rice Bowl</a><a href="#noodle-soup" data-sec="noodle-soup">Noodle Soup</a><a href="#curry-rice" data-sec="curry-rice">Curry Rice</a><a href="#combo-platters" data-sec="combo-platters">Combo Platters</a><a href="#dumplings" data-sec="dumplings">Dumplings</a><a href="#snacks" data-sec="snacks">Snacks</a><a href="#house-made-pastry" data-sec="house-made-pastry">House-made Pastry</a><a href="#extras" data-sec="extras">Extras</a><a href="#iced-drinks" data-sec="iced-drinks">Iced Drinks</a><a href="#hot-drinks" data-sec="hot-drinks">Hot Drinks</a><a href="#mocktails" data-sec="mocktails">Mocktails</a><a href="#milkshakes" data-sec="milkshakes">Milkshakes</a><a href="#soda-juice" data-sec="soda-juice">Soda &amp; Juice</a><a href="#pastry-display" data-sec="pastry-display">Pastry Display</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="rice-bowl" class="sec">
+      <h2>Rice Bowl</h2>
+      <p class="note">Each dish includes beetroot, edamame, corn, egg, carrots, shallots, sesame and mixed salad</p>
+      <ul>
+        <li data-q="calamari rice with sriracha mayo, nori, veggies and mixed herbs sauce on rice">
+          <div class="row"><span class="name">Calamari rice</span><span class="price">A$18</span></div>
+          <p class="desc">With sriracha mayo, nori, veggies and mixed herbs sauce on rice</p>
+        </li>
+        <li data-q="shredded chicken rice with spring onion, veggies and mixed herbs mayo on rice">
+          <div class="row"><span class="name">Shredded chicken rice</span><span class="price">A$18</span></div>
+          <p class="desc">With spring onion, veggies and mixed herbs mayo on rice</p>
+        </li>
+        <li data-q="popcorn chicken rice (recommended) with sriracha mayo, veggies and mixed herbs sauce on rice">
+          <div class="row"><span class="name">Popcorn chicken rice (recommended)</span><span class="price">A$18</span></div>
+          <p class="desc">With sriracha mayo, veggies and mixed herbs sauce on rice</p>
+        </li>
+        <li data-q="schnitzel rice with spring onion, veggies and mixed herbs sauce mayo on rice">
+          <div class="row"><span class="name">Schnitzel rice</span><span class="price">A$19</span></div>
+          <p class="desc">With spring onion, veggies and mixed herbs sauce mayo on rice</p>
+        </li>
+        <li data-q="salmon rice with mixed herbs, nori, veggies and ginger wasabi sauce on rice">
+          <div class="row"><span class="name">Salmon rice</span><span class="price">A$19</span></div>
+          <p class="desc">With mixed herbs, nori, veggies and ginger wasabi sauce on rice</p>
+        </li>
+        <li data-q="pan-fried tofu rice (vegan) with tofu, nori, veggies and ginger wasabi sauce on rice. included egg optional">
+          <div class="row"><span class="name">Pan-fried tofu rice (vegan)</span><span class="price">A$19</span></div>
+          <p class="desc">With tofu, nori, veggies and ginger wasabi sauce on rice. Included egg optional</p>
+        </li></ul>
+    </section>
+    <section id="noodle-soup" class="sec">
+      <h2>Noodle Soup</h2>
+      <p class="note">Chicken soup base or miso seaweed base (vegan). Each dish includes egg, mixed veggies, spring onion, coriander, red onion, corn, carrots, garlic shallot oil, sesame, white pepper. With homemade chilli oil +A$2</p>
+      <ul>
+        <li data-q="shredded chicken ">
+          <div class="row"><span class="name">Shredded chicken</span><span class="price">A$19</span></div>
+          
+        </li>
+        <li data-q="popcorn chicken (recommended) ">
+          <div class="row"><span class="name">Popcorn chicken (recommended)</span><span class="price">A$19</span></div>
+          
+        </li>
+        <li data-q="chicken schnitzel ">
+          <div class="row"><span class="name">Chicken schnitzel</span><span class="price">A$20</span></div>
+          
+        </li>
+        <li data-q="pan-fried tofu (vegan) included egg optional">
+          <div class="row"><span class="name">Pan-fried tofu (vegan)</span><span class="price">A$20</span></div>
+          <p class="desc">Included egg optional</p>
+        </li></ul>
+    </section>
+    <section id="curry-rice" class="sec">
+      <h2>Curry Rice</h2>
+      <p class="note">Each dish includes egg, sesame, nori, spring onion and pickled ginger</p>
+      <ul>
+        <li data-q="calamari curry ">
+          <div class="row"><span class="name">Calamari curry</span><span class="price">A$20</span></div>
+          
+        </li>
+        <li data-q="shredded chicken curry ">
+          <div class="row"><span class="name">Shredded chicken curry</span><span class="price">A$20</span></div>
+          
+        </li>
+        <li data-q="popcorn chicken curry ">
+          <div class="row"><span class="name">Popcorn chicken curry</span><span class="price">A$20</span></div>
+          
+        </li>
+        <li data-q="chicken katsu curry (recommended) ">
+          <div class="row"><span class="name">Chicken katsu curry (recommended)</span><span class="price">A$21</span></div>
+          
+        </li>
+        <li data-q="pan-fried tofu curry (vegan) included egg optional">
+          <div class="row"><span class="name">Pan-fried tofu curry (vegan)</span><span class="price">A$21</span></div>
+          <p class="desc">Included egg optional</p>
+        </li></ul>
+    </section>
+    <section id="combo-platters" class="sec">
+      <h2>Combo Platters</h2>
+      
+      <ul>
+        <li data-q="wonder 4 popcorn chicken, calamari rings, beer battered chips and crispy tofu with basil mayo and aioli sauce">
+          <div class="row"><span class="name">Wonder 4</span><span class="price">A$28</span></div>
+          <p class="desc">Popcorn chicken, calamari rings, beer battered chips and crispy tofu with basil mayo and aioli sauce</p>
+        </li>
+        <li data-q="challenger (recommended) sweet potato fries, popcorn chicken, calamari rings and chicken nuggets with basil mayo and sweet chilli sauce">
+          <div class="row"><span class="name">Challenger (recommended)</span><span class="price">A$30</span></div>
+          <p class="desc">Sweet potato fries, popcorn chicken, calamari rings and chicken nuggets with basil mayo and sweet chilli sauce</p>
+        </li></ul>
+    </section>
+    <section id="dumplings" class="sec">
+      <h2>Dumplings</h2>
+      <p class="note">10 pieces. With curry +A$2, with soup +A$3</p>
+      <ul>
+        <li data-q="veggie dumplings (vegan) ">
+          <div class="row"><span class="name">Veggie dumplings (vegan)</span><span class="price">A$16</span></div>
+          
+        </li>
+        <li data-q="prawn dumplings ">
+          <div class="row"><span class="name">Prawn dumplings</span><span class="price">A$17</span></div>
+          
+        </li>
+        <li data-q="pork dumplings ">
+          <div class="row"><span class="name">Pork dumplings</span><span class="price">A$17</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="snacks" class="sec">
+      <h2>Snacks</h2>
+      
+      <ul>
+        <li data-q="popcorn chicken mild / spicy">
+          <div class="row"><span class="name">Popcorn chicken</span><span class="price">A$9</span></div>
+          <p class="desc">Mild / spicy</p>
+        </li>
+        <li data-q="crispy tofu ">
+          <div class="row"><span class="name">Crispy tofu</span><span class="price">A$9</span></div>
+          
+        </li>
+        <li data-q="beer batter chips with aioli">
+          <div class="row"><span class="name">Beer batter chips</span><span class="price">A$9</span></div>
+          <p class="desc">With aioli</p>
+        </li>
+        <li data-q="sweet potato chips with sriracha mayo">
+          <div class="row"><span class="name">Sweet potato chips</span><span class="price">A$10</span></div>
+          <p class="desc">With sriracha mayo</p>
+        </li>
+        <li data-q="chicken schnitzel mild / spicy">
+          <div class="row"><span class="name">Chicken schnitzel</span><span class="price">A$10</span></div>
+          <p class="desc">Mild / spicy</p>
+        </li>
+        <li data-q="chicken nuggets with sweet chilli sauce">
+          <div class="row"><span class="name">Chicken nuggets</span><span class="price">A$10</span></div>
+          <p class="desc">With sweet chilli sauce</p>
+        </li>
+        <li data-q="calamari rings with basil mayo">
+          <div class="row"><span class="name">Calamari rings</span><span class="price">A$10</span></div>
+          <p class="desc">With basil mayo</p>
+        </li>
+        <li data-q="chunky mushroom ">
+          <div class="row"><span class="name">Chunky mushroom</span><span class="price">A$10</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="house-made-pastry" class="sec">
+      <h2>House-made Pastry</h2>
+      
+      <ul>
+        <li data-q="biscuit ">
+          <div class="row"><span class="name">Biscuit</span><span class="price">A$4</span></div>
+          
+        </li>
+        <li data-q="blueberry muffin ">
+          <div class="row"><span class="name">Blueberry muffin</span><span class="price">A$6</span></div>
+          
+        </li>
+        <li data-q="cheese cake ">
+          <div class="row"><span class="name">Cheese cake</span><span class="price">A$6</span></div>
+          
+        </li>
+        <li data-q="scone with cream ">
+          <div class="row"><span class="name">Scone with cream</span><span class="price">A$6</span></div>
+          
+        </li>
+        <li data-q="waffles with pistachios, whipped cream and chocolate or salted caramel sauce. vanilla ice cream +a$3">
+          <div class="row"><span class="name">Waffles</span><span class="price">A$7</span></div>
+          <p class="desc">With pistachios, whipped cream and chocolate or salted caramel sauce. Vanilla ice cream +A$3</p>
+        </li></ul>
+    </section>
+    <section id="extras" class="sec">
+      <h2>Extras</h2>
+      
+      <ul>
+        <li data-q="boiled egg ">
+          <div class="row"><span class="name">Boiled egg</span><span class="price">A$2.5</span></div>
+          
+        </li>
+        <li data-q="rice ">
+          <div class="row"><span class="name">Rice</span><span class="price">A$2.5</span></div>
+          
+        </li>
+        <li data-q="smoked salmon ">
+          <div class="row"><span class="name">Smoked salmon</span><span class="price">A$5</span></div>
+          
+        </li>
+        <li data-q="shredded chicken ">
+          <div class="row"><span class="name">Shredded chicken</span><span class="price">A$5</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="iced-drinks" class="sec">
+      <h2>Iced Drinks</h2>
+      <p class="note">With soy, almond, oat milk, coconut jelly +A$0.5; cloud cream +A$1</p>
+      <ul>
+        <li data-q="honey lemon (recommended) with green tea +a$0.5">
+          <div class="row"><span class="name">Honey lemon (recommended)</span><span class="price">A$6</span></div>
+          <p class="desc">With green tea +A$0.5</p>
+        </li>
+        <li data-q="earl grey | green tea ">
+          <div class="row"><span class="name">Earl Grey | Green tea</span><span class="price">A$6</span></div>
+          
+        </li>
+        <li data-q="earl grey milk tea | green milk tea ">
+          <div class="row"><span class="name">Earl Grey milk tea | Green milk tea</span><span class="price">A$7</span></div>
+          
+        </li>
+        <li data-q="lychee green tea ">
+          <div class="row"><span class="name">Lychee green tea</span><span class="price">A$7.5</span></div>
+          
+        </li>
+        <li data-q="thai | matcha | taro | chocolate with ice cream +a$1">
+          <div class="row"><span class="name">Thai | Matcha | Taro | Chocolate</span><span class="price">A$8</span></div>
+          <p class="desc">With ice cream +A$1</p>
+        </li>
+        <li data-q="strawberry milk ">
+          <div class="row"><span class="name">Strawberry milk</span><span class="price">A$8</span></div>
+          
+        </li>
+        <li data-q="kurumi cold brew ">
+          <div class="row"><span class="name">Kurumi cold brew</span><span class="price">A$7</span></div>
+          
+        </li>
+        <li data-q="mt. blanc (recommended) ">
+          <div class="row"><span class="name">Mt. Blanc (recommended)</span><span class="price">A$8</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="hot-drinks" class="sec">
+      <h2>Hot Drinks</h2>
+      <p class="note">With soy, almond, oat milk, coconut jelly +A$0.5; extra shot, large +A$0.5; iced +A$1</p>
+      <ul>
+        <li data-q="coffee: long black | magic | macchiato ">
+          <div class="row"><span class="name">Coffee: long black | magic | macchiato</span><span class="price">A$4.5</span></div>
+          
+        </li>
+        <li data-q="coffee: cappuccino | flat white | latte ">
+          <div class="row"><span class="name">Coffee: cappuccino | flat white | latte</span><span class="price">A$5</span></div>
+          
+        </li>
+        <li data-q="coffee: mocha | dirty chai ">
+          <div class="row"><span class="name">Coffee: mocha | dirty chai</span><span class="price">A$5.5</span></div>
+          
+        </li>
+        <li data-q="hot chocolate ">
+          <div class="row"><span class="name">Hot chocolate</span><span class="price">A$5.5</span></div>
+          
+        </li>
+        <li data-q="thai latte ">
+          <div class="row"><span class="name">Thai latte</span><span class="price">A$5.5</span></div>
+          
+        </li>
+        <li data-q="chai latte ">
+          <div class="row"><span class="name">Chai latte</span><span class="price">A$5.5</span></div>
+          
+        </li>
+        <li data-q="matcha latte ">
+          <div class="row"><span class="name">Matcha latte</span><span class="price">A$5.5</span></div>
+          
+        </li>
+        <li data-q="tea by t2 english breakfast | peppermint | lemongrass ginger | chamomile">
+          <div class="row"><span class="name">Tea by T2</span><span class="price">A$5</span></div>
+          <p class="desc">English breakfast | peppermint | lemongrass ginger | chamomile</p>
+        </li></ul>
+    </section>
+    <section id="mocktails" class="sec">
+      <h2>Mocktails</h2>
+      
+      <ul>
+        <li data-q="mojito of madness peppermint tea, lime and soda water">
+          <div class="row"><span class="name">Mojito of madness</span><span class="price">A$7</span></div>
+          <p class="desc">Peppermint tea, lime and soda water</p>
+        </li>
+        <li data-q="ticket to cosmopolitan cranberry juice, lemonade and blue tea">
+          <div class="row"><span class="name">Ticket to cosmopolitan</span><span class="price">A$8</span></div>
+          <p class="desc">Cranberry juice, lemonade and blue tea</p>
+        </li>
+        <li data-q="espresso santorini coffee, chocolate and ice cream">
+          <div class="row"><span class="name">Espresso santorini</span><span class="price">A$8.5</span></div>
+          <p class="desc">Coffee, chocolate and ice cream</p>
+        </li>
+        <li data-q="tokyo sunrise (recommended) strawberry and orange juice">
+          <div class="row"><span class="name">Tokyo sunrise (recommended)</span><span class="price">A$8.5</span></div>
+          <p class="desc">Strawberry and orange juice</p>
+        </li></ul>
+    </section>
+    <section id="milkshakes" class="sec">
+      <h2>Milkshakes</h2>
+      <p class="note">All milkshakes contain dairy from ice cream. With soy, almond, oat milk, coconut jelly +A$0.5</p>
+      <ul>
+        <li data-q="oreo (recommended) ">
+          <div class="row"><span class="name">Oreo (recommended)</span><span class="price">A$8.5</span></div>
+          
+        </li>
+        <li data-q="chocolate &amp; pocky ">
+          <div class="row"><span class="name">Chocolate &amp; pocky</span><span class="price">A$8.5</span></div>
+          
+        </li>
+        <li data-q="vanilla &amp; sprinkles ">
+          <div class="row"><span class="name">Vanilla &amp; sprinkles</span><span class="price">A$8.5</span></div>
+          
+        </li>
+        <li data-q="strawberry &amp; pistachios ">
+          <div class="row"><span class="name">Strawberry &amp; pistachios</span><span class="price">A$8.5</span></div>
+          
+        </li>
+        <li data-q="matcha ">
+          <div class="row"><span class="name">Matcha</span><span class="price">A$8.5</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="soda-juice" class="sec">
+      <h2>Soda &amp; Juice</h2>
+      
+      <ul>
+        <li data-q="blueberry lemon (recommended) ">
+          <div class="row"><span class="name">Blueberry lemon (recommended)</span><span class="price">A$7.5</span></div>
+          
+        </li>
+        <li data-q="lime strawberry ">
+          <div class="row"><span class="name">Lime strawberry</span><span class="price">A$7.5</span></div>
+          
+        </li>
+        <li data-q="blueberry strawberry ">
+          <div class="row"><span class="name">Blueberry strawberry</span><span class="price">A$7.5</span></div>
+          
+        </li>
+        <li data-q="straight up soda water | cola | diet cola | lemon lime bitters | lemonade">
+          <div class="row"><span class="name">Straight up</span><span class="price">A$5</span></div>
+          <p class="desc">Soda water | cola | diet cola | lemon lime bitters | lemonade</p>
+        </li>
+        <li data-q="orange juice ">
+          <div class="row"><span class="name">Orange juice</span><span class="price">A$6</span></div>
+          
+        </li>
+        <li data-q="cranberry juice ">
+          <div class="row"><span class="name">Cranberry juice</span><span class="price">A$7</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="pastry-display" class="sec">
+      <h2>Pastry Display</h2>
+      <p class="note">The availability of our pastries depends on the season; please check our display for current offerings. No prices are printed for these.</p>
+      <ul>
+        <li data-q="basque cheesecake ">
+          <div class="row"><span class="name">Basque cheesecake</span></div>
+          
+        </li>
+        <li data-q="fig custard tart ">
+          <div class="row"><span class="name">Fig custard tart</span></div>
+          
+        </li>
+        <li data-q="chocolate cupcakes ">
+          <div class="row"><span class="name">Chocolate cupcakes</span></div>
+          
+        </li>
+        <li data-q="cinnamon custard tart ">
+          <div class="row"><span class="name">Cinnamon custard tart</span></div>
+          
+        </li>
+        <li data-q="strawberry custard tart ">
+          <div class="row"><span class="name">Strawberry custard tart</span></div>
+          
+        </li>
+        <li data-q="vanilla cupcakes ">
+          <div class="row"><span class="name">Vanilla cupcakes</span></div>
+          
+        </li>
+        <li data-q="rosemary anzac biscuits ">
+          <div class="row"><span class="name">Rosemary Anzac biscuits</span></div>
+          
+        </li>
+        <li data-q="brownie ">
+          <div class="row"><span class="name">Brownie</span></div>
+          
+        </li>
+        <li data-q="oat biscuit ">
+          <div class="row"><span class="name">Oat biscuit</span></div>
+          
+        </li>
+        <li data-q="scone with cream ">
+          <div class="row"><span class="name">Scone with cream</span></div>
+          
+        </li>
+        <li data-q="muffin ">
+          <div class="row"><span class="name">Muffin</span></div>
+          
+        </li>
+        <li data-q="canele ">
+          <div class="row"><span class="name">Canele</span></div>
+          
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>Taiwanese cuisine, board games, karaoke. All menu items contain gluten. Tell staff if you have any allergies. Weekend Dinner K includes either a free drink or a free meal excluding combo platters. Scan the QR code in the cafe for easy self ordering.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Marche Board Game Cafe.</strong> Not the official menu. Copied from their public menu on 2026-09-22. This preview expires October 6.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Marche Board Game Cafe menu preview was free to look at until October 6. To turn it into a live page with a QR code and print-ready PDF, it's US$29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for US$29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-06T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

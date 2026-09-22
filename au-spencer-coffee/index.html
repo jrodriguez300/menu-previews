@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Spencer Menu</title>
+<meta name="description" content="Menu for Spencer, Docklands, Melbourne.">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Spencer</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=Shop%201%2F313%20Spencer%20Street%2C%20Docklands%2C%20VIC">Shop 1/313 Spencer Street, Docklands, VIC</a><span>Monday – Friday 7:00am – 3.00pm. Kitchen closes at 1:30pm</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#breakfast" data-sec="breakfast">Breakfast</a><a href="#sides" data-sec="sides">Sides</a><a href="#lunch" data-sec="lunch">Lunch</a><a href="#drinks-coffee-by-square-one-coffee-roasters" data-sec="drinks-coffee-by-square-one-coffee-roasters">Drinks – Coffee by Square One Coffee Roasters</a><a href="#house-made-smoothies" data-sec="house-made-smoothies">House Made Smoothies</a><a href="#cold-pressed-juices-by-market-juice" data-sec="cold-pressed-juices-by-market-juice">Cold Pressed Juices by Market Juice</a><a href="#all-the-other-bevs" data-sec="all-the-other-bevs">All the other bevs</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="breakfast" class="sec">
+      <h2>Breakfast</h2>
+      <p class="note">Available from 7am - 1:30pm</p>
+      <ul>
+        <li data-q="free range eggs on toast | gf*/df* poached, fried or scrambled on sourdough toast">
+          <div class="row"><span class="name">Free Range Eggs on Toast | gf*/df*</span><span class="price">$14</span></div>
+          <p class="desc">Poached, fried or scrambled on sourdough toast</p>
+        </li>
+        <li data-q="almond &amp; tahini granola | v*/gf* (contains nuts) with greek yoghurt, poached seasonal fruit &amp; toasted coconut">
+          <div class="row"><span class="name">Almond &amp; Tahini Granola | v*/gf* (contains nuts)</span><span class="price">$15.00</span></div>
+          <p class="desc">with greek yoghurt, poached seasonal fruit &amp; toasted coconut</p>
+        </li>
+        <li data-q="brekky burrito | v*/df* scrambled eggs, bacon, refried beans, cheddar, charred corn salsa, coriander &amp; chipotle + lime crema. + hashbrown 2.0">
+          <div class="row"><span class="name">Brekky Burrito | v*/df*</span><span class="price">$15.00</span></div>
+          <p class="desc">Scrambled eggs, bacon, refried beans, cheddar, charred corn salsa, coriander &amp; chipotle + lime crema. + Hashbrown 2.0</p>
+        </li>
+        <li data-q="smashed avocado | gf*/df*/v* (contains sesame) meridith&#39;s goats cheese, cucumber, baby fennel, dill, green tahini, aleppo pepper oil &amp; seedy crunch. + poached egg 2.5. + andrew&#39;s choice bacon 6.0. + gluten free bread 2.0">
+          <div class="row"><span class="name">Smashed Avocado | gf*/df*/v* (contains sesame)</span><span class="price">$18.00</span></div>
+          <p class="desc">Meridith&#39;s goats cheese, cucumber, baby fennel, dill, green tahini, aleppo pepper oil &amp; seedy crunch. + Poached egg 2.5. + Andrew&#39;s Choice Bacon 6.0. + Gluten Free Bread 2.0</p>
+        </li>
+        <li data-q="chilli scramble | gf*/df* sherry caramelised onion, salad brava, whipped feta, crispy potato, smoked paprika. + andrew&#39;s choice bacon 6.0. + halloumi &amp; lemon 4.5. + gluten free bread 2.0">
+          <div class="row"><span class="name">Chilli Scramble | gf*/df*</span><span class="price">$19.00</span></div>
+          <p class="desc">Sherry caramelised onion, salad brava, whipped feta, crispy potato, smoked paprika. + Andrew&#39;s Choice Bacon 6.0. + Halloumi &amp; Lemon 4.5. + Gluten Free Bread 2.0</p>
+        </li></ul>
+    </section>
+    <section id="sides" class="sec">
+      <h2>Sides</h2>
+      
+      <ul>
+        <li data-q="chilli caramel jam / hashbrown ">
+          <div class="row"><span class="name">Chilli Caramel Jam / Hashbrown</span><span class="price">$2.00</span></div>
+          
+        </li>
+        <li data-q="halloumi &amp; lemon ">
+          <div class="row"><span class="name">Halloumi &amp; Lemon</span><span class="price">$4.50</span></div>
+          
+        </li>
+        <li data-q="smashed avo / roast tomatoes ">
+          <div class="row"><span class="name">Smashed Avo / Roast Tomatoes</span><span class="price">$5.00</span></div>
+          
+        </li>
+        <li data-q="andrew&#39;s choice bacon ">
+          <div class="row"><span class="name">Andrew&#39;s Choice Bacon</span><span class="price">$6.00</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="lunch" class="sec">
+      <h2>Lunch</h2>
+      <p class="note">Available from 11am - 1:30pm. Rotating lunch specials: Ask our lovely team if we currently have any lunch specials on our rotating menu</p>
+      <ul>
+        <li data-q="wagyu cheese burger american cheese, onion jam, burger sauce, pickles, lettuce, tomato. served with seasoned chips">
+          <div class="row"><span class="name">Wagyu Cheese Burger</span><span class="price">$20.00</span></div>
+          <p class="desc">American cheese, onion jam, burger sauce, pickles, lettuce, tomato. Served with seasoned chips</p>
+        </li>
+        <li data-q="crispy fried chicken sando (contains nuts &amp; sesame) garlic honey soy glazed chicken thigh, cashew sesame slaw, pickled cucumber, spring onion aioli on toasted milk bread. served with seasoned chips">
+          <div class="row"><span class="name">Crispy Fried Chicken Sando (contains nuts &amp; sesame)</span><span class="price">$20.00</span></div>
+          <p class="desc">Garlic honey soy glazed chicken thigh, cashew sesame slaw, pickled cucumber, spring onion aioli on toasted milk bread. Served with seasoned chips</p>
+        </li>
+        <li data-q="seasoned chips with house made aioli">
+          <div class="row"><span class="name">Seasoned Chips</span><span class="price">$10.00</span></div>
+          <p class="desc">with house made aioli</p>
+        </li></ul>
+    </section>
+    <section id="drinks-coffee-by-square-one-coffee-roasters" class="sec">
+      <h2>Drinks – Coffee by Square One Coffee Roasters</h2>
+      
+      <ul>
+        <li data-q="white | harvest blend ">
+          <div class="row"><span class="name">White | Harvest Blend</span><span class="price">$5.20</span></div>
+          
+        </li>
+        <li data-q="black | single origin ">
+          <div class="row"><span class="name">Black | Single Origin</span><span class="price">$5.20</span></div>
+          
+        </li>
+        <li data-q="batch brew / cold brew ">
+          <div class="row"><span class="name">Batch Brew / Cold Brew</span><span class="price">$5.00</span></div>
+          
+        </li>
+        <li data-q="almond / oat / soy / lactose free ">
+          <div class="row"><span class="name">Almond / Oat / Soy / Lactose Free</span><span class="price">$0.50</span></div>
+          
+        </li>
+        <li data-q="strong / decaf / large ">
+          <div class="row"><span class="name">Strong / Decaf / Large</span><span class="price">$0.50</span></div>
+          
+        </li>
+        <li data-q="iced latte / iced choc / iced mocha ">
+          <div class="row"><span class="name">Iced Latte / Iced Choc / Iced Mocha</span><span class="price">$5.50</span></div>
+          
+        </li>
+        <li data-q="hot chocolate / chai latte / matcha ">
+          <div class="row"><span class="name">Hot Chocolate / Chai Latte / Matcha</span><span class="price">$5.50</span></div>
+          
+        </li>
+        <li data-q="iced chai / iced matcha ">
+          <div class="row"><span class="name">Iced Chai / Iced Matcha</span><span class="price">$6.00</span></div>
+          
+        </li>
+        <li data-q="tea english breakfast / earl grey / peppermint / green / lemongrass &amp; ginger / chamomile">
+          <div class="row"><span class="name">Tea</span><span class="price">$5.00</span></div>
+          <p class="desc">English Breakfast / Earl Grey / Peppermint / Green / Lemongrass &amp; Ginger / Chamomile</p>
+        </li></ul>
+    </section>
+    <section id="house-made-smoothies" class="sec">
+      <h2>House Made Smoothies</h2>
+      
+      <ul>
+        <li data-q="mango mango pieces &amp; sorbet, coconut yoghurt, apple juice &amp; desiccated coconut [vg/gf]">
+          <div class="row"><span class="name">Mango</span><span class="price">$10.00</span></div>
+          <p class="desc">Mango pieces &amp; sorbet, coconut yoghurt, apple juice &amp; desiccated coconut [vg/gf]</p>
+        </li>
+        <li data-q="green spinach, banana, coconut yoghurt, coconut water topped with coconut &amp; chia seeds [vg/gf]. + matcha $1">
+          <div class="row"><span class="name">Green</span><span class="price">$10.00</span></div>
+          <p class="desc">Spinach, banana, coconut yoghurt, coconut water topped with coconut &amp; chia seeds [vg/gf]. + matcha $1</p>
+        </li>
+        <li data-q="protein banana, peanut butter, vegan protein powder, honey, cinnamon &amp; almond milk [gf/vg*]. + espresso shot $1">
+          <div class="row"><span class="name">Protein</span><span class="price">$10.00</span></div>
+          <p class="desc">Banana, peanut butter, vegan protein powder, honey, cinnamon &amp; almond milk [gf/vg*]. + espresso shot $1</p>
+        </li>
+        <li data-q="berry mixed berries, coconut yoghurt, apple juice, dried raspberries, chia &amp; desiccated coconut [vg/gf]">
+          <div class="row"><span class="name">Berry</span><span class="price">$10.00</span></div>
+          <p class="desc">Mixed berries, coconut yoghurt, apple juice, dried raspberries, chia &amp; desiccated coconut [vg/gf]</p>
+        </li></ul>
+    </section>
+    <section id="cold-pressed-juices-by-market-juice" class="sec">
+      <h2>Cold Pressed Juices by Market Juice</h2>
+      
+      <ul>
+        <li data-q="cold pressed juice see drinks display for daily selection">
+          <div class="row"><span class="name">Cold Pressed Juice</span><span class="price">$5.50</span></div>
+          <p class="desc">See drinks display for daily selection</p>
+        </li></ul>
+    </section>
+    <section id="all-the-other-bevs" class="sec">
+      <h2>All the other bevs</h2>
+      
+      <ul>
+        <li data-q="kombucha ginger &amp; lemon / passionfruit">
+          <div class="row"><span class="name">Kombucha</span><span class="price">$6.00</span></div>
+          <p class="desc">Ginger &amp; Lemon / Passionfruit</p>
+        </li>
+        <li data-q="sodaly blood orange / yuzu">
+          <div class="row"><span class="name">Sodaly</span><span class="price">$6.00</span></div>
+          <p class="desc">Blood Orange / Yuzu</p>
+        </li>
+        <li data-q="coke / coke no sugar / sprite ">
+          <div class="row"><span class="name">Coke / Coke No Sugar / Sprite</span><span class="price">$4.00</span></div>
+          
+        </li>
+        <li data-q="red bull ">
+          <div class="row"><span class="name">Red Bull</span><span class="price">$4.50</span></div>
+          
+        </li>
+        <li data-q="san pellegrino chinotto / aranciata rossa / limonata / sparkling water">
+          <div class="row"><span class="name">San Pellegrino</span><span class="price">$5.00</span></div>
+          <p class="desc">Chinotto / Aranciata Rossa / Limonata / Sparkling Water</p>
+        </li>
+        <li data-q="karma soft drinks karma cola / lemmy / gingerella / raspberry lemonade">
+          <div class="row"><span class="name">Karma Soft Drinks</span><span class="price">$6.00</span></div>
+          <p class="desc">Karma Cola / Lemmy / Gingerella / Raspberry Lemonade</p>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>Vegan, vegetarian, halal &amp; gluten free options available.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Spencer.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Spencer menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's US$29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for US$29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

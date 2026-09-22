@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Ember Menu</title>
+<meta name="description" content="Menu for Ember, North Canal Road (Clarke Quay / Chinatown), Singapore.">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Ember</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=35%20North%20Canal%20Road%20%2301-01%2C%20Singapore%20059291">35 North Canal Road #01-01, Singapore 059291</a><a href="tel:+6598393877">+65 9839 3877</a><span>Monday – Wednesday: Dinner 5:30 pm to 11:00 pm. Thursday – Sunday: Lunch 11:30 – 3:30 pm, Dinner 5:30 pm to 11:00 pm</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#cold" data-sec="cold">Cold</a><a href="#coal" data-sec="coal">Coal</a><a href="#entr-e" data-sec="entr-e">Entrée</a><a href="#desserts" data-sec="desserts">Desserts</a><a href="#house-cuts-over-woodfire-gina-ginia-rinehart" data-sec="house-cuts-over-woodfire-gina-ginia-rinehart">House Cuts, Over Woodfire – Gina &amp; Ginia Rinehart</a><a href="#chef-s-selection" data-sec="chef-s-selection">Chef&#39;s Selection</a><a href="#t-bone-steak" data-sec="t-bone-steak">T-Bone Steak</a><a href="#complement-your-steak-with-our-fresh-produce-for-a-more-balanced-profile" data-sec="complement-your-steak-with-our-fresh-produce-for-a-more-balanced-profile">Complement Your Steak With Our Fresh Produce For A More Balanced Profile</a><a href="#whole-cake" data-sec="whole-cake">Whole Cake</a><a href="#beverage-water" data-sec="beverage-water">Beverage – Water</a><a href="#beverage-tea" data-sec="beverage-tea">Beverage – Tea</a><a href="#beverage-beer" data-sec="beverage-beer">Beverage – Beer</a><a href="#beverage-cocktail" data-sec="beverage-cocktail">Beverage – Cocktail</a><a href="#beverage-mocktail" data-sec="beverage-mocktail">Beverage – Mocktail</a><a href="#beverage-sparkling-tea" data-sec="beverage-sparkling-tea">Beverage – Sparkling Tea</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="cold" class="sec">
+      <h2>Cold</h2>
+      
+      <ul>
+        <li data-q="macerated strawberries salad green apple vinaigrette">
+          <div class="row"><span class="name">Macerated Strawberries Salad</span><span class="price">$16</span></div>
+          <p class="desc">Green Apple Vinaigrette</p>
+        </li>
+        <li data-q="shucked oysters yuzu kosho mignonette">
+          <div class="row"><span class="name">Shucked Oysters</span><span class="price">$22</span></div>
+          <p class="desc">Yuzu Kosho Mignonette</p>
+        </li>
+        <li data-q="signature cold angel hair sashimi scallops">
+          <div class="row"><span class="name">Signature Cold Angel Hair</span><span class="price">$34</span></div>
+          <p class="desc">Sashimi Scallops</p>
+        </li></ul>
+    </section>
+    <section id="coal" class="sec">
+      <h2>Coal</h2>
+      
+      <ul>
+        <li data-q="rustic sourdough smoked cultured butter">
+          <div class="row"><span class="name">Rustic Sourdough</span><span class="price">$9</span></div>
+          <p class="desc">Smoked Cultured Butter</p>
+        </li>
+        <li data-q="charred miso eggplant roasted leek, portobello mushroom">
+          <div class="row"><span class="name">Charred Miso Eggplant</span><span class="price">$20</span></div>
+          <p class="desc">Roasted Leek, Portobello Mushroom</p>
+        </li>
+        <li data-q="stuffed chicken wing shrimp farce">
+          <div class="row"><span class="name">Stuffed Chicken Wing</span><span class="price">$21</span></div>
+          <p class="desc">Shrimp Farce</p>
+        </li>
+        <li data-q="squashed burrata charred tomatoes">
+          <div class="row"><span class="name">Squashed Burrata</span><span class="price">$24</span></div>
+          <p class="desc">Charred Tomatoes</p>
+        </li>
+        <li data-q="iberico pork presa char siew inspired">
+          <div class="row"><span class="name">Iberico Pork Presa</span><span class="price">$27</span></div>
+          <p class="desc">Char Siew Inspired</p>
+        </li>
+        <li data-q="arare foie gras nashi pear compote">
+          <div class="row"><span class="name">Arare Foie Gras</span><span class="price">$28</span></div>
+          <p class="desc">Nashi Pear Compote</p>
+        </li>
+        <li data-q="taramasalata crab toast oscietra caviar">
+          <div class="row"><span class="name">Taramasalata Crab Toast</span><span class="price">$29</span></div>
+          <p class="desc">Oscietra Caviar</p>
+        </li>
+        <li data-q="wild grouper taco pico de gallo">
+          <div class="row"><span class="name">Wild Grouper Taco</span><span class="price">$30</span></div>
+          <p class="desc">Pico De Gallo</p>
+        </li>
+        <li data-q="grilled tiger prawn tom kha kai">
+          <div class="row"><span class="name">Grilled Tiger Prawn</span><span class="price">$32</span></div>
+          <p class="desc">Tom Kha Kai</p>
+        </li></ul>
+    </section>
+    <section id="entr-e" class="sec">
+      <h2>Entrée</h2>
+      
+      <ul>
+        <li data-q="slow-roasted us prime short ribs hot paprika cheese sauce, pickled daikon">
+          <div class="row"><span class="name">Slow-Roasted US Prime Short Ribs</span><span class="price">$34</span></div>
+          <p class="desc">Hot Paprika Cheese Sauce, Pickled Daikon</p>
+        </li>
+        <li data-q="atlantic farmed salmon caviar beurre blanc">
+          <div class="row"><span class="name">Atlantic Farmed Salmon</span><span class="price">$36</span></div>
+          <p class="desc">Caviar Beurre Blanc</p>
+        </li>
+        <li data-q="seafood paella live south african abalone, mussel, tiger prawn">
+          <div class="row"><span class="name">Seafood Paella</span><span class="price">$42</span></div>
+          <p class="desc">Live South African Abalone, Mussel, Tiger Prawn</p>
+        </li>
+        <li data-q="spanish octopus tentacles nam jim dressing">
+          <div class="row"><span class="name">Spanish Octopus Tentacles</span><span class="price">$42</span></div>
+          <p class="desc">Nam Jim Dressing</p>
+        </li>
+        <li data-q="red argentine shrimps squid ink risotto">
+          <div class="row"><span class="name">Red Argentine Shrimps</span><span class="price">$46</span></div>
+          <p class="desc">Squid Ink Risotto</p>
+        </li>
+        <li data-q="pimentón pork secreto compressed watermelon">
+          <div class="row"><span class="name">Pimentón Pork Secreto</span><span class="price">$46</span></div>
+          <p class="desc">Compressed Watermelon</p>
+        </li></ul>
+    </section>
+    <section id="desserts" class="sec">
+      <h2>Desserts</h2>
+      
+      <ul>
+        <li data-q="muscat grape sorbet chantilly espuma">
+          <div class="row"><span class="name">Muscat Grape Sorbet</span><span class="price">$14</span></div>
+          <p class="desc">Chantilly Espuma</p>
+        </li>
+        <li data-q="80% dark chocolate ganache with orange mascarpone hazelnut feuilletine, biscoff base, orange guanaja">
+          <div class="row"><span class="name">80% Dark Chocolate Ganache with Orange Mascarpone</span><span class="price">$19</span></div>
+          <p class="desc">Hazelnut Feuilletine, Biscoff Base, Orange Guanaja</p>
+        </li>
+        <li data-q="amaretto tiramisu candied macadamia">
+          <div class="row"><span class="name">Amaretto Tiramisu</span><span class="price">$20</span></div>
+          <p class="desc">Candied Macadamia</p>
+        </li>
+        <li data-q="pistachio knafeh cake layered ganache">
+          <div class="row"><span class="name">Pistachio Knafeh Cake</span><span class="price">$23</span></div>
+          <p class="desc">Layered Ganache</p>
+        </li></ul>
+    </section>
+    <section id="house-cuts-over-woodfire-gina-ginia-rinehart" class="sec">
+      <h2>House Cuts, Over Woodfire – Gina &amp; Ginia Rinehart</h2>
+      <p class="note">In collaboration with Gina &amp; Ginia Rinehart, daughters of Australia&#39;s renowned Rinehart family, Ember proudly presents 2GR Full-Blood Wagyu — a premium beef celebrated for its exceptional marbling, tenderness, and rich buttery flavour. Raised with a focus on superior full-blood genetics and hormone-free rearing, this wagyu represents the pinnacle of quality. To highlight its natural umami depth, each cut is prepared over woodfire and served with chimichurri and sea salt.</p>
+      <ul>
+        <li data-q="2gr wagyu flank min. 200g">
+          <div class="row"><span class="name">2GR Wagyu Flank</span><span class="price">$38 per 100g</span></div>
+          <p class="desc">min. 200g</p>
+        </li></ul>
+    </section>
+    <section id="chef-s-selection" class="sec">
+      <h2>Chef&#39;s Selection</h2>
+      
+      <ul>
+        <li data-q="koji aged abg 150 days grain-fed ribeye 280g ">
+          <div class="row"><span class="name">Koji Aged ABG 150 days Grain-Fed Ribeye 280g</span><span class="price">$62</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="t-bone-steak" class="sec">
+      <h2>T-Bone Steak</h2>
+      
+      <ul>
+        <li data-q="angus reserve 200 days grain-fed t-bone steak subject to best market availability ~ 900g">
+          <div class="row"><span class="name">Angus reserve 200 days Grain-Fed T-Bone Steak</span><span class="price">$178</span></div>
+          <p class="desc">subject to best market availability ~ 900g</p>
+        </li></ul>
+    </section>
+    <section id="complement-your-steak-with-our-fresh-produce-for-a-more-balanced-profile" class="sec">
+      <h2>Complement Your Steak With Our Fresh Produce For A More Balanced Profile</h2>
+      
+      <ul>
+        <li data-q="mesclun salad ">
+          <div class="row"><span class="name">Mesclun Salad</span><span class="price">$8</span></div>
+          
+        </li>
+        <li data-q="grilled green asparagus ">
+          <div class="row"><span class="name">Grilled Green Asparagus</span><span class="price">$14</span></div>
+          
+        </li>
+        <li data-q="potato au gratin ">
+          <div class="row"><span class="name">Potato Au Gratin</span><span class="price">$14</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="whole-cake" class="sec">
+      <h2>Whole Cake</h2>
+      
+      <ul>
+        <li data-q="ember cheesecake 4 inch · pre-order 3 days in advance. subject to availability">
+          <div class="row"><span class="name">Ember Cheesecake</span><span class="price">$28</span></div>
+          <p class="desc">4 inch · Pre-order 3 days in advance. Subject to availability</p>
+        </li></ul>
+    </section>
+    <section id="beverage-water" class="sec">
+      <h2>Beverage – Water</h2>
+      
+      <ul>
+        <li data-q="acqua panna 1000ml ">
+          <div class="row"><span class="name">Acqua Panna 1000ml</span><span class="price">$11</span></div>
+          
+        </li>
+        <li data-q="san pellegrino 1000ml ">
+          <div class="row"><span class="name">San Pellegrino 1000ml</span><span class="price">$11</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="beverage-tea" class="sec">
+      <h2>Beverage – Tea</h2>
+      
+      <ul>
+        <li data-q="british english breakfast black tea blend of assam, african and ceylon tea">
+          <div class="row"><span class="name">British English Breakfast</span><span class="price">$7</span></div>
+          <p class="desc">Black Tea Blend of Assam, African and Ceylon Tea</p>
+        </li>
+        <li data-q="earl grey lavender black tea with oil of bergamot, lavender flowers">
+          <div class="row"><span class="name">Earl Grey Lavender</span><span class="price">$7</span></div>
+          <p class="desc">Black Tea with Oil of Bergamot, Lavender flowers</p>
+        </li>
+        <li data-q="chamomile dream chamomile, lemon verbena, lemongrass, marigold, lavender">
+          <div class="row"><span class="name">Chamomile Dream</span><span class="price">$7</span></div>
+          <p class="desc">Chamomile, Lemon Verbena, Lemongrass, Marigold, Lavender</p>
+        </li>
+        <li data-q="straits chai sumatran black tea with spices from the orient">
+          <div class="row"><span class="name">Straits Chai</span><span class="price">$7</span></div>
+          <p class="desc">Sumatran Black Tea with Spices from the Orient</p>
+        </li>
+        <li data-q="lemon ginger mint herbal tisane and peppermint, lemon and gingera myrtle">
+          <div class="row"><span class="name">Lemon Ginger Mint</span><span class="price">$7</span></div>
+          <p class="desc">Herbal Tisane and Peppermint, Lemon and Gingera Myrtle</p>
+        </li></ul>
+    </section>
+    <section id="beverage-beer" class="sec">
+      <h2>Beverage – Beer</h2>
+      
+      <ul>
+        <li data-q="asahi super dry 330ml ">
+          <div class="row"><span class="name">Asahi Super Dry 330ml</span><span class="price">$12</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="beverage-cocktail" class="sec">
+      <h2>Beverage – Cocktail</h2>
+      
+      <ul>
+        <li data-q="ember old fashion buffalo trace bourdon, maple">
+          <div class="row"><span class="name">Ember Old Fashion</span><span class="price">$25</span></div>
+          <p class="desc">Buffalo Trace Bourdon, Maple</p>
+        </li>
+        <li data-q="sunset senerade malibu, pineapple">
+          <div class="row"><span class="name">Sunset Senerade</span><span class="price">$25</span></div>
+          <p class="desc">Malibu, Pineapple</p>
+        </li>
+        <li data-q="purple fantasy rum, lychee">
+          <div class="row"><span class="name">Purple Fantasy</span><span class="price">$25</span></div>
+          <p class="desc">Rum, Lychee</p>
+        </li>
+        <li data-q="la vie en rose gin, cranberry, egg white">
+          <div class="row"><span class="name">La Vie En Rose</span><span class="price">$25</span></div>
+          <p class="desc">Gin, Cranberry, Egg White</p>
+        </li></ul>
+    </section>
+    <section id="beverage-mocktail" class="sec">
+      <h2>Beverage – Mocktail</h2>
+      
+      <ul>
+        <li data-q="ember&#39;s sunset grapefruit, cranberry">
+          <div class="row"><span class="name">Ember&#39;s Sunset</span><span class="price">$16</span></div>
+          <p class="desc">Grapefruit, Cranberry</p>
+        </li>
+        <li data-q="cinderella cranberry, orange, lychee">
+          <div class="row"><span class="name">Cinderella</span><span class="price">$16</span></div>
+          <p class="desc">Cranberry, Orange, Lychee</p>
+        </li></ul>
+    </section>
+    <section id="beverage-sparkling-tea" class="sec">
+      <h2>Beverage – Sparkling Tea</h2>
+      
+      <ul>
+        <li data-q="copenhagen &#39;bla&#39; jasmine, white tea">
+          <div class="row"><span class="name">Copenhagen &#39;Bla&#39;</span></div>
+          <p class="desc">Jasmine, White Tea</p><div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$18</b></span><span class="pp"><span class="pl">Bottle</span> <b>$98</b></span></div>
+        </li>
+        <li data-q="copenhagen &#39;lysegron&#39; sencha, green tea">
+          <div class="row"><span class="name">Copenhagen &#39;Lysegron&#39;</span></div>
+          <p class="desc">Sencha, Green Tea</p><div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$18</b></span><span class="pp"><span class="pl">Bottle</span> <b>$98</b></span></div>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>All prices are subject to prevailing GST &amp; service charge.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Ember.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Ember menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's US$29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for US$29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

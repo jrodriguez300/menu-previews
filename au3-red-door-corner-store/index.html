@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Red Door Corner Store Menu</title>
+<meta name="description" content="Menu for Red Door Corner Store, Northcote, Melbourne.">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Red Door Corner Store</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=70%20Mitchell%20Street%2C%20Northcote%20VIC%203070">70 Mitchell Street, Northcote VIC 3070</a><a href="tel:0394898040">03 9489 8040</a><span>Monday to Friday 7am – 4pm. Saturday &amp; Sunday 8am – 4pm. Kitchen closes at 3pm</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#all-day-dining" data-sec="all-day-dining">All-Day Dining</a><a href="#sandwiches" data-sec="sandwiches">Sandwiches</a><a href="#sides" data-sec="sides">Sides</a><a href="#pastry" data-sec="pastry">Pastry</a><a href="#coffee" data-sec="coffee">Coffee</a><a href="#tea-tisane" data-sec="tea-tisane">Tea &amp; Tisane</a><a href="#drinks" data-sec="drinks">Drinks</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="all-day-dining" class="sec">
+      <h2>All-Day Dining</h2>
+      
+      <ul>
+        <li data-q="toast wild life bakery organic sourdough or gf precinct gluten-free, cultured butter, served with a choice of housemade raspberry jam, peanut butter or vegemite">
+          <div class="row"><span class="name">Toast</span></div>
+          <p class="desc">Wild Life Bakery Organic Sourdough or GF Precinct Gluten-free, cultured butter, served with a choice of housemade raspberry jam, peanut butter or vegemite</p><div class="prices"><span class="pp"><b>$13</b></span><span class="pp"><span class="pl">GF</span> <b>+ 4.5</b></span></div>
+        </li>
+        <li data-q="housemade apricot &amp; fig fruit bread served with french butter">
+          <div class="row"><span class="name">Housemade Apricot &amp; Fig Fruit Bread</span><span class="price">$14</span></div>
+          <p class="desc">served with French butter</p>
+        </li>
+        <li data-q="breakfast tart bacon, cherry tomato, emmental cheese, caramelised onion, day&#39;s walk farm leaves">
+          <div class="row"><span class="name">Breakfast Tart</span><span class="price">$21</span></div>
+          <p class="desc">bacon, cherry tomato, emmental cheese, caramelised onion, Day&#39;s Walk Farm leaves</p>
+        </li>
+        <li data-q="bircher muesli fresh mango, berries &amp; passionfruit, coconut yoghurt, maple syrup, buckwheat crisp vg">
+          <div class="row"><span class="name">Bircher Muesli</span><span class="price">$23.50</span></div>
+          <p class="desc">fresh mango, berries &amp; passionfruit, coconut yoghurt, maple syrup, buckwheat crisp VG</p>
+        </li>
+        <li data-q="acai bowl fresh berries, banana, kiwi fruit, coconut yoghurt, activated buckwheat granola gf vg. + peanut butter 2">
+          <div class="row"><span class="name">Acai Bowl</span><span class="price">$23.50</span></div>
+          <p class="desc">fresh berries, banana, kiwi fruit, coconut yoghurt, activated buckwheat granola GF VG. + Peanut butter 2</p>
+        </li>
+        <li data-q="housemade wholemeal crumpets french butter, housemade raspberry jam, orange blossom honey">
+          <div class="row"><span class="name">Housemade Wholemeal Crumpets</span><span class="price">$15.50</span></div>
+          <p class="desc">French butter, housemade raspberry jam, orange blossom honey</p>
+        </li>
+        <li data-q="housemade brioche french toast muscat de beaumes de venise poached peach, vanilla custard, strawberry &amp; rhubarb compote, almonds, crème fraîche, lemon verbena (gf: brioche)">
+          <div class="row"><span class="name">Housemade Brioche French Toast</span><span class="price">$27.50</span></div>
+          <p class="desc">muscat de Beaumes de Venise poached peach, vanilla custard, strawberry &amp; rhubarb compote, almonds, crème fraîche, lemon verbena (GF: brioche)</p>
+        </li>
+        <li data-q="dukkah eggs chermoula roasted eggplant &amp; stracciatella tartine, avocado, confit onion, day&#39;s walk farm leaves, pomegranate dressing (gf: sourdough)">
+          <div class="row"><span class="name">Dukkah Eggs</span><span class="price">$28.50</span></div>
+          <p class="desc">chermoula roasted eggplant &amp; stracciatella tartine, avocado, confit onion, Day&#39;s Walk Farm leaves, pomegranate dressing (GF: sourdough)</p>
+        </li>
+        <li data-q="pan-fried semolina sautéed wild mushrooms, raffa family farm asparagus, stracciatella, mount zero lemon oil, toasted walnuts, crispy chicken skin, poached egg (v: crispy chicken skin). + pork &amp; fennel sausage 5">
+          <div class="row"><span class="name">Pan-fried Semolina</span><span class="price">$28.50</span></div>
+          <p class="desc">sautéed wild mushrooms, Raffa Family Farm asparagus, stracciatella, Mount Zero lemon oil, toasted walnuts, crispy chicken skin, poached egg (V: crispy chicken skin). + Pork &amp; fennel sausage 5</p>
+        </li>
+        <li data-q="corn, zucchini &amp; quinoa fritters avocado, refried ayocote beans, charred corn, tomato &amp; jalapeño salad, housemade salsa roja, cashew cream, poached egg gf df (vg: egg)">
+          <div class="row"><span class="name">Corn, Zucchini &amp; Quinoa Fritters</span><span class="price">$27.50</span></div>
+          <p class="desc">avocado, refried Ayocote beans, charred corn, tomato &amp; jalapeño salad, housemade salsa roja, cashew cream, poached egg GF DF (VG: egg)</p>
+        </li>
+        <li data-q="breakfast roll fried egg, bacon, comté cheese, avocado, day&#39;s walk farm leaves, aioli, tomato kasundi (v: bacon) (gf: brioche roll)">
+          <div class="row"><span class="name">Breakfast Roll</span><span class="price">$24</span></div>
+          <p class="desc">fried egg, bacon, comté cheese, avocado, Day&#39;s Walk Farm leaves, aioli, tomato kasundi (V: bacon) (GF: brioche roll)</p>
+        </li>
+        <li data-q="shakshuka baked eggs, chorizo, heirloom tomato, eggplant, persian feta, green chilli oil, sourdough (gf: sourdough) (v: chorizo)">
+          <div class="row"><span class="name">Shakshuka</span><span class="price">$29.50</span></div>
+          <p class="desc">baked eggs, chorizo, heirloom tomato, eggplant, Persian feta, green chilli oil, sourdough (GF: sourdough) (V: chorizo)</p>
+        </li>
+        <li data-q="benedict-style eggs organic cider slow-braised pulled pork shoulder, apple &amp; pecan, potato rosti, hollandaise gf">
+          <div class="row"><span class="name">Benedict-style Eggs</span><span class="price">$28.50</span></div>
+          <p class="desc">organic cider slow-braised pulled pork shoulder, apple &amp; pecan, potato rosti, hollandaise GF</p>
+        </li>
+        <li data-q="mountain ash house-smoked ōra king salmon housemade crumpet, spanner crab mayonnaise, cucumber, day&#39;s walk farm greens, curry leaves, poached egg (gf: crumpet)">
+          <div class="row"><span class="name">Mountain Ash House-smoked Ōra King Salmon</span><span class="price">$30.50</span></div>
+          <p class="desc">housemade crumpet, spanner crab mayonnaise, cucumber, Day&#39;s Walk Farm greens, curry leaves, poached egg (GF: crumpet)</p>
+        </li>
+        <li data-q="local free-range eggs poached, fried, or scrambled, served on two slices of wild life bakery organic toast">
+          <div class="row"><span class="name">Local Free-range Eggs</span><span class="price">$17.50</span></div>
+          <p class="desc">Poached, Fried, or Scrambled, served on two slices of Wild Life Bakery organic toast</p>
+        </li>
+        <li data-q="cauliflower &amp; quinoa salad poached eggs, blanched kale, avocado, smoked almond cream, dukkah, puffed wild rice, souk oil dressing gf df (vg: poached eggs). + tea-smoked chicken 4">
+          <div class="row"><span class="name">Cauliflower &amp; Quinoa Salad</span><span class="price">$25.50</span></div>
+          <p class="desc">poached eggs, blanched kale, avocado, smoked almond cream, dukkah, puffed wild rice, souk oil dressing GF DF (VG: poached eggs). + Tea-smoked chicken 4</p>
+        </li>
+        <li data-q="broccolini &amp; sorghum salad pan-warmed greens, heirloom beetroot, smoked yoghurt, aleppo pepper, mint, toasted almonds, lemon gf (vg: yoghurt). + tea-smoked chicken 4">
+          <div class="row"><span class="name">Broccolini &amp; Sorghum Salad</span><span class="price">$25.50</span></div>
+          <p class="desc">pan-warmed greens, heirloom beetroot, smoked yoghurt, Aleppo pepper, mint, toasted almonds, lemon GF (VG: yoghurt). + Tea-smoked chicken 4</p>
+        </li>
+        <li data-q="brown rice &amp; tofu purée salad fried brown rice onigiri, avocado, heirloom tomato, edamame, pickled cucumber &amp; daikon, day&#39;s walk farm leaves, sesame &amp; soy dressing gf vg. + torched miso-buttered salmon 9">
+          <div class="row"><span class="name">Brown Rice &amp; Tofu Purée Salad</span><span class="price">$24.50</span></div>
+          <p class="desc">fried brown rice onigiri, avocado, heirloom tomato, edamame, pickled cucumber &amp; daikon, Day&#39;s Walk Farm leaves, sesame &amp; soy dressing GF VG. + Torched miso-buttered salmon 9</p>
+        </li>
+        <li data-q="darling downs wagyu beef burger housemade bordelaise sauce, fried egg, comté cheese, pickles, caramelised onion, aioli, fries (gf &amp; df: brioche roll, comté cheese)">
+          <div class="row"><span class="name">Darling Downs Wagyu Beef Burger</span><span class="price">$30.50</span></div>
+          <p class="desc">housemade bordelaise sauce, fried egg, comté cheese, pickles, caramelised onion, aioli, fries (GF &amp; DF: brioche roll, comté cheese)</p>
+        </li>
+        <li data-q="fries rosemary, crushed garlic, housemade aioli v gf">
+          <div class="row"><span class="name">Fries</span><span class="price">$13</span></div>
+          <p class="desc">rosemary, crushed garlic, housemade aioli V GF</p>
+        </li></ul>
+    </section>
+    <section id="sandwiches" class="sec">
+      <h2>Sandwiches</h2>
+      <p class="note">Made with sourdough bread 17.5. + Gluten-free 4.5. + Dressed leaves 6.5</p>
+      <ul>
+        <li data-q="free-range organic chicken horseradish mayonnaise, day&#39;s walk farm leaves, pickles">
+          <div class="row"><span class="name">Free-range Organic Chicken</span><span class="price">$17.50</span></div>
+          <p class="desc">horseradish mayonnaise, Day&#39;s Walk Farm leaves, pickles</p>
+        </li>
+        <li data-q="reuben housemade beef pastrami, sauerkraut, emmental cheese, pickles, russian dressing. + fried egg 3">
+          <div class="row"><span class="name">Reuben</span><span class="price">$17.50</span></div>
+          <p class="desc">housemade beef pastrami, sauerkraut, emmental cheese, pickles, Russian dressing. + Fried egg 3</p>
+        </li>
+        <li data-q="ōra king salmon watercress, capers, kohlrabi &amp; celeriac remoulade">
+          <div class="row"><span class="name">Ōra King Salmon</span><span class="price">$17.50</span></div>
+          <p class="desc">watercress, capers, kohlrabi &amp; celeriac remoulade</p>
+        </li>
+        <li data-q="roasted cauliflower spinach, cashew cream, onion jam &amp; green chilli oil vg. + fried egg 3">
+          <div class="row"><span class="name">Roasted Cauliflower</span><span class="price">$17.50</span></div>
+          <p class="desc">spinach, cashew cream, onion jam &amp; green chilli oil VG. + Fried egg 3</p>
+        </li></ul>
+    </section>
+    <section id="sides" class="sec">
+      <h2>Sides</h2>
+      
+      <ul>
+        <li data-q="relish / butter / hollandaise / + free-range egg / gluten-free bread / + toast ">
+          <div class="row"><span class="name">Relish / Butter / Hollandaise / + Free-range Egg / Gluten-free Bread / + Toast</span><span class="price">$4.5 each</span></div>
+          
+        </li>
+        <li data-q="baked beans / persian feta / sautéed spinach / avocado / roasted mushrooms / stewed tomatoes / potato rosti / small fries ">
+          <div class="row"><span class="name">Baked Beans / Persian Feta / Sautéed Spinach / Avocado / Roasted Mushrooms / Stewed Tomatoes / Potato Rosti / Small Fries</span><span class="price">$6.5 each</span></div>
+          
+        </li>
+        <li data-q="free-range bacon / pork, fennel &amp; chilli sausage ">
+          <div class="row"><span class="name">Free-range Bacon / Pork, Fennel &amp; Chilli Sausage</span><span class="price">$7.5 each</span></div>
+          
+        </li>
+        <li data-q="mountain ash house-smoked ōra king salmon ">
+          <div class="row"><span class="name">Mountain Ash House-smoked Ōra King Salmon</span><span class="price">$9.50</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="pastry" class="sec">
+      <h2>Pastry</h2>
+      <p class="note">Housemade with an all-butter pastry, served with dressed leaves</p>
+      <ul>
+        <li data-q="tarts filled with a variety of fresh ingredients">
+          <div class="row"><span class="name">Tarts</span><span class="price">$22</span></div>
+          <p class="desc">filled with a variety of fresh ingredients</p>
+        </li>
+        <li data-q="rolls pork, beef &amp; lamb sausage or spinach, chard &amp; feta">
+          <div class="row"><span class="name">Rolls</span><span class="price">$22.50</span></div>
+          <p class="desc">Pork, Beef &amp; Lamb Sausage or Spinach, chard &amp; feta</p>
+        </li>
+        <li data-q="pies served with housemade relish">
+          <div class="row"><span class="name">Pies</span><span class="price">$22.50</span></div>
+          <p class="desc">served with housemade relish</p>
+        </li></ul>
+    </section>
+    <section id="coffee" class="sec">
+      <h2>Coffee</h2>
+      <p class="note">Roasted by Dukes Coffee Roasters &amp; Market Lane Coffee. + Strong 50¢, + Decaf 50¢, + Large 90¢, + Almond 50¢, + Soy 50¢, + Oatly 50¢</p>
+      <ul>
+        <li data-q="espresso, black or white ">
+          <div class="row"><span class="name">Espresso, Black or White</span><span class="price">$5.50</span></div>
+          
+        </li>
+        <li data-q="filter, batch brew or cold brew ">
+          <div class="row"><span class="name">Filter, Batch Brew or Cold Brew</span><span class="price">$5.50</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="tea-tisane" class="sec">
+      <h2>Tea &amp; Tisane</h2>
+      <p class="note">Organic Loose-leaf, by Love Tea, brewed behind the bar</p>
+      <ul>
+        <li data-q="english breakfast blend of high-grown, quality ceylon tea enjoyed with or without milk">
+          <div class="row"><span class="name">English Breakfast</span><span class="price">$5.50</span></div>
+          <p class="desc">Blend of high-grown, quality Ceylon tea enjoyed with or without milk</p>
+        </li>
+        <li data-q="earl grey blend of premium quality ceylon black tea, with the essential oil of bergamot harvested from the calabrian region in southern italy, to create a refreshing and vibrant flavour balanced with muscatel tones">
+          <div class="row"><span class="name">Earl Grey</span><span class="price">$5.50</span></div>
+          <p class="desc">Blend of premium quality Ceylon black tea, with the essential oil of bergamot harvested from the Calabrian region in Southern Italy, to create a refreshing and vibrant flavour balanced with muscatel tones</p>
+        </li>
+        <li data-q="peppermint sourced direct from egypt, this tea is refreshing, delicate and cooling and is known for its therapeutic benefits">
+          <div class="row"><span class="name">Peppermint</span><span class="price">$5.50</span></div>
+          <p class="desc">Sourced direct from Egypt, this tea is refreshing, delicate and cooling and is known for its therapeutic benefits</p>
+        </li>
+        <li data-q="calming a carefully selected blend of herbs including chamomile, lemon balm and lavender to help calm the nervous system">
+          <div class="row"><span class="name">Calming</span><span class="price">$5.50</span></div>
+          <p class="desc">A carefully selected blend of herbs including chamomile, lemon balm and lavender to help calm the nervous system</p>
+        </li>
+        <li data-q="genmaicha australian sencha, stone-ground matcha and puffed brown rice have been combined to create this powerful and unique green tea. it is rich in antioxidants, chlorophyll and offers a mildly uplifting effect from its caffeine content.">
+          <div class="row"><span class="name">Genmaicha</span><span class="price">$6</span></div>
+          <p class="desc">Australian sencha, stone-ground matcha and puffed brown rice have been combined to create this powerful and unique green tea. It is rich in antioxidants, chlorophyll and offers a mildly uplifting effect from its caffeine content.</p>
+        </li>
+        <li data-q="monk&#39;s organic chai latte + soy, oatly or almond milk 50¢">
+          <div class="row"><span class="name">Monk&#39;s Organic Chai Latte</span><span class="price">$5.50</span></div>
+          <p class="desc">+ Soy, Oatly or almond milk 50¢</p>
+        </li>
+        <li data-q="shoku iku organic ceremonial-grade matcha + soy, oatly or almond milk 50¢. + strawberry syrup 50¢">
+          <div class="row"><span class="name">Shoku Iku Organic Ceremonial-Grade Matcha</span><span class="price">$7</span></div>
+          <p class="desc">+ Soy, Oatly or almond milk 50¢. + Strawberry syrup 50¢</p>
+        </li></ul>
+    </section>
+    <section id="drinks" class="sec">
+      <h2>Drinks</h2>
+      
+      <ul>
+        <li data-q="mörk original dark hot chocolate + soy, oatly or almond milk 50¢">
+          <div class="row"><span class="name">Mörk Original Dark Hot Chocolate</span><span class="price">$6.50</span></div>
+          <p class="desc">+ Soy, Oatly or almond milk 50¢</p>
+        </li>
+        <li data-q="iced coffee / chocolate / chai / matcha + soy, oatly or almond milk 50¢">
+          <div class="row"><span class="name">Iced Coffee / Chocolate / Chai / Matcha</span><span class="price">$8.50</span></div>
+          <p class="desc">+ Soy, Oatly or almond milk 50¢</p>
+        </li>
+        <li data-q="cold-pressed fresh orange juice ">
+          <div class="row"><span class="name">Cold-pressed Fresh Orange Juice</span><span class="price">$8.50</span></div>
+          
+        </li>
+        <li data-q="good brew kombucha 0.33l hibiscus &amp; ginger / apple &amp; bush river mint / pineapple &amp; coconut / yerba maté">
+          <div class="row"><span class="name">Good Brew Kombucha 0.33L</span><span class="price">$8.50</span></div>
+          <p class="desc">Hibiscus &amp; Ginger / Apple &amp; Bush River Mint / Pineapple &amp; Coconut / Yerba Maté</p>
+        </li>
+        <li data-q="pulpy&#39;s cold-pressed juices cloudy apple / watermelon &amp; pear / super greens">
+          <div class="row"><span class="name">Pulpy&#39;s Cold-pressed Juices</span><span class="price">$6.50</span></div>
+          <p class="desc">Cloudy Apple / Watermelon &amp; Pear / Super Greens</p>
+        </li>
+        <li data-q="daylesford &amp; hepburn mineral springs co lemonade / ginger beer / blood orange">
+          <div class="row"><span class="name">Daylesford &amp; Hepburn Mineral Springs Co</span><span class="price">$7.50</span></div>
+          <p class="desc">Lemonade / Ginger Beer / Blood Orange</p>
+        </li>
+        <li data-q="fountain of youth coconut water 0.52l ">
+          <div class="row"><span class="name">Fountain of Youth Coconut Water 0.52L</span><span class="price">$8.50</span></div>
+          
+        </li>
+        <li data-q="sparkling mineral water 0.33l ">
+          <div class="row"><span class="name">Sparkling Mineral Water 0.33L</span><span class="price">$6.50</span></div>
+          
+        </li>
+        <li data-q="smoothies #1 banana, blueberry, almond butter. #2 strawberry, raspberry, coconut yoghurt, cashew. #3 spinach, apple, avocado, spirulina, ginger, lemon nf. all made with canadian hempseed milk gf vg">
+          <div class="row"><span class="name">Smoothies</span><span class="price">$10.50</span></div>
+          <p class="desc">#1 Banana, Blueberry, Almond butter. #2 Strawberry, Raspberry, Coconut yoghurt, Cashew. #3 Spinach, Apple, Avocado, Spirulina, Ginger, Lemon NF. All made with Canadian hempseed milk GF VG</p>
+        </li>
+        <li data-q="milkshakes chocolate / coffee / berry / vanilla malt. + soy, oatly or almond milk 50¢">
+          <div class="row"><span class="name">Milkshakes</span><span class="price">$9.50</span></div>
+          <p class="desc">Chocolate / Coffee / Berry / Vanilla malt. + Soy, Oatly or almond milk 50¢</p>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>A 10% surcharge applies on Saturday &amp; Sunday. A 15% surcharge applies on all Victorian &amp; Federal public holidays. A 1% card transaction surcharge applies to all card transactions. We are pleased to accommodate dietary requirements where possible. Please allow us a moment to confer with the Chef if required. We apologise if we are unable to vary the menu on some occasions. Organic sourdough bread &amp; viennoiserie from Wild Life Bakery. Pasture-fed Black Angus Beef and White Lambs from Romsey Range farm. Free-range eggs from Keans Eggs. Sustainably and ethically-farmed Ōra King Salmon from New Zealand. Organic Coffee by Dukes Coffee Roasters &amp; Market Lane Coffee.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Red Door Corner Store.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Red Door Corner Store menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's US$29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for US$29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

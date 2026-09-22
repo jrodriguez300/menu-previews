@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Cottage Kitchen Menu</title>
+<meta name="description" content="Menu for Cottage Kitchen, Tynte Street, North Adelaide.">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Cottage Kitchen</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=198%20Tynte%20Street%2C%20North%20Adelaide%20SA%205006">198 Tynte Street, North Adelaide SA 5006</a><a href="tel:0873333388">(08) 7333 3388</a><span>Mon-Sun 6:30am-4pm. Breakfast served 6:30am-11:30am</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#breakfast" data-sec="breakfast">Breakfast</a><a href="#additions" data-sec="additions">Additions</a><a href="#coffee" data-sec="coffee">Coffee</a><a href="#fresh-juice" data-sec="fresh-juice">Fresh Juice</a><a href="#sip-savour" data-sec="sip-savour">Sip &amp; Savour</a><a href="#to-share" data-sec="to-share">To Share</a><a href="#from-the-bakery" data-sec="from-the-bakery">From the Bakery</a><a href="#from-the-garden" data-sec="from-the-garden">From the Garden</a><a href="#from-the-pantry" data-sec="from-the-pantry">From the Pantry</a><a href="#from-the-paddock" data-sec="from-the-paddock">From the Paddock</a><a href="#from-the-sea" data-sec="from-the-sea">From the Sea</a><a href="#sides" data-sec="sides">Sides</a><a href="#feed-me" data-sec="feed-me">Feed Me</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="breakfast" class="sec">
+      <h2>Breakfast</h2>
+      <p class="note">Served from 6:30am until 11:30am</p>
+      <ul>
+        <li data-q="avocado feta toast (v, gfo) toasted sourdough, smashed avocado, green peas, feta, chili, salsa verde. add a free-range egg +a$3.50 ea">
+          <div class="row"><span class="name">Avocado Feta Toast (V, GFO)</span><span class="price">A$26.00</span></div>
+          <p class="desc">Toasted sourdough, smashed avocado, green peas, feta, chili, salsa verde. Add a free-range egg +A$3.50 ea</p>
+        </li>
+        <li data-q="fruit toast (v) rustic thick cut fruit toast, house made whipped butter">
+          <div class="row"><span class="name">Fruit Toast (V)</span><span class="price">A$14.00</span></div>
+          <p class="desc">Rustic thick cut fruit toast, house made whipped butter</p>
+        </li>
+        <li data-q="shakshuka eggs (v, gfo) heirloom tomatoes, red onion, sourdough toast &amp; eggs. add barossa bacon or chorizo +a$4.50 ea">
+          <div class="row"><span class="name">Shakshuka Eggs (V, GFO)</span><span class="price">A$28.00</span></div>
+          <p class="desc">Heirloom tomatoes, red onion, sourdough toast &amp; eggs. Add Barossa bacon or chorizo +A$4.50 ea</p>
+        </li>
+        <li data-q="eggs atlantic (gfo) toasted sourdough, smoked salmon, poached eggs, hollandaise. add avocado +a$3.50">
+          <div class="row"><span class="name">Eggs Atlantic (GFO)</span><span class="price">A$30.00</span></div>
+          <p class="desc">Toasted sourdough, smoked salmon, poached eggs, hollandaise. Add avocado +A$3.50</p>
+        </li>
+        <li data-q="eggs benedict (gfo) toasted sourdough, barossa bacon, poached eggs, hollandaise">
+          <div class="row"><span class="name">Eggs Benedict (GFO)</span><span class="price">A$28.00</span></div>
+          <p class="desc">Toasted sourdough, Barossa bacon, poached eggs, hollandaise</p>
+        </li>
+        <li data-q="eggs florentine (gfo) toasted sourdough, baby spinach, poached eggs, hollandaise">
+          <div class="row"><span class="name">Eggs Florentine (GFO)</span><span class="price">A$26.00</span></div>
+          <p class="desc">Toasted sourdough, baby spinach, poached eggs, hollandaise</p>
+        </li>
+        <li data-q="ck baked beans (ve, gfo) house made baked beans, toasted sourdough">
+          <div class="row"><span class="name">CK Baked Beans (VE, GFO)</span><span class="price">A$24.00</span></div>
+          <p class="desc">House made baked beans, toasted sourdough</p>
+        </li>
+        <li data-q="ck brekky focaccia barossa bacon, spinach, fried egg, house made tomato relish">
+          <div class="row"><span class="name">CK Brekky Focaccia</span><span class="price">A$24.00</span></div>
+          <p class="desc">Barossa bacon, spinach, fried egg, house made tomato relish</p>
+        </li>
+        <li data-q="ck brekky vegetarian focaccia (v) roast mushrooms, panfried haloumi, rocket, pesto, scrambled egg">
+          <div class="row"><span class="name">CK Brekky Vegetarian Focaccia (V)</span><span class="price">A$24.00</span></div>
+          <p class="desc">Roast mushrooms, panfried haloumi, rocket, pesto, scrambled egg</p>
+        </li>
+        <li data-q="ck big brekky (gfo) barossa bacon, eggs, semi dried romas, roast mushroom, baked beans, toasted sourdough">
+          <div class="row"><span class="name">CK Big Brekky (GFO)</span><span class="price">A$29.00</span></div>
+          <p class="desc">Barossa bacon, eggs, semi dried Romas, roast mushroom, baked beans, toasted sourdough</p>
+        </li>
+        <li data-q="ck bircher (ve) house made bircher, house poached fruit compote, coconut yoghurt">
+          <div class="row"><span class="name">CK Bircher (VE)</span><span class="price">A$21.00</span></div>
+          <p class="desc">House made bircher, house poached fruit compote, coconut yoghurt</p>
+        </li>
+        <li data-q="granola (v, gf) fruit, seed, nut &amp; puffed rice, house made granola, coconut, maple syrup, fresh seasonal fruits, fleurieu yoghurt">
+          <div class="row"><span class="name">Granola (V, GF)</span><span class="price">A$21.00</span></div>
+          <p class="desc">Fruit, seed, nut &amp; puffed rice, house made granola, coconut, maple syrup, fresh seasonal fruits, Fleurieu yoghurt</p>
+        </li>
+        <li data-q="ck pancakes (v) ricotta lemon pancakes, seasonal fruit topping, whipped butter">
+          <div class="row"><span class="name">CK Pancakes (V)</span><span class="price">A$23.00</span></div>
+          <p class="desc">Ricotta lemon pancakes, seasonal fruit topping, whipped butter</p>
+        </li>
+        <li data-q="eggs on sourdough (v, gfo) eggs cooked to your liking, toasted sourdough. add your favourites from additions below">
+          <div class="row"><span class="name">Eggs on Sourdough (V, GFO)</span><span class="price">A$18.00</span></div>
+          <p class="desc">Eggs cooked to your liking, toasted sourdough. Add your favourites from additions below</p>
+        </li></ul>
+    </section>
+    <section id="additions" class="sec">
+      <h2>Additions</h2>
+      <p class="note">Not sold separately</p>
+      <ul>
+        <li data-q="barossa bacon ">
+          <div class="row"><span class="name">Barossa Bacon</span><span class="price">A$4.50</span></div>
+          
+        </li>
+        <li data-q="barossa chorizo ">
+          <div class="row"><span class="name">Barossa Chorizo</span><span class="price">A$4.50</span></div>
+          
+        </li>
+        <li data-q="adelaide hills free-range egg ">
+          <div class="row"><span class="name">Adelaide Hills Free-range Egg</span><span class="price">A$3.50</span></div>
+          
+        </li>
+        <li data-q="avocado ">
+          <div class="row"><span class="name">Avocado</span><span class="price">A$3.50</span></div>
+          
+        </li>
+        <li data-q="baked adelaide hills mushrooms ">
+          <div class="row"><span class="name">Baked Adelaide Hills Mushrooms</span><span class="price">A$3.50</span></div>
+          
+        </li>
+        <li data-q="house made herbed roma tomatoes ">
+          <div class="row"><span class="name">House made Herbed Roma Tomatoes</span><span class="price">A$3.50</span></div>
+          
+        </li>
+        <li data-q="house made baked beans ">
+          <div class="row"><span class="name">House made Baked Beans</span><span class="price">A$6.00</span></div>
+          
+        </li>
+        <li data-q="grilled haloumi ">
+          <div class="row"><span class="name">Grilled Haloumi</span><span class="price">A$4.50</span></div>
+          
+        </li>
+        <li data-q="sourdough toast ">
+          <div class="row"><span class="name">Sourdough Toast</span><span class="price">A$3.00</span></div>
+          
+        </li>
+        <li data-q="gluten free toast ">
+          <div class="row"><span class="name">Gluten Free Toast</span><span class="price">A$3.50</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="coffee" class="sec">
+      <h2>Coffee</h2>
+      
+      <ul>
+        <li data-q="espresso, piccolo, macchiato ">
+          <div class="row"><span class="name">Espresso, Piccolo, Macchiato</span><span class="price">A$4.20</span></div>
+          
+        </li>
+        <li data-q="cappuccino, latte, flat white ">
+          <div class="row"><span class="name">Cappuccino, Latte, Flat White</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Regular</span> <b>A$5.20</b></span><span class="pp"><span class="pl">Large</span> <b>A$6.60</b></span></div>
+        </li>
+        <li data-q="hot chocolate, mocha, chai ">
+          <div class="row"><span class="name">Hot Chocolate, Mocha, Chai</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Regular</span> <b>A$5.20</b></span><span class="pp"><span class="pl">Large</span> <b>A$6.60</b></span></div>
+        </li>
+        <li data-q="iced latte / chai / mocha ">
+          <div class="row"><span class="name">Iced Latte / Chai / Mocha</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Regular</span> <b>A$7.50</b></span><span class="pp"><span class="pl">Large</span> <b>A$8.50</b></span></div>
+        </li>
+        <li data-q="iced coffee / chocolate served with ice cream">
+          <div class="row"><span class="name">Iced Coffee / Chocolate</span><span class="price">A$9.80</span></div>
+          <p class="desc">Served with ice cream</p>
+        </li>
+        <li data-q="iced tea peach or mango served with still or sparkling water">
+          <div class="row"><span class="name">Iced Tea</span><span class="price">A$7.50</span></div>
+          <p class="desc">Peach or mango served with still or sparkling water</p>
+        </li>
+        <li data-q="t bar selection english breakfast, earl grey, green, peppermint, ginger &amp; lemongrass, chamomile">
+          <div class="row"><span class="name">T Bar Selection</span><span class="price">A$5.20</span></div>
+          <p class="desc">English breakfast, earl grey, green, peppermint, ginger &amp; lemongrass, chamomile</p>
+        </li>
+        <li data-q="loose leaf tea prosperi t chai, rooitea">
+          <div class="row"><span class="name">Loose Leaf Tea</span><span class="price">A$5.20</span></div>
+          <p class="desc">Prosperi T chai, rooitea</p>
+        </li>
+        <li data-q="alternative milks lactose free, oat, soy, almond">
+          <div class="row"><span class="name">Alternative Milks</span><span class="price">A$1.50</span></div>
+          <p class="desc">Lactose free, oat, soy, almond</p>
+        </li>
+        <li data-q="syrups vanilla, caramel, hazelnut">
+          <div class="row"><span class="name">Syrups</span><span class="price">A$1.20</span></div>
+          <p class="desc">Vanilla, caramel, hazelnut</p>
+        </li>
+        <li data-q="babycino ">
+          <div class="row"><span class="name">Babycino</span><span class="price">A$1.00</span></div>
+          
+        </li>
+        <li data-q="extra shot ">
+          <div class="row"><span class="name">Extra Shot</span><span class="price">A$1.20</span></div>
+          
+        </li>
+        <li data-q="ice cream scoop ">
+          <div class="row"><span class="name">Ice Cream Scoop</span><span class="price">A$2.50</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="fresh-juice" class="sec">
+      <h2>Fresh Juice</h2>
+      
+      <ul>
+        <li data-q="orange juice freshly squeezed orange juice">
+          <div class="row"><span class="name">Orange Juice</span><span class="price">A$13.00</span></div>
+          <p class="desc">Freshly squeezed orange juice</p>
+        </li>
+        <li data-q="emerald elixir kale, cucumber, pear, ginger, green apple, coconut water">
+          <div class="row"><span class="name">Emerald Elixir</span><span class="price">A$13.00</span></div>
+          <p class="desc">Kale, cucumber, pear, ginger, green apple, coconut water</p>
+        </li>
+        <li data-q="glow getter orange, carrot, ginger, lemon, red apple, coconut water">
+          <div class="row"><span class="name">Glow Getter</span><span class="price">A$13.00</span></div>
+          <p class="desc">Orange, carrot, ginger, lemon, red apple, coconut water</p>
+        </li>
+        <li data-q="berry good idea strawberry, kiwi, red apple, lime, passionfruit, coconut water">
+          <div class="row"><span class="name">Berry Good Idea</span><span class="price">A$13.00</span></div>
+          <p class="desc">Strawberry, kiwi, red apple, lime, passionfruit, coconut water</p>
+        </li></ul>
+    </section>
+    <section id="sip-savour" class="sec">
+      <h2>Sip &amp; Savour</h2>
+      
+      <ul>
+        <li data-q="bloody mary 78 degrees vodka, tomato juice, celery salt, lemon juice, tabasco, worcestershire, olives">
+          <div class="row"><span class="name">Bloody Mary</span><span class="price">A$19.00</span></div>
+          <p class="desc">78 Degrees vodka, tomato juice, celery salt, lemon juice, tabasco, worcestershire, olives</p>
+        </li>
+        <li data-q="mimosa house prosecco with orange juice">
+          <div class="row"><span class="name">Mimosa</span><span class="price">A$15.00</span></div>
+          <p class="desc">House prosecco with orange juice</p>
+        </li>
+        <li data-q="espresso martini long way distilling co. coffee liqueur, vodka, cirelli coffee, sugar syrup, coffee beans">
+          <div class="row"><span class="name">Espresso Martini</span><span class="price">A$20.00</span></div>
+          <p class="desc">Long Way Distilling Co. coffee liqueur, vodka, Cirelli coffee, sugar syrup, coffee beans</p>
+        </li></ul>
+    </section>
+    <section id="to-share" class="sec">
+      <h2>To Share</h2>
+      <p class="note">Chefs Table (lunch and dinner menu, winter 2026)</p>
+      <ul>
+        <li data-q="hummus (ve, gf) house made with evoo, murray river salt flakes, roasted cumin">
+          <div class="row"><span class="name">Hummus (VE, GF)</span><span class="price">A$10.00</span></div>
+          <p class="desc">House made with EVOO, Murray River salt flakes, roasted cumin</p>
+        </li>
+        <li data-q="baba ghanoush (ve, gf) smoked eggplant, tahini, evoo, spices">
+          <div class="row"><span class="name">Baba Ghanoush (VE, GF)</span><span class="price">A$8.00</span></div>
+          <p class="desc">Smoked eggplant, tahini, EVOO, spices</p>
+        </li>
+        <li data-q="tzatziki (v, gf) fleurieu yoghurt, cucumber, garlic">
+          <div class="row"><span class="name">Tzatziki (V, GF)</span><span class="price">A$8.00</span></div>
+          <p class="desc">Fleurieu yoghurt, cucumber, garlic</p>
+        </li>
+        <li data-q="persian feta (v, gf) marinated creamy persian feta, za&#39;atar spices">
+          <div class="row"><span class="name">Persian Feta (V, GF)</span><span class="price">A$13.00</span></div>
+          <p class="desc">Marinated creamy Persian feta, za&#39;atar spices</p>
+        </li>
+        <li data-q="balsamic mushrooms (ve, gf) house made balsamic mushrooms, rosemary, garlic, evoo">
+          <div class="row"><span class="name">Balsamic Mushrooms (VE, GF)</span><span class="price">A$8.50</span></div>
+          <p class="desc">House made balsamic mushrooms, rosemary, garlic, EVOO</p>
+        </li>
+        <li data-q="mixed olives (gf, ve) marinated penfield olives">
+          <div class="row"><span class="name">Mixed Olives (GF, VE)</span><span class="price">A$8.50</span></div>
+          <p class="desc">Marinated Penfield olives</p>
+        </li>
+        <li data-q="grilled chorizo (gf, df) char grilled barossa chorizo, saffron aioli">
+          <div class="row"><span class="name">Grilled Chorizo (GF, DF)</span><span class="price">A$15.00</span></div>
+          <p class="desc">Char grilled Barossa chorizo, saffron aioli</p>
+        </li>
+        <li data-q="pita (v) char grilled pita, evoo, sea salt, herbs">
+          <div class="row"><span class="name">Pita (V)</span><span class="price">A$12.00</span></div>
+          <p class="desc">Char grilled pita, EVOO, sea salt, herbs</p>
+        </li>
+        <li data-q="sourdough (v) fresh sourdough, house made whipped butter">
+          <div class="row"><span class="name">Sourdough (V)</span><span class="price">A$14.00</span></div>
+          <p class="desc">Fresh sourdough, house made whipped butter</p>
+        </li>
+        <li data-q="garlic bread (v) buttered sourdough, garlic, herbs">
+          <div class="row"><span class="name">Garlic Bread (V)</span><span class="price">A$8.00</span></div>
+          <p class="desc">Buttered sourdough, garlic, herbs</p>
+        </li></ul>
+    </section>
+    <section id="from-the-bakery" class="sec">
+      <h2>From the Bakery</h2>
+      
+      <ul>
+        <li data-q="focaccia toasted focaccia, roast chicken, triple creme brie, avocado, mixed salad leaves">
+          <div class="row"><span class="name">Focaccia</span><span class="price">A$22.00</span></div>
+          <p class="desc">Toasted focaccia, roast chicken, triple creme brie, avocado, mixed salad leaves</p>
+        </li>
+        <li data-q="lepinja double smoked barossa ham, swiss cheese, stacker pickles, rocket, seeded mustard">
+          <div class="row"><span class="name">Lepinja</span><span class="price">A$24.00</span></div>
+          <p class="desc">Double smoked Barossa ham, Swiss cheese, stacker pickles, rocket, seeded mustard</p>
+        </li>
+        <li data-q="sourdough (v) roast butternut, baby spinach, persian feta, red onion, beerenberg balsamic beetroot relish">
+          <div class="row"><span class="name">Sourdough (V)</span><span class="price">A$21.00</span></div>
+          <p class="desc">Roast butternut, baby spinach, Persian feta, red onion, Beerenberg balsamic beetroot relish</p>
+        </li></ul>
+    </section>
+    <section id="from-the-garden" class="sec">
+      <h2>From the Garden</h2>
+      <p class="note">Add prosciutto +A$8.00, grilled prawns (A) +A$10.00, chicken +A$8.00, smoked salmon (I) +A$10.00</p>
+      <ul>
+        <li data-q="ferment bowl (gf, v) ginger beet kraut, mixed sprouts, quinoa, granny apple slaw, walnut crumb">
+          <div class="row"><span class="name">Ferment Bowl (GF, V)</span><span class="price">A$24.00</span></div>
+          <p class="desc">Ginger beet kraut, mixed sprouts, quinoa, granny apple slaw, walnut crumb</p>
+        </li>
+        <li data-q="avo bowl (gf, ve) spiced avocado smash, mixed salad greens, salted chickpeas, house pickled cucumber, crispy shallots, winter citrus">
+          <div class="row"><span class="name">Avo Bowl (GF, VE)</span><span class="price">A$21.00</span></div>
+          <p class="desc">Spiced avocado smash, mixed salad greens, salted chickpeas, house pickled cucumber, crispy shallots, winter citrus</p>
+        </li></ul>
+    </section>
+    <section id="from-the-pantry" class="sec">
+      <h2>From the Pantry</h2>
+      
+      <ul>
+        <li data-q="fettuccine fettuccine, roast chicken, fresh basil, mixed mushrooms, white wine cream sauce">
+          <div class="row"><span class="name">Fettuccine</span><span class="price">A$26.00</span></div>
+          <p class="desc">Fettuccine, roast chicken, fresh basil, mixed mushrooms, white wine cream sauce</p>
+        </li>
+        <li data-q="pappardelle house made beef brisket meatballs, tomato sugo, pappardelle, parmesan">
+          <div class="row"><span class="name">Pappardelle</span><span class="price">A$28.00</span></div>
+          <p class="desc">House made beef brisket meatballs, tomato sugo, pappardelle, Parmesan</p>
+        </li>
+        <li data-q="gnocchi (gf, veo) plump pillows of potato gnocchi with basil pesto, broccoli, roast butternut &amp; parmesan">
+          <div class="row"><span class="name">Gnocchi (GF, VEO)</span><span class="price">A$28.00</span></div>
+          <p class="desc">Plump pillows of potato gnocchi with basil pesto, broccoli, roast butternut &amp; Parmesan</p>
+        </li></ul>
+    </section>
+    <section id="from-the-paddock" class="sec">
+      <h2>From the Paddock</h2>
+      
+      <ul>
+        <li data-q="chicken kiev (df) pan-seared chicken breast, pearl cous cous and mediterranean vegetable ragu">
+          <div class="row"><span class="name">Chicken Kiev (DF)</span><span class="price">A$38.00</span></div>
+          <p class="desc">Pan-seared chicken breast, pearl cous cous and Mediterranean vegetable ragu</p>
+        </li>
+        <li data-q="beef osso bucco (gf) tender osso bucco in a rich bourguignonne sauce, parmesan polenta and cavolo nero">
+          <div class="row"><span class="name">Beef Osso Bucco (GF)</span><span class="price">A$46.00</span></div>
+          <p class="desc">Tender osso bucco in a rich bourguignonne sauce, Parmesan polenta and cavolo nero</p>
+        </li>
+        <li data-q="lamb shank (gf) slow-braised lamb shank in a rich tomato and port wine reduction, mashed potato and peas">
+          <div class="row"><span class="name">Lamb Shank (GF)</span><span class="price">A$45.00</span></div>
+          <p class="desc">Slow-braised lamb shank in a rich tomato and port wine reduction, mashed potato and peas</p>
+        </li></ul>
+    </section>
+    <section id="from-the-sea" class="sec">
+      <h2>From the Sea</h2>
+      
+      <ul>
+        <li data-q="australian prawns (gf, a) garlic chili prawns, pilaf rice, micro herbs">
+          <div class="row"><span class="name">Australian Prawns (GF, A)</span><span class="price">A$38.00</span></div>
+          <p class="desc">Garlic chili prawns, pilaf rice, micro herbs</p>
+        </li>
+        <li data-q="south australian market fish (gf, a) fresh local market fish, roasted chat potatoes, roquette salad, &#39;cottage&#39; compound butter">
+          <div class="row"><span class="name">South Australian Market Fish (GF, A)</span><span class="price">A$40.00</span></div>
+          <p class="desc">Fresh local market fish, roasted chat potatoes, roquette salad, &#39;Cottage&#39; compound butter</p>
+        </li></ul>
+    </section>
+    <section id="sides" class="sec">
+      <h2>Sides</h2>
+      
+      <ul>
+        <li data-q="chips (gfo, ve) chunky chips, beerenberg tomato sauce">
+          <div class="row"><span class="name">Chips (GFO, VE)</span><span class="price">A$14.00</span></div>
+          <p class="desc">Chunky chips, Beerenberg tomato sauce</p>
+        </li>
+        <li data-q="sweet potato fries (v) crispy sweet potato fries, garlic aioli">
+          <div class="row"><span class="name">Sweet Potato Fries (V)</span><span class="price">A$15.00</span></div>
+          <p class="desc">Crispy sweet potato fries, garlic aioli</p>
+        </li>
+        <li data-q="greens (ve, gf) sauteed seasonal greens, evoo, salt flakes">
+          <div class="row"><span class="name">Greens (VE, GF)</span><span class="price">A$14.00</span></div>
+          <p class="desc">Sauteed seasonal greens, EVOO, salt flakes</p>
+        </li>
+        <li data-q="salad (gf, ve) mixed salad leaves, lemon dressing">
+          <div class="row"><span class="name">Salad (GF, VE)</span><span class="price">A$9.00</span></div>
+          <p class="desc">Mixed salad leaves, lemon dressing</p>
+        </li></ul>
+    </section>
+    <section id="feed-me" class="sec">
+      <h2>Feed Me</h2>
+      <p class="note">Minimum 2 guests. Designed to share between family and friends.</p>
+      <ul>
+        <li data-q="cottage feed me per person. dishes to share: a starter with warm pita, chef selection from the pantry, chef selection from the paddock or sea, accompanying sides">
+          <div class="row"><span class="name">Cottage Feed Me</span><span class="price">A$55</span></div>
+          <p class="desc">Per person. Dishes to share: a starter with warm pita, chef selection from the pantry, chef selection from the paddock or sea, accompanying sides</p>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>V vegetarian, VO vegetarian optional, GF gluten free, GFO gluten free optional, LF lactose free, VE vegan, VEO vegan optional, DF dairy free, A Australian seafood, I imported seafood. 10% Sunday surcharge and 20% public holiday surcharge applies. &#39;Eating is a necessity; sharing is an art.&#39;</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Cottage Kitchen.</strong> Not the official menu. Copied from their public menu on 2026-09-22. This preview expires October 6.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Cottage Kitchen menu preview was free to look at until October 6. To turn it into a live page with a QR code and print-ready PDF, it's US$29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for US$29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-06T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

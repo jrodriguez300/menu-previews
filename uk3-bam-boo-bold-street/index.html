@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>BAM BOO Brunch &amp; Cocktails Menu</title>
+<meta name="description" content="Menu for BAM BOO Brunch &amp; Cocktails, Bold Street, Liverpool city centre.">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>BAM BOO Brunch &amp; Cocktails</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=108%20Bold%20Street%2C%20Liverpool%2C%20L1%204HY%20(also%2091%20Lark%20Lane%2C%20Liverpool%2C%20L17%208UP)">108 Bold Street, Liverpool, L1 4HY (also 91 Lark Lane, Liverpool, L17 8UP)</a><span>Mon-Fri 9am-5pm. Sat 9am-6pm. Sun 9am-5pm</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#brunch" data-sec="brunch">Brunch</a><a href="#benedict-bagels" data-sec="benedict-bagels">Benedict Bagels</a><a href="#breakfast-bagels" data-sec="breakfast-bagels">Breakfast Bagels</a><a href="#brekkie-toasted-brioche" data-sec="brekkie-toasted-brioche">Brekkie Toasted Brioche</a><a href="#extras" data-sec="extras">Extras</a><a href="#pancake-stacks-french-toast" data-sec="pancake-stacks-french-toast">Pancake Stacks &amp; French Toast</a><a href="#lunch" data-sec="lunch">Lunch</a><a href="#side-bowls" data-sec="side-bowls">Side Bowls</a><a href="#soft-drinks" data-sec="soft-drinks">Soft Drinks</a><a href="#hot-drinks" data-sec="hot-drinks">Hot Drinks</a><a href="#iced-drinks" data-sec="iced-drinks">Iced Drinks</a><a href="#syrups" data-sec="syrups">Syrups</a><a href="#wine-prosecco" data-sec="wine-prosecco">Wine &amp; Prosecco</a><a href="#beers-ciders" data-sec="beers-ciders">Beers &amp; Ciders</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="brunch" class="sec">
+      <h2>Brunch</h2>
+      <p class="note">All day</p>
+      <ul>
+        <li data-q="bam boo full english 2 butcher sausages, streaky bacon, black pud, fried egg, beans, cherry vine tomatoes, field mushroom, hashbrown and toasted semolina bread.">
+          <div class="row"><span class="name">Bam Boo Full English</span><span class="price">£16.50</span></div>
+          <p class="desc">2 Butcher sausages, streaky bacon, black pud, fried egg, beans, cherry vine tomatoes, field mushroom, hashbrown and toasted semolina bread.</p>
+        </li>
+        <li data-q="pesky full english hot oak smoked salmon, choice of fried egg or scrambled tofu, grilled peppers, asparagus, cherry vine tomatoes, field mushroom, hashbrown, beans, smashed avocado and toasted semolina bread.">
+          <div class="row"><span class="name">Pesky Full English</span><span class="price">£17</span></div>
+          <p class="desc">Hot oak smoked salmon, choice of fried egg or scrambled tofu, grilled peppers, asparagus, cherry vine tomatoes, field mushroom, hashbrown, beans, smashed avocado and toasted semolina bread.</p>
+        </li>
+        <li data-q="veggie full english (v) vegan sausage, choice of fried egg or scrambled tofu, grilled peppers, asparagus, cherry vine tomatoes, field mushroom, hashbrown, smashed avocado, beans and toasted semolina bread.">
+          <div class="row"><span class="name">Veggie Full English (v)</span><span class="price">£16.00</span></div>
+          <p class="desc">Vegan sausage, choice of fried egg or scrambled tofu, grilled peppers, asparagus, cherry vine tomatoes, field mushroom, hashbrown, smashed avocado, beans and toasted semolina bread.</p>
+        </li>
+        <li data-q="smashed avo &amp; poached egg on toast (v) ask for vegan option! chilli &amp; lime smashed avocado, crumbled feta, poached eggs, roasted chickpeas, on toasted semolina bread with a shot of chilli honey. add streaky bacon +£2 / smoked salmon +£4">
+          <div class="row"><span class="name">Smashed Avo &amp; Poached Egg on Toast (v)</span><span class="price">£14.00</span></div>
+          <p class="desc">Ask for vegan option! Chilli &amp; lime smashed avocado, crumbled feta, poached eggs, roasted chickpeas, on toasted semolina bread with a shot of chilli honey. Add Streaky Bacon +£2 / Smoked Salmon +£4</p>
+        </li>
+        <li data-q="short rib shakshuka slow cooked short rib, rich tomato ragu, feta, confit tomatoes, peppers, served with toasted semolina, poached eggs and a shot of chilli honey. add toasted semolina bread +£1">
+          <div class="row"><span class="name">Short Rib Shakshuka</span><span class="price">£15.95</span></div>
+          <p class="desc">Slow cooked short rib, rich tomato ragu, feta, confit tomatoes, peppers, served with toasted semolina, poached eggs and a shot of chilli honey. Add Toasted semolina bread +£1</p>
+        </li>
+        <li data-q="shakshuka (v) ask for vegan option! rich tomato ragu, feta, confit tomatoes, peppers, served with toasted semolina, poached eggs and a shot of chilli honey. add toasted semolina bread +£1">
+          <div class="row"><span class="name">Shakshuka (v)</span><span class="price">£14.50</span></div>
+          <p class="desc">Ask for vegan option! Rich tomato ragu, feta, confit tomatoes, peppers, served with toasted semolina, poached eggs and a shot of chilli honey. Add Toasted semolina bread +£1</p>
+        </li>
+        <li data-q="steak &amp; eggs 3oz fillet steak, asparagus, confit tomato, fried eggs, diced potatoes &amp; red wine jus.">
+          <div class="row"><span class="name">Steak &amp; Eggs</span><span class="price">£18</span></div>
+          <p class="desc">3oz Fillet Steak, asparagus, confit tomato, fried eggs, diced potatoes &amp; red wine jus.</p>
+        </li>
+        <li data-q="hash stacks (v) ask for vegan option. potato onion rosti stack, peppers, roasted chickpeas, cherry tomato, crumbled feta, smashed avocado, radish, poached eggs and a shot of chilli honey. add streaky bacon +£2 / smoked salmon +£4 / asparagus +£3">
+          <div class="row"><span class="name">Hash Stacks (v)</span><span class="price">£16.00</span></div>
+          <p class="desc">Ask for vegan option. Potato onion rosti stack, peppers, roasted chickpeas, cherry tomato, crumbled feta, smashed avocado, radish, poached eggs and a shot of chilli honey. Add Streaky Bacon +£2 / Smoked Salmon +£4 / Asparagus +£3</p>
+        </li>
+        <li data-q="scrambled eggs scrambled eggs, tomato chutney, goats cheese, jalapeno-lime dressing on toasted semolina bread. add chorizo +£2 or smoked salmon +£4">
+          <div class="row"><span class="name">Scrambled Eggs</span><span class="price">£12.00</span></div>
+          <p class="desc">Scrambled eggs, tomato chutney, goats cheese, jalapeno-lime dressing on toasted semolina bread. Add Chorizo +£2 or Smoked salmon +£4</p>
+        </li>
+        <li data-q="pesto eggs (n) home made pesto, hollandaise, poached eggs, pico de gallo on toasted semolina bread. add streaky bacon +£2 / smoked salmon +£4">
+          <div class="row"><span class="name">Pesto Eggs (N)</span><span class="price">£15.00</span></div>
+          <p class="desc">Home made pesto, hollandaise, poached eggs, pico de gallo on toasted semolina bread. Add Streaky Bacon +£2 / Smoked Salmon +£4</p>
+        </li>
+        <li data-q="granola bowl (n) choice of milk or yoghurt. granola, strawberry, blueberry, raspberry, cluster granola.">
+          <div class="row"><span class="name">Granola Bowl (N)</span></div>
+          <p class="desc">Choice of milk or yoghurt. Granola, strawberry, blueberry, raspberry, cluster granola.</p><div class="prices"><span class="pp"><span class="pl">Small</span> <b>£6.50</b></span><span class="pp"><span class="pl">Large</span> <b>£12</b></span></div>
+        </li></ul>
+    </section>
+    <section id="benedict-bagels" class="sec">
+      <h2>Benedict Bagels</h2>
+      
+      <ul>
+        <li data-q="chorizo benny chorizo sweet potato hash with a rich tomato sauce, hollandaise, jalapeno-lime dressing and poached eggs on a toasted bagel.">
+          <div class="row"><span class="name">Chorizo Benny</span><span class="price">£15.00</span></div>
+          <p class="desc">Chorizo sweet potato hash with a rich tomato sauce, hollandaise, jalapeno-lime dressing and poached eggs on a toasted bagel.</p>
+        </li>
+        <li data-q="classic benny hollandaise, bacon and poached eggs on a toasted bagel.">
+          <div class="row"><span class="name">Classic Benny</span><span class="price">£13.50</span></div>
+          <p class="desc">Hollandaise, bacon and poached eggs on a toasted bagel.</p>
+        </li>
+        <li data-q="eggs royale smoked salmon, poached eggs and hollandaise on a toasted bagel.">
+          <div class="row"><span class="name">Eggs Royale</span><span class="price">£14.50</span></div>
+          <p class="desc">Smoked salmon, poached eggs and hollandaise on a toasted bagel.</p>
+        </li></ul>
+    </section>
+    <section id="breakfast-bagels" class="sec">
+      <h2>Breakfast Bagels</h2>
+      
+      <ul>
+        <li data-q="bam boo breakfast bagel sausage patty, streaky bacon, hash brown, sliced mature cheddar and dippy fried egg.">
+          <div class="row"><span class="name">Bam Boo Breakfast Bagel</span><span class="price">£12.50</span></div>
+          <p class="desc">Sausage patty, streaky bacon, hash brown, sliced mature cheddar and dippy fried egg.</p>
+        </li>
+        <li data-q="the veggie breakfast bagel (v) vegan sausage, sliced mature cheddar, dippy fried egg, hash brown and smashed avocado.">
+          <div class="row"><span class="name">The Veggie Breakfast Bagel (v)</span><span class="price">£12.50</span></div>
+          <p class="desc">Vegan sausage, sliced mature cheddar, dippy fried egg, hash brown and smashed avocado.</p>
+        </li></ul>
+    </section>
+    <section id="brekkie-toasted-brioche" class="sec">
+      <h2>Brekkie Toasted Brioche</h2>
+      
+      <ul>
+        <li data-q="bam boo brekkie brioche served on a thick toasted brioche loaf, patty, streaky bacon, scrambled egg, hash brown, sliced mature cheddar, tomato chutney &amp; hollandaise.">
+          <div class="row"><span class="name">Bam Boo Brekkie Brioche</span><span class="price">£14</span></div>
+          <p class="desc">Served on a thick toasted brioche loaf, patty, streaky bacon, scrambled egg, hash brown, sliced mature cheddar, tomato chutney &amp; hollandaise.</p>
+        </li>
+        <li data-q="veggie brekkie brioche (v) served on a thick toasted brioche loaf, vegan sausage, scrambled egg, sliced mature cheddar, hash brown, tomato chutney &amp; hollandaise.">
+          <div class="row"><span class="name">Veggie Brekkie Brioche (v)</span><span class="price">£14</span></div>
+          <p class="desc">Served on a thick toasted brioche loaf, Vegan sausage, scrambled egg, sliced mature cheddar, hash brown, tomato chutney &amp; hollandaise.</p>
+        </li></ul>
+    </section>
+    <section id="extras" class="sec">
+      <h2>Extras</h2>
+      
+      <ul>
+        <li data-q="sausage ">
+          <div class="row"><span class="name">Sausage</span><span class="price">£2</span></div>
+          
+        </li>
+        <li data-q="sausage patty ">
+          <div class="row"><span class="name">Sausage Patty</span><span class="price">£4</span></div>
+          
+        </li>
+        <li data-q="bacon ">
+          <div class="row"><span class="name">Bacon</span><span class="price">£2</span></div>
+          
+        </li>
+        <li data-q="eggs ">
+          <div class="row"><span class="name">Eggs</span><span class="price">£2</span></div>
+          
+        </li>
+        <li data-q="scrambled egg ">
+          <div class="row"><span class="name">Scrambled egg</span><span class="price">£2</span></div>
+          
+        </li>
+        <li data-q="beans ">
+          <div class="row"><span class="name">Beans</span><span class="price">£2</span></div>
+          
+        </li>
+        <li data-q="toast ">
+          <div class="row"><span class="name">Toast</span><span class="price">£1</span></div>
+          
+        </li>
+        <li data-q="feta ">
+          <div class="row"><span class="name">Feta</span><span class="price">£2.50</span></div>
+          
+        </li>
+        <li data-q="cherry tomatoes ">
+          <div class="row"><span class="name">Cherry Tomatoes</span><span class="price">£2</span></div>
+          
+        </li>
+        <li data-q="mushrooms ">
+          <div class="row"><span class="name">Mushrooms</span><span class="price">£2</span></div>
+          
+        </li>
+        <li data-q="black pud ">
+          <div class="row"><span class="name">Black Pud</span><span class="price">£2.50</span></div>
+          
+        </li>
+        <li data-q="hashbrowns ">
+          <div class="row"><span class="name">Hashbrowns</span><span class="price">£2</span></div>
+          
+        </li>
+        <li data-q="hot smoked salmon ">
+          <div class="row"><span class="name">Hot Smoked Salmon</span><span class="price">£4</span></div>
+          
+        </li>
+        <li data-q="steak ">
+          <div class="row"><span class="name">Steak</span><span class="price">£8</span></div>
+          
+        </li>
+        <li data-q="asparagus ">
+          <div class="row"><span class="name">Asparagus</span><span class="price">£4</span></div>
+          
+        </li>
+        <li data-q="diced potatoes ">
+          <div class="row"><span class="name">Diced Potatoes</span><span class="price">£3</span></div>
+          
+        </li>
+        <li data-q="peppers ">
+          <div class="row"><span class="name">Peppers</span><span class="price">£2</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="pancake-stacks-french-toast" class="sec">
+      <h2>Pancake Stacks &amp; French Toast</h2>
+      <p class="note">Choice of fluffy souffle pancake stacks or thick brioche French toast stack. £17</p>
+      <ul>
+        <li data-q="sticky toffee (v) salted caramel sauce, dulce de leche, homemade honeycomb, blueberries, served with vanilla ice cream.">
+          <div class="row"><span class="name">Sticky Toffee (v)</span><span class="price">£17</span></div>
+          <p class="desc">Salted caramel sauce, dulce de leche, homemade honeycomb, blueberries, served with vanilla ice cream.</p>
+        </li>
+        <li data-q="nutella strawberry &amp; oreo (v) (n) nutella, chantilly topping, crushed oreo, served with strawberries and vanilla ice cream.">
+          <div class="row"><span class="name">Nutella Strawberry &amp; Oreo (v) (N)</span><span class="price">£17</span></div>
+          <p class="desc">Nutella, chantilly topping, crushed oreo, served with strawberries and vanilla ice cream.</p>
+        </li>
+        <li data-q="biscoff chantilly (v) biscoff, chantilly cream, biscoff biscuit, served with vanilla ice cream.">
+          <div class="row"><span class="name">Biscoff Chantilly (v)</span><span class="price">£17</span></div>
+          <p class="desc">Biscoff, chantilly cream, biscoff biscuit, served with vanilla ice cream.</p>
+        </li>
+        <li data-q="pistachio chantilly (n) (v) pistachios, chantilly, raspberries, pistachio sauce served with vanilla ice cream. +£1">
+          <div class="row"><span class="name">Pistachio Chantilly (N) (v)</span><span class="price">£17</span></div>
+          <p class="desc">Pistachios, Chantilly, raspberries, pistachio sauce served with vanilla ice cream. +£1</p>
+        </li>
+        <li data-q="kinder bueno (v) (n) white and milk kinder bueno, kinder cards, kinder bueno sauce, served with fruit and vanilla ice cream. +£1">
+          <div class="row"><span class="name">Kinder Bueno (v) (N)</span><span class="price">£17</span></div>
+          <p class="desc">White and milk kinder bueno, kinder cards, kinder bueno sauce, served with fruit and vanilla ice cream. +£1</p>
+        </li>
+        <li data-q="milky bar (v) white chocolate sauce, cocoa dusting, chantilly cream, milky bar, served with vanilla ice cream.">
+          <div class="row"><span class="name">Milky Bar (v)</span><span class="price">£17</span></div>
+          <p class="desc">White chocolate sauce, cocoa dusting, chantilly cream, Milky Bar, served with vanilla ice cream.</p>
+        </li>
+        <li data-q="raspberry ripple (v) raspberry chantilly, raspberry couli, white chocolate sauce, fresh raspberries, served with vanilla ice cream.">
+          <div class="row"><span class="name">Raspberry Ripple (v)</span><span class="price">£17</span></div>
+          <p class="desc">Raspberry chantilly, raspberry couli, white chocolate sauce, fresh raspberries, served with vanilla ice cream.</p>
+        </li>
+        <li data-q="egg, maple &amp; bacon streaky bacon, fried egg, and maple shot, served with vanilla ice cream.">
+          <div class="row"><span class="name">Egg, Maple &amp; Bacon</span><span class="price">£17</span></div>
+          <p class="desc">Streaky bacon, fried egg, and maple shot, served with vanilla ice cream.</p>
+        </li>
+        <li data-q="pancake extras fruit £1.50 / chantilly 80p / crushed oreo 80p / biscoff crumb 80p / sauce shots £1 - kinder / pistachio / nutella / biscoff / white choc">
+          <div class="row"><span class="name">Pancake Extras</span></div>
+          <p class="desc">Fruit £1.50 / Chantilly 80p / Crushed Oreo 80p / Biscoff crumb 80p / Sauce Shots £1 - Kinder / Pistachio / Nutella / Biscoff / White Choc</p>
+        </li></ul>
+    </section>
+    <section id="lunch" class="sec">
+      <h2>Lunch</h2>
+      <p class="note">From 12pm</p>
+      <ul>
+        <li data-q="steak sandwich shredded steak, caramelised onion, applewood cheese, nduja butter and dipping red wine jus. +fries £2 / +parm fries +£4">
+          <div class="row"><span class="name">Steak Sandwich</span><span class="price">£15</span></div>
+          <p class="desc">Shredded steak, caramelised onion, applewood cheese, nduja butter and dipping red wine jus. +fries £2 / +Parm Fries +£4</p>
+        </li>
+        <li data-q="short rib tacos (n) slow roasted short rib, pico de gallo, honey glaze, radish, toasted pine nuts &amp; red wine jus.">
+          <div class="row"><span class="name">Short Rib Tacos (N)</span><span class="price">£15</span></div>
+          <p class="desc">Slow roasted short rib, pico de gallo, honey glaze, radish, toasted pine nuts &amp; red wine jus.</p>
+        </li>
+        <li data-q="chilli corn &amp; sweet potato tacos (vv) crispy sweet potato wedges topped with chilli corn salsa, shredded cabbage &amp; jalapeno-lime mayo.">
+          <div class="row"><span class="name">Chilli Corn &amp; Sweet Potato Tacos (vv)</span><span class="price">£14</span></div>
+          <p class="desc">Crispy sweet potato wedges topped with chilli corn salsa, shredded cabbage &amp; jalapeno-lime mayo.</p>
+        </li>
+        <li data-q="peppercorn steak burger double smash patty burger, steak, onions, chedar cheese, roasted garlic aioli mayo and peppercorn sauce, served on a toasted brioche and a side of skin on fries.">
+          <div class="row"><span class="name">Peppercorn Steak Burger</span><span class="price">£15.95</span></div>
+          <p class="desc">Double smash patty burger, steak, onions, chedar cheese, roasted garlic aioli mayo and peppercorn sauce, served on a toasted brioche and a side of skin on fries.</p>
+        </li>
+        <li data-q="buffalo burger deep fried chicken beast, buffalo sauce, rainbow slaw, dill pickles, ranch dressing served on a toasted brioche with skin on fries.">
+          <div class="row"><span class="name">Buffalo Burger</span><span class="price">£15.95</span></div>
+          <p class="desc">Deep fried chicken beast, buffalo sauce, rainbow slaw, dill pickles, ranch dressing served on a toasted brioche with skin on fries.</p>
+        </li></ul>
+    </section>
+    <section id="side-bowls" class="sec">
+      <h2>Side Bowls</h2>
+      
+      <ul>
+        <li data-q="truffle parmesan fries (v) ">
+          <div class="row"><span class="name">Truffle Parmesan Fries (v)</span><span class="price">£6</span></div>
+          
+        </li>
+        <li data-q="regular fries ">
+          <div class="row"><span class="name">Regular Fries</span><span class="price">£4.50</span></div>
+          
+        </li>
+        <li data-q="asparagus ">
+          <div class="row"><span class="name">Asparagus</span><span class="price">£6</span></div>
+          
+        </li>
+        <li data-q="house slaw ">
+          <div class="row"><span class="name">House Slaw</span><span class="price">£3.50</span></div>
+          
+        </li>
+        <li data-q="buffalo chicken wings served with a ranch dip">
+          <div class="row"><span class="name">Buffalo Chicken Wings</span></div>
+          <p class="desc">Served with a ranch dip</p><div class="prices"><span class="pp"><span class="pl">5 wings</span> <b>£8</b></span><span class="pp"><span class="pl">10 wings</span> <b>£12</b></span></div>
+        </li></ul>
+    </section>
+    <section id="soft-drinks" class="sec">
+      <h2>Soft Drinks</h2>
+      
+      <ul>
+        <li data-q="coke 330ml (glass bottle) ">
+          <div class="row"><span class="name">Coke 330ml (glass bottle)</span><span class="price">£3.95</span></div>
+          
+        </li>
+        <li data-q="diet coke 330ml (glass bottle) ">
+          <div class="row"><span class="name">Diet Coke 330ml (glass bottle)</span><span class="price">£3.95</span></div>
+          
+        </li>
+        <li data-q="appletiser 330ml (glass bottle) ">
+          <div class="row"><span class="name">Appletiser 330ml (glass bottle)</span><span class="price">£3.95</span></div>
+          
+        </li>
+        <li data-q="marlish tonic 330ml (glass bottle) ">
+          <div class="row"><span class="name">Marlish Tonic 330ml (glass bottle)</span><span class="price">£3.65</span></div>
+          
+        </li>
+        <li data-q="lemon san pellegrino 330ml (can) ">
+          <div class="row"><span class="name">Lemon San Pellegrino 330ml (can)</span><span class="price">£3.65</span></div>
+          
+        </li>
+        <li data-q="orange san pellegrino 330ml (can) ">
+          <div class="row"><span class="name">Orange San Pellegrino 330ml (can)</span><span class="price">£3.65</span></div>
+          
+        </li>
+        <li data-q="frobishers orange juice ">
+          <div class="row"><span class="name">Frobishers Orange Juice</span><span class="price">£4.50</span></div>
+          
+        </li>
+        <li data-q="apple juice ">
+          <div class="row"><span class="name">Apple Juice</span><span class="price">£4.50</span></div>
+          
+        </li>
+        <li data-q="pineapple juice ">
+          <div class="row"><span class="name">Pineapple Juice</span><span class="price">£4.50</span></div>
+          
+        </li>
+        <li data-q="cranberry juice ">
+          <div class="row"><span class="name">Cranberry Juice</span><span class="price">£4.50</span></div>
+          
+        </li>
+        <li data-q="still water (750ml bottle) ">
+          <div class="row"><span class="name">Still Water (750ml bottle)</span><span class="price">£4.00</span></div>
+          
+        </li>
+        <li data-q="sparkling water (750ml bottle) ">
+          <div class="row"><span class="name">Sparkling Water (750ml bottle)</span><span class="price">£4.00</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="hot-drinks" class="sec">
+      <h2>Hot Drinks</h2>
+      
+      <ul>
+        <li data-q="espresso ">
+          <div class="row"><span class="name">Espresso</span><span class="price">£3.00</span></div>
+          
+        </li>
+        <li data-q="espresso macchiato ">
+          <div class="row"><span class="name">Espresso Macchiato</span><span class="price">£3.25</span></div>
+          
+        </li>
+        <li data-q="cortado ">
+          <div class="row"><span class="name">Cortado</span><span class="price">£3.90</span></div>
+          
+        </li>
+        <li data-q="americano ">
+          <div class="row"><span class="name">Americano</span><span class="price">£4.00</span></div>
+          
+        </li>
+        <li data-q="flat white 10oz ">
+          <div class="row"><span class="name">Flat White 10oz</span><span class="price">£4.30</span></div>
+          
+        </li>
+        <li data-q="latte ">
+          <div class="row"><span class="name">Latte</span><span class="price">£4.30</span></div>
+          
+        </li>
+        <li data-q="cappuccino ">
+          <div class="row"><span class="name">Cappuccino</span><span class="price">£4.30</span></div>
+          
+        </li>
+        <li data-q="mocha ">
+          <div class="row"><span class="name">Mocha</span><span class="price">£4.70</span></div>
+          
+        </li>
+        <li data-q="irish coffee ">
+          <div class="row"><span class="name">Irish Coffee</span><span class="price">£7.75</span></div>
+          
+        </li>
+        <li data-q="matcha latte ">
+          <div class="row"><span class="name">Matcha Latte</span><span class="price">£4.50</span></div>
+          
+        </li>
+        <li data-q="hot chocolate &amp; cream ">
+          <div class="row"><span class="name">Hot Chocolate &amp; Cream</span><span class="price">£4.95</span></div>
+          
+        </li>
+        <li data-q="kinder hot choc ">
+          <div class="row"><span class="name">Kinder Hot Choc</span><span class="price">£5.65</span></div>
+          
+        </li>
+        <li data-q="english breakfast tea ">
+          <div class="row"><span class="name">English Breakfast Tea</span><span class="price">£3.95</span></div>
+          
+        </li>
+        <li data-q="fresh mint tea ">
+          <div class="row"><span class="name">Fresh Mint Tea</span><span class="price">£4.25</span></div>
+          
+        </li>
+        <li data-q="lemon &amp; ginger tea ">
+          <div class="row"><span class="name">Lemon &amp; Ginger Tea</span><span class="price">£4.25</span></div>
+          
+        </li>
+        <li data-q="green tea ">
+          <div class="row"><span class="name">Green Tea</span><span class="price">£4.25</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="iced-drinks" class="sec">
+      <h2>Iced Drinks</h2>
+      
+      <ul>
+        <li data-q="iced latte ">
+          <div class="row"><span class="name">Iced Latte</span><span class="price">£4.95</span></div>
+          
+        </li>
+        <li data-q="iced americano ">
+          <div class="row"><span class="name">Iced Americano</span><span class="price">£4.50</span></div>
+          
+        </li>
+        <li data-q="iced mocha ">
+          <div class="row"><span class="name">Iced Mocha</span><span class="price">£4.95</span></div>
+          
+        </li>
+        <li data-q="iced matcha ">
+          <div class="row"><span class="name">Iced Matcha</span><span class="price">£5.50</span></div>
+          
+        </li>
+        <li data-q="iced banana bread matcha ">
+          <div class="row"><span class="name">Iced Banana Bread Matcha</span><span class="price">£6.00</span></div>
+          
+        </li>
+        <li data-q="iced strawberry matcha upgrade to ube cold foam +50p">
+          <div class="row"><span class="name">Iced Strawberry Matcha</span><span class="price">£6.00</span></div>
+          <p class="desc">Upgrade to ube cold foam +50p</p>
+        </li>
+        <li data-q="iced ube blueberry matcha ube cold foam with blueberry puree">
+          <div class="row"><span class="name">Iced Ube Blueberry Matcha</span><span class="price">£6.50</span></div>
+          <p class="desc">Ube cold foam with blueberry puree</p>
+        </li></ul>
+    </section>
+    <section id="syrups" class="sec">
+      <h2>Syrups</h2>
+      
+      <ul>
+        <li data-q="caramel ">
+          <div class="row"><span class="name">Caramel</span><span class="price">£0.75</span></div>
+          
+        </li>
+        <li data-q="hazelnut ">
+          <div class="row"><span class="name">Hazelnut</span><span class="price">£0.75</span></div>
+          
+        </li>
+        <li data-q="vanilla ">
+          <div class="row"><span class="name">Vanilla</span><span class="price">£0.75</span></div>
+          
+        </li>
+        <li data-q="chai ">
+          <div class="row"><span class="name">Chai</span><span class="price">£0.75</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="wine-prosecco" class="sec">
+      <h2>Wine &amp; Prosecco</h2>
+      
+      <ul>
+        <li data-q="castelli pinot (white) ">
+          <div class="row"><span class="name">Castelli Pinot (White)</span></div>
+          <div class="prices"><span class="pp"><span class="pl">175ml glass</span> <b>£7.00</b></span><span class="pp"><span class="pl">250ml glass</span> <b>£8.50</b></span><span class="pp"><span class="pl">Bottle</span> <b>£25.00</b></span></div>
+        </li>
+        <li data-q="viva alta sav blanc (white) ">
+          <div class="row"><span class="name">Viva Alta Sav Blanc (White)</span></div>
+          <div class="prices"><span class="pp"><span class="pl">175ml glass</span> <b>£8.50</b></span><span class="pp"><span class="pl">250ml glass</span> <b>£10.00</b></span><span class="pp"><span class="pl">Bottle</span> <b>£29.50</b></span></div>
+        </li>
+        <li data-q="viva alta merlot (red) ">
+          <div class="row"><span class="name">Viva Alta Merlot (Red)</span></div>
+          <div class="prices"><span class="pp"><span class="pl">175ml glass</span> <b>£7.00</b></span><span class="pp"><span class="pl">250ml glass</span> <b>£8.50</b></span><span class="pp"><span class="pl">Bottle</span> <b>£25.00</b></span></div>
+        </li>
+        <li data-q="farfalla pinot rose (blush) ">
+          <div class="row"><span class="name">Farfalla Pinot Rose (Blush)</span></div>
+          <div class="prices"><span class="pp"><span class="pl">175ml glass</span> <b>£8.00</b></span><span class="pp"><span class="pl">250ml glass</span> <b>£9.50</b></span><span class="pp"><span class="pl">Bottle</span> <b>£29.50</b></span></div>
+        </li>
+        <li data-q="simpatico prosecco ">
+          <div class="row"><span class="name">Simpatico Prosecco</span></div>
+          <div class="prices"><span class="pp"><span class="pl">125ml glass</span> <b>£7.50</b></span><span class="pp"><span class="pl">250ml glass</span> <b>£8.50</b></span><span class="pp"><span class="pl">Bottle</span> <b>£35.00</b></span></div>
+        </li></ul>
+    </section>
+    <section id="beers-ciders" class="sec">
+      <h2>Beers &amp; Ciders</h2>
+      
+      <ul>
+        <li data-q="peroni red (bottle) ">
+          <div class="row"><span class="name">Peroni Red (bottle)</span><span class="price">£5.25</span></div>
+          
+        </li>
+        <li data-q="corona (bottle) ">
+          <div class="row"><span class="name">Corona (bottle)</span><span class="price">£5.00</span></div>
+          
+        </li>
+        <li data-q="peroni (draught) ">
+          <div class="row"><span class="name">Peroni (draught)</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Half</span> <b>£3.00</b></span><span class="pp"><span class="pl">Pint</span> <b>£6.00</b></span></div>
+        </li>
+        <li data-q="old mout berries &amp; cherries (cider) ">
+          <div class="row"><span class="name">Old Mout Berries &amp; Cherries (cider)</span><span class="price">£6.00</span></div>
+          
+        </li>
+        <li data-q="old mout kiwi &amp; lime (cider) ">
+          <div class="row"><span class="name">Old Mout Kiwi &amp; Lime (cider)</span><span class="price">£6.00</span></div>
+          
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>(v) - Vegetarian (vv) - Vegan (N) - Nuts. Please let your server know about any allergies or dietary requirements.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for BAM BOO Brunch &amp; Cocktails.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The BAM BOO Brunch &amp; Cocktails menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's US$29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for US$29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

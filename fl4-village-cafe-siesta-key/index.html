@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Village Café Menu</title>
+<meta name="description" content="Menu for Village Café, Siesta Key Village (Ocean Blvd), Sarasota.">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Village Café</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=5133%20Ocean%20Blvd%2C%20Siesta%20Key%2C%20FL%2034242">5133 Ocean Blvd, Siesta Key, FL 34242</a><a href="tel:9413492822">(941) 349-2822</a><span>Daily 7:30 AM - 2:00 PM</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#healthy-choices" data-sec="healthy-choices">Healthy Choices</a><a href="#bon-apps-more" data-sec="bon-apps-more">Bon Apps &amp; more!</a><a href="#eggstravaganza" data-sec="eggstravaganza">EGGStravaganza</a><a href="#griddle-greats" data-sec="griddle-greats">Griddle Greats</a><a href="#more-traditional-fare" data-sec="more-traditional-fare">More Traditional Fare</a><a href="#eggseptional-dishes" data-sec="eggseptional-dishes">Eggseptional Dishes</a><a href="#side-orders" data-sec="side-orders">Side Orders!</a><a href="#lotta-eggs" data-sec="lotta-eggs">Lotta Eggs</a><a href="#breakfast-specialties" data-sec="breakfast-specialties">Breakfast Specialties</a><a href="#lunch-delights" data-sec="lunch-delights">Lunch Delights</a><a href="#fresh-salads" data-sec="fresh-salads">Fresh Salads</a><a href="#sandwiches" data-sec="sandwiches">Sandwiches</a><a href="#belly-bustin-burgers" data-sec="belly-bustin-burgers">Belly Bustin&#39; Burgers</a><a href="#caf-melts-grouper" data-sec="caf-melts-grouper">Café Melts &amp; Grouper</a><a href="#kid-s-korner" data-sec="kid-s-korner">Kid&#39;s Korner</a><a href="#beverages" data-sec="beverages">Beverages</a><a href="#coketails" data-sec="coketails">Coketails</a><a href="#hard-setzers-beer-wine" data-sec="hard-setzers-beer-wine">Hard Setzers, Beer &amp; Wine</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="healthy-choices" class="sec">
+      <h2>Healthy Choices</h2>
+      
+      <ul>
+        <li data-q="fresh fruit bowl ">
+          <div class="row"><span class="name">Fresh Fruit Bowl</span><span class="price">$9.99</span></div>
+          
+        </li>
+        <li data-q="oatmeal served with brown sugar &amp; raisins">
+          <div class="row"><span class="name">Oatmeal</span><span class="price">$9.99</span></div>
+          <p class="desc">Served with brown sugar &amp; raisins</p>
+        </li>
+        <li data-q="siesta key oatmeal oatmeal topped with strawberry yogurt, bananas &amp; strawberries, served with an english muffin. add brown sugar 1.29">
+          <div class="row"><span class="name">Siesta Key Oatmeal</span><span class="price">$11.49</span></div>
+          <p class="desc">Oatmeal topped with strawberry yogurt, bananas &amp; strawberries, served with an English muffin. Add brown sugar 1.29</p>
+        </li>
+        <li data-q="café cocktail a blend of low fat yogurt, granola, nuts, &amp; fruit served with an english muffin">
+          <div class="row"><span class="name">Café Cocktail</span><span class="price">$13.99</span></div>
+          <p class="desc">A blend of low fat yogurt, granola, nuts, &amp; fruit served with an English muffin</p>
+        </li>
+        <li data-q="ny bagels ">
+          <div class="row"><span class="name">NY Bagels</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Plain</span> <b>$4.99</b></span><span class="pp"><span class="pl">With cream cheese</span> <b>$5.99</b></span></div>
+        </li></ul>
+    </section>
+    <section id="bon-apps-more" class="sec">
+      <h2>Bon Apps &amp; more!</h2>
+      
+      <ul>
+        <li data-q="mini croissant donuts flaky buttery layers of a croissant shaped like donuts with a side of cream cheese icing. add nutella 2.29">
+          <div class="row"><span class="name">Mini Croissant Donuts</span><span class="price">$8.29</span></div>
+          <p class="desc">Flaky buttery layers of a croissant shaped like donuts with a side of cream cheese icing. Add Nutella 2.29</p>
+        </li>
+        <li data-q="home baked cinnamon roll a staple of ours for 30+ years!">
+          <div class="row"><span class="name">Home Baked Cinnamon Roll</span><span class="price">$8.99</span></div>
+          <p class="desc">A staple of ours for 30+ years!</p>
+        </li>
+        <li data-q="assorted homemade muffins ">
+          <div class="row"><span class="name">Assorted Homemade Muffins</span><span class="price">$4.99</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="eggstravaganza" class="sec">
+      <h2>EGGStravaganza</h2>
+      <p class="note">We place a layer of steaming potatoes in a skillet, sauté your choice of toppings, melt our blend of cheeses, &amp; top it with 2 eggs of your choice. Add an extra item 1.29</p>
+      <ul>
+        <li data-q="green chili, salsa &amp; onions ">
+          <div class="row"><span class="name">Green chili, salsa &amp; onions</span><span class="price">$16.99</span></div>
+          
+        </li>
+        <li data-q="onions &amp; bacon ">
+          <div class="row"><span class="name">Onions &amp; bacon</span><span class="price">$16.79</span></div>
+          
+        </li>
+        <li data-q="mushrooms &amp; ham ">
+          <div class="row"><span class="name">Mushrooms &amp; ham</span><span class="price">$16.79</span></div>
+          
+        </li>
+        <li data-q="all the veggies ">
+          <div class="row"><span class="name">All the veggies</span><span class="price">$17.99</span></div>
+          
+        </li>
+        <li data-q="beef brisket, onion, peppers &amp; mozzarella cheese ">
+          <div class="row"><span class="name">Beef Brisket, onion, peppers &amp; mozzarella cheese</span><span class="price">$17.99</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="griddle-greats" class="sec">
+      <h2>Griddle Greats</h2>
+      <p class="note">Add strawberries, bananas, blueberries, chocolate chips, apples or raisins &amp; nuts to any Griddle Great! First topping 1.59, each additional topping 1.29</p>
+      <ul>
+        <li data-q="pancakes ">
+          <div class="row"><span class="name">Pancakes</span></div>
+          <div class="prices"><span class="pp"><span class="pl">1 Pancake</span> <b>$9.99</b></span><span class="pp"><span class="pl">2 Pancakes</span> <b>$13.99</b></span></div>
+        </li>
+        <li data-q="1 cake, 2 eggs, 3 bacon or sausage ">
+          <div class="row"><span class="name">1 Cake, 2 Eggs, 3 Bacon or Sausage</span><span class="price">$13.99</span></div>
+          
+        </li>
+        <li data-q="1 cake, 2 eggs, 3 bacon or sausage with sweet potato pancake ">
+          <div class="row"><span class="name">1 Cake, 2 Eggs, 3 Bacon or Sausage with Sweet Potato Pancake</span><span class="price">$14.29</span></div>
+          
+        </li>
+        <li data-q="belgian waffle topped with powdered sugar">
+          <div class="row"><span class="name">Belgian Waffle</span><span class="price">$12.99</span></div>
+          <p class="desc">Topped with powdered sugar</p>
+        </li>
+        <li data-q="french toast (texas toast) ">
+          <div class="row"><span class="name">French Toast (Texas Toast)</span><span class="price">$12.79</span></div>
+          
+        </li>
+        <li data-q="homestyle cinnamon swirl french toast topped with blueberries, strawberries and powdered sugar">
+          <div class="row"><span class="name">Homestyle Cinnamon Swirl French Toast</span><span class="price">$14.29</span></div>
+          <p class="desc">Topped with blueberries, strawberries and powdered sugar</p>
+        </li>
+        <li data-q="stuffed french toast a delicious mix of either apricots &amp; cream cheese, fresh apples, cinnamon &amp; cream cheese or nutella &amp; cream cheese">
+          <div class="row"><span class="name">Stuffed French Toast</span><span class="price">$14.99</span></div>
+          <p class="desc">A delicious mix of either apricots &amp; cream cheese, fresh apples, cinnamon &amp; cream cheese or nutella &amp; cream cheese</p>
+        </li>
+        <li data-q="cinnamon roll french toast you have to try it to understand how good it is!">
+          <div class="row"><span class="name">Cinnamon Roll French Toast</span><span class="price">$14.49</span></div>
+          <p class="desc">You have to try it to understand how good it is!</p>
+        </li>
+        <li data-q="sweet potato pancakes lightly buttered and sprinkled with cinnamon sugar">
+          <div class="row"><span class="name">Sweet Potato Pancakes</span></div>
+          <p class="desc">Lightly buttered and sprinkled with cinnamon sugar</p><div class="prices"><span class="pp"><span class="pl">Short Stack</span> <b>$12.99</b></span><span class="pp"><span class="pl">Tall Stack</span> <b>$14.79</b></span></div>
+        </li></ul>
+    </section>
+    <section id="more-traditional-fare" class="sec">
+      <h2>More Traditional Fare</h2>
+      <p class="note">Below served with home fries or grits, choice of toast or English muffin. Sub fresh fruit .79. Biscuit .99 extra. Substitute egg whites .79 an egg</p>
+      <ul>
+        <li data-q="1 egg, any style ">
+          <div class="row"><span class="name">1 Egg, any style</span><span class="price">$9.49</span></div>
+          
+        </li>
+        <li data-q="1 egg with bacon, ham or sausage ">
+          <div class="row"><span class="name">1 Egg with bacon, ham or sausage</span><span class="price">$12.49</span></div>
+          
+        </li>
+        <li data-q="2 eggs, any style ">
+          <div class="row"><span class="name">2 Eggs, any style</span><span class="price">$11.49</span></div>
+          
+        </li>
+        <li data-q="2 eggs with bacon, ham or sausage ">
+          <div class="row"><span class="name">2 Eggs with bacon, ham or sausage</span><span class="price">$14.49</span></div>
+          
+        </li>
+        <li data-q="2 eggs with corned beef hash ">
+          <div class="row"><span class="name">2 Eggs with corned beef hash</span><span class="price">$15.49</span></div>
+          
+        </li>
+        <li data-q="2 eggs with 6 oz. ribeye ">
+          <div class="row"><span class="name">2 Eggs with 6 oz. ribeye</span><span class="price">$16.99</span></div>
+          
+        </li>
+        <li data-q="2 eggs with country fried steak &amp; gravy ">
+          <div class="row"><span class="name">2 Eggs with country fried steak &amp; gravy</span><span class="price">$15.49</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="eggseptional-dishes" class="sec">
+      <h2>Eggseptional Dishes</h2>
+      <p class="note">Served with home fries or grits, sub fresh fruit .79</p>
+      <ul>
+        <li data-q="siesta benedict 2 poached eggs &amp; sliced canadian bacon on an english muffin, topped with hollandaise sauce">
+          <div class="row"><span class="name">Siesta Benedict</span><span class="price">$16.99</span></div>
+          <p class="desc">2 poached eggs &amp; sliced Canadian bacon on an English muffin, topped with hollandaise sauce</p>
+        </li>
+        <li data-q="siesta florentine 2 poached eggs on a bed of spinach and tomato, on an english muffin, topped with hollandaise sauce">
+          <div class="row"><span class="name">Siesta Florentine</span><span class="price">$16.79</span></div>
+          <p class="desc">2 poached eggs on a bed of spinach and tomato, on an English muffin, topped with hollandaise sauce</p>
+        </li>
+        <li data-q="croissantwich 2 eggs and american cheese with bacon, ham, or sausage on a fresh, buttery croissant">
+          <div class="row"><span class="name">Croissantwich</span><span class="price">$15.99</span></div>
+          <p class="desc">2 Eggs and American cheese with bacon, ham, or sausage on a fresh, buttery croissant</p>
+        </li></ul>
+    </section>
+    <section id="side-orders" class="sec">
+      <h2>Side Orders!</h2>
+      
+      <ul>
+        <li data-q="home fries ">
+          <div class="row"><span class="name">Home Fries</span><span class="price">$4.49</span></div>
+          
+        </li>
+        <li data-q="homemade grilled biscuit ">
+          <div class="row"><span class="name">Homemade Grilled Biscuit</span><span class="price">$3.79</span></div>
+          
+        </li>
+        <li data-q="ham, turkey sausage, bacon or sausage ">
+          <div class="row"><span class="name">Ham, Turkey Sausage, Bacon or Sausage</span><span class="price">$5.49</span></div>
+          
+        </li>
+        <li data-q="corned beef hash ">
+          <div class="row"><span class="name">Corned Beef Hash</span><span class="price">$6.99</span></div>
+          
+        </li>
+        <li data-q="french fries ">
+          <div class="row"><span class="name">French Fries</span><span class="price">$6.79</span></div>
+          
+        </li>
+        <li data-q="homemade chips ">
+          <div class="row"><span class="name">Homemade Chips</span><span class="price">$5.99</span></div>
+          
+        </li>
+        <li data-q="bowl of grits ">
+          <div class="row"><span class="name">Bowl of Grits</span><span class="price">$5.49</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="lotta-eggs" class="sec">
+      <h2>Lotta Eggs</h2>
+      <p class="note">All of our omelettes are topped with cheese and served with home fries or grits, plus choice of toast or English muffin. Sub fresh fruit .79. Biscuit or Gluten-free bread .99 extra. Substitute egg whites .79 an egg</p>
+      <ul>
+        <li data-q="western omelette onions, green peppers &amp; ham">
+          <div class="row"><span class="name">Western Omelette</span><span class="price">$15.99</span></div>
+          <p class="desc">Onions, green peppers &amp; ham</p>
+        </li>
+        <li data-q="greek omelette feta cheese, green peppers, onions, sausage &amp; tomatoes">
+          <div class="row"><span class="name">Greek Omelette</span><span class="price">$16.29</span></div>
+          <p class="desc">Feta cheese, green peppers, onions, sausage &amp; tomatoes</p>
+        </li>
+        <li data-q="italian omelette sweet italian sausage, tomatoes, onions, green peppers &amp; mozzarella cheese">
+          <div class="row"><span class="name">Italian Omelette</span><span class="price">$16.49</span></div>
+          <p class="desc">Sweet Italian sausage, tomatoes, onions, green peppers &amp; mozzarella cheese</p>
+        </li>
+        <li data-q="chicken breast omelette spinach, tomatoes, fresh chicken breast &amp; mozzarella cheese">
+          <div class="row"><span class="name">Chicken Breast Omelette</span><span class="price">$16.99</span></div>
+          <p class="desc">Spinach, tomatoes, fresh chicken breast &amp; mozzarella cheese</p>
+        </li>
+        <li data-q="veggie omelette onions, broccoli, spinach, mushrooms, green peppers &amp; tomatoes">
+          <div class="row"><span class="name">Veggie Omelette</span><span class="price">$16.29</span></div>
+          <p class="desc">Onions, broccoli, spinach, mushrooms, green peppers &amp; tomatoes</p>
+        </li>
+        <li data-q="meat lovers omelette diced ham, bacon &amp; sausage">
+          <div class="row"><span class="name">Meat Lovers Omelette</span><span class="price">$16.79</span></div>
+          <p class="desc">Diced ham, bacon &amp; sausage</p>
+        </li>
+        <li data-q="swimsuit omelette egg whites w/spinach, mushrooms &amp; tomatoes. no cheese on this one!">
+          <div class="row"><span class="name">Swimsuit Omelette</span><span class="price">$16.29</span></div>
+          <p class="desc">Egg whites w/spinach, mushrooms &amp; tomatoes. No cheese on this one!</p>
+        </li></ul>
+    </section>
+    <section id="breakfast-specialties" class="sec">
+      <h2>Breakfast Specialties</h2>
+      
+      <ul>
+        <li data-q="sunshine flat bread gluten free cauliflower flat bread topped with sautéed mushrooms, spinach, tomatoes, swiss, feta cheese, and sunny side up eggs!">
+          <div class="row"><span class="name">Sunshine Flat Bread</span><span class="price">$16.99</span></div>
+          <p class="desc">Gluten Free Cauliflower flat bread topped with sautéed mushrooms, spinach, tomatoes, Swiss, feta cheese, and sunny side up eggs!</p>
+        </li>
+        <li data-q="avocado toast multi-grain toast topped with smashed avocado, feta cheese, kalamata olives, and tomatoes, served with 2 eggs any style">
+          <div class="row"><span class="name">Avocado Toast</span><span class="price">$16.49</span></div>
+          <p class="desc">Multi-grain toast topped with smashed avocado, feta cheese, Kalamata olives, and tomatoes, served with 2 eggs any style</p>
+        </li>
+        <li data-q="mexican omelette jalapenos, onions, tomatoes and pepper jack cheese. served with salsa &amp; refried beans topped with cheese">
+          <div class="row"><span class="name">Mexican Omelette</span><span class="price">$16.29</span></div>
+          <p class="desc">Jalapenos, onions, tomatoes and pepper jack cheese. Served with salsa &amp; refried beans topped with cheese</p>
+        </li>
+        <li data-q="homemade biscuit &amp; sausage gravy ">
+          <div class="row"><span class="name">Homemade Biscuit &amp; Sausage Gravy</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Plain</span> <b>$11.99</b></span><span class="pp"><span class="pl">Add Beef Brisket and 2 eggs</span> <b>$16.99</b></span></div>
+        </li>
+        <li data-q="breakfast burrito scrambled eggs, grilled onions and green peppers, chorizo sausage &amp; cheeses wrapped in a grilled tortilla, covered with salsa &amp; more cheese. served with sour cream and fruit.">
+          <div class="row"><span class="name">Breakfast Burrito</span><span class="price">$16.99</span></div>
+          <p class="desc">Scrambled eggs, grilled onions and green peppers, chorizo sausage &amp; cheeses wrapped in a grilled tortilla, covered with salsa &amp; more cheese. Served with sour cream and fruit.</p>
+        </li>
+        <li data-q="pastrami smoked salmon on grilled sourdough with melted cheese, onions and capers!!!">
+          <div class="row"><span class="name">Pastrami Smoked Salmon</span><span class="price">$15.99</span></div>
+          <p class="desc">On grilled sourdough with melted cheese, onions and capers!!!</p>
+        </li>
+        <li data-q="(nova scotia) lox &amp; bagel your choice of pastrami smoked or plain lox. served with tomatoes, onions, cucumbers, lettuce, olives &amp; capers with a bagel &amp; cream cheese.">
+          <div class="row"><span class="name">(Nova Scotia) Lox &amp; Bagel</span><span class="price">$16.99</span></div>
+          <p class="desc">Your choice of pastrami smoked or plain lox. Served with tomatoes, onions, cucumbers, lettuce, olives &amp; capers with a bagel &amp; cream cheese.</p>
+        </li></ul>
+    </section>
+    <section id="lunch-delights" class="sec">
+      <h2>Lunch Delights</h2>
+      <p class="note">New</p>
+      <ul>
+        <li data-q="gluten free cauliflower flat bread - the greek gyro meat, feta, onions, peppers, tomatoes and swiss cheese">
+          <div class="row"><span class="name">Gluten Free Cauliflower Flat Bread - The Greek</span><span class="price">$15.79</span></div>
+          <p class="desc">Gyro meat, feta, onions, peppers, tomatoes and swiss cheese</p>
+        </li>
+        <li data-q="gluten free cauliflower flat bread - texican chorizo, bacon, onions and cheddar jack cheeses">
+          <div class="row"><span class="name">Gluten Free Cauliflower Flat Bread - Texican</span><span class="price">$15.29</span></div>
+          <p class="desc">Chorizo, bacon, onions and cheddar jack cheeses</p>
+        </li>
+        <li data-q="beyond burger the world&#39;s first 100% plant based burger (20g of protein, no soy, gluten or gmos), served with lettuce, tomato, onion and pickle">
+          <div class="row"><span class="name">Beyond Burger</span><span class="price">$11.29</span></div>
+          <p class="desc">The world&#39;s first 100% plant based burger (20g of protein, no soy, gluten or GMOs), served with lettuce, tomato, onion and pickle</p>
+        </li></ul>
+    </section>
+    <section id="fresh-salads" class="sec">
+      <h2>Fresh Salads</h2>
+      <p class="note">Add to any salad: Grouper 6.99, Chicken 5.99, Shrimp 4.99 / 6.99. Ask about our 1/2 salads!</p>
+      <ul>
+        <li data-q="summer salad romain lettuce plus strawberries, pineapples &amp; blueberries tossed with apple cider vinaigrette">
+          <div class="row"><span class="name">Summer Salad</span><span class="price">$14.99</span></div>
+          <p class="desc">Romain lettuce plus strawberries, pineapples &amp; blueberries tossed with apple cider vinaigrette</p>
+        </li>
+        <li data-q="tom&#39;s greek salad mixed greens, green peppers, onions, tomatoes, feta cheese, greek peppers, olives, hard boiled egg and our house dressing">
+          <div class="row"><span class="name">Tom&#39;s Greek Salad</span><span class="price">$14.99</span></div>
+          <p class="desc">Mixed greens, green peppers, onions, tomatoes, feta cheese, Greek peppers, olives, hard boiled egg and our house dressing</p>
+        </li>
+        <li data-q="small side salad ">
+          <div class="row"><span class="name">Small Side Salad</span><span class="price">$7.29</span></div>
+          
+        </li>
+        <li data-q="tuna salad plate with fresh fruit, cottage cheese, tomato slice &amp; a boiled egg">
+          <div class="row"><span class="name">Tuna Salad plate</span><span class="price">$14.79</span></div>
+          <p class="desc">With fresh fruit, cottage cheese, tomato slice &amp; a boiled egg</p>
+        </li>
+        <li data-q="chicken salad plate with fresh fruit, cottage cheese, tomato slice &amp; a boiled egg">
+          <div class="row"><span class="name">Chicken Salad plate</span><span class="price">$14.99</span></div>
+          <p class="desc">With fresh fruit, cottage cheese, tomato slice &amp; a boiled egg</p>
+        </li>
+        <li data-q="taco salad homemade shell filled with greens, peppers, onions, tomatoes, mixed cheeses &amp; topped with marinated grilled chicken. special dressing on the side">
+          <div class="row"><span class="name">Taco Salad</span><span class="price">$17.49</span></div>
+          <p class="desc">Homemade shell filled with greens, peppers, onions, tomatoes, mixed cheeses &amp; topped with marinated grilled chicken. Special dressing on the side</p>
+        </li>
+        <li data-q="veggie quesadilla flour tortilla stuffed with all sorts of veggies &amp; mixed cheeses. served with tzatziki sauce">
+          <div class="row"><span class="name">Veggie Quesadilla</span><span class="price">$16.79</span></div>
+          <p class="desc">Flour tortilla stuffed with all sorts of veggies &amp; mixed cheeses. Served with tzatziki sauce</p>
+        </li>
+        <li data-q="chicken quesadilla flour tortilla served with onions, green peppers, tomatoes, mixed cheeses, marinated chicken, salsa and sour cream">
+          <div class="row"><span class="name">Chicken Quesadilla</span><span class="price">$17.99</span></div>
+          <p class="desc">Flour tortilla served with onions, green peppers, tomatoes, mixed cheeses, marinated chicken, salsa and sour cream</p>
+        </li>
+        <li data-q="bbq beef brisket quesadilla bbq beef brisket, onions, peppers and mozzarella. served with salsa and sour cream">
+          <div class="row"><span class="name">BBQ Beef Brisket Quesadilla</span><span class="price">$18.99</span></div>
+          <p class="desc">BBQ Beef brisket, onions, peppers and mozzarella. Served with Salsa and sour cream</p>
+        </li></ul>
+    </section>
+    <section id="sandwiches" class="sec">
+      <h2>Sandwiches</h2>
+      <p class="note">All sandwiches served with lettuce, tomato &amp; pickle. Add Chips or Fries 4.99</p>
+      <ul>
+        <li data-q="reuben... a favorite ">
+          <div class="row"><span class="name">Reuben... a favorite</span><span class="price">$11.29</span></div>
+          
+        </li>
+        <li data-q="grilled chicken breast ">
+          <div class="row"><span class="name">Grilled Chicken Breast</span><span class="price">$10.99</span></div>
+          
+        </li>
+        <li data-q="blt with mayo ">
+          <div class="row"><span class="name">BLT with mayo</span><span class="price">$10.99</span></div>
+          
+        </li>
+        <li data-q="chicken salad (all white meat) ">
+          <div class="row"><span class="name">Chicken Salad (all white meat)</span><span class="price">$11.49</span></div>
+          
+        </li>
+        <li data-q="tuna salad ">
+          <div class="row"><span class="name">Tuna Salad</span><span class="price">$9.99</span></div>
+          
+        </li>
+        <li data-q="1/4 pound hot dog ">
+          <div class="row"><span class="name">1/4 Pound Hot Dog</span><span class="price">$9.29</span></div>
+          
+        </li>
+        <li data-q="siesta club (with mayo) served with lettuce, tomato, bacon, pickle &amp; fries. choice of ham &amp; cheese or turkey">
+          <div class="row"><span class="name">Siesta Club (with mayo)</span><span class="price">$16.49</span></div>
+          <p class="desc">Served with lettuce, tomato, bacon, pickle &amp; fries. Choice of ham &amp; cheese or turkey</p>
+        </li></ul>
+    </section>
+    <section id="belly-bustin-burgers" class="sec">
+      <h2>Belly Bustin&#39; Burgers</h2>
+      <p class="note">Ask to see our Extensive Burger Menu!!! Add cheese 1.99. Add bacon &amp; cheese 3.99. Add homemade chips or fries to any burger 4.99</p>
+      <ul>
+        <li data-q="beef burger ">
+          <div class="row"><span class="name">Beef Burger</span><span class="price">$9.99</span></div>
+          
+        </li>
+        <li data-q="turkey burger ">
+          <div class="row"><span class="name">Turkey Burger</span><span class="price">$8.99</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="caf-melts-grouper" class="sec">
+      <h2>Café Melts &amp; Grouper</h2>
+      <p class="note">Café Melts: With Swiss cheese, grilled on marble rye, served with lettuce, tomato, pickle &amp; fries</p>
+      <ul>
+        <li data-q="café melt choice of tuna or turkey">
+          <div class="row"><span class="name">Café Melt</span><span class="price">$15.29</span></div>
+          <p class="desc">Choice of tuna or turkey</p>
+        </li>
+        <li data-q="patty melt w/grilled onions ">
+          <div class="row"><span class="name">Patty melt w/grilled onions</span><span class="price">$15.79</span></div>
+          
+        </li>
+        <li data-q="boom boom grouper grilled grouper on a bed of rice with avocado and pico de gallo, drizzled with &#39;boom boom&#39; sauce">
+          <div class="row"><span class="name">Boom Boom Grouper</span></div>
+          <p class="desc">Grilled grouper on a bed of rice with avocado and pico de gallo, drizzled with &#39;boom boom&#39; sauce</p><div class="prices"><span class="pp"><span class="pl">Grouper</span> <b>$18.79</b></span><span class="pp"><span class="pl">With Chicken</span> <b>$17.49</b></span><span class="pp"><span class="pl">With Shrimp</span> <b>$17.79</b></span></div>
+        </li>
+        <li data-q="grilled grouper you&#39;ll love this one, blackened or grilled with our spices &amp; served on a hoagie with fries">
+          <div class="row"><span class="name">Grilled Grouper</span><span class="price">$17.99</span></div>
+          <p class="desc">You&#39;ll love this one, blackened or grilled with our spices &amp; served on a hoagie with fries</p>
+        </li></ul>
+    </section>
+    <section id="kid-s-korner" class="sec">
+      <h2>Kid&#39;s Korner</h2>
+      <p class="note">Under 10 years of age</p>
+      <ul>
+        <li data-q="french toast with bacon ">
+          <div class="row"><span class="name">French toast with bacon</span><span class="price">$7.99</span></div>
+          
+        </li>
+        <li data-q="mickey pancake with bacon ">
+          <div class="row"><span class="name">Mickey pancake with bacon</span><span class="price">$7.99</span></div>
+          
+        </li>
+        <li data-q="1 egg with bacon &amp; toast ">
+          <div class="row"><span class="name">1 egg with bacon &amp; toast</span><span class="price">$7.99</span></div>
+          
+        </li>
+        <li data-q="hot dog with fries ">
+          <div class="row"><span class="name">Hot dog with fries</span><span class="price">$8.99</span></div>
+          
+        </li>
+        <li data-q="chicken fingers with fries ">
+          <div class="row"><span class="name">Chicken fingers with fries</span><span class="price">$8.99</span></div>
+          
+        </li>
+        <li data-q="grilled cheese with fries ">
+          <div class="row"><span class="name">Grilled cheese with fries</span><span class="price">$8.99</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="beverages" class="sec">
+      <h2>Beverages</h2>
+      
+      <ul>
+        <li data-q="columbian blend coffee ">
+          <div class="row"><span class="name">Columbian Blend Coffee</span><span class="price">$3.99</span></div>
+          
+        </li>
+        <li data-q="iced brew to add any flavor - caramel, vanilla, mocha, raspberry or pumpkin spice - $1.50">
+          <div class="row"><span class="name">Iced Brew</span><span class="price">$3.99</span></div>
+          <p class="desc">To add any flavor - caramel, vanilla, mocha, raspberry or pumpkin spice - $1.50</p>
+        </li>
+        <li data-q="cappuccino sprinkled with cinnamon">
+          <div class="row"><span class="name">Cappuccino</span><span class="price">$5.99</span></div>
+          <p class="desc">Sprinkled with cinnamon</p>
+        </li>
+        <li data-q="latte sprinkled with cinnamon">
+          <div class="row"><span class="name">Latte</span><span class="price">$5.99</span></div>
+          <p class="desc">Sprinkled with cinnamon</p>
+        </li>
+        <li data-q="espresso ">
+          <div class="row"><span class="name">Espresso</span><span class="price">$5.29</span></div>
+          
+        </li>
+        <li data-q="hot chocolate with whipped cream">
+          <div class="row"><span class="name">Hot Chocolate</span><span class="price">$4.39</span></div>
+          <p class="desc">With whipped cream</p>
+        </li>
+        <li data-q="hot and herbal teas ">
+          <div class="row"><span class="name">Hot and Herbal teas</span><span class="price">$3.99</span></div>
+          
+        </li>
+        <li data-q="cranberry, apple, pineapple juice ">
+          <div class="row"><span class="name">Cranberry, Apple, Pineapple Juice</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Small</span> <b>$3.29</b></span><span class="pp"><span class="pl">Large</span> <b>$4.79</b></span></div>
+        </li>
+        <li data-q="natural florida orange or grapefruit juice ">
+          <div class="row"><span class="name">Natural Florida Orange or Grapefruit Juice</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Small</span> <b>$3.49</b></span><span class="pp"><span class="pl">Large</span> <b>$4.99</b></span></div>
+        </li>
+        <li data-q="milk ">
+          <div class="row"><span class="name">Milk</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Small</span> <b>$3.29</b></span><span class="pp"><span class="pl">Large</span> <b>$4.29</b></span></div>
+        </li>
+        <li data-q="chocolate milk ">
+          <div class="row"><span class="name">Chocolate Milk</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Small</span> <b>$3.69</b></span><span class="pp"><span class="pl">Large</span> <b>$4.69</b></span></div>
+        </li>
+        <li data-q="soft drinks coke, diet coke, sprite, lemonade, raspberry tea">
+          <div class="row"><span class="name">Soft Drinks</span><span class="price">$3.99</span></div>
+          <p class="desc">Coke, Diet Coke, Sprite, Lemonade, Raspberry tea</p>
+        </li>
+        <li data-q="freshly brewed iced tea ">
+          <div class="row"><span class="name">Freshly Brewed Iced Tea</span><span class="price">$3.99</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="coketails" class="sec">
+      <h2>Coketails</h2>
+      
+      <ul>
+        <li data-q="mimosas juice choices orange, cranberry, apple, grapefruit juices">
+          <div class="row"><span class="name">Mimosas</span><span class="price">$8.79</span></div>
+          <p class="desc">Juice choices Orange, Cranberry, Apple, Grapefruit Juices</p>
+        </li>
+        <li data-q="minmosa pitcher ">
+          <div class="row"><span class="name">Minmosa Pitcher</span><span class="price">$44.99</span></div>
+          
+        </li>
+        <li data-q="bay breeze cranberry juice, pineapple juice, vodka">
+          <div class="row"><span class="name">Bay Breeze</span><span class="price">$10.79</span></div>
+          <p class="desc">Cranberry juice, pineapple juice, vodka</p>
+        </li>
+        <li data-q="sea breeze grapefruit juice, pineapple juice, vodka">
+          <div class="row"><span class="name">Sea Breeze</span><span class="price">$10.79</span></div>
+          <p class="desc">Grapefruit juice, pineapple juice, vodka</p>
+        </li>
+        <li data-q="john daly arnold palmer with vodka">
+          <div class="row"><span class="name">John Daly</span><span class="price">$10.59</span></div>
+          <p class="desc">Arnold Palmer with vodka</p>
+        </li>
+        <li data-q="tequila sunrise tequila &amp; oj, topped with grenadine">
+          <div class="row"><span class="name">Tequila Sunrise</span><span class="price">$11.49</span></div>
+          <p class="desc">Tequila &amp; Oj, topped with grenadine</p>
+        </li>
+        <li data-q="bloody mary vodka and zing zang">
+          <div class="row"><span class="name">Bloody Mary</span><span class="price">$9.79</span></div>
+          <p class="desc">Vodka and Zing Zang</p>
+        </li>
+        <li data-q="bloody maria tequila and zing zang">
+          <div class="row"><span class="name">Bloody Maria</span><span class="price">$9.79</span></div>
+          <p class="desc">Tequila and Zing Zang</p>
+        </li>
+        <li data-q="margaritas on the rocks, rimmed with salt">
+          <div class="row"><span class="name">Margaritas</span><span class="price">$11.99</span></div>
+          <p class="desc">On the rocks, rimmed with salt</p>
+        </li>
+        <li data-q="margarita pitcher ">
+          <div class="row"><span class="name">Margarita Pitcher</span><span class="price">$49.99</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="hard-setzers-beer-wine" class="sec">
+      <h2>Hard Setzers, Beer &amp; Wine</h2>
+      
+      <ul>
+        <li data-q="high noons assorted flavors">
+          <div class="row"><span class="name">High Noons</span><span class="price">$6.99</span></div>
+          <p class="desc">Assorted flavors</p>
+        </li>
+        <li data-q="domestic beer bud, bud light, mich ultra gold">
+          <div class="row"><span class="name">Domestic Beer</span><span class="price">$5.99</span></div>
+          <p class="desc">Bud, Bud Light, Mich Ultra Gold</p>
+        </li>
+        <li data-q="imported beer modelo, corona">
+          <div class="row"><span class="name">Imported Beer</span><span class="price">$6.99</span></div>
+          <p class="desc">Modelo, Corona</p>
+        </li>
+        <li data-q="chardonnay, coastal vines ">
+          <div class="row"><span class="name">Chardonnay, Coastal Vines</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$6.49</b></span></div>
+        </li>
+        <li data-q="white zinfandel, copper ridge ">
+          <div class="row"><span class="name">White Zinfandel, Copper Ridge</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$6.49</b></span></div>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>Family owned and operated since 1995. Consumer advisory: There is increased health risk associated with eating undercooked or raw meats, poultry, seafood, shellfish or eggs &amp; may increase the consumer&#39;s risk of food borne illness. Gratuity (20%) may be added to parties of 6 or more.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Village Café.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Village Café menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

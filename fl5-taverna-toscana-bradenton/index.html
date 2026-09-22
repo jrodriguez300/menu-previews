@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Taverna Toscana Menu</title>
+<meta name="description" content="Menu for Taverna Toscana, Downtown Bradenton (6th Ave W), Sarasota-Bradenton area.">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Taverna Toscana</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=1301%206th%20Ave%20W%2C%20Bradenton%2C%20FL%2034205">1301 6th Ave W, Bradenton, FL 34205</a><a href="tel:9413577772">(941) 357-7772</a><span>Monday-Friday 11:30 AM - 10:00 PM; Saturday-Sunday 4:00 PM - 10:00 PM; Happy Hour Monday-Friday 4:00-6:00 PM in the bar</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#dinner-starters" data-sec="dinner-starters">Dinner: Starters</a><a href="#dinner-salads" data-sec="dinner-salads">Dinner: Salads</a><a href="#dinner-fresh-pasta" data-sec="dinner-fresh-pasta">Dinner: Fresh Pasta</a><a href="#dinner-seafood-entr-e" data-sec="dinner-seafood-entr-e">Dinner: Seafood &amp; Entrée</a><a href="#butcher-cut-steaks" data-sec="butcher-cut-steaks">Butcher Cut Steaks</a><a href="#shareable-sides" data-sec="shareable-sides">Shareable Sides</a><a href="#lunch-starters-salads" data-sec="lunch-starters-salads">Lunch: Starters &amp; Salads</a><a href="#lunch-handhelds" data-sec="lunch-handhelds">Lunch: Handhelds</a><a href="#lunch-entrees" data-sec="lunch-entrees">Lunch Entrees</a><a href="#happy-hour-food" data-sec="happy-hour-food">Happy Hour Food</a><a href="#happy-hour-drinks" data-sec="happy-hour-drinks">Happy Hour Drinks</a><a href="#dessert" data-sec="dessert">Dessert</a><a href="#dessert-wines-espresso-martinis" data-sec="dessert-wines-espresso-martinis">Dessert Wines &amp; Espresso Martinis</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="dinner-starters" class="sec">
+      <h2>Dinner: Starters</h2>
+      
+      <ul>
+        <li data-q="pecorino parker rolls toasted sesame seeds, olive oil, salted honey butter, chives">
+          <div class="row"><span class="name">Pecorino Parker Rolls</span><span class="price">$14</span></div>
+          <p class="desc">Toasted sesame seeds, olive oil, salted honey butter, chives</p>
+        </li>
+        <li data-q="grilled octopus (gf) crispy marble potatoes, shaved shallots, celery, charred lemon sauce">
+          <div class="row"><span class="name">Grilled Octopus (GF)</span><span class="price">$25</span></div>
+          <p class="desc">Crispy marble potatoes, shaved shallots, celery, charred lemon sauce</p>
+        </li>
+        <li data-q="fabio&#39;s wagyu meatball homemade meatball, whipped ricotta, tomato sugo, basil, olive oil, crostini">
+          <div class="row"><span class="name">Fabio&#39;s Wagyu Meatball</span><span class="price">$24</span></div>
+          <p class="desc">Homemade meatball, whipped ricotta, tomato sugo, basil, olive oil, crostini</p>
+        </li>
+        <li data-q="24 hr french onion soup rich demi broth, brandy caramelized onions, crouton, aged provolone">
+          <div class="row"><span class="name">24 Hr French Onion Soup</span><span class="price">$14</span></div>
+          <p class="desc">Rich demi broth, brandy caramelized onions, crouton, aged provolone</p>
+        </li>
+        <li data-q="tuscan beef carpaccio * arugula, grana padano, lemon oil, mustard, capers, aioli">
+          <div class="row"><span class="name">Tuscan Beef Carpaccio *</span><span class="price">$23</span></div>
+          <p class="desc">Arugula, Grana Padano, lemon oil, mustard, capers, aioli</p>
+        </li>
+        <li data-q="tuna tartare * cucumber, calabrian chili vinaigrette, sesame crisps">
+          <div class="row"><span class="name">Tuna Tartare *</span><span class="price">$22</span></div>
+          <p class="desc">Cucumber, Calabrian chili vinaigrette, sesame crisps</p>
+        </li>
+        <li data-q="cast iron caprino herbed goat cheese, lavender, calabrian honey, pistachio, rosemary, crostini">
+          <div class="row"><span class="name">Cast Iron Caprino</span><span class="price">$18</span></div>
+          <p class="desc">Herbed goat cheese, lavender, Calabrian honey, pistachio, rosemary, crostini</p>
+        </li>
+        <li data-q="arancini cacio e pepe, pecorino cream, black pepper">
+          <div class="row"><span class="name">Arancini</span><span class="price">$18</span></div>
+          <p class="desc">Cacio e pepe, pecorino cream, black pepper</p>
+        </li>
+        <li data-q="roasted garlic shrimp colossal shrimp, garlic &amp; brandy tomato sauce, herbed bread crumb, crostini">
+          <div class="row"><span class="name">Roasted Garlic Shrimp</span><span class="price">$22</span></div>
+          <p class="desc">Colossal shrimp, garlic &amp; brandy tomato sauce, herbed bread crumb, crostini</p>
+        </li>
+        <li data-q="chef&#39;s soup du jour ">
+          <div class="row"><span class="name">Chef&#39;s Soup du Jour</span><span class="price">$14</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="dinner-salads" class="sec">
+      <h2>Dinner: Salads</h2>
+      
+      <ul>
+        <li data-q="wedge (gf) tomato confit, house pork belly bacon, gorgonzola, pickled red onion, scallion, truffle gorgonzola dressing">
+          <div class="row"><span class="name">Wedge (GF)</span><span class="price">$16</span></div>
+          <p class="desc">Tomato confit, house pork belly bacon, Gorgonzola, pickled red onion, scallion, truffle Gorgonzola dressing</p>
+        </li>
+        <li data-q="roasted beet ** (gf) arugula, frisee, orange, savory goat cheese, candied pistachio, shaved fennel, sherry vinaigrette">
+          <div class="row"><span class="name">Roasted Beet ** (GF)</span><span class="price">$18</span></div>
+          <p class="desc">Arugula, frisee, orange, savory goat cheese, candied pistachio, shaved fennel, sherry vinaigrette</p>
+        </li>
+        <li data-q="house caesar * (gf) romaine lettuce, oven roasted tomatoes, parmesan croutons, grana padano, classic caesar dressing">
+          <div class="row"><span class="name">House Caesar * (GF)</span><span class="price">$16</span></div>
+          <p class="desc">Romaine lettuce, oven roasted tomatoes, parmesan croutons, Grana Padano, classic Caesar dressing</p>
+        </li>
+        <li data-q="taverna chopped (gf) mixed lettuces, salumi, aged provolone, pepperoncini, pickled red onion, chickpea, heirloom cherry tomatoes, red wine vinaigrette, grana padano">
+          <div class="row"><span class="name">Taverna Chopped (GF)</span><span class="price">$18</span></div>
+          <p class="desc">Mixed lettuces, salumi, aged provolone, pepperoncini, pickled red onion, chickpea, heirloom cherry tomatoes, red wine vinaigrette, Grana Padano</p>
+        </li>
+        <li data-q="caprese salad heirloom tomatoes, whole milk mozzarella, italian olives, oregano, basil, tuscan olive oil, aged balsamic glaze">
+          <div class="row"><span class="name">Caprese Salad</span><span class="price">$18</span></div>
+          <p class="desc">Heirloom tomatoes, whole milk mozzarella, Italian olives, oregano, basil, Tuscan olive oil, aged balsamic glaze</p>
+        </li></ul>
+    </section>
+    <section id="dinner-fresh-pasta" class="sec">
+      <h2>Dinner: Fresh Pasta</h2>
+      
+      <ul>
+        <li data-q="rigatoni tartufo truffle parmesan cream, italian sausage">
+          <div class="row"><span class="name">Rigatoni Tartufo</span><span class="price">$30</span></div>
+          <p class="desc">Truffle parmesan cream, Italian sausage</p>
+        </li>
+        <li data-q="wagyu short rib bolognese savory red wine &amp; short rib ragout, paccheri, grana padano">
+          <div class="row"><span class="name">Wagyu Short Rib Bolognese</span><span class="price">$32</span></div>
+          <p class="desc">Savory red wine &amp; short rib ragout, paccheri, Grana Padano</p>
+        </li>
+        <li data-q="vodka rose blush sauce, rigatoni, creamy burrata, parmesan, cracked pepper, bread crumb">
+          <div class="row"><span class="name">Vodka Rose</span><span class="price">$28</span></div>
+          <p class="desc">Blush sauce, rigatoni, creamy burrata, parmesan, cracked pepper, bread crumb</p>
+        </li>
+        <li data-q="shrimp fra diavolo colossal shrimp, bucatini, blistered cherry tomatoes, white wine, shaved garlic">
+          <div class="row"><span class="name">Shrimp Fra Diavolo</span><span class="price">$30</span></div>
+          <p class="desc">Colossal shrimp, bucatini, blistered cherry tomatoes, white wine, shaved garlic</p>
+        </li>
+        <li data-q="lasagna al tavolo spinach pasta, grana padano, braised sunday sugo, fresh mozzarella, basil">
+          <div class="row"><span class="name">Lasagna al Tavolo</span><span class="price">$30</span></div>
+          <p class="desc">Spinach pasta, Grana Padano, braised Sunday sugo, fresh mozzarella, basil</p>
+        </li></ul>
+    </section>
+    <section id="dinner-seafood-entr-e" class="sec">
+      <h2>Dinner: Seafood &amp; Entrée</h2>
+      
+      <ul>
+        <li data-q="roasted branzino toasted mediterranean couscous, artichoke, sweety drop peppers, olives, salsa verde">
+          <div class="row"><span class="name">Roasted Branzino</span><span class="price">$42</span></div>
+          <p class="desc">Toasted Mediterranean couscous, artichoke, sweety drop peppers, olives, salsa verde</p>
+        </li>
+        <li data-q="twin lobster tails (gf) charred lemon, roasted garlic &amp; chive infused drawn butter">
+          <div class="row"><span class="name">Twin Lobster Tails (GF)</span><span class="price">$75</span></div>
+          <p class="desc">Charred lemon, roasted garlic &amp; chive infused drawn butter</p>
+        </li>
+        <li data-q="faroe island salmon (gf) flame roasted corn puree, baby spinach, sliced garlic, burnt cipollini oil">
+          <div class="row"><span class="name">Faroe Island Salmon (GF)</span><span class="price">$34</span></div>
+          <p class="desc">Flame roasted corn puree, baby spinach, sliced garlic, burnt cipollini oil</p>
+        </li>
+        <li data-q="seafood cioppino (gf) clams, mussels, calamari, shrimp, fresh fish, cherry tomato and lobster broth, charred toast. add bucatini +$5">
+          <div class="row"><span class="name">Seafood Cioppino (GF)</span><span class="price">$38</span></div>
+          <p class="desc">Clams, mussels, calamari, shrimp, fresh fish, cherry tomato and lobster broth, charred toast. Add bucatini +$5</p>
+        </li>
+        <li data-q="double cut pork chop * ** (gf) broccolini &amp; chickpea ragu, roasted pepper and pistachio romesco, gremolata">
+          <div class="row"><span class="name">Double Cut Pork Chop * ** (GF)</span><span class="price">$38</span></div>
+          <p class="desc">Broccolini &amp; chickpea ragu, roasted pepper and pistachio Romesco, gremolata</p>
+        </li>
+        <li data-q="ossobuco ** (gf) braised pork shank, roasted garlic mashed potato, pickled fresno chiles, gremolata, toasted pistachio">
+          <div class="row"><span class="name">Ossobuco ** (GF)</span><span class="price">$40</span></div>
+          <p class="desc">Braised pork shank, roasted garlic mashed potato, pickled Fresno chiles, gremolata, toasted pistachio</p>
+        </li>
+        <li data-q="chicken parmesan heritage chicken breast, san marzano sugo, fresh mozzarella, torn basil, campanelle pasta">
+          <div class="row"><span class="name">Chicken Parmesan</span><span class="price">$32</span></div>
+          <p class="desc">Heritage chicken breast, San Marzano sugo, fresh mozzarella, torn basil, campanelle pasta</p>
+        </li>
+        <li data-q="roasted filet tip risotto * (gf) charred tomato, calabrian chili, burrata, torn basil, toasted pistachio pistou">
+          <div class="row"><span class="name">Roasted Filet Tip Risotto * (GF)</span><span class="price">$40</span></div>
+          <p class="desc">Charred tomato, Calabrian chili, burrata, torn basil, toasted pistachio pistou</p>
+        </li>
+        <li data-q="taverna surf &amp; turf * (gf) grilled petite filet, broiled lobster tail, charred lemon, roasted garlic &amp; chive infused drawn butter">
+          <div class="row"><span class="name">Taverna Surf &amp; Turf * (GF)</span><span class="price">$78</span></div>
+          <p class="desc">Grilled petite filet, broiled lobster tail, charred lemon, roasted garlic &amp; chive infused drawn butter</p>
+        </li>
+        <li data-q="roasted chicken marsala woodland mushrooms, crispy fingerling potatoes, sauteed spinach">
+          <div class="row"><span class="name">Roasted Chicken Marsala</span><span class="price">$32</span></div>
+          <p class="desc">Woodland mushrooms, crispy fingerling potatoes, sauteed spinach</p>
+        </li></ul>
+    </section>
+    <section id="butcher-cut-steaks" class="sec">
+      <h2>Butcher Cut Steaks</h2>
+      <p class="note">28 day wet age 100% all natural Linz Heritage Black Angus beef, humanely raised, no hormones or antibiotics; gluten free. Sauces $5: roasted lemon Bearnaise, truffle butter, brandy au poivre sauce, chimichurri. Enhancements: grilled colossal shrimp $14, broiled lobster tail $35, Gorgonzola crust $8</p>
+      <ul>
+        <li data-q="7 oz petite filet mignon * ">
+          <div class="row"><span class="name">7 oz Petite Filet Mignon *</span><span class="price">$58</span></div>
+          
+        </li>
+        <li data-q="10 oz signature filet mignon * ">
+          <div class="row"><span class="name">10 oz Signature Filet Mignon *</span><span class="price">$68</span></div>
+          
+        </li>
+        <li data-q="14 oz new york strip * ">
+          <div class="row"><span class="name">14 oz New York Strip *</span><span class="price">$65</span></div>
+          
+        </li>
+        <li data-q="35 day dry age 20 oz bone in ribeye * ">
+          <div class="row"><span class="name">35 Day Dry Age 20 oz Bone In Ribeye *</span><span class="price">$78</span></div>
+          
+        </li>
+        <li data-q="32 oz porterhouse * ">
+          <div class="row"><span class="name">32 oz Porterhouse *</span><span class="price">$120</span></div>
+          
+        </li>
+        <li data-q="prime 18 oz boneless ribeye * linz heritage reserve usda prime">
+          <div class="row"><span class="name">Prime 18 oz Boneless Ribeye *</span><span class="price">$85</span></div>
+          <p class="desc">Linz Heritage Reserve USDA Prime</p>
+        </li>
+        <li data-q="prime 14 oz new york strip * linz heritage reserve usda prime">
+          <div class="row"><span class="name">Prime 14 oz New York Strip *</span><span class="price">$78</span></div>
+          <p class="desc">Linz Heritage Reserve USDA Prime</p>
+        </li></ul>
+    </section>
+    <section id="shareable-sides" class="sec">
+      <h2>Shareable Sides</h2>
+      
+      <ul>
+        <li data-q="crispy brussel sprouts (gf) truffle honey, house bacon, grana padano">
+          <div class="row"><span class="name">Crispy Brussel Sprouts (GF)</span><span class="price">$14</span></div>
+          <p class="desc">Truffle honey, house bacon, Grana Padano</p>
+        </li>
+        <li data-q="garlic mashed potatoes (gf) whipped potatoes, garlic confit, butter, chives">
+          <div class="row"><span class="name">Garlic Mashed Potatoes (GF)</span><span class="price">$14</span></div>
+          <p class="desc">Whipped potatoes, garlic confit, butter, chives</p>
+        </li>
+        <li data-q="herb roasted fingerling potatoes (gf) crispy sage, rosemary, parmigiano">
+          <div class="row"><span class="name">Herb Roasted Fingerling Potatoes (GF)</span><span class="price">$14</span></div>
+          <p class="desc">Crispy sage, rosemary, Parmigiano</p>
+        </li>
+        <li data-q="roasted wild mushroom (gf) shaved garlic, demi">
+          <div class="row"><span class="name">Roasted Wild Mushroom (GF)</span><span class="price">$14</span></div>
+          <p class="desc">Shaved garlic, demi</p>
+        </li>
+        <li data-q="charred broccolini (gf) parmesan, chili, lemon">
+          <div class="row"><span class="name">Charred Broccolini (GF)</span><span class="price">$14</span></div>
+          <p class="desc">Parmesan, chili, lemon</p>
+        </li>
+        <li data-q="proper mac &amp; cheese parmesan creme, mozzarella, toasted bread crumb">
+          <div class="row"><span class="name">Proper Mac &amp; Cheese</span><span class="price">$14</span></div>
+          <p class="desc">Parmesan creme, mozzarella, toasted bread crumb</p>
+        </li>
+        <li data-q="truffle &amp; parmesan french fries ">
+          <div class="row"><span class="name">Truffle &amp; Parmesan French Fries</span><span class="price">$14</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="lunch-starters-salads" class="sec">
+      <h2>Lunch: Starters &amp; Salads</h2>
+      <p class="note">Monday-Friday 11:30 AM. Add to any salad: chicken $10, salmon $14, shrimp $12, filet tips $15. Soup and side salad $14</p>
+      <ul>
+        <li data-q="pecorino parker rolls (nf) toasted sesame seeds, olive oil, salted honey butter, chives, grana padano">
+          <div class="row"><span class="name">Pecorino Parker Rolls (NF)</span><span class="price">$12</span></div>
+          <p class="desc">Toasted sesame seeds, olive oil, salted honey butter, chives, Grana Padano</p>
+        </li>
+        <li data-q="fabio&#39;s wagyu mini meatballs (nf) whipped ricotta, tomato sugo, basil, olive oil, crostini">
+          <div class="row"><span class="name">Fabio&#39;s Wagyu Mini Meatballs (NF)</span><span class="price">$14</span></div>
+          <p class="desc">Whipped ricotta, tomato sugo, basil, olive oil, crostini</p>
+        </li>
+        <li data-q="crispy brussel sprouts (nf) truffle honey, house bacon, grana padano">
+          <div class="row"><span class="name">Crispy Brussel Sprouts (NF)</span><span class="price">$12</span></div>
+          <p class="desc">Truffle honey, house bacon, Grana Padano</p>
+        </li>
+        <li data-q="burrata crostino (nf) confit tomato, aged balsamic, basil">
+          <div class="row"><span class="name">Burrata Crostino (NF)</span><span class="price">$12</span></div>
+          <p class="desc">Confit tomato, aged balsamic, basil</p>
+        </li>
+        <li data-q="24-hour french onion soup (nf)(gf) rich demi broth, brandy, caramelized onion, croutons, aged provolone">
+          <div class="row"><span class="name">24-Hour French Onion Soup (NF)(GF)</span><span class="price">$12</span></div>
+          <p class="desc">Rich demi broth, brandy, caramelized onion, croutons, aged provolone</p>
+        </li>
+        <li data-q="chef&#39;s soup du jour ">
+          <div class="row"><span class="name">Chef&#39;s Soup du Jour</span><span class="price">$12</span></div>
+          
+        </li>
+        <li data-q="wedge (nf)(gf) confit tomato, house pork belly bacon, gorgonzola, pickled red onion, scallion, truffle gorgonzola dressing">
+          <div class="row"><span class="name">Wedge (NF)(GF)</span><span class="price">$12</span></div>
+          <p class="desc">Confit tomato, house pork belly bacon, Gorgonzola, pickled red onion, scallion, truffle Gorgonzola dressing</p>
+        </li>
+        <li data-q="house caesar ** (nf)(gf) romaine lettuce, oven roasted tomato, parmesan crouton, grana padano, classic caesar dressing">
+          <div class="row"><span class="name">House Caesar ** (NF)(GF)</span><span class="price">$12</span></div>
+          <p class="desc">Romaine lettuce, oven roasted tomato, parmesan crouton, Grana Padano, classic Caesar dressing</p>
+        </li>
+        <li data-q="caprese (nf)(gf) heirloom tomato, basil, tuscan olive oil, saba">
+          <div class="row"><span class="name">Caprese (NF)(GF)</span><span class="price">$12</span></div>
+          <p class="desc">Heirloom tomato, basil, Tuscan olive oil, saba</p>
+        </li>
+        <li data-q="taverna chopped (nf) mixed lettuces, salumi, aged provolone, pepperoncini, pickled red onion, chickpeas, heirloom cherry tomatoes, red wine vinaigrette, grana padano">
+          <div class="row"><span class="name">Taverna Chopped (NF)</span><span class="price">$12</span></div>
+          <p class="desc">Mixed lettuces, salumi, aged provolone, pepperoncini, pickled red onion, chickpeas, heirloom cherry tomatoes, red wine vinaigrette, Grana Padano</p>
+        </li></ul>
+    </section>
+    <section id="lunch-handhelds" class="sec">
+      <h2>Lunch: Handhelds</h2>
+      <p class="note">All handhelds served with house-made tallow chips; substitute house-made tallow fries +$3</p>
+      <ul>
+        <li data-q="smash burger (nf) caramelized onions, calabrian aioli, aged white cheddar, pickles, brioche bun. add bacon $4">
+          <div class="row"><span class="name">Smash Burger (NF)</span><span class="price">$16</span></div>
+          <p class="desc">Caramelized onions, Calabrian aioli, aged white cheddar, pickles, brioche bun. Add bacon $4</p>
+        </li>
+        <li data-q="ny steak dip (nf) herbed mushrooms, caramelized onion, aged white cheddar, horseradish aioli, amarosa roll, rich demi au jus">
+          <div class="row"><span class="name">NY Steak Dip (NF)</span><span class="price">$19</span></div>
+          <p class="desc">Herbed mushrooms, caramelized onion, aged white cheddar, horseradish aioli, Amarosa roll, rich demi au jus</p>
+        </li>
+        <li data-q="meatball sandwich (nf) amarosa roll, sugo, aged provolone, parmesan, basil">
+          <div class="row"><span class="name">Meatball Sandwich (NF)</span><span class="price">$16</span></div>
+          <p class="desc">Amarosa roll, sugo, aged provolone, parmesan, basil</p>
+        </li>
+        <li data-q="chicken sandwich herb panko chicken, aged provolone, pistachio romesco, arugula, pickles, calabrian aioli">
+          <div class="row"><span class="name">Chicken Sandwich</span><span class="price">$14</span></div>
+          <p class="desc">Herb panko chicken, aged provolone, pistachio Romesco, arugula, pickles, Calabrian aioli</p>
+        </li>
+        <li data-q="blackened grouper sandwich (nf) heirloom tomato, iceberg lettuce, meyer lemon calabrian remoulade">
+          <div class="row"><span class="name">Blackened Grouper Sandwich (NF)</span><span class="price">$21</span></div>
+          <p class="desc">Heirloom tomato, iceberg lettuce, Meyer lemon Calabrian remoulade</p>
+        </li></ul>
+    </section>
+    <section id="lunch-entrees" class="sec">
+      <h2>Lunch Entrees</h2>
+      <p class="note">All pastas can be made gluten free / nut free</p>
+      <ul>
+        <li data-q="orecchiette genovese (nf) italian sausage, caramelized onion, crushed red pepper, white wine, chicken stock, basil">
+          <div class="row"><span class="name">Orecchiette Genovese (NF)</span><span class="price">$18</span></div>
+          <p class="desc">Italian sausage, caramelized onion, crushed red pepper, white wine, chicken stock, basil</p>
+        </li>
+        <li data-q="rigatoni wagyu short rib bolognese (nf) savory red wine, short rib ragout, fresh rigatoni, grana padano">
+          <div class="row"><span class="name">Rigatoni Wagyu Short Rib Bolognese (NF)</span><span class="price">$26</span></div>
+          <p class="desc">Savory red wine, short rib ragout, fresh rigatoni, Grana Padano</p>
+        </li>
+        <li data-q="rigatoni alla vodka (v) vodka sauce, herbed breadcrumbs, grana padano">
+          <div class="row"><span class="name">Rigatoni alla Vodka (V)</span><span class="price">$18</span></div>
+          <p class="desc">Vodka sauce, herbed breadcrumbs, Grana Padano</p>
+        </li>
+        <li data-q="roasted chicken fusilloni (nf) roasted garlic, confit tomatoes, white wine, cream sauce, basil">
+          <div class="row"><span class="name">Roasted Chicken Fusilloni (NF)</span><span class="price">$20</span></div>
+          <p class="desc">Roasted garlic, confit tomatoes, white wine, cream sauce, basil</p>
+        </li>
+        <li data-q="chicken parmesan (nf) heritage chicken breast, tomato sugo, fresh mozzarella, basil, campanelle pasta">
+          <div class="row"><span class="name">Chicken Parmesan (NF)</span><span class="price">$22</span></div>
+          <p class="desc">Heritage chicken breast, tomato sugo, fresh mozzarella, basil, campanelle pasta</p>
+        </li>
+        <li data-q="steak frites (nf) butcher&#39;s cut, truffle parmesan fries, chimichurri">
+          <div class="row"><span class="name">Steak Frites (NF)</span><span class="price">$26</span></div>
+          <p class="desc">Butcher&#39;s cut, truffle parmesan fries, chimichurri</p>
+        </li></ul>
+    </section>
+    <section id="happy-hour-food" class="sec">
+      <h2>Happy Hour Food</h2>
+      <p class="note">Monday-Friday 4:00-6:00 PM in the bar</p>
+      <ul>
+        <li data-q="truffle tallow fries rosemary, sage, grana padano, chives">
+          <div class="row"><span class="name">Truffle Tallow Fries</span><span class="price">$8</span></div>
+          <p class="desc">Rosemary, sage, Grana Padano, chives</p>
+        </li>
+        <li data-q="ahi tuna poke citrus ponzu, soy sauce, pickled red onion, fried wonton, wasabi lime aioli">
+          <div class="row"><span class="name">Ahi Tuna Poke</span><span class="price">$10</span></div>
+          <p class="desc">Citrus ponzu, soy sauce, pickled red onion, fried wonton, wasabi lime aioli</p>
+        </li>
+        <li data-q="fabio&#39;s wagyu mini meatballs tomato sugo, whipped ricotta, torn basil">
+          <div class="row"><span class="name">Fabio&#39;s Wagyu Mini Meatballs</span><span class="price">$12</span></div>
+          <p class="desc">Tomato sugo, whipped ricotta, torn basil</p>
+        </li>
+        <li data-q="smash burger caramelized onions, calabrian aioli, pickle">
+          <div class="row"><span class="name">Smash Burger</span><span class="price">$15</span></div>
+          <p class="desc">Caramelized onions, Calabrian aioli, pickle</p>
+        </li>
+        <li data-q="burrata crostino confit tomato, aged balsamic, basil">
+          <div class="row"><span class="name">Burrata Crostino</span><span class="price">$10</span></div>
+          <p class="desc">Confit tomato, aged balsamic, basil</p>
+        </li>
+        <li data-q="crispy brussel sprouts truffle honey, house bacon, grana padano">
+          <div class="row"><span class="name">Crispy Brussel Sprouts</span><span class="price">$10</span></div>
+          <p class="desc">Truffle honey, house bacon, Grana Padano</p>
+        </li>
+        <li data-q="antipasto olives, assorted cheese, soppressata, pepperoncini, pickled red onions, marinated artichokes">
+          <div class="row"><span class="name">Antipasto</span><span class="price">$10</span></div>
+          <p class="desc">Olives, assorted cheese, soppressata, pepperoncini, pickled red onions, marinated artichokes</p>
+        </li></ul>
+    </section>
+    <section id="happy-hour-drinks" class="sec">
+      <h2>Happy Hour Drinks</h2>
+      
+      <ul>
+        <li data-q="house old fashioned bourbon, demerara, black walnut &amp; orange bitters, amarena cherry">
+          <div class="row"><span class="name">House Old Fashioned</span><span class="price">$6</span></div>
+          <p class="desc">Bourbon, demerara, black walnut &amp; orange bitters, Amarena cherry</p>
+        </li>
+        <li data-q="italian espresso martini vodka, mr. black espresso liquor, fresh brewed espresso">
+          <div class="row"><span class="name">Italian Espresso Martini</span><span class="price">$6</span></div>
+          <p class="desc">Vodka, Mr. Black espresso liquor, fresh brewed espresso</p>
+        </li>
+        <li data-q="mixed drinks ">
+          <div class="row"><span class="name">Mixed Drinks</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="classic martinis ">
+          <div class="row"><span class="name">Classic Martinis</span><span class="price">$9</span></div>
+          
+        </li>
+        <li data-q="summer tuscan spritz choose one: aperol (aperol, prosecco, expressed orange), hugo (elderflower liquor, muddled mint, prosecco) or limoncello (limoncello liquor, prosecco, basil)">
+          <div class="row"><span class="name">Summer Tuscan Spritz</span><span class="price">$7</span></div>
+          <p class="desc">Choose one: Aperol (Aperol, Prosecco, expressed orange), Hugo (elderflower liquor, muddled mint, Prosecco) or Limoncello (limoncello liquor, Prosecco, basil)</p>
+        </li>
+        <li data-q="wine benvolio rosso, tuscany or benvolio pinot grigio, friuli">
+          <div class="row"><span class="name">Wine</span><span class="price">$6</span></div>
+          <p class="desc">Benvolio Rosso, Tuscany or Benvolio Pinot Grigio, Friuli</p>
+        </li>
+        <li data-q="draft beer selection mich ultra, bud light, modelo lager, modelo negra">
+          <div class="row"><span class="name">Draft Beer Selection</span><span class="price">$5</span></div>
+          <p class="desc">Mich Ultra, Bud Light, Modelo Lager, Modelo Negra</p>
+        </li></ul>
+    </section>
+    <section id="dessert" class="sec">
+      <h2>Dessert</h2>
+      
+      <ul>
+        <li data-q="flourless chocolate torte crème anglaise, candied pistachio">
+          <div class="row"><span class="name">Flourless Chocolate Torte</span><span class="price">$14</span></div>
+          <p class="desc">Crème Anglaise, candied pistachio</p>
+        </li>
+        <li data-q="house made tiramisu classic ladyfingers, double espresso, marsala, toasted white chocolate">
+          <div class="row"><span class="name">House Made Tiramisu</span><span class="price">$14</span></div>
+          <p class="desc">Classic ladyfingers, double espresso, Marsala, toasted white chocolate</p>
+        </li>
+        <li data-q="orange sticky toffee pudding sticky toffee cake, toffee sauce, orange segments, vanilla gelato, toffee brittle">
+          <div class="row"><span class="name">Orange Sticky Toffee Pudding</span><span class="price">$14</span></div>
+          <p class="desc">Sticky toffee cake, toffee sauce, orange segments, vanilla gelato, toffee brittle</p>
+        </li>
+        <li data-q="strawberry cheesecake chantilly cream, graham cracker crust, strawberry compote">
+          <div class="row"><span class="name">Strawberry Cheesecake</span><span class="price">$14</span></div>
+          <p class="desc">Chantilly cream, graham cracker crust, strawberry compote</p>
+        </li>
+        <li data-q="lemon olive oil cake berry compote, toasted almonds, chantilly cream, mint leaf">
+          <div class="row"><span class="name">Lemon Olive Oil Cake</span><span class="price">$14</span></div>
+          <p class="desc">Berry compote, toasted almonds, Chantilly cream, mint leaf</p>
+        </li>
+        <li data-q="mini chocolate cannoli orange whipped ricotta and mascarpone, toasted white chocolate crumble, dark chocolate sauce">
+          <div class="row"><span class="name">Mini Chocolate Cannoli</span><span class="price">$14</span></div>
+          <p class="desc">Orange whipped ricotta and mascarpone, toasted white chocolate crumble, dark chocolate sauce</p>
+        </li>
+        <li data-q="affogato choice of gelato served with a shot of espresso. add a shot of amaretto, frangelico, godiva liqueur or kahlúa $10">
+          <div class="row"><span class="name">Affogato</span><span class="price">$14</span></div>
+          <p class="desc">Choice of gelato served with a shot of espresso. Add a shot of Amaretto, Frangelico, Godiva liqueur or Kahlúa $10</p>
+        </li>
+        <li data-q="chef&#39;s selection of gelato or sorbetto two scoops">
+          <div class="row"><span class="name">Chef&#39;s Selection of Gelato or Sorbetto</span><span class="price">$14</span></div>
+          <p class="desc">Two scoops</p>
+        </li></ul>
+    </section>
+    <section id="dessert-wines-espresso-martinis" class="sec">
+      <h2>Dessert Wines &amp; Espresso Martinis</h2>
+      <p class="note">Dessert wines are 2 oz pours</p>
+      <ul>
+        <li data-q="heinz eifel beerenauslese, riesling ">
+          <div class="row"><span class="name">Heinz Eifel Beerenauslese, Riesling</span><span class="price">$16</span></div>
+          
+        </li>
+        <li data-q="2018 s. niccolò, vinsanto del chianti classico ">
+          <div class="row"><span class="name">2018 S. Niccolò, Vinsanto del Chianti Classico</span><span class="price">$16</span></div>
+          
+        </li>
+        <li data-q="graham&#39;s 10 year tawny port ">
+          <div class="row"><span class="name">Graham&#39;s 10 Year Tawny Port</span><span class="price">$14</span></div>
+          
+        </li>
+        <li data-q="2022 emotions, de la tour blanche, sauternes ">
+          <div class="row"><span class="name">2022 Emotions, de la Tour Blanche, Sauternes</span><span class="price">$16</span></div>
+          
+        </li>
+        <li data-q="caramello espresso martini grey goose vodka, dorda salted caramel, espresso">
+          <div class="row"><span class="name">Caramello Espresso Martini</span><span class="price">$16</span></div>
+          <p class="desc">Grey Goose Vodka, Dorda salted caramel, espresso</p>
+        </li>
+        <li data-q="pralina espresso martini tito&#39;s vodka, praline pecan liqueur, espresso">
+          <div class="row"><span class="name">Pralina Espresso Martini</span><span class="price">$16</span></div>
+          <p class="desc">Tito&#39;s Vodka, praline pecan liqueur, espresso</p>
+        </li>
+        <li data-q="dolce amaro espresso martini skrewball peanut butter whiskey, sazerac rye, borghetti, espresso">
+          <div class="row"><span class="name">Dolce Amaro Espresso Martini</span><span class="price">$16</span></div>
+          <p class="desc">Skrewball peanut butter whiskey, Sazerac rye, Borghetti, espresso</p>
+        </li>
+        <li data-q="carajillo milagro tequila reposado, licor 43, espresso">
+          <div class="row"><span class="name">Carajillo</span><span class="price">$16</span></div>
+          <p class="desc">Milagro Tequila Reposado, Licor 43, espresso</p>
+        </li>
+        <li data-q="originale espresso martini ketel one vodka, borghetti, espresso">
+          <div class="row"><span class="name">Originale Espresso Martini</span><span class="price">$16</span></div>
+          <p class="desc">Ketel One Vodka, Borghetti, espresso</p>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>A Tuscan Italian steakhouse led by Chef Fabio Viviani. We are proudly 100% seed oil free; all of our items are prepared in beef tallow and olive oil. Consuming raw or undercooked meats, poultry, seafood, shellfish or eggs may increase your risk of foodborne illness; please alert your server of any food allergies.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Taverna Toscana.</strong> Not the official menu. Copied from their public menu on 2026-09-22. This preview expires October 6.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Taverna Toscana menu preview was free to look at until October 6. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-06T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Al&#39;s Diner Menu</title>
+<meta name="description" content="Menu for Al&#39;s Diner, Carlington (Clyde Ave), Ottawa.">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Al&#39;s Diner</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=834%20Clyde%20Ave%2C%20Ottawa%2C%20Ontario%20K1Z%205A1">834 Clyde Ave, Ottawa, Ontario K1Z 5A1</a><a href="tel:6137617488">(613) 761-7488</a><span>Monday: 6am - 3pm. Tues-Wed: 6am - 7:30pm. Thurs-Fri: 6am - 8pm. Saturday: 6am - 3pm. Sunday: 7am - 3pm</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#al-s-breakfast-specials" data-sec="al-s-breakfast-specials">Al&#39;s Breakfast Specials</a><a href="#fresh-belgian-waffles" data-sec="fresh-belgian-waffles">Fresh Belgian Waffles</a><a href="#sides" data-sec="sides">Sides</a><a href="#eggs-benedict" data-sec="eggs-benedict">Eggs Benedict</a><a href="#three-egg-omelettes" data-sec="three-egg-omelettes">Three Egg Omelettes</a><a href="#breakfast-grill" data-sec="breakfast-grill">Breakfast Grill</a><a href="#breakfast-sandwiches" data-sec="breakfast-sandwiches">Breakfast Sandwiches</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="al-s-breakfast-specials" class="sec">
+      <h2>Al&#39;s Breakfast Specials</h2>
+      <p class="note">Includes your choice side of home fries or baked beans. Toast &amp; coffee are always included. For breakfasts above, substitute english muffin add $.75, bagel $.75, rye $.75, gluten free $2.00, turkey bacon $3.00, peameal bacon $3.00.</p>
+      <ul>
+        <li data-q="good morning special two eggs with your choice of bacon, ham or sausage">
+          <div class="row"><span class="name">Good Morning Special</span><span class="price">$13.50</span></div>
+          <p class="desc">two eggs with your choice of bacon, ham or sausage</p>
+        </li>
+        <li data-q="al&#39;s big hit special al&#39;s good morning special plus a pancake or french toast with butter &amp; syrup">
+          <div class="row"><span class="name">Al&#39;s Big Hit Special</span><span class="price">$16.00</span></div>
+          <p class="desc">Al&#39;s Good Morning Special plus a pancake or french toast with butter &amp; syrup</p>
+        </li>
+        <li data-q="al&#39;s diner special two eggs and side of fruit">
+          <div class="row"><span class="name">Al&#39;s Diner Special</span><span class="price">$14.00</span></div>
+          <p class="desc">two eggs and side of fruit</p>
+        </li>
+        <li data-q="al&#39;s deluxe special two eggs with your choice of bacon, ham or sausage and a side of fruit">
+          <div class="row"><span class="name">Al&#39;s Deluxe Special</span><span class="price">$15.50</span></div>
+          <p class="desc">two eggs with your choice of bacon, ham or sausage and a side of fruit</p>
+        </li>
+        <li data-q="trucker&#39;s special three eggs with bacon, ham and sausage">
+          <div class="row"><span class="name">Trucker&#39;s Special</span><span class="price">$18.00</span></div>
+          <p class="desc">three eggs with bacon, ham and sausage</p>
+        </li>
+        <li data-q="smoked meat &amp; 2 egg special ">
+          <div class="row"><span class="name">Smoked Meat &amp; 2 Egg Special</span><span class="price">$19.00</span></div>
+          
+        </li>
+        <li data-q="smoked salmon bagel fresh bagel topped with smoked salmon lox and red onion served with cream cheese and your choice of fruit or home fries on the side">
+          <div class="row"><span class="name">Smoked Salmon Bagel</span><span class="price">$15.50</span></div>
+          <p class="desc">Fresh bagel topped with smoked salmon lox and red onion served with cream cheese and your choice of fruit or home fries on the side</p>
+        </li></ul>
+    </section>
+    <section id="fresh-belgian-waffles" class="sec">
+      <h2>Fresh Belgian Waffles</h2>
+      <p class="note">A fresh baked malted waffle served with butter and syrup. Flavours available: Blueberry, Banana &amp; Mixed Berries.</p>
+      <ul>
+        <li data-q="waffles only ">
+          <div class="row"><span class="name">Waffles Only</span><span class="price">$16.00</span></div>
+          
+        </li>
+        <li data-q="add your choice of fruit &amp; whipped cream ">
+          <div class="row"><span class="name">Add your choice of fruit &amp; whipped cream</span><span class="price">+$2.00</span></div>
+          
+        </li>
+        <li data-q="add bacon, ham or sausage ">
+          <div class="row"><span class="name">Add bacon, ham or sausage</span><span class="price">+$5.00</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="sides" class="sec">
+      <h2>Sides</h2>
+      
+      <ul>
+        <li data-q="home fries ">
+          <div class="row"><span class="name">Home Fries</span><span class="price">$4.50</span></div>
+          
+        </li>
+        <li data-q="real maple syrup 2oz ">
+          <div class="row"><span class="name">Real Maple Syrup 2oz</span><span class="price">$2.50</span></div>
+          
+        </li>
+        <li data-q="english muffin ">
+          <div class="row"><span class="name">English Muffin</span><span class="price">$3.00</span></div>
+          
+        </li>
+        <li data-q="baked beans ">
+          <div class="row"><span class="name">Baked Beans</span><span class="price">$2.50</span></div>
+          
+        </li>
+        <li data-q="hollandaise ">
+          <div class="row"><span class="name">Hollandaise</span><span class="price">$3.00</span></div>
+          
+        </li>
+        <li data-q="peameal bacon ">
+          <div class="row"><span class="name">Peameal Bacon</span><span class="price">$5.50</span></div>
+          
+        </li>
+        <li data-q="turkey bacon ">
+          <div class="row"><span class="name">Turkey Bacon</span><span class="price">$5.50</span></div>
+          
+        </li>
+        <li data-q="ham, bacon, or sausage ">
+          <div class="row"><span class="name">Ham, Bacon, or Sausage</span><span class="price">$5.00</span></div>
+          
+        </li>
+        <li data-q="fruit cup ">
+          <div class="row"><span class="name">Fruit Cup</span><span class="price">$5.95</span></div>
+          
+        </li>
+        <li data-q="toast ">
+          <div class="row"><span class="name">Toast</span><span class="price">$3.00</span></div>
+          
+        </li>
+        <li data-q="rye toast ">
+          <div class="row"><span class="name">Rye Toast</span><span class="price">$3.25</span></div>
+          
+        </li>
+        <li data-q="gluten free toast ">
+          <div class="row"><span class="name">Gluten Free Toast</span><span class="price">$4.00</span></div>
+          
+        </li>
+        <li data-q="bagel ">
+          <div class="row"><span class="name">Bagel</span><span class="price">$3.00</span></div>
+          
+        </li>
+        <li data-q="bagel w/ cream cheese ">
+          <div class="row"><span class="name">Bagel w/ Cream Cheese</span><span class="price">$3.50</span></div>
+          
+        </li>
+        <li data-q="cottage cheese ">
+          <div class="row"><span class="name">Cottage Cheese</span><span class="price">$6.50</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="eggs-benedict" class="sec">
+      <h2>Eggs Benedict</h2>
+      <p class="note">All bennies include your choice of home fries or baked beans. Coffee or Tea Included.</p>
+      <ul>
+        <li data-q="the classic bennie two poached eggs nestled over an english muffin with your choice of ham or bacon topped with hollandaise sauce">
+          <div class="row"><span class="name">The Classic Bennie</span><span class="price">$19.50</span></div>
+          <p class="desc">two poached eggs nestled over an english muffin with your choice of ham or bacon topped with hollandaise sauce</p>
+        </li>
+        <li data-q="smoked salmon bennie two poached eggs nestled over an english muffin, smoked salmon lox &amp; red onion topped with hollandaise sauce">
+          <div class="row"><span class="name">Smoked Salmon Bennie</span><span class="price">$21.00</span></div>
+          <p class="desc">two poached eggs nestled over an english muffin, smoked salmon lox &amp; red onion topped with hollandaise sauce</p>
+        </li>
+        <li data-q="western bennie two poached eggs nestled over an english muffin, ham, green peppers &amp; onion topped with hollandaise sauce">
+          <div class="row"><span class="name">Western Bennie</span><span class="price">$19.50</span></div>
+          <p class="desc">two poached eggs nestled over an english muffin, ham, green peppers &amp; onion topped with hollandaise sauce</p>
+        </li>
+        <li data-q="montreal bennie two poached eggs nestled over an english muffin with smoked meat topped with hollandaise sauce">
+          <div class="row"><span class="name">Montreal Bennie</span><span class="price">$21.00</span></div>
+          <p class="desc">two poached eggs nestled over an english muffin with smoked meat topped with hollandaise sauce</p>
+        </li>
+        <li data-q="swiss bennie two poached eggs nestled over an english muffin, mushrooms &amp; swiss cheese topped with hollandaise sauce">
+          <div class="row"><span class="name">Swiss Bennie</span><span class="price">$19.50</span></div>
+          <p class="desc">two poached eggs nestled over an english muffin, mushrooms &amp; swiss cheese topped with hollandaise sauce</p>
+        </li>
+        <li data-q="greek bennie two poached eggs nestled over an english muffin with tomatoes &amp; feta cheese topped with hollandaise sauce">
+          <div class="row"><span class="name">Greek Bennie</span><span class="price">$19.50</span></div>
+          <p class="desc">two poached eggs nestled over an english muffin with tomatoes &amp; feta cheese topped with hollandaise sauce</p>
+        </li></ul>
+    </section>
+    <section id="three-egg-omelettes" class="sec">
+      <h2>Three Egg Omelettes</h2>
+      <p class="note">All omelette&#39;s include your choice of home fries or baked beans. Coffee or Tea Included.</p>
+      <ul>
+        <li data-q="al&#39;s deluxe omelette mushrooms, tomatoes, green peppers, onions, ham, monterey jack, chedder &amp; mozzarella cheese">
+          <div class="row"><span class="name">Al&#39;s Deluxe Omelette</span><span class="price">$20.00</span></div>
+          <p class="desc">mushrooms, tomatoes, green peppers, onions, ham, monterey jack, chedder &amp; mozzarella cheese</p>
+        </li>
+        <li data-q="greek omelette tomatoes, black olives, green peppers, onions &amp; feta cheese">
+          <div class="row"><span class="name">Greek Omelette</span><span class="price">$19.50</span></div>
+          <p class="desc">tomatoes, black olives, green peppers, onions &amp; feta cheese</p>
+        </li>
+        <li data-q="western omelette ham, green peppers &amp; onions">
+          <div class="row"><span class="name">Western Omelette</span><span class="price">$18.00</span></div>
+          <p class="desc">ham, green peppers &amp; onions</p>
+        </li>
+        <li data-q="three cheese omelette cheddar, monterey jack &amp; mozzarella">
+          <div class="row"><span class="name">Three Cheese Omelette</span><span class="price">$19.00</span></div>
+          <p class="desc">cheddar, monterey jack &amp; mozzarella</p>
+        </li>
+        <li data-q="smoked meat omelette ">
+          <div class="row"><span class="name">Smoked Meat Omelette</span><span class="price">$19.50</span></div>
+          
+        </li>
+        <li data-q="spanish omelette salsa, mushrooms &amp; green peppers">
+          <div class="row"><span class="name">Spanish Omelette</span><span class="price">$18.00</span></div>
+          <p class="desc">salsa, mushrooms &amp; green peppers</p>
+        </li>
+        <li data-q="vegetarian omelette mushrooms, green peppers, tomatoes &amp; onion">
+          <div class="row"><span class="name">Vegetarian Omelette</span><span class="price">$18.00</span></div>
+          <p class="desc">mushrooms, green peppers, tomatoes &amp; onion</p>
+        </li></ul>
+    </section>
+    <section id="breakfast-grill" class="sec">
+      <h2>Breakfast Grill</h2>
+      <p class="note">All french toast &amp; pancakes come with three slices. Butter &amp; syrup included. Coffee or Tea Included.</p>
+      <ul>
+        <li data-q="cinnamon raisin french toast ">
+          <div class="row"><span class="name">Cinnamon Raisin French Toast</span><span class="price">$17.50</span></div>
+          
+        </li>
+        <li data-q="french toast ">
+          <div class="row"><span class="name">French Toast</span><span class="price">$16.50</span></div>
+          
+        </li>
+        <li data-q="original pancakes ">
+          <div class="row"><span class="name">Original Pancakes</span><span class="price">$16.00</span></div>
+          
+        </li>
+        <li data-q="blueberry pancakes ">
+          <div class="row"><span class="name">Blueberry Pancakes</span><span class="price">$18.50</span></div>
+          
+        </li>
+        <li data-q="banana pancakes ">
+          <div class="row"><span class="name">Banana Pancakes</span><span class="price">$18.50</span></div>
+          
+        </li>
+        <li data-q="chocolate chip pancakes ">
+          <div class="row"><span class="name">Chocolate Chip Pancakes</span><span class="price">$18.50</span></div>
+          
+        </li>
+        <li data-q="add bacon, ham or sausage ">
+          <div class="row"><span class="name">Add bacon, ham or sausage</span><span class="price">+$5.00</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="breakfast-sandwiches" class="sec">
+      <h2>Breakfast Sandwiches</h2>
+      <p class="note">Make any sandwich a platter with home fries for $3.50.</p>
+      <ul>
+        <li data-q="tomato ">
+          <div class="row"><span class="name">Tomato</span><span class="price">$5.25</span></div>
+          
+        </li>
+        <li data-q="blt ">
+          <div class="row"><span class="name">BLT</span><span class="price">$6.00</span></div>
+          
+        </li>
+        <li data-q="fried egg ">
+          <div class="row"><span class="name">Fried Egg</span><span class="price">$5.25</span></div>
+          
+        </li>
+        <li data-q="fried egg &amp; bacon ">
+          <div class="row"><span class="name">Fried Egg &amp; Bacon</span><span class="price">$6.00</span></div>
+          
+        </li>
+        <li data-q="grilled cheese ">
+          <div class="row"><span class="name">Grilled Cheese</span><span class="price">$5.75</span></div>
+          
+        </li>
+        <li data-q="grilled cheese &amp; bacon ">
+          <div class="row"><span class="name">Grilled Cheese &amp; Bacon</span><span class="price">$6.50</span></div>
+          
+        </li>
+        <li data-q="grilled cheese &amp; ham ">
+          <div class="row"><span class="name">Grilled Cheese &amp; Ham</span><span class="price">$6.50</span></div>
+          
+        </li>
+        <li data-q="western ">
+          <div class="row"><span class="name">Western</span><span class="price">$6.00</span></div>
+          
+        </li>
+        <li data-q="tomato &amp; cheese ">
+          <div class="row"><span class="name">Tomato &amp; Cheese</span><span class="price">$5.75</span></div>
+          
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>All Day Breakfast! 7 days a week. Dine-in | Delivery | Takeout.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Al&#39;s Diner.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Al&#39;s Diner menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's US$29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for US$29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Westport Cafe &amp; Bar Menu</title>
+<meta name="description" content="Menu for Westport Cafe &amp; Bar, Westport (Westport Rd).">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Westport Cafe &amp; Bar</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=419%20Westport%20Rd%2C%20Kansas%20City%2C%20MO%2064111">419 Westport Rd, Kansas City, MO 64111</a><a href="tel:8169314740">(816) 931-4740</a><span>Dinner Tuesday-Saturday 4:00 PM - 11:30 PM; Brunch Sunday 10:00 AM - 3:00 PM; closed Monday</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#hors-d-oeuvres" data-sec="hors-d-oeuvres">Hors d&#39;Oeuvres</a><a href="#entre-amis" data-sec="entre-amis">Entre Amis</a><a href="#plats-principaux" data-sec="plats-principaux">Plats Principaux</a><a href="#sandwiches" data-sec="sandwiches">Sandwiches</a><a href="#p-tes" data-sec="p-tes">Pâtes</a><a href="#sides" data-sec="sides">Sides</a><a href="#chef-s-special" data-sec="chef-s-special">Chef&#39;s Special</a><a href="#champagne-sparkling" data-sec="champagne-sparkling">Champagne &amp; Sparkling</a><a href="#vin-ros-orange" data-sec="vin-ros-orange">Vin Rosé &amp; Orange</a><a href="#vin-blanc" data-sec="vin-blanc">Vin Blanc</a><a href="#vin-rouge" data-sec="vin-rouge">Vin Rouge</a><a href="#beer" data-sec="beer">Beer</a><a href="#cocktails-seasonal" data-sec="cocktails-seasonal">Cocktails - Seasonal</a><a href="#cocktails-cafe-classics" data-sec="cocktails-cafe-classics">Cocktails - Cafe Classics</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="hors-d-oeuvres" class="sec">
+      <h2>Hors d&#39;Oeuvres</h2>
+      
+      <ul>
+        <li data-q="accra-laitos (5) salted cod fritter served with avocado lime creme fraiche, comte nf">
+          <div class="row"><span class="name">Accra-Laitos (5)</span><span class="price">$16.50</span></div>
+          <p class="desc">Salted cod fritter served with avocado lime creme fraiche, comte NF</p>
+        </li>
+        <li data-q="brioche service (4) home made brioche served with isigny butter from normandy nf. add 1 oz smoked trout roe* +15.5. add french radish +3">
+          <div class="row"><span class="name">Brioche Service (4)</span><span class="price">$11.50</span></div>
+          <p class="desc">Home made brioche served with Isigny butter from Normandy NF. Add 1 oz smoked trout roe* +15.5. Add French radish +3</p>
+        </li>
+        <li data-q="arugula salad lemon truffle vinaigrette, french radish, grana padano cheese nf | gf">
+          <div class="row"><span class="name">Arugula Salad</span><span class="price">$11.50</span></div>
+          <p class="desc">Lemon truffle vinaigrette, French radish, grana padano cheese NF | GF</p>
+        </li>
+        <li data-q="steak tartare* strawberry, basil, pink peppercorn, pickled mustard seed, fried shallot nf | df. add egg yolk* +1.75">
+          <div class="row"><span class="name">Steak Tartare*</span><span class="price">$24</span></div>
+          <p class="desc">Strawberry, basil, pink peppercorn, pickled mustard seed, fried shallot NF | DF. Add egg yolk* +1.75</p>
+        </li>
+        <li data-q="chilled oysters* (3) pickled shiitake, cucumber, smoked trout roe nf | df. add one oyster* +4.75">
+          <div class="row"><span class="name">Chilled Oysters* (3)</span><span class="price">$13.50</span></div>
+          <p class="desc">Pickled shiitake, cucumber, smoked trout roe NF | DF. Add one oyster* +4.75</p>
+        </li></ul>
+    </section>
+    <section id="entre-amis" class="sec">
+      <h2>Entre Amis</h2>
+      
+      <ul>
+        <li data-q="cheese plate 4 cheeses with accompaniments">
+          <div class="row"><span class="name">Cheese Plate</span><span class="price">$18.75</span></div>
+          <p class="desc">4 cheeses with accompaniments</p>
+        </li>
+        <li data-q="saucisson en brioche buttery beef sausage stuffed pistachio brioche, pineapple, prune chutney, pickled mustard seed, bordelaise sauce">
+          <div class="row"><span class="name">Saucisson en Brioche</span><span class="price">$17.75</span></div>
+          <p class="desc">Buttery beef sausage stuffed pistachio brioche, pineapple, prune chutney, pickled mustard seed, bordelaise sauce</p>
+        </li>
+        <li data-q="salmon rillette fresh cucumber, cucumber lime broth, preserved lime supreme, basil oil gf | df | nf">
+          <div class="row"><span class="name">Salmon Rillette</span><span class="price">$16.75</span></div>
+          <p class="desc">Fresh cucumber, cucumber lime broth, preserved lime supreme, basil oil GF | DF | NF</p>
+        </li>
+        <li data-q="cassoulet skewer (4) duck confit meatball, slow cooked pork belly, prune, beet condiment, fresno oil gf | nf">
+          <div class="row"><span class="name">Cassoulet Skewer (4)</span><span class="price">$23.50</span></div>
+          <p class="desc">Duck confit meatball, slow cooked pork belly, prune, beet condiment, fresno oil GF | NF</p>
+        </li>
+        <li data-q="barbajuan ravioli (5) house made fried ravioli stuffed with seasonal veggies, comte, ricotta. seasonal espuma nf">
+          <div class="row"><span class="name">Barbajuan Ravioli (5)</span><span class="price">$15.50</span></div>
+          <p class="desc">House made fried ravioli stuffed with seasonal veggies, comte, ricotta. Seasonal espuma NF</p>
+        </li></ul>
+    </section>
+    <section id="plats-principaux" class="sec">
+      <h2>Plats Principaux</h2>
+      
+      <ul>
+        <li data-q="halibut papillotte* (not available after 10 pm) banana leaf, zucchini, french tabbouleh, vierge sauce, tapenade and mofungo nf | df">
+          <div class="row"><span class="name">Halibut Papillotte* (not available after 10 PM)</span><span class="price">$37.50</span></div>
+          <p class="desc">Banana leaf, zucchini, French tabbouleh, vierge sauce, tapenade and mofungo NF | DF</p>
+        </li>
+        <li data-q="seared diver scallops black truffle risotto, vierge sauce, citrus vinegar gf | nf">
+          <div class="row"><span class="name">Seared Diver Scallops</span><span class="price">$44.50</span></div>
+          <p class="desc">Black truffle risotto, vierge sauce, citrus vinegar GF | NF</p>
+        </li>
+        <li data-q="steak frites* béarnaise, maitre d&#39; butter, hand-cut pommes frites nf. sauce au poivre +7">
+          <div class="row"><span class="name">Steak Frites*</span><span class="price">$39.50</span></div>
+          <p class="desc">Béarnaise, maitre D&#39; butter, hand-cut pommes frites NF. Sauce au poivre +7</p>
+        </li>
+        <li data-q="agneau aux fraises* (not available after 10 pm) stuffed lamb saddle, seasonal condiment, pea/mint risotto, strawberry gastrique gf">
+          <div class="row"><span class="name">Agneau aux Fraises* (not available after 10 PM)</span><span class="price">$40.50</span></div>
+          <p class="desc">Stuffed lamb saddle, seasonal condiment, pea/mint risotto, strawberry gastrique GF</p>
+        </li>
+        <li data-q="st barth salad chipotle glazed shrimps, herb goat cheese, plantain chips, guava dressing, coconut dukkah, seasonal vegetables">
+          <div class="row"><span class="name">St Barth Salad</span><span class="price">$29</span></div>
+          <p class="desc">Chipotle glazed shrimps, herb goat cheese, plantain chips, guava dressing, coconut dukkah, seasonal vegetables</p>
+        </li></ul>
+    </section>
+    <section id="sandwiches" class="sec">
+      <h2>Sandwiches</h2>
+      
+      <ul>
+        <li data-q="croque madame* gruyere, ham, mornay, sunny eggs, fries or salad nf">
+          <div class="row"><span class="name">Croque Madame*</span><span class="price">$19.75</span></div>
+          <p class="desc">Gruyere, ham, mornay, sunny eggs, fries or salad NF</p>
+        </li>
+        <li data-q="burger au poivre* boston lettuce, tomato, onion, pickle, au poivre mayo, black peppercorn">
+          <div class="row"><span class="name">Burger au Poivre*</span><span class="price">$25</span></div>
+          <p class="desc">Boston lettuce, tomato, onion, pickle, au poivre mayo, black peppercorn</p>
+        </li></ul>
+    </section>
+    <section id="p-tes" class="sec">
+      <h2>Pâtes</h2>
+      
+      <ul>
+        <li data-q="seasonal risotto coconut milk, sweet pea and mint puree, seasonal pickles and veggies gf | df | nf. add 3 scallops +25 / 3 shrimps +16">
+          <div class="row"><span class="name">Seasonal Risotto</span><span class="price">$24</span></div>
+          <p class="desc">Coconut milk, sweet pea and mint puree, seasonal pickles and veggies GF | DF | NF. Add 3 scallops +25 / 3 shrimps +16</p>
+        </li>
+        <li data-q="escargot pasta homemade spinach pasta, snail, maitre d&#39; beurre blanc, comte espuma, fried shallot, seasonal veggies nf">
+          <div class="row"><span class="name">Escargot Pasta</span><span class="price">$29.75</span></div>
+          <p class="desc">Homemade spinach pasta, snail, maitre D&#39; beurre blanc, comte espuma, fried shallot, seasonal veggies NF</p>
+        </li></ul>
+    </section>
+    <section id="sides" class="sec">
+      <h2>Sides</h2>
+      
+      <ul>
+        <li data-q="le cafe pommes frites hand-cut, mayo &amp; ketchup nf | df. add truffle and grana padano +3">
+          <div class="row"><span class="name">Le Cafe Pommes Frites</span><span class="price">$9.50</span></div>
+          <p class="desc">Hand-cut, mayo &amp; ketchup NF | DF. Add truffle and grana padano +3</p>
+        </li>
+        <li data-q="black truffle risotto ">
+          <div class="row"><span class="name">Black Truffle Risotto</span><span class="price">$13.50</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="chef-s-special" class="sec">
+      <h2>Chef&#39;s Special</h2>
+      <p class="note">Steak Night every Tuesday, served with bottomless frites.</p>
+      <ul>
+        <li data-q="special of the day ask your server about the special of the day!">
+          <div class="row"><span class="name">Special of the Day</span><span class="price">Market price</span></div>
+          <p class="desc">Ask your server about the special of the day!</p>
+        </li></ul>
+    </section>
+    <section id="champagne-sparkling" class="sec">
+      <h2>Champagne &amp; Sparkling</h2>
+      
+      <ul>
+        <li data-q="n/a sparkling, fritz muller ">
+          <div class="row"><span class="name">N/A Sparkling, Fritz Muller</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$9.50</b></span><span class="pp"><span class="pl">Bottle</span> <b>$37.50</b></span></div>
+        </li>
+        <li data-q="henry varnay brut, france ">
+          <div class="row"><span class="name">Henry Varnay brut, France</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$10.50</b></span><span class="pp"><span class="pl">Bottle</span> <b>$39.50</b></span></div>
+        </li>
+        <li data-q="henry varnay rose, france ">
+          <div class="row"><span class="name">Henry varnay rose, France</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$10.50</b></span><span class="pp"><span class="pl">Bottle</span> <b>$39.50</b></span></div>
+        </li>
+        <li data-q="crémant du jura, desire petit, france ">
+          <div class="row"><span class="name">Crémant Du jura, Desire Petit, France</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$19</b></span><span class="pp"><span class="pl">Bottle</span> <b>$75</b></span></div>
+        </li>
+        <li data-q="cremant du jura rose, desire petit, france ">
+          <div class="row"><span class="name">Cremant du jura rose, Desire petit, France</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$19</b></span><span class="pp"><span class="pl">Bottle</span> <b>$75</b></span></div>
+        </li>
+        <li data-q="le mesnil grand cru, champagne, france ">
+          <div class="row"><span class="name">Le mesnil grand cru, Champagne, France</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Bottle</span> <b>$105</b></span></div>
+        </li>
+        <li data-q="veuve clicquot yellow label, champagne, france ">
+          <div class="row"><span class="name">Veuve Clicquot yellow label, Champagne, France</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Bottle</span> <b>$155</b></span></div>
+        </li>
+        <li data-q="marguet shaman grand cru 2020, champagne, france ">
+          <div class="row"><span class="name">marguet shaman grand cru 2020, Champagne, France</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Bottle</span> <b>$177</b></span></div>
+        </li></ul>
+    </section>
+    <section id="vin-ros-orange" class="sec">
+      <h2>Vin Rosé &amp; Orange</h2>
+      
+      <ul>
+        <li data-q="house rose, grenache, southern france ">
+          <div class="row"><span class="name">House rose, Grenache, Southern France</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$10.50</b></span><span class="pp"><span class="pl">Bottle</span> <b>$37.50</b></span></div>
+        </li>
+        <li data-q="clos cibonne tentations rose, provence, france ">
+          <div class="row"><span class="name">Clos cibonne tentations rose, Provence, France</span><span class="price">Bottle | $57</span></div>
+          
+        </li>
+        <li data-q="sea sex and sun, ami, grenache banc, macabeu, skin contact ">
+          <div class="row"><span class="name">sea sex and sun, ami, Grenache banc, macabeu, skin contact</span><span class="price">Bottle | $68</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="vin-blanc" class="sec">
+      <h2>Vin Blanc</h2>
+      
+      <ul>
+        <li data-q="house white, chardonnay, southern france ">
+          <div class="row"><span class="name">House white, Chardonnay, Southern France</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$10.50</b></span><span class="pp"><span class="pl">Bottle</span> <b>$37.50</b></span></div>
+        </li>
+        <li data-q="chenin, vouvray sec, loire valley, france ">
+          <div class="row"><span class="name">chenin, Vouvray sec, Loire Valley, France</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$14.50</b></span><span class="pp"><span class="pl">Bottle</span> <b>$58</b></span></div>
+        </li>
+        <li data-q="sauvignon blanc, cheverny, loire valley, france ">
+          <div class="row"><span class="name">Sauvignon blanc, cheverny, Loire Valley, France</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$14.50</b></span><span class="pp"><span class="pl">Bottle</span> <b>$58</b></span></div>
+        </li>
+        <li data-q="gewurztraminer, 40 day, union sacre, paso robles, california ">
+          <div class="row"><span class="name">gewurztraminer, 40 day, union sacre, Paso robles, California</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$14.50</b></span><span class="pp"><span class="pl">Bottle</span> <b>$58</b></span></div>
+        </li>
+        <li data-q="chardonnay, macon village, thevenet &amp; fils, burgundy, france ">
+          <div class="row"><span class="name">chardonnay, Macon village, thevenet &amp; fils, Burgundy, France</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$15.50</b></span><span class="pp"><span class="pl">Bottle</span> <b>$60</b></span></div>
+        </li>
+        <li data-q="sauvignon blanc, sancerre lucien crochet, loire valley, france ">
+          <div class="row"><span class="name">Sauvignon Blanc, Sancerre lucien crochet, Loire Valley, France</span><span class="price">Bottle | $92</span></div>
+          
+        </li>
+        <li data-q="chardonnay, homard d&#39;or, ami, burgundy, france ">
+          <div class="row"><span class="name">chardonnay, homard d&#39;or, ami, Burgundy, France</span><span class="price">Bottle | $83</span></div>
+          
+        </li>
+        <li data-q="savagnin, floral &quot;s&quot;, desire petit, jura, france ">
+          <div class="row"><span class="name">savagnin, floral &quot;s&quot;, desire petit, Jura, France</span><span class="price">Bottle | $89</span></div>
+          
+        </li>
+        <li data-q="roussane, saint joseph, chave, rhone valley, france ">
+          <div class="row"><span class="name">Roussane, saint joseph, chave, Rhone valley, France</span><span class="price">Bottle | $78</span></div>
+          
+        </li>
+        <li data-q="pinot blanc, fly me to the moon, alsace, france ">
+          <div class="row"><span class="name">pinot blanc, fly me to the moon, Alsace, France</span><span class="price">Bottle | $70</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="vin-rouge" class="sec">
+      <h2>Vin Rouge</h2>
+      
+      <ul>
+        <li data-q="house red, grenache, rhone valley, france ">
+          <div class="row"><span class="name">house red, Grenache, Rhone valley, France</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$10.50</b></span><span class="pp"><span class="pl">Bottle</span> <b>$39.50</b></span></div>
+        </li>
+        <li data-q="cab sauv/franc/merlot, bordeaux clarendelle, bordeaux, france ">
+          <div class="row"><span class="name">Cab Sauv/Franc/Merlot, Bordeaux Clarendelle, Bordeaux, France</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$15.50</b></span><span class="pp"><span class="pl">Bottle</span> <b>$60</b></span></div>
+        </li>
+        <li data-q="grenache noir, la manarine, rhone valley, france ">
+          <div class="row"><span class="name">Grenache noir, la manarine, Rhone Valley, France</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$14.50</b></span><span class="pp"><span class="pl">Bottle</span> <b>$56</b></span></div>
+        </li>
+        <li data-q="cabernet sauvignon, clos de napa, california, napa valley ">
+          <div class="row"><span class="name">cabernet sauvignon, clos de napa, California, Napa valley</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$16.75</b></span><span class="pp"><span class="pl">Bottle</span> <b>$65</b></span></div>
+        </li>
+        <li data-q="lambrusco, chiarli, italy ">
+          <div class="row"><span class="name">Lambrusco, chiarli, Italy</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$13.50</b></span><span class="pp"><span class="pl">Bottle</span> <b>$48.50</b></span></div>
+        </li>
+        <li data-q="pinot noir, cloudline drouhin, oregon, williamette valley ">
+          <div class="row"><span class="name">Pinot Noir, cloudline drouhin, Oregon, Williamette valley</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$15.50</b></span><span class="pp"><span class="pl">Bottle</span> <b>$58</b></span></div>
+        </li>
+        <li data-q="poulsard, desire petit, jura, france ">
+          <div class="row"><span class="name">poulsard, desire petit, Jura, France</span><span class="price">Bottle | $79</span></div>
+          
+        </li>
+        <li data-q="pinot noir, jean chauvenet, noyer du pendu, burgundy, france ">
+          <div class="row"><span class="name">Pinot Noir, Jean Chauvenet, Noyer du pendu, Burgundy, France</span><span class="price">Bottle | $98</span></div>
+          
+        </li>
+        <li data-q="pinot noir, m.colin, chassagne montrachet, burgundy, france ">
+          <div class="row"><span class="name">Pinot Noir, M.Colin, chassagne montrachet, Burgundy, France</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Bottle</span> <b>$115</b></span></div>
+        </li>
+        <li data-q="pinot noir, parent, pommard, burgundy, france ">
+          <div class="row"><span class="name">Pinot Noir, parent, pommard, Burgundy, France</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Bottle</span> <b>$240</b></span></div>
+        </li>
+        <li data-q="gamay, raisins gaulois, m&amp;c lapierre, beaujolais, france ">
+          <div class="row"><span class="name">Gamay, Raisins Gaulois, M&amp;C Lapierre, Beaujolais, France</span><span class="price">Bottle | $78</span></div>
+          
+        </li>
+        <li data-q="gamay, morgon, m&amp;c lapierre, beaujolais, france ">
+          <div class="row"><span class="name">Gamay, Morgon, M&amp;C Lapierre, Beaujolais, France</span><span class="price">Bottle | $99</span></div>
+          
+        </li>
+        <li data-q="cab franc/merlot, saint emilion grand cru, haut segottes, bordeaux ">
+          <div class="row"><span class="name">Cab Franc/Merlot, Saint Emilion grand cru, Haut Segottes, Bordeaux</span><span class="price">Bottle | $98</span></div>
+          
+        </li>
+        <li data-q="merlot/cab sauvignon, saint emilien, le puy vin de france, bordeaux ">
+          <div class="row"><span class="name">Merlot/cab sauvignon, Saint Emilien, Le Puy vin de France, Bordeaux</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Bottle</span> <b>$140</b></span></div>
+        </li>
+        <li data-q="cab sauvignon/merlot, margaux, bordeaux, blason d&#39;issan ">
+          <div class="row"><span class="name">Cab Sauvignon/merlot, margaux, Bordeaux, Blason D&#39;Issan</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Bottle</span> <b>$115</b></span></div>
+        </li>
+        <li data-q="pauillac, yannick mirande, chateau chantecle, bordeaux ">
+          <div class="row"><span class="name">pauillac, yannick mirande, Chateau Chantecle, Bordeaux</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Bottle</span> <b>$295</b></span></div>
+        </li>
+        <li data-q="syrah/grenache, gigondas, gour de chaule, rhone valley, france ">
+          <div class="row"><span class="name">syrah/grenache, gigondas, gour de chaule, Rhone valley, France</span><span class="price">Bottle | $98</span></div>
+          
+        </li>
+        <li data-q="châteauneuf-du-pape, domaine de cristia, rhone valley, france ">
+          <div class="row"><span class="name">Châteauneuf-Du-Pape, Domaine de cristia, Rhone valley, France</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Bottle</span> <b>$125</b></span></div>
+        </li>
+        <li data-q="châteauneuf-du-pape, isabel ferrando, rhone valley, france ">
+          <div class="row"><span class="name">Châteauneuf-Du-Pape, Isabel ferrando, Rhone valley, France</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Bottle</span> <b>$260</b></span></div>
+        </li>
+        <li data-q="cab franc/cab sauv/merlot le pech abusé, buzet, france ">
+          <div class="row"><span class="name">Cab Franc/Cab Sauv/Merlot Le Pech Abusé, Buzet, France</span><span class="price">Bottle | $78</span></div>
+          
+        </li>
+        <li data-q="amarone della valpolicella, giuseppe campagnola, veneto, italy ">
+          <div class="row"><span class="name">Amarone Della Valpolicella, Giuseppe Campagnola, Veneto, Italy</span><span class="price">Bottle | $94</span></div>
+          
+        </li>
+        <li data-q="cabernet sauvignon, jordan, alexander valley, sonoma, california ">
+          <div class="row"><span class="name">Cabernet sauvignon, Jordan, Alexander Valley, Sonoma, California</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Bottle</span> <b>$187</b></span></div>
+        </li></ul>
+    </section>
+    <section id="beer" class="sec">
+      <h2>Beer</h2>
+      
+      <ul>
+        <li data-q="alma mader seasonal, kc ">
+          <div class="row"><span class="name">Alma Mader Seasonal, KC</span><span class="price">$9.50</span></div>
+          
+        </li>
+        <li data-q="torn label seasonal, kc ">
+          <div class="row"><span class="name">Torn Label Seasonal, KC</span><span class="price">$9.50</span></div>
+          
+        </li>
+        <li data-q="stella artois ">
+          <div class="row"><span class="name">Stella Artois</span><span class="price">$7.50</span></div>
+          
+        </li>
+        <li data-q="kronenbourg 1664 try it with our house amaro blend +7.5">
+          <div class="row"><span class="name">Kronenbourg 1664</span><span class="price">$7.50</span></div>
+          <p class="desc">Try it with our house amaro blend +7.5</p>
+        </li>
+        <li data-q="duvel ">
+          <div class="row"><span class="name">Duvel</span><span class="price">$11.50</span></div>
+          
+        </li>
+        <li data-q="miller high life the champagne of beer">
+          <div class="row"><span class="name">Miller High Life</span><span class="price">$4.50</span></div>
+          <p class="desc">The champagne of beer</p>
+        </li>
+        <li data-q="guinness ">
+          <div class="row"><span class="name">Guinness</span><span class="price">$7.50</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="cocktails-seasonal" class="sec">
+      <h2>Cocktails - Seasonal</h2>
+      
+      <ul>
+        <li data-q="bronson&#39;s clarified punch original - bourbon, apples, ginger, spices. perennial - vodka, apricot, tea, blossoms">
+          <div class="row"><span class="name">Bronson&#39;s Clarified Punch</span><span class="price">$15.50</span></div>
+          <p class="desc">Original - bourbon, apples, ginger, spices. Perennial - vodka, apricot, tea, blossoms</p>
+        </li>
+        <li data-q="not a sbagliato negroni shrub, sparkling wine">
+          <div class="row"><span class="name">Not a Sbagliato</span><span class="price">$15.50</span></div>
+          <p class="desc">negroni shrub, sparkling wine</p>
+        </li>
+        <li data-q="jadecutter gin, tropical herbs, cucumber, palm sugar, lime">
+          <div class="row"><span class="name">Jadecutter</span><span class="price">$15.50</span></div>
+          <p class="desc">gin, tropical herbs, cucumber, palm sugar, lime</p>
+        </li>
+        <li data-q="southpaw bourbon, peach, honey, yuzu, shiso">
+          <div class="row"><span class="name">Southpaw</span><span class="price">$15.50</span></div>
+          <p class="desc">bourbon, peach, honey, yuzu, shiso</p>
+        </li>
+        <li data-q="crimson grove tequila, clarified strawberry, basil, hibiscus, vermouth">
+          <div class="row"><span class="name">Crimson Grove</span><span class="price">$15.50</span></div>
+          <p class="desc">tequila, clarified strawberry, basil, hibiscus, vermouth</p>
+        </li>
+        <li data-q="phantom limb gin, chartreuse, soursop, cinnamon, lime, cilantro oil">
+          <div class="row"><span class="name">Phantom Limb</span><span class="price">$15.50</span></div>
+          <p class="desc">gin, chartreuse, soursop, cinnamon, lime, cilantro oil</p>
+        </li>
+        <li data-q="mink deville dark rum, cola reduction, orange, lemon, black cherry">
+          <div class="row"><span class="name">Mink Deville</span><span class="price">$15.50</span></div>
+          <p class="desc">dark rum, cola reduction, orange, lemon, black cherry</p>
+        </li>
+        <li data-q="tardy slip japanese whiskey, sherry, umeshu, plum, lemon">
+          <div class="row"><span class="name">Tardy Slip</span><span class="price">$15.50</span></div>
+          <p class="desc">japanese whiskey, sherry, umeshu, plum, lemon</p>
+        </li>
+        <li data-q="gold soundz mezcal, pineau des charentes, pineapple, turmeric">
+          <div class="row"><span class="name">Gold Soundz</span><span class="price">$15.50</span></div>
+          <p class="desc">mezcal, pineau des charentes, pineapple, turmeric</p>
+        </li></ul>
+    </section>
+    <section id="cocktails-cafe-classics" class="sec">
+      <h2>Cocktails - Cafe Classics</h2>
+      
+      <ul>
+        <li data-q="house spritz aperitif blend, sparkling water, sparkling wine">
+          <div class="row"><span class="name">House Spritz</span><span class="price">$14.50</span></div>
+          <p class="desc">aperitif blend, sparkling water, sparkling wine</p>
+        </li>
+        <li data-q="french 75 gin, lemon, simple, sparkling wine">
+          <div class="row"><span class="name">French 75</span><span class="price">$14.50</span></div>
+          <p class="desc">gin, lemon, simple, sparkling wine</p>
+        </li>
+        <li data-q="pimms cup pimms no. 1, ginger syrup, lime, soda">
+          <div class="row"><span class="name">Pimms Cup</span><span class="price">$14.50</span></div>
+          <p class="desc">pimms no. 1, ginger syrup, lime, soda</p>
+        </li>
+        <li data-q="charlie sour bourbon, earl grey tea, elderflower, lemon">
+          <div class="row"><span class="name">Charlie Sour</span><span class="price">$15.50</span></div>
+          <p class="desc">bourbon, earl grey tea, elderflower, lemon</p>
+        </li>
+        <li data-q="espresso martini broadway cafe espresso, vodka, licor 43">
+          <div class="row"><span class="name">Espresso Martini</span><span class="price">$14.50</span></div>
+          <p class="desc">broadway cafe espresso, vodka, licor 43</p>
+        </li>
+        <li data-q="american in paris overproof rye, cappellitti, suze, peychauds bitters">
+          <div class="row"><span class="name">American in Paris</span><span class="price">$14.50</span></div>
+          <p class="desc">overproof rye, cappellitti, suze, peychauds bitters</p>
+        </li>
+        <li data-q="copper rabbit builder&#39;s gin, apricot, szechuan peppercorn, cinnamon, lemon, egg white">
+          <div class="row"><span class="name">Copper Rabbit</span><span class="price">$15.50</span></div>
+          <p class="desc">builder&#39;s gin, apricot, szechuan peppercorn, cinnamon, lemon, egg white</p>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>*Consuming raw or undercooked meats, poultry, shellfish, or eggs may increase your risk of foodborne illness. Please let us know if you have any food allergies. NF: Nut Free. DF: Dairy Free. GF: Gluten free. Executive Chef Romain Monnoyeur | Sous Chef Christopher Velez.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Westport Cafe &amp; Bar.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Westport Cafe &amp; Bar menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

@@ -1,0 +1,768 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Ruth&#39;s Diner Menu</title>
+<meta name="description" content="Menu for Ruth&#39;s Diner, Emigration Canyon.">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Ruth&#39;s Diner</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=4160%20E%20Emigration%20Canyon%20Rd%2C%20Salt%20Lake%20City%2C%20UT%2084108">4160 E Emigration Canyon Rd, Salt Lake City, UT 84108</a><a href="tel:8015825807">(801) 582-5807</a><span>Monday 8:00 AM - 9:00 PM; Tuesday-Wednesday closed; Thursday 8:00 AM - 9:00 PM; Friday-Saturday 8:00 AM - 10:00 PM; Sunday 8:00 AM - 9:00 PM. Early Bird Special served 8 a.m. to 9 a.m. only</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#breakfast-favorites" data-sec="breakfast-favorites">Breakfast Favorites</a><a href="#ruth-s-benedicts" data-sec="ruth-s-benedicts">Ruth&#39;s Benedicts</a><a href="#3-egg-omelettes" data-sec="3-egg-omelettes">3 Egg Omelettes</a><a href="#sweeter-side" data-sec="sweeter-side">Sweeter Side</a><a href="#eggs-plus" data-sec="eggs-plus">Eggs Plus</a><a href="#appetizers" data-sec="appetizers">Appetizers</a><a href="#salads" data-sec="salads">Salads</a><a href="#sandwiches" data-sec="sandwiches">Sandwiches</a><a href="#lunch-favorites" data-sec="lunch-favorites">Lunch Favorites</a><a href="#ruth-s-burgers" data-sec="ruth-s-burgers">Ruth&#39;s Burgers</a><a href="#just-for-kids" data-sec="just-for-kids">Just for Kids</a><a href="#ruth-s-famous-desserts" data-sec="ruth-s-famous-desserts">Ruth&#39;s Famous Desserts</a><a href="#cold-beverages" data-sec="cold-beverages">Cold Beverages</a><a href="#hot-beverages" data-sec="hot-beverages">Hot Beverages</a><a href="#wine-sparklers" data-sec="wine-sparklers">Wine - Sparklers</a><a href="#wine-white-wines" data-sec="wine-white-wines">Wine - White Wines</a><a href="#wine-red-wines" data-sec="wine-red-wines">Wine - Red Wines</a><a href="#beers-on-draft" data-sec="beers-on-draft">Beers on Draft</a><a href="#beers" data-sec="beers">Beers</a><a href="#utah-microbrews" data-sec="utah-microbrews">Utah Microbrews</a><a href="#utah-high-point-beers" data-sec="utah-high-point-beers">Utah High Point Beers</a><a href="#ruth-s-favorites-liquor-menu" data-sec="ruth-s-favorites-liquor-menu">Ruth&#39;s Favorites (Liquor Menu)</a><a href="#mocktails" data-sec="mocktails">Mocktails</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="breakfast-favorites" class="sec">
+      <h2>Breakfast Favorites</h2>
+      <p class="note">The following are served with Ruth&#39;s famous Mile High biscuit. Served with choice of hash browns, half grapefruit, Spanish rice and pinto beans or cottage cheese.</p>
+      <ul>
+        <li data-q="ruth&#39;s famous mile high biscuits and country gravy a recession special. add 4.99 for bacon, sausage or ham">
+          <div class="row"><span class="name">Ruth&#39;s Famous Mile High Biscuits and Country Gravy</span><span class="price">$13.29</span></div>
+          <p class="desc">a recession special. Add 4.99 for Bacon, Sausage or Ham</p>
+        </li>
+        <li data-q="breakfast burrito a large flour tortilla filled with scrambled eggs, chorizo sausage, onions, green peppers, cheese, and topped with ranchero sauce. served with pinto beans. substitute chile verde for ranchero sauce 3.49">
+          <div class="row"><span class="name">Breakfast Burrito</span><span class="price">$17.29</span></div>
+          <p class="desc">a large flour tortilla filled with scrambled eggs, chorizo sausage, onions, green peppers, cheese, and topped with ranchero sauce. Served with pinto beans. Substitute Chile verde for Ranchero Sauce 3.49</p>
+        </li>
+        <li data-q="huevos rancheros corn tortillas topped with two eggs, ranchero sauce and cheddar cheese. served with pinto beans. substitute chile verde for ranchero sauce 3.49. add chorizo sausage 4.99">
+          <div class="row"><span class="name">Huevos Rancheros</span><span class="price">$16.19</span></div>
+          <p class="desc">corn tortillas topped with two eggs, ranchero sauce and cheddar cheese. Served with pinto beans. Substitute Chile verde for Ranchero Sauce 3.49. Add Chorizo sausage 4.99</p>
+        </li>
+        <li data-q="trevor&#39;s potato burrito hash browns, pinto beans, guacamole, and sautéed mushrooms wrapped in a flour tortilla and topped with ranchero sauce. served with fresh fruit">
+          <div class="row"><span class="name">Trevor&#39;s Potato Burrito</span><span class="price">$14.49</span></div>
+          <p class="desc">hash browns, pinto beans, guacamole, and sautéed mushrooms wrapped in a flour tortilla and topped with ranchero sauce. Served with fresh fruit</p>
+        </li>
+        <li data-q="two eggs farm fresh eggs any style">
+          <div class="row"><span class="name">Two Eggs</span><span class="price">$11.49</span></div>
+          <p class="desc">farm fresh eggs any style</p>
+        </li>
+        <li data-q="bacon or sausage with two eggs substitiue impossible or chicken apple sausage 4.99">
+          <div class="row"><span class="name">Bacon or Sausage with Two Eggs</span><span class="price">$15.19</span></div>
+          <p class="desc">Substitiue Impossible or Chicken Apple Sausage 4.99</p>
+        </li>
+        <li data-q="breakfast sandwich 2 fried eggs with bacon, ham, cheddar, lettuce, tomato on toasted sourdough">
+          <div class="row"><span class="name">Breakfast Sandwich</span><span class="price">$16.29</span></div>
+          <p class="desc">2 fried eggs with bacon, ham, cheddar, lettuce, tomato on toasted sourdough</p>
+        </li>
+        <li data-q="ham steak with two eggs ">
+          <div class="row"><span class="name">Ham Steak with Two Eggs</span><span class="price">$16.19</span></div>
+          
+        </li>
+        <li data-q="chicken fried steak &amp; eggs breaded beef cutlet with ruth&#39;s country gravy. served with two eggs">
+          <div class="row"><span class="name">Chicken Fried Steak &amp; Eggs</span><span class="price">$19.49</span></div>
+          <p class="desc">breaded beef cutlet with Ruth&#39;s country gravy. Served with two eggs</p>
+        </li>
+        <li data-q="flank steak &amp; eggs marinated flank steak, charbroiled, served with two eggs and topped with teriyaki sauce">
+          <div class="row"><span class="name">Flank Steak &amp; Eggs</span><span class="price">$19.99</span></div>
+          <p class="desc">Marinated flank steak, charbroiled, served with two eggs and topped with teriyaki sauce</p>
+        </li>
+        <li data-q="red trout &amp; eggs cajun spiced filet, grilled and topped with salsa fresca. served with two eggs">
+          <div class="row"><span class="name">Red Trout &amp; Eggs</span><span class="price">Market price</span></div>
+          <p class="desc">Cajun spiced filet, grilled and topped with salsa fresca. Served with two eggs</p>
+        </li></ul>
+    </section>
+    <section id="ruth-s-benedicts" class="sec">
+      <h2>Ruth&#39;s Benedicts</h2>
+      
+      <ul>
+        <li data-q="salmon benedict poached eggs on grilled parmesan polenta with broiled salmon, fresh spinach, salsa fresca and hollandaise sauce">
+          <div class="row"><span class="name">Salmon Benedict</span><span class="price">Market price</span></div>
+          <p class="desc">poached eggs on grilled Parmesan polenta with broiled salmon, fresh spinach, salsa fresca and hollandaise sauce</p>
+        </li>
+        <li data-q="eggs benedict poached eggs on english muffins with pecanwood smoked bacon, tomato and hollandaise sauce">
+          <div class="row"><span class="name">Eggs Benedict</span><span class="price">$18.79</span></div>
+          <p class="desc">poached eggs on English muffins with pecanwood smoked bacon, tomato and hollandaise sauce</p>
+        </li>
+        <li data-q="pulled pork benedict poached eggs on green chile cheese cornbread, &quot;holy smokes bbq&quot; pulled pork and hollandaise sauce">
+          <div class="row"><span class="name">Pulled Pork Benedict</span><span class="price">$18.99</span></div>
+          <p class="desc">poached eggs on green chile cheese cornbread, &quot;Holy Smokes BBQ&quot; pulled pork and hollandaise sauce</p>
+        </li>
+        <li data-q="chicken fried steak benedict english muffin topped with chicken fried steak, sausage gravy, poached eggs and hollandaise sauce">
+          <div class="row"><span class="name">Chicken Fried Steak Benedict</span><span class="price">$19.99</span></div>
+          <p class="desc">English muffin topped with chicken fried steak, sausage gravy, poached eggs and hollandaise sauce</p>
+        </li></ul>
+    </section>
+    <section id="3-egg-omelettes" class="sec">
+      <h2>3 Egg Omelettes</h2>
+      
+      <ul>
+        <li data-q="smoked salmon in house smoked salmon, capers, red onions, roasted tomatoes, spinach and feta cheese. served open face">
+          <div class="row"><span class="name">Smoked Salmon</span><span class="price">Market price</span></div>
+          <p class="desc">in house smoked salmon, capers, red onions, roasted tomatoes, spinach and feta cheese. Served open face</p>
+        </li>
+        <li data-q="fresh asparagus fresh asparagus, tomatoes, smoked gouda cheese and hollandaise sauce">
+          <div class="row"><span class="name">Fresh Asparagus</span><span class="price">$16.99</span></div>
+          <p class="desc">fresh asparagus, tomatoes, smoked gouda cheese and hollandaise sauce</p>
+        </li>
+        <li data-q="mexican chorizo sausage, onion, serrano peppers, sour cream, avocado and cheddar cheese">
+          <div class="row"><span class="name">Mexican</span><span class="price">$18.49</span></div>
+          <p class="desc">chorizo sausage, onion, serrano peppers, sour cream, avocado and cheddar cheese</p>
+        </li>
+        <li data-q="spinach fresh spinach, monterey jack cheese, mushrooms, tomatoes, bacon and sour cream">
+          <div class="row"><span class="name">Spinach</span><span class="price">$18.49</span></div>
+          <p class="desc">fresh spinach, Monterey jack cheese, mushrooms, tomatoes, bacon and sour cream</p>
+        </li>
+        <li data-q="pork chile verde open faced omelette topped with ruth&#39;s pork chile verde, monterey jack cheese and sour cream">
+          <div class="row"><span class="name">Pork Chile Verde</span><span class="price">$18.49</span></div>
+          <p class="desc">open faced omelette topped with Ruth&#39;s pork chile verde, monterey jack cheese and sour cream</p>
+        </li>
+        <li data-q="king of hearts artichoke hearts, mushrooms, fresh garlic, monterey jack and parmesan cheese">
+          <div class="row"><span class="name">King of Hearts</span><span class="price">$18.09</span></div>
+          <p class="desc">Artichoke hearts, mushrooms, fresh garlic, monterey jack and parmesan cheese</p>
+        </li></ul>
+    </section>
+    <section id="sweeter-side" class="sec">
+      <h2>Sweeter Side</h2>
+      
+      <ul>
+        <li data-q="cinnamon roll french toast cinnamon roll dipped in vanilla egg batter, grilled and served with orange cream cheese and warm maple syrup. make it a combo? just ask!">
+          <div class="row"><span class="name">Cinnamon Roll French Toast</span><span class="price">$13.99</span></div>
+          <p class="desc">cinnamon roll dipped in vanilla egg batter, grilled and served with orange cream cheese and warm maple syrup. Make it a combo? just ask!</p>
+        </li>
+        <li data-q="french toast two pieces of thick sliced bread dipped in cinnamon, vanilla egg batter, grilled, topped with cinnamon powdered sugar. served with warm maple syrup. add strawberries or bananas 2.50">
+          <div class="row"><span class="name">French Toast</span><span class="price">$12.49</span></div>
+          <p class="desc">Two pieces of thick sliced bread dipped in cinnamon, vanilla egg batter, grilled, topped with cinnamon powdered sugar. Served with warm maple syrup. Add Strawberries or Bananas 2.50</p>
+        </li>
+        <li data-q="buttermilk pancakes three thick, fluffy buttermilk cakes served with butter and warm maple syrup. add strawberries or bananas 2.50. add chocolate chips 1.25">
+          <div class="row"><span class="name">Buttermilk Pancakes</span><span class="price">$12.49</span></div>
+          <p class="desc">three thick, fluffy buttermilk cakes served with butter and warm maple syrup. Add Strawberries or Bananas 2.50. Add Chocolate Chips 1.25</p>
+        </li>
+        <li data-q="banana walnut french toast ruth&#39;s fresh made banana walnut bread, dipped in vanilla egg batter, grilled and topped with bananas and walnuts. served with warm maple syrup. make it a combo? just ask!">
+          <div class="row"><span class="name">Banana Walnut French Toast</span><span class="price">$14.09</span></div>
+          <p class="desc">Ruth&#39;s fresh made banana walnut bread, dipped in vanilla egg batter, grilled and topped with bananas and walnuts. Served with warm maple syrup. Make it a combo? just ask!</p>
+        </li>
+        <li data-q="oatmeal brown sugar, diced apple, cranraisins and walnuts">
+          <div class="row"><span class="name">Oatmeal</span><span class="price">$9.49</span></div>
+          <p class="desc">brown sugar, diced apple, cranraisins and walnuts</p>
+        </li>
+        <li data-q="the patio parfait berries and bananas layered with vanilla yogurt and granola, served in a parfait glass">
+          <div class="row"><span class="name">The Patio Parfait</span><span class="price">$10.49</span></div>
+          <p class="desc">berries and bananas layered with vanilla yogurt and granola, served in a parfait glass</p>
+        </li></ul>
+    </section>
+    <section id="eggs-plus" class="sec">
+      <h2>Eggs Plus</h2>
+      
+      <ul>
+        <li data-q="ruth&#39;s breakfast combo pancakes or french toast, two farm fresh eggs, two strips of bacon and hash browns">
+          <div class="row"><span class="name">Ruth&#39;s Breakfast Combo</span><span class="price">$18.99</span></div>
+          <p class="desc">pancakes or French toast, two farm fresh eggs, two strips of bacon and hash browns</p>
+        </li>
+        <li data-q="chilaquiles tortilla chips sauteed in a roasted tomatillo salsa, topped with queso fresco and two eggs any style. add bacon, chorizo or ham 4.99, steak 8.99">
+          <div class="row"><span class="name">Chilaquiles</span><span class="price">$16.19</span></div>
+          <p class="desc">tortilla chips sauteed in a roasted tomatillo salsa, topped with queso fresco and two eggs any style. Add Bacon, Chorizo or Ham 4.99, Steak 8.99</p>
+        </li>
+        <li data-q="the lean and green broccoli, asparagus, peppers, spinach, egg whites, chimichurri, tomatillo salsa and guacamole served in a spinach tortilla with a side of cottage cheese - trevor did it again!">
+          <div class="row"><span class="name">The Lean and Green</span><span class="price">$16.99</span></div>
+          <p class="desc">Broccoli, asparagus, peppers, spinach, egg whites, chimichurri, tomatillo salsa and guacamole served in a spinach tortilla with a side of cottage cheese - Trevor did it again!</p>
+        </li>
+        <li data-q="fresh atlantic salmon hash fresh salmon sautéed with red bell peppers, capers, red onions, fresh dill and shredded potatoes topped with hollandaise sauce and served with two eggs">
+          <div class="row"><span class="name">Fresh Atlantic Salmon Hash</span><span class="price">Market price</span></div>
+          <p class="desc">fresh salmon sautéed with red bell peppers, capers, red onions, fresh dill and shredded potatoes topped with hollandaise sauce and served with two eggs</p>
+        </li>
+        <li data-q="corned beef hash ruth&#39;s traditional recipe of tender corned beef brisket, green peppers, onions, hash browns and spices, served with two farm fresh eggs any style">
+          <div class="row"><span class="name">Corned Beef Hash</span><span class="price">$17.89</span></div>
+          <p class="desc">Ruth&#39;s traditional recipe of tender corned beef brisket, green peppers, onions, hash browns and spices, served with two farm fresh eggs any style</p>
+        </li>
+        <li data-q="migas two eggs scrambled with chorizo sausage, onions, green peppers, cheddar cheese and corn tortillas. served with a warm flour tortilla, guacamole, sour cream, pico de gallo, spanish rice and pinto beans">
+          <div class="row"><span class="name">Migas</span><span class="price">$17.59</span></div>
+          <p class="desc">two eggs scrambled with chorizo sausage, onions, green peppers, cheddar cheese and corn tortillas. Served with a warm flour tortilla, guacamole, sour cream, pico de gallo, Spanish rice and pinto beans</p>
+        </li>
+        <li data-q="pulled pork scramble holy smokes bbq pulled pork scrambled with two eggs, serrano peppers, tomatoes, onions, and cheddar cheese, with pico de gallo, sour cream and warm flour tortilla, choice of side">
+          <div class="row"><span class="name">Pulled Pork Scramble</span><span class="price">$17.99</span></div>
+          <p class="desc">Holy Smokes BBQ pulled pork scrambled with two eggs, serrano peppers, tomatoes, onions, and cheddar cheese, with pico de gallo, sour cream and warm flour tortilla, choice of side</p>
+        </li>
+        <li data-q="big breakfast ruth&#39;s hash browns topped with cheddar cheese, two eggs, two pieces of bacon and a sausage patty">
+          <div class="row"><span class="name">Big Breakfast</span><span class="price">$18.49</span></div>
+          <p class="desc">Ruth&#39;s hash browns topped with cheddar cheese, two eggs, two pieces of bacon and a sausage patty</p>
+        </li>
+        <li data-q="sunrise spuds our hash browns with mushrooms, cheddar cheese, pico de gallo and guacamole">
+          <div class="row"><span class="name">Sunrise Spuds</span></div>
+          <p class="desc">our hash browns with mushrooms, cheddar cheese, pico de gallo and guacamole</p><div class="prices"><span class="pp"><span class="pl">Regular</span> <b>$13.99</b></span><span class="pp"><span class="pl">Vegan style</span> <b>$12.99</b></span></div>
+        </li>
+        <li data-q="quiche of the day fresh baked quiche - ask your server for today&#39;s preparation, served with fresh fruit">
+          <div class="row"><span class="name">Quiche of the Day</span><span class="price">$13.49</span></div>
+          <p class="desc">fresh baked quiche - ask your server for today&#39;s preparation, served with fresh fruit</p>
+        </li>
+        <li data-q="early bird special no substitutions. served 8 a.m. to 9 a.m. only. two pancakes, two eggs, hash browns, one sausage patty and one strip of bacon">
+          <div class="row"><span class="name">Early Bird Special</span><span class="price">$9.99</span></div>
+          <p class="desc">No substitutions. Served 8 a.m. to 9 a.m. only. Two pancakes, two eggs, hash browns, one sausage patty and one strip of bacon</p>
+        </li></ul>
+    </section>
+    <section id="appetizers" class="sec">
+      <h2>Appetizers</h2>
+      
+      <ul>
+        <li data-q="chips &amp; salsa fresca add side of guacamole 4.49">
+          <div class="row"><span class="name">Chips &amp; Salsa Fresca</span><span class="price">$8.99</span></div>
+          <p class="desc">Add side of Guacamole 4.49</p>
+        </li>
+        <li data-q="shrimp sugar cane skewers three sugar cane skewers of five shrimp each, lemon pepper spiced, charbroiled and topped with ruth&#39;s hot honey sauce">
+          <div class="row"><span class="name">Shrimp Sugar Cane Skewers</span><span class="price">$15.59</span></div>
+          <p class="desc">Three sugar cane skewers of five shrimp each, lemon pepper spiced, charbroiled and topped with Ruth&#39;s hot honey sauce</p>
+        </li>
+        <li data-q="grilled parmesan polenta grilled parmesan polenta served with mediterranean bruschetta house dressing">
+          <div class="row"><span class="name">Grilled Parmesan Polenta</span><span class="price">$14.09</span></div>
+          <p class="desc">Grilled Parmesan polenta served with Mediterranean bruschetta house dressing</p>
+        </li>
+        <li data-q="deep-fried mac and cheese grandma claire&#39;s mac and cheese, breaded, deep-fried and served with marinara sauce and ranch dressing">
+          <div class="row"><span class="name">Deep-Fried Mac and Cheese</span><span class="price">$13.49</span></div>
+          <p class="desc">Grandma Claire&#39;s mac and cheese, breaded, deep-fried and served with marinara sauce and ranch dressing</p>
+        </li>
+        <li data-q="quesadilla two crisp flour tortillas filled with cheddar and monterey jack cheese, mushrooms, onions, olives, and tomatoes topped with ranchero sauce and sour cream. add 6.99 for chicken">
+          <div class="row"><span class="name">Quesadilla</span><span class="price">$14.49</span></div>
+          <p class="desc">two crisp flour tortillas filled with cheddar and Monterey jack cheese, mushrooms, onions, olives, and tomatoes topped with ranchero sauce and sour cream. Add 6.99 for chicken</p>
+        </li>
+        <li data-q="buffalo wings deep-fried and coated with your choice of ruth&#39;s secret bleu cheese hot sauce or sweet and spicy plum sauce, served with celery, carrots and bleu cheese dressing">
+          <div class="row"><span class="name">Buffalo Wings</span><span class="price">$16.99</span></div>
+          <p class="desc">deep-fried and coated with your choice of Ruth&#39;s secret bleu cheese hot sauce or sweet and spicy plum sauce, served with celery, carrots and bleu cheese dressing</p>
+        </li>
+        <li data-q="deep fried pickles &amp; okra with ruth&#39;s special sauce">
+          <div class="row"><span class="name">Deep Fried Pickles &amp; Okra</span><span class="price">$12.49</span></div>
+          <p class="desc">with Ruth&#39;s special sauce</p>
+        </li>
+        <li data-q="grilled artichoke with roasted garlic lemon aioli">
+          <div class="row"><span class="name">Grilled Artichoke</span><span class="price">$12.99</span></div>
+          <p class="desc">with roasted garlic lemon aioli</p>
+        </li>
+        <li data-q="roasted red pepper hummus platter served with grilled garlic naan, prosciutto ham, pepperoni, kalamata olives, chargrilled artichoke hearts, pepperoncini, feta cheese and roasted marinated tomatoes">
+          <div class="row"><span class="name">Roasted Red Pepper Hummus Platter</span><span class="price">$16.99</span></div>
+          <p class="desc">served with grilled garlic naan, prosciutto ham, pepperoni, kalamata olives, chargrilled artichoke hearts, pepperoncini, feta cheese and roasted marinated tomatoes</p>
+        </li></ul>
+    </section>
+    <section id="salads" class="sec">
+      <h2>Salads</h2>
+      <p class="note">May be served in a spinach wrap with choice of side add 3.49.</p>
+      <ul>
+        <li data-q="smoked salmon ruth smokes her own salmon, tosses it with greens, toasted almonds, red onions and capers in a salsa vinaigrette">
+          <div class="row"><span class="name">Smoked Salmon</span><span class="price">Market price</span></div>
+          <p class="desc">Ruth smokes her own salmon, tosses it with greens, toasted almonds, red onions and capers in a salsa vinaigrette</p>
+        </li>
+        <li data-q="chinese chicken mixed fresh greens, charbroiled teriyaki marinated chicken, rice noodles, olives, red peppers, bean sprouts, mushrooms, water chestnuts, scallions, almonds, mandarin oranges and snow peas in a ginger sesame oil dressing">
+          <div class="row"><span class="name">Chinese Chicken</span><span class="price">$18.49</span></div>
+          <p class="desc">mixed fresh greens, charbroiled teriyaki marinated chicken, rice noodles, olives, red peppers, bean sprouts, mushrooms, water chestnuts, scallions, almonds, mandarin oranges and snow peas in a ginger sesame oil dressing</p>
+        </li>
+        <li data-q="cobb mixed fresh greens with bleu cheese dressing, topped with grilled chicken breast, tomato, avocado, bleu cheese, hard boiled eggs and bacon">
+          <div class="row"><span class="name">Cobb</span><span class="price">$18.89</span></div>
+          <p class="desc">mixed fresh greens with bleu cheese dressing, topped with grilled chicken breast, tomato, avocado, bleu cheese, hard boiled eggs and bacon</p>
+        </li>
+        <li data-q="fresh roasted beet &amp; spinach oven roasted beets, fresh spinach, roasted walnuts, red onions, diced tomatoes and feta cheese tossed in a honey dijon red wine vinaigrette. add chicken, skewer of shrimp 6.99 | steak 8.99">
+          <div class="row"><span class="name">Fresh Roasted Beet &amp; Spinach</span><span class="price">$16.29</span></div>
+          <p class="desc">oven roasted beets, fresh spinach, roasted walnuts, red onions, diced tomatoes and feta cheese tossed in a honey Dijon red wine vinaigrette. Add Chicken, Skewer of Shrimp 6.99 | Steak 8.99</p>
+        </li>
+        <li data-q="fresh veggie &amp; quinoa salad a blend of julienned vegetables (beets, broccoli, kohlrabi, brussel sprouts, carrots, kale and raddichio) tossed with quinoa, feta cheese, roasted pumpkin seeds and lemon vinaigrette. add chicken, skewer of shrimp 6.99 | steak 8.99">
+          <div class="row"><span class="name">Fresh Veggie &amp; Quinoa Salad</span><span class="price">$16.79</span></div>
+          <p class="desc">a blend of julienned vegetables (beets, broccoli, kohlrabi, brussel sprouts, carrots, kale and raddichio) tossed with quinoa, feta cheese, roasted pumpkin seeds and lemon vinaigrette. Add Chicken, Skewer of Shrimp 6.99 | Steak 8.99</p>
+        </li>
+        <li data-q="harvest salad mixed greens, maple glazed roasted butternut squash, feta cheese, bacon, roasted pumpkin seeds and cranberries tossed with dijon vinaigrette. add chicken, skewer of shrimp 6.99 | steak 8.99">
+          <div class="row"><span class="name">Harvest Salad</span><span class="price">$16.49</span></div>
+          <p class="desc">mixed greens, maple glazed roasted butternut squash, feta cheese, bacon, roasted pumpkin seeds and cranberries tossed with Dijon vinaigrette. Add Chicken, Skewer of Shrimp 6.99 | Steak 8.99</p>
+        </li></ul>
+    </section>
+    <section id="sandwiches" class="sec">
+      <h2>Sandwiches</h2>
+      <p class="note">Served with choice of French fries, pasta salad or fat free pinto beans. Substitute onion rings for 4.99. Substitute gluten-free bread for 2.99.</p>
+      <ul>
+        <li data-q="the reuben tender corned beef brisket with sauerkraut, swiss cheese and thousand island dressing on grilled rye bread">
+          <div class="row"><span class="name">The Reuben</span><span class="price">$15.49</span></div>
+          <p class="desc">tender corned beef brisket with sauerkraut, Swiss cheese and thousand island dressing on grilled rye bread</p>
+        </li>
+        <li data-q="fresh turkey &amp; avocado sandwich sliced-honest-to-goodness fresh roasted turkey breast, provolone cheese, avocado, lettuce, tomatoes, red onions and mayonnaise on toasted sourdough bread">
+          <div class="row"><span class="name">Fresh Turkey &amp; Avocado Sandwich</span><span class="price">$16.49</span></div>
+          <p class="desc">sliced-honest-to-goodness fresh roasted turkey breast, provolone cheese, avocado, lettuce, tomatoes, red onions and mayonnaise on toasted sourdough bread</p>
+        </li>
+        <li data-q="club sandwich the classic triple-decker: fresh roasted turkey breast with ham, bacon, lettuce, tomato and mayonnaise on toasted sourdough. add guacamole 1.75">
+          <div class="row"><span class="name">Club Sandwich</span><span class="price">$17.49</span></div>
+          <p class="desc">the classic triple-decker: fresh roasted turkey breast with ham, bacon, lettuce, tomato and mayonnaise on toasted sourdough. Add Guacamole 1.75</p>
+        </li>
+        <li data-q="southern fried chicken sandwich boneless chicken breast dipped in buttermilk breadcrumbs, deep fried and tossed with ruth&#39;s hot honey sauce on a toasted ciabatta roll with bleu cheese coleslaw">
+          <div class="row"><span class="name">Southern Fried Chicken Sandwich</span><span class="price">$17.49</span></div>
+          <p class="desc">boneless chicken breast dipped in buttermilk breadcrumbs, deep fried and tossed with Ruth&#39;s hot honey sauce on a toasted ciabatta roll with bleu cheese coleslaw</p>
+        </li>
+        <li data-q="teriyaki chicken sandwich grilled teriyaki marinated chicken breast, served on a brioche roll with cheddar cheese, lettuce, tomato and red onions with bleu cheese dressing">
+          <div class="row"><span class="name">Teriyaki Chicken Sandwich</span><span class="price">$16.89</span></div>
+          <p class="desc">grilled teriyaki marinated chicken breast, served on a brioche roll with cheddar cheese, lettuce, tomato and red onions with bleu cheese dressing</p>
+        </li>
+        <li data-q="salmon blt grilled salmon, bacon, lettuce, tomato and pesto mayo on a toasted ciabatta roll">
+          <div class="row"><span class="name">Salmon BLT</span><span class="price">Market price</span></div>
+          <p class="desc">grilled salmon, bacon, lettuce, tomato and pesto mayo on a toasted ciabatta roll</p>
+        </li>
+        <li data-q="vegetable wrap roasted red peppers, red onions, cucumbers, tomatoes, spinach, hummus, smoked gouda cheese and chipotle mayo wrapped in a spinach wrap. add chicken 6.99">
+          <div class="row"><span class="name">Vegetable Wrap</span><span class="price">$14.99</span></div>
+          <p class="desc">roasted red peppers, red onions, cucumbers, tomatoes, spinach, hummus, smoked gouda cheese and chipotle mayo wrapped in a spinach wrap. Add Chicken 6.99</p>
+        </li>
+        <li data-q="flank steak sandwich marinated flank steak grilled to order with grilled onions, lettuce, tomato, provolone cheese, chimichurri and lemon garlic aioli">
+          <div class="row"><span class="name">Flank Steak Sandwich</span><span class="price">$19.99</span></div>
+          <p class="desc">marinated flank steak grilled to order with grilled onions, lettuce, tomato, provolone cheese, chimichurri and lemon garlic aioli</p>
+        </li>
+        <li data-q="fried pollock sandwich breaded pollock filet golden-fried, and served on a toasted hoagie with cilantro lime coleslaw and chipotle cilantro sauce">
+          <div class="row"><span class="name">Fried Pollock Sandwich</span><span class="price">$17.49</span></div>
+          <p class="desc">breaded pollock filet golden-fried, and served on a toasted hoagie with cilantro lime coleslaw and chipotle cilantro sauce</p>
+        </li></ul>
+    </section>
+    <section id="lunch-favorites" class="sec">
+      <h2>Lunch Favorites</h2>
+      <p class="note">The following are served with Ruth&#39;s famous Mile High biscuit.</p>
+      <ul>
+        <li data-q="grandma claire&#39;s baked mac and cheese with veggies better than mama used to make. add chicken, skewer of shrimp 6.99 | steak 8.99">
+          <div class="row"><span class="name">Grandma Claire&#39;s Baked Mac and Cheese</span><span class="price">$16.99</span></div>
+          <p class="desc">with veggies better than Mama used to make. Add Chicken, Skewer of Shrimp 6.99 | Steak 8.99</p>
+        </li>
+        <li data-q="teriyaki chicken charbroiled marinated chicken breast with light teriyaki glaze, grilled pineapple, side salad and vegetables">
+          <div class="row"><span class="name">Teriyaki Chicken</span><span class="price">$18.29</span></div>
+          <p class="desc">charbroiled marinated chicken breast with light teriyaki glaze, grilled pineapple, side salad and vegetables</p>
+        </li>
+        <li data-q="fresh atlantic salmon ask about today&#39;s preparation">
+          <div class="row"><span class="name">Fresh Atlantic Salmon</span><span class="price">Market price</span></div>
+          <p class="desc">ask about today&#39;s preparation</p>
+        </li>
+        <li data-q="pulled pork tacos three flour tortillas, filled with holy smokes pulled pork, fresh pineapple cilantro slaw, lime crema, cotija cheese and ruth&#39;s hot honey sauce, served with spanish rice, fat free pinto beans, sour cream and salsa fresca">
+          <div class="row"><span class="name">Pulled Pork Tacos</span><span class="price">$19.99</span></div>
+          <p class="desc">three flour tortillas, filled with Holy Smokes pulled pork, fresh pineapple cilantro slaw, lime crema, cotija cheese and Ruth&#39;s hot honey sauce, served with Spanish rice, fat free pinto beans, sour cream and salsa fresca</p>
+        </li>
+        <li data-q="roasted cauliflower quinoa tacos corn tortillas filled with quinoa, fire-roasted cauliflower, avocado and chimichurri, served with salsa, spanish rice and fat free pinto beans">
+          <div class="row"><span class="name">Roasted Cauliflower Quinoa Tacos</span><span class="price">$16.99</span></div>
+          <p class="desc">corn tortillas filled with quinoa, fire-roasted cauliflower, avocado and chimichurri, served with salsa, Spanish rice and fat free pinto beans</p>
+        </li>
+        <li data-q="vegetable enchiladas with spanish rice and fat free pinto beans. sautéed vegetables, corn tortillas, choice of red ranchero or roasted tomatillo green sauce, salsa fresca, sour cream, cheddar and jack cheese">
+          <div class="row"><span class="name">Vegetable Enchiladas</span><span class="price">$16.99</span></div>
+          <p class="desc">with Spanish rice and fat free pinto beans. sautéed vegetables, corn tortillas, choice of red ranchero or roasted tomatillo green sauce, salsa fresca, sour cream, cheddar and jack cheese</p>
+        </li>
+        <li data-q="chicken enchiladas with spanish rice and fat free pinto beans. braised chicken, scallions, corn tortillas, choice of red ranchero or roasted tomatillo green sauce, salsa fresca, sour cream, cheddar cheese">
+          <div class="row"><span class="name">Chicken Enchiladas</span><span class="price">$17.99</span></div>
+          <p class="desc">with Spanish rice and fat free pinto beans. braised chicken, scallions, corn tortillas, choice of red ranchero or roasted tomatillo green sauce, salsa fresca, sour cream, cheddar cheese</p>
+        </li>
+        <li data-q="chile verde burrito tender pork, rice and green chile wrapped in a flour tortilla topped with jack cheese, salsa fresca and sour cream">
+          <div class="row"><span class="name">Chile Verde Burrito</span><span class="price">$18.99</span></div>
+          <p class="desc">tender pork, rice and green chile wrapped in a flour tortilla topped with jack cheese, salsa fresca and sour cream</p>
+        </li></ul>
+    </section>
+    <section id="ruth-s-burgers" class="sec">
+      <h2>Ruth&#39;s Burgers</h2>
+      <p class="note">Serving since the 1930&#39;s. Fresh 7 oz 100% Chuck Charbroiled Hamburgers on a fresh baked bun with onions, pickle, lettuce and tomato on the side. Served with choice of French fries, pasta salad or pinto beans. Substitute onion rings for 4.99. Substitute gluten-free bread for 2.99. Substitute an 8 oz Buffalo Burger or Impossible Burger for 6.99.</p>
+      <ul>
+        <li data-q="hamburger ">
+          <div class="row"><span class="name">Hamburger</span><span class="price">$13.99</span></div>
+          
+        </li>
+        <li data-q="cheeseburger with melted swiss, cheddar, pepper jack or provolone cheese">
+          <div class="row"><span class="name">Cheeseburger</span><span class="price">$14.99</span></div>
+          <p class="desc">with melted Swiss, cheddar, pepper jack or provolone cheese</p>
+        </li>
+        <li data-q="aussie burger with lettuce, tomato, red onion, grated beet root, grilled pineapple, cheddar cheese, chipotle mayo and an over easy egg, on toasted ciabatta roll">
+          <div class="row"><span class="name">Aussie Burger</span><span class="price">$18.99</span></div>
+          <p class="desc">with lettuce, tomato, red onion, grated beet root, grilled pineapple, cheddar cheese, chipotle mayo and an over easy egg, on toasted ciabatta roll</p>
+        </li>
+        <li data-q="this-is-almost-the-place burger with melted swiss cheese and sautéed fresh mushrooms">
+          <div class="row"><span class="name">This-is-Almost-the-Place Burger</span><span class="price">$16.09</span></div>
+          <p class="desc">with melted Swiss cheese and sautéed fresh mushrooms</p>
+        </li>
+        <li data-q="cajun bacon bleu burger with crisp bacon, bleu cheese crumbles and a side of ruth&#39;s bbq sauce">
+          <div class="row"><span class="name">Cajun Bacon Bleu Burger</span><span class="price">$17.49</span></div>
+          <p class="desc">with crisp bacon, bleu cheese crumbles and a side of Ruth&#39;s bbq sauce</p>
+        </li>
+        <li data-q="the egg-possible burger impossible patty with smoked gouda cheese, avocado, lettuce, tomato, chipotle aioli and an over easy egg on toasted brioche">
+          <div class="row"><span class="name">The Egg-Possible Burger</span><span class="price">$18.99</span></div>
+          <p class="desc">Impossible patty with smoked gouda cheese, avocado, lettuce, tomato, chipotle aioli and an over easy egg on toasted brioche</p>
+        </li>
+        <li data-q="meat loaf burger ruth&#39;s meat loaf charbroiled and served with provolone cheese, shredded lettuce, mayonnaise and ruth&#39;s bbq sauce">
+          <div class="row"><span class="name">Meat Loaf Burger</span><span class="price">$16.99</span></div>
+          <p class="desc">Ruth&#39;s meat loaf charbroiled and served with provolone cheese, shredded lettuce, mayonnaise and Ruth&#39;s bbq sauce</p>
+        </li>
+        <li data-q="ruth&#39;s deluxe pork burger fresh ground pork mixed with serrano peppers and garlic, broiled, topped with fresh corned beef brisket, grilled red onions, pepper jack cheese and roasted garlic lemon aioli">
+          <div class="row"><span class="name">Ruth&#39;s Deluxe Pork Burger</span><span class="price">$18.99</span></div>
+          <p class="desc">fresh ground pork mixed with serrano peppers and garlic, broiled, topped with fresh corned beef brisket, grilled red onions, pepper jack cheese and roasted garlic lemon aioli</p>
+        </li>
+        <li data-q="turkey burger 6 oz turkey burger charbroiled, topped with avocado, cheddar cheese, lettuce, tomato, mayonnaise on a brioche roll">
+          <div class="row"><span class="name">Turkey Burger</span><span class="price">$16.49</span></div>
+          <p class="desc">6 oz turkey burger charbroiled, topped with avocado, cheddar cheese, lettuce, tomato, mayonnaise on a brioche roll</p>
+        </li>
+        <li data-q="garden burger vegetable patty topped with guacamole, sprouts, lettuce, tomato and swiss cheese on a fresh baked bun">
+          <div class="row"><span class="name">Garden Burger</span><span class="price">$16.49</span></div>
+          <p class="desc">vegetable patty topped with guacamole, sprouts, lettuce, tomato and Swiss cheese on a fresh baked bun</p>
+        </li></ul>
+    </section>
+    <section id="just-for-kids" class="sec">
+      <h2>Just for Kids</h2>
+      <p class="note">9.99. The following are served with Ruth&#39;s famous Mile High biscuit.</p>
+      <ul>
+        <li data-q="teddy bear pancake served with fresh fruit, with a whipped cream smile and banana eyes. for kids only (no age limit)">
+          <div class="row"><span class="name">Teddy Bear Pancake</span><span class="price">$9.99</span></div>
+          <p class="desc">served with fresh fruit, with a whipped cream smile and banana eyes. for kids only (no age limit)</p>
+        </li>
+        <li data-q="chicken fried fish sticks pollock strip fillets breaded, deep fried and served with tartar sauce and fresh fruit">
+          <div class="row"><span class="name">Chicken Fried Fish Sticks</span><span class="price">$9.99</span></div>
+          <p class="desc">pollock strip fillets breaded, deep fried and served with tartar sauce and fresh fruit</p>
+        </li>
+        <li data-q="grandma claire&#39;s mac and cheese served with fresh fruit">
+          <div class="row"><span class="name">Grandma Claire&#39;s Mac and Cheese</span><span class="price">$9.99</span></div>
+          <p class="desc">served with fresh fruit</p>
+        </li>
+        <li data-q="cheese quesadilla monterey jack and cheddar cheese melted in a flour tortilla, served with fresh fruit">
+          <div class="row"><span class="name">Cheese Quesadilla</span><span class="price">$9.99</span></div>
+          <p class="desc">Monterey jack and cheddar cheese melted in a flour tortilla, served with fresh fruit</p>
+        </li>
+        <li data-q="chicken fingers fried chicken tenders, served with french fries, bbq sauce and ranch dressing">
+          <div class="row"><span class="name">Chicken Fingers</span><span class="price">$9.99</span></div>
+          <p class="desc">fried chicken tenders, served with French fries, bbq sauce and ranch dressing</p>
+        </li>
+        <li data-q="pinto bean and cheese burrito with fruit or fries">
+          <div class="row"><span class="name">Pinto Bean and Cheese Burrito</span><span class="price">$9.99</span></div>
+          <p class="desc">with fruit or fries</p>
+        </li></ul>
+    </section>
+    <section id="ruth-s-famous-desserts" class="sec">
+      <h2>Ruth&#39;s Famous Desserts</h2>
+      <p class="note">Add a scoop of Cloud Ninth vanilla bean ice cream for 3.99.</p>
+      <ul>
+        <li data-q="erik&#39;s hot fudge brownie a fresh baked walnut brownie with cloud ninth vanilla bean ice cream, hot fudge, whipped cream">
+          <div class="row"><span class="name">Erik&#39;s Hot Fudge Brownie</span><span class="price">$10.19</span></div>
+          <p class="desc">a fresh baked walnut brownie with Cloud Ninth vanilla bean ice cream, hot fudge, whipped cream</p>
+        </li>
+        <li data-q="ruth&#39;s chocolate malt pudding before jell-o, all puddings were made this way. rich semi-sweet chocolate, barley malt syrup, heavy cream, egg yolks, sugar and vanilla served with a generous swirl of whipped cream">
+          <div class="row"><span class="name">Ruth&#39;s Chocolate Malt Pudding</span><span class="price">$9.89</span></div>
+          <p class="desc">Before Jell-o, all puddings were made this way. Rich semi-sweet chocolate, barley malt syrup, heavy cream, egg yolks, sugar and vanilla served with a generous swirl of whipped cream</p>
+        </li>
+        <li data-q="ruth&#39;s crème brûlée ">
+          <div class="row"><span class="name">Ruth&#39;s Crème Brûlée</span><span class="price">$9.89</span></div>
+          
+        </li>
+        <li data-q="ruth&#39;s banana walnut bread pudding served warm with a caramel pecan bourbon sauce with a scoop of vanilla ice ceam">
+          <div class="row"><span class="name">Ruth&#39;s Banana Walnut Bread Pudding</span><span class="price">$10.19</span></div>
+          <p class="desc">served warm with a caramel pecan bourbon sauce with a scoop of vanilla ice ceam</p>
+        </li>
+        <li data-q="root beer float bottle of root beer and a glass of cloud ninth vanilla bean ice cream...enjoy!">
+          <div class="row"><span class="name">Root Beer Float</span><span class="price">$8.79</span></div>
+          <p class="desc">bottle of root beer and a glass of Cloud Ninth vanilla bean ice cream...enjoy!</p>
+        </li>
+        <li data-q="ruth&#39;s peach &amp; blueberry cobbler ruth baked and served with cloud ninth vanilla bean ice cream">
+          <div class="row"><span class="name">Ruth&#39;s Peach &amp; Blueberry Cobbler</span><span class="price">$10.19</span></div>
+          <p class="desc">Ruth baked and served with Cloud Ninth vanilla bean ice cream</p>
+        </li></ul>
+    </section>
+    <section id="cold-beverages" class="sec">
+      <h2>Cold Beverages</h2>
+      
+      <ul>
+        <li data-q="soft drinks/tea coca cola, diet coke, coke zero, sprite, ginger ale, dr. pepper, lemonade, brewed iced tea, raspberry iced tea">
+          <div class="row"><span class="name">Soft Drinks/Tea</span><span class="price">$3.99</span></div>
+          <p class="desc">Coca Cola, Diet Coke, Coke Zero, Sprite, Ginger Ale, Dr. Pepper, Lemonade, Brewed Iced Tea, Raspberry Iced Tea</p>
+        </li>
+        <li data-q="milk whole, 2%, chocolate or soy milk">
+          <div class="row"><span class="name">Milk</span><span class="price">$3.89</span></div>
+          <p class="desc">whole, 2%, chocolate or soy milk</p>
+        </li>
+        <li data-q="juice ">
+          <div class="row"><span class="name">Juice</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Fresh squeezed orange or grapefruit</span> <b>$4.99</b></span><span class="pp"><span class="pl">Cranberry, pineapple, apple or V8</span> <b>$4.49</b></span></div>
+        </li>
+        <li data-q="bottled root beer ">
+          <div class="row"><span class="name">Bottled Root Beer</span><span class="price">$5.99</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="hot-beverages" class="sec">
+      <h2>Hot Beverages</h2>
+      
+      <ul>
+        <li data-q="hot chocolate ">
+          <div class="row"><span class="name">Hot Chocolate</span><span class="price">$4.99</span></div>
+          
+        </li>
+        <li data-q="hot tea bottomless cup of assorted tea">
+          <div class="row"><span class="name">Hot Tea</span><span class="price">$3.99</span></div>
+          <p class="desc">bottomless cup of assorted tea</p>
+        </li>
+        <li data-q="coffee bottomless cup of ruth&#39;s fresh ground coffee">
+          <div class="row"><span class="name">Coffee</span><span class="price">$3.99</span></div>
+          <p class="desc">bottomless cup of Ruth&#39;s fresh ground coffee</p>
+        </li>
+        <li data-q="apple cider ">
+          <div class="row"><span class="name">Apple Cider</span><span class="price">$4.99</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="wine-sparklers" class="sec">
+      <h2>Wine - Sparklers</h2>
+      
+      <ul>
+        <li data-q="korbel - brut ">
+          <div class="row"><span class="name">Korbel - Brut</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$10.19</b></span><span class="pp"><span class="pl">Bottle</span> <b>$38.49</b></span></div>
+        </li>
+        <li data-q="chandon - brut ">
+          <div class="row"><span class="name">Chandon - Brut</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Bottle</span> <b>$42.89</b></span></div>
+        </li>
+        <li data-q="gloria ferrer ">
+          <div class="row"><span class="name">Gloria Ferrer</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Bottle</span> <b>$40.39</b></span></div>
+        </li></ul>
+    </section>
+    <section id="wine-white-wines" class="sec">
+      <h2>Wine - White Wines</h2>
+      
+      <ul>
+        <li data-q="white zinfandel - sutter home ">
+          <div class="row"><span class="name">White Zinfandel - Sutter Home</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$9.09</b></span><span class="pp"><span class="pl">Bottle</span> <b>$29.99</b></span></div>
+        </li>
+        <li data-q="riesling - chateau ste. michelle ">
+          <div class="row"><span class="name">Riesling - Chateau Ste. Michelle</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$9.39</b></span><span class="pp"><span class="pl">Bottle</span> <b>$34.99</b></span></div>
+        </li>
+        <li data-q="pinot grigio - ck mondavi ">
+          <div class="row"><span class="name">Pinot Grigio - CK Mondavi</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$9.89</b></span><span class="pp"><span class="pl">Bottle</span> <b>$30.99</b></span></div>
+        </li>
+        <li data-q="sauvignon blanc - seaglass ">
+          <div class="row"><span class="name">Sauvignon Blanc - Seaglass</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$10.19</b></span><span class="pp"><span class="pl">Bottle</span> <b>$34.99</b></span></div>
+        </li>
+        <li data-q="chardonnay - bogle ">
+          <div class="row"><span class="name">Chardonnay - Bogle</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$9.09</b></span><span class="pp"><span class="pl">Bottle</span> <b>$29.99</b></span></div>
+        </li>
+        <li data-q="organic chardonnay - bonterra ">
+          <div class="row"><span class="name">Organic Chardonnay - Bonterra</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$10.19</b></span><span class="pp"><span class="pl">Bottle</span> <b>$34.99</b></span></div>
+        </li></ul>
+    </section>
+    <section id="wine-red-wines" class="sec">
+      <h2>Wine - Red Wines</h2>
+      
+      <ul>
+        <li data-q="merlot - ck mondavi ">
+          <div class="row"><span class="name">Merlot - CK Mondavi</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$9.09</b></span><span class="pp"><span class="pl">Bottle</span> <b>$29.99</b></span></div>
+        </li>
+        <li data-q="pinot noir - hahn estates ">
+          <div class="row"><span class="name">Pinot Noir - Hahn Estates</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$10.29</b></span><span class="pp"><span class="pl">Bottle</span> <b>$34.99</b></span></div>
+        </li>
+        <li data-q="malbec - dona paula los cardos ">
+          <div class="row"><span class="name">Malbec - Dona Paula Los Cardos</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$9.09</b></span><span class="pp"><span class="pl">Bottle</span> <b>$29.99</b></span></div>
+        </li>
+        <li data-q="zinfanadel - seven deadly zins ">
+          <div class="row"><span class="name">Zinfanadel - Seven Deadly Zins</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$11.49</b></span><span class="pp"><span class="pl">Bottle</span> <b>$36.99</b></span></div>
+        </li>
+        <li data-q="cabernet sauvignon - hess collection ">
+          <div class="row"><span class="name">Cabernet Sauvignon - Hess Collection</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$11.49</b></span><span class="pp"><span class="pl">Bottle</span> <b>$36.99</b></span></div>
+        </li>
+        <li data-q="red blend - 19 crimes snoop dogg cali red ">
+          <div class="row"><span class="name">Red Blend - 19 Crimes Snoop Dogg Cali Red</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$10.99</b></span><span class="pp"><span class="pl">Bottle</span> <b>$34.99</b></span></div>
+        </li></ul>
+    </section>
+    <section id="beers-on-draft" class="sec">
+      <h2>Beers on Draft</h2>
+      <p class="note">Seasonal selection (ask your server).</p>
+      <ul>
+        <li data-q="blue moon ">
+          <div class="row"><span class="name">Blue Moon</span></div>
+          <div class="prices"><span class="pp"><span class="pl">16 oz</span> <b>$6.59</b></span><span class="pp"><span class="pl">64 oz pitcher</span> <b>$22.00</b></span></div>
+        </li>
+        <li data-q="uinta cuthroat pale ale ">
+          <div class="row"><span class="name">Uinta Cuthroat Pale Ale</span></div>
+          <div class="prices"><span class="pp"><span class="pl">16 oz</span> <b>$6.99</b></span><span class="pp"><span class="pl">64 oz pitcher</span> <b>$23.00</b></span></div>
+        </li></ul>
+    </section>
+    <section id="beers" class="sec">
+      <h2>Beers</h2>
+      
+      <ul>
+        <li data-q="michelob ultra - bud light - coors light - heineken zero ">
+          <div class="row"><span class="name">Michelob Ultra - Bud Light - Coors Light - Heineken Zero</span><span class="price">$5.99</span></div>
+          
+        </li>
+        <li data-q="big sky - moose drool brown ale ">
+          <div class="row"><span class="name">Big Sky - Moose Drool Brown Ale</span><span class="price">$7.99</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="utah-microbrews" class="sec">
+      <h2>Utah Microbrews</h2>
+      
+      <ul>
+        <li data-q="salt flat baja ">
+          <div class="row"><span class="name">Salt Flat Baja</span><span class="price">$6.59</span></div>
+          
+        </li>
+        <li data-q="squatters - juicy ipa ">
+          <div class="row"><span class="name">Squatters - Juicy IPA</span><span class="price">$7.99</span></div>
+          
+        </li>
+        <li data-q="wasatch - apricot hefeweizen ">
+          <div class="row"><span class="name">Wasatch - Apricot Hefeweizen</span><span class="price">$7.99</span></div>
+          
+        </li>
+        <li data-q="uinta lime pilsner ">
+          <div class="row"><span class="name">Uinta Lime Pilsner</span><span class="price">$7.99</span></div>
+          
+        </li>
+        <li data-q="kona big wave ">
+          <div class="row"><span class="name">Kona Big Wave</span><span class="price">$6.99</span></div>
+          
+        </li>
+        <li data-q="wasatch last one down lager ">
+          <div class="row"><span class="name">Wasatch Last One Down Lager</span><span class="price">$6.99</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="utah-high-point-beers" class="sec">
+      <h2>Utah High Point Beers</h2>
+      
+      <ul>
+        <li data-q="epic los locos mexican lager ">
+          <div class="row"><span class="name">Epic Los Locos Mexican Lager</span><span class="price">$7.49</span></div>
+          
+        </li>
+        <li data-q="squatters - hop rising ">
+          <div class="row"><span class="name">Squatters - Hop Rising</span><span class="price">$9.00</span></div>
+          
+        </li>
+        <li data-q="roha brewing - night&#39;s out stout ">
+          <div class="row"><span class="name">Roha Brewing - Night&#39;s Out Stout</span><span class="price">$9.00</span></div>
+          
+        </li>
+        <li data-q="level crossing dallas - alice blonde ale ">
+          <div class="row"><span class="name">Level Crossing Dallas - Alice Blonde Ale</span><span class="price">$9.50</span></div>
+          
+        </li>
+        <li data-q="epic chasing ghosts ipa ">
+          <div class="row"><span class="name">Epic Chasing Ghosts IPA</span><span class="price">$9.99</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="ruth-s-favorites-liquor-menu" class="sec">
+      <h2>Ruth&#39;s Favorites (Liquor Menu)</h2>
+      
+      <ul>
+        <li data-q="ruth&#39;s killer bloody mary local dented brick craft vodka, mixed with ruth&#39;s spicy secret blend">
+          <div class="row"><span class="name">Ruth&#39;s Killer Bloody Mary</span><span class="price">$13.99</span></div>
+          <p class="desc">Local Dented Brick Craft Vodka, mixed with Ruth&#39;s spicy secret blend</p>
+        </li>
+        <li data-q="emigration canyon mimosa champagne and fresh orange juice">
+          <div class="row"><span class="name">Emigration Canyon Mimosa</span><span class="price">$11.99</span></div>
+          <p class="desc">Champagne and fresh orange juice</p>
+        </li>
+        <li data-q="pink flamingo citrus vodka, pomegranate liqueur, cranberry juice, chilled, shaken and served up">
+          <div class="row"><span class="name">Pink Flamingo</span><span class="price">$13.49</span></div>
+          <p class="desc">Citrus vodka, pomegranate liqueur, cranberry juice, chilled, shaken and served up</p>
+        </li>
+        <li data-q="cadillac margarita silver tequila, triple sec, lemon-lime juice, topped with grand marnier">
+          <div class="row"><span class="name">Cadillac Margarita</span><span class="price">$14.59</span></div>
+          <p class="desc">Silver tequila, Triple Sec, lemon-lime juice, topped with Grand Marnier</p>
+        </li>
+        <li data-q="high west whiskey smash local high west whiskey, lemon-lime juice and blended berries">
+          <div class="row"><span class="name">High West Whiskey Smash</span><span class="price">$14.59</span></div>
+          <p class="desc">Local High West Whiskey, lemon-lime juice and blended berries</p>
+        </li>
+        <li data-q="blood orange paloma silver tequila, blood orange pellegrino rimmed with tajin salt">
+          <div class="row"><span class="name">Blood Orange Paloma</span><span class="price">$13.49</span></div>
+          <p class="desc">Silver Tequila, blood orange Pellegrino rimmed with tajin salt</p>
+        </li>
+        <li data-q="zelenskyy mule local dented brick craft vodka, ginger beer and fresh lime">
+          <div class="row"><span class="name">Zelenskyy Mule</span><span class="price">$13.59</span></div>
+          <p class="desc">Local Dented Brick Craft Vodka, ginger beer and fresh lime</p>
+        </li></ul>
+    </section>
+    <section id="mocktails" class="sec">
+      <h2>Mocktails</h2>
+      
+      <ul>
+        <li data-q="virgin maria our killer bloody mary mixed with alcohol free tequila">
+          <div class="row"><span class="name">Virgin Maria</span><span class="price">$9.99</span></div>
+          <p class="desc">our killer bloody mary mixed with alcohol free tequila</p>
+        </li>
+        <li data-q="dry smash blended berries, lemon-lime juice shaken with alcohol free whiskey">
+          <div class="row"><span class="name">Dry Smash</span><span class="price">$9.99</span></div>
+          <p class="desc">blended berries, lemon-lime juice shaken with alcohol free whiskey</p>
+        </li>
+        <li data-q="desert margarita on the rocks with non-alcoholic agave from parch">
+          <div class="row"><span class="name">Desert Margarita</span><span class="price">$8.99</span></div>
+          <p class="desc">on the rocks with non-alcoholic agave from Parch</p>
+        </li>
+        <li data-q="firework on the rocks from de soi spritz italiano">
+          <div class="row"><span class="name">Firework</span><span class="price">$8.99</span></div>
+          <p class="desc">on the rocks from De Soi Spritz Italiano</p>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>Thoroughly cooking foods of animal origin such as beef, eggs, fish, pork, poultry or shellfish reduces the risk of food borne illness. Consult your physician or public health official for further information. Ruth&#39;s Favorite: if your favorite is no longer offered, please ask. We may be able to make it for you. Ask your server about our breakfast &amp; lunch specials. Check out our dessert menus at your table for more seasonal cocktails.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Ruth&#39;s Diner.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Ruth&#39;s Diner menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

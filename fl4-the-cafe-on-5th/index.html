@@ -1,0 +1,783 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>The Café (kitchen &amp; juicery) Menu</title>
+<meta name="description" content="Menu for The Café (kitchen &amp; juicery), Downtown Naples (5th Avenue South).">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>The Café (kitchen &amp; juicery)</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=821%205th%20Avenue%20South%2C%20Naples%2C%20FL%2034102">821 5th Avenue South, Naples, FL 34102</a><a href="tel:2394306555">(239) 430-6555</a></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#healthy-bowls" data-sec="healthy-bowls">Healthy Bowls</a><a href="#fresh-fluffy-omelettes" data-sec="fresh-fluffy-omelettes">Fresh Fluffy Omelettes</a><a href="#breakfast-egg-choices" data-sec="breakfast-egg-choices">Breakfast Egg Choices</a><a href="#sides-additions-replacements" data-sec="sides-additions-replacements">Sides, Additions &amp; Replacements</a><a href="#other-breakfast-choices" data-sec="other-breakfast-choices">Other Breakfast Choices</a><a href="#the-sweeter-tooth" data-sec="the-sweeter-tooth">The Sweeter Tooth</a><a href="#baked-goods" data-sec="baked-goods">Baked Goods</a><a href="#lunch-bowls" data-sec="lunch-bowls">Lunch Bowls</a><a href="#gourmet-sandwiches" data-sec="gourmet-sandwiches">Gourmet Sandwiches</a><a href="#cafe-wraps" data-sec="cafe-wraps">Cafe Wraps</a><a href="#paleo-diet" data-sec="paleo-diet">Paleo Diet</a><a href="#our-seasonal-salads" data-sec="our-seasonal-salads">Our Seasonal Salads</a><a href="#other-lunch-choices" data-sec="other-lunch-choices">Other Lunch Choices</a><a href="#tea" data-sec="tea">Tea</a><a href="#gourmet-coffee" data-sec="gourmet-coffee">Gourmet Coffee</a><a href="#barista-specials" data-sec="barista-specials">Barista Specials</a><a href="#juices" data-sec="juices">Juices</a><a href="#smoothies" data-sec="smoothies">Smoothies</a><a href="#shots" data-sec="shots">Shots</a><a href="#beer" data-sec="beer">Beer</a><a href="#mixed-alcoholic-drinks-other-beverages" data-sec="mixed-alcoholic-drinks-other-beverages">Mixed Alcoholic Drinks &amp; Other Beverages</a><a href="#our-wines" data-sec="our-wines">Our Wines</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="healthy-bowls" class="sec">
+      <h2>Healthy Bowls</h2>
+      <p class="note">Breakfast (all day)</p>
+      <ul>
+        <li data-q="cafe bircher - muesli overnight oats soaked in oatmilk and orange juice with almond butter yogurt, mixed berries, pineapple, mixed melon, mixed seeds, dry baked orange, grapefruit and ginger honey">
+          <div class="row"><span class="name">Cafe Bircher - Muesli</span><span class="price">$18.50</span></div>
+          <p class="desc">Overnight oats soaked in oatmilk and orange juice with almond butter yogurt, mixed berries, pineapple, mixed melon, mixed seeds, dry baked orange, grapefruit and ginger honey</p>
+        </li>
+        <li data-q="ironman oatmeal natural whole grain oatmeal whipped in fresh beet-carrot-apple juice, topped with roasted flaxseeds, almonds, raisins, apples &amp; agave nectar">
+          <div class="row"><span class="name">Ironman Oatmeal</span><span class="price">$15.50</span></div>
+          <p class="desc">Natural whole grain oatmeal whipped in fresh beet-carrot-apple juice, topped with roasted flaxseeds, almonds, raisins, apples &amp; agave nectar</p>
+        </li>
+        <li data-q="the works oatmeal whole grain oatmeal, raisins, walnuts, bananas &amp; brown sugar. berries - add 4.00">
+          <div class="row"><span class="name">The Works Oatmeal</span><span class="price">$13.50</span></div>
+          <p class="desc">Whole grain oatmeal, raisins, walnuts, bananas &amp; brown sugar. Berries - add 4.00</p>
+        </li>
+        <li data-q="acai bowl (amazonian superfood) organic premium grade acai - blended with pineapple, banana, orange juice &amp; agave nectar. topped with strawberries, blueberries, kiwi &amp; house granola">
+          <div class="row"><span class="name">Acai Bowl (Amazonian Superfood)</span><span class="price">$18.00</span></div>
+          <p class="desc">Organic Premium Grade Acai - Blended with pineapple, banana, orange juice &amp; agave nectar. Topped with strawberries, blueberries, kiwi &amp; house granola</p>
+        </li>
+        <li data-q="pitaya bowl (asian superfood) organic premium grade pitaya - blended with strawberries, coconut manna, mango and almond milk. topped with banana, strawberry, coconut flakes, honey &amp; house granola">
+          <div class="row"><span class="name">Pitaya Bowl (Asian Superfood)</span><span class="price">$18.00</span></div>
+          <p class="desc">Organic Premium Grade Pitaya - Blended with strawberries, coconut manna, mango and almond milk. Topped with banana, strawberry, coconut flakes, honey &amp; house granola</p>
+        </li>
+        <li data-q="yogurt granola delight yogurt parfait with fresh berries and house granola">
+          <div class="row"><span class="name">Yogurt Granola Delight</span><span class="price">$15.50</span></div>
+          <p class="desc">Yogurt parfait with fresh berries and house granola</p>
+        </li></ul>
+    </section>
+    <section id="fresh-fluffy-omelettes" class="sec">
+      <h2>Fresh Fluffy Omelettes</h2>
+      <p class="note">All omelets come with a slice of toast &amp; a petite salad</p>
+      <ul>
+        <li data-q="veggie &amp; cheese omelette mushroom, peppers, onions, spinach, tomato, choice of cheese">
+          <div class="row"><span class="name">Veggie &amp; Cheese Omelette</span><span class="price">$17.00</span></div>
+          <p class="desc">Mushroom, peppers, onions, spinach, tomato, choice of cheese</p>
+        </li>
+        <li data-q="greek mediterranean omelette feta cheese, spinach &amp; tomato">
+          <div class="row"><span class="name">Greek Mediterranean Omelette</span><span class="price">$17.00</span></div>
+          <p class="desc">Feta cheese, spinach &amp; tomato</p>
+        </li>
+        <li data-q="western omelette ham, cheddar cheese, peppers &amp; onions">
+          <div class="row"><span class="name">Western Omelette</span><span class="price">$17.00</span></div>
+          <p class="desc">Ham, cheddar cheese, peppers &amp; onions</p>
+        </li>
+        <li data-q="chorizo omelette chorizo, peppers, onions, potatoes, pepper jack cheese">
+          <div class="row"><span class="name">Chorizo Omelette</span><span class="price">$18.50</span></div>
+          <p class="desc">Chorizo, peppers, onions, potatoes, pepper jack cheese</p>
+        </li>
+        <li data-q="*smoked salmon omelette arugula, tomato, cream cheese, capers, smoked salmon">
+          <div class="row"><span class="name">*Smoked Salmon Omelette</span><span class="price">$23.50</span></div>
+          <p class="desc">Arugula, tomato, cream cheese, capers, smoked salmon</p>
+        </li>
+        <li data-q="ham or bacon cheese omelette with a choice of ham or bacon and choice of cheese">
+          <div class="row"><span class="name">Ham or Bacon Cheese Omelette</span><span class="price">$17.00</span></div>
+          <p class="desc">With a choice of ham or bacon and choice of cheese</p>
+        </li></ul>
+    </section>
+    <section id="breakfast-egg-choices" class="sec">
+      <h2>Breakfast Egg Choices</h2>
+      
+      <ul>
+        <li data-q="*eggs benedict grilled canadian bacon, &amp; poached eggs atop toasted english muffin with home made hollandaise sauce &amp; petite salad.">
+          <div class="row"><span class="name">*Eggs Benedict</span><span class="price">$18.00</span></div>
+          <p class="desc">Grilled Canadian bacon, &amp; poached eggs atop toasted English muffin with home made Hollandaise sauce &amp; petite salad.</p>
+        </li>
+        <li data-q="*veggie benedict tomato, spinach, aspargus &amp; poached eggs atop toasted english muffin with home made hollandaise sauce &amp; petite salad">
+          <div class="row"><span class="name">*Veggie Benedict</span><span class="price">$19.00</span></div>
+          <p class="desc">Tomato, spinach, aspargus &amp; poached eggs atop toasted English muffin with home made Hollandaise sauce &amp; petite salad</p>
+        </li>
+        <li data-q="*two eggs any style to your preference, choice of ham, bacon or sausage &amp; toast">
+          <div class="row"><span class="name">*Two Eggs Any Style</span><span class="price">$17.00</span></div>
+          <p class="desc">To your preference, choice of ham, bacon or sausage &amp; toast</p>
+        </li>
+        <li data-q="mediterranean scrambler two eggs scrambled with potatoes, tomatoes, spinach, onions, kalamata olives and feta cheese with toast">
+          <div class="row"><span class="name">Mediterranean Scrambler</span><span class="price">$17.50</span></div>
+          <p class="desc">Two eggs scrambled with potatoes, tomatoes, spinach, onions, Kalamata olives and feta cheese with toast</p>
+        </li>
+        <li data-q="*balanced breakfast salad two eggs with black beans, fresh cilantro, avocado and papaya - sweet, savory with a toast">
+          <div class="row"><span class="name">*Balanced Breakfast Salad</span><span class="price">$17.50</span></div>
+          <p class="desc">Two eggs with black beans, fresh cilantro, avocado and papaya - sweet, savory with a toast</p>
+        </li>
+        <li data-q="*power breakfast bowl two eggs poached with avocado, sun-dried tomatoes, feta cheese, hot sauce over natural whole grain oatmeal">
+          <div class="row"><span class="name">*Power Breakfast Bowl</span><span class="price">$18.00</span></div>
+          <p class="desc">Two eggs poached with avocado, sun-dried tomatoes, feta cheese, hot sauce over natural whole grain oatmeal</p>
+        </li>
+        <li data-q="*cafe shakshuka two poached eggs in house tomato sauce, mozzarella, cilantro mojo, sesame seeds, crunchy garlic, micro greens, oven roasted potatoes &amp; side of toast">
+          <div class="row"><span class="name">*Cafe Shakshuka</span><span class="price">$18.50</span></div>
+          <p class="desc">Two poached eggs in house tomato sauce, mozzarella, cilantro mojo, sesame seeds, crunchy garlic, micro greens, oven roasted potatoes &amp; side of toast</p>
+        </li></ul>
+    </section>
+    <section id="sides-additions-replacements" class="sec">
+      <h2>Sides, Additions &amp; Replacements</h2>
+      <p class="note">Gluten free options available, please ask your server</p>
+      <ul>
+        <li data-q="cup of fruit ">
+          <div class="row"><span class="name">Cup of Fruit</span><span class="price">$5.50</span></div>
+          
+        </li>
+        <li data-q="cup of berries ">
+          <div class="row"><span class="name">Cup of Berries</span><span class="price">$9.00</span></div>
+          
+        </li>
+        <li data-q="oven roasted potatoes ">
+          <div class="row"><span class="name">Oven Roasted Potatoes</span><span class="price">$5.00</span></div>
+          
+        </li>
+        <li data-q="ham, bacon or turkey bacon ">
+          <div class="row"><span class="name">Ham, Bacon or Turkey Bacon</span><span class="price">$5.00</span></div>
+          
+        </li>
+        <li data-q="sausage (link or patty) ">
+          <div class="row"><span class="name">Sausage (link or patty)</span><span class="price">$5.00</span></div>
+          
+        </li>
+        <li data-q="turkey patty ">
+          <div class="row"><span class="name">Turkey patty</span><span class="price">$5.00</span></div>
+          
+        </li>
+        <li data-q="egg white addition">
+          <div class="row"><span class="name">Egg White</span><span class="price">$2.75</span></div>
+          <p class="desc">Addition</p>
+        </li>
+        <li data-q="extra cheese addition">
+          <div class="row"><span class="name">Extra Cheese</span><span class="price">$2.75</span></div>
+          <p class="desc">Addition</p>
+        </li>
+        <li data-q="english muffin (instead of toast) replacement">
+          <div class="row"><span class="name">English Muffin (instead of toast)</span></div>
+          <p class="desc">Replacement</p><div class="prices"><span class="pp"><span class="pl">Regular</span> <b>$0.50</b></span><span class="pp"><span class="pl">G/F</span> <b>$1.50</b></span></div>
+        </li>
+        <li data-q="bagel (instead of toast) replacement">
+          <div class="row"><span class="name">Bagel (instead of toast)</span></div>
+          <p class="desc">Replacement</p><div class="prices"><span class="pp"><span class="pl">Regular</span> <b>$1.25</b></span><span class="pp"><span class="pl">G/F</span> <b>$2.00</b></span></div>
+        </li>
+        <li data-q="croissant (instead of toast) replacement">
+          <div class="row"><span class="name">Croissant (instead of toast)</span><span class="price">$2.25</span></div>
+          <p class="desc">Replacement</p>
+        </li>
+        <li data-q="repl. reg. cheese with feta, mozzarella, brie or goat cheese replacement">
+          <div class="row"><span class="name">Repl. reg. cheese with feta, mozzarella, brie or goat cheese</span><span class="price">$2.50</span></div>
+          <p class="desc">Replacement</p>
+        </li></ul>
+    </section>
+    <section id="other-breakfast-choices" class="sec">
+      <h2>Other Breakfast Choices</h2>
+      
+      <ul>
+        <li data-q="*avocado smash whole avocado smashed with fresh cilantro, chopped tomatoes, scallions, lemon juice and feta cheese. topped with two poached eggs and served with a slice of multigrain toast">
+          <div class="row"><span class="name">*Avocado Smash</span><span class="price">$18.00</span></div>
+          <p class="desc">Whole avocado smashed with fresh cilantro, chopped tomatoes, scallions, Lemon juice and feta cheese. Topped with two poached eggs and served with a slice of multigrain toast</p>
+        </li>
+        <li data-q="*veggie toast avocado smash, sautéed broccolini, asparagus, spinach, micro greens, sesame seed, a chili drizzle topped with two poached eggs - with a slice of multigrain toast &amp; a side of oven roasted potatoes">
+          <div class="row"><span class="name">*Veggie Toast</span><span class="price">$19.50</span></div>
+          <p class="desc">Avocado smash, sautéed broccolini, asparagus, spinach, micro greens, sesame seed, a chili drizzle topped with two poached eggs - with a slice of multigrain toast &amp; a side of oven roasted potatoes</p>
+        </li>
+        <li data-q="*smoked salmon brunch bowl smoked salmon, brown rice, sautéed spinach, sautéed mushrooms, oven roasted potatoes with a drizzle of lemon aioli and a medium poached egg">
+          <div class="row"><span class="name">*Smoked Salmon Brunch Bowl</span><span class="price">$22.50</span></div>
+          <p class="desc">Smoked salmon, brown rice, sautéed spinach, sautéed mushrooms, oven roasted potatoes with a drizzle of lemon aioli and a medium poached egg</p>
+        </li>
+        <li data-q="*burrata-prociutto-avocado sandwich open-face multigrain breakfast sandwich with two poached eggs, avocado, prosciutto, burrata cheese, fresh raspberries and basil. drizzled with honey and served with a side of fruit">
+          <div class="row"><span class="name">*Burrata-Prociutto-Avocado Sandwich</span><span class="price">$22.00</span></div>
+          <p class="desc">Open-face multigrain breakfast sandwich with two poached eggs, avocado, prosciutto, burrata cheese, fresh raspberries and basil. Drizzled with honey and served with a side of fruit</p>
+        </li>
+        <li data-q="*steak breakfast burrito scrambled eggs, sautéed jalapeño, onions, tomato, grilled flank steak, avocado, pepper jack cheese. oven roasted potatoes &amp; pico de gallo">
+          <div class="row"><span class="name">*Steak Breakfast Burrito</span><span class="price">$21.50</span></div>
+          <p class="desc">Scrambled eggs, sautéed jalapeño, onions, tomato, grilled flank steak, avocado, pepper jack cheese. oven roasted potatoes &amp; Pico De Gallo</p>
+        </li>
+        <li data-q="breakfast sandwich your style eggs, cheese and your choice of ham, bacon or sausage on a toast or upgrade to a bagel or a croissant">
+          <div class="row"><span class="name">Breakfast Sandwich Your Style</span><span class="price">$17.00</span></div>
+          <p class="desc">Eggs, cheese and your choice of ham, bacon or sausage on a toast or upgrade to a bagel or a croissant</p>
+        </li>
+        <li data-q="*classic lox bagel delicious smoked salmon with cream cheese, lettuce, tomato, onions &amp; capers served on a toasted bagel">
+          <div class="row"><span class="name">*Classic Lox Bagel</span><span class="price">$20.50</span></div>
+          <p class="desc">Delicious smoked salmon with cream cheese, lettuce, tomato, onions &amp; capers served on a toasted bagel</p>
+        </li></ul>
+    </section>
+    <section id="the-sweeter-tooth" class="sec">
+      <h2>The Sweeter Tooth</h2>
+      
+      <ul>
+        <li data-q="cafe crepes fresh berries and homemade mascarpone/ricotta cream filling, topped with raspberry syrup">
+          <div class="row"><span class="name">Cafe Crepes</span><span class="price">$17.50</span></div>
+          <p class="desc">Fresh berries and homemade mascarpone/ricotta cream filling, topped with raspberry syrup</p>
+        </li>
+        <li data-q="classic vanilla belgian waffle baked to order and served with maple syrup on the side. add a side of mixed fruit 5.50. available gluten free">
+          <div class="row"><span class="name">Classic Vanilla Belgian Waffle</span><span class="price">$14.00</span></div>
+          <p class="desc">Baked to order and served with Maple syrup on the side. Add a side of mixed fruit 5.50. Available gluten free</p>
+        </li>
+        <li data-q="cafe pancakes baked to order and served with maple syrup on the side. add a side of mixed fruit 5.50">
+          <div class="row"><span class="name">Cafe Pancakes</span><span class="price">$14.00</span></div>
+          <p class="desc">Baked to order and served with Maple syrup on the side. Add a side of mixed fruit 5.50</p>
+        </li>
+        <li data-q="strawberry stuffed french toast fresh baked challah dipped in our house made vanilla, cinnamon, nutmeg and fresh oj custard, stuffed with a creamy mascarpone cheese filling and fresh strawberries. topped with house made raspberry syrup">
+          <div class="row"><span class="name">Strawberry Stuffed French Toast</span><span class="price">$18.00</span></div>
+          <p class="desc">Fresh baked Challah dipped in our house made vanilla, cinnamon, nutmeg and fresh OJ custard, stuffed with a creamy mascarpone cheese filling and fresh strawberries. Topped with house made raspberry syrup</p>
+        </li></ul>
+    </section>
+    <section id="baked-goods" class="sec">
+      <h2>Baked Goods</h2>
+      <p class="note">Come and see our delicious selection of cakes &amp; cookies - baked fresh daily</p>
+      <ul>
+        <li data-q="toast ">
+          <div class="row"><span class="name">Toast</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Regular</span> <b>$2.75</b></span><span class="pp"><span class="pl">G/F</span> <b>$3.25</b></span></div>
+        </li>
+        <li data-q="toasted bagel with cream cheese 5.00">
+          <div class="row"><span class="name">Toasted Bagel</span></div>
+          <p class="desc">With cream cheese 5.00</p><div class="prices"><span class="pp"><span class="pl">Regular</span> <b>$4.00</b></span><span class="pp"><span class="pl">G/F</span> <b>$5.25</b></span></div>
+        </li>
+        <li data-q="english muffin ">
+          <div class="row"><span class="name">English Muffin</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Regular</span> <b>$3.25</b></span><span class="pp"><span class="pl">G/F</span> <b>$4.75</b></span></div>
+        </li>
+        <li data-q="baked muffin ask for our daily selection">
+          <div class="row"><span class="name">Baked Muffin</span><span class="price">$4.75</span></div>
+          <p class="desc">Ask for our daily selection</p>
+        </li>
+        <li data-q="croissant ">
+          <div class="row"><span class="name">Croissant</span><span class="price">$5.00</span></div>
+          
+        </li>
+        <li data-q="english scone ask for our daily selection">
+          <div class="row"><span class="name">English Scone</span><span class="price">$4.75</span></div>
+          <p class="desc">Ask for our daily selection</p>
+        </li></ul>
+    </section>
+    <section id="lunch-bowls" class="sec">
+      <h2>Lunch Bowls</h2>
+      <p class="note">Lunch</p>
+      <ul>
+        <li data-q="*marinated protein bowl sliced grilled marinated flank steak, farro grains, marinated shredded cabbage, mango, avocado, fresh basil, cilantro with zesty tahini sauce">
+          <div class="row"><span class="name">*Marinated Protein Bowl</span><span class="price">$21.50</span></div>
+          <p class="desc">Sliced grilled marinated flank steak, farro grains, marinated shredded cabbage, mango, avocado, fresh basil, cilantro with zesty tahini sauce</p>
+        </li>
+        <li data-q="ancient grain bowl ancient farro grains, roasted sweet potatoes, arugula, cherry tomatoes, black beans, avocado, spring onions with a lemon cashew dressing">
+          <div class="row"><span class="name">Ancient Grain Bowl</span><span class="price">$18.50</span></div>
+          <p class="desc">Ancient farro grains, roasted sweet potatoes, arugula, cherry tomatoes, black beans, avocado, spring onions with a lemon cashew dressing</p>
+        </li>
+        <li data-q="baked falafel salad bowl house made falafel balls, shredded red cabbage, carrot, apple, roasted almond, feta, dates, pickled ginger, micro green celery and chives served with our house lemon tahini dressing">
+          <div class="row"><span class="name">Baked Falafel Salad Bowl</span><span class="price">$22.50</span></div>
+          <p class="desc">House made falafel balls, shredded red cabbage, carrot, apple, roasted almond, feta, dates, pickled ginger, micro green celery and chives served with our house lemon tahini dressing</p>
+        </li>
+        <li data-q="*ahi tuna poke bowl sushi grade tuna, brown rice, edamame, avocado, steamed broccolini, pickled onion, mango, red cabbage, house made ponzu dressing">
+          <div class="row"><span class="name">*Ahi Tuna Poke Bowl</span><span class="price">$24.25</span></div>
+          <p class="desc">Sushi grade tuna, brown rice, edamame, avocado, steamed broccolini, pickled onion, mango, red cabbage, house made Ponzu dressing</p>
+        </li>
+        <li data-q="sriracha-lime chicken salad bowl chopped roasted chicken breast, napa cabbage, shredded carrots, micro green celery, scallions, red peppers, cilantro, basil &amp; roasted almonds with spicy, sweet, sour house sriracha-lime ginger dressing">
+          <div class="row"><span class="name">Sriracha-Lime Chicken Salad Bowl</span><span class="price">$19.75</span></div>
+          <p class="desc">Chopped roasted chicken breast, napa cabbage, shredded carrots, micro green celery, scallions, red peppers, cilantro, basil &amp; roasted almonds with spicy, sweet, sour house sriracha-lime ginger dressing</p>
+        </li></ul>
+    </section>
+    <section id="gourmet-sandwiches" class="sec">
+      <h2>Gourmet Sandwiches</h2>
+      
+      <ul>
+        <li data-q="a cocky blt bacon, lettuce, tomato, cheddar cheese, chipotle paste, fried egg and our house guacamole on artisanal sourdough bread">
+          <div class="row"><span class="name">A Cocky BLT</span><span class="price">$21.00</span></div>
+          <p class="desc">Bacon, lettuce, tomato, cheddar cheese, chipotle paste, fried egg and our house guacamole on artisanal sourdough bread</p>
+        </li>
+        <li data-q="grilled cafe panini ham, chicken, or turkey with fresh mozzarella, avocado, tomato &amp; pesto served on artisan ciabatta bread">
+          <div class="row"><span class="name">Grilled Cafe Panini</span><span class="price">$19.50</span></div>
+          <p class="desc">Ham, chicken, or turkey with fresh mozzarella, avocado, tomato &amp; pesto served on artisan ciabatta bread</p>
+        </li>
+        <li data-q="smoked chicken havarti sliced golden chicken with havarti cheese, lettuce, tomato and creamy mayo on a toast">
+          <div class="row"><span class="name">Smoked Chicken Havarti</span><span class="price">$17.50</span></div>
+          <p class="desc">Sliced golden chicken with Havarti cheese, lettuce, tomato and creamy mayo on a toast</p>
+        </li>
+        <li data-q="new veggie panini arugula, avocado, tomatoes, cucumber, onion, peppers, olives and spicy pesto served on artisan ciabatta bread">
+          <div class="row"><span class="name">New Veggie Panini</span><span class="price">$17.50</span></div>
+          <p class="desc">Arugula, avocado, tomatoes, cucumber, onion, peppers, olives and spicy pesto served on artisan ciabatta bread</p>
+        </li>
+        <li data-q="grilled ny reuben pastrami or corned beef on rye grilled to perfection with sauerkraut, swiss cheese and thousand island dressing">
+          <div class="row"><span class="name">Grilled NY Reuben</span><span class="price">$19.00</span></div>
+          <p class="desc">Pastrami or corned beef on rye grilled to perfection with sauerkraut, Swiss cheese and thousand island dressing</p>
+        </li>
+        <li data-q="blt bacon, lettuce, tomato &amp; creamy mayo on a toast. make it a turkey blt - add 2.75">
+          <div class="row"><span class="name">BLT</span><span class="price">$17.00</span></div>
+          <p class="desc">Bacon, lettuce, tomato &amp; creamy mayo on a toast. Make it a turkey BLT - add 2.75</p>
+        </li>
+        <li data-q="chipotle chicken focaccia sliced roasted chicken breast, arugula, tomatoes, avocado, served on focaccia bread with our homemade chipotle-apricot-barbecue sauce">
+          <div class="row"><span class="name">Chipotle Chicken Focaccia</span><span class="price">$19.50</span></div>
+          <p class="desc">Sliced roasted chicken breast, arugula, tomatoes, avocado, served on focaccia bread with our homemade chipotle-apricot-barbecue sauce</p>
+        </li>
+        <li data-q="french ham &amp; brie panini ham, brie, green apples, bacon, honey mustard, mayo, tomatoes, served on artisan ciabatta bread">
+          <div class="row"><span class="name">French Ham &amp; Brie Panini</span><span class="price">$19.50</span></div>
+          <p class="desc">Ham, brie, green apples, bacon, honey mustard, mayo, tomatoes, served on artisan ciabatta bread</p>
+        </li></ul>
+    </section>
+    <section id="cafe-wraps" class="sec">
+      <h2>Cafe Wraps</h2>
+      <p class="note">Sides: Coleslaw, oven roasted potatoes 5.00. Mediterranean salad, House or Cesar salad 5.75</p>
+      <ul>
+        <li data-q="low carb wraps with lettuce, tomato (creamy low-fat mayo) and a choice of: chicken/bacon, turkey/bacon, ham/cheddar">
+          <div class="row"><span class="name">Low Carb Wraps</span><span class="price">$18.75</span></div>
+          <p class="desc">With lettuce, tomato (creamy low-fat mayo) and a choice of: Chicken/Bacon, Turkey/Bacon, Ham/Cheddar</p>
+        </li>
+        <li data-q="*steak wrap sliced grilled steak, romaine, avocado, roasted red peppers, feta cheese and chipotle aioli">
+          <div class="row"><span class="name">*Steak Wrap</span><span class="price">$20.50</span></div>
+          <p class="desc">Sliced grilled steak, romaine, avocado, roasted red peppers, feta cheese and chipotle aioli</p>
+        </li>
+        <li data-q="mexican wrap avocado, black beans, cheddar cheese, tomato, peppers, onion, lettuce and spicy mayo. add roasted chicken breast: 6.00 or sliced grilled steak: 7.00">
+          <div class="row"><span class="name">Mexican Wrap</span><span class="price">$16.50</span></div>
+          <p class="desc">Avocado, black beans, cheddar cheese, tomato, peppers, onion, lettuce and spicy mayo. Add Roasted Chicken Breast: 6.00 or Sliced Grilled Steak: 7.00</p>
+        </li>
+        <li data-q="mediterranean spinach wrap cucumber, olives, romaine, roasted red peppers, feta cheese, tzatziki. add roasted chicken breast: 6.00">
+          <div class="row"><span class="name">Mediterranean Spinach Wrap</span><span class="price">$16.00</span></div>
+          <p class="desc">Cucumber, olives, romaine, roasted red peppers, feta cheese, tzatziki. Add Roasted Chicken Breast: 6.00</p>
+        </li></ul>
+    </section>
+    <section id="paleo-diet" class="sec">
+      <h2>Paleo Diet</h2>
+      <p class="note">Eat like a caveman</p>
+      <ul>
+        <li data-q="paleo-pollo roasted chicken breast, shredded cabbage, crispy romaine, homemade coleslaw, topped with roasted almonds, dried cranberries and pesto">
+          <div class="row"><span class="name">Paleo-Pollo</span><span class="price">$19.50</span></div>
+          <p class="desc">Roasted chicken breast, shredded cabbage, crispy romaine, homemade coleslaw, topped with roasted almonds, dried cranberries and pesto</p>
+        </li>
+        <li data-q="paleo bolognese raw vegetable pasta, home made seasoned all natural beef bolognese sauce, topped with pesto and shaved parmesan cheese.">
+          <div class="row"><span class="name">Paleo Bolognese</span><span class="price">$19.50</span></div>
+          <p class="desc">Raw vegetable pasta, home made seasoned all natural beef bolognese sauce, topped with pesto and shaved parmesan cheese.</p>
+        </li></ul>
+    </section>
+    <section id="our-seasonal-salads" class="sec">
+      <h2>Our Seasonal Salads</h2>
+      <p class="note">All salads: Add Roasted Chicken Breast: 6.00 - Add Grilled Shrimp: 7.50. Add grilled Salmon or Tuna: market price</p>
+      <ul>
+        <li data-q="*ahi tuna protein salad pan seared ahi tuna with sesame seed crust, served with avocado, cherry tomato, cucumber, radish, jalapeño, hard boiled eggs, mixed seeds and topped with a sweet chili soy dressing">
+          <div class="row"><span class="name">*Ahi Tuna Protein Salad</span><span class="price">$25.50</span></div>
+          <p class="desc">Pan seared ahi tuna with sesame seed crust, served with avocado, cherry tomato, cucumber, radish, jalapeño, hard boiled eggs, mixed seeds and topped with a sweet chili soy dressing</p>
+        </li>
+        <li data-q="*grilled salmon salad grilled salmon, crispy romaine, avocado, edamame, spring onion, cucumber, italian parsley, chopped peanuts and sesame seeds with our savory house made hoisin-chili-lime dressing">
+          <div class="row"><span class="name">*Grilled Salmon Salad</span><span class="price">$25.50</span></div>
+          <p class="desc">Grilled salmon, crispy romaine, avocado, edamame, spring onion, cucumber, Italian parsley, chopped peanuts and sesame seeds with our savory house made hoisin-chili-lime dressing</p>
+        </li>
+        <li data-q="curried chicken salad our house curry chicken salad blend on a bed of crispy garden salad, tomato, cucumber, pepper, carrot">
+          <div class="row"><span class="name">Curried Chicken Salad</span><span class="price">$18.00</span></div>
+          <p class="desc">Our house curry chicken salad blend on a bed of crispy garden salad, tomato, cucumber, pepper, carrot</p>
+        </li>
+        <li data-q="chicken caesar salad roasted chicken breast with croutons, parmesan &amp; caesar dressing served over crispy romaine">
+          <div class="row"><span class="name">Chicken Caesar Salad</span><span class="price">$18.50</span></div>
+          <p class="desc">Roasted chicken breast with croutons, parmesan &amp; caesar dressing served over crispy romaine</p>
+        </li>
+        <li data-q="creamy tuna salad our house creamy tuna salad blend served on a bed of crispy garden salad, tomato, cucumber, carrot, pepper">
+          <div class="row"><span class="name">Creamy Tuna Salad</span><span class="price">$18.00</span></div>
+          <p class="desc">Our house creamy tuna salad blend served on a bed of crispy garden salad, tomato, cucumber, carrot, pepper</p>
+        </li>
+        <li data-q="greek salad delicious mediterranean salad with tomatoes, kalamata olives, onions, cucumber, greens and feta cheese">
+          <div class="row"><span class="name">Greek Salad</span><span class="price">$17.00</span></div>
+          <p class="desc">Delicious Mediterranean salad with tomatoes, Kalamata olives, onions, cucumber, greens and feta cheese</p>
+        </li>
+        <li data-q="beet pistachio salad roasted beets, arugula salad, roasted red peppers, mandarin orange, pistachios nuts, feta cheese and raspberry vinaigrette">
+          <div class="row"><span class="name">Beet Pistachio Salad</span><span class="price">$18.25</span></div>
+          <p class="desc">Roasted beets, arugula salad, roasted red peppers, mandarin orange, pistachios nuts, feta cheese and raspberry vinaigrette</p>
+        </li>
+        <li data-q="cafe gourmet salad delicious fresh garden salad and vegetables with avocado, tomato, cheddar cheese, hard-boiled eggs, pistachios &amp; roasted chicken breast">
+          <div class="row"><span class="name">Cafe Gourmet Salad</span><span class="price">$21.00</span></div>
+          <p class="desc">Delicious fresh garden salad and vegetables with avocado, tomato, cheddar cheese, hard-boiled eggs, pistachios &amp; roasted chicken breast</p>
+        </li></ul>
+    </section>
+    <section id="other-lunch-choices" class="sec">
+      <h2>Other Lunch Choices</h2>
+      
+      <ul>
+        <li data-q="*cafe gastro burger house recipe black angus beef burger with baked cherry tomatoes, melted fresh mozzarella, pesto, oven roasted potatoes, arugula &amp; avocado on artisan multigrain bun">
+          <div class="row"><span class="name">*Cafe Gastro Burger</span><span class="price">$21.50</span></div>
+          <p class="desc">House recipe Black Angus beef burger with baked cherry tomatoes, melted fresh mozzarella, pesto, oven roasted potatoes, arugula &amp; avocado on artisan multigrain bun</p>
+        </li>
+        <li data-q="scratch vegan burger house made vegan patty (black bean-walnut-mushroom-beet based), topped with dill-pickles, arugula, diced tomato, avocado, vegan mayo and fresh jalapeño. served with a toasted garbanzo salad">
+          <div class="row"><span class="name">Scratch Vegan Burger</span><span class="price">$21.50</span></div>
+          <p class="desc">House made vegan patty (black bean-walnut-mushroom-beet based), topped with dill-pickles, arugula, diced tomato, avocado, vegan mayo and fresh jalapeño. Served with a toasted garbanzo salad</p>
+        </li>
+        <li data-q="*grilled salmon tacos grilled blackened salmon chunks, with sriracha mayo &amp; our home made mango pico de gallo served in tortilla, a side of caesar or house salad">
+          <div class="row"><span class="name">*Grilled Salmon Tacos</span><span class="price">$24.00</span></div>
+          <p class="desc">Grilled blackened Salmon chunks, with sriracha mayo &amp; our home made Mango Pico de Gallo served in tortilla, a side of caesar or house salad</p>
+        </li>
+        <li data-q="*mahi mahi fish tacos grilled seasoned mahi mahi chunks, chipotle aioli, home made green apple pepper coleslaw served in tortilla, a side of caesar or house salad">
+          <div class="row"><span class="name">*Mahi Mahi Fish Tacos</span><span class="price">$22.00</span></div>
+          <p class="desc">Grilled seasoned Mahi Mahi chunks, chipotle aioli, home made green apple pepper coleslaw served in tortilla, a side of caesar or house salad</p>
+        </li>
+        <li data-q="soup of the day ">
+          <div class="row"><span class="name">Soup of the Day</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Cup</span> <b>$7.25</b></span><span class="pp"><span class="pl">Bowl</span> <b>$9.25</b></span></div>
+        </li></ul>
+    </section>
+    <section id="tea" class="sec">
+      <h2>Tea</h2>
+      <p class="note">Palais des Thes + MEM</p>
+      <ul>
+        <li data-q="gourmet tea selection ">
+          <div class="row"><span class="name">Gourmet Tea Selection</span><span class="price">$5.00</span></div>
+          
+        </li>
+        <li data-q="home brewed iced tea: traditional caffeinated">
+          <div class="row"><span class="name">Home Brewed Iced Tea: Traditional</span><span class="price">$5.00</span></div>
+          <p class="desc">Caffeinated</p>
+        </li>
+        <li data-q="home brewed iced tea: blood orange hibiscus hibiscus, orange peel, lemongress, elderberry, rooibos, stevia leaf. decaffeinated">
+          <div class="row"><span class="name">Home Brewed Iced Tea: Blood Orange Hibiscus</span><span class="price">$7.00</span></div>
+          <p class="desc">Hibiscus, orange peel, lemongress, elderberry, rooibos, stevia leaf. Decaffeinated</p>
+        </li>
+        <li data-q="arnold palmer ">
+          <div class="row"><span class="name">Arnold Palmer</span><span class="price">$5.50</span></div>
+          
+        </li>
+        <li data-q="chai tea ">
+          <div class="row"><span class="name">Chai Tea</span><span class="price">$6.00</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="gourmet-coffee" class="sec">
+      <h2>Gourmet Coffee</h2>
+      <p class="note">Lavazza - La Riserva de Tierra. All our espresso based drinks are double shot. Syrups 1.75. Extra Shot 2.50. Substitute Cow milk for Almond or Oatmilk 1.50 or substitute for Pistachio Milk 2.50</p>
+      <ul>
+        <li data-q="daily grind drip coffee ">
+          <div class="row"><span class="name">Daily Grind Drip Coffee</span><span class="price">$5.25</span></div>
+          
+        </li>
+        <li data-q="espresso single ">
+          <div class="row"><span class="name">Espresso Single</span><span class="price">$3.50</span></div>
+          
+        </li>
+        <li data-q="cortado ">
+          <div class="row"><span class="name">Cortado</span><span class="price">$6.00</span></div>
+          
+        </li>
+        <li data-q="cappuccino ">
+          <div class="row"><span class="name">Cappuccino</span><span class="price">$6.50</span></div>
+          
+        </li>
+        <li data-q="cafe latte ">
+          <div class="row"><span class="name">Cafe Latte</span><span class="price">$6.50</span></div>
+          
+        </li>
+        <li data-q="flat white ">
+          <div class="row"><span class="name">Flat White</span><span class="price">$6.50</span></div>
+          
+        </li>
+        <li data-q="macchiato (s) ">
+          <div class="row"><span class="name">Macchiato (S)</span><span class="price">$4.75</span></div>
+          
+        </li>
+        <li data-q="mocha ">
+          <div class="row"><span class="name">Mocha</span><span class="price">$7.00</span></div>
+          
+        </li>
+        <li data-q="white chocolate mocha ">
+          <div class="row"><span class="name">White Chocolate Mocha</span><span class="price">$7.00</span></div>
+          
+        </li>
+        <li data-q="hot chocolate ">
+          <div class="row"><span class="name">Hot Chocolate</span><span class="price">$5.50</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="barista-specials" class="sec">
+      <h2>Barista Specials</h2>
+      
+      <ul>
+        <li data-q="golden turmeric latte (hot) fresh sq. turmeric &amp; ginger, oatmilk, cinnamon, honey">
+          <div class="row"><span class="name">Golden Turmeric Latte (Hot)</span><span class="price">$8.25</span></div>
+          <p class="desc">Fresh sq. turmeric &amp; ginger, oatmilk, cinnamon, honey</p>
+        </li>
+        <li data-q="matcha latte (hot or cold) ceremonial grade matcha, honey and oatmilk">
+          <div class="row"><span class="name">Matcha Latte (Hot or Cold)</span><span class="price">$7.75</span></div>
+          <p class="desc">Ceremonial grade Matcha, honey and oatmilk</p>
+        </li>
+        <li data-q="ginger matcha latte (hot or cold) ginger, matcha, collagen, cinnamon, oatmilk, honey">
+          <div class="row"><span class="name">Ginger Matcha Latte (Hot or Cold)</span><span class="price">$8.75</span></div>
+          <p class="desc">Ginger, matcha, collagen, cinnamon, oatmilk, honey</p>
+        </li>
+        <li data-q="lavender latte espresso, lavender, vanilla, oat milk">
+          <div class="row"><span class="name">Lavender Latte</span><span class="price">$8.75</span></div>
+          <p class="desc">Espresso, lavender, vanilla, oat milk</p>
+        </li>
+        <li data-q="pistachio latte espresso, pistachio creme, pistachio milk &amp; crunched pistachio nuts">
+          <div class="row"><span class="name">Pistachio Latte</span><span class="price">$9.25</span></div>
+          <p class="desc">Espresso, Pistachio Creme, Pistachio Milk &amp; Crunched Pistachio Nuts</p>
+        </li>
+        <li data-q="iced blueberry matcha house-made blueberry syrup blended with premium matcha and almond milk.">
+          <div class="row"><span class="name">Iced Blueberry Matcha</span><span class="price">$9.25</span></div>
+          <p class="desc">House-made Blueberry Syrup Blended with Premium Matcha and Almond Milk.</p>
+        </li>
+        <li data-q="blue boost cg matcha, butterfly pea, vanilla, lavender, oatmilk">
+          <div class="row"><span class="name">Blue Boost</span><span class="price">$8.25</span></div>
+          <p class="desc">CG Matcha, butterfly pea, vanilla, lavender, oatmilk</p>
+        </li></ul>
+    </section>
+    <section id="juices" class="sec">
+      <h2>Juices</h2>
+      <p class="note">16oz. Revitalizers, The Roots and Green Goodness</p>
+      <ul>
+        <li data-q="glow raw carrot, pineapple, ginger, aloe, parsley, coco water">
+          <div class="row"><span class="name">Glow Raw</span><span class="price">$10.75</span></div>
+          <p class="desc">Carrot, Pineapple, Ginger, Aloe, Parsley, Coco Water</p>
+        </li>
+        <li data-q="bee healthy carrot, apple, celery, parsley, bee pollen">
+          <div class="row"><span class="name">Bee Healthy</span><span class="price">$10.75</span></div>
+          <p class="desc">Carrot, Apple, Celery, Parsley, Bee Pollen</p>
+        </li>
+        <li data-q="watermelon hydrator watermelon, aloe, mint, coconut water">
+          <div class="row"><span class="name">Watermelon Hydrator</span><span class="price">$10.75</span></div>
+          <p class="desc">Watermelon, Aloe, Mint, Coconut Water</p>
+        </li>
+        <li data-q="c-booster carrot, pineapple, grapefruit, lime, camu camu">
+          <div class="row"><span class="name">C-Booster</span><span class="price">$10.75</span></div>
+          <p class="desc">Carrot, Pineapple, Grapefruit, Lime, Camu Camu</p>
+        </li>
+        <li data-q="pink pleasure beet, pineapple, strawberry, apple, ginger, orange">
+          <div class="row"><span class="name">Pink Pleasure</span><span class="price">$10.75</span></div>
+          <p class="desc">Beet, Pineapple, Strawberry, Apple, Ginger, Orange</p>
+        </li>
+        <li data-q="liquid oxygen apple, beet, carrot, ginger, cayenne">
+          <div class="row"><span class="name">Liquid Oxygen</span><span class="price">$10.75</span></div>
+          <p class="desc">Apple, Beet, Carrot, Ginger, Cayenne</p>
+        </li>
+        <li data-q="heartbeat beet, apple, kale, celery, lemon, ginger">
+          <div class="row"><span class="name">Heartbeat</span><span class="price">$10.75</span></div>
+          <p class="desc">Beet, Apple, Kale, Celery, Lemon, Ginger</p>
+        </li>
+        <li data-q="dr. rawz spinach, cucumber, pineapple, mint, lemon, lime">
+          <div class="row"><span class="name">Dr. Rawz</span><span class="price">$10.75</span></div>
+          <p class="desc">Spinach, Cucumber, Pineapple, Mint, Lemon, Lime</p>
+        </li>
+        <li data-q="immunity kale, spinach, apple, grapefruit, celery, ginger">
+          <div class="row"><span class="name">Immunity</span><span class="price">$10.75</span></div>
+          <p class="desc">Kale, Spinach, Apple, Grapefruit, Celery, Ginger</p>
+        </li>
+        <li data-q="rawsome kale, spinach, apple, parsley, celery, cucumber, lemon">
+          <div class="row"><span class="name">Rawsome</span><span class="price">$10.75</span></div>
+          <p class="desc">Kale, Spinach, Apple, Parsley, Celery, Cucumber, Lemon</p>
+        </li>
+        <li data-q="classic pressed juice: orange squeezed to order (12oz)">
+          <div class="row"><span class="name">Classic Pressed Juice: Orange</span><span class="price">$7.75</span></div>
+          <p class="desc">Squeezed to order (12oz)</p>
+        </li>
+        <li data-q="classic pressed juice: grapefruit squeezed to order (12oz)">
+          <div class="row"><span class="name">Classic Pressed Juice: Grapefruit</span><span class="price">$8.75</span></div>
+          <p class="desc">Squeezed to order (12oz)</p>
+        </li></ul>
+    </section>
+    <section id="smoothies" class="sec">
+      <h2>Smoothies</h2>
+      <p class="note">16oz. Fruiticious, Activators and Superfoods</p>
+      <ul>
+        <li data-q="sunset on 5th strawberry banana, pineapple, orange, alm. milk">
+          <div class="row"><span class="name">Sunset on 5th</span><span class="price">$11.75</span></div>
+          <p class="desc">Strawberry Banana, Pineapple, Orange, Alm. Milk</p>
+        </li>
+        <li data-q="liquid sunshine pineapple, mango, aloe, orange, coconut water">
+          <div class="row"><span class="name">Liquid Sunshine</span><span class="price">$11.75</span></div>
+          <p class="desc">Pineapple, Mango, Aloe, Orange, Coconut Water</p>
+        </li>
+        <li data-q="florida glow pineapple, kiwi, avocado, dates, aloe, coco water">
+          <div class="row"><span class="name">Florida Glow</span><span class="price">$11.75</span></div>
+          <p class="desc">Pineapple, Kiwi, Avocado, Dates, Aloe, Coco Water</p>
+        </li>
+        <li data-q="jump-start espresso, almond milk, banana, vanilla whey protein, cashew, almond butter, dates">
+          <div class="row"><span class="name">Jump-Start</span><span class="price">$11.75</span></div>
+          <p class="desc">Espresso, Almond Milk, Banana, Vanilla Whey Protein, Cashew, Almond Butter, Dates</p>
+        </li>
+        <li data-q="super stamina mango, pineapple, banana, veg. protein, coco water">
+          <div class="row"><span class="name">Super Stamina</span><span class="price">$11.75</span></div>
+          <p class="desc">Mango, Pineapple, Banana, Veg. Protein, Coco Water</p>
+        </li>
+        <li data-q="nut-torious almond, cashew, flaxseed, dates, mint, orange, almond milk">
+          <div class="row"><span class="name">Nut-Torious</span><span class="price">$11.75</span></div>
+          <p class="desc">Almond, Cashew, Flaxseed, Dates, Mint, Orange, Almond Milk</p>
+        </li>
+        <li data-q="rise &amp; shine banana, oats, flaxseed, yogurt, dates, orange, almond milk">
+          <div class="row"><span class="name">Rise &amp; Shine</span><span class="price">$11.75</span></div>
+          <p class="desc">Banana, Oats, Flaxseed, Yogurt, Dates, Orange, Almond Milk</p>
+        </li>
+        <li data-q="choco booster raw cacao, avocado, acai berries, dates, almond butter, almond milk">
+          <div class="row"><span class="name">Choco Booster</span><span class="price">$11.75</span></div>
+          <p class="desc">Raw Cacao, Avocado, Acai Berries, Dates, Almond Butter, Almond Milk</p>
+        </li>
+        <li data-q="d-raw detox kale, spinach, pineapple, banana, lime, alm. milk">
+          <div class="row"><span class="name">D-Raw Detox</span><span class="price">$11.75</span></div>
+          <p class="desc">Kale, Spinach, Pineapple, Banana, Lime, Alm. Milk</p>
+        </li>
+        <li data-q="green machine avocado, kale, spinach, yogurt, coconut manna, coconut water, dates, lime">
+          <div class="row"><span class="name">Green Machine</span><span class="price">$11.75</span></div>
+          <p class="desc">Avocado, Kale, Spinach, Yogurt, Coconut Manna, Coconut Water, Dates, Lime</p>
+        </li></ul>
+    </section>
+    <section id="shots" class="sec">
+      <h2>Shots</h2>
+      <p class="note">Raw &amp; handcrafted to order</p>
+      <ul>
+        <li data-q="defense shot 2oz lemon, ginger, cayenne">
+          <div class="row"><span class="name">Defense Shot 2oz</span><span class="price">$6.25</span></div>
+          <p class="desc">Lemon, Ginger, Cayenne</p>
+        </li>
+        <li data-q="flu shot 2oz echinacea, lemon, ginger">
+          <div class="row"><span class="name">Flu Shot 2oz</span><span class="price">$6.25</span></div>
+          <p class="desc">Echinacea, Lemon, Ginger</p>
+        </li>
+        <li data-q="ginger or turmeric 2oz take it straight or add it to one of our drinks">
+          <div class="row"><span class="name">Ginger or Turmeric 2oz</span><span class="price">$6.25</span></div>
+          <p class="desc">Take it straight or add it to one of our drinks</p>
+        </li>
+        <li data-q="zen shot 4oz brainon, orange juice">
+          <div class="row"><span class="name">Zen Shot 4oz</span><span class="price">$6.25</span></div>
+          <p class="desc">BrainOn, Orange Juice</p>
+        </li></ul>
+    </section>
+    <section id="beer" class="sec">
+      <h2>Beer</h2>
+      
+      <ul>
+        <li data-q="bud light premium light lager">
+          <div class="row"><span class="name">Bud Light</span><span class="price">$7.00</span></div>
+          <p class="desc">Premium light lager</p>
+        </li>
+        <li data-q="blue moon white belgian wheat ale">
+          <div class="row"><span class="name">Blue Moon</span><span class="price">$7.75</span></div>
+          <p class="desc">White Belgian Wheat Ale</p>
+        </li>
+        <li data-q="samuel adams boston lager">
+          <div class="row"><span class="name">Samuel Adams</span><span class="price">$7.75</span></div>
+          <p class="desc">Boston Lager</p>
+        </li>
+        <li data-q="corona extra mexico">
+          <div class="row"><span class="name">Corona Extra</span><span class="price">$7.75</span></div>
+          <p class="desc">Mexico</p>
+        </li>
+        <li data-q="heineken premium lager, holland">
+          <div class="row"><span class="name">Heineken</span><span class="price">$7.75</span></div>
+          <p class="desc">Premium Lager, Holland</p>
+        </li>
+        <li data-q="stella artois premium lager belgium">
+          <div class="row"><span class="name">Stella Artois</span><span class="price">$7.75</span></div>
+          <p class="desc">Premium Lager Belgium</p>
+        </li></ul>
+    </section>
+    <section id="mixed-alcoholic-drinks-other-beverages" class="sec">
+      <h2>Mixed Alcoholic Drinks &amp; Other Beverages</h2>
+      
+      <ul>
+        <li data-q="bellini ">
+          <div class="row"><span class="name">Bellini</span><span class="price">$12.00</span></div>
+          
+        </li>
+        <li data-q="mimosa ">
+          <div class="row"><span class="name">Mimosa</span><span class="price">$12.00</span></div>
+          
+        </li>
+        <li data-q="bloody mary ">
+          <div class="row"><span class="name">Bloody Mary</span><span class="price">$12.00</span></div>
+          
+        </li>
+        <li data-q="aperol spritz ">
+          <div class="row"><span class="name">Aperol Spritz</span><span class="price">$14.00</span></div>
+          
+        </li>
+        <li data-q="san pellegrino or perrier ">
+          <div class="row"><span class="name">San Pellegrino or Perrier</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Small</span> <b>$5.50</b></span><span class="pp"><span class="pl">Large</span> <b>$8.75</b></span></div>
+        </li>
+        <li data-q="acqua panna ">
+          <div class="row"><span class="name">Acqua Panna</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Large</span> <b>$8.75</b></span></div>
+        </li>
+        <li data-q="sodas coke, diet coke, sprite, club soda">
+          <div class="row"><span class="name">Sodas</span><span class="price">$5.25</span></div>
+          <p class="desc">Coke, Diet Coke, Sprite, Club Soda</p>
+        </li></ul>
+    </section>
+    <section id="our-wines" class="sec">
+      <h2>Our Wines</h2>
+      
+      <ul>
+        <li data-q="chardonnay juggernaut - sonoma coast">
+          <div class="row"><span class="name">Chardonnay</span></div>
+          <p class="desc">Juggernaut - Sonoma Coast</p><div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$12.00</b></span><span class="pp"><span class="pl">Bottle</span> <b>$46.00</b></span></div>
+        </li>
+        <li data-q="sauvignon blanc babich - marlborough, nz">
+          <div class="row"><span class="name">Sauvignon Blanc</span></div>
+          <p class="desc">Babich - Marlborough, NZ</p><div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$10.00</b></span><span class="pp"><span class="pl">Bottle</span> <b>$38.00</b></span></div>
+        </li>
+        <li data-q="pinot grigio gancia della venezia - veneto italy">
+          <div class="row"><span class="name">Pinot Grigio</span></div>
+          <p class="desc">Gancia Della Venezia - Veneto Italy</p><div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$10.00</b></span><span class="pp"><span class="pl">Bottle</span> <b>$38.00</b></span></div>
+        </li>
+        <li data-q="rose vino by charles smith - washington state">
+          <div class="row"><span class="name">Rose</span></div>
+          <p class="desc">Vino By Charles Smith - Washington State</p><div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$10.00</b></span><span class="pp"><span class="pl">Bottle</span> <b>$38.00</b></span></div>
+        </li>
+        <li data-q="cabernet sauvignon (organic) wander + ivy - mendocino county, california">
+          <div class="row"><span class="name">Cabernet Sauvignon (organic)</span></div>
+          <p class="desc">Wander + Ivy - Mendocino County, California</p><div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$12.00</b></span></div>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>*Consuming raw or undercooked meats, poultry, seafood, shellfish, eggs or unpasteurized milk may increase your risk of foodborne illness. The Cafe is pleased to offer a variety of gluten free options across our menu. Please ask your server. We are, however, not a gluten-free restaurant and although we have procedures in place to minimize the risk of cross contamination, we cannot guarantee that cross contamination will never occur. All our juices, smoothies and shots are 100% unprocessed &amp; made to order from raw, fresh produce without any added sugar, additives or preservatives.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for The Café (kitchen &amp; juicery).</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The The Café (kitchen &amp; juicery) menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

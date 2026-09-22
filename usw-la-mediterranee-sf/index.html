@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>La Méditerranée Menu</title>
+<meta name="description" content="Menu for La Méditerranée, Pacific Heights (Fillmore Street).">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>La Méditerranée</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=2210%20Fillmore%20St%2C%20San%20Francisco%2C%20CA%2094115">2210 Fillmore St, San Francisco, CA 94115</a><a href="tel:4159212956">(415) 921-2956</a><span>Monday-Thursday 11am-8:30pm; Friday-Saturday 11am-9:00pm; Sunday 11am-8:00pm. Lunch specials 11am to 4pm daily. Happy hour 3-6pm Monday-Friday</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#appetizers" data-sec="appetizers">Appetizers</a><a href="#small-plates" data-sec="small-plates">Small Plates</a><a href="#soups-salads" data-sec="soups-salads">Soups &amp; Salads</a><a href="#sides" data-sec="sides">Sides</a><a href="#mediterranean-meza" data-sec="mediterranean-meza">Mediterranean Meza</a><a href="#dinner-entr-es" data-sec="dinner-entr-es">Dinner Entrées</a><a href="#kebab-skewers" data-sec="kebab-skewers">Kebab Skewers</a><a href="#sandwiches-plates" data-sec="sandwiches-plates">Sandwiches/Plates</a><a href="#fillo-pastries" data-sec="fillo-pastries">Fillo Pastries</a><a href="#red-wine" data-sec="red-wine">Red Wine</a><a href="#white-wine-ros" data-sec="white-wine-ros">White Wine &amp; Rosé</a><a href="#beer" data-sec="beer">Beer</a><a href="#sparkling-wine-mimosas" data-sec="sparkling-wine-mimosas">Sparkling Wine &amp; Mimosas</a><a href="#non-alcoholic" data-sec="non-alcoholic">Non-Alcoholic</a><a href="#lunch-specials" data-sec="lunch-specials">Lunch Specials</a><a href="#lunch-middle-eastern-plate" data-sec="lunch-middle-eastern-plate">Lunch Middle Eastern Plate</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="appetizers" class="sec">
+      <h2>Appetizers</h2>
+      <p class="note">Served with Fresh Pita and Veggies.</p>
+      <ul>
+        <li data-q="small combination dips hummus, baba ghanoush &amp; tabuleh">
+          <div class="row"><span class="name">Small Combination Dips</span><span class="price">$15</span></div>
+          <p class="desc">Hummus, Baba Ghanoush &amp; Tabuleh</p>
+        </li>
+        <li data-q="choice of mini dip ">
+          <div class="row"><span class="name">Choice of Mini Dip</span><span class="price">$6.95</span></div>
+          
+        </li>
+        <li data-q="large combination dips hummus, baba ghanoush, tabuleh, dolma, feta cheese &amp; olives">
+          <div class="row"><span class="name">Large Combination Dips</span><span class="price">$19</span></div>
+          <p class="desc">Hummus, Baba Ghanoush, Tabuleh, Dolma, Feta Cheese &amp; Olives</p>
+        </li>
+        <li data-q="hummus vegan, gf">
+          <div class="row"><span class="name">Hummus</span><span class="price">$12</span></div>
+          <p class="desc">vegan, gf</p>
+        </li>
+        <li data-q="baba ghanoush vegan, gf">
+          <div class="row"><span class="name">Baba Ghanoush</span><span class="price">$12</span></div>
+          <p class="desc">vegan, gf</p>
+        </li>
+        <li data-q="tabuleh vegan">
+          <div class="row"><span class="name">Tabuleh</span><span class="price">$12</span></div>
+          <p class="desc">vegan</p>
+        </li>
+        <li data-q="dolma grape leaf vegan, gf">
+          <div class="row"><span class="name">Dolma Grape Leaf</span><span class="price">$12</span></div>
+          <p class="desc">vegan, gf</p>
+        </li>
+        <li data-q="3-piece levant sandwich ">
+          <div class="row"><span class="name">3-piece Levant Sandwich</span><span class="price">$12</span></div>
+          
+        </li>
+        <li data-q="roasted red pepper hummus vegan, gf">
+          <div class="row"><span class="name">Roasted Red Pepper Hummus</span><span class="price">$12</span></div>
+          <p class="desc">vegan, gf</p>
+        </li>
+        <li data-q="djajiki cucumber yogurt dip gf">
+          <div class="row"><span class="name">Djajiki Cucumber Yogurt Dip</span><span class="price">$12</span></div>
+          <p class="desc">gf</p>
+        </li>
+        <li data-q="harissa tomato walnut dip vegan, gf">
+          <div class="row"><span class="name">Harissa Tomato Walnut Dip</span><span class="price">$12</span></div>
+          <p class="desc">vegan, gf</p>
+        </li>
+        <li data-q="feta &amp; kalamata olives gf">
+          <div class="row"><span class="name">Feta &amp; Kalamata Olives</span><span class="price">$12</span></div>
+          <p class="desc">gf</p>
+        </li>
+        <li data-q="falafel with tahini dip vegan, gf">
+          <div class="row"><span class="name">Falafel with Tahini Dip</span><span class="price">$12</span></div>
+          <p class="desc">vegan, gf</p>
+        </li></ul>
+    </section>
+    <section id="small-plates" class="sec">
+      <h2>Small Plates</h2>
+      
+      <ul>
+        <li data-q="organic medjool dates stuffed with goat cheese &amp; walnuts (gf)">
+          <div class="row"><span class="name">Organic Medjool Dates</span><span class="price">$6 each</span></div>
+          <p class="desc">Stuffed with goat cheese &amp; walnuts (gf)</p>
+        </li>
+        <li data-q="spinach &amp; feta fillo or cheese karni fillo or chicken cilicia fillo ">
+          <div class="row"><span class="name">Spinach &amp; Feta Fillo or Cheese Karni Fillo or Chicken Cilicia Fillo</span><span class="price">$4.50 each</span></div>
+          
+        </li>
+        <li data-q="house-made salmon cakes with spicy tahini (gf)">
+          <div class="row"><span class="name">House-made Salmon Cakes</span><span class="price">$8 for three</span></div>
+          <p class="desc">with spicy tahini (gf)</p>
+        </li>
+        <li data-q="lamb lule or beef kibbeh meatballs ">
+          <div class="row"><span class="name">Lamb Lule or Beef Kibbeh Meatballs</span><span class="price">$11 for two</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="soups-salads" class="sec">
+      <h2>Soups &amp; Salads</h2>
+      <p class="note">Served with Fresh Pita.</p>
+      <ul>
+        <li data-q="avgolemono soup traditional greek chicken &amp; lemon soup (gf)">
+          <div class="row"><span class="name">Avgolemono Soup</span></div>
+          <p class="desc">Traditional Greek chicken &amp; lemon soup (gf)</p><div class="prices"><span class="pp"><span class="pl">Cup</span> <b>$7.75</b></span><span class="pp"><span class="pl">Bowl</span> <b>$11</b></span><span class="pp"><span class="pl">Quart (to-go only)</span> <b>$22</b></span></div>
+        </li>
+        <li data-q="lentil vegetable soup vegan, gf">
+          <div class="row"><span class="name">Lentil Vegetable Soup</span></div>
+          <p class="desc">vegan, gf</p><div class="prices"><span class="pp"><span class="pl">Cup</span> <b>$7.75</b></span><span class="pp"><span class="pl">Bowl</span> <b>$11</b></span><span class="pp"><span class="pl">Quart (to-go only)</span> <b>$22</b></span></div>
+        </li>
+        <li data-q="cucumber yogurt soup cold cucumber &amp; yogurt soup with garlic &amp; dill (gf)">
+          <div class="row"><span class="name">Cucumber Yogurt Soup</span></div>
+          <p class="desc">Cold cucumber &amp; yogurt soup with garlic &amp; dill (gf)</p><div class="prices"><span class="pp"><span class="pl">Cup</span> <b>$7.75</b></span><span class="pp"><span class="pl">Bowl</span> <b>$11</b></span><span class="pp"><span class="pl">Quart (to-go only)</span> <b>$22</b></span></div>
+        </li>
+        <li data-q="large green salad organic greens, feta, tomato, egg, &amp; our house tomato vinaigrette topped with tabuleh">
+          <div class="row"><span class="name">Large Green Salad</span><span class="price">$17.95</span></div>
+          <p class="desc">Organic greens, feta, tomato, egg, &amp; our house tomato vinaigrette topped with Tabuleh</p>
+        </li>
+        <li data-q="three bean salad organic greens w/ tomato, egg, cucumber, feta &amp; our house tomato vinaigrette (gf)">
+          <div class="row"><span class="name">Three Bean Salad</span><span class="price">$17.95</span></div>
+          <p class="desc">Organic greens w/ tomato, egg, cucumber, feta &amp; our house tomato vinaigrette (gf)</p>
+        </li>
+        <li data-q="salad méditerranée hummus, baba ghanoush, tabuleh, armenian potato salad, three bean salad &amp; organic greens with feta">
+          <div class="row"><span class="name">Salad Méditerranée</span><span class="price">$19.95</span></div>
+          <p class="desc">Hummus, Baba Ghanoush, Tabuleh, Armenian Potato Salad, Three Bean Salad &amp; organic greens with feta</p>
+        </li>
+        <li data-q="falafel salad crisp falafel balls over organic greens with veggies, our house vinaigrette &amp; tahini dressing (vegan, gf)">
+          <div class="row"><span class="name">Falafel Salad</span><span class="price">$17.95</span></div>
+          <p class="desc">Crisp falafel balls over organic greens with veggies, our house vinaigrette &amp; tahini dressing (vegan, gf)</p>
+        </li>
+        <li data-q="chicken salad halal saffron chicken kebab over organic greens, tomato, cucumber, egg &amp; feta (gf)">
+          <div class="row"><span class="name">Chicken Salad</span><span class="price">$19.95</span></div>
+          <p class="desc">Halal Saffron Chicken Kebab over organic greens, tomato, cucumber, egg &amp; feta (gf)</p>
+        </li>
+        <li data-q="salmon salad sustainably-sourced skewer of salmon over organic greens, tomato, egg, cucumber &amp; feta (gf)">
+          <div class="row"><span class="name">Salmon Salad</span><span class="price">$19.95</span></div>
+          <p class="desc">Sustainably-sourced skewer of salmon over organic greens, tomato, egg, cucumber &amp; feta (gf)</p>
+        </li>
+        <li data-q="shawarma salad spiced halal shawarma meat over greens w/cucumber, egg &amp; feta (gf)">
+          <div class="row"><span class="name">Shawarma Salad</span></div>
+          <p class="desc">Spiced halal shawarma meat over greens w/cucumber, egg &amp; feta (gf)</p><div class="prices"><span class="pp"><span class="pl">Chicken</span> <b>$19.50</b></span><span class="pp"><span class="pl">Lamb</span> <b>$19.95</b></span></div>
+        </li></ul>
+    </section>
+    <section id="sides" class="sec">
+      <h2>Sides</h2>
+      
+      <ul>
+        <li data-q="za&#39;atar pita chips | gluten-free crackers | fresh veggies | tourche pickles ">
+          <div class="row"><span class="name">Za&#39;atar Pita Chips | Gluten-free Crackers | Fresh Veggies | Tourche Pickles</span><span class="price">$4.50 each</span></div>
+          
+        </li>
+        <li data-q="lebleboo spiced chickpeas ">
+          <div class="row"><span class="name">Lebleboo Spiced Chickpeas</span><span class="price">$6</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="mediterranean-meza" class="sec">
+      <h2>Mediterranean Meza</h2>
+      <p class="note">Tasting menu of our most popular dishes served family-style. Vegan, Vegetarian and Gluten-Free mezas available. Served with Hummus, Pita and choice of Soup, Organic Green Salad or Armenian Potato Salad. $32 per person.</p>
+      <ul>
+        <li data-q="mediterranean meza hummus (vegan, gf), baba ghanoush (vegan, gf), tabuleh (vegan), falafel (vegan, gf), armenian potato salad (vegan, gf), dolma grape leaf (vegan, gf), spinach &amp; feta fillo, chicken cilicia fillo, chicken pomegranate (gf), lamb lule (gf), rice pilaf (vegan, gf)">
+          <div class="row"><span class="name">Mediterranean Meza</span></div>
+          <p class="desc">Hummus (vegan, gf), Baba Ghanoush (vegan, gf), Tabuleh (vegan), Falafel (vegan, gf), Armenian Potato Salad (vegan, gf), Dolma Grape Leaf (vegan, gf), Spinach &amp; Feta Fillo, Chicken Cilicia Fillo, Chicken Pomegranate (gf), Lamb Lule (gf), Rice Pilaf (vegan, gf)</p><div class="prices"><span class="pp"><b>$32 per person</b></span></div>
+        </li></ul>
+    </section>
+    <section id="dinner-entr-es" class="sec">
+      <h2>Dinner Entrées</h2>
+      <p class="note">Entrées served with Hummus, Pita and your choice of Soup, Organic Green Salad or Armenian Potato Salad.</p>
+      <ul>
+        <li data-q="middle eastern plate chicken cilicia fillo, spinach &amp; feta fillo, levant sandwich &amp; choice of lamb lule or chicken pomegranate over rice pilaf">
+          <div class="row"><span class="name">Middle Eastern Plate</span><span class="price">$25</span></div>
+          <p class="desc">Chicken Cilicia Fillo, Spinach &amp; Feta Fillo, Levant Sandwich &amp; choice of Lamb Lule or Chicken Pomegranate over rice pilaf</p>
+        </li>
+        <li data-q="vegetarian middle eastern plate spinach &amp; feta fillo, cheese karni fillo, dolma &amp; choice of levant sandwich or falafel">
+          <div class="row"><span class="name">Vegetarian Middle Eastern Plate</span><span class="price">$24</span></div>
+          <p class="desc">Spinach &amp; Feta Fillo, Cheese Karni Fillo, Dolma &amp; choice of Levant Sandwich or Falafel</p>
+        </li>
+        <li data-q="vegan middle eastern plate falafel, dolma, lentil salad, tabuleh, hummus">
+          <div class="row"><span class="name">Vegan Middle Eastern Plate</span><span class="price">$24</span></div>
+          <p class="desc">Falafel, Dolma, Lentil Salad, Tabuleh, Hummus</p>
+        </li>
+        <li data-q="chicken pomegranate local, sustainably-sourced drumsticks marinated in a pomegranate sauce, served over rice pilaf (gf)">
+          <div class="row"><span class="name">Chicken Pomegranate</span><span class="price">$25</span></div>
+          <p class="desc">Local, sustainably-sourced drumsticks marinated in a pomegranate sauce, served over rice pilaf (gf)</p>
+        </li>
+        <li data-q="lebanese beef kibbeh prather ranch spiced ground beef meatballs with cracked wheat, toasted pine nuts &amp; herbs, served with a cucumber yogurt sauce and rice pilaf">
+          <div class="row"><span class="name">Lebanese Beef Kibbeh</span><span class="price">$25</span></div>
+          <p class="desc">Prather Ranch spiced ground beef meatballs with cracked wheat, toasted pine nuts &amp; herbs, served with a cucumber yogurt sauce and rice pilaf</p>
+        </li>
+        <li data-q="lamb lule local, grass-fed superior farms halal lamb meatballs, served in a tomato-onion sauce served over rice pilaf (gf)">
+          <div class="row"><span class="name">Lamb Lule</span><span class="price">$26</span></div>
+          <p class="desc">Local, grass-fed Superior Farms halal lamb meatballs, served in a tomato-onion sauce served over rice pilaf (gf)</p>
+        </li>
+        <li data-q="lamb or veggie moussaka grilled vegetables layered with a gluten-free bechamel sauce (gf)">
+          <div class="row"><span class="name">Lamb or Veggie Moussaka</span><span class="price">$27</span></div>
+          <p class="desc">Grilled vegetables layered with a gluten-free bechamel sauce (gf)</p>
+        </li>
+        <li data-q="vegan kafta meatballs plant-based patties served over rice with tahini (gf)">
+          <div class="row"><span class="name">Vegan Kafta Meatballs</span><span class="price">$25</span></div>
+          <p class="desc">Plant-based patties served over Rice with Tahini (gf)</p>
+        </li>
+        <li data-q="quiche du jour three slices of our vegetarian quiche du jour">
+          <div class="row"><span class="name">Quiche du Jour</span><span class="price">$24</span></div>
+          <p class="desc">Three slices of our vegetarian quiche du jour</p>
+        </li></ul>
+    </section>
+    <section id="kebab-skewers" class="sec">
+      <h2>Kebab Skewers</h2>
+      
+      <ul>
+        <li data-q="halal saffron chicken kebab two skewers, grilled and served over rice pilaf with a cucumber-yogurt sauce (gf)">
+          <div class="row"><span class="name">Halal Saffron Chicken Kebab</span><span class="price">$26</span></div>
+          <p class="desc">Two skewers, grilled and served over rice pilaf with a cucumber-yogurt sauce (gf)</p>
+        </li>
+        <li data-q="beef kafta kebab prather ranch beef meatball skewers, grilled and served with rice pilaf (gf)">
+          <div class="row"><span class="name">Beef Kafta Kebab</span><span class="price">$26</span></div>
+          <p class="desc">Prather Ranch beef meatball skewers, grilled and served with rice pilaf (gf)</p>
+        </li>
+        <li data-q="salmon kebab sustainably-sourced grilled salmon skewers marinated in dill &amp; tomato, served over rice (gf)">
+          <div class="row"><span class="name">Salmon Kebab</span><span class="price">$28</span></div>
+          <p class="desc">Sustainably-sourced grilled salmon skewers marinated in dill &amp; tomato, served over rice (gf)</p>
+        </li>
+        <li data-q="veggie kebab marinated vegetable kebabs with organic tofu, served over rice pilaf (gf)">
+          <div class="row"><span class="name">Veggie Kebab</span><span class="price">$25</span></div>
+          <p class="desc">Marinated vegetable kebabs with organic tofu, served over rice pilaf (gf)</p>
+        </li>
+        <li data-q="lamb kebab grilled marinated halal lamb sirloin, served over rice pilaf (gf)">
+          <div class="row"><span class="name">Lamb Kebab</span><span class="price">$29</span></div>
+          <p class="desc">Grilled marinated halal lamb sirloin, served over rice pilaf (gf)</p>
+        </li>
+        <li data-q="beef sirloin kebab marinated in beef sirloin, served over rice pilaf (gf)">
+          <div class="row"><span class="name">Beef Sirloin Kebab</span><span class="price">$29</span></div>
+          <p class="desc">Marinated in beef sirloin, served over rice pilaf (gf)</p>
+        </li></ul>
+    </section>
+    <section id="sandwiches-plates" class="sec">
+      <h2>Sandwiches/Plates</h2>
+      <p class="note">Sandwiches wrapped in Lavash Bread with Greens or plates served over Rice Pilaf.</p>
+      <ul>
+        <li data-q="grilled lamb shawarma spiced superior farms halal lamb, served with a cucumber-yogurt sauce">
+          <div class="row"><span class="name">Grilled Lamb Shawarma</span></div>
+          <p class="desc">Spiced Superior Farms halal lamb, served with a cucumber-yogurt sauce</p><div class="prices"><span class="pp"><span class="pl">Sandwich</span> <b>$21</b></span><span class="pp"><span class="pl">Over rice</span> <b>$24</b></span></div>
+        </li>
+        <li data-q="grilled chicken shawarma spiced baked halal chicken served with a cucumber yogurt sauce">
+          <div class="row"><span class="name">Grilled Chicken Shawarma</span></div>
+          <p class="desc">Spiced baked halal chicken served with a cucumber yogurt sauce</p><div class="prices"><span class="pp"><span class="pl">Sandwich</span> <b>$20</b></span><span class="pp"><span class="pl">Over rice</span> <b>$23</b></span></div>
+        </li>
+        <li data-q="grilled falafel house-made falafel balls, served with tahini (vegan)">
+          <div class="row"><span class="name">Grilled Falafel</span></div>
+          <p class="desc">House-made falafel balls, served with tahini (vegan)</p><div class="prices"><span class="pp"><span class="pl">Sandwich</span> <b>$19</b></span><span class="pp"><span class="pl">Over rice</span> <b>$21</b></span></div>
+        </li>
+        <li data-q="vegan shawarma spiced plant-based patties, served with tahini">
+          <div class="row"><span class="name">Vegan Shawarma</span></div>
+          <p class="desc">Spiced plant-based patties, served with tahini</p><div class="prices"><span class="pp"><span class="pl">Sandwich</span> <b>$20</b></span><span class="pp"><span class="pl">Over rice</span> <b>$23</b></span></div>
+        </li></ul>
+    </section>
+    <section id="fillo-pastries" class="sec">
+      <h2>Fillo Pastries</h2>
+      <p class="note">Any combination of four Fillo pieces $24.</p>
+      <ul>
+        <li data-q="grecian spinach &amp; feta a delicious mixture of spinach, feta, onion &amp; chickpeas">
+          <div class="row"><span class="name">Grecian Spinach &amp; Feta</span></div>
+          <p class="desc">A delicious mixture of spinach, feta, onion &amp; chickpeas</p>
+        </li>
+        <li data-q="chicken cilicia cinnamon-spiced chicken with chickpeas &amp; raisins">
+          <div class="row"><span class="name">Chicken Cilicia</span></div>
+          <p class="desc">Cinnamon-spiced chicken with chickpeas &amp; raisins</p>
+        </li>
+        <li data-q="cheese karni stuffed with melted mozzarella and feta cheeses, sautéed onions &amp; mint">
+          <div class="row"><span class="name">Cheese Karni</span></div>
+          <p class="desc">Stuffed with melted mozzarella and feta cheeses, sautéed onions &amp; mint</p>
+        </li>
+        <li data-q="any combination of four fillo pieces ">
+          <div class="row"><span class="name">Any combination of four Fillo pieces</span><span class="price">$24</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="red-wine" class="sec">
+      <h2>Red Wine</h2>
+      <p class="note">Half wine glass $6-8.</p>
+      <ul>
+        <li data-q="la med sangria! ">
+          <div class="row"><span class="name">La Med Sangria!</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$12</b></span><span class="pp"><span class="pl">Carafe</span> <b>$26</b></span></div>
+        </li>
+        <li data-q="la med burgundy ">
+          <div class="row"><span class="name">La Med Burgundy</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$11</b></span><span class="pp"><span class="pl">Carafe</span> <b>$25</b></span></div>
+        </li>
+        <li data-q="paso a paso organic tempranillo (spain) ">
+          <div class="row"><span class="name">Paso A Paso Organic Tempranillo (Spain)</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$13</b></span><span class="pp"><span class="pl">Bottle</span> <b>$44</b></span></div>
+        </li>
+        <li data-q="karas syrah blend (armenia) ">
+          <div class="row"><span class="name">Karas Syrah Blend (Armenia)</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$14</b></span><span class="pp"><span class="pl">Bottle</span> <b>$46</b></span></div>
+        </li>
+        <li data-q="freelander organic pinot noir (mendocino) ">
+          <div class="row"><span class="name">Freelander Organic Pinot Noir (Mendocino)</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$15</b></span><span class="pp"><span class="pl">Bottle</span> <b>$48</b></span></div>
+        </li>
+        <li data-q="alexandrea areni (armenia) ">
+          <div class="row"><span class="name">Alexandrea Areni (Armenia)</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$15</b></span><span class="pp"><span class="pl">Bottle</span> <b>$48</b></span></div>
+        </li></ul>
+    </section>
+    <section id="white-wine-ros" class="sec">
+      <h2>White Wine &amp; Rosé</h2>
+      
+      <ul>
+        <li data-q="la med chardonnay ">
+          <div class="row"><span class="name">La Med Chardonnay</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$11</b></span><span class="pp"><span class="pl">Carafe</span> <b>$25</b></span></div>
+        </li>
+        <li data-q="le jade sauvignon blanc (france) ">
+          <div class="row"><span class="name">Le Jade Sauvignon Blanc (France)</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$15</b></span><span class="pp"><span class="pl">Bottle</span> <b>$48</b></span></div>
+        </li>
+        <li data-q="karas dry white blend (armenia) ">
+          <div class="row"><span class="name">Karas Dry White Blend (Armenia)</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$14</b></span><span class="pp"><span class="pl">Bottle</span> <b>$46</b></span></div>
+        </li>
+        <li data-q="la fiera pinot grigio (italy) ">
+          <div class="row"><span class="name">La Fiera Pinot Grigio (Italy)</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$13</b></span><span class="pp"><span class="pl">Bottle</span> <b>$44</b></span></div>
+        </li>
+        <li data-q="malamatina greek retsina ">
+          <div class="row"><span class="name">Malamatina Greek Retsina</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$13</b></span><span class="pp"><span class="pl">Half bottle</span> <b>$24</b></span></div>
+        </li>
+        <li data-q="gaia rosé (greece) ">
+          <div class="row"><span class="name">Gaia Rosé (Greece)</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$14</b></span><span class="pp"><span class="pl">Bottle</span> <b>$46</b></span></div>
+        </li>
+        <li data-q="alexandrea riesling (armenia) ">
+          <div class="row"><span class="name">Alexandrea Riesling (Armenia)</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$15</b></span><span class="pp"><span class="pl">Bottle</span> <b>$48</b></span></div>
+        </li></ul>
+    </section>
+    <section id="beer" class="sec">
+      <h2>Beer</h2>
+      
+      <ul>
+        <li data-q="stella artois (belgium) ">
+          <div class="row"><span class="name">Stella Artois (Belgium)</span><span class="price">$7</span></div>
+          
+        </li>
+        <li data-q="kotayk lager (armenia) ">
+          <div class="row"><span class="name">Kotayk Lager (Armenia)</span><span class="price">$8</span></div>
+          
+        </li>
+        <li data-q="almaza pilsner (lebanon) ">
+          <div class="row"><span class="name">Almaza Pilsner (Lebanon)</span><span class="price">$8</span></div>
+          
+        </li>
+        <li data-q="fort point ksa kolsch (san francisco) ">
+          <div class="row"><span class="name">Fort Point KSA Kolsch (San Francisco)</span><span class="price">$8</span></div>
+          
+        </li>
+        <li data-q="fort point villager ipa (san francisco) ">
+          <div class="row"><span class="name">Fort Point Villager IPA (San Francisco)</span><span class="price">$8</span></div>
+          
+        </li>
+        <li data-q="fort point westfalia red ale (san francisco) ">
+          <div class="row"><span class="name">Fort Point Westfalia Red Ale (San Francisco)</span><span class="price">$8</span></div>
+          
+        </li>
+        <li data-q="estrella galicia non-alcoholic ">
+          <div class="row"><span class="name">Estrella Galicia non-alcoholic</span><span class="price">$8</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="sparkling-wine-mimosas" class="sec">
+      <h2>Sparkling Wine &amp; Mimosas</h2>
+      
+      <ul>
+        <li data-q="new! cappelletti spritz ">
+          <div class="row"><span class="name">New! Cappelletti Spritz</span><span class="price">$13</span></div>
+          
+        </li>
+        <li data-q="tiamo organic prosecco ">
+          <div class="row"><span class="name">Tiamo Organic Prosecco</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$10</b></span><span class="pp"><span class="pl">Bottle</span> <b>$28</b></span></div>
+        </li>
+        <li data-q="mimosa (orange or hibiscus) ">
+          <div class="row"><span class="name">Mimosa (orange or hibiscus)</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$10</b></span><span class="pp"><span class="pl">Carafe</span> <b>$28</b></span></div>
+        </li>
+        <li data-q="pomegranate mimosa royale ">
+          <div class="row"><span class="name">Pomegranate Mimosa Royale</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$10</b></span><span class="pp"><span class="pl">Carafe</span> <b>$28</b></span></div>
+        </li></ul>
+    </section>
+    <section id="non-alcoholic" class="sec">
+      <h2>Non-Alcoholic</h2>
+      
+      <ul>
+        <li data-q="moroccan mint tea (hot or iced) ">
+          <div class="row"><span class="name">Moroccan Mint Tea (hot or iced)</span><span class="price">$5.50</span></div>
+          
+        </li>
+        <li data-q="hot apple cider (seasonal) spiked with sherry add $2">
+          <div class="row"><span class="name">Hot Apple Cider (seasonal)</span><span class="price">$5.50</span></div>
+          <p class="desc">spiked with sherry add $2</p>
+        </li>
+        <li data-q="iced tea (unsweetened) ">
+          <div class="row"><span class="name">Iced Tea (unsweetened)</span><span class="price">$5.50</span></div>
+          
+        </li>
+        <li data-q="organic lemonade also available with rosewater">
+          <div class="row"><span class="name">Organic Lemonade</span><span class="price">$5.50</span></div>
+          <p class="desc">also available with rosewater</p>
+        </li>
+        <li data-q="hibiscus cooler ">
+          <div class="row"><span class="name">Hibiscus Cooler</span><span class="price">$5.50</span></div>
+          
+        </li>
+        <li data-q="coke, diet coke, sprite ">
+          <div class="row"><span class="name">Coke, Diet Coke, Sprite</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="san pellegrino blood orange ">
+          <div class="row"><span class="name">San Pellegrino Blood Orange</span><span class="price">$5.50</span></div>
+          
+        </li>
+        <li data-q="san pellegrino sparkling water ">
+          <div class="row"><span class="name">San Pellegrino Sparkling Water</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Small</span> <b>$5</b></span><span class="pp"><span class="pl">Large</span> <b>$8</b></span></div>
+        </li>
+        <li data-q="organic house coffee or assorted teas ">
+          <div class="row"><span class="name">Organic House Coffee or Assorted Teas</span><span class="price">$5.50</span></div>
+          
+        </li>
+        <li data-q="middle-eastern coffee ">
+          <div class="row"><span class="name">Middle-Eastern Coffee</span><span class="price">$8</span></div>
+          
+        </li>
+        <li data-q="espresso ">
+          <div class="row"><span class="name">Espresso</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Single</span> <b>$5</b></span><span class="pp"><span class="pl">Double</span> <b>$6.50</b></span></div>
+        </li>
+        <li data-q="cappuccino or café latté ">
+          <div class="row"><span class="name">Cappuccino or Café Latté</span><span class="price">$6.50</span></div>
+          
+        </li>
+        <li data-q="hot chocolate ">
+          <div class="row"><span class="name">Hot Chocolate</span><span class="price">$6.50</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="lunch-specials" class="sec">
+      <h2>Lunch Specials</h2>
+      <p class="note">11am to 4pm daily. Entrées served with Hummus, Pita and your choice of Soup, Organic Green Salad or Armenian Potato Salad. Salads served with Fresh Pita.</p>
+      <ul>
+        <li data-q="chicken pomegranate three local and sustainably-sourced drumsticks marinated in a pomegranate sauce, served over rice pilaf (gf)">
+          <div class="row"><span class="name">Chicken Pomegranate</span><span class="price">$18.95</span></div>
+          <p class="desc">Three local and sustainably-sourced drumsticks marinated in a pomegranate sauce, served over rice pilaf (gf)</p>
+        </li>
+        <li data-q="lamb lule local, grass-fed superior farms halal lamb meatballs, served in a tomato-onion sauce, served over rice pilaf (gf)">
+          <div class="row"><span class="name">Lamb Lule</span><span class="price">$19.50</span></div>
+          <p class="desc">Local, grass-fed Superior Farms halal lamb meatballs, served in a tomato-onion sauce, served over rice pilaf (gf)</p>
+        </li>
+        <li data-q="halal saffron chicken kebab grilled and served with rice pilaf and a cucumber yogurt sauce (gf)">
+          <div class="row"><span class="name">Halal Saffron Chicken Kebab</span><span class="price">$18.95</span></div>
+          <p class="desc">Grilled and served with rice pilaf and a cucumber yogurt sauce (gf)</p>
+        </li>
+        <li data-q="beef sirloin kebab marinated beef sirloin, served over rice pilaf (gf)">
+          <div class="row"><span class="name">Beef Sirloin Kebab</span><span class="price">$20.50</span></div>
+          <p class="desc">Marinated beef sirloin, served over rice pilaf (gf)</p>
+        </li>
+        <li data-q="lamb kebab grilled marinated halal lamb sirloin, served over rice pilaf (gf)">
+          <div class="row"><span class="name">Lamb Kebab</span><span class="price">$20.50</span></div>
+          <p class="desc">Grilled marinated halal lamb sirloin, served over rice pilaf (gf)</p>
+        </li>
+        <li data-q="beef kafta kebab prather ranch beef meatball skewer, grilled &amp; served with rice pilaf (gf)">
+          <div class="row"><span class="name">Beef Kafta Kebab</span><span class="price">$19.50</span></div>
+          <p class="desc">Prather Ranch beef meatball skewer, grilled &amp; served with rice pilaf (gf)</p>
+        </li>
+        <li data-q="salmon kebab sustainably-sourced grilled salmon skewer marinated in dill &amp; tomato, served over rice (gf)">
+          <div class="row"><span class="name">Salmon Kebab</span><span class="price">$19.95</span></div>
+          <p class="desc">Sustainably-sourced grilled salmon skewer marinated in dill &amp; tomato, served over rice (gf)</p>
+        </li>
+        <li data-q="veggie kebab marinated vegetable kebabs with organic tofu, served over rice pilaf (gf)">
+          <div class="row"><span class="name">Veggie Kebab</span><span class="price">$19.50</span></div>
+          <p class="desc">Marinated vegetable kebabs with organic tofu, served over rice pilaf (gf)</p>
+        </li>
+        <li data-q="lebanese beef kibbeh prather ranch spiced ground beef meatballs with cracked wheat, toasted pine nut &amp; herbs, served with a cucumber yogurt sauce and rice pilaf">
+          <div class="row"><span class="name">Lebanese Beef Kibbeh</span><span class="price">$19.50</span></div>
+          <p class="desc">Prather Ranch spiced ground beef meatballs with cracked wheat, toasted pine nut &amp; herbs, served with a cucumber yogurt sauce and rice pilaf</p>
+        </li>
+        <li data-q="lamb or veggie moussaka grilled vegetables layered with a gluten-free bechamel sauce (gf)">
+          <div class="row"><span class="name">Lamb or Veggie Moussaka</span><span class="price">$22</span></div>
+          <p class="desc">Grilled vegetables layered with a gluten-free bechamel sauce (gf)</p>
+        </li>
+        <li data-q="grilled lamb shawarma spiced and baked superior farms halal lamb, served with a cucumber-yogurt sauce">
+          <div class="row"><span class="name">Grilled Lamb Shawarma</span></div>
+          <p class="desc">Spiced and baked Superior Farms halal lamb, served with a cucumber-yogurt sauce</p><div class="prices"><span class="pp"><span class="pl">Sandwich</span> <b>$18.95</b></span><span class="pp"><span class="pl">Over rice</span> <b>$19.95</b></span></div>
+        </li>
+        <li data-q="grilled chicken shawarma spiced and baked halal chicken served with a cucumber yogurt sauce">
+          <div class="row"><span class="name">Grilled Chicken Shawarma</span></div>
+          <p class="desc">Spiced and baked halal chicken served with a cucumber yogurt sauce</p><div class="prices"><span class="pp"><span class="pl">Sandwich</span> <b>$18.50</b></span><span class="pp"><span class="pl">Over rice</span> <b>$19.50</b></span></div>
+        </li>
+        <li data-q="vegan shawarma spiced plant-based patties, served with tahini">
+          <div class="row"><span class="name">Vegan Shawarma</span></div>
+          <p class="desc">Spiced plant-based patties, served with tahini</p><div class="prices"><span class="pp"><span class="pl">Sandwich</span> <b>$18.50</b></span><span class="pp"><span class="pl">Over rice</span> <b>$19.50</b></span></div>
+        </li>
+        <li data-q="grilled falafel house-made falafel balls served with tahini (vegan)">
+          <div class="row"><span class="name">Grilled Falafel</span></div>
+          <p class="desc">House-made falafel balls served with tahini (vegan)</p><div class="prices"><span class="pp"><span class="pl">Sandwich</span> <b>$17.50</b></span><span class="pp"><span class="pl">Over rice</span> <b>$18.50</b></span></div>
+        </li>
+        <li data-q="vegan kafta meatballs plant-based patties served over rice with tahini (gf)">
+          <div class="row"><span class="name">Vegan Kafta Meatballs</span><span class="price">$19.50</span></div>
+          <p class="desc">Plant-based patties served over rice with Tahini (gf)</p>
+        </li>
+        <li data-q="quiche du jour our vegetarian quiche du jour">
+          <div class="row"><span class="name">Quiche du Jour</span><span class="price">$18.95</span></div>
+          <p class="desc">Our vegetarian quiche du jour</p>
+        </li>
+        <li data-q="falafel salad crisp falafel balls over organic greens with veggies, house tomato vinaigrette &amp; tahini dressing (vegan, gf)">
+          <div class="row"><span class="name">Falafel Salad</span><span class="price">$17.95</span></div>
+          <p class="desc">Crisp falafel balls over organic greens with veggies, house tomato vinaigrette &amp; tahini dressing (vegan, gf)</p>
+        </li>
+        <li data-q="salad méditerranée hummus, baba ghanoush, tabuleh, armenian potato salad, three bean salad &amp; organic greens with feta">
+          <div class="row"><span class="name">Salad Méditerranée</span><span class="price">$18.95</span></div>
+          <p class="desc">Hummus, Baba Ghanoush, Tabuleh, Armenian Potato Salad, Three Bean Salad &amp; organic greens with feta</p>
+        </li>
+        <li data-q="chicken salad halal saffron chicken kebab over organic greens, tomato, cucumber, egg &amp; feta (gf)">
+          <div class="row"><span class="name">Chicken Salad</span><span class="price">$18.95</span></div>
+          <p class="desc">Halal saffron chicken kebab over organic greens, tomato, cucumber, egg &amp; feta (gf)</p>
+        </li>
+        <li data-q="three bean salad over organic greens w/tomato, egg, cucumber, feta &amp; our house tomato vinaigrette (gf)">
+          <div class="row"><span class="name">Three Bean Salad</span><span class="price">$17.95</span></div>
+          <p class="desc">Over organic greens w/tomato, egg, cucumber, feta &amp; our house tomato vinaigrette (gf)</p>
+        </li>
+        <li data-q="salmon salad sustainably-sourced skewer of salmon over organic greens, tomato, cucumber &amp; feta (gf)">
+          <div class="row"><span class="name">Salmon Salad</span><span class="price">$19.95</span></div>
+          <p class="desc">Sustainably-sourced skewer of Salmon over organic greens, tomato, cucumber &amp; feta (gf)</p>
+        </li>
+        <li data-q="shawarma salad spiced halal shawarma meat over greens w/ cucumber, egg &amp; feta (gf)">
+          <div class="row"><span class="name">Shawarma Salad</span></div>
+          <p class="desc">Spiced halal shawarma meat over greens w/ cucumber, egg &amp; feta (gf)</p><div class="prices"><span class="pp"><span class="pl">Chicken</span> <b>$18.50</b></span><span class="pp"><span class="pl">Lamb</span> <b>$19.95</b></span></div>
+        </li></ul>
+    </section>
+    <section id="lunch-middle-eastern-plate" class="sec">
+      <h2>Lunch Middle Eastern Plate</h2>
+      <p class="note">Served with Hummus, Pita, and your choice of Soup, Organic Green Salad or Armenian Potato Salad. Choice of 3 items, $18.95 per person.</p>
+      <ul>
+        <li data-q="choice of 3 items spinach &amp; feta fillo, cheese karni fillo, falafel (vegan, gf), levant sandwich, dolma grape leaf (vegan, gf), chicken cilicia fillo, chicken pomegranate (gf), lamb lule (gf) add $1.00">
+          <div class="row"><span class="name">Choice of 3 Items</span></div>
+          <p class="desc">Spinach &amp; Feta Fillo, Cheese Karni Fillo, Falafel (vegan, gf), Levant Sandwich, Dolma Grape Leaf (vegan, gf), Chicken Cilicia Fillo, Chicken Pomegranate (gf), Lamb Lule (gf) add $1.00</p><div class="prices"><span class="pp"><b>$18.95 per person</b></span></div>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>A 1% Zero Foodprint charge is included on each check to fund California&#39;s Restore California healthy soil projects that draw down carbon. Please let your server know if you would prefer to opt out. A 4.75% fee added for San Francisco Employer Mandates (SF Locations only). 25% gratuity included for parties of 6 or more. Not responsible for lost or stolen items.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for La Méditerranée.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The La Méditerranée menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Bao Bei Menu</title>
+<meta name="description" content="Menu for Bao Bei, Chinatown (Keefer Street), Vancouver.">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Bao Bei</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=163%20Keefer%20Street%2C%20Vancouver%2C%20BC">163 Keefer Street, Vancouver, BC</a><a href="tel:6046880876">604 688 0876</a><span>Monday - Thursday 5:30pm - 10:00pm. Friday - Saturday 5:30pm - 12:00am. Sunday 5:30pm - 10:00pm. Kitchen last call is half an hour before closing time</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#schnacks" data-sec="schnacks">Schnacks</a><a href="#petits-cadeaux" data-sec="petits-cadeaux">Petits Cadeaux</a><a href="#petits-plats-chinois" data-sec="petits-plats-chinois">Petits Plats Chinois</a><a href="#vegetables" data-sec="vegetables">Vegetables</a><a href="#sides" data-sec="sides">Sides</a><a href="#chef-s-choice" data-sec="chef-s-choice">Chef&#39;s Choice</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="schnacks" class="sec">
+      <h2>Schnacks</h2>
+      
+      <ul>
+        <li data-q="assorted seasonal chinese pickles ">
+          <div class="row"><span class="name">assorted seasonal Chinese pickles</span><span class="price">$9</span></div>
+          
+        </li>
+        <li data-q="sichuan smashed cucumbers mala soy vinaigrette">
+          <div class="row"><span class="name">sichuan smashed cucumbers</span><span class="price">$9</span></div>
+          <p class="desc">mala soy vinaigrette</p>
+        </li>
+        <li data-q="salted napa cabbage sesame dressing">
+          <div class="row"><span class="name">salted napa cabbage</span><span class="price">$9</span></div>
+          <p class="desc">sesame dressing</p>
+        </li>
+        <li data-q="bean curd skin king oyster mushroom, chili ginger emulsion">
+          <div class="row"><span class="name">bean curd skin</span><span class="price">$9</span></div>
+          <p class="desc">king oyster mushroom, chili ginger emulsion</p>
+        </li>
+        <li data-q="crispy tofu garlic sweet soy, water chestnut">
+          <div class="row"><span class="name">crispy tofu</span><span class="price">$9</span></div>
+          <p class="desc">garlic sweet soy, water chestnut</p>
+        </li>
+        <li data-q="omelet salted turnip and butter">
+          <div class="row"><span class="name">omelet</span><span class="price">$14</span></div>
+          <p class="desc">salted turnip and butter</p>
+        </li></ul>
+    </section>
+    <section id="petits-cadeaux" class="sec">
+      <h2>Petits Cadeaux</h2>
+      <p class="note">Handmade by Helen &amp; Pansy</p>
+      <ul>
+        <li data-q="vegetarian potstickers ">
+          <div class="row"><span class="name">vegetarian potstickers</span><span class="price">$16</span></div>
+          
+        </li>
+        <li data-q="steamed prawn, scallop and chive dumplings ">
+          <div class="row"><span class="name">steamed prawn, scallop and chive dumplings</span><span class="price">$18</span></div>
+          
+        </li>
+        <li data-q="steamed pork dumplings ">
+          <div class="row"><span class="name">steamed pork dumplings</span><span class="price">$18</span></div>
+          
+        </li>
+        <li data-q="pork, preserved egg &amp; charred long pepper wontons ">
+          <div class="row"><span class="name">pork, preserved egg &amp; charred long pepper wontons</span><span class="price">$21</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="petits-plats-chinois" class="sec">
+      <h2>Petits Plats Chinois</h2>
+      
+      <ul>
+        <li data-q="beef tartare preserved mustard root, crispy shallot, ginger, quail egg, watercress, burnt scallion oil, taro chips. add smoked bone marrow 15">
+          <div class="row"><span class="name">beef tartare</span><span class="price">$25</span></div>
+          <p class="desc">preserved mustard root, crispy shallot, ginger, quail egg, watercress, burnt scallion oil, taro chips. add smoked bone marrow 15</p>
+        </li>
+        <li data-q="shan tofu herbed chickpea tofu, mapo spiced tomato, blistered shishitos, runner beans">
+          <div class="row"><span class="name">shan tofu</span><span class="price">$24</span></div>
+          <p class="desc">herbed chickpea tofu, mapo spiced tomato, blistered shishitos, runner beans</p>
+        </li>
+        <li data-q="sichuan fried chicken garlic mala oil, gochugaru, thai basil">
+          <div class="row"><span class="name">sichuan fried chicken</span><span class="price">$23</span></div>
+          <p class="desc">garlic mala oil, gochugaru, thai basil</p>
+        </li>
+        <li data-q="mantou buns braised beef shank, lime leaf, pickled shallot, peanut, anchovy">
+          <div class="row"><span class="name">mantou buns</span><span class="price">$20</span></div>
+          <p class="desc">braised beef shank, lime leaf, pickled shallot, peanut, anchovy</p>
+        </li>
+        <li data-q="shao bing sesame flatbread, opal valley cumin marinated lamb leg, cilantro, green pepper, pickled red onion, salted serrano">
+          <div class="row"><span class="name">shao bing</span><span class="price">$24</span></div>
+          <p class="desc">sesame flatbread, Opal Valley cumin marinated lamb leg, cilantro, green pepper, pickled red onion, salted serrano</p>
+        </li>
+        <li data-q="halibut soybean crusted halibut, suan cai broth, zucchini, dill, tarragon">
+          <div class="row"><span class="name">halibut</span><span class="price">$45</span></div>
+          <p class="desc">soybean crusted halibut, suan cai broth, zucchini, dill, tarragon</p>
+        </li>
+        <li data-q="pork belly vietnamese cilantro sauce, triple cooked potato rosti, cucumber, mint, pickled ginger &amp; ramps">
+          <div class="row"><span class="name">pork belly</span><span class="price">$35</span></div>
+          <p class="desc">Vietnamese cilantro sauce, triple cooked potato rosti, cucumber, mint, pickled ginger &amp; ramps</p>
+        </li>
+        <li data-q="kick ass house fried rice oyakodon style, chicken thigh, dashi sabayon, sliced onion, crispy chicken skin">
+          <div class="row"><span class="name">kick ass house fried rice</span><span class="price">$26</span></div>
+          <p class="desc">oyakodon style, chicken thigh, dashi sabayon, sliced onion, crispy chicken skin</p>
+        </li>
+        <li data-q="sticky rice cakes duck confit, preserved chili, yellow chives, woodear mushroom, taiwanese cabbage. add sunnyside up egg!!! 3.75, add omelet 14">
+          <div class="row"><span class="name">sticky rice cakes</span><span class="price">$28</span></div>
+          <p class="desc">duck confit, preserved chili, yellow chives, woodear mushroom, Taiwanese cabbage. add sunnyside up egg!!! 3.75, add omelet 14</p>
+        </li></ul>
+    </section>
+    <section id="vegetables" class="sec">
+      <h2>Vegetables</h2>
+      
+      <ul>
+        <li data-q="king pea tips garlic, shaoxing">
+          <div class="row"><span class="name">king pea tips</span><span class="price">$16</span></div>
+          <p class="desc">garlic, shaoxing</p>
+        </li>
+        <li data-q="glazed crispy eggplant gochugaru leek &amp; carrot, sesame salt">
+          <div class="row"><span class="name">glazed crispy eggplant</span><span class="price">$16</span></div>
+          <p class="desc">gochugaru leek &amp; carrot, sesame salt</p>
+        </li>
+        <li data-q="bok choy longganisa, coconut pork glaze, fried garlic, lime leaf">
+          <div class="row"><span class="name">bok choy</span><span class="price">$19</span></div>
+          <p class="desc">longganisa, coconut pork glaze, fried garlic, lime leaf</p>
+        </li>
+        <li data-q="broccolini gochujang, black garlic, salted duck yolk crumb">
+          <div class="row"><span class="name">broccolini</span><span class="price">$19</span></div>
+          <p class="desc">gochujang, black garlic, salted duck yolk crumb</p>
+        </li></ul>
+    </section>
+    <section id="sides" class="sec">
+      <h2>Sides</h2>
+      
+      <ul>
+        <li data-q="steamed rice ">
+          <div class="row"><span class="name">steamed rice</span><span class="price">$3.50</span></div>
+          
+        </li>
+        <li data-q="sunnyside up free range egg ">
+          <div class="row"><span class="name">sunnyside up free range egg</span><span class="price">$3.75</span></div>
+          
+        </li>
+        <li data-q="smoked bone marrow ">
+          <div class="row"><span class="name">smoked bone marrow</span><span class="price">$15</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="chef-s-choice" class="sec">
+      <h2>Chef&#39;s Choice</h2>
+      <p class="note">Eat and drink until your heart&#39;s content. Allow us to create a meal for you! Minimum 2 people. Ask about our drink pairings &amp; add-ons. Full table participation required.</p>
+      <ul>
+        <li data-q="chef&#39;s choice ">
+          <div class="row"><span class="name">Chef&#39;s Choice</span></div>
+          <div class="prices"><span class="pp"><b>From $75 per person</b></span></div>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>20% gratuity will be added to parties of 6 or more. Due to our menu style we are unable to offer modifications.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Bao Bei.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Bao Bei menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's US$29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for US$29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

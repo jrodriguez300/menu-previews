@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Vitolo Menu</title>
+<meta name="description" content="Menu for Vitolo, Fort Lauderdale Beach (Conrad Fort Lauderdale Beach).">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Vitolo</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=551%20N%20Fort%20Lauderdale%20Beach%20Blvd%2C%20Fort%20Lauderdale%2C%20FL%2033304">551 N Fort Lauderdale Beach Blvd, Fort Lauderdale, FL 33304</a><a href="tel:9544145127">(954) 414-5127</a><span>Sunday - Thursday: 4:00 PM - 10:00 PM; Friday - Saturday: 4:00 PM - 11:00 PM</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#antipasti" data-sec="antipasti">Antipasti</a><a href="#insalati" data-sec="insalati">Insalati</a><a href="#pasta" data-sec="pasta">Pasta</a><a href="#pizza" data-sec="pizza">Pizza</a><a href="#del-mare" data-sec="del-mare">Del Mare</a><a href="#carne" data-sec="carne">Carne</a><a href="#sides" data-sec="sides">Sides</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="antipasti" class="sec">
+      <h2>Antipasti</h2>
+      
+      <ul>
+        <li data-q="polpo grilled octopus, arugula, fennel, tomatoes, and mustard vinaigrette">
+          <div class="row"><span class="name">Polpo</span><span class="price">$30</span></div>
+          <p class="desc">Grilled octopus, arugula, fennel, tomatoes, and mustard vinaigrette</p>
+        </li>
+        <li data-q="tuna crudo sundried tomatoes, capers, and roasted bell peppers*">
+          <div class="row"><span class="name">Tuna Crudo</span><span class="price">$32</span></div>
+          <p class="desc">Sundried tomatoes, capers, and roasted bell peppers*</p>
+        </li>
+        <li data-q="eggplant rollatini pan-fried eggplant, ricotta, and marinara sauce">
+          <div class="row"><span class="name">Eggplant Rollatini</span><span class="price">$24</span></div>
+          <p class="desc">Pan-fried eggplant, ricotta, and marinara sauce</p>
+        </li>
+        <li data-q="beef carpaccio beef tenderloin, arugula, and parmesan cheese*">
+          <div class="row"><span class="name">Beef Carpaccio</span><span class="price">$34</span></div>
+          <p class="desc">Beef tenderloin, Arugula, and Parmesan cheese*</p>
+        </li>
+        <li data-q="polpette a blend of ground beef and pork meatballs with pomodoro sauce. add on: ricotta +$4">
+          <div class="row"><span class="name">Polpette</span><span class="price">$18</span></div>
+          <p class="desc">A blend of ground beef and pork meatballs with pomodoro sauce. Add on: Ricotta +$4</p>
+        </li>
+        <li data-q="burrata roasted red peppers, san daniele prosciutto, balsamic reduction, and fresh basil">
+          <div class="row"><span class="name">Burrata</span><span class="price">$30</span></div>
+          <p class="desc">Roasted red peppers, San Daniele prosciutto, balsamic reduction, and fresh basil</p>
+        </li>
+        <li data-q="zucchine fritti seasoned, thinly sliced zucchini, lightly floured, served alongside marinara sauce">
+          <div class="row"><span class="name">Zucchine Fritti</span><span class="price">$19</span></div>
+          <p class="desc">Seasoned, thinly sliced zucchini, lightly floured, served alongside marinara sauce</p>
+        </li>
+        <li data-q="mozzarella en carrozza breaded, crispy mozzarella served alongside marinara sauce">
+          <div class="row"><span class="name">Mozzarella En Carrozza</span><span class="price">$22</span></div>
+          <p class="desc">Breaded, crispy mozzarella served alongside marinara sauce</p>
+        </li>
+        <li data-q="antipasto della casa assorted premium cheeses, olives, and italian cured meats +19pp">
+          <div class="row"><span class="name">Antipasto Della Casa</span><span class="price">$38 for 2</span></div>
+          <p class="desc">Assorted premium cheeses, olives, and Italian cured meats +19pp</p>
+        </li>
+        <li data-q="calamari fritti topped with sweet and spicy vinegar peppers alongside marinara sauce">
+          <div class="row"><span class="name">Calamari Fritti</span><span class="price">$25</span></div>
+          <p class="desc">Topped with sweet and spicy vinegar peppers alongside marinara sauce</p>
+        </li>
+        <li data-q="vongole oreganata baked mid-neck clams, homemade breadcrumbs, and lemon sauce">
+          <div class="row"><span class="name">Vongole Oreganata</span><span class="price">$28</span></div>
+          <p class="desc">Baked mid-neck clams, homemade breadcrumbs, and lemon sauce</p>
+        </li></ul>
+    </section>
+    <section id="insalati" class="sec">
+      <h2>Insalati</h2>
+      
+      <ul>
+        <li data-q="caesar crispy romaine lettuce with our housemade caesar dressing, served with crispy croutons*">
+          <div class="row"><span class="name">Caesar</span><span class="price">$18</span></div>
+          <p class="desc">Crispy romaine lettuce with our housemade Caesar dressing, served with crispy croutons*</p>
+        </li>
+        <li data-q="mista mixed house salad with extra virgin olive oil and vinegar">
+          <div class="row"><span class="name">Mista</span><span class="price">$16</span></div>
+          <p class="desc">Mixed house salad with extra virgin olive oil and vinegar</p>
+        </li>
+        <li data-q="rucola arugula, sliced fennel, and orange segments with shaved pecorino romano cheese">
+          <div class="row"><span class="name">Rucola</span><span class="price">$17</span></div>
+          <p class="desc">Arugula, sliced fennel, and orange segments with shaved Pecorino Romano cheese</p>
+        </li></ul>
+    </section>
+    <section id="pasta" class="sec">
+      <h2>Pasta</h2>
+      <p class="note">Add Seasonal Truffle +$MP. Olive Oil Service +$MP.</p>
+      <ul>
+        <li data-q="tagliatelle alla bolognese homemade tagliatelle pasta with beef, pork, and veal ragù">
+          <div class="row"><span class="name">Tagliatelle Alla Bolognese</span><span class="price">$36</span></div>
+          <p class="desc">Homemade tagliatelle pasta with beef, pork, and veal ragù</p>
+        </li>
+        <li data-q="spaghetti al pomodoro san marzano tomatoes and basil">
+          <div class="row"><span class="name">Spaghetti Al Pomodoro</span><span class="price">$28</span></div>
+          <p class="desc">San Marzano Tomatoes and basil</p>
+        </li>
+        <li data-q="linguine alle vongole linguine with fresh mid-neck clams, olive oil, and garlic">
+          <div class="row"><span class="name">Linguine Alle Vongole</span><span class="price">$38</span></div>
+          <p class="desc">Linguine with fresh mid-neck clams, olive oil, and garlic</p>
+        </li>
+        <li data-q="spicy paccheri alla vodka homemade paccheri pasta served with spicy vodka sauce">
+          <div class="row"><span class="name">Spicy Paccheri Alla Vodka</span><span class="price">$34</span></div>
+          <p class="desc">Homemade paccheri pasta served with spicy vodka sauce</p>
+        </li>
+        <li data-q="spaghetti alla carbonara guanciale, egg, pecorino romano, parmigiano reggiano cheese, and black pepper">
+          <div class="row"><span class="name">Spaghetti Alla Carbonara</span><span class="price">$33</span></div>
+          <p class="desc">Guanciale, egg, Pecorino Romano, Parmigiano Reggiano cheese, and black pepper</p>
+        </li></ul>
+    </section>
+    <section id="pizza" class="sec">
+      <h2>Pizza</h2>
+      
+      <ul>
+        <li data-q="queen margherita san marzano pomodoro, mozzarella, and fresh basil, drizzled with extra virgin olive oil">
+          <div class="row"><span class="name">Queen Margherita</span><span class="price">$24</span></div>
+          <p class="desc">San Marzano pomodoro, mozzarella, and fresh basil, drizzled with extra virgin olive oil</p>
+        </li>
+        <li data-q="tony pepperoni san marzano pomodoro, ezzo pepperoni cups, mozzarella, and fresh basil">
+          <div class="row"><span class="name">Tony Pepperoni</span><span class="price">$28</span></div>
+          <p class="desc">San Marzano pomodoro, Ezzo pepperoni cups, mozzarella, and fresh basil</p>
+        </li></ul>
+    </section>
+    <section id="del-mare" class="sec">
+      <h2>Del Mare</h2>
+      
+      <ul>
+        <li data-q="lobster ravioli lobster-filled ravioli served over lobster cream sauce with shrimp">
+          <div class="row"><span class="name">Lobster Ravioli</span><span class="price">$42</span></div>
+          <p class="desc">Lobster-filled ravioli served over lobster cream sauce with shrimp</p>
+        </li>
+        <li data-q="branzino whole fish with lemon and orange, grilled with seasoned vegetables, topped off with caper butter">
+          <div class="row"><span class="name">Branzino</span><span class="price">$68</span></div>
+          <p class="desc">Whole fish with lemon and orange, grilled with seasoned vegetables, topped off with caper butter</p>
+        </li>
+        <li data-q="lobster fra diavolo maine lobster tail in spicy pomodoro with calabrian chile sauce with linguini">
+          <div class="row"><span class="name">Lobster Fra Diavolo</span><span class="price">$58</span></div>
+          <p class="desc">Maine lobster tail in spicy pomodoro with Calabrian chile sauce with linguini</p>
+        </li>
+        <li data-q="gamberi scampi shrimp sautéed in garlic, white wine, lemon sauce topped with toasted breadcrumbs with linguine">
+          <div class="row"><span class="name">Gamberi Scampi</span><span class="price">$38</span></div>
+          <p class="desc">Shrimp sautéed in garlic, white wine, lemon sauce topped with toasted breadcrumbs with linguine</p>
+        </li>
+        <li data-q="pesce del giorno premier hand-selected fish by chef anthony">
+          <div class="row"><span class="name">Pesce Del Giorno</span><span class="price">Market price</span></div>
+          <p class="desc">Premier hand-selected fish by Chef Anthony</p>
+        </li>
+        <li data-q="lobster limone 6 oz maine lobster tail, lemon cream sauce toasted breadcrumbs served with homemade tagliatelle pasta">
+          <div class="row"><span class="name">Lobster Limone</span><span class="price">$60</span></div>
+          <p class="desc">6 oz Maine lobster tail, lemon cream sauce toasted breadcrumbs served with homemade tagliatelle pasta</p>
+        </li></ul>
+    </section>
+    <section id="carne" class="sec">
+      <h2>Carne</h2>
+      
+      <ul>
+        <li data-q="pork chop vinegar peppers double cut pork chop served with sweet vinegar and hot cherry peppers">
+          <div class="row"><span class="name">Pork Chop Vinegar Peppers</span><span class="price">$46</span></div>
+          <p class="desc">Double cut pork chop served with sweet vinegar and hot cherry peppers</p>
+        </li>
+        <li data-q="vitello antonio center-cut veal chop for two, pounded thin, panko-crusted with sweet peas, crispy prosciutto, vodka sauce, and fresh mozzarella">
+          <div class="row"><span class="name">Vitello Antonio</span><span class="price">$92</span></div>
+          <p class="desc">Center-cut veal chop for two, pounded thin, Panko-crusted with sweet peas, crispy prosciutto, vodka sauce, and fresh mozzarella</p>
+        </li>
+        <li data-q="pollo milanese breaded bell &amp; evans chicken breast topped with arugula salad">
+          <div class="row"><span class="name">Pollo Milanese</span><span class="price">$42</span></div>
+          <p class="desc">Breaded Bell &amp; Evans chicken breast topped with arugula salad</p>
+        </li>
+        <li data-q="pollo al limone lightly floured bell &amp; evans chicken breast in a white wine lemon sauce">
+          <div class="row"><span class="name">Pollo Al Limone</span><span class="price">$40</span></div>
+          <p class="desc">Lightly floured Bell &amp; Evans chicken breast in a white wine lemon sauce</p>
+        </li>
+        <li data-q="veal ossobucco tender veal shank slowly braised, gremolata, saffron risotto">
+          <div class="row"><span class="name">Veal Ossobucco</span><span class="price">$65</span></div>
+          <p class="desc">Tender veal shank slowly braised, gremolata, saffron risotto</p>
+        </li>
+        <li data-q="pollo al parmigiana breaded bell &amp; evans chicken topped with marinara sauce and fresh buffalo mozzarella">
+          <div class="row"><span class="name">Pollo Al Parmigiana</span><span class="price">$48</span></div>
+          <p class="desc">Breaded Bell &amp; Evans chicken topped with marinara sauce and fresh buffalo mozzarella</p>
+        </li></ul>
+    </section>
+    <section id="sides" class="sec">
+      <h2>Sides</h2>
+      
+      <ul>
+        <li data-q="asparagus grilled asparagus with extra virgin olive oil and maldon sea salt">
+          <div class="row"><span class="name">Asparagus</span><span class="price">$16</span></div>
+          <p class="desc">Grilled asparagus with extra virgin olive oil and Maldon sea salt</p>
+        </li>
+        <li data-q="string beans marinara string beans sauteed with garlic extra virgin olive oil and san marzano tomatoes">
+          <div class="row"><span class="name">String Beans Marinara</span><span class="price">$16</span></div>
+          <p class="desc">String beans sauteed with garlic extra virgin olive oil and san Marzano tomatoes</p>
+        </li>
+        <li data-q="mushrooms chef&#39;s mix mushrooms sautéed with shallots, pancetta, and sweet peas">
+          <div class="row"><span class="name">Mushrooms</span><span class="price">$16</span></div>
+          <p class="desc">Chef&#39;s mix mushrooms sautéed with shallots, pancetta, and sweet peas</p>
+        </li>
+        <li data-q="rosemary potatoes crispy roasted potatoes with fresh rosemary">
+          <div class="row"><span class="name">Rosemary Potatoes</span><span class="price">$14</span></div>
+          <p class="desc">Crispy roasted potatoes with fresh rosemary</p>
+        </li>
+        <li data-q="broccolini extra virgin olive oil, garlic sea salt">
+          <div class="row"><span class="name">Broccolini</span><span class="price">$16</span></div>
+          <p class="desc">Extra virgin olive oil, garlic sea salt</p>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>*The Florida Department of Health advises that consuming raw or undercooked seafood or shellfish may increase your risk of food borne illness. For parties of six or more, a 20% gratuity will be automatically added to the final bill.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Vitolo.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Vitolo menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

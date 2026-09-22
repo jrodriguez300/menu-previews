@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>ON Ocean 7 Café Menu</title>
+<meta name="description" content="Menu for ON Ocean 7 Café, South Beach (Ocean Drive), Miami Beach.">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>ON Ocean 7 Café</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=660%20Ocean%20Dr%2C%20Miami%20Beach%2C%20FL">660 Ocean Dr, Miami Beach, FL</a><a href="tel:3054553288">(305) 455-3288</a></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#raw-bar" data-sec="raw-bar">Raw Bar</a><a href="#appetizers" data-sec="appetizers">Appetizers</a><a href="#tacos" data-sec="tacos">Tacos</a><a href="#pastas" data-sec="pastas">Pastas</a><a href="#salads" data-sec="salads">Salads</a><a href="#pizzas-quesadillas" data-sec="pizzas-quesadillas">Pizzas &amp; Quesadillas</a><a href="#sandwiches-wraps" data-sec="sandwiches-wraps">Sandwiches &amp; Wraps</a><a href="#burgers" data-sec="burgers">Burgers</a><a href="#chicken-steak" data-sec="chicken-steak">Chicken &amp; Steak</a><a href="#fish-seafood" data-sec="fish-seafood">Fish &amp; Seafood</a><a href="#combo-platter" data-sec="combo-platter">Combo Platter</a><a href="#just-for-kids" data-sec="just-for-kids">Just For Kids</a><a href="#desserts" data-sec="desserts">Desserts</a><a href="#more-dishes" data-sec="more-dishes">More Dishes</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="raw-bar" class="sec">
+      <h2>Raw Bar</h2>
+      
+      <ul>
+        <li data-q="salmon &amp; tuna tostada corn tortilla, crispy seaweed, cilantro, cucumber, radish, avocado mayo.">
+          <div class="row"><span class="name">SALMON &amp; TUNA TOSTADA</span><span class="price">$16</span></div>
+          <p class="desc">Corn tortilla, crispy seaweed, cilantro, cucumber, radish, avocado mayo.</p>
+        </li>
+        <li data-q="*alaskan king crab legs 1 piece served with honey mustard sauce">
+          <div class="row"><span class="name">*ALASKAN KING CRAB LEGS</span><span class="price">$18</span></div>
+          <p class="desc">1 piece served with honey mustard sauce</p>
+        </li>
+        <li data-q="*oysters 1/2 dz. ">
+          <div class="row"><span class="name">*OYSTERS 1/2 DZ.</span><span class="price">$16</span></div>
+          
+        </li>
+        <li data-q="*tropical ceviche white fish and shrimp served with corn chips">
+          <div class="row"><span class="name">*TROPICAL CEVICHE</span><span class="price">$16</span></div>
+          <p class="desc">White fish and shrimp served with corn chips</p>
+        </li>
+        <li data-q="*shrimp cocktail served with cocktail sauce. 5 pieces">
+          <div class="row"><span class="name">*SHRIMP COCKTAIL</span><span class="price">$15</span></div>
+          <p class="desc">Served with cocktail sauce. 5 pieces</p>
+        </li>
+        <li data-q="*tuna tartare red onions, tomatoes, avocado, and hearts of palm, soy sauce, spicy mayo">
+          <div class="row"><span class="name">*TUNA TARTARE</span><span class="price">$18</span></div>
+          <p class="desc">Red onions, tomatoes, avocado, and hearts of palm, soy sauce, spicy mayo</p>
+        </li></ul>
+    </section>
+    <section id="appetizers" class="sec">
+      <h2>Appetizers</h2>
+      
+      <ul>
+        <li data-q="guacamole dip with tricolor chips">
+          <div class="row"><span class="name">GUACAMOLE DIP</span><span class="price">$12</span></div>
+          <p class="desc">With tricolor chips</p>
+        </li>
+        <li data-q="fried calamari deep fried, marinara, tartare sauce">
+          <div class="row"><span class="name">FRIED CALAMARI</span><span class="price">$15</span></div>
+          <p class="desc">Deep fried, marinara, tartare sauce</p>
+        </li>
+        <li data-q="shrimp tempura tartare sauce">
+          <div class="row"><span class="name">SHRIMP TEMPURA</span><span class="price">$16</span></div>
+          <p class="desc">Tartare Sauce</p>
+        </li>
+        <li data-q="homemade empanadas served with cilantro aioli &amp; filled with your choice of: beef, chicken or ham &amp; cheese">
+          <div class="row"><span class="name">HOMEMADE EMPANADAS</span><span class="price">$13</span></div>
+          <p class="desc">Served with Cilantro aioli &amp; filled with your choice of: Beef, Chicken or Ham &amp; Cheese</p>
+        </li>
+        <li data-q="chicken wings and fries ranch and buffalo dressing">
+          <div class="row"><span class="name">CHICKEN WINGS AND FRIES</span><span class="price">$14</span></div>
+          <p class="desc">Ranch and buffalo dressing</p>
+        </li>
+        <li data-q="bruschetta pomodoro garlic, basil, diced tomatoes">
+          <div class="row"><span class="name">BRUSCHETTA POMODORO</span><span class="price">$11</span></div>
+          <p class="desc">Garlic, basil, diced tomatoes</p>
+        </li></ul>
+    </section>
+    <section id="tacos" class="sec">
+      <h2>Tacos</h2>
+      
+      <ul>
+        <li data-q="*tacos choice of: steak - fish - shrimp - chicken. flour tortilla - pico de gallo - avocado - lettuce - spicy mayo">
+          <div class="row"><span class="name">*TACOS</span><span class="price">$15.95</span></div>
+          <p class="desc">Choice Of: Steak - Fish - Shrimp - Chicken. Flour Tortilla - Pico De Gallo - Avocado - Lettuce - Spicy Mayo</p>
+        </li></ul>
+    </section>
+    <section id="pastas" class="sec">
+      <h2>Pastas</h2>
+      <p class="note">(Homemade Pastas). Add Chicken $7 - Add *Salmon $9 - Add Shrimp $8 - Add 5oz. Lobster Tail $18 - Add 8oz. Lobster Tail $26 - Add Half Maine Lobster $19</p>
+      <ul>
+        <li data-q="fettuccine alfredo butter parmigiano reggiano">
+          <div class="row"><span class="name">FETTUCCINE ALFREDO</span><span class="price">$17</span></div>
+          <p class="desc">Butter parmigiano reggiano</p>
+        </li>
+        <li data-q="spaghetti carbonara spaghetti pasta with bacon, parmesan cheese, egg yolk, with a touch of cream">
+          <div class="row"><span class="name">SPAGHETTI CARBONARA</span><span class="price">$19</span></div>
+          <p class="desc">Spaghetti pasta with bacon, parmesan cheese, egg yolk, with a touch of cream</p>
+        </li>
+        <li data-q="spinach ravioli cherry tomatoes, garlic, basil, light tomato sauce, shaved parmesan">
+          <div class="row"><span class="name">SPINACH RAVIOLI</span><span class="price">$21</span></div>
+          <p class="desc">Cherry tomatoes, garlic, basil, light tomato sauce, shaved parmesan</p>
+        </li>
+        <li data-q="penne vodka creamy vodka pink sauce, fresh mozzarella &amp; basil">
+          <div class="row"><span class="name">PENNE VODKA</span><span class="price">$22</span></div>
+          <p class="desc">Creamy vodka pink sauce, fresh mozzarella &amp; Basil</p>
+        </li>
+        <li data-q="linguine frutti di mare (we suggest to add lobster tail 5oz. or 8oz.) sautéed of mixed seafood in a light tomato sauce">
+          <div class="row"><span class="name">LINGUINE FRUTTI DI MARE</span><span class="price">$39</span></div>
+          <p class="desc">(We suggest to add lobster tail 5oz. or 8oz.) Sautéed of mixed seafood in a light tomato sauce</p>
+        </li>
+        <li data-q="spaghetti &amp; shrimp sautéed zucchini in a white wine sauce">
+          <div class="row"><span class="name">SPAGHETTI &amp; SHRIMP</span><span class="price">$24</span></div>
+          <p class="desc">Sautéed zucchini in a white wine sauce</p>
+        </li>
+        <li data-q="linguine lobster &amp; shrimp pasta shrimp - tomato sauce - white wine - parsley - half maine lobster">
+          <div class="row"><span class="name">LINGUINE LOBSTER &amp; SHRIMP PASTA</span><span class="price">$29</span></div>
+          <p class="desc">Shrimp - Tomato Sauce - White Wine - Parsley - HALF MAINE LOBSTER</p>
+        </li>
+        <li data-q="lasagna bolognese layers of fresh pasta, meat sauce, bechamel, parmesan and mozzarella cheese">
+          <div class="row"><span class="name">LASAGNA BOLOGNESE</span><span class="price">$22</span></div>
+          <p class="desc">Layers of fresh pasta, meat sauce, bechamel, parmesan and mozzarella cheese</p>
+        </li></ul>
+    </section>
+    <section id="salads" class="sec">
+      <h2>Salads</h2>
+      <p class="note">Add Chicken $7 - Add *Salmon $9 - Add Shrimp $8 - Add 5oz. Lobster Tail $18 - Add 8oz. Lobster Tail $26 - Add Half Maine Lobster $19</p>
+      <ul>
+        <li data-q="caesar salad romaine lettuce, croutons, parmesan cheese, homemade caesar dressing">
+          <div class="row"><span class="name">CAESAR SALAD</span><span class="price">$12</span></div>
+          <p class="desc">Romaine lettuce, croutons, parmesan cheese, homemade caesar dressing</p>
+        </li>
+        <li data-q="apple salad fresh spinach, green apples, candied walnuts, mozzarella cheese, dried cranberries, apple vinaigrette">
+          <div class="row"><span class="name">APPLE SALAD</span><span class="price">$15</span></div>
+          <p class="desc">Fresh spinach, green apples, candied walnuts, mozzarella cheese, dried cranberries, apple vinaigrette</p>
+        </li>
+        <li data-q="tropical salad mixed greens, mango, orange, coconut, tomatoes, hearts of palm, pistachio, orange dressing">
+          <div class="row"><span class="name">TROPICAL SALAD</span><span class="price">$16</span></div>
+          <p class="desc">Mixed greens, mango, orange, coconut, tomatoes, hearts of palm, pistachio, orange dressing</p>
+        </li>
+        <li data-q="greek salad lettuce, feta cheese, pepperoncini, onions, cucumbers, tomatoes, olives, lemon dressing">
+          <div class="row"><span class="name">GREEK SALAD</span><span class="price">$15</span></div>
+          <p class="desc">Lettuce, feta cheese, pepperoncini, onions, cucumbers, tomatoes, olives, lemon dressing</p>
+        </li>
+        <li data-q="cobb salad chicken, tomatoes, eggs, bacon, avocado and blue cheese, lime-chipotle dressing">
+          <div class="row"><span class="name">COBB SALAD</span><span class="price">$18</span></div>
+          <p class="desc">Chicken, tomatoes, eggs, bacon, avocado and blue cheese, lime-chipotle dressing</p>
+        </li></ul>
+    </section>
+    <section id="pizzas-quesadillas" class="sec">
+      <h2>Pizzas &amp; Quesadillas</h2>
+      
+      <ul>
+        <li data-q="margherita tomato sauce, fresh basil, fresh mozzarella cheese, e.v.o.">
+          <div class="row"><span class="name">MARGHERITA</span><span class="price">$14</span></div>
+          <p class="desc">Tomato sauce, fresh basil, fresh mozzarella cheese, e.v.o.</p>
+        </li>
+        <li data-q="pepperoni mozzarella cheese, pepperoni, tomato sauce">
+          <div class="row"><span class="name">PEPPERONI</span><span class="price">$15</span></div>
+          <p class="desc">Mozzarella cheese, pepperoni, tomato sauce</p>
+        </li>
+        <li data-q="hawaiian mozzarella cheese, pineapple, ham, tomato sauce">
+          <div class="row"><span class="name">HAWAIIAN</span><span class="price">$16</span></div>
+          <p class="desc">Mozzarella cheese, pineapple, ham, tomato sauce</p>
+        </li>
+        <li data-q="chicken quesadilla grilled chicken, mozzarella cheese in a flour tortilla, pico de gallo, sour cream, guacamole">
+          <div class="row"><span class="name">CHICKEN QUESADILLA</span><span class="price">$15</span></div>
+          <p class="desc">Grilled chicken, mozzarella cheese in a flour tortilla, pico de gallo, sour cream, guacamole</p>
+        </li>
+        <li data-q="steak quesadilla grilled steak, mozzarella cheese in a flour tortilla, pico de gallo, sour cream, guacamole">
+          <div class="row"><span class="name">STEAK QUESADILLA</span><span class="price">$18</span></div>
+          <p class="desc">Grilled steak, mozzarella cheese in a flour tortilla, pico de gallo, sour cream, guacamole</p>
+        </li>
+        <li data-q="shrimp quesadilla mozzarella cheese in a flour tortilla, pico de gallo, sour cream, guacamole">
+          <div class="row"><span class="name">SHRIMP QUESADILLA</span><span class="price">$18</span></div>
+          <p class="desc">Mozzarella cheese in a flour tortilla, pico de gallo, sour cream, guacamole</p>
+        </li></ul>
+    </section>
+    <section id="sandwiches-wraps" class="sec">
+      <h2>Sandwiches &amp; Wraps</h2>
+      <p class="note">(All Served With French Fries) We Serve Sandwiches And Wraps till 7:30pm</p>
+      <ul>
+        <li data-q="cuban sandwich braised pork, ham, swiss cheese, pickles, mustard">
+          <div class="row"><span class="name">CUBAN SANDWICH</span><span class="price">$16</span></div>
+          <p class="desc">Braised pork, ham, swiss cheese, pickles, mustard</p>
+        </li>
+        <li data-q="chicken b.l.t grilled sandwich, bacon, romaine, tomatoes, mayo">
+          <div class="row"><span class="name">CHICKEN B.L.T</span><span class="price">$16</span></div>
+          <p class="desc">Grilled Sandwich, bacon, romaine, tomatoes, mayo</p>
+        </li>
+        <li data-q="sobe club sandwich 2 slices of toasted bread, turkey, bacon, avocado, swiss cheese, lettuce, tomatoes, mayo">
+          <div class="row"><span class="name">SOBE CLUB</span><span class="price">$16</span></div>
+          <p class="desc">Sandwich 2 slices of toasted bread, turkey, bacon, avocado, swiss cheese, lettuce, tomatoes, mayo</p>
+        </li>
+        <li data-q="veggie wrap oven-roasted zucchini, yellow squash, mixed bell peppers, spinach, avocado, carrots, beets, hummus">
+          <div class="row"><span class="name">VEGGIE WRAP</span><span class="price">$15</span></div>
+          <p class="desc">Oven-roasted zucchini, yellow squash, mixed bell peppers, spinach, avocado, carrots, beets, hummus</p>
+        </li>
+        <li data-q="grandma&#39;s shrimp wrap flour tortilla, fried shrimp, caramelized onions, cilantro, lettuce, swiss cheese, yellow rice &amp; spicy avocado mayo">
+          <div class="row"><span class="name">GRANDMA&#39;S SHRIMP WRAP</span><span class="price">$19</span></div>
+          <p class="desc">Flour Tortilla, fried shrimp, caramelized onions, cilantro, lettuce, Swiss cheese, yellow rice &amp; spicy avocado mayo</p>
+        </li></ul>
+    </section>
+    <section id="burgers" class="sec">
+      <h2>Burgers</h2>
+      
+      <ul>
+        <li data-q="*bacon cheeseburger angus burger, american cheese, lettuce, tomatoes, onions, pickles">
+          <div class="row"><span class="name">*BACON CHEESEBURGER</span><span class="price">$17</span></div>
+          <p class="desc">Angus burger, American cheese, lettuce, tomatoes, onions, pickles</p>
+        </li>
+        <li data-q="*cowboy cheeseburger angus burger, swiss cheese, lettuce, tomatoes, onions, jalapeno, avocado, mayo">
+          <div class="row"><span class="name">*COWBOY CHEESEBURGER</span><span class="price">$18</span></div>
+          <p class="desc">Angus burger, swiss cheese, lettuce, tomatoes, onions, jalapeno, avocado, mayo</p>
+        </li>
+        <li data-q="*farmers burger angus burger, lettuce, caramelized onions, sweet plantain, american cheese">
+          <div class="row"><span class="name">*FARMERS BURGER</span><span class="price">$17</span></div>
+          <p class="desc">Angus burger, lettuce, caramelized onions, sweet plantain, American cheese</p>
+        </li>
+        <li data-q="chicken avocado burger crispy chicken breast, swiss cheese, lettuce, tomato, chipotle mayo">
+          <div class="row"><span class="name">CHICKEN AVOCADO BURGER</span><span class="price">$15</span></div>
+          <p class="desc">Crispy chicken breast, Swiss cheese, lettuce, tomato, chipotle mayo</p>
+        </li></ul>
+    </section>
+    <section id="chicken-steak" class="sec">
+      <h2>Chicken &amp; Steak</h2>
+      
+      <ul>
+        <li data-q="chicken parmigiana chicken breast topped with tomato sauce &amp; mozzarella cheese w/ linguine pasta">
+          <div class="row"><span class="name">CHICKEN PARMIGIANA</span><span class="price">$23</span></div>
+          <p class="desc">Chicken breast topped with tomato sauce &amp; mozzarella cheese w/ linguine pasta</p>
+        </li>
+        <li data-q="creamy chicken supreme airline chicken breast, white rice, creamy mushroom sauce">
+          <div class="row"><span class="name">CREAMY CHICKEN SUPREME</span><span class="price">$23</span></div>
+          <p class="desc">Airline chicken breast, white rice, creamy mushroom sauce</p>
+        </li>
+        <li data-q="ultimate cuban ropa vieja slow cooked shredded beef, onions, bell peppers, garlic, aromatic spices, white rice, beans &amp; sweet plantain">
+          <div class="row"><span class="name">ULTIMATE CUBAN ROPA VIEJA</span><span class="price">$24</span></div>
+          <p class="desc">Slow cooked shredded beef, onions, bell peppers, garlic, aromatic spices, white rice, beans &amp; sweet plantain</p>
+        </li>
+        <li data-q="bbq ribs with french fries">
+          <div class="row"><span class="name">BBQ RIBS</span><span class="price">$28</span></div>
+          <p class="desc">With french fries</p>
+        </li>
+        <li data-q="*cuban churrasco steak served with white rice, black beans &amp; sweet plantain">
+          <div class="row"><span class="name">*CUBAN CHURRASCO STEAK</span><span class="price">$29</span></div>
+          <p class="desc">Served with white rice, black beans &amp; sweet plantain</p>
+        </li>
+        <li data-q="short ribs slow cooked, aromatic spices, creamy mashed potatoes, carrot sticks, and crispy onions">
+          <div class="row"><span class="name">SHORT RIBS</span><span class="price">$34</span></div>
+          <p class="desc">Slow cooked, aromatic spices, creamy mashed potatoes, carrot sticks, and crispy onions</p>
+        </li>
+        <li data-q="majestic bowl oven roasted pulled pork, white rice, black beans, pickled onions, sweet plantain">
+          <div class="row"><span class="name">MAJESTIC BOWL</span><span class="price">$23</span></div>
+          <p class="desc">Oven roasted pulled pork, white rice, black beans, pickled onions, sweet plantain</p>
+        </li>
+        <li data-q="*new york steak served with baked potatoes and vegetables">
+          <div class="row"><span class="name">*NEW YORK STEAK</span><span class="price">$34</span></div>
+          <p class="desc">Served with baked potatoes and vegetables</p>
+        </li>
+        <li data-q="*steak &amp; fries angus ny steak - salt - black pepper seasoning - fries">
+          <div class="row"><span class="name">*STEAK &amp; FRIES</span><span class="price">$22</span></div>
+          <p class="desc">Angus NY Steak - Salt - Black Pepper Seasoning - Fries</p>
+        </li></ul>
+    </section>
+    <section id="fish-seafood" class="sec">
+      <h2>Fish &amp; Seafood</h2>
+      <p class="note">Add Chicken $7 - Add *Salmon $9 - Add Shrimp $8 - Add 5oz. Lobster Tail $18 - Add 8oz. Lobster Tail $26 - Add Half Maine Lobster $19</p>
+      <ul>
+        <li data-q="*salmon atlantic salmon, mixed greens, quinoa, orange">
+          <div class="row"><span class="name">*SALMON</span><span class="price">$25</span></div>
+          <p class="desc">Atlantic salmon, mixed greens, quinoa, orange</p>
+        </li>
+        <li data-q="caribbean shrimp with rice">
+          <div class="row"><span class="name">CARIBBEAN SHRIMP</span><span class="price">$28</span></div>
+          <p class="desc">With rice</p>
+        </li>
+        <li data-q="red snapper whole fish. fried or broiled, rice and salad">
+          <div class="row"><span class="name">RED SNAPPER</span><span class="price">$33</span></div>
+          <p class="desc">Whole fish. Fried or broiled, rice and salad</p>
+        </li>
+        <li data-q="fisherman branzino filet, mixed seafood, creamy seafood sauce &amp; mashed potatoes">
+          <div class="row"><span class="name">FISHERMAN</span><span class="price">$28</span></div>
+          <p class="desc">Branzino filet, mixed seafood, creamy seafood sauce &amp; mashed potatoes</p>
+        </li>
+        <li data-q="grilled maine lobster 1 1/2 pound. served with french fries and salad">
+          <div class="row"><span class="name">GRILLED MAINE LOBSTER</span><span class="price">$39</span></div>
+          <p class="desc">1 1/2 pound. Served with french fries and salad</p>
+        </li>
+        <li data-q="007 paella (we suggest to add lobster tail 5oz. or 8oz.)1 king crab leg, 3 jumbo shrimp, calamari, mussels, clams, shrimp, baby scallops red peppers">
+          <div class="row"><span class="name">007 PAELLA</span><span class="price">$39</span></div>
+          <p class="desc">(We suggest to add lobster tail 5oz. or 8oz.)1 king crab leg, 3 jumbo shrimp, calamari, mussels, clams, shrimp, baby scallops red peppers</p>
+        </li>
+        <li data-q="seafood paella clams - mussels - calamari - shrimp - baby scallops - fish stock - valencia rice">
+          <div class="row"><span class="name">SEAFOOD PAELLA</span><span class="price">$24</span></div>
+          <p class="desc">Clams - Mussels - Calamari - Shrimp - Baby Scallops - Fish Stock - Valencia Rice</p>
+        </li></ul>
+    </section>
+    <section id="combo-platter" class="sec">
+      <h2>Combo Platter</h2>
+      
+      <ul>
+        <li data-q="fried platter exquisite combination of daily catch fish, calamari, shrimp, chicken wings, and fries">
+          <div class="row"><span class="name">FRIED PLATTER</span><span class="price">$42</span></div>
+          <p class="desc">Exquisite Combination Of Daily Catch Fish, Calamari, Shrimp, Chicken Wings, And Fries</p>
+        </li>
+        <li data-q="*mixed grill 8 oz. filet mignon and lobster tail. served with mashed potatoes and grilled vegetables">
+          <div class="row"><span class="name">*MIXED GRILL</span><span class="price">$56</span></div>
+          <p class="desc">8 oz. Filet Mignon And Lobster Tail. Served With Mashed Potatoes And Grilled Vegetables</p>
+        </li>
+        <li data-q="*burger &amp; lobster half maine lobster, combined w/ our angus cheeseburger, served w/ fries &amp; salad">
+          <div class="row"><span class="name">*BURGER &amp; LOBSTER</span><span class="price">$38</span></div>
+          <p class="desc">Half Maine Lobster, Combined W/ Our Angus Cheeseburger, Served W/ Fries &amp; Salad</p>
+        </li>
+        <li data-q="*cold platter 6 oysters, shrimp cocktail, ceviche, 1 crab leg with horseradish, cocktail sauce and creamy mustard sauce">
+          <div class="row"><span class="name">*COLD PLATTER</span><span class="price">$59</span></div>
+          <p class="desc">6 Oysters, Shrimp Cocktail, Ceviche, 1 Crab Leg With Horseradish, Cocktail Sauce And Creamy Mustard Sauce</p>
+        </li>
+        <li data-q="chef paella (for two) 2 lobster tail, 1 king crab leg, 5 jumbo shrimp, calamari, mussels, shrimp, baby scallops and red peppers">
+          <div class="row"><span class="name">CHEF PAELLA (FOR TWO)</span><span class="price">$99</span></div>
+          <p class="desc">2 Lobster Tail, 1 King Crab Leg, 5 Jumbo Shrimp, Calamari, Mussels, Shrimp, Baby Scallops And Red Peppers</p>
+        </li></ul>
+    </section>
+    <section id="just-for-kids" class="sec">
+      <h2>Just For Kids</h2>
+      
+      <ul>
+        <li data-q="chicken fingers ">
+          <div class="row"><span class="name">CHICKEN FINGERS</span><span class="price">$12</span></div>
+          
+        </li>
+        <li data-q="spaghetti pasta ">
+          <div class="row"><span class="name">SPAGHETTI PASTA</span><span class="price">$10</span></div>
+          
+        </li>
+        <li data-q="cheese pizza ">
+          <div class="row"><span class="name">CHEESE PIZZA</span><span class="price">$10</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="desserts" class="sec">
+      <h2>Desserts</h2>
+      
+      <ul>
+        <li data-q="chocolate soufflé ">
+          <div class="row"><span class="name">CHOCOLATE SOUFFLÉ</span><span class="price">$12</span></div>
+          
+        </li>
+        <li data-q="tiramisu ">
+          <div class="row"><span class="name">TIRAMISU</span><span class="price">$10</span></div>
+          
+        </li>
+        <li data-q="key lime pie ">
+          <div class="row"><span class="name">KEY LIME PIE</span><span class="price">$10</span></div>
+          
+        </li>
+        <li data-q="vanilla &amp; chocolate ice cream ">
+          <div class="row"><span class="name">VANILLA &amp; CHOCOLATE ICE CREAM</span><span class="price">$10</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="more-dishes" class="sec">
+      <h2>More Dishes</h2>
+      
+      <ul>
+        <li data-q="bbq ribs and fries ">
+          <div class="row"><span class="name">Bbq Ribs And Fries</span><span class="price">$28</span></div>
+          
+        </li>
+        <li data-q="caribbean shrimp and rice ">
+          <div class="row"><span class="name">Caribbean Shrimp And Rice</span><span class="price">$28</span></div>
+          
+        </li>
+        <li data-q="*mix grill lobster tail and 8oz. filet mignon, mashed potatoes &amp; veggies">
+          <div class="row"><span class="name">*Mix Grill</span><span class="price">$56</span></div>
+          <p class="desc">Lobster tail and 8oz. filet mignon, mashed potatoes &amp; veggies</p>
+        </li>
+        <li data-q="chicken fajita ">
+          <div class="row"><span class="name">Chicken Fajita</span><span class="price">$24</span></div>
+          
+        </li>
+        <li data-q="*steak fajita ">
+          <div class="row"><span class="name">*Steak Fajita</span><span class="price">$26</span></div>
+          
+        </li>
+        <li data-q="veggie fajita ">
+          <div class="row"><span class="name">Veggie Fajita</span><span class="price">$25</span></div>
+          
+        </li>
+        <li data-q="*rib eye steak roasted potatoes, veggies, mushroom sauce">
+          <div class="row"><span class="name">*Rib Eye Steak</span><span class="price">$49</span></div>
+          <p class="desc">Roasted potatoes, Veggies, Mushroom Sauce</p>
+        </li>
+        <li data-q="*seafood grigliata (for two) lobster tail, king crab legs, jumbo shrimp, salmon, mashed potatoes and salad">
+          <div class="row"><span class="name">*Seafood Grigliata (For Two)</span><span class="price">$99</span></div>
+          <p class="desc">Lobster tail, king crab legs, jumbo shrimp, salmon, mashed potatoes and salad</p>
+        </li>
+        <li data-q="*meat grigliata (for two) ny steak, churrasco, beef filet, sausage, chicken, fries and grilled asparagus">
+          <div class="row"><span class="name">*Meat Grigliata (For Two)</span><span class="price">$99</span></div>
+          <p class="desc">NY Steak, Churrasco, Beef filet, Sausage, Chicken, Fries And Grilled Asparagus</p>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>Consuming raw or undercooked meats, poultry, seafood, shellfish, oysters or eggs may increase your risk of foodborne illness, especially if you have certain medical conditions. Taxes not included in prices. A mandatory 20% service charge will be added to your check.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for ON Ocean 7 Café.</strong> Not the official menu. Copied from their public menu on 2026-09-20. This preview expires October 4.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The ON Ocean 7 Café menu preview was free to look at until October 4. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-04T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

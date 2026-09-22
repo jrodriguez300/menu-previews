@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Jax Cafe Menu</title>
+<meta name="description" content="Menu for Jax Cafe, Northeast Minneapolis (University Ave NE).">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Jax Cafe</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=1928%20University%20Ave%20NE%2C%20Minneapolis%2C%20MN%2055418">1928 University Ave NE, Minneapolis, MN 55418</a><a href="tel:6127897297">(612) 789-7297</a><span>Dinner Wednesday-Saturday 4:00 PM - 9:00 PM, Sunday 4:00 PM - 8:00 PM; Weekend Brunch Saturday &amp; Sunday 10:00 AM - 1:30 PM; Lunch Friday only 11:00 AM - 2:00 PM; Happy Hour (bar only) Wednesday-Sunday 3:30 PM - 6:00 PM</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#appetizers" data-sec="appetizers">Appetizers</a><a href="#soups-salads" data-sec="soups-salads">Soups &amp; Salads</a><a href="#steaks-chops" data-sec="steaks-chops">Steaks &amp; Chops</a><a href="#add-on" data-sec="add-on">Add On</a><a href="#fish-seafood" data-sec="fish-seafood">Fish &amp; Seafood</a><a href="#jax-favorites-and-dinner-sandwiches" data-sec="jax-favorites-and-dinner-sandwiches">Jax Favorites and Dinner Sandwiches</a><a href="#a-la-carte-sides" data-sec="a-la-carte-sides">A La Carte Sides</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="appetizers" class="sec">
+      <h2>Appetizers</h2>
+      
+      <ul>
+        <li data-q="pierogi potato &amp; cheese">
+          <div class="row"><span class="name">Pierogi</span><span class="price">$15</span></div>
+          <p class="desc">Potato &amp; Cheese</p>
+        </li>
+        <li data-q="jumbo shrimp cocktail spicy cocktail sauce">
+          <div class="row"><span class="name">Jumbo Shrimp Cocktail</span><span class="price">$24</span></div>
+          <p class="desc">Spicy Cocktail Sauce</p>
+        </li>
+        <li data-q="artichoke dip grilled baguette">
+          <div class="row"><span class="name">Artichoke Dip</span><span class="price">$16</span></div>
+          <p class="desc">Grilled Baguette</p>
+        </li>
+        <li data-q="oysters on the half shell (6) ">
+          <div class="row"><span class="name">Oysters on the Half Shell (6)</span><span class="price">$24</span></div>
+          
+        </li>
+        <li data-q="chilled seafood tower serves 6-8 - contains king crab meat, lobster cocktail, 8 jumbo shrimp cocktail, 8 oysters on the half shell">
+          <div class="row"><span class="name">Chilled Seafood Tower</span><span class="price">$145</span></div>
+          <p class="desc">Serves 6-8 - Contains King Crab meat, Lobster Cocktail, 8 Jumbo Shrimp Cocktail, 8 Oysters on the Half Shell</p>
+        </li>
+        <li data-q="crab cakes ritz cracker crusted">
+          <div class="row"><span class="name">Crab Cakes</span><span class="price">$28</span></div>
+          <p class="desc">Ritz Cracker Crusted</p>
+        </li>
+        <li data-q="jax crab rolls ">
+          <div class="row"><span class="name">Jax Crab Rolls</span><span class="price">$17</span></div>
+          
+        </li>
+        <li data-q="onion rings ">
+          <div class="row"><span class="name">Onion Rings</span><span class="price">$16</span></div>
+          
+        </li>
+        <li data-q="jax sizzling bacon bourbon syrup">
+          <div class="row"><span class="name">Jax Sizzling Bacon</span><span class="price">$13</span></div>
+          <p class="desc">Bourbon Syrup</p>
+        </li>
+        <li data-q="roasted tomatoes &amp; goat cheese with rosemary &amp; olive oil in cast iron skillet, served with grilled baguette">
+          <div class="row"><span class="name">Roasted Tomatoes &amp; Goat Cheese</span><span class="price">$18</span></div>
+          <p class="desc">With Rosemary &amp; Olive Oil in Cast Iron Skillet, served with Grilled Baguette</p>
+        </li>
+        <li data-q="szechuan green beans red peppers &amp; bacon">
+          <div class="row"><span class="name">Szechuan Green Beans</span><span class="price">$16</span></div>
+          <p class="desc">Red Peppers &amp; Bacon</p>
+        </li>
+        <li data-q="steakhouse garlic cheese boule ">
+          <div class="row"><span class="name">Steakhouse Garlic Cheese Boule</span><span class="price">$13</span></div>
+          
+        </li>
+        <li data-q="beef short rib in puff pastry with melted brie">
+          <div class="row"><span class="name">Beef Short Rib in Puff Pastry</span><span class="price">$18</span></div>
+          <p class="desc">with Melted Brie</p>
+        </li>
+        <li data-q="italian meatballs grilled baguette">
+          <div class="row"><span class="name">Italian Meatballs</span><span class="price">$16</span></div>
+          <p class="desc">Grilled Baguette</p>
+        </li></ul>
+    </section>
+    <section id="soups-salads" class="sec">
+      <h2>Soups &amp; Salads</h2>
+      
+      <ul>
+        <li data-q="soup of the day ">
+          <div class="row"><span class="name">Soup of the Day</span><span class="price">$7</span></div>
+          
+        </li>
+        <li data-q="jax house salad crisp romaine lettuce tossed with creamy garlic dressing and fresh parmesan. topped with house made croutons">
+          <div class="row"><span class="name">Jax House Salad</span><span class="price">$9</span></div>
+          <p class="desc">Crisp Romaine Lettuce tossed with Creamy Garlic Dressing and Fresh Parmesan. Topped with House Made Croutons</p>
+        </li>
+        <li data-q="mixed field greens grape tomatoes, shaved red onion, simple vinaigrette">
+          <div class="row"><span class="name">Mixed Field Greens</span><span class="price">$8</span></div>
+          <p class="desc">Grape Tomatoes, Shaved Red Onion, Simple Vinaigrette</p>
+        </li>
+        <li data-q="french onion, gruyere ">
+          <div class="row"><span class="name">French Onion, Gruyere</span><span class="price">$11</span></div>
+          
+        </li>
+        <li data-q="jax waldorf salad ">
+          <div class="row"><span class="name">Jax Waldorf Salad</span><span class="price">$13</span></div>
+          
+        </li>
+        <li data-q="roasted beet &amp; goat cheese salad mixed greens, fried goat cheese, beets, toasted pecans, craisins, and red onion with a maple vinaigrette">
+          <div class="row"><span class="name">Roasted Beet &amp; Goat Cheese Salad</span><span class="price">$16</span></div>
+          <p class="desc">Mixed Greens, Fried Goat Cheese, Beets, Toasted Pecans, Craisins, and Red Onion with a Maple Vinaigrette</p>
+        </li>
+        <li data-q="jax clam chowder ">
+          <div class="row"><span class="name">Jax Clam Chowder</span><span class="price">$8</span></div>
+          
+        </li>
+        <li data-q="steak house wedge large wedge of iceberg lettuce, two thick cut tomato slices, red onion, blue cheese dressing, chopped bacon, topped with blue cheese crumbles">
+          <div class="row"><span class="name">Steak House Wedge</span></div>
+          <p class="desc">Large Wedge of Iceberg Lettuce, two thick cut Tomato Slices, Red Onion, Blue Cheese Dressing, chopped Bacon, topped with Blue Cheese Crumbles</p><div class="prices"><span class="pp"><span class="pl">Full</span> <b>$13</b></span><span class="pp"><span class="pl">Half Wedge</span> <b>$8</b></span></div>
+        </li></ul>
+    </section>
+    <section id="steaks-chops" class="sec">
+      <h2>Steaks &amp; Chops</h2>
+      <p class="note">Baked Potato, Mashed Potatoes, or French Fries (unless otherwise noted)</p>
+      <ul>
+        <li data-q="slow roasted prime rib 14 oz au jus, creamy horseradish">
+          <div class="row"><span class="name">Slow Roasted Prime Rib 14 oz</span><span class="price">$49</span></div>
+          <p class="desc">Au Jus, Creamy Horseradish</p>
+        </li>
+        <li data-q="king cut prime rib 20 oz ">
+          <div class="row"><span class="name">King Cut Prime Rib 20 oz</span><span class="price">$60</span></div>
+          
+        </li>
+        <li data-q="filet mignon 8 oz &quot;the steak that made jax famous!&quot;">
+          <div class="row"><span class="name">Filet Mignon 8 oz</span><span class="price">$58</span></div>
+          <p class="desc">&quot;The steak that made JAX famous!&quot;</p>
+        </li>
+        <li data-q="new york strip 14oz add char crust seasoning 4">
+          <div class="row"><span class="name">New York Strip 14oz</span><span class="price">$62</span></div>
+          <p class="desc">add Char Crust Seasoning 4</p>
+        </li>
+        <li data-q="grilled pork chop 14 oz special dry rub seasoning, topped with crispy fried onion strings and a side of sizzling cinnamon apples">
+          <div class="row"><span class="name">Grilled Pork Chop 14 oz</span><span class="price">$40</span></div>
+          <p class="desc">Special Dry Rub Seasoning, topped with Crispy Fried Onion Strings and a side of Sizzling Cinnamon Apples</p>
+        </li>
+        <li data-q="smothered ribeye 18 oz served over crispy hash browns, topped with sautéed mushrooms &amp; onions">
+          <div class="row"><span class="name">Smothered Ribeye 18 oz</span><span class="price">$74</span></div>
+          <p class="desc">Served over Crispy Hash Browns, topped with Sautéed Mushrooms &amp; Onions</p>
+        </li>
+        <li data-q="domestic rack of lamb aromatic marinated and topped with chanterelle mushrooms. served with mashed potatoes">
+          <div class="row"><span class="name">Domestic Rack of Lamb</span><span class="price">$63</span></div>
+          <p class="desc">Aromatic Marinated and topped with Chanterelle Mushrooms. Served with Mashed Potatoes</p>
+        </li>
+        <li data-q="bone-in filet this unique cut from the steer combines the flavor of the bone with the tenderness of the filet mignon to create what is known as &quot;the finest steak available&quot;. grilled asparagus and bearnaise">
+          <div class="row"><span class="name">Bone-In Filet</span><span class="price">Market price</span></div>
+          <p class="desc">This unique cut from the steer combines the flavor of the bone with the tenderness of the filet mignon to create what is known as &quot;The finest steak available&quot;. Grilled Asparagus and Bearnaise</p>
+        </li>
+        <li data-q="baby back bbq ribs ">
+          <div class="row"><span class="name">Baby Back BBQ Ribs</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Full Rack</span> <b>$46</b></span><span class="pp"><span class="pl">Half Rack</span> <b>$36</b></span></div>
+        </li>
+        <li data-q="beef short rib pot roast served with horseradish mashed potatoes">
+          <div class="row"><span class="name">Beef Short Rib Pot Roast</span><span class="price">$38</span></div>
+          <p class="desc">Served with Horseradish Mashed Potatoes</p>
+        </li></ul>
+    </section>
+    <section id="add-on" class="sec">
+      <h2>Add On</h2>
+      
+      <ul>
+        <li data-q="12oz lobster tail ">
+          <div class="row"><span class="name">12oz Lobster Tail</span><span class="price">$80</span></div>
+          
+        </li>
+        <li data-q="creamy horseradish ">
+          <div class="row"><span class="name">Creamy Horseradish</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="sautéed mushrooms or sautéed onions ">
+          <div class="row"><span class="name">Sautéed Mushrooms or Sautéed Onions</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="seared scallops ">
+          <div class="row"><span class="name">Seared Scallops</span><span class="price">Market price</span></div>
+          
+        </li>
+        <li data-q="char crust seasoning ">
+          <div class="row"><span class="name">Char Crust Seasoning</span><span class="price">$4</span></div>
+          
+        </li>
+        <li data-q="blue cheese crumbles ">
+          <div class="row"><span class="name">Blue Cheese Crumbles</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="oscar style ">
+          <div class="row"><span class="name">Oscar Style</span><span class="price">$23</span></div>
+          
+        </li>
+        <li data-q="beurre blanc ">
+          <div class="row"><span class="name">Beurre Blanc</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="bearnaise or bordelaise ">
+          <div class="row"><span class="name">Bearnaise or Bordelaise</span><span class="price">$5</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="fish-seafood" class="sec">
+      <h2>Fish &amp; Seafood</h2>
+      
+      <ul>
+        <li data-q="cold water lobster tail fresh vegetables">
+          <div class="row"><span class="name">Cold Water Lobster Tail</span><span class="price">$90</span></div>
+          <p class="desc">Fresh Vegetables</p>
+        </li>
+        <li data-q="alaskan king crab legs (1 lb) fresh vegetables">
+          <div class="row"><span class="name">Alaskan King Crab Legs (1 lb)</span><span class="price">$90</span></div>
+          <p class="desc">Fresh Vegetables</p>
+        </li>
+        <li data-q="whole maine lobster fresh from the jax salt water tank, served with fries">
+          <div class="row"><span class="name">Whole Maine Lobster</span><span class="price">$60</span></div>
+          <p class="desc">Fresh from the Jax Salt Water Tank, served with Fries</p>
+        </li>
+        <li data-q="walleye pike red lake, mn. with wild rice pilaf and citrus beurre blanc">
+          <div class="row"><span class="name">Walleye Pike</span><span class="price">$39</span></div>
+          <p class="desc">Red Lake, MN. With Wild Rice Pilaf and Citrus Beurre Blanc</p>
+        </li>
+        <li data-q="atlantic salmon your server will announce tonight&#39;s presentation">
+          <div class="row"><span class="name">Atlantic Salmon</span><span class="price">$40</span></div>
+          <p class="desc">Your server will announce Tonight&#39;s Presentation</p>
+        </li>
+        <li data-q="pan seared scallops sauteéd spinach">
+          <div class="row"><span class="name">Pan Seared Scallops</span><span class="price">Market price</span></div>
+          <p class="desc">Sauteéd Spinach</p>
+        </li>
+        <li data-q="rainbow trout net your own trout from our garden stream (mid april-october), served with fresh vegetables">
+          <div class="row"><span class="name">Rainbow Trout</span><span class="price">$46</span></div>
+          <p class="desc">Net your own Trout from our Garden Stream (mid April-October), served with Fresh Vegetables</p>
+        </li></ul>
+    </section>
+    <section id="jax-favorites-and-dinner-sandwiches" class="sec">
+      <h2>Jax Favorites and Dinner Sandwiches</h2>
+      
+      <ul>
+        <li data-q="chicken pot pie a jax favorite for generations">
+          <div class="row"><span class="name">Chicken Pot Pie</span><span class="price">$19</span></div>
+          <p class="desc">A Jax favorite for generations</p>
+        </li>
+        <li data-q="uncle joe&#39;s prime rib sandwich fresh sliced prime rib on pumpernickel bun topped with mushrooms, onions, and a side of horseradish aioli. served with a side of au jus and french fries">
+          <div class="row"><span class="name">Uncle Joe&#39;s Prime Rib Sandwich</span><span class="price">$29</span></div>
+          <p class="desc">Fresh Sliced Prime Rib on Pumpernickel Bun topped with Mushrooms, Onions, and a side of Horseradish Aioli. Served with a side of Au Jus and French Fries</p>
+        </li>
+        <li data-q="pan roasted chicken breast french-cut bone-in chicken with natural au jus, mashed potatoes and vegetable">
+          <div class="row"><span class="name">Pan Roasted Chicken Breast</span><span class="price">$38</span></div>
+          <p class="desc">French-Cut Bone-In Chicken with Natural Au Jus, Mashed Potatoes and Vegetable</p>
+        </li>
+        <li data-q="jax burger with tillamook cheddar cheese, crispy fried onion straws, french fries">
+          <div class="row"><span class="name">Jax Burger</span><span class="price">$19</span></div>
+          <p class="desc">with Tillamook Cheddar Cheese, Crispy Fried Onion Straws, French Fries</p>
+        </li>
+        <li data-q="potato gnocchi with sauce aurora">
+          <div class="row"><span class="name">Potato Gnocchi</span><span class="price">$30</span></div>
+          <p class="desc">with Sauce Aurora</p>
+        </li>
+        <li data-q="new england lobster roll chilled lobster salad in a grilled new england frankfurter roll. servedwith french fries">
+          <div class="row"><span class="name">New England Lobster Roll</span></div>
+          <p class="desc">Chilled Lobster Salad in a grilled New England Frankfurter Roll. Servedwith French Fries</p><div class="prices"><span class="pp"><span class="pl">Two rolls</span> <b>$29</b></span><span class="pp"><span class="pl">One roll</span> <b>$19</b></span></div>
+        </li></ul>
+    </section>
+    <section id="a-la-carte-sides" class="sec">
+      <h2>A La Carte Sides</h2>
+      
+      <ul>
+        <li data-q="crispy hash browns jax seasoning">
+          <div class="row"><span class="name">Crispy Hash Browns</span><span class="price">$9</span></div>
+          <p class="desc">Jax Seasoning</p>
+        </li>
+        <li data-q="mashed potatoes and bordelaise ">
+          <div class="row"><span class="name">Mashed Potatoes and Bordelaise</span><span class="price">$8</span></div>
+          
+        </li>
+        <li data-q="au gratin potatoes ">
+          <div class="row"><span class="name">Au Gratin Potatoes</span><span class="price">$8</span></div>
+          
+        </li>
+        <li data-q="loaded baked potato ">
+          <div class="row"><span class="name">Loaded Baked Potato</span><span class="price">$8</span></div>
+          
+        </li>
+        <li data-q="asparagus &amp; bearnaise ">
+          <div class="row"><span class="name">Asparagus &amp; Bearnaise</span><span class="price">$14</span></div>
+          
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>Consumer information: Consuming raw or undercooked meats, poultrty, seafood, shellfish, or eggs may increase the risk of food-borne illness. A 3% fee will be added to all credit card transactions.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Jax Cafe.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Jax Cafe menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

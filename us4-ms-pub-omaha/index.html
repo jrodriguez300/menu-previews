@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>M&#39;s Pub Menu</title>
+<meta name="description" content="Menu for M&#39;s Pub, Old Market (S 11th St).">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>M&#39;s Pub</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=422%20S.%2011th%20St.%2C%20Omaha%2C%20NE%2068102">422 S. 11th St., Omaha, NE 68102</a><a href="tel:4023422550">402-342-2550</a><span>Monday-Saturday 11am - 12am; Sunday 11am - 11pm (kitchen and bar)</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#starters" data-sec="starters">Starters</a><a href="#m-s-renowned-baked-dishes" data-sec="m-s-renowned-baked-dishes">M&#39;s Renowned Baked Dishes</a><a href="#m-s-famous-lahvosh" data-sec="m-s-famous-lahvosh">M&#39;s Famous Lahvosh</a><a href="#soup-and-salads" data-sec="soup-and-salads">Soup and Salads</a><a href="#sandwiches-hot" data-sec="sandwiches-hot">Sandwiches - Hot</a><a href="#sandwiches-cold" data-sec="sandwiches-cold">Sandwiches - Cold</a><a href="#light-entr-es" data-sec="light-entr-es">Light Entrées</a><a href="#desserts" data-sec="desserts">Desserts</a><a href="#beverages" data-sec="beverages">Beverages</a><a href="#port" data-sec="port">Port</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="starters" class="sec">
+      <h2>Starters</h2>
+      
+      <ul>
+        <li data-q="crab cakes pickled vegetables, sweet chile aioli">
+          <div class="row"><span class="name">Crab Cakes</span><span class="price">$19.25</span></div>
+          <p class="desc">pickled vegetables, sweet chile aioli</p>
+        </li>
+        <li data-q="potstickers pork &amp; vegetable stuffed potstickers, soba noodle vegetable salad, peanut and sweet thai chili sauce">
+          <div class="row"><span class="name">Potstickers</span><span class="price">$15.25</span></div>
+          <p class="desc">pork &amp; vegetable stuffed potstickers, soba noodle vegetable salad, peanut and sweet thai chili sauce</p>
+        </li>
+        <li data-q="popper dip three cheeses, roasted corn, charred poblano &amp; jalapeno, tomato and crispy bacon with lahvosh crackers and grilled pita">
+          <div class="row"><span class="name">Popper Dip</span><span class="price">$14.50</span></div>
+          <p class="desc">three cheeses, roasted corn, charred poblano &amp; jalapeno, tomato and crispy bacon with Lahvosh crackers and grilled pita</p>
+        </li>
+        <li data-q="smoked salmon toast dill cream cheese, avocado, tomato, cucumber, pickled onion, cured salmon, lemon zest and parsley">
+          <div class="row"><span class="name">Smoked Salmon Toast</span><span class="price">$18.00</span></div>
+          <p class="desc">dill cream cheese, avocado, tomato, cucumber, pickled onion, cured salmon, lemon zest and parsley</p>
+        </li>
+        <li data-q="black bean cakes pickled vegetables, chipotle aioli">
+          <div class="row"><span class="name">Black Bean Cakes</span><span class="price">$12.50</span></div>
+          <p class="desc">pickled vegetables, chipotle aioli</p>
+        </li>
+        <li data-q="whole artichoke drawn butter, lemon basil and curry aioli">
+          <div class="row"><span class="name">Whole Artichoke</span><span class="price">$15.50</span></div>
+          <p class="desc">drawn butter, lemon basil and curry aioli</p>
+        </li>
+        <li data-q="baked brie en croûte baked puff pastry filled with brie, honey chestnut butter and quince preserves with sliced apples">
+          <div class="row"><span class="name">Baked Brie en Croûte</span><span class="price">$17.50</span></div>
+          <p class="desc">baked puff pastry filled with brie, honey chestnut butter and quince preserves with sliced apples</p>
+        </li>
+        <li data-q="wine plate artisanal cheeses, fruit, toasted sourdough, accoutrements. add charcuterie +9.95">
+          <div class="row"><span class="name">Wine Plate</span><span class="price">$23.50</span></div>
+          <p class="desc">artisanal cheeses, fruit, toasted sourdough, accoutrements. Add charcuterie +9.95</p>
+        </li></ul>
+    </section>
+    <section id="m-s-renowned-baked-dishes" class="sec">
+      <h2>M&#39;s Renowned Baked Dishes</h2>
+      <p class="note">Broiled with garlic butter &amp; havarti cheese</p>
+      <ul>
+        <li data-q="shrimp ">
+          <div class="row"><span class="name">Shrimp</span><span class="price">$17.50</span></div>
+          
+        </li>
+        <li data-q="escargot ">
+          <div class="row"><span class="name">Escargot</span><span class="price">$18.95</span></div>
+          
+        </li>
+        <li data-q="mushrooms ">
+          <div class="row"><span class="name">Mushrooms</span><span class="price">$15.50</span></div>
+          
+        </li>
+        <li data-q="beef tips ">
+          <div class="row"><span class="name">Beef Tips</span><span class="price">$21.50</span></div>
+          
+        </li>
+        <li data-q="lamb tips ">
+          <div class="row"><span class="name">Lamb Tips</span><span class="price">$22.95</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="m-s-famous-lahvosh" class="sec">
+      <h2>M&#39;s Famous Lahvosh</h2>
+      <p class="note">Armenian cracker with havarti cheese</p>
+      <ul>
+        <li data-q="the original topped with scallions">
+          <div class="row"><span class="name">The Original</span><span class="price">$13.95</span></div>
+          <p class="desc">topped with scallions</p>
+        </li>
+        <li data-q="vegetarian hummus, spinach, artichoke hearts, tomatoes, red peppers, kalamata olives and scallions, drizzled with a roasted red pepper-cracked mustard aioli">
+          <div class="row"><span class="name">Vegetarian</span><span class="price">$18.25</span></div>
+          <p class="desc">hummus, spinach, artichoke hearts, tomatoes, red peppers, kalamata olives and scallions, drizzled with a roasted red pepper-cracked mustard aioli</p>
+        </li>
+        <li data-q="bacon cheeseburger bacon, ground beef, red onion, tomatoes, cheddar, drizzled with secret sauce and topped with diced pickles">
+          <div class="row"><span class="name">Bacon Cheeseburger</span><span class="price">$19.50</span></div>
+          <p class="desc">bacon, ground beef, red onion, tomatoes, cheddar, drizzled with secret sauce and topped with diced pickles</p>
+        </li>
+        <li data-q="florentine scallions, spinach and tomatoes">
+          <div class="row"><span class="name">Florentine</span></div>
+          <p class="desc">scallions, spinach and tomatoes</p><div class="prices"><span class="pp"><span class="pl">Florentine</span> <b>$14.25</b></span><span class="pp"><span class="pl">With bacon</span> <b>$15.25</b></span></div>
+        </li>
+        <li data-q="omaha roast beef, red onions, sautéed mushrooms and drizzled with creamy horseradish sauce">
+          <div class="row"><span class="name">Omaha</span><span class="price">$18.95</span></div>
+          <p class="desc">roast beef, red onions, sautéed mushrooms and drizzled with creamy horseradish sauce</p>
+        </li>
+        <li data-q="santa fe blackened shrimp, bacon, corn, black beans, cilantro, scallions, tomatoes, and avocado with chipotle aioli">
+          <div class="row"><span class="name">Santa Fe</span></div>
+          <p class="desc">blackened shrimp, bacon, corn, black beans, cilantro, scallions, tomatoes, and avocado with chipotle aioli</p><div class="prices"><span class="pp"><span class="pl">Shrimp</span> <b>$19.50</b></span><span class="pp"><span class="pl">Sub chicken</span> <b>$18.95</b></span></div>
+        </li>
+        <li data-q="sicilian garlic, basil, tomatoes and mixed olives">
+          <div class="row"><span class="name">Sicilian</span><span class="price">$16.50</span></div>
+          <p class="desc">garlic, basil, tomatoes and mixed olives</p>
+        </li>
+        <li data-q="thai grilled chicken, tomatoes, scallions, peanuts, basil, cilantro and thai pepper sauce">
+          <div class="row"><span class="name">Thai</span></div>
+          <p class="desc">grilled chicken, tomatoes, scallions, peanuts, basil, cilantro and Thai pepper sauce</p><div class="prices"><span class="pp"><span class="pl">Chicken</span> <b>$18.95</b></span><span class="pp"><span class="pl">Sub shrimp</span> <b>$19.25</b></span></div>
+        </li></ul>
+    </section>
+    <section id="soup-and-salads" class="sec">
+      <h2>Soup and Salads</h2>
+      <p class="note">Bleu Cheese Crumbles and Extra Dressing add 1.00. All salads served with a hard roll.</p>
+      <ul>
+        <li data-q="soup of the day ">
+          <div class="row"><span class="name">Soup of the Day</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Cup</span> <b>$6.00</b></span><span class="pp"><span class="pl">Bowl</span> <b>$8.25</b></span></div>
+        </li>
+        <li data-q="m&#39;s house salad crisp greens, sun dried tomato, bell pepper, red onion, sunflower seeds, romano cheese and dill dressing">
+          <div class="row"><span class="name">M&#39;s House Salad</span></div>
+          <p class="desc">crisp greens, sun dried tomato, bell pepper, red onion, sunflower seeds, Romano cheese and dill dressing</p><div class="prices"><span class="pp"><span class="pl">Small</span> <b>$9.95</b></span><span class="pp"><span class="pl">Large</span> <b>$13.50</b></span></div>
+        </li>
+        <li data-q="spinach red onion, crumbled bacon, roma tomato, mushrooms and sliced egg, served with a choice of warm bacon or creamy dill dressing">
+          <div class="row"><span class="name">Spinach</span></div>
+          <p class="desc">red onion, crumbled bacon, Roma tomato, mushrooms and sliced egg, served with a choice of warm bacon or creamy dill Dressing</p><div class="prices"><span class="pp"><span class="pl">Small</span> <b>$9.95</b></span><span class="pp"><span class="pl">Large</span> <b>$13.50</b></span></div>
+        </li>
+        <li data-q="caesar romaine, romano, croutons and our classic caesar dressing">
+          <div class="row"><span class="name">Caesar</span></div>
+          <p class="desc">romaine, Romano, croutons and our classic Caesar dressing</p><div class="prices"><span class="pp"><span class="pl">Small</span> <b>$9.95</b></span><span class="pp"><span class="pl">Large</span> <b>$13.50</b></span></div>
+        </li>
+        <li data-q="romaine wedge heart, roma tomatoes, red onion, bacon and cucumber with creamy bleu cheese crumbles &amp; dressing and sweet balsamic drizzle">
+          <div class="row"><span class="name">Romaine Wedge</span></div>
+          <p class="desc">heart, Roma tomatoes, red onion, bacon and cucumber with creamy bleu cheese crumbles &amp; dressing and sweet balsamic drizzle</p><div class="prices"><span class="pp"><span class="pl">Small</span> <b>$9.95</b></span><span class="pp"><span class="pl">Large</span> <b>$13.50</b></span></div>
+        </li>
+        <li data-q="salad add-ons *add salmon 10.25 | *steak 11.50 | *chicken 9.25 | *shrimp 10.50 | tuna 11.95">
+          <div class="row"><span class="name">Salad Add-ons</span></div>
+          <p class="desc">*Add Salmon 10.25 | *Steak 11.50 | *Chicken 9.25 | *Shrimp 10.50 | Tuna 11.95</p>
+        </li>
+        <li data-q="warm duck fresh spinach with bleu cheese, walnuts, roma tomato, julienne vegetables, red onion and warm bacon dressing with roasted duck">
+          <div class="row"><span class="name">Warm Duck</span><span class="price">$19.95</span></div>
+          <p class="desc">fresh spinach with bleu cheese, walnuts, Roma tomato, julienne vegetables, red onion and warm bacon dressing with roasted duck</p>
+        </li>
+        <li data-q="chicken tenderloin romaine, artichoke hearts, cucumbers, roma tomatoes, kalamata olives, red onion, pine nuts, feta cheese and greek dressing with grilled pita bread and chicken tenderloins">
+          <div class="row"><span class="name">Chicken Tenderloin</span><span class="price">$17.75</span></div>
+          <p class="desc">romaine, artichoke hearts, cucumbers, Roma tomatoes, Kalamata olives, red onion, pine nuts, feta cheese and Greek dressing with grilled pita bread and chicken tenderloins</p>
+        </li>
+        <li data-q="*steak romaine lettuce, bell pepper, red onion, bleu cheese, roma tomatoes, croutons and italian dressing with grilled beef tips">
+          <div class="row"><span class="name">*Steak</span><span class="price">$22.95</span></div>
+          <p class="desc">romaine lettuce, bell pepper, red onion, bleu cheese, Roma tomatoes, croutons and Italian dressing with grilled beef tips</p>
+        </li>
+        <li data-q="kate&#39;s chicken salad chicken breast and celery dressed with lemon mayonnaise and red grapes, served with a cinnamon roll">
+          <div class="row"><span class="name">Kate&#39;s Chicken Salad</span><span class="price">$13.95</span></div>
+          <p class="desc">chicken breast and celery dressed with lemon mayonnaise and red grapes, served with a cinnamon roll</p>
+        </li>
+        <li data-q="*lamb spinach, feta cheese, cucumbers, bell pepper, scallions, bulgur and roma tomatoes with citrus mint vinaigrette and grilled lamb">
+          <div class="row"><span class="name">*Lamb</span><span class="price">$23.95</span></div>
+          <p class="desc">spinach, feta cheese, cucumbers, bell pepper, scallions, bulgur and Roma tomatoes with citrus mint vinaigrette and grilled lamb</p>
+        </li>
+        <li data-q="cobb crisp greens, turkey, bacon, tomato, egg, bleu cheese, scallions, mushrooms with sliced avocado and hazelnut vinaigrette">
+          <div class="row"><span class="name">Cobb</span><span class="price">$16.95</span></div>
+          <p class="desc">crisp greens, turkey, bacon, tomato, egg, bleu cheese, scallions, mushrooms with sliced avocado and hazelnut vinaigrette</p>
+        </li>
+        <li data-q="blackened shrimp crisp greens, avocado, roma tomato, scallions, cilantro, yellow peppers and jalapeño mango vinaigrette with blackened shrimp and seared black bean cake">
+          <div class="row"><span class="name">Blackened Shrimp</span><span class="price">$21.95</span></div>
+          <p class="desc">crisp greens, avocado, Roma tomato, scallions, cilantro, yellow peppers and jalapeño mango vinaigrette with blackened shrimp and seared black bean cake</p>
+        </li>
+        <li data-q="salmon spinach, sliced egg, scallions, cucumbers, artichoke hearts, roma tomato, balsamic vinaigrette and grilled salmon">
+          <div class="row"><span class="name">Salmon</span><span class="price">$22.75</span></div>
+          <p class="desc">spinach, sliced egg, scallions, cucumbers, artichoke hearts, Roma tomato, balsamic vinaigrette and grilled salmon</p>
+        </li>
+        <li data-q="tuna crisp greens, pickled vegetables, scallions, cilantro, peanut ramen crunch and sesame seeds with asian sesame dressing and seared tuna">
+          <div class="row"><span class="name">Tuna</span><span class="price">$23.75</span></div>
+          <p class="desc">crisp greens, pickled vegetables, scallions, cilantro, peanut ramen crunch and sesame seeds with Asian sesame dressing and seared tuna</p>
+        </li></ul>
+    </section>
+    <section id="sandwiches-hot" class="sec">
+      <h2>Sandwiches - Hot</h2>
+      <p class="note">All selections served with a small salad and our poppy seed vinaigrette. Substitute a Caesar salad, spinach salad or a cup of soup +5.50. Split Charge +1.75. Toasted on the griddle.</p>
+      <ul>
+        <li data-q="omaha grill roast beef, red onion and provolone cheese on sourdough with a side of creamy horseradish sauce">
+          <div class="row"><span class="name">Omaha Grill</span><span class="price">$14.75</span></div>
+          <p class="desc">roast beef, red onion and provolone cheese on sourdough with a side of creamy horseradish sauce</p>
+        </li>
+        <li data-q="pub favorite turkey, swiss, cream cheese, red onion and mayonnaise on pumpernickel">
+          <div class="row"><span class="name">Pub Favorite</span><span class="price">$12.95</span></div>
+          <p class="desc">turkey, Swiss, cream cheese, red onion and mayonnaise on Pumpernickel</p>
+        </li>
+        <li data-q="italian pepperoni, capicola, salami and provolone on herb toasted sourdough, served with banana pepper aioli">
+          <div class="row"><span class="name">Italian</span><span class="price">$14.25</span></div>
+          <p class="desc">pepperoni, capicola, salami and provolone on herb toasted sourdough, served with banana pepper aioli</p>
+        </li>
+        <li data-q="reuben corned beef, pastrami, sauerkraut, swiss cheese and 1000 island dressing on pumpernickel with a pickle and side of 1000 island">
+          <div class="row"><span class="name">Reuben</span><span class="price">$15.25</span></div>
+          <p class="desc">corned beef, pastrami, sauerkraut, Swiss cheese and 1000 Island dressing on pumpernickel with a pickle and side of 1000 Island</p>
+        </li>
+        <li data-q="turkey reuben sliced turkey, sauerkraut, swiss cheese and 1000 island dressing on marbled rye with a pickle and side of 1000 island">
+          <div class="row"><span class="name">Turkey Reuben</span><span class="price">$14.95</span></div>
+          <p class="desc">sliced turkey, sauerkraut, Swiss cheese and 1000 Island dressing on marbled rye with a pickle and side of 1000 Island</p>
+        </li>
+        <li data-q="tuna melt tuna, artichoke hearts, scallions, capers, lemon, mayonnaise, tomato, provolone and cream cheese on toasted wheat">
+          <div class="row"><span class="name">Tuna Melt</span><span class="price">$13.95</span></div>
+          <p class="desc">tuna, artichoke hearts, scallions, capers, lemon, mayonnaise, tomato, provolone and cream cheese on toasted wheat</p>
+        </li>
+        <li data-q="iowa grill smoked pork, red onion and provolone cheese on herb toasted sourdough with a side of honey-mustard sauce">
+          <div class="row"><span class="name">Iowa Grill</span><span class="price">$14.95</span></div>
+          <p class="desc">smoked pork, red onion and provolone cheese on herb toasted sourdough with a side of honey-mustard sauce</p>
+        </li>
+        <li data-q="*patty melt seared beef patty, caramelized onion, havarti cheese on pumpernickel with a side of creamy horseradish sauce">
+          <div class="row"><span class="name">*Patty Melt</span></div>
+          <p class="desc">seared beef patty, caramelized onion, Havarti cheese on pumpernickel with a side of creamy horseradish sauce</p><div class="prices"><span class="pp"><span class="pl">Beef</span> <b>$17.75</b></span><span class="pp"><span class="pl">Sub turkey burger</span> <b>$16.50</b></span></div>
+        </li></ul>
+    </section>
+    <section id="sandwiches-cold" class="sec">
+      <h2>Sandwiches - Cold</h2>
+      <p class="note">All selections served with a small salad and our poppy seed vinaigrette. Substitute a Caesar salad, spinach salad or a cup of soup +5.50. Split Charge +1.75.</p>
+      <ul>
+        <li data-q="california club croissant with turkey, bacon, avocado, lettuce, sliced tomato and mayonnaise">
+          <div class="row"><span class="name">California Club</span><span class="price">$14.75</span></div>
+          <p class="desc">croissant with turkey, bacon, avocado, lettuce, sliced tomato and mayonnaise</p>
+        </li>
+        <li data-q="chicken salad croissant with lettuce, tomato and red onion">
+          <div class="row"><span class="name">Chicken Salad Croissant</span><span class="price">$13.50</span></div>
+          <p class="desc">with lettuce, tomato and red onion</p>
+        </li>
+        <li data-q="nature sandwich tomato, cucumber, avocado, sprouts, swiss and cream cheese on pumpernickel. with turkey +2.50">
+          <div class="row"><span class="name">Nature Sandwich</span><span class="price">$13.25</span></div>
+          <p class="desc">Tomato, cucumber, avocado, sprouts, Swiss and cream cheese on Pumpernickel. With turkey +2.50</p>
+        </li>
+        <li data-q="cucumber sandwich sliced cucumbers, green onion, white pepper and mayonnaise on crustless sourdough">
+          <div class="row"><span class="name">Cucumber Sandwich</span><span class="price">$11.25</span></div>
+          <p class="desc">Sliced cucumbers, green onion, white pepper and mayonnaise on crustless sourdough</p>
+        </li>
+        <li data-q="m&#39;s original sliced roast beef, lettuce, tomato, provolone and tomato artichoke horseradish sauce on marbled rye">
+          <div class="row"><span class="name">M&#39;s Original</span></div>
+          <p class="desc">Sliced roast beef, lettuce, tomato, provolone and tomato artichoke horseradish sauce on marbled rye</p><div class="prices"><span class="pp"><span class="pl">Roast beef</span> <b>$14.95</b></span><span class="pp"><span class="pl">Sub turkey</span> <b>$14.50</b></span></div>
+        </li>
+        <li data-q="m&#39;s greek sandwich ground turkey, walnuts, mayonnaise and lemon on crustless whole wheat bread">
+          <div class="row"><span class="name">M&#39;s Greek Sandwich</span></div>
+          <p class="desc">ground turkey, walnuts, mayonnaise and lemon on crustless whole wheat bread</p><div class="prices"><span class="pp"><span class="pl">Classic</span> <b>$12.95</b></span><span class="pp"><span class="pl">Toasted with sprouts &amp; avocado</span> <b>$15.75</b></span></div>
+        </li></ul>
+    </section>
+    <section id="light-entr-es" class="sec">
+      <h2>Light Entrées</h2>
+      <p class="note">All selections served with a small salad and our poppy seed vinaigrette. Substitute a Caesar salad, spinach salad or a cup of soup +5.50</p>
+      <ul>
+        <li data-q="*pub burger seared ground beef, bacon and colby jack on a toasted brioche bun with ketchup, mustard and a pickle">
+          <div class="row"><span class="name">*Pub Burger</span><span class="price">$16.95</span></div>
+          <p class="desc">seared ground beef, bacon and Colby jack on a toasted Brioche bun with ketchup, mustard and a pickle</p>
+        </li>
+        <li data-q="*lamb burger with provolone cheese on a toasted brioche bun with a side of dijon mustard">
+          <div class="row"><span class="name">*Lamb Burger</span><span class="price">$18.95</span></div>
+          <p class="desc">with provolone cheese on a toasted Brioche bun with a side of Dijon mustard</p>
+        </li>
+        <li data-q="turkey burger with swiss cheese on a toasted brioche bun with a side of lemon-basil aioli">
+          <div class="row"><span class="name">Turkey Burger</span><span class="price">$15.50</span></div>
+          <p class="desc">with Swiss cheese on a toasted Brioche bun with a side of lemon-basil aioli</p>
+        </li>
+        <li data-q="fish burger grilled mahi-mahi filet with melted provolone cheese and tartar sauce on a toasted brioche bun">
+          <div class="row"><span class="name">Fish Burger</span><span class="price">$19.25</span></div>
+          <p class="desc">grilled mahi-mahi filet with melted provolone cheese and tartar sauce on a toasted Brioche bun</p>
+        </li>
+        <li data-q="chicken burger marinated chicken breast grilled and served with melted provolone cheese and a side of lemon-basil aioli">
+          <div class="row"><span class="name">Chicken Burger</span><span class="price">$15.75</span></div>
+          <p class="desc">marinated chicken breast grilled and served with melted provolone cheese and a side of lemon-basil aioli</p>
+        </li>
+        <li data-q="all beef hot dog on a whole wheat hoagie bun with pickle relish, mustard and ketchup">
+          <div class="row"><span class="name">All Beef Hot Dog</span><span class="price">$12.50</span></div>
+          <p class="desc">on a whole wheat hoagie bun with pickle relish, mustard and ketchup</p>
+        </li>
+        <li data-q="carrot dog marinated and grilled, served on a whole wheat hoagie with lettuce, tomato, relish, stone ground mustard and sauerkraut">
+          <div class="row"><span class="name">Carrot Dog</span><span class="price">$11.95</span></div>
+          <p class="desc">marinated and grilled, served on a whole wheat hoagie with lettuce, tomato, relish, stone ground mustard and sauerkraut</p>
+        </li>
+        <li data-q="falafel chick-pea cakes over toasted pita with crisp greens, feta cheese, cucumbers, tomatoes, kalamata olives and spicy yogurt sauce. *add lamb skewer +11.50">
+          <div class="row"><span class="name">Falafel</span><span class="price">$14.50</span></div>
+          <p class="desc">chick-pea cakes over toasted pita with crisp greens, feta cheese, cucumbers, tomatoes, Kalamata olives and spicy yogurt sauce. *add lamb skewer +11.50</p>
+        </li>
+        <li data-q="sirloin filet 6 oz. angus top sirloin steak, pan roasted baby red potatoes, seasonal vegetables, and demi-glace">
+          <div class="row"><span class="name">Sirloin Filet</span><span class="price">$28.95</span></div>
+          <p class="desc">6 oz. angus top sirloin steak, pan roasted baby red potatoes, seasonal vegetables, and demi-glace</p>
+        </li>
+        <li data-q="bratwurst plate two beer-braised bratwurst, grilled and served with onions, sauerkraut, mashed potatoes and honey-mustard sauce">
+          <div class="row"><span class="name">Bratwurst Plate</span><span class="price">$19.25</span></div>
+          <p class="desc">two beer-braised bratwurst, grilled and served with onions, sauerkraut, mashed potatoes and honey-mustard sauce</p>
+        </li>
+        <li data-q="pot roast slow braised chuck, mashed potatoes, roasted vegetables and demi-glace">
+          <div class="row"><span class="name">Pot Roast</span><span class="price">$21.50</span></div>
+          <p class="desc">slow braised chuck, mashed potatoes, roasted vegetables and demi-glace</p>
+        </li>
+        <li data-q="pasta fettuccine tossed with basil pesto, topped with romano cheese with grilled tomatoes and garlic bread. add chicken +4.50 | add shrimp +10.50">
+          <div class="row"><span class="name">Pasta</span><span class="price">$16.75</span></div>
+          <p class="desc">fettuccine tossed with basil pesto, topped with Romano cheese with grilled tomatoes and garlic bread. Add chicken +4.50 | add shrimp +10.50</p>
+        </li>
+        <li data-q="floyd&#39;s skinny plate grilled chicken breast with steamed vegetables">
+          <div class="row"><span class="name">Floyd&#39;s Skinny Plate</span></div>
+          <p class="desc">grilled chicken breast with steamed vegetables</p><div class="prices"><span class="pp"><span class="pl">Chicken</span> <b>$15.50</b></span><span class="pp"><span class="pl">Sub salmon</span> <b>$20.25</b></span></div>
+        </li>
+        <li data-q="*indian lamb satay lamb, grilled and served over basmati rice with feta cheese, scallions, seasonal vegetables and spiced yogurt sauce">
+          <div class="row"><span class="name">*Indian Lamb Satay</span><span class="price">$22.25</span></div>
+          <p class="desc">lamb, grilled and served over basmati rice with feta cheese, scallions, seasonal vegetables and spiced yogurt sauce</p>
+        </li>
+        <li data-q="*thai pork satay pork tenderloin, grilled and served over basmati rice with cucumber relish, scallions, seasonal vegetables and peanut sauce">
+          <div class="row"><span class="name">*Thai Pork Satay</span><span class="price">$18.95</span></div>
+          <p class="desc">pork tenderloin, grilled and served over basmati rice with cucumber relish, scallions, seasonal vegetables and peanut sauce</p>
+        </li>
+        <li data-q="*surf &amp; turf satay beef tenderloin &amp; black tiger shrimp, grilled and served over basmati rice with scallions, seasonal vegetables &amp; teriyaki sauce">
+          <div class="row"><span class="name">*Surf &amp; Turf Satay</span><span class="price">$26.25</span></div>
+          <p class="desc">beef tenderloin &amp; black tiger shrimp, grilled and served over basmati rice with scallions, seasonal vegetables &amp; teriyaki sauce</p>
+        </li>
+        <li data-q="*asian chicken satay chicken breast, grilled and served over basmati with scallions, seasonal vegetables and peanut sauce">
+          <div class="row"><span class="name">*Asian Chicken Satay</span><span class="price">$18.95</span></div>
+          <p class="desc">chicken breast, grilled and served over basmati with scallions, seasonal vegetables and peanut sauce</p>
+        </li></ul>
+    </section>
+    <section id="desserts" class="sec">
+      <h2>Desserts</h2>
+      
+      <ul>
+        <li data-q="whipped tiramisu garnished with chocolate-covered espresso beans">
+          <div class="row"><span class="name">Whipped Tiramisu</span><span class="price">$9.95</span></div>
+          <p class="desc">garnished with chocolate-covered espresso beans</p>
+        </li>
+        <li data-q="sour cream pound cake dark rum glaze, whipped cream">
+          <div class="row"><span class="name">Sour Cream Pound Cake</span><span class="price">$9.95</span></div>
+          <p class="desc">dark rum glaze, whipped cream</p>
+        </li>
+        <li data-q="crème brulée caramelized sugar, garnished with fresh berry">
+          <div class="row"><span class="name">Crème Brulée</span><span class="price">$10.95</span></div>
+          <p class="desc">caramelized sugar, garnished with fresh berry</p>
+        </li>
+        <li data-q="carrot cake pecan fondant layers, cream cheese frosting">
+          <div class="row"><span class="name">Carrot Cake</span><span class="price">$10.95</span></div>
+          <p class="desc">pecan fondant layers, cream cheese frosting</p>
+        </li>
+        <li data-q="new york cheesecake graham cracker crust, traditional cheesecake">
+          <div class="row"><span class="name">New York Cheesecake</span><span class="price">$10.95</span></div>
+          <p class="desc">graham cracker crust, traditional cheesecake</p>
+        </li>
+        <li data-q="flourless mocha fudge torte whipped cream, strawberry-amaretto sauce">
+          <div class="row"><span class="name">Flourless Mocha Fudge Torte</span><span class="price">$10.95</span></div>
+          <p class="desc">whipped cream, strawberry-amaretto sauce</p>
+        </li>
+        <li data-q="fruit crisp seasonal fruit &amp; toppings served with vanilla ice cream">
+          <div class="row"><span class="name">Fruit Crisp</span><span class="price">$8.95</span></div>
+          <p class="desc">seasonal fruit &amp; toppings served with vanilla ice cream</p>
+        </li>
+        <li data-q="ice cream ask about our seasonal offerings. scoop">
+          <div class="row"><span class="name">Ice Cream</span><span class="price">$4.50</span></div>
+          <p class="desc">ask about our seasonal offerings. Scoop</p>
+        </li></ul>
+    </section>
+    <section id="beverages" class="sec">
+      <h2>Beverages</h2>
+      
+      <ul>
+        <li data-q="coffee (organic) ">
+          <div class="row"><span class="name">Coffee (Organic)</span><span class="price">$3.50</span></div>
+          
+        </li>
+        <li data-q="café latte (decaf) ">
+          <div class="row"><span class="name">Café Latte (Decaf)</span><span class="price">$4.50</span></div>
+          
+        </li>
+        <li data-q="decaffeinated coffee ">
+          <div class="row"><span class="name">Decaffeinated Coffee</span><span class="price">$3.50</span></div>
+          
+        </li>
+        <li data-q="iced tea ">
+          <div class="row"><span class="name">Iced Tea</span><span class="price">$3.75</span></div>
+          
+        </li>
+        <li data-q="espresso ">
+          <div class="row"><span class="name">Espresso</span><span class="price">$3.75</span></div>
+          
+        </li>
+        <li data-q="espresso (decaf) ">
+          <div class="row"><span class="name">Espresso (Decaf)</span><span class="price">$3.75</span></div>
+          
+        </li>
+        <li data-q="cappuccino ">
+          <div class="row"><span class="name">Cappuccino</span><span class="price">$4.50</span></div>
+          
+        </li>
+        <li data-q="cappuccino (decaf) ">
+          <div class="row"><span class="name">Cappuccino (Decaf)</span><span class="price">$4.50</span></div>
+          
+        </li>
+        <li data-q="assorted hot teas ">
+          <div class="row"><span class="name">Assorted Hot Teas</span><span class="price">$3.75</span></div>
+          
+        </li>
+        <li data-q="milk, juices, soda ">
+          <div class="row"><span class="name">Milk, Juices, Soda</span><span class="price">$3.75</span></div>
+          
+        </li>
+        <li data-q="fiji (1 litre) ">
+          <div class="row"><span class="name">Fiji (1 litre)</span><span class="price">$4.50</span></div>
+          
+        </li>
+        <li data-q="san pellegrino ">
+          <div class="row"><span class="name">San Pellegrino</span><span class="price">$4.50</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="port" class="sec">
+      <h2>Port</h2>
+      
+      <ul>
+        <li data-q="graham&#39;s, six grape, portugal ">
+          <div class="row"><span class="name">Graham&#39;s, Six Grape, Portugal</span><span class="price">$11.00</span></div>
+          
+        </li>
+        <li data-q="taylor fladgate, lbv, &#39;05 ">
+          <div class="row"><span class="name">Taylor Fladgate, LBV, &#39;05</span><span class="price">$13.00</span></div>
+          
+        </li>
+        <li data-q="cockburn&#39;s ruby red ">
+          <div class="row"><span class="name">Cockburn&#39;s Ruby Red</span><span class="price">$15.00</span></div>
+          
+        </li>
+        <li data-q="neiport, vintage, portugal ">
+          <div class="row"><span class="name">Neiport, Vintage, Portugal</span><span class="price">$14.00</span></div>
+          
+        </li>
+        <li data-q="taylor fladgate tawny ">
+          <div class="row"><span class="name">Taylor Fladgate Tawny</span><span class="price">$13.00</span></div>
+          
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>Reservations Honored—Open seven days a week. 20% added for parties of eight or more. M&#39;s is a smoke-free environment. M&#39;s Pub uses only trans-fat free oils. *Thoroughly cooking foods of animal origin such as beef, eggs, fish, lamb, pork, poultry, or shellfish reduces the risk of food borne illness. Individuals with certain health conditions may be at higher risk if these foods are consumed raw or undercooked. Consult your physician or public health official for further information. No checks accepted.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for M&#39;s Pub.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The M&#39;s Pub menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

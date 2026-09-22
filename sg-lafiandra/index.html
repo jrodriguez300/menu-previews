@@ -1,0 +1,763 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Lafiandra Menu</title>
+<meta name="description" content="Menu for Lafiandra, Tanglin.">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Lafiandra</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=56%20Tanglin%20Rd%2C%20Tanglin%20Post%20Office%20B1-01%20(street%20level)%2C%20Singapore%20247964">56 Tanglin Rd, Tanglin Post Office B1-01 (street level), Singapore 247964</a><a href="tel:68844035">68844035</a><span>Monday: 5.30pm to 10pm (Dinner). Tuesday to Sunday and Public Holiday: 12 noon to 2.30pm (Lunch), 5.30pm to 10pm (Dinner)</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#pane-bread" data-sec="pane-bread">Pane / Bread</a><a href="#zuppe-soup" data-sec="zuppe-soup">Zuppe / Soup</a><a href="#insalate-salad" data-sec="insalate-salad">Insalate / Salad</a><a href="#antipasti-appetizer" data-sec="antipasti-appetizer">Antipasti / Appetizer</a><a href="#le-paste-pastas" data-sec="le-paste-pastas">Le Paste / Pastas</a><a href="#le-paste-al-forno-home-baked-pasta" data-sec="le-paste-al-forno-home-baked-pasta">Le Paste al Forno / Home Baked Pasta</a><a href="#meat" data-sec="meat">Meat</a><a href="#fish" data-sec="fish">Fish</a><a href="#le-pizze-pizzas" data-sec="le-pizze-pizzas">Le Pizze / Pizzas</a><a href="#dolci-desserts" data-sec="dolci-desserts">Dolci / Desserts</a><a href="#vini-della-casa-house-pour" data-sec="vini-della-casa-house-pour">Vini della Casa / House Pour</a><a href="#vini-bianchi-white-wine" data-sec="vini-bianchi-white-wine">Vini Bianchi / White Wine</a><a href="#vino-rosato-rose-wine" data-sec="vino-rosato-rose-wine">Vino Rosato / Rose Wine</a><a href="#spumanti-sparkling-wine" data-sec="spumanti-sparkling-wine">Spumanti / Sparkling Wine</a><a href="#moscato" data-sec="moscato">Moscato</a><a href="#champagne" data-sec="champagne">Champagne</a><a href="#vini-rossi-red-wine-italy" data-sec="vini-rossi-red-wine-italy">Vini Rossi / Red Wine - Italy</a><a href="#vini-rossi-red-wine-france" data-sec="vini-rossi-red-wine-france">Vini Rossi / Red Wine - France</a><a href="#beer" data-sec="beer">Beer</a><a href="#beverages" data-sec="beverages">Beverages</a><a href="#aperitifs" data-sec="aperitifs">Aperitifs</a><a href="#liqueurs" data-sec="liqueurs">Liqueurs</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="pane-bread" class="sec">
+      <h2>Pane / Bread</h2>
+      
+      <ul>
+        <li data-q="pane con aglio garlic bread">
+          <div class="row"><span class="name">Pane con aglio</span><span class="price">$9.80</span></div>
+          <p class="desc">Garlic bread</p>
+        </li>
+        <li data-q="pizza bianca garlic pizza bread with rosemary and olive oil">
+          <div class="row"><span class="name">Pizza bianca</span><span class="price">$15.80</span></div>
+          <p class="desc">Garlic pizza bread with rosemary and olive oil</p>
+        </li>
+        <li data-q="bruschette al pomodoro sliced toasted bread with fresh tomato, oregano, basil and extra virgin olive oil">
+          <div class="row"><span class="name">Bruschette al pomodoro</span><span class="price">$14.00</span></div>
+          <p class="desc">Sliced toasted bread with fresh tomato, oregano, basil and extra virgin olive oil</p>
+        </li></ul>
+    </section>
+    <section id="zuppe-soup" class="sec">
+      <h2>Zuppe / Soup</h2>
+      
+      <ul>
+        <li data-q="soup of the day ">
+          <div class="row"><span class="name">Soup of the Day</span><span class="price">$13.00</span></div>
+          
+        </li>
+        <li data-q="zuppa di pesce seafood soup in mediterranean style">
+          <div class="row"><span class="name">Zuppa di Pesce</span><span class="price">$21.80</span></div>
+          <p class="desc">Seafood soup in Mediterranean style</p>
+        </li></ul>
+    </section>
+    <section id="insalate-salad" class="sec">
+      <h2>Insalate / Salad</h2>
+      
+      <ul>
+        <li data-q="insalata mista fresh seasonal mixed salad with cherry tomato and red onion">
+          <div class="row"><span class="name">Insalata mista</span><span class="price">$19.80</span></div>
+          <p class="desc">Fresh seasonal mixed salad with cherry tomato and red onion</p>
+        </li>
+        <li data-q="caesar salad baby roman lettuce with crispy bacon, parmesan cheese in caesar dressing and bread croutons">
+          <div class="row"><span class="name">Caesar Salad</span><span class="price">$21.80</span></div>
+          <p class="desc">Baby Roman lettuce with crispy bacon, parmesan cheese in Caesar dressing and bread croutons</p>
+        </li>
+        <li data-q="caesar salad with parma ham ">
+          <div class="row"><span class="name">Caesar Salad with Parma ham</span><span class="price">$25.80</span></div>
+          
+        </li>
+        <li data-q="caprese fresh sliced buffalo mozzarella cheese with roma tomato and basil with extra virgin olive oil">
+          <div class="row"><span class="name">Caprese</span><span class="price">$24.00</span></div>
+          <p class="desc">Fresh sliced buffalo mozzarella cheese with Roma tomato and basil with extra virgin olive oil</p>
+        </li></ul>
+    </section>
+    <section id="antipasti-appetizer" class="sec">
+      <h2>Antipasti / Appetizer</h2>
+      
+      <ul>
+        <li data-q="vitello tonnato thin sliced roast veal with tuna mayonnaise">
+          <div class="row"><span class="name">Vitello tonnato</span><span class="price">$27.00</span></div>
+          <p class="desc">Thin sliced roast veal with tuna mayonnaise</p>
+        </li>
+        <li data-q="piatto freddo di salumi cold cuts of 20 months parma ham, mortadella, salame and prosciutto cotto">
+          <div class="row"><span class="name">Piatto freddo di Salumi</span><span class="price">$35.00</span></div>
+          <p class="desc">Cold cuts of 20 months parma ham, mortadella, salame and prosciutto cotto</p>
+        </li>
+        <li data-q="300g burrata alla coratina soft mozzarella cheese served with marinated vegetables and cherry tomatoes (good for 2 persons)">
+          <div class="row"><span class="name">300g Burrata alla Coratina</span><span class="price">$45.00</span></div>
+          <p class="desc">Soft mozzarella cheese served with marinated vegetables and cherry tomatoes (good for 2 persons)</p>
+        </li>
+        <li data-q="carpaccio di manzo thin sliced tenderloin marinated with lemon, extra virgin olive oil and parmesan slivers">
+          <div class="row"><span class="name">Carpaccio di Manzo</span><span class="price">$28.00</span></div>
+          <p class="desc">Thin sliced tenderloin marinated with lemon, extra virgin olive oil and parmesan slivers</p>
+        </li>
+        <li data-q="20 mesi prosciutto di parma con mozzarella di bufala 20 months parma ham with buffalo mozzarella cheese">
+          <div class="row"><span class="name">20 mesi Prosciutto di Parma con mozzarella di bufala</span><span class="price">$32.00</span></div>
+          <p class="desc">20 months Parma ham with buffalo mozzarella cheese</p>
+        </li>
+        <li data-q="20 mesi prosciutto di parma con melone 20 months parma ham with rock melon">
+          <div class="row"><span class="name">20 mesi Prosciutto di Parma con melone</span><span class="price">$28.00</span></div>
+          <p class="desc">20 months Parma ham with rock melon</p>
+        </li>
+        <li data-q="vongole al vino bianco baby clams in white wine sauce with italian parsley and garlic. *subject to availability">
+          <div class="row"><span class="name">Vongole al vino bianco</span><span class="price">$28.00</span></div>
+          <p class="desc">Baby clams in white wine sauce with Italian parsley and garlic. *subject to availability</p>
+        </li>
+        <li data-q="melanzane alla parmigiana pan fried sliced eggplant layered with mozzarella cheese, parmesan cheese and basil in tomato sauce">
+          <div class="row"><span class="name">Melanzane alla parmigiana</span><span class="price">$26.00</span></div>
+          <p class="desc">Pan fried sliced eggplant layered with mozzarella cheese, parmesan cheese and basil in tomato sauce</p>
+        </li>
+        <li data-q="fritto misto di pesce deep fried fresh seafood of fish, squid and prawns served with home made tartar sauce and marinara sauce">
+          <div class="row"><span class="name">Fritto misto di Pesce</span><span class="price">$30.00</span></div>
+          <p class="desc">Deep fried fresh seafood of fish, squid and prawns served with home made tartar sauce and marinara sauce</p>
+        </li></ul>
+    </section>
+    <section id="le-paste-pastas" class="sec">
+      <h2>Le Paste / Pastas</h2>
+      
+      <ul>
+        <li data-q="spaghetti di grano duro ai frutti di mare seafood spaghetti with prawns, squids, mussels and clams in white wine and tomato sauce">
+          <div class="row"><span class="name">Spaghetti di grano duro ai frutti di Mare</span><span class="price">$31.00</span></div>
+          <p class="desc">Seafood spaghetti with prawns, squids, mussels and clams in white wine and tomato sauce</p>
+        </li>
+        <li data-q="tonnarelli al nero di seppia black ink tonnarelli pasta with calamari and fresh tomato">
+          <div class="row"><span class="name">Tonnarelli al nero di seppia</span><span class="price">$32.00</span></div>
+          <p class="desc">Black ink tonnarelli pasta with calamari and fresh tomato</p>
+        </li>
+        <li data-q="linguine di grano duro alle vongole flat spaghetti with clams in white wine sauce, italian parsley, garlic and chilli. *subject to availability">
+          <div class="row"><span class="name">Linguine di grano duro alle Vongole</span><span class="price">$28.00</span></div>
+          <p class="desc">Flat spaghetti with clams in white wine sauce, Italian parsley, garlic and chilli. *subject to availability</p>
+        </li>
+        <li data-q="orecchiette di puglia con broccoli e salsiccia orecchiette pasta with broccoli and italian pork sausage in extra virgin olive oil">
+          <div class="row"><span class="name">Orecchiette di Puglia con broccoli e salsiccia</span><span class="price">$28.00</span></div>
+          <p class="desc">Orecchiette pasta with broccoli and Italian pork sausage in extra virgin olive oil</p>
+        </li>
+        <li data-q="capellini con granchio e pomodoro fresco e crema angel hair pasta with crabmeat and fresh cherry tomato in extra virgin olive oil and cream">
+          <div class="row"><span class="name">Capellini con granchio e pomodoro fresco e crema</span><span class="price">$28.00</span></div>
+          <p class="desc">Angel hair pasta with crabmeat and fresh cherry tomato in extra virgin olive oil and cream</p>
+        </li>
+        <li data-q="pappardelle al sugo di agnello con timo pappardelle pasta with home made shredded lamb sauce and thyme">
+          <div class="row"><span class="name">Pappardelle al sugo di agnello con timo</span><span class="price">$28.00</span></div>
+          <p class="desc">Pappardelle pasta with home made shredded lamb sauce and thyme</p>
+        </li>
+        <li data-q="fettuccine alla carbonara con zucchine flat ribbon pasta with zucchini, guanciale, egg yolk and parmesan cheese">
+          <div class="row"><span class="name">Fettuccine alla Carbonara con zucchine</span><span class="price">$30.00</span></div>
+          <p class="desc">Flat ribbon pasta with zucchini, guanciale, egg yolk and parmesan cheese</p>
+        </li>
+        <li data-q="tagliatelle rustichella alla boscaiola flat ribbon pasta with guanciale and mushrooms in tomato sauce and a touch of cream">
+          <div class="row"><span class="name">Tagliatelle Rustichella alla Boscaiola</span><span class="price">$27.00</span></div>
+          <p class="desc">Flat ribbon pasta with guanciale and mushrooms in tomato sauce and a touch of cream</p>
+        </li>
+        <li data-q="ravioli ripieni di ricotta e prosciutto alla crema con porcini home made ravioli with ham and ricotta cheese in cream porcini sauce">
+          <div class="row"><span class="name">Ravioli ripieni di ricotta e prosciutto alla crema con porcini</span><span class="price">$30.00</span></div>
+          <p class="desc">Home made ravioli with ham and ricotta cheese in cream porcini sauce</p>
+        </li>
+        <li data-q="gnocchetti di patate al pomodoro fresco con melanzane e mozzarella home made potato gnocchi with eggplant and mozzarella cheese in fresh tomato sauce">
+          <div class="row"><span class="name">Gnocchetti di patate al pomodoro fresco con melanzane e mozzarella</span><span class="price">$28.00</span></div>
+          <p class="desc">Home made potato gnocchi with eggplant and mozzarella cheese in fresh tomato sauce</p>
+        </li>
+        <li data-q="carnaroli risotto alla marinara seafood italian rice with prawns, squid, mussels and clams in tomato sauce">
+          <div class="row"><span class="name">Carnaroli Risotto alla Marinara</span><span class="price">$31.00</span></div>
+          <p class="desc">Seafood Italian rice with prawns, squid, mussels and clams in tomato sauce</p>
+        </li></ul>
+    </section>
+    <section id="le-paste-al-forno-home-baked-pasta" class="sec">
+      <h2>Le Paste al Forno / Home Baked Pasta</h2>
+      
+      <ul>
+        <li data-q="lasagna alla bolognese layered pasta with minced beef sauce, mozzarella, parmesan cheese and bechamel sauce">
+          <div class="row"><span class="name">Lasagna alla Bolognese</span><span class="price">$26.00</span></div>
+          <p class="desc">Layered pasta with minced beef sauce, mozzarella, parmesan cheese and bechamel sauce</p>
+        </li>
+        <li data-q="tagliatelle alla ninna teresa oven baked tagliatelle with bolognese, mushroom and ham with mozzarella cheese">
+          <div class="row"><span class="name">Tagliatelle alla Ninna Teresa</span><span class="price">$30.00</span></div>
+          <p class="desc">Oven baked tagliatelle with Bolognese, mushroom and ham with mozzarella cheese</p>
+        </li></ul>
+    </section>
+    <section id="meat" class="sec">
+      <h2>Meat</h2>
+      
+      <ul>
+        <li data-q="pollo alla diavola con rosmarino e patate grilled marinated half corn chicken with rosemary and a little chilli served with potatoes">
+          <div class="row"><span class="name">Pollo alla diavola con rosmarino e patate</span><span class="price">$39.50</span></div>
+          <p class="desc">Grilled marinated half corn chicken with rosemary and a little chilli served with potatoes</p>
+        </li>
+        <li data-q="saltimbocca alla romana medallions of pork fillet with parma ham and sage in white wine sauce">
+          <div class="row"><span class="name">Saltimbocca alla Romana</span><span class="price">$41.00</span></div>
+          <p class="desc">Medallions of pork fillet with Parma ham and sage in white wine sauce</p>
+        </li>
+        <li data-q="costolette d&#39;agnello al rosmarino grilled lamb chop marinated with rosemary and green zucchini">
+          <div class="row"><span class="name">Costolette d&#39;Agnello al rosmarino</span><span class="price">$46.00</span></div>
+          <p class="desc">Grilled lamb chop marinated with rosemary and green zucchini</p>
+        </li>
+        <li data-q="grigliata mista di carne mixed grill of chicken, beef, lamb and pork served with grilled vegetables and roast potatoes">
+          <div class="row"><span class="name">Grigliata Mista di Carne</span><span class="price">$49.00</span></div>
+          <p class="desc">Mixed grill of chicken, beef, lamb and pork served with grilled vegetables and roast potatoes</p>
+        </li>
+        <li data-q="cotoletta di maiale alla milanese pan-fried breaded pork tenderloin served with roasted potatoes and salad">
+          <div class="row"><span class="name">Cotoletta di maiale alla Milanese</span><span class="price">$48.00</span></div>
+          <p class="desc">Pan-fried breaded pork tenderloin served with roasted potatoes and salad</p>
+        </li>
+        <li data-q="tagliata di angus con funghi e rucola sliced grilled angus beef rib eye 150 days, with mushroom and rucola">
+          <div class="row"><span class="name">Tagliata di Angus con funghi e rucola</span><span class="price">$46.00</span></div>
+          <p class="desc">Sliced grilled Angus beef rib eye 150 days, with mushroom and rucola</p>
+        </li>
+        <li data-q="guancia di manzo brasata con risotto alla parmigiana slow cooked beef angus cheek with parmesan risotto">
+          <div class="row"><span class="name">Guancia di manzo brasata con risotto alla parmigiana</span><span class="price">$45.00</span></div>
+          <p class="desc">Slow cooked beef Angus cheek with parmesan risotto</p>
+        </li>
+        <li data-q="bistecca di manzo alla fiorentina (+/- 1.1 kg) sanchoku beef t-bone served with potatoes, vegetables and porcini sauce (preparation time: minimum 30 minutes)">
+          <div class="row"><span class="name">Bistecca di Manzo alla Fiorentina</span><span class="price">$198.00</span></div>
+          <p class="desc">(+/- 1.1 kg) Sanchoku Beef T-Bone served with potatoes, vegetables and porcini sauce (preparation time: minimum 30 minutes)</p>
+        </li></ul>
+    </section>
+    <section id="fish" class="sec">
+      <h2>Fish</h2>
+      <p class="note">Served with potatoes and vegetables</p>
+      <ul>
+        <li data-q="spigola al sale (+/- 550g) fresh air flown whole seabass oven baked in salt">
+          <div class="row"><span class="name">Spigola al Sale</span><span class="price">$68.00</span></div>
+          <p class="desc">(+/- 550g) Fresh air flown whole Seabass oven baked in salt</p>
+        </li>
+        <li data-q="spigola alla griglia (+/- 550g) grilled fresh air flown whole seabass">
+          <div class="row"><span class="name">Spigola alla griglia</span><span class="price">$60.00</span></div>
+          <p class="desc">(+/- 550g) Grilled fresh air flown whole Seabass</p>
+        </li>
+        <li data-q="filetto di persico alla griglia grilled dory fish fillet with seasonal vegetables">
+          <div class="row"><span class="name">Filetto di persico alla griglia</span><span class="price">$38.00</span></div>
+          <p class="desc">Grilled Dory fish fillet with seasonal vegetables</p>
+        </li></ul>
+    </section>
+    <section id="le-pizze-pizzas" class="sec">
+      <h2>Le Pizze / Pizzas</h2>
+      
+      <ul>
+        <li data-q="margherita tomato san marzano and mozzarella cheese with basil">
+          <div class="row"><span class="name">Margherita</span><span class="price">$26.00</span></div>
+          <p class="desc">Tomato San Marzano and mozzarella cheese with basil</p>
+        </li>
+        <li data-q="romana tomato san marzano and mozzarella with capers, anchovies and oregano">
+          <div class="row"><span class="name">Romana</span><span class="price">$27.50</span></div>
+          <p class="desc">Tomato San Marzano and mozzarella with capers, anchovies and oregano</p>
+        </li>
+        <li data-q="prosciutto cotto e funghi tomato san marzano and mozzarella with picnic ham and mushrooms">
+          <div class="row"><span class="name">Prosciutto Cotto e Funghi</span><span class="price">$28.50</span></div>
+          <p class="desc">Tomato San Marzano and mozzarella with picnic ham and mushrooms</p>
+        </li>
+        <li data-q="vegetariana tomato and mozzarella with zucchini, capsicum, eggplant and mushrooms">
+          <div class="row"><span class="name">Vegetariana</span><span class="price">$30.00</span></div>
+          <p class="desc">Tomato and mozzarella with zucchini, capsicum, eggplant and mushrooms</p>
+        </li>
+        <li data-q="pizza alla pugliese tomato san marzano and mozzarella with tuna chunks and onions">
+          <div class="row"><span class="name">Pizza alla Pugliese</span><span class="price">$31.00</span></div>
+          <p class="desc">Tomato San Marzano and mozzarella with tuna chunks and onions</p>
+        </li>
+        <li data-q="pizza carpaccio tomato san marzano and mozzarella with thin sliced tenderloin and parmesan slivers">
+          <div class="row"><span class="name">Pizza Carpaccio</span><span class="price">$29.00</span></div>
+          <p class="desc">Tomato San Marzano and mozzarella with thin sliced tenderloin and parmesan slivers</p>
+        </li>
+        <li data-q="hawaiian tomato san marzano and mozzarella with pineapple and ham">
+          <div class="row"><span class="name">Hawaiian</span><span class="price">$29.00</span></div>
+          <p class="desc">Tomato San Marzano and mozzarella with pineapple and ham</p>
+        </li>
+        <li data-q="pizza diavola tomato san marzano and mozzarella with chilli and salami">
+          <div class="row"><span class="name">Pizza Diavola</span><span class="price">$29.00</span></div>
+          <p class="desc">Tomato San Marzano and mozzarella with chilli and salami</p>
+        </li>
+        <li data-q="pizza con prosciutto crudo tomato san marzano and mozzarella with parma ham">
+          <div class="row"><span class="name">Pizza con Prosciutto Crudo</span><span class="price">$36.00</span></div>
+          <p class="desc">Tomato San Marzano and mozzarella with parma ham</p>
+        </li>
+        <li data-q="pizza ai formagi tomato san marzano and mozzarella with parmesan and gorgonzola">
+          <div class="row"><span class="name">Pizza ai Formagi</span><span class="price">$29.00</span></div>
+          <p class="desc">Tomato San Marzano and mozzarella with parmesan and gorgonzola</p>
+        </li>
+        <li data-q="pizza alla norcina e funghi tomato san marzano and mozzarella with italian sausage and mushrooms">
+          <div class="row"><span class="name">Pizza alla Norcina e Funghi</span><span class="price">$31.00</span></div>
+          <p class="desc">Tomato San Marzano and mozzarella with Italian sausage and mushrooms</p>
+        </li>
+        <li data-q="pizza capricciosa tomato and mozzarella with artichoke, ham, black olives, salami and mushrooms">
+          <div class="row"><span class="name">Pizza Capricciosa</span><span class="price">$31.00</span></div>
+          <p class="desc">Tomato and mozzarella with artichoke, ham, black olives, salami and mushrooms</p>
+        </li>
+        <li data-q="pizza con mortadella mozzarella with mortadella, burratina and pistacchio">
+          <div class="row"><span class="name">Pizza con Mortadella</span><span class="price">$38.00</span></div>
+          <p class="desc">Mozzarella with mortadella, burratina and pistacchio</p>
+        </li>
+        <li data-q="pizza con porcini mozzarella with truffle cream, porcini and button mushrooms">
+          <div class="row"><span class="name">Pizza con Porcini</span><span class="price">$35.00</span></div>
+          <p class="desc">Mozzarella with truffle cream, porcini and button mushrooms</p>
+        </li></ul>
+    </section>
+    <section id="dolci-desserts" class="sec">
+      <h2>Dolci / Desserts</h2>
+      
+      <ul>
+        <li data-q="tiramisu ladyfinger biscuits sponged in coffee, marsala liqueur and mascarpone cream cheese">
+          <div class="row"><span class="name">Tiramisu</span><span class="price">$14.80</span></div>
+          <p class="desc">Ladyfinger biscuits sponged in coffee, Marsala liqueur and mascarpone cream cheese</p>
+        </li>
+        <li data-q="warm walnut tart with vanilla ice cream and chocolate sauce ">
+          <div class="row"><span class="name">Warm walnut tart with vanilla ice cream and chocolate sauce</span><span class="price">$13.50</span></div>
+          
+        </li>
+        <li data-q="crostata di mele con gelato alla vaniglia warm apple tart with vanilla ice-cream">
+          <div class="row"><span class="name">Crostata di mele con gelato alla vaniglia</span><span class="price">$15.50</span></div>
+          <p class="desc">Warm apple tart with vanilla ice-cream</p>
+        </li>
+        <li data-q="profiteroles con salsa al cioccolato choux pastry puffs with chantilly cream and chocolate cream">
+          <div class="row"><span class="name">Profiteroles con salsa al cioccolato</span><span class="price">$11.80</span></div>
+          <p class="desc">Choux pastry puffs with Chantilly cream and chocolate cream</p>
+        </li>
+        <li data-q="panna cotta con frutti di bosco cream pudding with wild fruit sauce">
+          <div class="row"><span class="name">Panna Cotta con frutti di bosco</span><span class="price">$12.80</span></div>
+          <p class="desc">Cream pudding with wild fruit sauce</p>
+        </li>
+        <li data-q="tartufo ice cream creamy chocolate ice cream around a centre of gianduia, covered in a blend of semi sweet cocoa">
+          <div class="row"><span class="name">Tartufo ice cream</span><span class="price">$12.80</span></div>
+          <p class="desc">Creamy chocolate ice cream around a centre of gianduia, covered in a blend of semi sweet cocoa</p>
+        </li>
+        <li data-q="tartufo affogato al caffe tartufo ice cream with espresso coffee">
+          <div class="row"><span class="name">Tartufo Affogato al Caffe</span><span class="price">$15.00</span></div>
+          <p class="desc">Tartufo ice cream with espresso coffee</p>
+        </li>
+        <li data-q="affogato al caffe vanilla ice-cream with espresso">
+          <div class="row"><span class="name">Affogato al Caffe</span><span class="price">$9.00</span></div>
+          <p class="desc">Vanilla ice-cream with espresso</p>
+        </li>
+        <li data-q="sgroppino italian cocktail dessert ~ prosecco, lemon sorbet and limoncello">
+          <div class="row"><span class="name">Sgroppino</span><span class="price">$18.00</span></div>
+          <p class="desc">Italian cocktail dessert ~ prosecco, lemon sorbet and limoncello</p>
+        </li>
+        <li data-q="italian gelato choice of chocolate or vanilla. single scoop 6.50 / double scoop 11.00">
+          <div class="row"><span class="name">Italian Gelato</span></div>
+          <p class="desc">Choice of chocolate or vanilla. Single scoop 6.50 / double scoop 11.00</p><div class="prices"><span class="pp"><span class="pl">1 scoop</span> <b>$6.50</b></span><span class="pp"><span class="pl">2 scoops</span> <b>$11.00</b></span></div>
+        </li></ul>
+    </section>
+    <section id="vini-della-casa-house-pour" class="sec">
+      <h2>Vini della Casa / House Pour</h2>
+      <p class="note">glass / carafe / bottle</p>
+      <ul>
+        <li data-q="balto igt super tuscan 2021 red">
+          <div class="row"><span class="name">Balto IGT Super Tuscan 2021</span></div>
+          <p class="desc">Red</p><div class="prices"><span class="pp"><b>24 / 55 / 115</b></span></div>
+        </li>
+        <li data-q="il pumo primitivo (puglia) san marzano 2023 red">
+          <div class="row"><span class="name">Il Pumo Primitivo (Puglia) San Marzano 2023</span><span class="price">18 / 40 / 90</span></div>
+          <p class="desc">Red</p>
+        </li>
+        <li data-q="montepulciano d&#39;abruzzo tordelcole riserva 2020 red">
+          <div class="row"><span class="name">Montepulciano d&#39;Abruzzo Tordelcole Riserva 2020</span><span class="price">17 / 40 / 85</span></div>
+          <p class="desc">Red</p>
+        </li>
+        <li data-q="seiano d&#39;amico merlot-sangiovese 2024 red">
+          <div class="row"><span class="name">Seiano d&#39;Amico Merlot-Sangiovese 2024</span><span class="price">15 / 38 / 75</span></div>
+          <p class="desc">Red</p>
+        </li>
+        <li data-q="il pumo chardonnay (puglia) san marzano 2024 white">
+          <div class="row"><span class="name">Il Pumo Chardonnay (Puglia) San Marzano 2024</span><span class="price">18 / 38 / 90</span></div>
+          <p class="desc">White</p>
+        </li>
+        <li data-q="giuseppi &amp; luigi sauvignon 2024 white">
+          <div class="row"><span class="name">Giuseppi &amp; Luigi Sauvignon 2024</span><span class="price">16 / 40 / 83</span></div>
+          <p class="desc">White</p>
+        </li>
+        <li data-q="vivolo pinot grigio 2024 white">
+          <div class="row"><span class="name">Vivolo Pinot Grigio 2024</span><span class="price">15 / 37 / 80</span></div>
+          <p class="desc">White</p>
+        </li></ul>
+    </section>
+    <section id="vini-bianchi-white-wine" class="sec">
+      <h2>Vini Bianchi / White Wine</h2>
+      <p class="note">bottle</p>
+      <ul>
+        <li data-q="paolo e noemia d&#39;amico calanchi chardonnay di vaiano 2024 ">
+          <div class="row"><span class="name">Paolo e Noemia d&#39;Amico Calanchi Chardonnay di Vaiano 2024</span><span class="price">$85</span></div>
+          
+        </li>
+        <li data-q="new zealand marlborough saint clair sauvignon blanc 2024 ">
+          <div class="row"><span class="name">New Zealand Marlborough Saint Clair Sauvignon Blanc 2024</span><span class="price">$95</span></div>
+          
+        </li>
+        <li data-q="franz haas pinot grigio 2024 ">
+          <div class="row"><span class="name">Franz Haas Pinot Grigio 2024</span><span class="price">$118</span></div>
+          
+        </li>
+        <li data-q="gavi di gavi villa broglia docg 2022 ">
+          <div class="row"><span class="name">Gavi di Gavi Villa Broglia DOCG 2022</span><span class="price">$115</span></div>
+          
+        </li>
+        <li data-q="zyme from black to white il bianco 2021 ">
+          <div class="row"><span class="name">Zyme From Black to White Il Bianco 2021</span><span class="price">$148</span></div>
+          
+        </li>
+        <li data-q="edda san marzano bianco salento 2022 ">
+          <div class="row"><span class="name">Edda San Marzano Bianco Salento 2022</span><span class="price">$128</span></div>
+          
+        </li>
+        <li data-q="antinori cervaro della sala 2020 ">
+          <div class="row"><span class="name">Antinori Cervaro della Sala 2020</span><span class="price">$218</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="vino-rosato-rose-wine" class="sec">
+      <h2>Vino Rosato / Rose Wine</h2>
+      <p class="note">bottle</p>
+      <ul>
+        <li data-q="les sardines rose pays d&#39;oct 2023 ">
+          <div class="row"><span class="name">Les Sardines Rose Pays d&#39;Oct 2023</span><span class="price">$80</span></div>
+          
+        </li>
+        <li data-q="miraval cotes de provence 2023 ">
+          <div class="row"><span class="name">Miraval Cotes de Provence 2023</span><span class="price">$98</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="spumanti-sparkling-wine" class="sec">
+      <h2>Spumanti / Sparkling Wine</h2>
+      
+      <ul>
+        <li data-q="zardetto prosecco doc extra dry by glass 15 / by bottle 90">
+          <div class="row"><span class="name">Zardetto Prosecco DOC Extra Dry</span><span class="price">15 / 90</span></div>
+          <p class="desc">by glass 15 / by bottle 90</p>
+        </li></ul>
+    </section>
+    <section id="moscato" class="sec">
+      <h2>Moscato</h2>
+      
+      <ul>
+        <li data-q="moscato d&#39;asti la spinetta docg 2022 ">
+          <div class="row"><span class="name">Moscato d&#39;Asti La Spinetta DOCG 2022</span><span class="price">$79</span></div>
+          
+        </li>
+        <li data-q="michele chiarlo moscato d&#39;asti 2024 half bottle">
+          <div class="row"><span class="name">Michele Chiarlo Moscato d&#39;Asti 2024</span><span class="price">$48</span></div>
+          <p class="desc">half bottle</p>
+        </li></ul>
+    </section>
+    <section id="champagne" class="sec">
+      <h2>Champagne</h2>
+      
+      <ul>
+        <li data-q="champagne billecart-salmon brut reserve ">
+          <div class="row"><span class="name">Champagne Billecart-Salmon Brut Reserve</span><span class="price">$168</span></div>
+          
+        </li>
+        <li data-q="champagne billecart-salmon brut rose half bottle">
+          <div class="row"><span class="name">Champagne Billecart-Salmon Brut Rose</span><span class="price">$128</span></div>
+          <p class="desc">half bottle</p>
+        </li></ul>
+    </section>
+    <section id="vini-rossi-red-wine-italy" class="sec">
+      <h2>Vini Rossi / Red Wine - Italy</h2>
+      <p class="note">bottle unless stated</p>
+      <ul>
+        <li data-q="barbaresco giacosa fratelli 2021 piemonte. half bottle">
+          <div class="row"><span class="name">Barbaresco Giacosa Fratelli 2021</span><span class="price">$70</span></div>
+          <p class="desc">Piemonte. half bottle</p>
+        </li>
+        <li data-q="barbaresco produttori del barbaresco docg 2021 piemonte">
+          <div class="row"><span class="name">Barbaresco Produttori del Barbaresco DOCG 2021</span><span class="price">$168</span></div>
+          <p class="desc">Piemonte</p>
+        </li>
+        <li data-q="barolo ratti marcenasco 2020 piemonte">
+          <div class="row"><span class="name">Barolo Ratti Marcenasco 2020</span><span class="price">$198</span></div>
+          <p class="desc">Piemonte</p>
+        </li>
+        <li data-q="valpolicella ripasso begali classico superiore 2022 veneto">
+          <div class="row"><span class="name">Valpolicella Ripasso Begali Classico Superiore 2022</span><span class="price">$118</span></div>
+          <p class="desc">Veneto</p>
+        </li>
+        <li data-q="amarone masi costasera classico 2018 veneto. half bottle">
+          <div class="row"><span class="name">Amarone Masi Costasera Classico 2018</span><span class="price">$108</span></div>
+          <p class="desc">Veneto. half bottle</p>
+        </li>
+        <li data-q="amarone begali della valpolicella 2019 veneto">
+          <div class="row"><span class="name">Amarone Begali della Valpolicella 2019</span><span class="price">$158</span></div>
+          <p class="desc">Veneto</p>
+        </li>
+        <li data-q="amarone masi costasera classico 2020 veneto">
+          <div class="row"><span class="name">Amarone Masi Costasera Classico 2020</span><span class="price">$198</span></div>
+          <p class="desc">Veneto</p>
+        </li>
+        <li data-q="amarone quintarelli giuseppe 2015 veneto">
+          <div class="row"><span class="name">Amarone Quintarelli Giuseppe 2015</span><span class="price">$788</span></div>
+          <p class="desc">Veneto</p>
+        </li>
+        <li data-q="zenato amarone riserva 2016 veneto">
+          <div class="row"><span class="name">Zenato Amarone Riserva 2016</span><span class="price">$268</span></div>
+          <p class="desc">Veneto</p>
+        </li>
+        <li data-q="villa tirrena merlot 2022 lazio">
+          <div class="row"><span class="name">Villa Tirrena Merlot 2022</span><span class="price">$95</span></div>
+          <p class="desc">Lazio</p>
+        </li>
+        <li data-q="planeta santa cecilia 100% nero d&#39;avola doc 2021 sicilia">
+          <div class="row"><span class="name">Planeta Santa Cecilia 100% Nero d&#39;Avola DOC 2021</span><span class="price">$168</span></div>
+          <p class="desc">Sicilia</p>
+        </li>
+        <li data-q="chianti classico poggio civetta 2023 toscana">
+          <div class="row"><span class="name">Chianti Classico Poggio Civetta 2023</span><span class="price">$98</span></div>
+          <p class="desc">Toscana</p>
+        </li>
+        <li data-q="gran selezione riserva tolaini chianti 2021 toscana">
+          <div class="row"><span class="name">Gran Selezione Riserva Tolaini Chianti 2021</span><span class="price">$168</span></div>
+          <p class="desc">Toscana</p>
+        </li>
+        <li data-q="rosso di montalcino collosorbo d.o.c. 2023 toscana">
+          <div class="row"><span class="name">Rosso di Montalcino Collosorbo D.O.C. 2023</span><span class="price">$118</span></div>
+          <p class="desc">Toscana</p>
+        </li>
+        <li data-q="brunello di montalcino mastro janni 2019 toscana. half bottle">
+          <div class="row"><span class="name">Brunello di Montalcino Mastro Janni 2019</span><span class="price">$118</span></div>
+          <p class="desc">Toscana. half bottle</p>
+        </li>
+        <li data-q="brunello di montalcino collosorbo ciacci docg 2020 toscana">
+          <div class="row"><span class="name">Brunello di Montalcino Collosorbo Ciacci DOCG 2020</span><span class="price">$178</span></div>
+          <p class="desc">Toscana</p>
+        </li>
+        <li data-q="brunello antinori pian delle vigne docg 2018 toscana">
+          <div class="row"><span class="name">Brunello Antinori Pian delle Vigne DOCG 2018</span><span class="price">$218</span></div>
+          <p class="desc">Toscana</p>
+        </li>
+        <li data-q="guidalberto tenuta san guido 2020 super tuscan">
+          <div class="row"><span class="name">Guidalberto Tenuta San Guido 2020</span><span class="price">$188</span></div>
+          <p class="desc">Super Tuscan</p>
+        </li>
+        <li data-q="fattoria le puppille saffredi 2019 super tuscan">
+          <div class="row"><span class="name">Fattoria Le Puppille Saffredi 2019</span><span class="price">$298</span></div>
+          <p class="desc">Super Tuscan</p>
+        </li>
+        <li data-q="guado al tasso antinori 2019 super tuscan">
+          <div class="row"><span class="name">Guado al Tasso Antinori 2019</span><span class="price">$388</span></div>
+          <p class="desc">Super Tuscan</p>
+        </li>
+        <li data-q="tignanello antinori 2021 igt super tuscan">
+          <div class="row"><span class="name">Tignanello Antinori 2021 IGT</span><span class="price">$438</span></div>
+          <p class="desc">Super Tuscan</p>
+        </li>
+        <li data-q="ornellaia bolgheri doc superiore 2021 super tuscan">
+          <div class="row"><span class="name">Ornellaia Bolgheri DOC Superiore 2021</span><span class="price">$588</span></div>
+          <p class="desc">Super Tuscan</p>
+        </li>
+        <li data-q="sassicaia tenuta san guido 2016 igt super tuscan">
+          <div class="row"><span class="name">Sassicaia Tenuta San Guido 2016 IGT</span><span class="price">$888</span></div>
+          <p class="desc">Super Tuscan</p>
+        </li>
+        <li data-q="sassicaia tenuta san guido 2021 igt super tuscan">
+          <div class="row"><span class="name">Sassicaia Tenuta San Guido 2021 IGT</span><span class="price">$688</span></div>
+          <p class="desc">Super Tuscan</p>
+        </li>
+        <li data-q="primitivo di manduria borgo del mandorlo 2022 puglia">
+          <div class="row"><span class="name">Primitivo di Manduria Borgo del Mandorlo 2022</span><span class="price">$98</span></div>
+          <p class="desc">Puglia</p>
+        </li>
+        <li data-q="negroamaro masseria dei trulli 2023 puglia">
+          <div class="row"><span class="name">Negroamaro Masseria dei Trulli 2023</span><span class="price">$148</span></div>
+          <p class="desc">Puglia</p>
+        </li>
+        <li data-q="primitivo di manduria san marzano sessantanni 2019 puglia">
+          <div class="row"><span class="name">Primitivo di Manduria San Marzano Sessantanni 2019</span><span class="price">$158</span></div>
+          <p class="desc">Puglia</p>
+        </li></ul>
+    </section>
+    <section id="vini-rossi-red-wine-france" class="sec">
+      <h2>Vini Rossi / Red Wine - France</h2>
+      
+      <ul>
+        <li data-q="chateauneuf du pape domaine de marcoux 2020 ">
+          <div class="row"><span class="name">Chateauneuf du Pape Domaine de Marcoux 2020</span><span class="price">$198</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="beer" class="sec">
+      <h2>Beer</h2>
+      
+      <ul>
+        <li data-q="draft beer menabrea 200 ml / 400 ml (values as printed: 12.00 / 17.00)">
+          <div class="row"><span class="name">Draft Beer Menabrea</span></div>
+          <p class="desc">200 ml / 400 ml (values as printed: 12.00 / 17.00)</p><div class="prices"><span class="pp"><span class="pl">200 ml</span> <b>$12.00</b></span><span class="pp"><span class="pl">400 ml</span> <b>$17.00</b></span></div>
+        </li>
+        <li data-q="beers in bottles (peroni, corona) 330 ml">
+          <div class="row"><span class="name">Beers in bottles (Peroni, Corona)</span><span class="price">$10.00</span></div>
+          <p class="desc">330 ml</p>
+        </li></ul>
+    </section>
+    <section id="beverages" class="sec">
+      <h2>Beverages</h2>
+      
+      <ul>
+        <li data-q="panna still mineral water 750ml">
+          <div class="row"><span class="name">Panna Still Mineral Water</span><span class="price">$8.80</span></div>
+          <p class="desc">750ml</p>
+        </li>
+        <li data-q="san pellegrino sparkling mineral water 750ml">
+          <div class="row"><span class="name">San Pellegrino Sparkling Mineral water</span><span class="price">$8.80</span></div>
+          <p class="desc">750ml</p>
+        </li>
+        <li data-q="soft drinks (coke, coke light, sprite, tonic, ice-tea)">
+          <div class="row"><span class="name">Soft drinks</span><span class="price">$5.00</span></div>
+          <p class="desc">(coke, coke light, sprite, tonic, ice-tea)</p>
+        </li>
+        <li data-q="fruit juice (orange / lime) ">
+          <div class="row"><span class="name">Fruit juice (orange / lime)</span><span class="price">$5.50</span></div>
+          
+        </li>
+        <li data-q="illy espresso ">
+          <div class="row"><span class="name">Illy Espresso</span><span class="price">$5.00</span></div>
+          
+        </li>
+        <li data-q="illy double espresso ">
+          <div class="row"><span class="name">Illy Double Espresso</span><span class="price">$6.50</span></div>
+          
+        </li>
+        <li data-q="cappuccino ">
+          <div class="row"><span class="name">Cappuccino</span><span class="price">$6.50</span></div>
+          
+        </li>
+        <li data-q="caffe latte ">
+          <div class="row"><span class="name">Caffe Latte</span><span class="price">$7.50</span></div>
+          
+        </li>
+        <li data-q="illy caffe ">
+          <div class="row"><span class="name">Illy Caffe</span><span class="price">$5.00</span></div>
+          
+        </li>
+        <li data-q="tea ">
+          <div class="row"><span class="name">Tea</span><span class="price">$4.50</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="aperitifs" class="sec">
+      <h2>Aperitifs</h2>
+      
+      <ul>
+        <li data-q="martini bianco ">
+          <div class="row"><span class="name">Martini Bianco</span><span class="price">$10.00</span></div>
+          
+        </li>
+        <li data-q="martini rosso ">
+          <div class="row"><span class="name">Martini Rosso</span><span class="price">$10.00</span></div>
+          
+        </li>
+        <li data-q="campari orange ">
+          <div class="row"><span class="name">Campari Orange</span><span class="price">$15.00</span></div>
+          
+        </li>
+        <li data-q="aperol spritz ">
+          <div class="row"><span class="name">Aperol Spritz</span><span class="price">$16.80</span></div>
+          
+        </li>
+        <li data-q="negroni ">
+          <div class="row"><span class="name">Negroni</span><span class="price">$15.00</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="liqueurs" class="sec">
+      <h2>Liqueurs</h2>
+      
+      <ul>
+        <li data-q="limoncello di amalfi ">
+          <div class="row"><span class="name">Limoncello di Amalfi</span><span class="price">$10.00</span></div>
+          
+        </li>
+        <li data-q="grappa nonino ">
+          <div class="row"><span class="name">Grappa Nonino</span><span class="price">$15.00</span></div>
+          
+        </li>
+        <li data-q="sambuca molinari ">
+          <div class="row"><span class="name">Sambuca Molinari</span><span class="price">$13.00</span></div>
+          
+        </li>
+        <li data-q="amaro ">
+          <div class="row"><span class="name">Amaro</span><span class="price">$13.00</span></div>
+          
+        </li>
+        <li data-q="mirto silvio carta ">
+          <div class="row"><span class="name">Mirto Silvio Carta</span><span class="price">$13.00</span></div>
+          
+        </li>
+        <li data-q="jagermaister ">
+          <div class="row"><span class="name">Jagermaister</span><span class="price">$14.00</span></div>
+          
+        </li>
+        <li data-q="cognac ">
+          <div class="row"><span class="name">Cognac</span><span class="price">$17.00</span></div>
+          
+        </li>
+        <li data-q="whisky (chivas, johnny walker, jack daniel) ">
+          <div class="row"><span class="name">Whisky (Chivas, Johnny Walker, Jack Daniel)</span><span class="price">$15.00</span></div>
+          
+        </li>
+        <li data-q="whisky (macallan, bourbon) ">
+          <div class="row"><span class="name">Whisky (Macallan, Bourbon)</span><span class="price">$18.00</span></div>
+          
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>ALL PRICES ARE SUBJECT TO 10% SERVICE CHARGE &amp; 9% GST. Set Lunch available from $28.80++, Tuesday to Friday except public holidays.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Lafiandra.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Lafiandra menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's US$29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for US$29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

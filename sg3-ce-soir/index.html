@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Ce Soir Menu</title>
+<meta name="description" content="Menu for Ce Soir, Portsdown Road (Wessex Estate), Singapore.">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Ce Soir</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=%2301-03%205B%20Portsdown%20Rd%2C%20Singapore%20139311">#01-03 5B Portsdown Rd, Singapore 139311</a><a href="tel:+6591779993">+65 9177 9993</a><span>Closed on Mondays &amp; Tuesdays. Wednesday to Sunday: Lunch 12:00 PM – 3:30 PM (Thurs to Sun only), Dinner 6:30 PM – 11:00 PM</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#lunch-menu-3-courses" data-sec="lunch-menu-3-courses">Lunch Menu – 3 Courses</a><a href="#lunch-menu-5-courses" data-sec="lunch-menu-5-courses">Lunch Menu – 5 Courses</a><a href="#dinner-menu" data-sec="dinner-menu">Dinner Menu</a><a href="#wed-thurs-menu-7-courses" data-sec="wed-thurs-menu-7-courses">Wed &amp; Thurs Menu – 7 Courses</a><a href="#wine-flights" data-sec="wine-flights">Wine Flights</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="lunch-menu-3-courses" class="sec">
+      <h2>Lunch Menu – 3 Courses</h2>
+      <p class="note">$78 per person</p>
+      <ul>
+        <li data-q="kinmedai, kumquat, finger lime ">
+          <div class="row"><span class="name">Kinmedai, Kumquat, Finger Lime</span></div>
+          
+        </li>
+        <li data-q="wagyu, crab roe, curry, tosazu ">
+          <div class="row"><span class="name">Wagyu, Crab Roe, Curry, Tosazu</span></div>
+          
+        </li>
+        <li data-q="hamachi wasabi, green apple, umeboshi">
+          <div class="row"><span class="name">Hamachi</span></div>
+          <p class="desc">Wasabi, Green Apple, Umeboshi</p>
+        </li>
+        <li data-q="seaweed bread ">
+          <div class="row"><span class="name">Seaweed Bread</span></div>
+          
+        </li>
+        <li data-q="yellow chicken shiitake, cordyceps, black garlic">
+          <div class="row"><span class="name">Yellow Chicken</span></div>
+          <p class="desc">Shiitake, Cordyceps, Black Garlic</p>
+        </li>
+        <li data-q="or wagyu beef cheek ($10++) sunchoke, fermented beancurd, cabbage">
+          <div class="row"><span class="name">OR Wagyu Beef Cheek ($10++)</span></div>
+          <p class="desc">Sunchoke, Fermented Beancurd, Cabbage</p>
+        </li>
+        <li data-q="or lobster ($28++) century egg, amela tomato, spiced oil">
+          <div class="row"><span class="name">OR Lobster ($28++)</span></div>
+          <p class="desc">Century Egg, Amela Tomato, Spiced Oil</p>
+        </li>
+        <li data-q="peach chrysanthemum, yoghurt, passion fruit">
+          <div class="row"><span class="name">Peach</span></div>
+          <p class="desc">Chrysanthemum, Yoghurt, Passion Fruit</p>
+        </li>
+        <li data-q="salted egg, black truffle, hazelnut ">
+          <div class="row"><span class="name">Salted Egg, Black Truffle, Hazelnut</span></div>
+          
+        </li>
+        <li data-q="banana, cream cheese, palm sugar ">
+          <div class="row"><span class="name">Banana, Cream Cheese, Palm Sugar</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="lunch-menu-5-courses" class="sec">
+      <h2>Lunch Menu – 5 Courses</h2>
+      <p class="note">$128 per person</p>
+      <ul>
+        <li data-q="kinmedai, kumquat, finger lime ">
+          <div class="row"><span class="name">Kinmedai, Kumquat, Finger Lime</span></div>
+          
+        </li>
+        <li data-q="wagyu, crab roe, curry, tosazu ">
+          <div class="row"><span class="name">Wagyu, Crab Roe, Curry, Tosazu</span></div>
+          
+        </li>
+        <li data-q="hamachi wasabi, green apple, umeboshi">
+          <div class="row"><span class="name">Hamachi</span></div>
+          <p class="desc">Wasabi, Green Apple, Umeboshi</p>
+        </li>
+        <li data-q="snow crab akagai, smoked pork, white corn">
+          <div class="row"><span class="name">Snow Crab</span></div>
+          <p class="desc">Akagai, Smoked Pork, White Corn</p>
+        </li>
+        <li data-q="seaweed bread ">
+          <div class="row"><span class="name">Seaweed Bread</span></div>
+          
+        </li>
+        <li data-q="hokkaido scallop sarawak pineapple, shao xing, nori">
+          <div class="row"><span class="name">Hokkaido Scallop</span></div>
+          <p class="desc">Sarawak Pineapple, Shao Xing, Nori</p>
+        </li>
+        <li data-q="yellow chicken shiitake, cordyceps, black garlic">
+          <div class="row"><span class="name">Yellow Chicken</span></div>
+          <p class="desc">Shiitake, Cordyceps, Black Garlic</p>
+        </li>
+        <li data-q="or wagyu beef cheek ($10++) sunchoke, fermented beancurd, cabbage">
+          <div class="row"><span class="name">OR Wagyu Beef Cheek ($10++)</span></div>
+          <p class="desc">Sunchoke, Fermented Beancurd, Cabbage</p>
+        </li>
+        <li data-q="or lobster ($28++) century egg, amela tomato, spiced oil">
+          <div class="row"><span class="name">OR Lobster ($28++)</span></div>
+          <p class="desc">Century Egg, Amela Tomato, Spiced Oil</p>
+        </li>
+        <li data-q="peach chrysanthemum, yoghurt, passion fruit">
+          <div class="row"><span class="name">Peach</span></div>
+          <p class="desc">Chrysanthemum, Yoghurt, Passion Fruit</p>
+        </li>
+        <li data-q="salted egg, black truffle, hazelnut ">
+          <div class="row"><span class="name">Salted Egg, Black Truffle, Hazelnut</span></div>
+          
+        </li>
+        <li data-q="banana, cream cheese, palm sugar ">
+          <div class="row"><span class="name">Banana, Cream Cheese, Palm Sugar</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="dinner-menu" class="sec">
+      <h2>Dinner Menu</h2>
+      <p class="note">$228 per person</p>
+      <ul>
+        <li data-q="oyster, ambarella, apple, celery ">
+          <div class="row"><span class="name">Oyster, Ambarella, Apple, Celery</span></div>
+          
+        </li>
+        <li data-q="aji, tamarind, pineapple ">
+          <div class="row"><span class="name">Aji, Tamarind, Pineapple</span></div>
+          
+        </li>
+        <li data-q="wagyu, crab roe, curry, tosazu ">
+          <div class="row"><span class="name">Wagyu, Crab Roe, Curry, Tosazu</span></div>
+          
+        </li>
+        <li data-q="hokkaido scallop baby radish, salted sakura, finger lime, cucumber">
+          <div class="row"><span class="name">Hokkaido Scallop</span></div>
+          <p class="desc">Baby Radish, Salted Sakura, Finger Lime, Cucumber</p>
+        </li>
+        <li data-q="wintermelon burdock root, snow crab, abalone">
+          <div class="row"><span class="name">Wintermelon</span></div>
+          <p class="desc">Burdock Root, Snow Crab, Abalone</p>
+        </li>
+        <li data-q="kinmedai ginger, akagai, shaoxing wine">
+          <div class="row"><span class="name">Kinmedai</span></div>
+          <p class="desc">Ginger, Akagai, Shaoxing Wine</p>
+        </li>
+        <li data-q="signature seaweed bread ">
+          <div class="row"><span class="name">Signature Seaweed Bread</span></div>
+          
+        </li>
+        <li data-q="lobster amela tomato, century egg, foie gras">
+          <div class="row"><span class="name">Lobster</span></div>
+          <p class="desc">Amela Tomato, Century Egg, Foie Gras</p>
+        </li>
+        <li data-q="iberico pork 12 years sun-dried orange, mustard kosho, young corn">
+          <div class="row"><span class="name">Iberico Pork</span></div>
+          <p class="desc">12 Years Sun-Dried Orange, Mustard Kosho, Young Corn</p>
+        </li>
+        <li data-q="5-grains petai, octopus, sakura ebi">
+          <div class="row"><span class="name">5-Grains</span></div>
+          <p class="desc">Petai, Octopus, Sakura Ebi</p>
+        </li>
+        <li data-q="white peach chrysanthemum, passion fruit, yoghurt">
+          <div class="row"><span class="name">White Peach</span></div>
+          <p class="desc">Chrysanthemum, Passion Fruit, Yoghurt</p>
+        </li>
+        <li data-q="banana, cream cheese, gula melaka (palm sugar) ">
+          <div class="row"><span class="name">Banana, Cream Cheese, Gula Melaka (Palm Sugar)</span></div>
+          
+        </li>
+        <li data-q="salted egg, black truffle, hazelnut ">
+          <div class="row"><span class="name">Salted Egg, Black Truffle, Hazelnut</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="wed-thurs-menu-7-courses" class="sec">
+      <h2>Wed &amp; Thurs Menu – 7 Courses</h2>
+      <p class="note">$168 per person</p>
+      <ul>
+        <li data-q="oyster, ambarella, apple, celery ">
+          <div class="row"><span class="name">Oyster, Ambarella, Apple, Celery</span></div>
+          
+        </li>
+        <li data-q="aji, tamarind, pineapple ">
+          <div class="row"><span class="name">Aji, Tamarind, Pineapple</span></div>
+          
+        </li>
+        <li data-q="wagyu, crab roe, curry, tosazu ">
+          <div class="row"><span class="name">Wagyu, Crab Roe, Curry, Tosazu</span></div>
+          
+        </li>
+        <li data-q="hokkaido scallop baby radish, salted sakura, finger lime, cucumber">
+          <div class="row"><span class="name">Hokkaido Scallop</span></div>
+          <p class="desc">Baby Radish, Salted Sakura, Finger Lime, Cucumber</p>
+        </li>
+        <li data-q="signature seaweed bread star anise, sea salt, nori">
+          <div class="row"><span class="name">Signature Seaweed Bread</span></div>
+          <p class="desc">Star Anise, Sea Salt, Nori</p>
+        </li>
+        <li data-q="lobster amela tomato, century egg, foie gras">
+          <div class="row"><span class="name">Lobster</span></div>
+          <p class="desc">Amela Tomato, Century Egg, Foie Gras</p>
+        </li>
+        <li data-q="iberico pork 12 years sun-dried orange, mustard kosho, young corn">
+          <div class="row"><span class="name">Iberico Pork</span></div>
+          <p class="desc">12 Years Sun-Dried Orange, Mustard Kosho, Young Corn</p>
+        </li>
+        <li data-q="or wagyu beef +38 12 years sun-dried orange, mustard kosho, young corn">
+          <div class="row"><span class="name">OR Wagyu Beef +38</span></div>
+          <p class="desc">12 Years Sun-Dried Orange, Mustard Kosho, Young Corn</p>
+        </li>
+        <li data-q="5-grains petai, octopus, sakura ebi">
+          <div class="row"><span class="name">5-Grains</span></div>
+          <p class="desc">Petai, Octopus, Sakura Ebi</p>
+        </li>
+        <li data-q="white peach chrysanthemum, passion fruit, yoghurt">
+          <div class="row"><span class="name">White Peach</span></div>
+          <p class="desc">Chrysanthemum, Passion Fruit, Yoghurt</p>
+        </li>
+        <li data-q="banana, cream cheese, gula melaka (palm sugar) ">
+          <div class="row"><span class="name">Banana, Cream Cheese, Gula Melaka (Palm Sugar)</span></div>
+          
+        </li>
+        <li data-q="salted egg, black truffle, hazelnut ">
+          <div class="row"><span class="name">Salted Egg, Black Truffle, Hazelnut</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="wine-flights" class="sec">
+      <h2>Wine Flights</h2>
+      
+      <ul>
+        <li data-q="2 glasses ">
+          <div class="row"><span class="name">2 Glasses</span><span class="price">$58</span></div>
+          
+        </li>
+        <li data-q="3 glasses ">
+          <div class="row"><span class="name">3 Glasses</span><span class="price">$78</span></div>
+          
+        </li>
+        <li data-q="seth&#39;s selection (3 glasses) ">
+          <div class="row"><span class="name">Seth&#39;s Selection (3 Glasses)</span><span class="price">$98</span></div>
+          
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>*service charge and prevailing gov GST. @cesoirsg | @sethlai</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Ce Soir.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Ce Soir menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's US$29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for US$29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

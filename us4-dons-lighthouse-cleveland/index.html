@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Don&#39;s Lighthouse Grille Menu</title>
+<meta name="description" content="Menu for Don&#39;s Lighthouse Grille, Edgewater (Lake Ave).">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Don&#39;s Lighthouse Grille</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=8905%20Lake%20Avenue%2C%20Cleveland%2C%20OH%2044102">8905 Lake Avenue, Cleveland, OH 44102</a><a href="tel:2169616700">(216) 961-6700</a></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#appetizers" data-sec="appetizers">Appetizers</a><a href="#salads" data-sec="salads">Salads</a><a href="#lighthouse-favorites" data-sec="lighthouse-favorites">Lighthouse Favorites</a><a href="#freshline" data-sec="freshline">Freshline</a><a href="#simply-seafood" data-sec="simply-seafood">Simply Seafood</a><a href="#steaks" data-sec="steaks">Steaks</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="appetizers" class="sec">
+      <h2>Appetizers</h2>
+      
+      <ul>
+        <li data-q="soup du jour chef&#39;s daily creations">
+          <div class="row"><span class="name">Soup Du Jour</span><span class="price">$6.25</span></div>
+          <p class="desc">Chef&#39;s daily creations</p>
+        </li>
+        <li data-q="don&#39;s seafood chowder manhattan style, fresh fish and shellfish">
+          <div class="row"><span class="name">Don&#39;s Seafood Chowder</span><span class="price">$6.75</span></div>
+          <p class="desc">Manhattan style, fresh fish and shellfish</p>
+        </li>
+        <li data-q="french onion soup sherry, onions crouton, three cheese">
+          <div class="row"><span class="name">French Onion Soup</span><span class="price">$10</span></div>
+          <p class="desc">Sherry, onions crouton, three cheese</p>
+        </li>
+        <li data-q="maryland crab cake jumbo lump crab, roasted corn relish, remoulade, chipotle honey">
+          <div class="row"><span class="name">Maryland Crab Cake</span><span class="price">$20</span></div>
+          <p class="desc">Jumbo lump crab, roasted corn relish, remoulade, chipotle honey</p>
+        </li>
+        <li data-q="stuffed portobello mushrooms zucchini, spinach, roasted red peppers, mozzarella cheese">
+          <div class="row"><span class="name">Stuffed Portobello Mushrooms</span><span class="price">$16</span></div>
+          <p class="desc">Zucchini, spinach, roasted red peppers, mozzarella cheese</p>
+        </li>
+        <li data-q="calamari flash fried, pickled cherry peppers, marinara sauce">
+          <div class="row"><span class="name">Calamari</span><span class="price">$17</span></div>
+          <p class="desc">Flash fried, pickled cherry peppers, marinara sauce</p>
+        </li>
+        <li data-q="shrimp cocktail 4 jumbo gulf shrimp, fresh horseradish, cocktail sauce">
+          <div class="row"><span class="name">Shrimp Cocktail</span><span class="price">$19</span></div>
+          <p class="desc">4 Jumbo gulf shrimp, fresh horseradish, cocktail sauce</p>
+        </li>
+        <li data-q="bang bang shrimp lightly fried, banana peppers, thai chili sauce">
+          <div class="row"><span class="name">Bang Bang Shrimp</span><span class="price">$18</span></div>
+          <p class="desc">Lightly fried, banana peppers, Thai chili sauce</p>
+        </li>
+        <li data-q="edward island mussels sautéed with sherry, garlic butter, and herbs">
+          <div class="row"><span class="name">Edward Island Mussels</span><span class="price">$17</span></div>
+          <p class="desc">Sautéed with sherry, garlic butter, and herbs</p>
+        </li></ul>
+    </section>
+    <section id="salads" class="sec">
+      <h2>Salads</h2>
+      
+      <ul>
+        <li data-q="bistro greens, grape tomatoes, asiago cheese, pine nuts, white balsamic vinaigrette">
+          <div class="row"><span class="name">Bistro</span><span class="price">$10</span></div>
+          <p class="desc">Greens, grape tomatoes, asiago cheese, pine nuts, white balsamic vinaigrette</p>
+        </li>
+        <li data-q="pomeroy greens, mandarin oranges, strawberries, red onion, poppy seed dressing">
+          <div class="row"><span class="name">Pomeroy</span><span class="price">$11</span></div>
+          <p class="desc">Greens, mandarin oranges, strawberries, red onion, poppy seed dressing</p>
+        </li>
+        <li data-q="fishmarket baby shrimp, chopped eggs, bleu cheese, italian dressing">
+          <div class="row"><span class="name">Fishmarket</span><span class="price">$11</span></div>
+          <p class="desc">Baby shrimp, chopped eggs, bleu cheese, Italian dressing</p>
+        </li>
+        <li data-q="iceberg wedge bacon, egg, scallion, thousand island dressing">
+          <div class="row"><span class="name">Iceberg Wedge</span><span class="price">$11</span></div>
+          <p class="desc">Bacon, egg, scallion, thousand island dressing</p>
+        </li>
+        <li data-q="caesar romaine, asiago cheese, croutons, creamy caesar dressing">
+          <div class="row"><span class="name">Caesar</span><span class="price">$9.75</span></div>
+          <p class="desc">Romaine, asiago cheese, croutons, creamy Caesar dressing</p>
+        </li>
+        <li data-q="burrata caprese burrata, heirloom tomatoes, basil, balsamic glaze">
+          <div class="row"><span class="name">Burrata Caprese</span><span class="price">$14</span></div>
+          <p class="desc">Burrata, heirloom tomatoes, basil, balsamic glaze</p>
+        </li>
+        <li data-q="beets and chickpeas roasted beets, chickpeas, feta, candied walnuts, mixed greens, red wine vinaigrette">
+          <div class="row"><span class="name">Beets and Chickpeas</span><span class="price">$16.50</span></div>
+          <p class="desc">Roasted beets, chickpeas, feta, candied walnuts, mixed greens, red wine vinaigrette</p>
+        </li></ul>
+    </section>
+    <section id="lighthouse-favorites" class="sec">
+      <h2>Lighthouse Favorites</h2>
+      
+      <ul>
+        <li data-q="portuguese seafood stew scallops, shrimp, mussels, chorizo sausage, pappardelle, tomato broth">
+          <div class="row"><span class="name">Portuguese Seafood Stew</span><span class="price">$39</span></div>
+          <p class="desc">Scallops, shrimp, mussels, chorizo sausage, pappardelle, tomato broth</p>
+        </li>
+        <li data-q="steak and lobster maine lobster tail, center cut filet mignon, whipped potatoes, green beans">
+          <div class="row"><span class="name">Steak and Lobster</span><span class="price">$65</span></div>
+          <p class="desc">Maine lobster tail, center cut filet mignon, whipped potatoes, green beans</p>
+        </li>
+        <li data-q="maine lobster tail broiled cold water lobster, whipped potatoes, green beans. add a second tail 36">
+          <div class="row"><span class="name">Maine Lobster Tail</span><span class="price">$41</span></div>
+          <p class="desc">Broiled cold water lobster, whipped potatoes, green beans. Add a second tail 36</p>
+        </li>
+        <li data-q="herb roasted chicken roasted half chicken, whipped potatoes, green beans, herb pan jus">
+          <div class="row"><span class="name">Herb Roasted Chicken</span><span class="price">$32</span></div>
+          <p class="desc">Roasted half chicken, whipped potatoes, green beans, herb pan jus</p>
+        </li>
+        <li data-q="chicken picatta pan seared chicken, lemon caper sauce, whipped potatoes, sauteed spinach">
+          <div class="row"><span class="name">Chicken Picatta</span><span class="price">$25</span></div>
+          <p class="desc">Pan seared chicken, lemon caper sauce, whipped potatoes, sauteed spinach</p>
+        </li>
+        <li data-q="shrimp alfredo grilled shrimp, linguine, peppers, onions, broccoli, alfredo sauce">
+          <div class="row"><span class="name">Shrimp Alfredo</span><span class="price">$24.50</span></div>
+          <p class="desc">Grilled shrimp, linguine, peppers, onions, broccoli, alfredo sauce</p>
+        </li>
+        <li data-q="short ribs braised short ribs, pancetta, mushrooms, demi-glace, whipped potatoes, vegetable of the day">
+          <div class="row"><span class="name">Short Ribs</span><span class="price">$36</span></div>
+          <p class="desc">Braised short ribs, pancetta, mushrooms, demi-glace, whipped potatoes, vegetable of the day</p>
+        </li>
+        <li data-q="don&#39;s lighthouse burger grilled 7 oz angus burger, topped with marinated short ribs, sauteed mushrooms &amp; onions, gruyére, mayo, rosemary garlic parmesan fries">
+          <div class="row"><span class="name">Don&#39;s Lighthouse Burger</span><span class="price">$22</span></div>
+          <p class="desc">Grilled 7 oz Angus burger, topped with marinated short ribs, sauteed mushrooms &amp; onions, gruyére, mayo, rosemary garlic parmesan fries</p>
+        </li>
+        <li data-q="pork chop grilled 12 ounce pork chop, apple chutney, scalloped potatoes, vegetable of the day">
+          <div class="row"><span class="name">Pork Chop</span><span class="price">$36</span></div>
+          <p class="desc">Grilled 12 ounce pork chop, apple chutney, scalloped potatoes, vegetable of the day</p>
+        </li>
+        <li data-q="vegan entree ask your server">
+          <div class="row"><span class="name">Vegan Entree</span></div>
+          <p class="desc">ask your server</p>
+        </li></ul>
+    </section>
+    <section id="freshline" class="sec">
+      <h2>Freshline</h2>
+      
+      <ul>
+        <li data-q="faroe island salmon bourbon glazed, cilantro jasmine rice, vegetable of the day">
+          <div class="row"><span class="name">Faroe Island Salmon</span><span class="price">$32</span></div>
+          <p class="desc">Bourbon glazed, cilantro jasmine rice, vegetable of the day</p>
+        </li>
+        <li data-q="george&#39;s bank cod cracker crust, oven baked, wild rice blend, green beans, lemon beurre blanc">
+          <div class="row"><span class="name">George&#39;s Bank Cod</span><span class="price">$34</span></div>
+          <p class="desc">Cracker crust, oven baked, wild rice blend, green beans, lemon beurre blanc</p>
+        </li>
+        <li data-q="scallops pan seared, lemon spinach risotto, tuscan cream sauce">
+          <div class="row"><span class="name">Scallops</span><span class="price">$40</span></div>
+          <p class="desc">Pan seared, lemon spinach risotto, Tuscan cream sauce</p>
+        </li>
+        <li data-q="halibut pan seared, pearl cous cous vegetable salad, herb oil">
+          <div class="row"><span class="name">Halibut</span><span class="price">$43</span></div>
+          <p class="desc">Pan seared, pearl cous cous vegetable salad, herb oil</p>
+        </li>
+        <li data-q="great lakes walleye pretzel crusted, whipped potatoes, sweet corn succotash, whole grain honey mustard aioli (walleye subject to seasonal harvesting availability)">
+          <div class="row"><span class="name">Great Lakes Walleye</span><span class="price">$34</span></div>
+          <p class="desc">Pretzel crusted, whipped potatoes, sweet corn succotash, whole grain honey mustard aioli (Walleye subject to seasonal harvesting availability)</p>
+        </li></ul>
+    </section>
+    <section id="simply-seafood" class="sec">
+      <h2>Simply Seafood</h2>
+      <p class="note">The following selections are simply prepared with roasted red skin potatoes, green beans and your choice of one of the following sauces: Mustard Aioli, Lemon Beurre Blanc, Caper Remoulade</p>
+      <ul>
+        <li data-q="grilled faroe island salmon ">
+          <div class="row"><span class="name">Grilled Faroe Island Salmon</span><span class="price">$32</span></div>
+          
+        </li>
+        <li data-q="pan seared great lakes walleye ">
+          <div class="row"><span class="name">Pan Seared Great Lakes Walleye</span><span class="price">$34</span></div>
+          
+        </li>
+        <li data-q="pan seared cod ">
+          <div class="row"><span class="name">Pan Seared Cod</span><span class="price">$34</span></div>
+          
+        </li>
+        <li data-q="pan seared scallops ">
+          <div class="row"><span class="name">Pan Seared Scallops</span><span class="price">$40</span></div>
+          
+        </li>
+        <li data-q="pan seared halibut ">
+          <div class="row"><span class="name">Pan Seared Halibut</span><span class="price">$43</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="steaks" class="sec">
+      <h2>Steaks</h2>
+      <p class="note">Steak enhancements: Sautéed Mushrooms, Fried Onion Straws, Smoked Bleu Cheese, Caramelized Onions, Cabernet Demi-Glace. &#39;Oscar Style&#39; any steak 10. Add Shrimp Scampi 14.5</p>
+      <ul>
+        <li data-q="filet mignon char-grilled, whipped potatoes, green beans">
+          <div class="row"><span class="name">Filet Mignon</span></div>
+          <p class="desc">Char-grilled, whipped potatoes, green beans</p><div class="prices"><span class="pp"><span class="pl">6 ounce</span> <b>$42</b></span><span class="pp"><span class="pl">8 ounce</span> <b>$50</b></span></div>
+        </li>
+        <li data-q="steak oscar ten ounce texas sirloin, char-grilled, whipped potatoes, asparagus, blue crab, hollandaise sauce">
+          <div class="row"><span class="name">Steak Oscar</span><span class="price">$45</span></div>
+          <p class="desc">Ten ounce Texas sirloin, char-grilled, whipped potatoes, asparagus, blue crab, hollandaise sauce</p>
+        </li>
+        <li data-q="c.a.b delmonico twelve ounce, char-grilled, whipped potatoes, vegetable of the day">
+          <div class="row"><span class="name">C.A.B Delmonico</span><span class="price">$49</span></div>
+          <p class="desc">Twelve ounce, char-grilled, whipped potatoes, vegetable of the day</p>
+        </li>
+        <li data-q="kansas city strip steak twelve ounce, char-grilled, rosemary garlic parmesan fries, vegetable of the day">
+          <div class="row"><span class="name">Kansas City Strip Steak</span><span class="price">$28</span></div>
+          <p class="desc">Twelve ounce, char-grilled, rosemary garlic parmesan fries, vegetable of the day</p>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>Consuming raw or undercooked meats, poultry, or seafood may increase your risk of foodborne illness. Gluten-free selections and gluten-free-with-modification dishes are marked on the printed menu; please ask your server.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Don&#39;s Lighthouse Grille.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Don&#39;s Lighthouse Grille menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

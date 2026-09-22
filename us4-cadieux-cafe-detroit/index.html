@@ -1,0 +1,789 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Cadieux Cafe Menu</title>
+<meta name="description" content="Menu for Cadieux Cafe, East Side (Cadieux Rd, East English Village / Morningside).">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Cadieux Cafe</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=4300%20Cadieux%20Rd%2C%20Detroit%2C%20MI%2048224">4300 Cadieux Rd, Detroit, MI 48224</a><a href="tel:3138828560">(313) 882-8560</a><span>Sunday 12:00 PM - 9:00 PM; Monday-Thursday 4:00 PM - Midnight; Friday-Saturday 4:00 PM - 12:30 AM. Full menu available until midnight Tuesday-Saturday, until 9pm Sunday-Monday</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#appetizers" data-sec="appetizers">Appetizers</a><a href="#soups-salads" data-sec="soups-salads">Soups &amp; Salads</a><a href="#sandwiches" data-sec="sandwiches">Sandwiches</a><a href="#belgian-specialties" data-sec="belgian-specialties">Belgian Specialties</a><a href="#mussel-dinners-gf" data-sec="mussel-dinners-gf">Mussel Dinners (GF)</a><a href="#sides" data-sec="sides">Sides</a><a href="#desserts" data-sec="desserts">Desserts</a><a href="#beer-belgium" data-sec="beer-belgium">Beer - Belgium</a><a href="#beer-europe" data-sec="beer-europe">Beer - Europe</a><a href="#beer-domestic" data-sec="beer-domestic">Beer - Domestic</a><a href="#beer-michigan" data-sec="beer-michigan">Beer - Michigan</a><a href="#beer-canada" data-sec="beer-canada">Beer - Canada</a><a href="#beer-mexico" data-sec="beer-mexico">Beer - Mexico</a><a href="#cider" data-sec="cider">Cider</a><a href="#non-alcoholic-beer" data-sec="non-alcoholic-beer">Non-Alcoholic Beer</a><a href="#on-draft" data-sec="on-draft">On Draft</a><a href="#wines-and-seltzers-bubbles-by-the-bottle" data-sec="wines-and-seltzers-bubbles-by-the-bottle">Wines and Seltzers - Bubbles by the Bottle</a><a href="#wines-white" data-sec="wines-white">Wines - White</a><a href="#wines-red" data-sec="wines-red">Wines - Red</a><a href="#other-beverages" data-sec="other-beverages">Other Beverages</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="appetizers" class="sec">
+      <h2>Appetizers</h2>
+      <p class="note">Extra sides of sauce are 1.00</p>
+      <ul>
+        <li data-q="steak tips angus beef tips (6oz) with cadieux&#39;s belgian zip sauce and onion rings">
+          <div class="row"><span class="name">Steak Tips</span><span class="price">$16.95</span></div>
+          <p class="desc">Angus beef tips (6oz) with Cadieux&#39;s Belgian zip sauce and onion rings</p>
+        </li>
+        <li data-q="basket of cadieux pommes frites (v, gf) a generous portion of fries with cadieux&#39;s famous spicy mayo, garlic mayo, or horseradish mayo. add beer cheese for 1.00">
+          <div class="row"><span class="name">Basket of Cadieux Pommes Frites (V, GF)</span><span class="price">$5.95</span></div>
+          <p class="desc">A generous portion of fries with Cadieux&#39;s famous spicy mayo, garlic mayo, or horseradish mayo. Add beer cheese for 1.00</p>
+        </li>
+        <li data-q="cadieux wings (gf) cadieux cafe&#39;s signature recipe served with carrots, celery, and bleu cheese dressing, choose between hot bbq, &quot;the sauce&quot;, or plain (10 per order)">
+          <div class="row"><span class="name">Cadieux Wings (GF)</span><span class="price">$13.95</span></div>
+          <p class="desc">Cadieux Cafe&#39;s signature recipe served with carrots, celery, and bleu cheese dressing, choose between Hot BBQ, &quot;The Sauce&quot;, or plain (10 per order)</p>
+        </li>
+        <li data-q="chicken tenders house-made and served with spicy bbq sauce, ranch, or honey mustard (5 per order)">
+          <div class="row"><span class="name">Chicken Tenders</span><span class="price">$13.95</span></div>
+          <p class="desc">House-made and served with spicy BBQ sauce, ranch, or honey mustard (5 per order)</p>
+        </li>
+        <li data-q="mozzarella cheese sticks (v) a generous portion of lightly breaded mozzarella sticks, served with ranch or marinara (8 per order)">
+          <div class="row"><span class="name">Mozzarella Cheese Sticks (V)</span><span class="price">$9.95</span></div>
+          <p class="desc">A generous portion of lightly breaded mozzarella sticks, served with ranch or marinara (8 per order)</p>
+        </li>
+        <li data-q="basket of onion rings (v) a generous portion of beer-battered onion rings">
+          <div class="row"><span class="name">Basket of Onion Rings (V)</span><span class="price">$8.95</span></div>
+          <p class="desc">A generous portion of beer-battered onion rings</p>
+        </li>
+        <li data-q="soft pretzel sticks (v) served with belgian beer cheese">
+          <div class="row"><span class="name">Soft Pretzel Sticks (V)</span><span class="price">$9.95</span></div>
+          <p class="desc">Served with Belgian beer cheese</p>
+        </li>
+        <li data-q="brussels sprouts (gf) flash-fried brussels sprouts with bacon crumbles">
+          <div class="row"><span class="name">Brussels Sprouts (GF)</span><span class="price">$11.95</span></div>
+          <p class="desc">Flash-fried Brussels sprouts with bacon crumbles</p>
+        </li>
+        <li data-q="velvet pb snackers (v) a shareable childhood favorite with detroit&#39;s own velvet peanut butter (smooth or crunchy) and raspberry jam served on grilled sourdough bites, served with sliced green apple">
+          <div class="row"><span class="name">Velvet PB Snackers (V)</span><span class="price">$9.95</span></div>
+          <p class="desc">A shareable childhood favorite with Detroit&#39;s own Velvet peanut butter (smooth or crunchy) and raspberry jam served on grilled sourdough bites, served with sliced green apple</p>
+        </li></ul>
+    </section>
+    <section id="soups-salads" class="sec">
+      <h2>Soups &amp; Salads</h2>
+      
+      <ul>
+        <li data-q="clam chowder house-made new england-style, baby clams, potatoes, shredded carrots, and celery">
+          <div class="row"><span class="name">Clam Chowder</span><span class="price">$6.95</span></div>
+          <p class="desc">House-made New England-style, baby clams, potatoes, shredded carrots, and celery</p>
+        </li>
+        <li data-q="belgian onion soup house-made onion soup with sliced baguette, topped with holland cheese">
+          <div class="row"><span class="name">Belgian Onion Soup</span><span class="price">$8.95</span></div>
+          <p class="desc">House-made onion soup with sliced baguette, topped with Holland cheese</p>
+        </li>
+        <li data-q="cadieux house salad (v) cucumbers, red onions, cherry tomatoes, croutons, with your choice of dressing. add a protein: steak tips 9, salmon 8, chicken tenders 7">
+          <div class="row"><span class="name">Cadieux House Salad (V)</span><span class="price">$7.95</span></div>
+          <p class="desc">Cucumbers, red onions, cherry tomatoes, croutons, with your choice of dressing. Add a protein: steak tips 9, salmon 8, chicken tenders 7</p>
+        </li>
+        <li data-q="salmon salad (gf) 5oz seared salmon, dried cherries, pistachios, red onion, holland cheese, and a cherry vinaigrette dressing">
+          <div class="row"><span class="name">Salmon Salad (GF)</span><span class="price">$17.95</span></div>
+          <p class="desc">5oz Seared salmon, dried cherries, pistachios, red onion, Holland cheese, and a cherry vinaigrette dressing</p>
+        </li></ul>
+    </section>
+    <section id="sandwiches" class="sec">
+      <h2>Sandwiches</h2>
+      <p class="note">Sandwiches served with pickles, and pommes frites or cole slaw. Proudly using Metropolitan Baking Co. Bread (Kordas Family). Gluten-free bread and buns available for 1.00</p>
+      <ul>
+        <li data-q="certified piedmontese burger 1/2 lb. certified peidmontese beef with lettuce, tomato, and onion, served on a brioche bun. add cheese or bacon for an additional 1.00 each">
+          <div class="row"><span class="name">Certified Piedmontese Burger</span><span class="price">$17.95</span></div>
+          <p class="desc">1/2 lb. Certified Peidmontese beef with lettuce, tomato, and onion, served on a brioche bun. Add cheese or bacon for an additional 1.00 each</p>
+        </li>
+        <li data-q="cadieux burger 1/2 lb. fairway packing co. chophouse burger with lettuce, tomato, and onion, served on a bricohe bun. add cheese or bacon for an additional 1.00 each">
+          <div class="row"><span class="name">Cadieux Burger</span><span class="price">$15.95</span></div>
+          <p class="desc">1/2 lb. Fairway Packing Co. Chophouse burger with lettuce, tomato, and onion, served on a bricohe bun. Add cheese or bacon for an additional 1.00 each</p>
+        </li>
+        <li data-q="holland patty melt fairway packing co. chophouse burger with sautéed onions and melted holland cheese, served on grilled rye bread">
+          <div class="row"><span class="name">Holland Patty Melt</span><span class="price">$15.95</span></div>
+          <p class="desc">Fairway Packing Co. Chophouse burger with sautéed onions and melted Holland cheese, served on grilled rye bread</p>
+        </li>
+        <li data-q="vegetarian beyond® burger (v) plant-based patty with lettuce, tomato, and onion, served on a brioche bun. add cheese or bacon for an additional 1.00 each">
+          <div class="row"><span class="name">Vegetarian Beyond® Burger (V)</span><span class="price">$15.95</span></div>
+          <p class="desc">Plant-based patty with lettuce, tomato, and onion, served on a brioche bun. Add cheese or bacon for an additional 1.00 each</p>
+        </li>
+        <li data-q="chicken sandwich house-made fried chicken sandwich, tossed in &quot;the sauce&quot;, joe&#39;s secret mix of sweet, spicy, and savory all in one, served with kewpie mayo, lettuce, tomato, and pickled onions on brioche bun">
+          <div class="row"><span class="name">Chicken Sandwich</span><span class="price">$15.95</span></div>
+          <p class="desc">House-made fried chicken sandwich, tossed in &quot;The Sauce&quot;, Joe&#39;s secret mix of sweet, spicy, and savory all in one, served with Kewpie mayo, lettuce, tomato, and pickled onions on brioche bun</p>
+        </li>
+        <li data-q="fish sandwich beer battered icelandic cod with lettuce, tomato, onion, and tartar sauce, served on a brioche bun. add cheese for 1.00">
+          <div class="row"><span class="name">Fish Sandwich</span><span class="price">$14.95</span></div>
+          <p class="desc">Beer battered Icelandic cod with lettuce, tomato, onion, and tartar sauce, served on a brioche bun. Add cheese for 1.00</p>
+        </li>
+        <li data-q="peter paul reuben corned beef, sauerkraut, and melted holland cheese, piled on grilled rye bread">
+          <div class="row"><span class="name">Peter Paul Reuben</span><span class="price">$14.95</span></div>
+          <p class="desc">Corned beef, sauerkraut, and melted Holland cheese, piled on grilled rye bread</p>
+        </li>
+        <li data-q="fried mussel po&#39; boy mussels dusted in a cajun flour, flash fried, and piled on a sub bun, topped with lettuce, tomato, onions and spicy mayo">
+          <div class="row"><span class="name">Fried Mussel Po&#39; Boy</span><span class="price">$14.95</span></div>
+          <p class="desc">Mussels dusted in a Cajun flour, flash fried, and piled on a sub bun, topped with lettuce, tomato, onions and spicy mayo</p>
+        </li>
+        <li data-q="portobello mushroom sandwich (v) sautéed portobello mushrooms with holland cheese, lettuce, tomato, and onion, served on a brioche bun">
+          <div class="row"><span class="name">Portobello Mushroom Sandwich (V)</span><span class="price">$14.95</span></div>
+          <p class="desc">Sautéed portobello mushrooms with Holland cheese, lettuce, tomato, and onion, served on a brioche bun</p>
+        </li>
+        <li data-q="cc blt bacon, lettuce, and tomato served on grilled sourdough with spicy mayo, garlic mayo, or horseradish mayo">
+          <div class="row"><span class="name">CC BLT</span><span class="price">$12.95</span></div>
+          <p class="desc">Bacon, lettuce, and tomato served on grilled sourdough with spicy mayo, garlic mayo, or horseradish mayo</p>
+        </li>
+        <li data-q="cc velvet pb&amp;j (v) your childhood favorite with detroit&#39;s own velvet peanut butter (smooth or crunchy) and raspberry jam served on grilled sourdough bread">
+          <div class="row"><span class="name">CC Velvet PB&amp;J (V)</span><span class="price">$10.95</span></div>
+          <p class="desc">Your childhood favorite with Detroit&#39;s own Velvet peanut butter (smooth or crunchy) and raspberry jam served on grilled sourdough bread</p>
+        </li>
+        <li data-q="griled three-cheese sandwich (v) holland, american, and cheddar cheese served on sourdough. add bacon, tomato, or onions for an additional 1.00 each">
+          <div class="row"><span class="name">Griled Three-Cheese Sandwich (V)</span><span class="price">$9.95</span></div>
+          <p class="desc">Holland, American, and cheddar cheese served on sourdough. Add bacon, tomato, or onions for an additional 1.00 each</p>
+        </li></ul>
+    </section>
+    <section id="belgian-specialties" class="sec">
+      <h2>Belgian Specialties</h2>
+      
+      <ul>
+        <li data-q="steak tip dinner angus beef tips, marinated in cadieux&#39;s belgian zip sauce, topped with onion rings, served with spinach mashed potatoes and seasonal vegetable">
+          <div class="row"><span class="name">Steak Tip Dinner</span><span class="price">$23.95</span></div>
+          <p class="desc">Angus beef tips, marinated in Cadieux&#39;s Belgian zip sauce, topped with onion rings, served with spinach mashed potatoes and seasonal vegetable</p>
+        </li>
+        <li data-q="belgian rabbit farm-raised, red wine braised rabbit, served with spinach mashed potatoes and cadieux&#39;s famous braised red cabbage">
+          <div class="row"><span class="name">Belgian Rabbit</span><span class="price">$23.95</span></div>
+          <p class="desc">Farm-raised, red wine braised rabbit, served with spinach mashed potatoes and Cadieux&#39;s famous braised red cabbage</p>
+        </li>
+        <li data-q="feather bowler&#39;s fish &amp; chips a cadieux café classic! icelandic cod fillets dipped in our own feather bowler&#39;s belgian ale beer batter and deep-fried to a golden brown, served with pommes frites and coleslaw">
+          <div class="row"><span class="name">Feather Bowler&#39;s Fish &amp; Chips</span><span class="price">$17.95</span></div>
+          <p class="desc">A Cadieux Café classic! Icelandic cod fillets dipped in our own Feather Bowler&#39;s Belgian Ale beer batter and deep-fried to a golden brown, served with pommes frites and coleslaw</p>
+        </li>
+        <li data-q="belgian beer stew a hearty beef stew, served with baguette, featuring westmalle dubbel belgian ale, created by the trappist monks at the abbey of our lady of the sacred heart (westmalle abbey) in malle, belgium">
+          <div class="row"><span class="name">Belgian Beer Stew</span><span class="price">$16.95</span></div>
+          <p class="desc">A hearty beef stew, served with baguette, featuring Westmalle Dubbel Belgian Ale, created by the Trappist Monks at the Abbey of Our Lady of the Sacred Heart (Westmalle Abbey) in Malle, Belgium</p>
+        </li>
+        <li data-q="belgian sausage (gf) specially made for cadieux café, served with spinach mashed potatoes and red cabbage with onion gravy">
+          <div class="row"><span class="name">Belgian Sausage (GF)</span><span class="price">$16.95</span></div>
+          <p class="desc">Specially made for Cadieux Café, served with spinach mashed potatoes and red cabbage with onion gravy</p>
+        </li>
+        <li data-q="belgian dip roast beef sandwich with holland cheese, and sauteed onions, served on a sub bun with au jus and pommes frites">
+          <div class="row"><span class="name">Belgian Dip</span><span class="price">$15.95</span></div>
+          <p class="desc">Roast beef sandwich with Holland cheese, and sauteed onions, served on a sub bun with au jus and pommes frites</p>
+        </li></ul>
+    </section>
+    <section id="mussel-dinners-gf" class="sec">
+      <h2>Mussel Dinners (GF)</h2>
+      <p class="note">Generous portion of PEI mussels (over 2lbs) topped with baguette, and your choice of pommes frites, spinach mashed potatoes, cole slaw, or seasonal vegetable. Mussel milk and hot mustard available upon request. Small portions available for 17.95</p>
+      <ul>
+        <li data-q="mussels citroen mussels steamed in garlic lemon butter and dill broth">
+          <div class="row"><span class="name">Mussels Citroen</span><span class="price">$23.95</span></div>
+          <p class="desc">Mussels steamed in garlic lemon butter and dill broth</p>
+        </li>
+        <li data-q="robert&#39;s spicy mussels mussels steamed in a spicy basil broth">
+          <div class="row"><span class="name">Robert&#39;s Spicy Mussels</span><span class="price">$23.95</span></div>
+          <p class="desc">Mussels steamed in a spicy basil broth</p>
+        </li>
+        <li data-q="mussels forte dei marmi a popular favorite – mussels in garlic, white wine, and olive oil">
+          <div class="row"><span class="name">Mussels Forte Dei Marmi</span><span class="price">$23.95</span></div>
+          <p class="desc">A popular favorite – mussels in garlic, white wine, and olive oil</p>
+        </li></ul>
+    </section>
+    <section id="sides" class="sec">
+      <h2>Sides</h2>
+      
+      <ul>
+        <li data-q="housemade coleslaw (gf, v) ">
+          <div class="row"><span class="name">Housemade Coleslaw (GF, V)</span><span class="price">$3.95</span></div>
+          
+        </li>
+        <li data-q="seasonal vegetable or red cabbage (gf, v) ">
+          <div class="row"><span class="name">Seasonal Vegetable or Red Cabbage (GF, V)</span><span class="price">$3.95</span></div>
+          
+        </li>
+        <li data-q="regular or spinach mashed potatoes (gf, v) ">
+          <div class="row"><span class="name">Regular or Spinach Mashed Potatoes (GF, V)</span><span class="price">$3.95</span></div>
+          
+        </li>
+        <li data-q="bread service with melted garlic butter (v) ">
+          <div class="row"><span class="name">Bread Service with Melted Garlic Butter (V)</span><span class="price">$5.95</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="desserts" class="sec">
+      <h2>Desserts</h2>
+      
+      <ul>
+        <li data-q="ray&#39;s ice cream puff sundae mini cream puffs atop chocolate, french vanilla, or peanut butter chocolate ice cream with hot fudge or chocolate sauce, whipped cream, and a cherry on top">
+          <div class="row"><span class="name">Ray&#39;s Ice Cream Puff Sundae</span><span class="price">$9.95</span></div>
+          <p class="desc">Mini cream puffs atop chocolate, French vanilla, or peanut butter chocolate ice cream with hot fudge or chocolate sauce, whipped cream, and a cherry on top</p>
+        </li>
+        <li data-q="oliebollen mini flemish biegnets freshly cooked and served with chocolate sauce, sugar, and cinnamon for dipping">
+          <div class="row"><span class="name">Oliebollen</span><span class="price">$8.95</span></div>
+          <p class="desc">Mini Flemish biegnets freshly cooked and served with chocolate sauce, sugar, and cinnamon for dipping</p>
+        </li>
+        <li data-q="macarons (gf) french-style macarons that melt in your mouth. choose from vanilla, chocolate, rasberry, salted caramel">
+          <div class="row"><span class="name">Macarons (GF)</span><span class="price">$8.95</span></div>
+          <p class="desc">French-style macarons that melt in your mouth. Choose from vanilla, chocolate, rasberry, salted caramel</p>
+        </li>
+        <li data-q="ray&#39;s ice cream sundae (gf) chocolate, french vanilla, or peanut butter chocolate ice cream with hot fudge or chocolate sauce, whipped cream, and a cherry on top">
+          <div class="row"><span class="name">Ray&#39;s Ice Cream Sundae (GF)</span><span class="price">$7.95</span></div>
+          <p class="desc">Chocolate, French vanilla, or peanut butter chocolate ice cream with hot fudge or chocolate sauce, whipped cream, and a cherry on top</p>
+        </li>
+        <li data-q="sprecher float (gf) a bottle of milwaukee&#39;s famous sprecher soda poured over chocolate or french vanilla ice cream. choose from black cherry, cream soda, orange cream, or root beer">
+          <div class="row"><span class="name">Sprecher Float (GF)</span><span class="price">$6.95</span></div>
+          <p class="desc">A bottle of Milwaukee&#39;s famous Sprecher soda poured over chocolate or French vanilla ice cream. Choose from Black Cherry, Cream Soda, Orange Cream, or Root Beer</p>
+        </li></ul>
+    </section>
+    <section id="beer-belgium" class="sec">
+      <h2>Beer - Belgium</h2>
+      
+      <ul>
+        <li data-q="barista chocolate quad 11% abv">
+          <div class="row"><span class="name">Barista Chocolate Quad</span><span class="price">$12</span></div>
+          <p class="desc">11% ABV</p>
+        </li>
+        <li data-q="bavik pilsner 5.2% abv">
+          <div class="row"><span class="name">Bavik Pilsner</span><span class="price">$8</span></div>
+          <p class="desc">5.2% ABV</p>
+        </li>
+        <li data-q="bavik super wit 5% abv">
+          <div class="row"><span class="name">Bavik Super Wit</span><span class="price">$9</span></div>
+          <p class="desc">5% ABV</p>
+        </li>
+        <li data-q="chimay cent cinquante 330ml 10% abv">
+          <div class="row"><span class="name">Chimay Cent Cinquante 330ml</span><span class="price">$16</span></div>
+          <p class="desc">10% ABV</p>
+        </li>
+        <li data-q="chimay cinq cents 330ml tripel 8% abv">
+          <div class="row"><span class="name">Chimay Cinq Cents 330ml</span><span class="price">$13</span></div>
+          <p class="desc">Tripel 8% ABV</p>
+        </li>
+        <li data-q="chimay grande reserve 330ml strong dark ale 9% abv">
+          <div class="row"><span class="name">Chimay Grande Reserve 330ml</span><span class="price">$14</span></div>
+          <p class="desc">Strong Dark Ale 9% ABV</p>
+        </li>
+        <li data-q="chimay red 330ml dubbel 7% abv">
+          <div class="row"><span class="name">Chimay Red 330ml</span><span class="price">$12</span></div>
+          <p class="desc">Dubbel 7% ABV</p>
+        </li>
+        <li data-q="cuvee de jacobins rouge flemish sour ale 5.5% abv">
+          <div class="row"><span class="name">Cuvee de Jacobins Rouge</span><span class="price">$12</span></div>
+          <p class="desc">Flemish Sour Ale 5.5% ABV</p>
+        </li>
+        <li data-q="delirium tremens strong golden ale 8.5% abv">
+          <div class="row"><span class="name">Delirium Tremens</span><span class="price">$13</span></div>
+          <p class="desc">Strong Golden Ale 8.5% ABV</p>
+        </li>
+        <li data-q="delirium nocturnum strong dark ale 8.5% abv">
+          <div class="row"><span class="name">Delirium Nocturnum</span><span class="price">$13</span></div>
+          <p class="desc">Strong Dark Ale 8.5% ABV</p>
+        </li>
+        <li data-q="duchesse de bourgogne flemish red ale 6.2% abv">
+          <div class="row"><span class="name">Duchesse de Bourgogne</span><span class="price">$12</span></div>
+          <p class="desc">Flemish Red Ale 6.2% ABV</p>
+        </li>
+        <li data-q="duvel strong golden ale 8.5% abv">
+          <div class="row"><span class="name">Duvel</span><span class="price">$12</span></div>
+          <p class="desc">Strong Golden Ale 8.5% ABV</p>
+        </li>
+        <li data-q="leffe blonde 6.6% abv">
+          <div class="row"><span class="name">Leffe</span><span class="price">$10</span></div>
+          <p class="desc">Blonde 6.6% ABV</p>
+        </li>
+        <li data-q="lindeman&#39;s framboise lambic 2.5% abv">
+          <div class="row"><span class="name">Lindeman&#39;s Framboise</span><span class="price">$15</span></div>
+          <p class="desc">Lambic 2.5% ABV</p>
+        </li>
+        <li data-q="lindeman&#39;s kriek cherry lambic 3.5% abv">
+          <div class="row"><span class="name">Lindeman&#39;s Kriek</span><span class="price">$15</span></div>
+          <p class="desc">Cherry Lambic 3.5% ABV</p>
+        </li>
+        <li data-q="orval pale ale 6.2% abv">
+          <div class="row"><span class="name">Orval</span><span class="price">$13</span></div>
+          <p class="desc">Pale Ale 6.2% ABV</p>
+        </li>
+        <li data-q="petrus sour 7.3% abv">
+          <div class="row"><span class="name">Petrus</span><span class="price">$12</span></div>
+          <p class="desc">Sour 7.3% ABV</p>
+        </li>
+        <li data-q="piraat strong golden ale 10.5% abv">
+          <div class="row"><span class="name">Piraat</span><span class="price">$12</span></div>
+          <p class="desc">Strong Golden Ale 10.5% ABV</p>
+        </li>
+        <li data-q="st. bernardus abt 12 quadrupel 10% abv">
+          <div class="row"><span class="name">St. Bernardus Abt 12</span><span class="price">$13</span></div>
+          <p class="desc">Quadrupel 10% ABV</p>
+        </li>
+        <li data-q="trappistes rochefort 6 golden ipa 7.5% abv">
+          <div class="row"><span class="name">Trappistes Rochefort 6</span><span class="price">$12</span></div>
+          <p class="desc">Golden IPA 7.5% ABV</p>
+        </li>
+        <li data-q="trappistes rochefort 8 dubbel 9.2% abv">
+          <div class="row"><span class="name">Trappistes Rochefort 8</span><span class="price">$13</span></div>
+          <p class="desc">Dubbel 9.2% ABV</p>
+        </li>
+        <li data-q="trappistes rochefort 10 quadrupel 11.3% abv">
+          <div class="row"><span class="name">Trappistes Rochefort 10</span><span class="price">$14</span></div>
+          <p class="desc">Quadrupel 11.3% ABV</p>
+        </li>
+        <li data-q="tripel karmeliet 8.4% abv">
+          <div class="row"><span class="name">Tripel Karmeliet</span><span class="price">$12</span></div>
+          <p class="desc">8.4% ABV</p>
+        </li>
+        <li data-q="westmalle dubbel 7% abv">
+          <div class="row"><span class="name">Westmalle Dubbel</span><span class="price">$13</span></div>
+          <p class="desc">7% ABV</p>
+        </li>
+        <li data-q="westmalle tripel 9.5% abv">
+          <div class="row"><span class="name">Westmalle Tripel</span><span class="price">$14</span></div>
+          <p class="desc">9.5% ABV</p>
+        </li></ul>
+    </section>
+    <section id="beer-europe" class="sec">
+      <h2>Beer - Europe</h2>
+      
+      <ul>
+        <li data-q="boddington&#39;s pub ale 500ml england">
+          <div class="row"><span class="name">Boddington&#39;s Pub Ale 500ml</span><span class="price">$7</span></div>
+          <p class="desc">England</p>
+        </li>
+        <li data-q="heineken netherlands">
+          <div class="row"><span class="name">Heineken</span><span class="price">$6</span></div>
+          <p class="desc">Netherlands</p>
+        </li>
+        <li data-q="schneider aventinus 500ml germany">
+          <div class="row"><span class="name">Schneider Aventinus 500ml</span><span class="price">$12</span></div>
+          <p class="desc">Germany</p>
+        </li>
+        <li data-q="schneider weisse 500ml germany">
+          <div class="row"><span class="name">Schneider Weisse 500ml</span><span class="price">$12</span></div>
+          <p class="desc">Germany</p>
+        </li>
+        <li data-q="tennent&#39;s lager scotland">
+          <div class="row"><span class="name">Tennent&#39;s Lager</span><span class="price">$7</span></div>
+          <p class="desc">Scotland</p>
+        </li>
+        <li data-q="weihenstephaner hefe 500ml germany">
+          <div class="row"><span class="name">Weihenstephaner Hefe 500ml</span><span class="price">$12</span></div>
+          <p class="desc">Germany</p>
+        </li></ul>
+    </section>
+    <section id="beer-domestic" class="sec">
+      <h2>Beer - Domestic</h2>
+      
+      <ul>
+        <li data-q="bud light ">
+          <div class="row"><span class="name">Bud Light</span><span class="price">$4</span></div>
+          
+        </li>
+        <li data-q="budweiser ">
+          <div class="row"><span class="name">Budweiser</span><span class="price">$4</span></div>
+          
+        </li>
+        <li data-q="coors light ">
+          <div class="row"><span class="name">Coors Light</span><span class="price">$4</span></div>
+          
+        </li>
+        <li data-q="hamm&#39;s ">
+          <div class="row"><span class="name">Hamm&#39;s</span><span class="price">$3.50</span></div>
+          
+        </li>
+        <li data-q="michelob ultra ">
+          <div class="row"><span class="name">Michelob Ultra</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="miller high life ">
+          <div class="row"><span class="name">Miller High Life</span><span class="price">$4</span></div>
+          
+        </li>
+        <li data-q="miller lite ">
+          <div class="row"><span class="name">Miller Lite</span><span class="price">$4</span></div>
+          
+        </li>
+        <li data-q="narraganset ">
+          <div class="row"><span class="name">Narraganset</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="pabst blue ribbon ">
+          <div class="row"><span class="name">Pabst Blue Ribbon</span><span class="price">$4</span></div>
+          
+        </li>
+        <li data-q="sam adams boston lager ">
+          <div class="row"><span class="name">Sam Adams Boston Lager</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="stroh&#39;s detroit lager ">
+          <div class="row"><span class="name">Stroh&#39;s Detroit Lager</span><span class="price">$4</span></div>
+          
+        </li>
+        <li data-q="yuengling lager ">
+          <div class="row"><span class="name">Yuengling Lager</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="yuengling black &amp; tan ">
+          <div class="row"><span class="name">Yuengling Black &amp; Tan</span><span class="price">$5</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="beer-michigan" class="sec">
+      <h2>Beer - Michigan</h2>
+      
+      <ul>
+        <li data-q="atwater dirty blonde ">
+          <div class="row"><span class="name">Atwater Dirty Blonde</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="bell&#39;s amber ">
+          <div class="row"><span class="name">Bell&#39;s Amber</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="bell&#39;s hazy hearted ">
+          <div class="row"><span class="name">Bell&#39;s Hazy Hearted</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="bell&#39;s two hearted ">
+          <div class="row"><span class="name">Bell&#39;s Two Hearted</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="short&#39;s soft parade ">
+          <div class="row"><span class="name">Short&#39;s Soft Parade</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="velvet peanut butter porter ">
+          <div class="row"><span class="name">Velvet Peanut Butter Porter</span><span class="price">$6</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="beer-canada" class="sec">
+      <h2>Beer - Canada</h2>
+      
+      <ul>
+        <li data-q="labatt blue ">
+          <div class="row"><span class="name">Labatt Blue</span><span class="price">$4</span></div>
+          
+        </li>
+        <li data-q="labatt blue light ">
+          <div class="row"><span class="name">Labatt Blue Light</span><span class="price">$4</span></div>
+          
+        </li>
+        <li data-q="la fin du monde ">
+          <div class="row"><span class="name">La Fin du Monde</span><span class="price">$9</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="beer-mexico" class="sec">
+      <h2>Beer - Mexico</h2>
+      
+      <ul>
+        <li data-q="corona ">
+          <div class="row"><span class="name">Corona</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="dos equis ">
+          <div class="row"><span class="name">Dos Equis</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="modelo ">
+          <div class="row"><span class="name">Modelo</span><span class="price">$6</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="cider" class="sec">
+      <h2>Cider</h2>
+      
+      <ul>
+        <li data-q="blake&#39;s el chavo ">
+          <div class="row"><span class="name">Blake&#39;s El Chavo</span><span class="price">$7</span></div>
+          
+        </li>
+        <li data-q="rekorderlig blood orange, pear, strawberry/lime, wildberry">
+          <div class="row"><span class="name">Rekorderlig</span><span class="price">$7</span></div>
+          <p class="desc">Blood Orange, Pear, Strawberry/Lime, Wildberry</p>
+        </li>
+        <li data-q="uncle john&#39;s apple blueberry hard cider ">
+          <div class="row"><span class="name">Uncle John&#39;s Apple Blueberry Hard Cider</span><span class="price">$8</span></div>
+          
+        </li>
+        <li data-q="uncle john&#39;s apple hard cider ">
+          <div class="row"><span class="name">Uncle John&#39;s Apple Hard Cider</span><span class="price">$8</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="non-alcoholic-beer" class="sec">
+      <h2>Non-Alcoholic Beer</h2>
+      
+      <ul>
+        <li data-q="blue moon n/a ">
+          <div class="row"><span class="name">Blue Moon N/A</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="guinness n/a ">
+          <div class="row"><span class="name">Guinness N/A</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="heineken 0.0 ">
+          <div class="row"><span class="name">Heineken 0.0</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="labatt n/a ">
+          <div class="row"><span class="name">Labatt N/A</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="lagunitas hoppy refresher ">
+          <div class="row"><span class="name">Lagunitas Hoppy Refresher</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="michelob ultra n/a ">
+          <div class="row"><span class="name">Michelob Ultra N/A</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="stella artois n/a ">
+          <div class="row"><span class="name">Stella Artois N/A</span><span class="price">$6</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="on-draft" class="sec">
+      <h2>On Draft</h2>
+      <p class="note">Subject to availability, ask your server for details</p>
+      <ul>
+        <li data-q="bavik pilsner ">
+          <div class="row"><span class="name">Bavik Pilsner</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$7</b></span><span class="pp"><span class="pl">Pitcher</span> <b>$26</b></span></div>
+        </li>
+        <li data-q="bell&#39;s two hearted ">
+          <div class="row"><span class="name">Bell&#39;s Two Hearted</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$6</b></span><span class="pp"><span class="pl">Pitcher</span> <b>$23</b></span></div>
+        </li>
+        <li data-q="blue moon ">
+          <div class="row"><span class="name">Blue Moon</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$7</b></span><span class="pp"><span class="pl">Pitcher</span> <b>$26</b></span></div>
+        </li>
+        <li data-q="grand armory wheezin&#39; the juice ipa ">
+          <div class="row"><span class="name">Grand Armory Wheezin&#39; the Juice IPA</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$7</b></span><span class="pp"><span class="pl">Pitcher</span> <b>$26</b></span></div>
+        </li>
+        <li data-q="guinness ">
+          <div class="row"><span class="name">Guinness</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$7</b></span><span class="pp"><span class="pl">Pitcher</span> <b>$26</b></span></div>
+        </li>
+        <li data-q="hoegaarden ">
+          <div class="row"><span class="name">Hoegaarden</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$7</b></span><span class="pp"><span class="pl">Pitcher</span> <b>$26</b></span></div>
+        </li>
+        <li data-q="la fin du monde ">
+          <div class="row"><span class="name">La Fin du Monde</span><span class="price">$9</span></div>
+          
+        </li>
+        <li data-q="miller lite ">
+          <div class="row"><span class="name">Miller Lite</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$4</b></span><span class="pp"><span class="pl">Pitcher</span> <b>$14</b></span></div>
+        </li>
+        <li data-q="stella artois ">
+          <div class="row"><span class="name">Stella Artois</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$7</b></span><span class="pp"><span class="pl">Pitcher</span> <b>$26</b></span></div>
+        </li>
+        <li data-q="yuengling lager ">
+          <div class="row"><span class="name">Yuengling Lager</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$5</b></span><span class="pp"><span class="pl">Pitcher</span> <b>$16</b></span></div>
+        </li>
+        <li data-q="cadieux cafe&#39;s feather bowler&#39;s belgian dubbel ">
+          <div class="row"><span class="name">Cadieux Cafe&#39;s Feather Bowler&#39;s Belgian Dubbel</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$7</b></span><span class="pp"><span class="pl">Pitcher</span> <b>$26</b></span></div>
+        </li></ul>
+    </section>
+    <section id="wines-and-seltzers-bubbles-by-the-bottle" class="sec">
+      <h2>Wines and Seltzers - Bubbles by the Bottle</h2>
+      
+      <ul>
+        <li data-q="mawby &#39;sex&#39; brut rosé leelanau peninsula, michigan">
+          <div class="row"><span class="name">Mawby &#39;Sex&#39; Brut Rosé</span><span class="price">Split | $11</span></div>
+          <p class="desc">Leelanau Peninsula, Michigan</p>
+        </li>
+        <li data-q="blu dot farm party girl rosé charlevoix, michigan">
+          <div class="row"><span class="name">Blu Dot Farm Party Girl Rosé</span></div>
+          <p class="desc">Charlevoix, Michigan</p><div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$11</b></span><span class="pp"><span class="pl">Bottle</span> <b>$35</b></span></div>
+        </li>
+        <li data-q="blu dot farm party girl brut charlevoix, michigan">
+          <div class="row"><span class="name">Blu Dot Farm Party Girl Brut</span></div>
+          <p class="desc">Charlevoix, Michigan</p><div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$11</b></span><span class="pp"><span class="pl">Bottle</span> <b>$35</b></span></div>
+        </li>
+        <li data-q="veuve clicquot &#39;yellow label&#39; brut champagne, france">
+          <div class="row"><span class="name">Veuve Clicquot &#39;Yellow Label&#39; Brut</span><span class="price">Bottle | $85</span></div>
+          <p class="desc">Champagne, France</p>
+        </li></ul>
+    </section>
+    <section id="wines-white" class="sec">
+      <h2>Wines - White</h2>
+      
+      <ul>
+        <li data-q="borgo maragliano moscato d&#39;asti piedmont, italy. bubbly and sweet">
+          <div class="row"><span class="name">Borgo Maragliano Moscato d&#39;Asti</span></div>
+          <p class="desc">Piedmont, Italy. Bubbly and sweet</p><div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$11</b></span><span class="pp"><span class="pl">Bottle</span> <b>$35</b></span></div>
+        </li>
+        <li data-q="cantina colli euganei pinot grigio veneto, italy. fresh fruit and volcanic minerality">
+          <div class="row"><span class="name">Cantina Colli Euganei Pinot Grigio</span></div>
+          <p class="desc">Veneto, Italy. Fresh fruit and volcanic minerality</p><div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$10</b></span><span class="pp"><span class="pl">Bottle</span> <b>$35</b></span></div>
+        </li>
+        <li data-q="mohua sauvignon blanc marlborough, new zealand. bright, zesty, and crisp">
+          <div class="row"><span class="name">Mohua Sauvignon Blanc</span></div>
+          <p class="desc">Marlborough, New Zealand. Bright, zesty, and crisp</p><div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$11</b></span><span class="pp"><span class="pl">Bottle</span> <b>$35</b></span></div>
+        </li>
+        <li data-q="bishop&#39;s peak chardonnay san luis obispo county, california. juicy melon, minerality, flowers">
+          <div class="row"><span class="name">Bishop&#39;s Peak Chardonnay</span></div>
+          <p class="desc">San Luis Obispo County, California. Juicy melon, minerality, flowers</p><div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$13</b></span><span class="pp"><span class="pl">Bottle</span> <b>$40</b></span></div>
+        </li>
+        <li data-q="kendall jackson chardonnay santa rosa, california">
+          <div class="row"><span class="name">Kendall Jackson Chardonnay</span></div>
+          <p class="desc">Santa Rosa, California</p><div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$11</b></span><span class="pp"><span class="pl">Bottle</span> <b>$35</b></span></div>
+        </li></ul>
+    </section>
+    <section id="wines-red" class="sec">
+      <h2>Wines - Red</h2>
+      
+      <ul>
+        <li data-q="the fableist pinot noir santa barbara county, california. red berries, herbs, and spices">
+          <div class="row"><span class="name">The Fableist Pinot Noir</span></div>
+          <p class="desc">Santa Barbara County, California. Red berries, herbs, and spices</p><div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$15</b></span><span class="pp"><span class="pl">Bottle</span> <b>$45</b></span></div>
+        </li>
+        <li data-q="vina robles cabernet sauvignon paso robles, california. juicy black fruit, mocha, and tobacco">
+          <div class="row"><span class="name">Vina Robles Cabernet Sauvignon</span></div>
+          <p class="desc">Paso Robles, California. Juicy black fruit, mocha, and tobacco</p><div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$15</b></span><span class="pp"><span class="pl">Bottle</span> <b>$45</b></span></div>
+        </li>
+        <li data-q="house wine - chardonnay or merlot ">
+          <div class="row"><span class="name">House Wine - Chardonnay or Merlot</span><span class="price">Glass | $7</span></div>
+          
+        </li>
+        <li data-q="after dinner - croft reserve tawny port roêda, portugal">
+          <div class="row"><span class="name">After Dinner - Croft Reserve Tawny Port</span><span class="price">Glass | $8</span></div>
+          <p class="desc">Roêda, Portugal</p>
+        </li></ul>
+    </section>
+    <section id="other-beverages" class="sec">
+      <h2>Other Beverages</h2>
+      
+      <ul>
+        <li data-q="finnish long drink ">
+          <div class="row"><span class="name">Finnish Long Drink</span><span class="price">$7</span></div>
+          
+        </li>
+        <li data-q="high noon assorted ">
+          <div class="row"><span class="name">High Noon Assorted</span><span class="price">$7</span></div>
+          
+        </li>
+        <li data-q="surfside ">
+          <div class="row"><span class="name">Surfside</span><span class="price">$7</span></div>
+          
+        </li>
+        <li data-q="suncruiser classic and lemonade iced tea">
+          <div class="row"><span class="name">Suncruiser</span><span class="price">$7</span></div>
+          <p class="desc">Classic and lemonade iced tea</p>
+        </li>
+        <li data-q="spiked ade lemon-lime and electric orange">
+          <div class="row"><span class="name">Spiked Ade</span><span class="price">$7</span></div>
+          <p class="desc">Lemon-lime and electric orange</p>
+        </li>
+        <li data-q="white claw assorted ">
+          <div class="row"><span class="name">White Claw Assorted</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="red bull ">
+          <div class="row"><span class="name">Red Bull</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="red bull sugar free ">
+          <div class="row"><span class="name">Red Bull Sugar Free</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="yerba madre ">
+          <div class="row"><span class="name">Yerba Madre</span><span class="price">$7</span></div>
+          
+        </li>
+        <li data-q="sprecher sodas (gf) black cherry, cream soda, orange soda, root beer">
+          <div class="row"><span class="name">Sprecher Sodas (GF)</span><span class="price">$5</span></div>
+          <p class="desc">Black Cherry, Cream Soda, Orange Soda, Root Beer</p>
+        </li>
+        <li data-q="ginger beer ">
+          <div class="row"><span class="name">Ginger Beer</span><span class="price">$4</span></div>
+          
+        </li>
+        <li data-q="san pellegrino 500ml ">
+          <div class="row"><span class="name">San Pellegrino 500ml</span><span class="price">$7</span></div>
+          
+        </li>
+        <li data-q="acqua panna 1 ltr ">
+          <div class="row"><span class="name">Acqua Panna 1 ltr</span><span class="price">$9</span></div>
+          
+        </li>
+        <li data-q="café du monde coffee ">
+          <div class="row"><span class="name">Café du Monde Coffee</span><span class="price">$4</span></div>
+          
+        </li>
+        <li data-q="tea ">
+          <div class="row"><span class="name">Tea</span><span class="price">$4</span></div>
+          
+        </li>
+        <li data-q="coke products coke, diet coke, lemonade, 7-up, ginger-ale">
+          <div class="row"><span class="name">Coke Products</span></div>
+          <p class="desc">Coke, Diet Coke, Lemonade, 7-Up, Ginger-Ale</p><div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$3</b></span><span class="pp"><span class="pl">Pitcher</span> <b>$10</b></span></div>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>Please note: Ask your server about menu items that are cooked to order or served raw. Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness. Prices subject to change. 20% gratuity may be added to tables of 6 or more. Items marked with (V) are vegetarian friendly. Items marked (GF) are Gluten Free. Carry-out available. Join us for all-you-can-eat mussels on Mondays, 23.95. Beer &amp; wine available to go.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Cadieux Cafe.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Cadieux Cafe menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Awang Kitchen Menu</title>
+<meta name="description" content="Menu for Awang Kitchen, Elmhurst, Queens (Queens Blvd near Broadway).">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Awang Kitchen</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=84-05%20Queens%20Blvd%2C%20Ste%201C%2C%20Elmhurst%2C%20NY%2011373">84-05 Queens Blvd, Ste 1C, Elmhurst, NY 11373</a><a href="tel:3474929264">(347) 492-9264</a><span>Monday - Sunday 12PM - 10PM, open 7 days</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#appetizer-from-kitchen" data-sec="appetizer-from-kitchen">Appetizer From Kitchen</a><a href="#soup-entr-e" data-sec="soup-entr-e">Soup Entrée</a><a href="#mixed-entr-e" data-sec="mixed-entr-e">Mixed Entrée</a><a href="#vegetable-entr-e" data-sec="vegetable-entr-e">Vegetable Entrée</a><a href="#rice-and-noodles" data-sec="rice-and-noodles">Rice and Noodles</a><a href="#seafood-a-la-carte" data-sec="seafood-a-la-carte">Seafood A La Carte</a><a href="#meat-a-la-carte" data-sec="meat-a-la-carte">Meat A La Carte</a><a href="#poultry-a-la-carte" data-sec="poultry-a-la-carte">Poultry A La Carte</a><a href="#side-order" data-sec="side-order">Side Order</a><a href="#beverage" data-sec="beverage">Beverage</a><a href="#desserts" data-sec="desserts">Desserts</a><a href="#import-beer" data-sec="import-beer">Import Beer</a><a href="#hot-sake" data-sec="hot-sake">Hot Sake</a><a href="#wine" data-sec="wine">Wine</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="appetizer-from-kitchen" class="sec">
+      <h2>Appetizer From Kitchen</h2>
+      
+      <ul>
+        <li data-q="batagor / fried fish cake served with peanut sauce fried fish cake, tofu, wonton and egg served with peanut sauce.">
+          <div class="row"><span class="name">Batagor / Fried Fish Cake Served with Peanut Sauce</span><span class="price">$14.00</span></div>
+          <p class="desc">Fried fish cake, tofu, wonton and egg served with peanut sauce.</p>
+        </li>
+        <li data-q="cireng (aci goreng) / fried tapioca cake (5 pcs) fried tapioca cake with chili sauce on side.">
+          <div class="row"><span class="name">Cireng (Aci Goreng) / Fried Tapioca Cake (5 pcs)</span><span class="price">$9.00</span></div>
+          <p class="desc">Fried tapioca cake with chili sauce on side.</p>
+        </li>
+        <li data-q="cilok goreng / fried tapioca cake balls (15 pcs) fried tapioca cake balls with peanut sauce, sweet soy sauce and chili sauce.">
+          <div class="row"><span class="name">Cilok Goreng / Fried Tapioca Cake Balls (15 pcs)</span><span class="price">$9.00</span></div>
+          <p class="desc">Fried tapioca cake balls with peanut sauce, sweet soy sauce and chili sauce.</p>
+        </li>
+        <li data-q="pempek palembang (kapal selam) / fried savory fish cake deep fried savory fish cake (submarine style) with egg filling, served with spicy and sour sauce.">
+          <div class="row"><span class="name">Pempek Palembang (Kapal Selam) / Fried Savory Fish Cake</span><span class="price">$12.00</span></div>
+          <p class="desc">Deep fried savory fish cake (submarine style) with egg filling, served with spicy and sour sauce.</p>
+        </li>
+        <li data-q="pempek kulit / fried savory fish skin cake deep fried savory fish skin cake, served with spicy and sour sauce on the side.">
+          <div class="row"><span class="name">Pempek Kulit / Fried Savory Fish Skin Cake</span><span class="price">$10.00</span></div>
+          <p class="desc">Deep fried savory fish skin cake, served with spicy and sour sauce on the side.</p>
+        </li>
+        <li data-q="pempek combo / fried savory fish cake &amp; savory fish skin cake deep fried savory fish skin cake &amp; fried savory fish cake (submarine style) with egg filling, served with spicy and sour sauce.">
+          <div class="row"><span class="name">Pempek Combo / Fried Savory Fish Cake &amp; Savory Fish Skin Cake</span><span class="price">$18.00</span></div>
+          <p class="desc">Deep fried savory fish skin cake &amp; fried savory fish cake (submarine style) with egg filling, served with spicy and sour sauce.</p>
+        </li>
+        <li data-q="sate ayam / chicken satay (5 pcs) skewer grilled marinated chicken served with rice cake, peanut sauce and sweet soy sauce.">
+          <div class="row"><span class="name">Sate Ayam / Chicken Satay (5 pcs)</span><span class="price">$14.00</span></div>
+          <p class="desc">Skewer grilled marinated chicken served with rice cake, peanut sauce and sweet soy sauce.</p>
+        </li>
+        <li data-q="sate kambing / young goat satay (5 pcs) skewer grilled marinated young goat served with rice cake, tomatoes, shallots chilis and sweet soy sauce.">
+          <div class="row"><span class="name">Sate Kambing / Young Goat Satay (5 pcs)</span><span class="price">$19.00</span></div>
+          <p class="desc">Skewer grilled marinated young goat served with rice cake, tomatoes, shallots chilis and sweet soy sauce.</p>
+        </li>
+        <li data-q="sate kerang / clam satay (6 pcs) skewer grilled marinated clam served with rice cake, sweet soy sauce, tomatoes, shallots and chilis.">
+          <div class="row"><span class="name">Sate Kerang / Clam Satay (6 pcs)</span><span class="price">$12.00</span></div>
+          <p class="desc">Skewer grilled marinated clam served with rice cake, sweet soy sauce, tomatoes, shallots and chilis.</p>
+        </li>
+        <li data-q="tahu isi / stuffed fried tofu (2 pcs) deep fried stuffed tofu w/shrimps &amp; vegetables.">
+          <div class="row"><span class="name">Tahu Isi / Stuffed Fried Tofu (2 pcs)</span><span class="price">$9.00</span></div>
+          <p class="desc">Deep fried stuffed tofu w/shrimps &amp; vegetables.</p>
+        </li>
+        <li data-q="tahu gejrot / fried tofu spicy sauce fried tofu w/ palm sugar, chili, garlic, shallot &amp; tamarind.">
+          <div class="row"><span class="name">Tahu Gejrot / Fried Tofu Spicy Sauce</span><span class="price">$9.00</span></div>
+          <p class="desc">Fried tofu w/ palm sugar, chili, garlic, shallot &amp; tamarind.</p>
+        </li>
+        <li data-q="tempeh mendoan (2 pcs) half cook deep fried tempeh in lightly batter">
+          <div class="row"><span class="name">Tempeh Mendoan (2 pcs)</span><span class="price">$9.50</span></div>
+          <p class="desc">Half cook deep fried tempeh in lightly batter</p>
+        </li>
+        <li data-q="udang goreng tepung / popcorn shrimp deep fried shrimp in lightly batter with spicy mayonnaise.">
+          <div class="row"><span class="name">Udang Goreng Tepung / Popcorn Shrimp</span><span class="price">$17.00</span></div>
+          <p class="desc">Deep fried shrimp in lightly batter with spicy mayonnaise.</p>
+        </li>
+        <li data-q="kulit ayam goreng garing / fried crispy chicken skin deep fried chicken skin in lightly batter served with spicy mayonnaise.">
+          <div class="row"><span class="name">Kulit Ayam Goreng Garing / Fried Crispy Chicken Skin</span><span class="price">$11.00</span></div>
+          <p class="desc">Deep fried chicken skin in lightly batter served with spicy mayonnaise.</p>
+        </li></ul>
+    </section>
+    <section id="soup-entr-e" class="sec">
+      <h2>Soup Entrée</h2>
+      
+      <ul>
+        <li data-q="bakso tetelan / meat ball with swallowed meat meat ball and swallowed meat soup served w/ egg noodle, vermicelli, fried tofu and yu choy.">
+          <div class="row"><span class="name">Bakso Tetelan / Meat Ball with Swallowed Meat</span><span class="price">$17.00</span></div>
+          <p class="desc">Meat ball and swallowed meat soup served w/ egg noodle, vermicelli, fried tofu and yu choy.</p>
+        </li>
+        <li data-q="bakso beranak / pregnant meat ball big meat ball filled with small meat ball, quail egg in soup w/ egg noodle, vermicelli, fried tofu &amp; yu choy">
+          <div class="row"><span class="name">Bakso Beranak / Pregnant Meat Ball</span><span class="price">$19.00</span></div>
+          <p class="desc">Big Meat ball filled with small meat ball, quail egg in soup w/ egg noodle, vermicelli, fried tofu &amp; yu choy</p>
+        </li>
+        <li data-q="bakso tennis / tennis meat ball meat ball soup served w/ egg noodle, vermicelli, fried tofu and yu choy.">
+          <div class="row"><span class="name">Bakso Tennis / Tennis Meat Ball</span><span class="price">$17.00</span></div>
+          <p class="desc">Meat ball soup served w/ egg noodle, vermicelli, fried tofu and yu choy.</p>
+        </li>
+        <li data-q="sop iga bakar / grill short rib with soup on side ">
+          <div class="row"><span class="name">Sop Iga Bakar / Grill Short Rib with Soup on Side</span><span class="price">$22.00</span></div>
+          
+        </li>
+        <li data-q="iga bakar cobek / grill short rib served in a stone bowl grilled short ribs served with white rice, fresh cut vegetables, fried tofu, fried tempeh, and sambal cobek.">
+          <div class="row"><span class="name">Iga Bakar Cobek / Grill Short Rib Served in a Stone Bowl</span><span class="price">$22.00</span></div>
+          <p class="desc">Grilled short ribs served with white rice, fresh cut vegetables, fried tofu, fried tempeh, and sambal cobek.</p>
+        </li>
+        <li data-q="soto ayam lamongan / lamongan chicken soup chicken soup lamongan style, clear noodle shrimp cracker powder, cabbage and egg, served with white rice.">
+          <div class="row"><span class="name">Soto Ayam Lamongan / Lamongan Chicken Soup</span><span class="price">$15.00</span></div>
+          <p class="desc">Chicken soup Lamongan style, clear noodle shrimp cracker powder, cabbage and egg, served with white rice.</p>
+        </li>
+        <li data-q="soto betawi / betawi style soup beef, beef tripe, tomato and potato in coconut milk soup, served with white rice and padi oat cracker.">
+          <div class="row"><span class="name">Soto Betawi / Betawi Style Soup</span><span class="price">$18.00</span></div>
+          <p class="desc">Beef, beef tripe, tomato and potato in coconut milk soup, served with white rice and padi oat cracker.</p>
+        </li>
+        <li data-q="sop buntut / ox tail soup chose cooking style: regular or fried ox tail, served white rice &amp; soup on the side.">
+          <div class="row"><span class="name">Sop Buntut / Ox Tail Soup</span><span class="price">$21.00</span></div>
+          <p class="desc">Chose cooking style: Regular or Fried Ox Tail, served white rice &amp; soup on the side.</p>
+        </li></ul>
+    </section>
+    <section id="mixed-entr-e" class="sec">
+      <h2>Mixed Entrée</h2>
+      <p class="note">Served with white rice. Dishes marked ** can be ordered regular or Cobek (served with white rice, fresh cut vegs, fried tofu, fried tempeh, and sambal cobek) for +$2.00</p>
+      <ul>
+        <li data-q="ayam bakar / grilled chicken chose sauce: padang sauce or sweet soy sauce (spicy)">
+          <div class="row"><span class="name">Ayam Bakar / Grilled Chicken</span><span class="price">$17.00</span></div>
+          <p class="desc">Chose sauce: Padang Sauce or Sweet Soy Sauce (spicy)</p>
+        </li>
+        <li data-q="ayam goreng kremes / crunch fried chicken (spicy)">
+          <div class="row"><span class="name">Ayam Goreng Kremes / Crunch Fried Chicken</span><span class="price">$17.00</span></div>
+          <p class="desc">(spicy)</p>
+        </li>
+        <li data-q="ayam goreng kalasan / marinated fried chicken fried chicken marinated with coconut water. (spicy)">
+          <div class="row"><span class="name">Ayam Goreng Kalasan / Marinated Fried Chicken</span><span class="price">$17.00</span></div>
+          <p class="desc">Fried chicken marinated with coconut water. (spicy)</p>
+        </li>
+        <li data-q="bebek goreng sambel ijo / fried duck green chili on side (spicy)">
+          <div class="row"><span class="name">Bebek Goreng Sambel Ijo / Fried Duck Green Chili on Side</span><span class="price">$18.00</span></div>
+          <p class="desc">(spicy)</p>
+        </li>
+        <li data-q="rendang daging / spicy marinated beef stew beef in spicy coconut milk">
+          <div class="row"><span class="name">Rendang Daging / Spicy Marinated Beef</span><span class="price">$18.00</span></div>
+          <p class="desc">Stew beef in spicy coconut milk</p>
+        </li>
+        <li data-q="cumi goreng sauce telor asin / fried calamari salty egg sauce ">
+          <div class="row"><span class="name">Cumi Goreng Sauce Telor Asin / Fried Calamari Salty Egg Sauce</span><span class="price">$18.00</span></div>
+          
+        </li>
+        <li data-q="udang goreng sauce telor asin / fried shrimp salty egg sauce ">
+          <div class="row"><span class="name">Udang Goreng Sauce Telor Asin / Fried Shrimp Salty Egg Sauce</span><span class="price">$18.00</span></div>
+          
+        </li>
+        <li data-q="dendeng balado / spicy fried beef fried marinated thin sliced beef with chili sauce.">
+          <div class="row"><span class="name">Dendeng Balado / Spicy Fried Beef</span><span class="price">$18.00</span></div>
+          <p class="desc">Fried marinated thin sliced beef with chili sauce.</p>
+        </li>
+        <li data-q="fuyunghai kepiting / crab egg foo young egg foo young crab, shrimp, cabbage and egg with sweet and sour sauce.">
+          <div class="row"><span class="name">Fuyunghai Kepiting / Crab Egg Foo Young</span><span class="price">$18.00</span></div>
+          <p class="desc">Egg foo young crab, shrimp, cabbage and egg with sweet and sour sauce.</p>
+        </li>
+        <li data-q="ikan tenggiri balado / spicy fried spanish mackerel (3 pcs) deep fried spanish mackerel fish with chili sauce.">
+          <div class="row"><span class="name">Ikan Tenggiri Balado / Spicy Fried Spanish Mackerel (3 pcs)</span><span class="price">$18.00</span></div>
+          <p class="desc">Deep fried Spanish mackerel fish with chili sauce.</p>
+        </li>
+        <li data-q="lidah sapi goreng sambel ijo / fried cow&#39;s tongue green chili ">
+          <div class="row"><span class="name">Lidah Sapi Goreng Sambel Ijo / Fried Cow&#39;s Tongue Green Chili</span><span class="price">$19.00</span></div>
+          
+        </li>
+        <li data-q="tongseng kambing / curry young goat curry young goat, tomato, cabbage and chili.">
+          <div class="row"><span class="name">Tongseng Kambing / Curry Young Goat</span><span class="price">$20.00</span></div>
+          <p class="desc">Curry young goat, tomato, cabbage and chili.</p>
+        </li>
+        <li data-q="nasi telor komplit dengan rendang &amp; ayam / complete rice, egg with beef rendang and fried chicken ">
+          <div class="row"><span class="name">Nasi Telor Komplit dengan Rendang &amp; Ayam / Complete Rice, Egg with Beef Rendang and Fried Chicken</span><span class="price">$18.00</span></div>
+          
+        </li>
+        <li data-q="cumi asin petai cabe ijo / salty squid sator bean green chili ">
+          <div class="row"><span class="name">Cumi Asin Petai Cabe Ijo / Salty Squid Sator Bean Green Chili</span><span class="price">$18.00</span></div>
+          
+        </li>
+        <li data-q="nasi bungkus padang / rice in banana leave wrap padang style come with curry jack fruit, egg balado, potato fritter, sliced cucumber.">
+          <div class="row"><span class="name">Nasi Bungkus Padang / Rice in Banana Leave Wrap Padang Style</span></div>
+          <p class="desc">Come with curry jack fruit, egg balado, potato fritter, sliced cucumber.</p><div class="prices"><span class="pp"><span class="pl">Choose 1 of Fried Chicken, Grill Chicken, Beef Rendang or Spicy Fried Beef</span> <b>$19.00</b></span><span class="pp"><span class="pl">Choose 1 of Fried Cow&#39;s Tongue or Salty Squid Sator Bean</span> <b>$21.00</b></span></div>
+        </li></ul>
+    </section>
+    <section id="vegetable-entr-e" class="sec">
+      <h2>Vegetable Entrée</h2>
+      
+      <ul>
+        <li data-q="gado-gado jakarta / mixed steamed vegetable boiled fresh mixed vegetable, tofu, tempeh, broiled egg, rice cake &amp; onion cracker with peanut sauce.">
+          <div class="row"><span class="name">Gado-Gado Jakarta / Mixed Steamed Vegetable</span><span class="price">$16.00</span></div>
+          <p class="desc">Boiled fresh mixed vegetable, tofu, tempeh, broiled egg, rice cake &amp; onion cracker with peanut sauce.</p>
+        </li>
+        <li data-q="kangkung hot plate / water spinach hot plate sautéed water spinach with garlic and sesame oil served in hot plate.">
+          <div class="row"><span class="name">Kangkung Hot Plate / Water Spinach Hot Plate</span></div>
+          <p class="desc">Sautéed water spinach with garlic and sesame oil served in hot plate.</p><div class="prices"><span class="pp"><span class="pl">Plain</span> <b>$17.00</b></span><span class="pp"><span class="pl">With shrimp</span> <b>$20.00</b></span></div>
+        </li>
+        <li data-q="kangkung belacan hot plate / belacan water spinach hot plate sautéed water spinach with garlic, shrimp paste, tomato, quail egg and chili served in hot plate.">
+          <div class="row"><span class="name">Kangkung Belacan Hot Plate / Belacan Water Spinach Hot Plate</span><span class="price">$19.00</span></div>
+          <p class="desc">Sautéed water spinach with garlic, shrimp paste, tomato, quail egg and chili served in hot plate.</p>
+        </li>
+        <li data-q="ketoprak boiled vermicelli, bean sprout, fried tofu, cucumber, rice cake, padi oat cracker w/ peanut sauce, garlic.">
+          <div class="row"><span class="name">Ketoprak</span><span class="price">$16.00</span></div>
+          <p class="desc">Boiled vermicelli, bean sprout, fried tofu, cucumber, rice cake, padi oat cracker w/ peanut sauce, garlic.</p>
+        </li></ul>
+    </section>
+    <section id="rice-and-noodles" class="sec">
+      <h2>Rice and Noodles</h2>
+      
+      <ul>
+        <li data-q="bakmi ayam kangkung / chicken noodle water spinach hot plate egg noodles, chicken, mushroom, quail egg and water spinach in hot plate.">
+          <div class="row"><span class="name">Bakmi Ayam Kangkung / Chicken Noodle Water Spinach Hot Plate</span><span class="price">$16.50</span></div>
+          <p class="desc">Egg noodles, chicken, mushroom, quail egg and water spinach in hot plate.</p>
+        </li>
+        <li data-q="bakmi ayam jamur / chicken noodles mushroom egg noodles, chicken, mushroom, vegetables, quail egg w/meatball chicken soup on the side.">
+          <div class="row"><span class="name">Bakmi Ayam Jamur / Chicken Noodles Mushroom</span><span class="price">$15.00</span></div>
+          <p class="desc">Egg noodles, chicken, mushroom, vegetables, quail egg w/meatball chicken soup on the side.</p>
+        </li>
+        <li data-q="bakmi ayam kepiting / chicken noodle crab egg noodles, chicken, mushroom, quail egg, crab meat, vegetables w/meatball chicken soup on the side.">
+          <div class="row"><span class="name">Bakmi Ayam Kepiting / Chicken Noodle Crab</span><span class="price">$17.50</span></div>
+          <p class="desc">Egg noodles, chicken, mushroom, quail egg, crab meat, vegetables w/meatball chicken soup on the side.</p>
+        </li>
+        <li data-q="bubur ayam betawi / chicken porridge betawi conge w/quail egg, gizzard, liver, heart, shredded chicken, chinese cruel and yellow gravy.">
+          <div class="row"><span class="name">Bubur Ayam Betawi / Chicken Porridge Betawi</span><span class="price">$12.00</span></div>
+          <p class="desc">Conge w/quail egg, gizzard, liver, heart, shredded chicken, Chinese cruel and yellow gravy.</p>
+        </li>
+        <li data-q="nasi tim ayam jamur / steam rice mushroom chicken steamed rice with chicken, mushroom, quail egg, meat ball and chicken soup.">
+          <div class="row"><span class="name">Nasi Tim Ayam Jamur / Steam Rice Mushroom Chicken</span><span class="price">$15.00</span></div>
+          <p class="desc">Steamed rice with chicken, mushroom, quail egg, meat ball and chicken soup.</p>
+        </li>
+        <li data-q="nasi goreng seafood / seafood fried rice ">
+          <div class="row"><span class="name">Nasi Goreng Seafood / Seafood Fried Rice</span><span class="price">$17.00</span></div>
+          
+        </li>
+        <li data-q="nasi goreng cumi petai / salty squid sator bean fried rice fried rice with salty squid, sator beans, egg w/ side of onion crackers and top w/ fried shallot and scallions">
+          <div class="row"><span class="name">Nasi Goreng Cumi Petai / Salty Squid Sator Bean Fried Rice</span><span class="price">$17.00</span></div>
+          <p class="desc">Fried rice with salty squid, sator beans, egg w/ side of onion crackers and top w/ fried shallot and scallions</p>
+        </li>
+        <li data-q="nasi goreng kambing / fried rice young goat ">
+          <div class="row"><span class="name">Nasi Goreng Kambing / Fried Rice Young Goat</span><span class="price">$18.00</span></div>
+          
+        </li>
+        <li data-q="nasi goreng ikan asin / salted fish fried rice fried rice with salty fish, egg, carrot, green peas w side of onion cracker and top w/fried shallot and scallions.">
+          <div class="row"><span class="name">Nasi Goreng Ikan Asin / Salted Fish Fried Rice</span><span class="price">$17.00</span></div>
+          <p class="desc">Fried rice with salty fish, egg, carrot, green peas w side of onion cracker and top w/fried shallot and scallions.</p>
+        </li>
+        <li data-q="nasi goreng tek-tek / fried rice tek-tek fried rice with egg, chicken, egg noodles top with fried shallot and scallions.">
+          <div class="row"><span class="name">Nasi Goreng Tek-Tek / Fried Rice Tek-Tek</span><span class="price">$15.00</span></div>
+          <p class="desc">Fried rice with egg, chicken, egg noodles top with fried shallot and scallions.</p>
+        </li>
+        <li data-q="mie goreng tek-tek / fried noodle tek-tek fried noodle with egg, shredded chicken, vegetables top with fried shallot and scallions.">
+          <div class="row"><span class="name">Mie Goreng Tek-Tek / Fried Noodle Tek-Tek</span><span class="price">$16.00</span></div>
+          <p class="desc">Fried noodle with egg, shredded chicken, vegetables top with fried shallot and scallions.</p>
+        </li></ul>
+    </section>
+    <section id="seafood-a-la-carte" class="sec">
+      <h2>Seafood A La Carte</h2>
+      
+      <ul>
+        <li data-q="kepiting soka / soft shell crab salt pepper deep fried soft-shell crab in lightly batter with salt, pepper, fried shallot, fried garlic served with chili sauce">
+          <div class="row"><span class="name">Kepiting Soka / Soft Shell Crab Salt Pepper</span><span class="price">$24.00</span></div>
+          <p class="desc">Deep fried soft-shell crab in lightly batter with salt, pepper, fried shallot, fried garlic served with chili sauce</p>
+        </li>
+        <li data-q="ikan tenggiri balado / fried spanish mackerel green chili (6 pcs) ">
+          <div class="row"><span class="name">Ikan Tenggiri Balado / Fried Spanish Mackerel Green Chili (6 pcs)</span><span class="price">$25.00</span></div>
+          
+        </li>
+        <li data-q="ikan bawal goreng cabe bawang kecap manis / fried pompano with sliced chili, onion, sweet soy sauce ">
+          <div class="row"><span class="name">Ikan Bawal Goreng Cabe Bawang Kecap Manis / Fried Pompano with Sliced Chili, Onion, Sweet Soy Sauce</span><span class="price">$28.00</span></div>
+          
+        </li>
+        <li data-q="ikan bawal bakar padang / grilled pompano padang sauce grilled pompano fish with padang sauce.">
+          <div class="row"><span class="name">Ikan Bawal Bakar Padang / Grilled Pompano Padang Sauce</span><span class="price">$28.00</span></div>
+          <p class="desc">Grilled pompano fish with Padang sauce.</p>
+        </li>
+        <li data-q="ikan bawal bakar sauce madu / grilled pompano honey sauce ">
+          <div class="row"><span class="name">Ikan Bawal Bakar Sauce Madu / Grilled Pompano Honey Sauce</span><span class="price">$28.00</span></div>
+          
+        </li>
+        <li data-q="cumi goreng sauce telor asin / fried calamari salty egg sauce deep fried calamari in lightly batter with salty egg sauce.">
+          <div class="row"><span class="name">Cumi Goreng Sauce Telor Asin / Fried Calamari Salty Egg Sauce</span><span class="price">$27.00</span></div>
+          <p class="desc">Deep fried Calamari in lightly batter with salty egg sauce.</p>
+        </li>
+        <li data-q="cumi asin petai cabe ijo / salty squid sator bean green chili ">
+          <div class="row"><span class="name">Cumi Asin Petai Cabe Ijo / Salty Squid Sator Bean Green Chili</span><span class="price">$27.00</span></div>
+          
+        </li>
+        <li data-q="udang goreng sauce telor asin / fried shrimp salty egg sauce deep fried shrimp in lightly batter with salty egg sauce.">
+          <div class="row"><span class="name">Udang Goreng Sauce Telor Asin / Fried Shrimp Salty Egg Sauce</span><span class="price">$27.00</span></div>
+          <p class="desc">Deep fried Shrimp in lightly batter with salty egg sauce.</p>
+        </li></ul>
+    </section>
+    <section id="meat-a-la-carte" class="sec">
+      <h2>Meat A La Carte</h2>
+      
+      <ul>
+        <li data-q="rendang daging (4 pcs) / spicy marinated beef stew beef in spicy coconut milk.">
+          <div class="row"><span class="name">Rendang Daging (4 pcs) / Spicy Marinated Beef</span><span class="price">$27.00</span></div>
+          <p class="desc">Stew beef in spicy coconut milk.</p>
+        </li>
+        <li data-q="dendeng balado / spicy fried beef fried thinly beef with chili sauce.">
+          <div class="row"><span class="name">Dendeng Balado / Spicy Fried Beef</span><span class="price">$27.00</span></div>
+          <p class="desc">Fried thinly beef with chili sauce.</p>
+        </li>
+        <li data-q="tongseng kambing / curry young goat ">
+          <div class="row"><span class="name">Tongseng Kambing / Curry Young Goat</span><span class="price">$19.00</span></div>
+          
+        </li>
+        <li data-q="lidah sapi goreng sambel ijo / fried cow&#39;s tongue green chili ">
+          <div class="row"><span class="name">Lidah Sapi Goreng Sambel Ijo / Fried Cow&#39;s Tongue Green Chili</span><span class="price">$27.00</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="poultry-a-la-carte" class="sec">
+      <h2>Poultry A La Carte</h2>
+      
+      <ul>
+        <li data-q="ayam goreng kremes / crunch fried chicken ">
+          <div class="row"><span class="name">Ayam Goreng Kremes / Crunch Fried Chicken</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Half</span> <b>$16.00</b></span><span class="pp"><span class="pl">Whole</span> <b>$27.00</b></span></div>
+        </li>
+        <li data-q="ayam goreng kalasan / coconut marinated fried chicken ">
+          <div class="row"><span class="name">Ayam Goreng Kalasan / Coconut Marinated Fried Chicken</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Half</span> <b>$21.00</b></span><span class="pp"><span class="pl">Whole</span> <b>$32.00</b></span></div>
+        </li>
+        <li data-q="ayam bakar / bbq chicken chose sauce: padang sauce or sweet soy sauce">
+          <div class="row"><span class="name">Ayam Bakar / BBQ Chicken</span></div>
+          <p class="desc">Chose sauce: Padang Sauce or Sweet Soy Sauce</p><div class="prices"><span class="pp"><span class="pl">Half</span> <b>$21.00</b></span><span class="pp"><span class="pl">Whole</span> <b>$32.00</b></span></div>
+        </li>
+        <li data-q="bebek goreng / fried duck with green chili on side ">
+          <div class="row"><span class="name">Bebek Goreng / Fried Duck with Green Chili on Side</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Half</span> <b>$26.00</b></span><span class="pp"><span class="pl">Whole</span> <b>$47.00</b></span></div>
+        </li></ul>
+    </section>
+    <section id="side-order" class="sec">
+      <h2>Side Order</h2>
+      
+      <ul>
+        <li data-q="nasi putih / white rice ">
+          <div class="row"><span class="name">Nasi Putih / White Rice</span><span class="price">$3.50</span></div>
+          
+        </li>
+        <li data-q="lontong / rice cake ">
+          <div class="row"><span class="name">Lontong / Rice Cake</span><span class="price">$4.00</span></div>
+          
+        </li>
+        <li data-q="emping goreng / padi oat cracker ">
+          <div class="row"><span class="name">Emping Goreng / Padi Oat Cracker</span><span class="price">$3.50</span></div>
+          
+        </li>
+        <li data-q="krupuk udang / shrimp cracker (2 pcs) ">
+          <div class="row"><span class="name">Krupuk Udang / Shrimp Cracker (2 pcs)</span><span class="price">$3.50</span></div>
+          
+        </li>
+        <li data-q="krupuk bawang / onion cracker ">
+          <div class="row"><span class="name">Krupuk Bawang / Onion Cracker</span><span class="price">$3.50</span></div>
+          
+        </li>
+        <li data-q="krupuk sagu bawang / garlic tapioca cracker (3 pcs) ">
+          <div class="row"><span class="name">Krupuk Sagu Bawang / Garlic Tapioca Cracker (3 pcs)</span><span class="price">$3.50</span></div>
+          
+        </li>
+        <li data-q="telor dadar bawang cabe / omelette with garlic, onions &amp; chili ">
+          <div class="row"><span class="name">Telor Dadar Bawang Cabe / Omelette with Garlic, Onions &amp; Chili</span><span class="price">$8.00</span></div>
+          
+        </li>
+        <li data-q="lalapan / fresh vegetables ">
+          <div class="row"><span class="name">Lalapan / Fresh Vegetables</span><span class="price">$5.50</span></div>
+          
+        </li>
+        <li data-q="sayur lodeh / lodeh soup ">
+          <div class="row"><span class="name">Sayur Lodeh / Lodeh Soup</span><span class="price">$7.00</span></div>
+          
+        </li>
+        <li data-q="sayur gulai nangka / curry jackfuit ">
+          <div class="row"><span class="name">Sayur Gulai Nangka / Curry Jackfuit</span><span class="price">$7.00</span></div>
+          
+        </li>
+        <li data-q="extra pete / extra sator bean ">
+          <div class="row"><span class="name">Extra Pete / Extra Sator Bean</span><span class="price">$8.00</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="beverage" class="sec">
+      <h2>Beverage</h2>
+      
+      <ul>
+        <li data-q="bottle water ">
+          <div class="row"><span class="name">Bottle Water</span><span class="price">$1.75</span></div>
+          
+        </li>
+        <li data-q="soda can coke, diet coke, sprite, ginger ale, seltzer.">
+          <div class="row"><span class="name">Soda Can</span><span class="price">$1.75</span></div>
+          <p class="desc">Coke, Diet Coke, Sprite, Ginger Ale, Seltzer.</p>
+        </li>
+        <li data-q="soda gembira ">
+          <div class="row"><span class="name">Soda Gembira</span><span class="price">$6.00</span></div>
+          
+        </li>
+        <li data-q="teh kotak or teh botol ">
+          <div class="row"><span class="name">Teh Kotak or Teh Botol</span><span class="price">$2.75</span></div>
+          
+        </li>
+        <li data-q="lychee iced tea ">
+          <div class="row"><span class="name">Lychee Iced Tea</span><span class="price">$6.00</span></div>
+          
+        </li>
+        <li data-q="lychee soda ">
+          <div class="row"><span class="name">Lychee Soda</span><span class="price">$6.00</span></div>
+          
+        </li>
+        <li data-q="hot black tea ">
+          <div class="row"><span class="name">Hot Black Tea</span><span class="price">$1.75</span></div>
+          
+        </li>
+        <li data-q="iced black tea ">
+          <div class="row"><span class="name">Iced Black Tea</span><span class="price">$2.25</span></div>
+          
+        </li>
+        <li data-q="hot coffee ">
+          <div class="row"><span class="name">Hot Coffee</span><span class="price">$3.00</span></div>
+          
+        </li>
+        <li data-q="iced coffee ">
+          <div class="row"><span class="name">Iced Coffee</span><span class="price">$3.50</span></div>
+          
+        </li>
+        <li data-q="iced coffee gula aren iced coffee, palm sugar">
+          <div class="row"><span class="name">Iced Coffee Gula Aren</span><span class="price">$4.50</span></div>
+          <p class="desc">Iced Coffee, palm sugar</p>
+        </li>
+        <li data-q="hot chocolate ">
+          <div class="row"><span class="name">Hot Chocolate</span><span class="price">$5.00</span></div>
+          
+        </li>
+        <li data-q="thai iced tea ">
+          <div class="row"><span class="name">Thai Iced Tea</span><span class="price">$6.00</span></div>
+          
+        </li>
+        <li data-q="ice milo dinosaur milo, condensed milk, milo powder on the top.">
+          <div class="row"><span class="name">Ice Milo Dinosaur</span><span class="price">$6.00</span></div>
+          <p class="desc">Milo, condensed milk, milo powder on the top.</p>
+        </li></ul>
+    </section>
+    <section id="desserts" class="sec">
+      <h2>Desserts</h2>
+      
+      <ul>
+        <li data-q="es teler / ice teler avocado, coconut, basil seeds, jackfruit, sugar palm fruit, grass jelly, milk, cocopandan syrup &amp; shaved ice.">
+          <div class="row"><span class="name">Es Teler / Ice Teler</span><span class="price">$8.50</span></div>
+          <p class="desc">Avocado, coconut, basil seeds, jackfruit, sugar palm fruit, grass jelly, milk, cocopandan syrup &amp; shaved ice.</p>
+        </li>
+        <li data-q="es doger / ice doger red coconut milk, coconut, avocado, basil seed, bread, white &amp; black tape, condensed milk &amp; shaved ice.">
+          <div class="row"><span class="name">Es Doger / Ice Doger</span><span class="price">$8.50</span></div>
+          <p class="desc">Red Coconut milk, coconut, avocado, basil seed, bread, white &amp; black tape, condensed milk &amp; shaved ice.</p>
+        </li>
+        <li data-q="es cendol / ice cendol coconut milk, sugarcane syrup, green rice flour jelly, jackfruit and ice cube.">
+          <div class="row"><span class="name">Es Cendol / Ice Cendol</span><span class="price">$8.50</span></div>
+          <p class="desc">Coconut milk, sugarcane syrup, green rice flour jelly, jackfruit and ice cube.</p>
+        </li>
+        <li data-q="es kelapa muda / ice young coconut cocopandan syrup with coconut meat, milk and ice cube.">
+          <div class="row"><span class="name">Es Kelapa Muda / Ice Young Coconut</span><span class="price">$8.50</span></div>
+          <p class="desc">Cocopandan syrup with coconut meat, milk and ice cube.</p>
+        </li>
+        <li data-q="es cincau kelapa / ice grass jelly coconut cocopandan syrup with grass jelly, coconut meat, milk and ice cube.">
+          <div class="row"><span class="name">Es Cincau Kelapa / Ice Grass Jelly Coconut</span><span class="price">$8.50</span></div>
+          <p class="desc">Cocopandan syrup with grass jelly, coconut meat, milk and ice cube.</p>
+        </li>
+        <li data-q="jus alpukat / avocado milkshake blended avocado, sugar, condensed milk, ice and drizzle chocolate milk.">
+          <div class="row"><span class="name">Jus Alpukat / Avocado Milkshake</span><span class="price">$8.50</span></div>
+          <p class="desc">Blended avocado, sugar, condensed milk, ice and drizzle chocolate milk.</p>
+        </li>
+        <li data-q="pisang bakar / grilled banana grilled banana, cheese, chocolate sprinkler, chocolate milk and condensed milk.">
+          <div class="row"><span class="name">Pisang Bakar / Grilled Banana</span><span class="price">$8.50</span></div>
+          <p class="desc">Grilled banana, cheese, chocolate sprinkler, chocolate milk and condensed milk.</p>
+        </li>
+        <li data-q="pisang goreng / fried banana fried banana tempura, chocolate &amp; sugar powder">
+          <div class="row"><span class="name">Pisang Goreng / Fried Banana</span><span class="price">$8.50</span></div>
+          <p class="desc">Fried banana tempura, chocolate &amp; sugar powder</p>
+        </li>
+        <li data-q="roti bakar / grilled bread grilled bread, cheese, peanut butter, nutella, banana, chocolate sprinkler, chocolate and condensed milk.">
+          <div class="row"><span class="name">Roti Bakar / Grilled Bread</span><span class="price">$8.50</span></div>
+          <p class="desc">Grilled bread, cheese, peanut butter, nutella, banana, chocolate sprinkler, chocolate and condensed milk.</p>
+        </li></ul>
+    </section>
+    <section id="import-beer" class="sec">
+      <h2>Import Beer</h2>
+      <p class="note">12oz bottle</p>
+      <ul>
+        <li data-q="sapporo ">
+          <div class="row"><span class="name">Sapporo</span><span class="price">$6.50</span></div>
+          
+        </li>
+        <li data-q="tsingtao ">
+          <div class="row"><span class="name">Tsingtao</span><span class="price">$6.50</span></div>
+          
+        </li>
+        <li data-q="corona extra ">
+          <div class="row"><span class="name">Corona Extra</span><span class="price">$6.50</span></div>
+          
+        </li>
+        <li data-q="heineken ">
+          <div class="row"><span class="name">Heineken</span><span class="price">$6.50</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="hot-sake" class="sec">
+      <h2>Hot Sake</h2>
+      
+      <ul>
+        <li data-q="small sake (6oz) ">
+          <div class="row"><span class="name">Small Sake (6oz)</span><span class="price">$6.00</span></div>
+          
+        </li>
+        <li data-q="large sake (10oz) ">
+          <div class="row"><span class="name">Large Sake (10oz)</span><span class="price">$9.00</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="wine" class="sec">
+      <h2>Wine</h2>
+      
+      <ul>
+        <li data-q="merlot red wine">
+          <div class="row"><span class="name">Merlot</span></div>
+          <p class="desc">Red Wine</p><div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$7.00</b></span><span class="pp"><span class="pl">Bottle</span> <b>$25.00</b></span></div>
+        </li>
+        <li data-q="cabernet sauvignon red wine">
+          <div class="row"><span class="name">Cabernet Sauvignon</span></div>
+          <p class="desc">Red Wine</p><div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$7.00</b></span><span class="pp"><span class="pl">Bottle</span> <b>$25.00</b></span></div>
+        </li>
+        <li data-q="chardonnay white wine">
+          <div class="row"><span class="name">Chardonnay</span></div>
+          <p class="desc">White Wine</p><div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$7.00</b></span><span class="pp"><span class="pl">Bottle</span> <b>$25.00</b></span></div>
+        </li>
+        <li data-q="pinot grigio white wine">
+          <div class="row"><span class="name">Pinot Grigio</span></div>
+          <p class="desc">White Wine</p><div class="prices"><span class="pp"><span class="pl">Glass</span> <b>$7.00</b></span><span class="pp"><span class="pl">Bottle</span> <b>$25.00</b></span></div>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>Before placing your order, please inform us if a person in your party has a food allergy. Our products may contain wheat, egg, dairy, soy, or fish allergens. In addition, our products may be processed in facilities that process tree nuts and peanuts. Please be advised consuming raw, cooked to order or undercooked meat, poultry, seafood, shellfish or eggs may increase your risk of food borne illnesses, especially if you have certain medical conditions. Naturally, thoroughly cooking meats, poultry, seafood, shellfish or eggs reduces the risk of food borne illnesses.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Awang Kitchen.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Awang Kitchen menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

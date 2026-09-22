@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Ritorno Menu</title>
+<meta name="description" content="Menu for Ritorno, Uptown Core (Oak Walk Drive), Oakville.">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Ritorno</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=261%20Oak%20Walk%20Drive%2C%20Oakville%2C%20ON%20L6H%206M3">261 Oak Walk Drive, Oakville, ON L6H 6M3</a><a href="tel:9052575881">905-257-5881</a><span>Monday: Closed. Tuesday: 12pm - 9pm. Wednesday: 12pm - 9pm. Thursday: 12pm - 9pm. Friday: 12pm - 10pm. Saturday: 4pm - 10pm. Sunday: 4pm - 9pm</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#antipasti" data-sec="antipasti">Antipasti</a><a href="#insalata" data-sec="insalata">Insalata</a><a href="#nonna-s-gnocchi" data-sec="nonna-s-gnocchi">Nonna&#39;s Gnocchi</a><a href="#pasta" data-sec="pasta">Pasta</a><a href="#sides-add-ons" data-sec="sides-add-ons">Sides &amp; Add-Ons</a><a href="#carne-e-pesce" data-sec="carne-e-pesce">Carne e Pesce</a><a href="#pizza" data-sec="pizza">Pizza</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="antipasti" class="sec">
+      <h2>Antipasti</h2>
+      
+      <ul>
+        <li data-q="chef simon&#39;s burrata cow&#39;s milk cheese | tomato &amp; onion jam | prosciutto | evoo | garlic toasted focaccia">
+          <div class="row"><span class="name">Chef Simon&#39;s Burrata</span><span class="price">$23</span></div>
+          <p class="desc">cow&#39;s milk cheese | tomato &amp; onion jam | prosciutto | EVOO | garlic toasted focaccia</p>
+        </li>
+        <li data-q="cafe galleria bruschetta roma tomatoes | basil | mozzarella | garlic toasted focaccia | balsamic glaze">
+          <div class="row"><span class="name">Cafe Galleria Bruschetta</span><span class="price">$15</span></div>
+          <p class="desc">Roma tomatoes | basil | mozzarella | garlic toasted focaccia | balsamic glaze</p>
+        </li>
+        <li data-q="warm marinated olives mixed olives | olive oil | herbs">
+          <div class="row"><span class="name">Warm Marinated Olives</span><span class="price">$8</span></div>
+          <p class="desc">mixed olives | olive oil | herbs</p>
+        </li>
+        <li data-q="calamari fritti seasoned flour | hot banana peppers | zucchini | lemon garlic aioli | tomato sauce">
+          <div class="row"><span class="name">Calamari Fritti</span><span class="price">$18</span></div>
+          <p class="desc">seasoned flour | hot banana peppers | zucchini | lemon garlic aioli | tomato sauce</p>
+        </li>
+        <li data-q="pomodoro mussels 1 lbs. mussels | tomato sauce | bruschetta tomatoes | garlic toasted focaccia. ask for availability">
+          <div class="row"><span class="name">Pomodoro Mussels</span><span class="price">$18</span></div>
+          <p class="desc">1 lbs. mussels | tomato sauce | bruschetta tomatoes | garlic toasted focaccia. Ask for availability</p>
+        </li>
+        <li data-q="baked meatballs pork &amp; beef meatballs | tomato sauce | mozzarella">
+          <div class="row"><span class="name">Baked Meatballs</span><span class="price">$19</span></div>
+          <p class="desc">pork &amp; beef meatballs | tomato sauce | mozzarella</p>
+        </li></ul>
+    </section>
+    <section id="insalata" class="sec">
+      <h2>Insalata</h2>
+      
+      <ul>
+        <li data-q="caesar salad romaine | ritorno caesar dressing | prosciutto bits | parmesan | crostini | lemon">
+          <div class="row"><span class="name">Caesar Salad</span><span class="price">$16</span></div>
+          <p class="desc">romaine | Ritorno caesar dressing | prosciutto bits | parmesan | crostini | lemon</p>
+        </li>
+        <li data-q="caprese fior di latte cheese | roma tomato | arugula | basil | red wine vinaigrette | balsamic reduction">
+          <div class="row"><span class="name">Caprese</span><span class="price">$19</span></div>
+          <p class="desc">fior di latte cheese | Roma tomato | arugula | basil | red wine vinaigrette | balsamic reduction</p>
+        </li>
+        <li data-q="ritorno salad mixed greens | red &amp; golden beets | butternut squash | pumpkin seeds | bocconcini | cranberries | pickled onions | maple balsamic vinaigrette">
+          <div class="row"><span class="name">Ritorno Salad</span><span class="price">$19</span></div>
+          <p class="desc">mixed greens | red &amp; golden beets | butternut squash | pumpkin seeds | bocconcini | cranberries | pickled onions | maple balsamic vinaigrette</p>
+        </li>
+        <li data-q="italiano salad romaine | spinach | arugula | cucumber | tomatoes | white onions | red wine vinaigrette">
+          <div class="row"><span class="name">Italiano Salad</span><span class="price">$16</span></div>
+          <p class="desc">romaine | spinach | arugula | cucumber | tomatoes | white onions | red wine vinaigrette</p>
+        </li></ul>
+    </section>
+    <section id="nonna-s-gnocchi" class="sec">
+      <h2>Nonna&#39;s Gnocchi</h2>
+      <p class="note">Our secret ingredient? Nonna&#39;s hands and 40 years of gnocchi wisdom.</p>
+      <ul>
+        <li data-q="gnocchi pomodoro tomato sauce">
+          <div class="row"><span class="name">Gnocchi Pomodoro</span><span class="price">$22</span></div>
+          <p class="desc">tomato sauce</p>
+        </li>
+        <li data-q="gnocchi bolognese pork &amp; beef | tomato sauce">
+          <div class="row"><span class="name">Gnocchi Bolognese</span><span class="price">$25</span></div>
+          <p class="desc">pork &amp; beef | tomato sauce</p>
+        </li>
+        <li data-q="gnocchi rose tomato sauce | ontario cream | grana padano">
+          <div class="row"><span class="name">Gnocchi Rose</span><span class="price">$24</span></div>
+          <p class="desc">tomato sauce | Ontario cream | grana padano</p>
+        </li>
+        <li data-q="gnocchi pesto basil | garlic | ontario cream | grana padano">
+          <div class="row"><span class="name">Gnocchi Pesto</span><span class="price">$25</span></div>
+          <p class="desc">basil | garlic | Ontario cream | grana padano</p>
+        </li>
+        <li data-q="gnocchi gorgonzola gorgonzola | ontario cream | grana padano">
+          <div class="row"><span class="name">Gnocchi Gorgonzola</span><span class="price">$26</span></div>
+          <p class="desc">Gorgonzola | Ontario cream | grana padano</p>
+        </li></ul>
+    </section>
+    <section id="pasta" class="sec">
+      <h2>Pasta</h2>
+      <p class="note">Gluten-Free Penne / 2</p>
+      <ul>
+        <li data-q="fettuccine alfredo ontario cream | grana padano. add chicken 6, add tiger shrimp (3) 14">
+          <div class="row"><span class="name">Fettuccine Alfredo</span><span class="price">$20</span></div>
+          <p class="desc">Ontario cream | grana padano. Add Chicken 6, Add Tiger Shrimp (3) 14</p>
+        </li>
+        <li data-q="penne formaggio rose sauce | asiago | mozzarella | grana padano | spinach. add chicken 6, add tiger shrimp (3) 14">
+          <div class="row"><span class="name">Penne Formaggio</span><span class="price">$23</span></div>
+          <p class="desc">rose sauce | asiago | mozzarella | grana padano | spinach. Add Chicken 6, Add Tiger Shrimp (3) 14</p>
+        </li>
+        <li data-q="penne limone primavera roasted red peppers | zucchini | cherry tomatoes | lemon ricotta | garlic | evoo | grana padano. add chicken 6, add tiger shrimp (3) 14">
+          <div class="row"><span class="name">Penne Limone Primavera</span><span class="price">$25</span></div>
+          <p class="desc">roasted red peppers | zucchini | cherry tomatoes | lemon ricotta | garlic | EVOO | grana padano. Add Chicken 6, Add Tiger Shrimp (3) 14</p>
+        </li>
+        <li data-q="shrimp bomba fettuccine | tiger shrimp | bomba | fior di latte">
+          <div class="row"><span class="name">Shrimp Bomba</span><span class="price">$32</span></div>
+          <p class="desc">fettuccine | tiger shrimp | Bomba | fior di latte</p>
+        </li>
+        <li data-q="pescatore aglio e olio spaghetti | tiger shrimp | salmon | calamari | mussels | spinach | garlic | evoo | herbed tomatoes">
+          <div class="row"><span class="name">Pescatore Aglio e Olio</span><span class="price">$32</span></div>
+          <p class="desc">spaghetti | tiger shrimp | salmon | calamari | mussels | spinach | garlic | EVOO | herbed tomatoes</p>
+        </li>
+        <li data-q="bolognese pork &amp; beef | tomato sauce. choice of: penne or spaghetti">
+          <div class="row"><span class="name">Bolognese</span><span class="price">$24</span></div>
+          <p class="desc">pork &amp; beef | tomato sauce. Choice of: penne or spaghetti</p>
+        </li>
+        <li data-q="nonna&#39;s 8 layer lasagna bolognese | mozzarella | parmesan | ricotta">
+          <div class="row"><span class="name">Nonna&#39;s 8 Layer Lasagna</span><span class="price">$28</span></div>
+          <p class="desc">bolognese | mozzarella | parmesan | ricotta</p>
+        </li>
+        <li data-q="sausage &amp; rapini orecchiette | rapini | pork sausage | garlic | evoo | chili flakes | grana padano">
+          <div class="row"><span class="name">Sausage &amp; Rapini</span><span class="price">$24</span></div>
+          <p class="desc">orecchiette | rapini | pork sausage | garlic | EVOO | chili flakes | grana padano</p>
+        </li></ul>
+    </section>
+    <section id="sides-add-ons" class="sec">
+      <h2>Sides &amp; Add-Ons</h2>
+      
+      <ul>
+        <li data-q="pork &amp; beef meatball ">
+          <div class="row"><span class="name">Pork &amp; Beef Meatball</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="seared chicken breast ">
+          <div class="row"><span class="name">Seared Chicken Breast</span><span class="price">$10</span></div>
+          
+        </li>
+        <li data-q="tiger shrimp (3) ">
+          <div class="row"><span class="name">Tiger Shrimp (3)</span><span class="price">$14</span></div>
+          
+        </li>
+        <li data-q="atlantic salmon ">
+          <div class="row"><span class="name">Atlantic Salmon</span><span class="price">$14</span></div>
+          
+        </li>
+        <li data-q="rapini ">
+          <div class="row"><span class="name">Rapini</span><span class="price">$8</span></div>
+          
+        </li>
+        <li data-q="focaccia ">
+          <div class="row"><span class="name">Focaccia</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="caramelized carrots, green beans &amp; roasted potatoes ">
+          <div class="row"><span class="name">Caramelized Carrots, Green Beans &amp; Roasted Potatoes</span><span class="price">$6</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="carne-e-pesce" class="sec">
+      <h2>Carne e Pesce</h2>
+      
+      <ul>
+        <li data-q="pollo piccata seared chicken breast | lemon cream sauce | caramelized carrots | green beans | roasted potatoes">
+          <div class="row"><span class="name">Pollo Piccata</span><span class="price">$28</span></div>
+          <p class="desc">seared chicken breast | lemon cream sauce | caramelized carrots | green beans | roasted potatoes</p>
+        </li>
+        <li data-q="sundried tomato pesto salmon atlantic salmon | roasted beets | roasted potatoes | crispy arugula | balsamic glaze">
+          <div class="row"><span class="name">Sundried Tomato Pesto Salmon</span><span class="price">$30</span></div>
+          <p class="desc">Atlantic salmon | roasted beets | roasted potatoes | crispy arugula | balsamic glaze</p>
+        </li>
+        <li data-q="veal parmgiana in house breaded veal | mozzarella | tomato sauce. choice of: caramelized carrots, green beans &amp; roasted potatoes or spaghetti pomodoro. alfredo 4, bolognese 4">
+          <div class="row"><span class="name">Veal Parmgiana</span><span class="price">$32</span></div>
+          <p class="desc">in house breaded veal | mozzarella | tomato sauce. Choice of: caramelized carrots, green beans &amp; roasted potatoes or spaghetti pomodoro. Alfredo 4, Bolognese 4</p>
+        </li>
+        <li data-q="lamb osso bucco braised lamb shank | red wine jus | green beans | caramelized carrots | garlic mashed potatoes">
+          <div class="row"><span class="name">Lamb Osso Bucco</span><span class="price">$35</span></div>
+          <p class="desc">braised lamb shank | red wine jus | green beans | caramelized carrots | garlic mashed potatoes</p>
+        </li></ul>
+    </section>
+    <section id="pizza" class="sec">
+      <h2>Pizza</h2>
+      <p class="note">10&quot; thin crust from imported &quot;00&quot; flour</p>
+      <ul>
+        <li data-q="margherita fior di latte | mozzarella | tomato sauce | basil">
+          <div class="row"><span class="name">Margherita</span><span class="price">$20</span></div>
+          <p class="desc">fior di latte | mozzarella | tomato sauce | basil</p>
+        </li>
+        <li data-q="asiago artichoke artichokes | white onions | spinach | asiago | mozzarella | roasted garlic">
+          <div class="row"><span class="name">Asiago Artichoke</span><span class="price">$25</span></div>
+          <p class="desc">artichokes | white onions | spinach | asiago | mozzarella | roasted garlic</p>
+        </li>
+        <li data-q="sausage italian sausage | crispy prosciutto | mozzarella | tomato sauce | hot honey">
+          <div class="row"><span class="name">Sausage</span><span class="price">$25</span></div>
+          <p class="desc">Italian sausage | crispy prosciutto | mozzarella | tomato sauce | hot honey</p>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>To ensure timely &amp; quality service, menu modifications are politely declined. We appreciate your understanding.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Ritorno.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Ritorno menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's US$29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for US$29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

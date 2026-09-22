@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Bolo Menu</title>
+<meta name="description" content="Menu for Bolo, Rittenhouse Square (Sansom St).">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Bolo</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=2025%20Sansom%20St%2C%20Philadelphia%2C%20PA%2019103">2025 Sansom St, Philadelphia, PA 19103</a><a href="tel:2676392741">267-639-2741</a><span>Monday-Thursday 5:00 PM - 10:00 PM; Friday-Saturday 5:00 PM - 12:00 AM; Sunday 4:00 PM - 9:00 PM. Happy Hour Monday-Friday 5:00 PM - 7:00 PM</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#prix-fixe" data-sec="prix-fixe">Prix Fixe</a><a href="#ceviches" data-sec="ceviches">Ceviches</a><a href="#pinchos-la-plancha" data-sec="pinchos-la-plancha">Pinchos à la Plancha</a><a href="#pa-picar-snacks" data-sec="pa-picar-snacks">Pa&#39; Picar (Snacks)</a><a href="#verduras-vegetables" data-sec="verduras-vegetables">Verduras (Vegetables)</a><a href="#platillos-main-dishes" data-sec="platillos-main-dishes">Platillos (Main Dishes)</a><a href="#suckling-pig-dinner" data-sec="suckling-pig-dinner">Suckling Pig Dinner</a><a href="#postres-desserts" data-sec="postres-desserts">Postres (Desserts)</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="prix-fixe" class="sec">
+      <h2>Prix Fixe</h2>
+      
+      <ul>
+        <li data-q="prix fixe your choice of one snack, main dish, and dessert. a tasting of our 3 ceviches can be added to your prix fixe +30.">
+          <div class="row"><span class="name">Prix Fixe</span></div>
+          <p class="desc">Your choice of one snack, main dish, and dessert. A tasting of our 3 ceviches can be added to your Prix Fixe +30.</p><div class="prices"><span class="pp"><b>$65 per person</b></span></div>
+        </li></ul>
+    </section>
+    <section id="ceviches" class="sec">
+      <h2>Ceviches</h2>
+      <p class="note">Tasting of all 3 of our ceviches 37</p>
+      <ul>
+        <li data-q="salmon y piña ají amarillo, pineapple pique, pickled radish">
+          <div class="row"><span class="name">Salmon y Piña</span><span class="price">$23</span></div>
+          <p class="desc">ají amarillo, pineapple pique, pickled radish</p>
+        </li>
+        <li data-q="tuna con coco thai young coconut salsa, pickled chilis, scallions">
+          <div class="row"><span class="name">Tuna con COCO</span><span class="price">$25</span></div>
+          <p class="desc">Thai young coconut salsa, pickled chilis, scallions</p>
+        </li>
+        <li data-q="snapper nikkei key lime-ponzu, chile serrano, citrus fruit, garlic bits">
+          <div class="row"><span class="name">Snapper Nikkei</span><span class="price">$27</span></div>
+          <p class="desc">key lime-ponzu, chile serrano, citrus fruit, garlic bits</p>
+        </li></ul>
+    </section>
+    <section id="pinchos-la-plancha" class="sec">
+      <h2>Pinchos à la Plancha</h2>
+      <p class="note">Marinated in parsley and garlic, picante, served with smoked pineapple BBQ and aji picante crunch</p>
+      <ul>
+        <li data-q="panza pork belly">
+          <div class="row"><span class="name">Panza</span><span class="price">$9 each</span></div>
+          <p class="desc">Pork Belly</p>
+        </li>
+        <li data-q="pollo chicken">
+          <div class="row"><span class="name">Pollo</span><span class="price">$9 each</span></div>
+          <p class="desc">Chicken</p>
+        </li>
+        <li data-q="camarón shrimp">
+          <div class="row"><span class="name">Camarón</span><span class="price">$9 each</span></div>
+          <p class="desc">Shrimp</p>
+        </li></ul>
+    </section>
+    <section id="pa-picar-snacks" class="sec">
+      <h2>Pa&#39; Picar (Snacks)</h2>
+      
+      <ul>
+        <li data-q="sancocho soup root vegetables, culantro sofrito, corn">
+          <div class="row"><span class="name">Sancocho Soup</span><span class="price">$15</span></div>
+          <p class="desc">Root vegetables, culantro sofrito, corn</p>
+        </li>
+        <li data-q="green plantain empanada pernil, gandules, citrus mojo">
+          <div class="row"><span class="name">Green Plantain Empanada</span><span class="price">$19</span></div>
+          <p class="desc">Pernil, gandules, citrus mojo</p>
+        </li>
+        <li data-q="smoked mussels escabeche bang island mussels, pimentón escabeche, coconut arepas">
+          <div class="row"><span class="name">Smoked Mussels Escabeche</span><span class="price">$21</span></div>
+          <p class="desc">Bang island mussels, pimentón escabeche, coconut arepas</p>
+        </li>
+        <li data-q="pan con queso whipped goat cheese, garlic honey, bacon, dates, marcona almonds, olive oil">
+          <div class="row"><span class="name">Pan con Queso</span><span class="price">$20</span></div>
+          <p class="desc">Whipped goat cheese, garlic honey, bacon, dates, Marcona almonds, olive oil</p>
+        </li>
+        <li data-q="sorullitos cornmeal fritters, seven sisters cheese, guava-gochujang">
+          <div class="row"><span class="name">Sorullitos</span><span class="price">$18</span></div>
+          <p class="desc">Cornmeal fritters, Seven Sisters cheese, guava-gochujang</p>
+        </li>
+        <li data-q="lamb empanadilla lamb shoulder picadillo, smoked green olive aioli">
+          <div class="row"><span class="name">Lamb Empanadilla</span><span class="price">$20</span></div>
+          <p class="desc">Lamb shoulder picadillo, smoked green olive aioli</p>
+        </li>
+        <li data-q="verde salad green vegetables, avocado, coconut vinaigrette">
+          <div class="row"><span class="name">Verde Salad</span><span class="price">$15</span></div>
+          <p class="desc">Green vegetables, avocado, coconut vinaigrette</p>
+        </li>
+        <li data-q="bacalaitos cod fish fritters, horseradish-blue crab salad">
+          <div class="row"><span class="name">Bacalaitos</span><span class="price">$23</span></div>
+          <p class="desc">Cod fish fritters, horseradish-blue crab salad</p>
+        </li>
+        <li data-q="chicken chicharrones fried chicken tips marinated in achiote, garlic, and oregano, served with mayoketchup">
+          <div class="row"><span class="name">Chicken Chicharrones</span><span class="price">$17</span></div>
+          <p class="desc">Fried chicken tips marinated in achiote, garlic, and oregano, served with mayoketchup</p>
+        </li></ul>
+    </section>
+    <section id="verduras-vegetables" class="sec">
+      <h2>Verduras (Vegetables)</h2>
+      
+      <ul>
+        <li data-q="yuca brava cassava root tots, tossed in spicy paprika aioli">
+          <div class="row"><span class="name">Yuca Brava</span><span class="price">$17</span></div>
+          <p class="desc">Cassava root tots, tossed in spicy paprika aioli</p>
+        </li>
+        <li data-q="tostones smashed green plantains, garlic lime mojo">
+          <div class="row"><span class="name">Tostones</span><span class="price">$11</span></div>
+          <p class="desc">Smashed green plantains, garlic lime mojo</p>
+        </li>
+        <li data-q="maduros fried sweet plantains">
+          <div class="row"><span class="name">Maduros</span><span class="price">$12</span></div>
+          <p class="desc">Fried sweet plantains</p>
+        </li>
+        <li data-q="fufu mashed sweet plantain, citrus-pepper mojo, vianda chips">
+          <div class="row"><span class="name">Fufu</span><span class="price">$15</span></div>
+          <p class="desc">Mashed sweet plantain, citrus-pepper mojo, vianda chips</p>
+        </li>
+        <li data-q="gandules sofrito rojo, ham broth">
+          <div class="row"><span class="name">Gandules</span><span class="price">$12</span></div>
+          <p class="desc">Sofrito rojo, ham broth</p>
+        </li>
+        <li data-q="black beans sofrito verde, vegetable broth">
+          <div class="row"><span class="name">Black Beans</span><span class="price">$10</span></div>
+          <p class="desc">Sofrito verde, vegetable broth</p>
+        </li>
+        <li data-q="arroz blanco white rice">
+          <div class="row"><span class="name">Arroz blanco</span><span class="price">$7</span></div>
+          <p class="desc">White rice</p>
+        </li></ul>
+    </section>
+    <section id="platillos-main-dishes" class="sec">
+      <h2>Platillos (Main Dishes)</h2>
+      
+      <ul>
+        <li data-q="short rib carne guisada red wine-braised short ribs, marble potatoes, baby carrots, olives">
+          <div class="row"><span class="name">Short Rib Carne Guisada</span><span class="price">$44</span></div>
+          <p class="desc">Red wine-braised short ribs, marble potatoes, baby carrots, olives</p>
+        </li>
+        <li data-q="imperial chicken rice pan-seared breast served over saffron rice filled with cheese, corn, peas, and imperial stew">
+          <div class="row"><span class="name">Imperial Chicken Rice</span><span class="price">$39</span></div>
+          <p class="desc">Pan-seared breast served over saffron rice filled with cheese, corn, peas, and imperial stew</p>
+        </li>
+        <li data-q="sweet plantain canoas maduros filled with portobello mushroom picadillo, creamed yuca, spinach, and cheese">
+          <div class="row"><span class="name">Sweet Plantain Canoas</span><span class="price">$37</span></div>
+          <p class="desc">Maduros filled with portobello mushroom picadillo, creamed yuca, spinach, and cheese</p>
+        </li>
+        <li data-q="seafood asopao halibut served over saffron and pigeon pea porridge, with shrimp, scallops, and calamari">
+          <div class="row"><span class="name">Seafood Asopao</span><span class="price">$45</span></div>
+          <p class="desc">Halibut served over saffron and pigeon pea porridge, with shrimp, scallops, and calamari</p>
+        </li>
+        <li data-q="vaca frita creekstone farms skirt steak, black beans, white rice, tomato escabeche, avocado">
+          <div class="row"><span class="name">Vaca Frita</span><span class="price">$47</span></div>
+          <p class="desc">Creekstone Farms skirt steak, black beans, white rice, tomato escabeche, avocado</p>
+        </li></ul>
+    </section>
+    <section id="suckling-pig-dinner" class="sec">
+      <h2>Suckling Pig Dinner</h2>
+      
+      <ul>
+        <li data-q="suckling pig dinner slow-roasted lechón marinated with achiote, oregano, garlic and sour orange served with a firstcourse of verde salad and accompanied with rice, gandules bean stew, maduros, and mofongo">
+          <div class="row"><span class="name">Suckling Pig Dinner</span></div>
+          <p class="desc">Slow-roasted lechón marinated with achiote, oregano, garlic and sour orange served with a firstcourse of verde salad and accompanied with rice, gandules bean stew, maduros, and mofongo</p><div class="prices"><span class="pp"><b>$75 per person</b></span></div>
+        </li></ul>
+    </section>
+    <section id="postres-desserts" class="sec">
+      <h2>Postres (Desserts)</h2>
+      
+      <ul>
+        <li data-q="flan con queso candied papaya">
+          <div class="row"><span class="name">Flan con Queso</span><span class="price">$11</span></div>
+          <p class="desc">candied papaya</p>
+        </li>
+        <li data-q="tembleque pineapple coulis">
+          <div class="row"><span class="name">Tembleque</span><span class="price">$11</span></div>
+          <p class="desc">pineapple coulis</p>
+        </li>
+        <li data-q="buñuelos dulce de leche">
+          <div class="row"><span class="name">Buñuelos</span><span class="price">$12</span></div>
+          <p class="desc">Dulce de Leche</p>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>Consuming raw or uncooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness. An automatic 20% gratuity will be applied to all parties of 6 or more; All Credit Card charges will be subject to a 3% processing fee, not applicable to debit card charges or cash transactions.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Bolo.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Bolo menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Antylia Menu</title>
+<meta name="description" content="Menu for Antylia, Bloorcourt (Bloor St W at Dufferin).">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Antylia</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=1059%20Bloor%20St%20W%2C%20Toronto%2C%20ON%20M6H%201M3">1059 Bloor St W, Toronto, ON M6H 1M3</a><a href="tel:4165324919">416-532-4919</a></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#a-la-carta" data-sec="a-la-carta">A la carta</a><a href="#trust-us" data-sec="trust-us">Trust us</a><a href="#dessert" data-sec="dessert">Dessert</a><a href="#cocktail" data-sec="cocktail">Cocktail</a><a href="#sparkling" data-sec="sparkling">Sparkling</a><a href="#white" data-sec="white">White</a><a href="#red" data-sec="red">Red</a><a href="#rose-and-orange" data-sec="rose-and-orange">Rose and Orange</a><a href="#beer" data-sec="beer">Beer</a><a href="#spirit-free" data-sec="spirit-free">Spirit Free</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="a-la-carta" class="sec">
+      <h2>A la carta</h2>
+      
+      <ul>
+        <li data-q="foie gras gorditas with wild blueberry mole rougie farms duck foie gras, on wild blueberry mole, ken&#39;s red flint duck fat gordita, peruvian smoked salt. (2pc)">
+          <div class="row"><span class="name">Foie Gras Gorditas with Wild Blueberry Mole</span><span class="price">$22</span></div>
+          <p class="desc">Rougie Farms Duck Foie Gras, ON Wild Blueberry Mole, Ken&#39;s Red Flint Duck Fat Gordita, Peruvian Smoked Salt. (2pc)</p>
+        </li>
+        <li data-q="merkén cheese and olives smoked chili merkén, onsen quail eggs, marinated panela cheese, peruvian botija olives">
+          <div class="row"><span class="name">Merkén Cheese and Olives</span><span class="price">$12</span></div>
+          <p class="desc">Smoked Chili Merkén, Onsen Quail Eggs, Marinated Panela Cheese, Peruvian Botija Olives</p>
+        </li>
+        <li data-q="argentinian shrimp aguachile verde poached argentinian shrimp, fresh aguachile verde, cucumber, avocado, jalapeño, prickly ash salsa macha">
+          <div class="row"><span class="name">Argentinian Shrimp Aguachile Verde</span><span class="price">$30</span></div>
+          <p class="desc">Poached Argentinian Shrimp, Fresh Aguachile verde, Cucumber, Avocado, Jalapeño, Prickly Ash Salsa Macha</p>
+        </li>
+        <li data-q="fresh succotash salad ontario herloom tomatoes, physalis, corn, runner beans and pickled shallots in our tomatillo and serrano vinaigrette.">
+          <div class="row"><span class="name">Fresh Succotash Salad</span><span class="price">$17</span></div>
+          <p class="desc">Ontario Herloom tomatoes, physalis, corn, runner beans and pickled shallots in our tomatillo and serrano vinaigrette.</p>
+        </li>
+        <li data-q="ontario runner beans on tia marina&#39;s pipian verde pan seared on runner beans aunt marina&#39;s pumpkin seed pipian, lime crema, cotija, foraged garlic mustard oil, pepitas">
+          <div class="row"><span class="name">Ontario Runner Beans on Tia Marina&#39;s Pipian Verde</span><span class="price">$21</span></div>
+          <p class="desc">Pan Seared ON Runner Beans Aunt Marina&#39;s Pumpkin Seed Pipian, Lime Crema, Cotija, Foraged Garlic Mustard Oil, Pepitas</p>
+        </li>
+        <li data-q="charred cauliflower with prairie mole lacto-fermented cauliflower, carrot &amp; caraway mole, closed-circuit recado negro, maple sunflower crumble, fire">
+          <div class="row"><span class="name">Charred Cauliflower With Prairie Mole</span><span class="price">$24</span></div>
+          <p class="desc">Lacto-Fermented Cauliflower, Carrot &amp; Caraway Mole, Closed-Circuit Recado Negro, Maple Sunflower Crumble, Fire</p>
+        </li>
+        <li data-q="lima bean tetela with wild ramp and asparagus salsa macha verde nixtamalized tuxpeño amarillo masa, lima beans refried in avocado leaf, foraged salsa macha verde, roasted pearl onions, pea shoots.">
+          <div class="row"><span class="name">Lima Bean Tetela with Wild Ramp and Asparagus Salsa Macha Verde</span><span class="price">$24</span></div>
+          <p class="desc">Nixtamalized Tuxpeño Amarillo masa, Lima Beans refried in Avocado leaf, Foraged Salsa Macha Verde, Roasted Pearl Onions, Pea shoots.</p>
+        </li>
+        <li data-q="lamb rack on mole blanco with wild foraged chimichurri corn-breaded and roasted half lamb rack with white asparagus and jaguar cacao mole blanco, topped with garlic mustard and ramp chimichurri. contains cashews.">
+          <div class="row"><span class="name">Lamb Rack On Mole Blanco with Wild Foraged Chimichurri</span><span class="price">$45</span></div>
+          <p class="desc">Corn-Breaded and Roasted half Lamb Rack with White Asparagus and Jaguar Cacao Mole Blanco, topped with Garlic Mustard and Ramp Chimichurri. Contains cashews.</p>
+        </li>
+        <li data-q="king cole duck breast with mole rojo charcoal grilled, miso &amp; mole marinated ontario duck breast, charred chayote, guerrero-style mole rojo">
+          <div class="row"><span class="name">King Cole Duck Breast with Mole Rojo</span><span class="price">$48</span></div>
+          <p class="desc">Charcoal Grilled, Miso &amp; Mole marinated Ontario Duck Breast, Charred Chayote, Guerrero-Style Mole Rojo</p>
+        </li></ul>
+    </section>
+    <section id="trust-us" class="sec">
+      <h2>Trust us</h2>
+      
+      <ul>
+        <li data-q="menu degustación pairings available.">
+          <div class="row"><span class="name">Menu degustación</span></div>
+          <p class="desc">Pairings Available.</p><div class="prices"><span class="pp"><b>$125 per person</b></span></div>
+        </li></ul>
+    </section>
+    <section id="dessert" class="sec">
+      <h2>Dessert</h2>
+      
+      <ul>
+        <li data-q="el flan saikyo miso flan napolitano, now &amp; later cafe de olla syrup, fried milk">
+          <div class="row"><span class="name">El Flan</span><span class="price">$13</span></div>
+          <p class="desc">Saikyo Miso Flan Napolitano, Now &amp; Later Cafe De Olla Syrup, Fried Milk</p>
+        </li>
+        <li data-q="the heart berry macerated strawberries, strawberry top and lemon balm cheong, tuscacora white corn maple crumble. $3 of every sale goes to namaygoosisagagun first nations wildfire relief">
+          <div class="row"><span class="name">The Heart Berry</span><span class="price">$14</span></div>
+          <p class="desc">Macerated Strawberries, Strawberry Top And Lemon Balm Cheong, Tuscacora White Corn Maple Crumble. $3 of every sale goes to Namaygoosisagagun First Nations wildfire relief</p>
+        </li>
+        <li data-q="tacos de gloria maple milk caramel, puffed wild rice, pine nuts, flour tortilla, pecan maple mousse. (2pc)">
+          <div class="row"><span class="name">Tacos De Gloria</span><span class="price">$17</span></div>
+          <p class="desc">Maple Milk Caramel, Puffed Wild Rice, Pine Nuts, Flour Tortilla, Pecan Maple Mousse. (2pc)</p>
+        </li></ul>
+    </section>
+    <section id="cocktail" class="sec">
+      <h2>Cocktail</h2>
+      
+      <ul>
+        <li data-q="mez &amp; tonic (1.5oz) amarás mezcal. cucumber. quinine. carbonation.">
+          <div class="row"><span class="name">Mez &amp; Tonic (1.5oz)</span><span class="price">$18</span></div>
+          <p class="desc">Amarás Mezcal. Cucumber. Quinine. Carbonation.</p>
+        </li>
+        <li data-q="chilcano (2oz) gobernador pisco. chicha morada. carbonation.">
+          <div class="row"><span class="name">Chilcano (2oz)</span><span class="price">$19</span></div>
+          <p class="desc">Gobernador Pisco. Chicha Morada. Carbonation.</p>
+        </li>
+        <li data-q="mambo no. 8 (2.25oz) abelha cachaça. fernet. closed circuit lime cheong. absinthe">
+          <div class="row"><span class="name">Mambo No. 8 (2.25oz)</span><span class="price">$23</span></div>
+          <p class="desc">Abelha Cachaça. Fernet. Closed Circuit Lime Cheong. Absinthe</p>
+        </li>
+        <li data-q="margarita - mezcal or tequila (2oz) amarás mezcal or hornitos tequila. izumi yuzu sake. verjus.">
+          <div class="row"><span class="name">Margarita - Mezcal or Tequila (2oz)</span><span class="price">$24</span></div>
+          <p class="desc">Amarás Mezcal or Hornitos Tequila. Izumi Yuzu Sake. Verjus.</p>
+        </li></ul>
+    </section>
+    <section id="sparkling" class="sec">
+      <h2>Sparkling</h2>
+      
+      <ul>
+        <li data-q="toca cava. brut. barcelona. esp. nv. ">
+          <div class="row"><span class="name">Toca Cava. Brut. Barcelona. ESP. NV.</span></div>
+          <div class="prices"><span class="pp"><span class="pl">5oz</span> <b>$15</b></span><span class="pp"><span class="pl">Bottle</span> <b>$70</b></span></div>
+        </li>
+        <li data-q="frerejean. brut. champagne. cote des blancs. fra. nv. ">
+          <div class="row"><span class="name">Frerejean. Brut. Champagne. Cote des Blancs. FRA. NV.</span></div>
+          <div class="prices"><span class="pp"><span class="pl">5oz</span> <b>$45</b></span><span class="pp"><span class="pl">Bottle</span> <b>$195</b></span></div>
+        </li></ul>
+    </section>
+    <section id="white" class="sec">
+      <h2>White</h2>
+      
+      <ul>
+        <li data-q="lyut pipeño blanco. chasselas, moscatel, maule. chl. nv ">
+          <div class="row"><span class="name">Lyut Pipeño Blanco. Chasselas, Moscatel, Maule. CHL. NV</span></div>
+          <div class="prices"><span class="pp"><span class="pl">5oz</span> <b>$20</b></span><span class="pp"><span class="pl">Bottle</span> <b>$110</b></span></div>
+        </li>
+        <li data-q="selbach oster. kabinet saar. riesling. mosel. ger. 2023. ">
+          <div class="row"><span class="name">Selbach Oster. Kabinet Saar. Riesling. Mosel. GER. 2023.</span></div>
+          <div class="prices"><span class="pp"><span class="pl">5oz</span> <b>$18</b></span><span class="pp"><span class="pl">Bottle</span> <b>$85</b></span></div>
+        </li>
+        <li data-q="zulmira. vinho verde. minho. pt. 2024. ">
+          <div class="row"><span class="name">Zulmira. Vinho Verde. Minho. PT. 2024.</span></div>
+          <div class="prices"><span class="pp"><span class="pl">5oz</span> <b>$19</b></span><span class="pp"><span class="pl">Bottle</span> <b>$90</b></span></div>
+        </li></ul>
+    </section>
+    <section id="red" class="sec">
+      <h2>Red</h2>
+      
+      <ul>
+        <li data-q="lyut pipeño tinto. pais. maule. chl. nv ">
+          <div class="row"><span class="name">Lyut Pipeño Tinto. Pais. Maule. CHL. NV</span></div>
+          <div class="prices"><span class="pp"><span class="pl">5oz</span> <b>$20</b></span><span class="pp"><span class="pl">Bottle</span> <b>$110</b></span></div>
+        </li>
+        <li data-q="chioccioli. sanfora. sangiovese. tuscany. ita. 2023. ">
+          <div class="row"><span class="name">Chioccioli. Sanfora. Sangiovese. Tuscany. ITA. 2023.</span></div>
+          <div class="prices"><span class="pp"><span class="pl">5oz</span> <b>$19</b></span><span class="pp"><span class="pl">Bottle</span> <b>$85</b></span></div>
+        </li>
+        <li data-q="garzon. tannat. maldonado. uru. 2024 ">
+          <div class="row"><span class="name">Garzon. Tannat. Maldonado. URU. 2024</span></div>
+          <div class="prices"><span class="pp"><span class="pl">5oz</span> <b>$18</b></span><span class="pp"><span class="pl">Bottle</span> <b>$80</b></span></div>
+        </li>
+        <li data-q="andes cru. equis. criolla blend. maule. chi. 2022 ">
+          <div class="row"><span class="name">Andes Cru. Equis. Criolla Blend. Maule. CHI. 2022</span></div>
+          <div class="prices"><span class="pp"><span class="pl">5oz</span> <b>$21</b></span><span class="pp"><span class="pl">Bottle</span> <b>$100</b></span></div>
+        </li></ul>
+    </section>
+    <section id="rose-and-orange" class="sec">
+      <h2>Rose and Orange</h2>
+      
+      <ul>
+        <li data-q="ksara rose. cab franc and syrah. bekaa valley. lbn. 2025 ">
+          <div class="row"><span class="name">Ksara Rose. Cab franc and Syrah. Bekaa Valley. LBN. 2025</span></div>
+          <div class="prices"><span class="pp"><span class="pl">5oz</span> <b>$19</b></span><span class="pp"><span class="pl">Bottle</span> <b>$90</b></span></div>
+        </li>
+        <li data-q="viñedo lejano. galileo. criolla blend. mendoza. arg. 2023 ">
+          <div class="row"><span class="name">viñedo lejano. galileo. criolla blend. mendoza. ARG. 2023</span></div>
+          <div class="prices"><span class="pp"><span class="pl">5oz</span> <b>$19</b></span><span class="pp"><span class="pl">Bottle</span> <b>$90</b></span></div>
+        </li></ul>
+    </section>
+    <section id="beer" class="sec">
+      <h2>Beer</h2>
+      
+      <ul>
+        <li data-q="modelo. lager. 355ml. mxn ">
+          <div class="row"><span class="name">modelo. lager. 355ml. MXN</span><span class="price">$10</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="spirit-free" class="sec">
+      <h2>Spirit Free</h2>
+      
+      <ul>
+        <li data-q="house brewed chicha morada. antylia. 355ml ">
+          <div class="row"><span class="name">House Brewed Chicha Morada. Antylia. 355mL</span><span class="price">$8</span></div>
+          
+        </li>
+        <li data-q="mock raspberry lime mint soda. toronto. 355ml. ">
+          <div class="row"><span class="name">mock raspberry lime mint soda. toronto. 355mL.</span><span class="price">$8</span></div>
+          
+        </li>
+        <li data-q="gaptooth. yuzu botanical soda. toronto. 355ml. ">
+          <div class="row"><span class="name">gaptooth. yuzu botanical soda. toronto. 355mL.</span><span class="price">$10</span></div>
+          
+        </li>
+        <li data-q="collective arts. non alcoholic ipa. toronto. 355ml. ">
+          <div class="row"><span class="name">collective arts. non alcoholic ipa. toronto. 355mL.</span><span class="price">$10</span></div>
+          
+        </li>
+        <li data-q="featherstone. verjus. beamsville. 150ml. ">
+          <div class="row"><span class="name">featherstone. verjus. beamsville. 150mL.</span><span class="price">$14</span></div>
+          
+        </li>
+        <li data-q="casa piñata. pineapple tepache. ontario. 375ml. ">
+          <div class="row"><span class="name">casa piñata. pineapple tepache. ontario. 375mL.</span><span class="price">$25</span></div>
+          
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>An automatic gratuity of 20% will be added to all groups of 6 or more guests. Prices do not include HST. Trust us: Menu degustación $125 per person, pairings available. $3 of every sale of The Heart Berry goes to Namaygoosisagagun First Nations wildfire relief.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Antylia.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Antylia menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's US$29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for US$29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>
