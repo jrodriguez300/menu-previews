@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Otro Cafe Menu</title>
+<meta name="description" content="Menu for Otro Cafe, Midtown / North Central (N 7th St at Bethany Home).">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Otro Cafe</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=6035%20N%207th%20St%2C%20Phoenix%2C%20AZ%2085014">6035 N 7th St, Phoenix, AZ 85014</a><a href="tel:6022660831">602-266-0831</a><span>Open every day 8am-9pm. Brunch 8am-4pm; dinner 4pm-9pm; happy hour 3pm-6pm daily</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#buenos-dias" data-sec="buenos-dias">Buenos Dias</a><a href="#desayuno" data-sec="desayuno">Desayuno</a><a href="#sopa" data-sec="sopa">Sopa</a><a href="#ensalada" data-sec="ensalada">Ensalada</a><a href="#a-la-carte" data-sec="a-la-carte">A la Carte</a><a href="#entrada" data-sec="entrada">Entrada</a><a href="#las-penas-con-pan" data-sec="las-penas-con-pan">Las Penas con Pan</a><a href="#burguesa" data-sec="burguesa">Burguesa</a><a href="#taco-torta-burrito-bowl" data-sec="taco-torta-burrito-bowl">Taco, Torta, Burrito &amp; Bowl</a><a href="#la-parrillada" data-sec="la-parrillada">La Parrillada</a><a href="#especiales-dinner-from-4pm" data-sec="especiales-dinner-from-4pm">Especiales (dinner, from 4pm)</a><a href="#postre" data-sec="postre">Postre</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="buenos-dias" class="sec">
+      <h2>Buenos Dias</h2>
+      
+      <ul>
+        <li data-q="le parfait organic yogurt, housemade &amp; toasted granola with rolled oats, almonds, pepitas, dried blueberries &amp; seasonal fruit (gf, v)">
+          <div class="row"><span class="name">Le Parfait</span><span class="price">$9.50</span></div>
+          <p class="desc">Organic yogurt, housemade &amp; toasted granola with rolled oats, almonds, pepitas, dried blueberries &amp; seasonal fruit (gf, v)</p>
+        </li>
+        <li data-q="famous flapjacks single or short stack of flapjacks (v). &quot;barry&#39;s&quot; with fresh berries cooked in +$1 / +$2; &quot;farrah&#39;s&quot; with chocolate chips cooked in +$1 / +$2">
+          <div class="row"><span class="name">Famous Flapjacks</span></div>
+          <p class="desc">Single or short stack of flapjacks (v). &quot;Barry&#39;s&quot; with fresh berries cooked in +$1 / +$2; &quot;Farrah&#39;s&quot; with chocolate chips cooked in +$1 / +$2</p><div class="prices"><span class="pp"><span class="pl">Single</span> <b>$7</b></span><span class="pp"><span class="pl">Short Stack</span> <b>$13</b></span></div>
+        </li>
+        <li data-q="gacha mexla over-night yogurt soaked grains (quinoa, farro, steel cut oats), apple, almonds, dried blueberries, golden raisins, honey drizzle (v)">
+          <div class="row"><span class="name">Gacha Mexla</span><span class="price">$11</span></div>
+          <p class="desc">Over-night yogurt soaked grains (quinoa, farro, steel cut oats), apple, almonds, dried blueberries, golden raisins, honey drizzle (v)</p>
+        </li>
+        <li data-q="cajeta flapjacks single or short stack of our famous flapjacks topped with sliced banana, creme fraiche, cajeta caramel &amp; candied peanuts (v)">
+          <div class="row"><span class="name">Cajeta Flapjacks</span></div>
+          <p class="desc">Single or short stack of our famous flapjacks topped with sliced banana, creme fraiche, cajeta caramel &amp; candied peanuts (v)</p><div class="prices"><span class="pp"><span class="pl">Single</span> <b>$9</b></span><span class="pp"><span class="pl">Short Stack</span> <b>$15</b></span></div>
+        </li></ul>
+    </section>
+    <section id="desayuno" class="sec">
+      <h2>Desayuno</h2>
+      
+      <ul>
+        <li data-q="mexican breakfast* two eggs, schreiner&#39;s chorizo, pinto beans, queso cotija, served with flour tortillas (gf without tortillas)">
+          <div class="row"><span class="name">Mexican Breakfast*</span><span class="price">$15</span></div>
+          <p class="desc">Two eggs, Schreiner&#39;s chorizo, pinto beans, queso cotija, served with flour tortillas (gf without tortillas)</p>
+        </li>
+        <li data-q="chilaquiles* choice of chicken or vegetables; +$2 combo, +$5 barbacoa. corn tostadas oven-baked with oaxaca cheese &amp; salsa, layered &amp; topped with two eggs, pico de gallo, queso cotija. choice of ranchero, verde or x-mas (gf, v)">
+          <div class="row"><span class="name">Chilaquiles*</span><span class="price">$16</span></div>
+          <p class="desc">Choice of chicken or vegetables; +$2 combo, +$5 barbacoa. Corn tostadas oven-baked with oaxaca cheese &amp; salsa, layered &amp; topped with two eggs, pico de gallo, queso cotija. Choice of ranchero, verde or x-mas (gf, v)</p>
+        </li>
+        <li data-q="barbacoa &amp; eggs* oven roasted chuck roast &amp; brisket, two eggs any style, guacamole, pico de gallo, pinto beans, cotija, served with flour tortillas (gf without tortillas)">
+          <div class="row"><span class="name">Barbacoa &amp; Eggs*</span><span class="price">$19</span></div>
+          <p class="desc">Oven roasted chuck roast &amp; brisket, two eggs any style, guacamole, pico de gallo, pinto beans, cotija, served with flour tortillas (gf without tortillas)</p>
+        </li>
+        <li data-q="huevos rancheros* quesadillas with two eggs any style, pinto beans, smothered in house salsa with cilantro &amp; queso cotija sprinkle. choice of ranchero, verde or x-mas (v)">
+          <div class="row"><span class="name">Huevos Rancheros*</span><span class="price">$15</span></div>
+          <p class="desc">Quesadillas with two eggs any style, pinto beans, smothered in house salsa with cilantro &amp; queso cotija sprinkle. Choice of ranchero, verde or x-mas (v)</p>
+        </li>
+        <li data-q="sampler breakfast* two eggs, flapjack, choice of bacon, chorizo or potato (+$2 linguica); choice of our house flour tortillas, noble sourdough or telera toast (v)">
+          <div class="row"><span class="name">Sampler Breakfast*</span><span class="price">$19</span></div>
+          <p class="desc">Two eggs, flapjack, choice of bacon, chorizo or potato (+$2 linguica); choice of our house flour tortillas, Noble sourdough or telera toast (v)</p>
+        </li>
+        <li data-q="vegan breakfast burrito* house-made mushroom &amp; tofu soy-rizo, beans, potato, la sonorense tortilla (v)">
+          <div class="row"><span class="name">Vegan Breakfast Burrito*</span><span class="price">$13.50</span></div>
+          <p class="desc">House-made mushroom &amp; tofu soy-rizo, beans, potato, La Sonorense tortilla (v)</p>
+        </li>
+        <li data-q="egg torta* two eggs scrambled with schreiner&#39;s chorizo, pinto beans, avocado, tomato on noble telera">
+          <div class="row"><span class="name">Egg Torta*</span><span class="price">$13.50</span></div>
+          <p class="desc">Two eggs scrambled with Schreiner&#39;s chorizo, pinto beans, avocado, tomato on Noble telera</p>
+        </li>
+        <li data-q="avocado toast* toasted noble sourdough spread with our house guacamole, two poached eggs, served with simple greens">
+          <div class="row"><span class="name">Avocado Toast*</span><span class="price">$17</span></div>
+          <p class="desc">Toasted Noble sourdough spread with our house guacamole, two poached eggs, served with simple greens</p>
+        </li>
+        <li data-q="frittata* beaten eggs, spinach, mushrooms, onions baked &amp; topped with crow&#39;s dairy goat cheese, avocado &amp; pico de gallo (gf, v)">
+          <div class="row"><span class="name">Frittata*</span><span class="price">$15</span></div>
+          <p class="desc">Beaten eggs, spinach, mushrooms, onions baked &amp; topped with Crow&#39;s Dairy goat cheese, avocado &amp; pico de gallo (gf, v)</p>
+        </li>
+        <li data-q="consuelo del sur* schreiner&#39;s chorizo, linguica sausage, rustic potatoes over tomatillo gravy, two eggs any style, pico de gallo &amp; queso cotija sprinkle (gf)">
+          <div class="row"><span class="name">Consuelo del Sur*</span><span class="price">$16</span></div>
+          <p class="desc">Schreiner&#39;s chorizo, linguica sausage, rustic potatoes over tomatillo gravy, two eggs any style, pico de gallo &amp; queso cotija sprinkle (gf)</p>
+        </li>
+        <li data-q="nortico* smoked salmon, sliced avocado, poached eggs, hollandaise on toasted noble sourdough, fresh cracked pepper, served with seasonal fruit">
+          <div class="row"><span class="name">Nortico*</span><span class="price">$18</span></div>
+          <p class="desc">Smoked salmon, sliced avocado, poached eggs, hollandaise on toasted Noble sourdough, fresh cracked pepper, served with seasonal fruit</p>
+        </li>
+        <li data-q="el madrid* jamon serrano, sliced tomato, poached eggs, fresh hollandaise on top of toasted noble sourdough, served with seasonal fruit">
+          <div class="row"><span class="name">El Madrid*</span><span class="price">$18</span></div>
+          <p class="desc">Jamon serrano, sliced tomato, poached eggs, fresh hollandaise on top of toasted Noble sourdough, served with seasonal fruit</p>
+        </li>
+        <li data-q="breakfast burrito* schreiner&#39;s chorizo, scrambled eggs, potato, beans, tillamook cheddar, la sonorense tortilla">
+          <div class="row"><span class="name">Breakfast Burrito*</span><span class="price">$14</span></div>
+          <p class="desc">Schreiner&#39;s chorizo, scrambled eggs, potato, beans, Tillamook cheddar, La Sonorense tortilla</p>
+        </li></ul>
+    </section>
+    <section id="sopa" class="sec">
+      <h2>Sopa</h2>
+      
+      <ul>
+        <li data-q="caldo de pollo otro pho: chicken broth, rice noodles, sliced chicken breast, snow peas, bean sprouts, chile, fresh herbs, half lime &amp; salsa de soya (gf)">
+          <div class="row"><span class="name">Caldo de Pollo</span></div>
+          <p class="desc">Otro pho: chicken broth, rice noodles, sliced chicken breast, snow peas, bean sprouts, chile, fresh herbs, half lime &amp; salsa de soya (gf)</p><div class="prices"><span class="pp"><span class="pl">Small</span> <b>$9</b></span><span class="pp"><span class="pl">Large</span> <b>$17</b></span></div>
+        </li>
+        <li data-q="pozole blanco house stock, white hominy, shredded pork with avocado, cabbage, oregano, white onion, cilantro, pasilla chile-oil, half lime, served with flour tortillas (gf)">
+          <div class="row"><span class="name">Pozole Blanco</span></div>
+          <p class="desc">House stock, white hominy, shredded pork with avocado, cabbage, oregano, white onion, cilantro, pasilla chile-oil, half lime, served with flour tortillas (gf)</p><div class="prices"><span class="pp"><span class="pl">Small</span> <b>$9</b></span><span class="pp"><span class="pl">Large</span> <b>$17</b></span></div>
+        </li>
+        <li data-q="pozole vegano guajillo broth, hominy, sauteed rustic vegetables with avocado, cabbage, oregano, white onion, cilantro, half lime, served with flour tortillas (gf, v)">
+          <div class="row"><span class="name">Pozole Vegano</span></div>
+          <p class="desc">Guajillo broth, hominy, sauteed rustic vegetables with avocado, cabbage, oregano, white onion, cilantro, half lime, served with flour tortillas (gf, v)</p><div class="prices"><span class="pp"><span class="pl">Small</span> <b>$9</b></span><span class="pp"><span class="pl">Large</span> <b>$17</b></span></div>
+        </li></ul>
+    </section>
+    <section id="ensalada" class="sec">
+      <h2>Ensalada</h2>
+      <p class="note">Add grilled proteins +$7 (available after 11am): chicken breast, carne asada, white fish*, shrimp*; ora king salmon* +$9</p>
+      <ul>
+        <li data-q="de la casa thinly sliced serrano jamon, cerignola olive, red onion, grape tomato, noble bread croutons, romaine, herb vinaigrette topped with crow&#39;s dairy goat cheese">
+          <div class="row"><span class="name">De la Casa</span></div>
+          <p class="desc">Thinly sliced serrano jamon, cerignola olive, red onion, grape tomato, Noble bread croutons, romaine, herb vinaigrette topped with Crow&#39;s Dairy goat cheese</p><div class="prices"><span class="pp"><span class="pl">Small</span> <b>$8</b></span><span class="pp"><span class="pl">Large</span> <b>$16</b></span></div>
+        </li>
+        <li data-q="inca tri colored quinoa, herbs, arugula &amp; kale, dried cranberries, avocado, grilled corn, red onion, grape tomato, pepitas, yulu seed, fresh lime, herb vinaigrette (gf, v)">
+          <div class="row"><span class="name">Inca</span></div>
+          <p class="desc">Tri colored quinoa, herbs, arugula &amp; kale, dried cranberries, avocado, grilled corn, red onion, grape tomato, pepitas, yulu seed, fresh lime, herb vinaigrette (gf, v)</p><div class="prices"><span class="pp"><span class="pl">Small</span> <b>$8</b></span><span class="pp"><span class="pl">Large</span> <b>$16</b></span></div>
+        </li>
+        <li data-q="cortado tomato, egg, carrot, corn nut, dried peas, avocado, arugula, kale, cabbage, creamy vinaigrette topped with tillamook cheddar (gf, v)">
+          <div class="row"><span class="name">Cortado</span></div>
+          <p class="desc">Tomato, egg, carrot, corn nut, dried peas, avocado, arugula, kale, cabbage, creamy vinaigrette topped with Tillamook cheddar (gf, v)</p><div class="prices"><span class="pp"><span class="pl">Small</span> <b>$8</b></span><span class="pp"><span class="pl">Large</span> <b>$16</b></span></div>
+        </li>
+        <li data-q="asado available after 11am. choice of grilled chicken or carne asada. apple, pear, jicama, herbs, romaine, spinach, cabbage, candied peanuts, peanut vinaigrette &amp; topped with freshly shaven zamorano cheese (gf)">
+          <div class="row"><span class="name">Asado</span><span class="price">$18</span></div>
+          <p class="desc">Available after 11am. Choice of grilled chicken or carne asada. Apple, pear, jicama, herbs, romaine, spinach, cabbage, candied peanuts, peanut vinaigrette &amp; topped with freshly shaven zamorano cheese (gf)</p>
+        </li></ul>
+    </section>
+    <section id="a-la-carte" class="sec">
+      <h2>A la Carte</h2>
+      
+      <ul>
+        <li data-q="side salad (gf, v)">
+          <div class="row"><span class="name">Side Salad</span><span class="price">$6</span></div>
+          <p class="desc">(gf, v)</p>
+        </li>
+        <li data-q="fruta (gf, v)">
+          <div class="row"><span class="name">Fruta</span><span class="price">$5</span></div>
+          <p class="desc">(gf, v)</p>
+        </li>
+        <li data-q="pappas fritas (gf, v)">
+          <div class="row"><span class="name">Pappas Fritas</span><span class="price">$7</span></div>
+          <p class="desc">(gf, v)</p>
+        </li>
+        <li data-q="frijoles (gf, v)">
+          <div class="row"><span class="name">Frijoles</span><span class="price">$3.50</span></div>
+          <p class="desc">(gf, v)</p>
+        </li>
+        <li data-q="side of avocado (gf, v)">
+          <div class="row"><span class="name">Side of Avocado</span><span class="price">$2</span></div>
+          <p class="desc">(gf, v)</p>
+        </li>
+        <li data-q="side of tortillas (v)">
+          <div class="row"><span class="name">Side of Tortillas</span><span class="price">$3</span></div>
+          <p class="desc">(v)</p>
+        </li>
+        <li data-q="side of linguica (gf)">
+          <div class="row"><span class="name">Side of Linguica</span><span class="price">$7</span></div>
+          <p class="desc">(gf)</p>
+        </li>
+        <li data-q="side of bacon (gf)">
+          <div class="row"><span class="name">Side of Bacon</span><span class="price">$6</span></div>
+          <p class="desc">(gf)</p>
+        </li>
+        <li data-q="side of chorizo (gf)">
+          <div class="row"><span class="name">Side of Chorizo</span><span class="price">$6</span></div>
+          <p class="desc">(gf)</p>
+        </li>
+        <li data-q="sauteed veg (gf, v)">
+          <div class="row"><span class="name">Sauteed Veg</span><span class="price">$6</span></div>
+          <p class="desc">(gf, v)</p>
+        </li></ul>
+    </section>
+    <section id="entrada" class="sec">
+      <h2>Entrada</h2>
+      <p class="note">Lunch: available after 11am</p>
+      <ul>
+        <li data-q="chips &amp; salsa house corn chips, tejano salsa (gf, v)">
+          <div class="row"><span class="name">Chips &amp; Salsa</span><span class="price">$4</span></div>
+          <p class="desc">House corn chips, tejano salsa (gf, v)</p>
+        </li>
+        <li data-q="guacamole avocado, citrus, chile, tomatillo, cilantro, red onion, queso cotija, with chips; +$2 with raw vegetables (gf, v)">
+          <div class="row"><span class="name">Guacamole</span></div>
+          <p class="desc">Avocado, citrus, chile, tomatillo, cilantro, red onion, queso cotija, with chips; +$2 with raw vegetables (gf, v)</p><div class="prices"><span class="pp"><span class="pl">Small</span> <b>$8</b></span><span class="pp"><span class="pl">Large</span> <b>$13</b></span></div>
+        </li>
+        <li data-q="ensalada de la calle mango, watermelon, cucumber, jicama, lime, chile, basil (gf, v)">
+          <div class="row"><span class="name">Ensalada de la Calle</span><span class="price">$14</span></div>
+          <p class="desc">Mango, watermelon, cucumber, jicama, lime, chile, basil (gf, v)</p>
+        </li>
+        <li data-q="ceviche tropical citrus marinated hiramasa, mango, red onion, avocado, fresno chile, aji, coconut-milk leche de tigre (gf)">
+          <div class="row"><span class="name">Ceviche Tropical</span><span class="price">$22</span></div>
+          <p class="desc">Citrus marinated hiramasa, mango, red onion, avocado, fresno chile, aji, coconut-milk leche de tigre (gf)</p>
+        </li>
+        <li data-q="ceviche de camaron poached shrimp, pico de gallo, avocado, jicama, cucumber, lime juice &amp; extra virgin olive oil drizzle, served with cholula &amp; chips (gf)">
+          <div class="row"><span class="name">Ceviche de Camaron</span><span class="price">$19</span></div>
+          <p class="desc">Poached shrimp, pico de gallo, avocado, jicama, cucumber, lime juice &amp; extra virgin olive oil drizzle, served with Cholula &amp; chips (gf)</p>
+        </li>
+        <li data-q="queso fundido choice of chorizo, mushroom or plain (+$2 combo). oaxaca &amp; asadero cheese &amp; cream combined &amp; baked in a hot skillet, with flour tortillas &amp; chips (gf without tortillas, v)">
+          <div class="row"><span class="name">Queso Fundido</span><span class="price">$12</span></div>
+          <p class="desc">Choice of chorizo, mushroom or plain (+$2 combo). Oaxaca &amp; asadero cheese &amp; cream combined &amp; baked in a hot skillet, with flour tortillas &amp; chips (gf without tortillas, v)</p>
+        </li>
+        <li data-q="aji tuna crudo* soy, ginger, citrus, sesame oil, guacamole, fresno chile, served with chips (gf)">
+          <div class="row"><span class="name">Aji Tuna Crudo*</span><span class="price">$20</span></div>
+          <p class="desc">Soy, ginger, citrus, sesame oil, guacamole, fresno chile, served with chips (gf)</p>
+        </li>
+        <li data-q="elote callejero mesquite grilled corn on the cob, mayonnaise, queso cotija, smoked paprika (gf, v)">
+          <div class="row"><span class="name">Elote Callejero</span><span class="price">$8</span></div>
+          <p class="desc">Mesquite grilled corn on the cob, mayonnaise, queso cotija, smoked paprika (gf, v)</p>
+        </li>
+        <li data-q="el espanol our charcuterie: thinly sliced jamon serrano, avocado, cerignola olives, red onion, chile, soy-limon, extra virgin olive oil &amp; fresh cracked pepper served with toasted noble sourdough">
+          <div class="row"><span class="name">El Espanol</span><span class="price">$18</span></div>
+          <p class="desc">Our charcuterie: thinly sliced jamon serrano, avocado, cerignola olives, red onion, chile, soy-limon, extra virgin olive oil &amp; fresh cracked pepper served with toasted Noble sourdough</p>
+        </li>
+        <li data-q="korean fried wings battered wings with house gochujang glaze, fresh ginger, soy &amp; jalapeno ranch coleslaw">
+          <div class="row"><span class="name">Korean Fried Wings</span></div>
+          <p class="desc">Battered wings with house gochujang glaze, fresh ginger, soy &amp; jalapeno ranch coleslaw</p><div class="prices"><span class="pp"><span class="pl">Half Dozen</span> <b>$14</b></span><span class="pp"><span class="pl">Dozen</span> <b>$22</b></span></div>
+        </li>
+        <li data-q="tacos chinos fried imperial spring rolls with ground pork served with lettuce wraps, fresh herbs, sweet chile sauce &amp; salsa de soya (gf)">
+          <div class="row"><span class="name">Tacos Chinos</span><span class="price">$16</span></div>
+          <p class="desc">Fried imperial spring rolls with ground pork served with lettuce wraps, fresh herbs, sweet chile sauce &amp; salsa de soya (gf)</p>
+        </li></ul>
+    </section>
+    <section id="las-penas-con-pan" class="sec">
+      <h2>Las Penas con Pan</h2>
+      <p class="note">Son buenas...</p>
+      <ul>
+        <li data-q="d.f. dip* barbacoa, horseradish, pickled red onion &amp; serrano, on noble hoagie, served with house au jus">
+          <div class="row"><span class="name">D.F. Dip*</span><span class="price">$20</span></div>
+          <p class="desc">Barbacoa, horseradish, pickled red onion &amp; serrano, on Noble hoagie, served with house au jus</p>
+        </li>
+        <li data-q="naco torta* open faced carne asada torta with guacamole, aji aioli, lettuce topped with two eggs any style on noble telera">
+          <div class="row"><span class="name">Naco Torta*</span><span class="price">$16</span></div>
+          <p class="desc">Open faced carne asada torta with guacamole, aji aioli, lettuce topped with two eggs any style on Noble telera</p>
+        </li></ul>
+    </section>
+    <section id="burguesa" class="sec">
+      <h2>Burguesa</h2>
+      <p class="note">6 oz grass fed beef patty on a Noble sesame bun, served with house pappas</p>
+      <ul>
+        <li data-q="pica rica* topped with roasted hatch chile, caramelized onions, tillamook cheddar, aji aioli, avocado">
+          <div class="row"><span class="name">Pica Rica*</span><span class="price">$20</span></div>
+          <p class="desc">Topped with roasted Hatch chile, caramelized onions, Tillamook cheddar, aji aioli, avocado</p>
+        </li>
+        <li data-q="traditional* classic cheeseburger with tillamook cheddar, lettuce, onion, tomato, aji aioli">
+          <div class="row"><span class="name">Traditional*</span><span class="price">$18</span></div>
+          <p class="desc">Classic cheeseburger with Tillamook cheddar, lettuce, onion, tomato, aji aioli</p>
+        </li>
+        <li data-q="belly-bacon* topped with grilled &amp; citrus-glazed pork belly, jalapeno relish, tillamook cheddar, avocado">
+          <div class="row"><span class="name">Belly-Bacon*</span><span class="price">$22</span></div>
+          <p class="desc">Topped with grilled &amp; citrus-glazed pork belly, jalapeno relish, Tillamook cheddar, avocado</p>
+        </li></ul>
+    </section>
+    <section id="taco-torta-burrito-bowl" class="sec">
+      <h2>Taco, Torta, Burrito &amp; Bowl</h2>
+      <p class="note">Taco $4.80 / Torta $13 / Burrito $13 / Bowl $13 (gf bowl). Tortas have lettuce &amp; come on Noble telera; burritos rolled with beans (fish &amp; shrimp do not contain beans); tacos garnished with cilantro &amp; onion on a flour tortilla; gluten free option: lettuce wrap for tacos; bowls have burrito builds with a rice base</p>
+      <ul>
+        <li data-q="carne asada marinated grilled sirloin flap steak with guacamole">
+          <div class="row"><span class="name">Carne Asada</span></div>
+          <p class="desc">Marinated grilled sirloin flap steak with guacamole</p><div class="prices"><span class="pp"><span class="pl">Taco</span> <b>$4.80</b></span><span class="pp"><span class="pl">Torta</span> <b>$13</b></span><span class="pp"><span class="pl">Burrito</span> <b>$13</b></span><span class="pp"><span class="pl">Bowl</span> <b>$13</b></span></div>
+        </li>
+        <li data-q="barbacoa slow braised beef chuck roast &amp; brisket">
+          <div class="row"><span class="name">Barbacoa</span></div>
+          <p class="desc">Slow braised beef chuck roast &amp; brisket</p><div class="prices"><span class="pp"><span class="pl">Taco</span> <b>$4.80</b></span><span class="pp"><span class="pl">Torta</span> <b>$13</b></span><span class="pp"><span class="pl">Burrito</span> <b>$13</b></span><span class="pp"><span class="pl">Bowl</span> <b>$13</b></span></div>
+        </li>
+        <li data-q="chicken sauteed chicken breast, mushroom, poblano &amp; aji aioli">
+          <div class="row"><span class="name">Chicken</span></div>
+          <p class="desc">Sauteed chicken breast, mushroom, poblano &amp; aji aioli</p><div class="prices"><span class="pp"><span class="pl">Taco</span> <b>$4.80</b></span><span class="pp"><span class="pl">Torta</span> <b>$13</b></span><span class="pp"><span class="pl">Burrito</span> <b>$13</b></span><span class="pp"><span class="pl">Bowl</span> <b>$13</b></span></div>
+        </li>
+        <li data-q="pork belly citrus glaze &amp; escabeche. +$1 taco, +$2 burrito/torta">
+          <div class="row"><span class="name">Pork Belly</span></div>
+          <p class="desc">Citrus glaze &amp; escabeche. +$1 taco, +$2 burrito/torta</p><div class="prices"><span class="pp"><span class="pl">Taco</span> <b>$5.80</b></span><span class="pp"><span class="pl">Torta</span> <b>$15</b></span><span class="pp"><span class="pl">Burrito</span> <b>$15</b></span></div>
+        </li>
+        <li data-q="grilled fish* guacamole, lettuce, aji aioli &amp; pico de gallo. +$1 taco, +$2 burrito/torta">
+          <div class="row"><span class="name">Grilled Fish*</span></div>
+          <p class="desc">Guacamole, lettuce, aji aioli &amp; pico de gallo. +$1 taco, +$2 burrito/torta</p><div class="prices"><span class="pp"><span class="pl">Taco</span> <b>$5.80</b></span><span class="pp"><span class="pl">Torta</span> <b>$15</b></span><span class="pp"><span class="pl">Burrito</span> <b>$15</b></span></div>
+        </li>
+        <li data-q="grilled shrimp* guacamole, cabbage slaw, chile de arbol mayo &amp; pico de gallo. +$1 taco, +$2 burrito/torta">
+          <div class="row"><span class="name">Grilled Shrimp*</span></div>
+          <p class="desc">Guacamole, cabbage slaw, chile de arbol mayo &amp; pico de gallo. +$1 taco, +$2 burrito/torta</p><div class="prices"><span class="pp"><span class="pl">Taco</span> <b>$5.80</b></span><span class="pp"><span class="pl">Torta</span> <b>$15</b></span><span class="pp"><span class="pl">Burrito</span> <b>$15</b></span></div>
+        </li>
+        <li data-q="vegetable seasonal sauteed vegetables in tamari (v)">
+          <div class="row"><span class="name">Vegetable</span></div>
+          <p class="desc">Seasonal sauteed vegetables in tamari (v)</p><div class="prices"><span class="pp"><span class="pl">Taco</span> <b>$4.80</b></span><span class="pp"><span class="pl">Torta</span> <b>$13</b></span><span class="pp"><span class="pl">Burrito</span> <b>$13</b></span><span class="pp"><span class="pl">Bowl</span> <b>$13</b></span></div>
+        </li></ul>
+    </section>
+    <section id="la-parrillada" class="sec">
+      <h2>La Parrillada</h2>
+      
+      <ul>
+        <li data-q="skillet-style tacos any two items on a skillet with 1/2 dozen tortillas, grilled guero peppers &amp; onions, garnished with cilantro &amp; onions, served with house pappas">
+          <div class="row"><span class="name">Skillet-Style Tacos</span><span class="price">$20</span></div>
+          <p class="desc">Any two items on a skillet with 1/2 dozen tortillas, grilled guero peppers &amp; onions, garnished with cilantro &amp; onions, served with house pappas</p>
+        </li>
+        <li data-q="frijoles (gf, v)">
+          <div class="row"><span class="name">Frijoles</span><span class="price">$3.50</span></div>
+          <p class="desc">(gf, v)</p>
+        </li>
+        <li data-q="arroz (gf, v)">
+          <div class="row"><span class="name">Arroz</span><span class="price">$5</span></div>
+          <p class="desc">(gf, v)</p>
+        </li></ul>
+    </section>
+    <section id="especiales-dinner-from-4pm" class="sec">
+      <h2>Especiales (dinner, from 4pm)</h2>
+      <p class="note">From the dinner menu PDF</p>
+      <ul>
+        <li data-q="lamb riblettes slow roasted, finished on mesquite grill, guajillo glaze, chimichurri, tortillas (gf without tortillas)">
+          <div class="row"><span class="name">Lamb Riblettes</span><span class="price">$20</span></div>
+          <p class="desc">Slow roasted, finished on mesquite grill, guajillo glaze, chimichurri, tortillas (gf without tortillas)</p>
+        </li>
+        <li data-q="pasta portuguesa bucatini, linguica, asiago, grilled corn, herb pesto, chicken stock, lemon, shallot chile crust">
+          <div class="row"><span class="name">Pasta Portuguesa</span><span class="price">$23</span></div>
+          <p class="desc">Bucatini, linguica, asiago, grilled corn, herb pesto, chicken stock, lemon, shallot chile crust</p>
+        </li>
+        <li data-q="chile crusted salmon* wild caught chula 8 oz filet, salsa macha, sesame, peanut, chile, garlic, shallot &amp; llerba a la mocajeta, served with seasonal vegetables (gf)">
+          <div class="row"><span class="name">Chile Crusted Salmon*</span><span class="price">$32</span></div>
+          <p class="desc">Wild caught chula 8 oz filet, salsa macha, sesame, peanut, chile, garlic, shallot &amp; llerba a la mocajeta, served with seasonal vegetables (gf)</p>
+        </li>
+        <li data-q="pollo del dia two wash ranch 1/2 chicken, tamarind glaze, mesquite, local vegetables, aji aioli, tortillas (gf without tortillas)">
+          <div class="row"><span class="name">Pollo del Dia</span><span class="price">$28</span></div>
+          <p class="desc">Two Wash Ranch 1/2 chicken, tamarind glaze, mesquite, local vegetables, aji aioli, tortillas (gf without tortillas)</p>
+        </li>
+        <li data-q="mole negro two wash ranch 1/2 chicken, house-made mole, sesame seeds, arroz frito, tortillas">
+          <div class="row"><span class="name">Mole Negro</span><span class="price">$32</span></div>
+          <p class="desc">Two Wash Ranch 1/2 chicken, house-made mole, sesame seeds, arroz frito, tortillas</p>
+        </li>
+        <li data-q="bistec tampequena* 12 oz prime ribeye, cebollitas, rice, beans, fixings &amp; tortillas (gf without tortillas)">
+          <div class="row"><span class="name">Bistec Tampequena*</span><span class="price">$41</span></div>
+          <p class="desc">12 oz prime ribeye, cebollitas, rice, beans, fixings &amp; tortillas (gf without tortillas)</p>
+        </li>
+        <li data-q="plato de enchiladas choice of ranchero, verde, x-mas or +$2 mole (not gf); choice of chicken or vegetable (v); +$2 combo, +$5 barbacoa. corn masa, queso oaxaca, crema, cabbage, pico de gallo, rice &amp; beans (gf)">
+          <div class="row"><span class="name">Plato de Enchiladas</span><span class="price">$19</span></div>
+          <p class="desc">Choice of ranchero, verde, x-mas or +$2 mole (not gf); choice of chicken or vegetable (v); +$2 combo, +$5 barbacoa. Corn masa, queso oaxaca, crema, cabbage, pico de gallo, rice &amp; beans (gf)</p>
+        </li>
+        <li data-q="trio enchiladas choice of chicken or vegetable (v); +$2 combo, +$5 barbacoa. corn masa, queso oaxaca, crema, cabbage, pico de gallo, ranchero, verde &amp; mole, rice &amp; beans (gf without mole)">
+          <div class="row"><span class="name">Trio Enchiladas</span><span class="price">$24</span></div>
+          <p class="desc">Choice of chicken or vegetable (v); +$2 combo, +$5 barbacoa. Corn masa, queso oaxaca, crema, cabbage, pico de gallo, ranchero, verde &amp; mole, rice &amp; beans (gf without mole)</p>
+        </li></ul>
+    </section>
+    <section id="postre" class="sec">
+      <h2>Postre</h2>
+      
+      <ul>
+        <li data-q="tres leches white cake soaked in sweet milk, creme fraiche, seasonal fruit">
+          <div class="row"><span class="name">Tres Leches</span><span class="price">$9</span></div>
+          <p class="desc">White cake soaked in sweet milk, creme fraiche, seasonal fruit</p>
+        </li>
+        <li data-q="flan cajeta cajeta caramel custard topped with fresh berries (gf)">
+          <div class="row"><span class="name">Flan Cajeta</span><span class="price">$9</span></div>
+          <p class="desc">Cajeta caramel custard topped with fresh berries (gf)</p>
+        </li>
+        <li data-q="noble bread pudding hot baked, dates, iced rum, creme fraiche, cajeta &amp; candied pecans">
+          <div class="row"><span class="name">Noble Bread Pudding</span><span class="price">$9</span></div>
+          <p class="desc">Hot baked, dates, iced rum, creme fraiche, cajeta &amp; candied pecans</p>
+        </li>
+        <li data-q="lime tart graham crust, fresh lime filling, creme fraiche">
+          <div class="row"><span class="name">Lime Tart</span><span class="price">$9</span></div>
+          <p class="desc">Graham crust, fresh lime filling, creme fraiche</p>
+        </li>
+        <li data-q="cacao cake chocolate layer cake, mascarpone filling, cacao ganache, creme fraiche topped with fresh berries">
+          <div class="row"><span class="name">Cacao Cake</span><span class="price">$9</span></div>
+          <p class="desc">Chocolate layer cake, mascarpone filling, cacao ganache, creme fraiche topped with fresh berries</p>
+        </li>
+        <li data-q="brookie sundae fudgy brownie, cookie dough ice cream, cajeta, flaky salt, whipped cream">
+          <div class="row"><span class="name">Brookie Sundae</span><span class="price">$9</span></div>
+          <p class="desc">Fudgy brownie, cookie dough ice cream, cajeta, flaky salt, whipped cream</p>
+        </li>
+        <li data-q="s&#39;mores sundae chocolate ice cream, fudge sauce, toasted marshmallow fluff, graham crumble">
+          <div class="row"><span class="name">S&#39;mores Sundae</span><span class="price">$9</span></div>
+          <p class="desc">Chocolate ice cream, fudge sauce, toasted marshmallow fluff, graham crumble</p>
+        </li>
+        <li data-q="ice cream ">
+          <div class="row"><span class="name">Ice Cream</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Single Scoop</span> <b>$3.50</b></span><span class="pp"><span class="pl">Double Scoop</span> <b>$6.50</b></span></div>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>gf - gluten free / can be modified. v - vegetarian / can be modified. Please inform and discuss with your server. For the purpose of this menu, eggs are considered vegetarian. *Consuming raw or undercooked foods may increase your risk of foodborne illness.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Otro Cafe.</strong> Not the official menu. Copied from their public menu on 2026-09-22. This preview expires October 6.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Otro Cafe menu preview was free to look at until October 6. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-06T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

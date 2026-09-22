@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Arcadia Farms Café Menu</title>
+<meta name="description" content="Menu for Arcadia Farms Café, Old Town / Scottsdale Arts District (E 1st Ave).">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Arcadia Farms Café</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=7025%20E%201st%20Ave%2C%20Scottsdale%2C%20AZ%2085251">7025 E 1st Ave, Scottsdale, AZ 85251</a><a href="tel:4809415665">(480) 941-5665</a><span>Monday closed; Tuesday-Friday 9am-3pm; Saturday-Sunday 8am-2pm</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#small-plates" data-sec="small-plates">Small Plates</a><a href="#brunch" data-sec="brunch">Brunch</a><a href="#sandwiches" data-sec="sandwiches">Sandwiches</a><a href="#the-creperie" data-sec="the-creperie">The Creperie</a><a href="#salads" data-sec="salads">Salads</a><a href="#the-classics" data-sec="the-classics">The Classics</a><a href="#patisserie" data-sec="patisserie">Patisserie</a><a href="#beverages" data-sec="beverages">Beverages</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="small-plates" class="sec">
+      <h2>Small Plates</h2>
+      
+      <ul>
+        <li data-q="warm baked goat cheese goat cheese, caramelized shallots, oven-roasted tomatoes, fresh thyme and kalamata olives, served with toasted sourdough (bz, v)">
+          <div class="row"><span class="name">Warm Baked Goat Cheese</span><span class="price">$21</span></div>
+          <p class="desc">Goat cheese, caramelized shallots, oven-roasted tomatoes, fresh thyme and Kalamata olives, served with toasted sourdough (bz, v)</p>
+        </li>
+        <li data-q="salmon rillette spread* fresh &amp; smoked salmon, crème fraîche, sautéed shallots, capers, and fresh dill, served with toasted crostini">
+          <div class="row"><span class="name">Salmon Rillette Spread*</span><span class="price">$21</span></div>
+          <p class="desc">Fresh &amp; smoked salmon, crème fraîche, sautéed shallots, capers, and fresh dill, served with toasted crostini</p>
+        </li>
+        <li data-q="caramelized brie &amp; apples melted brie cheese topped with caramelized apples, served with fresh strawberries, dried apricots, and toasted walnut bread (v)">
+          <div class="row"><span class="name">Caramelized Brie &amp; Apples</span><span class="price">$23</span></div>
+          <p class="desc">Melted brie cheese topped with caramelized apples, served with fresh strawberries, dried apricots, and toasted walnut bread (v)</p>
+        </li>
+        <li data-q="burrata with prosciutto creamy burrata with prosciutto, served with local arugula, campari tomatoes, baguette croutons, and pistou">
+          <div class="row"><span class="name">Burrata with Prosciutto</span><span class="price">$24</span></div>
+          <p class="desc">Creamy burrata with prosciutto, served with local arugula, Campari tomatoes, baguette croutons, and pistou</p>
+        </li>
+        <li data-q="housemade hummus served with pitas, cucumber slices, and olives (v)">
+          <div class="row"><span class="name">Housemade Hummus</span><span class="price">$15</span></div>
+          <p class="desc">Served with pitas, cucumber slices, and olives (v)</p>
+        </li></ul>
+    </section>
+    <section id="brunch" class="sec">
+      <h2>Brunch</h2>
+      
+      <ul>
+        <li data-q="muesli organic yogurt, rolled oats, golden raisins, chopped pecans, granny smith apples, and seasonal berries (bz, v)">
+          <div class="row"><span class="name">Muesli</span><span class="price">$17</span></div>
+          <p class="desc">Organic yogurt, rolled oats, golden raisins, chopped pecans, Granny Smith apples, and seasonal berries (bz, v)</p>
+        </li>
+        <li data-q="potato frittata caramelized onions &amp; peppers, thinly sliced yukon gold potatoes, creamy eggs, and fresh herbs baked with gruyère cheese, served with local greens and provençal tomato or fresh fruit compote (gf, v)">
+          <div class="row"><span class="name">Potato Frittata</span><span class="price">$22</span></div>
+          <p class="desc">Caramelized onions &amp; peppers, thinly sliced Yukon Gold potatoes, creamy eggs, and fresh herbs baked with Gruyère cheese, served with local greens and Provençal tomato or fresh fruit compote (gf, v)</p>
+        </li>
+        <li data-q="breakfast casserole buttery brioche, farm-fresh eggs, grilled seasonal vegetables, savory italian sausage, and melted cheddar cheese, with fresh herbs">
+          <div class="row"><span class="name">Breakfast Casserole</span><span class="price">$22</span></div>
+          <p class="desc">Buttery brioche, farm-fresh eggs, grilled seasonal vegetables, savory Italian sausage, and melted cheddar cheese, with fresh herbs</p>
+        </li>
+        <li data-q="ham and cheddar cheese quiche farm fresh eggs, cream, cheddar cheese, diced ham, fresh thyme, with petite salad and provençal tomato or fresh fruit compote">
+          <div class="row"><span class="name">Ham and Cheddar Cheese Quiche</span><span class="price">$22</span></div>
+          <p class="desc">Farm fresh eggs, cream, cheddar cheese, diced ham, fresh thyme, with petite salad and Provençal tomato or fresh fruit compote</p>
+        </li>
+        <li data-q="peach &amp; praline french toast casserole topped with warm peach reduction, caramelized pecans, rich caramel sauce, and whipped cream (v)">
+          <div class="row"><span class="name">Peach &amp; Praline French Toast Casserole</span><span class="price">$22</span></div>
+          <p class="desc">Topped with warm peach reduction, caramelized pecans, rich caramel sauce, and whipped cream (v)</p>
+        </li>
+        <li data-q="fresh and smoked salmon hash* roasted potatoes, caramelized onions &amp; red peppers, fresh dill, topped with crème fraîche and avocado, served with side salad (gf)">
+          <div class="row"><span class="name">Fresh and Smoked Salmon Hash*</span><span class="price">$24</span></div>
+          <p class="desc">Roasted potatoes, caramelized onions &amp; red peppers, fresh dill, topped with crème fraîche and avocado, served with side salad (gf)</p>
+        </li>
+        <li data-q="wild mushroom tart caramelized leeks, baby spinach, smoked mozzarella and chèvre, served with petite salad or fresh fruit compote (v)">
+          <div class="row"><span class="name">Wild Mushroom Tart</span><span class="price">$21</span></div>
+          <p class="desc">Caramelized leeks, baby spinach, smoked mozzarella and chèvre, served with petite salad or fresh fruit compote (v)</p>
+        </li></ul>
+    </section>
+    <section id="sandwiches" class="sec">
+      <h2>Sandwiches</h2>
+      <p class="note">Choice of white bean salad (bz), field greens with raspberry vinaigrette (bz), potato salad with bacon, or roasted potato wedges</p>
+      <ul>
+        <li data-q="croque monsieur french ham, melted gruyère cheese and béchamel sauce on country bread with apricot jam">
+          <div class="row"><span class="name">Croque Monsieur</span><span class="price">$23</span></div>
+          <p class="desc">French ham, melted Gruyère cheese and béchamel sauce on country bread with apricot jam</p>
+        </li>
+        <li data-q="warm smoked turkey and brie sliced apples and fig jam on fresh baked noble walnut bread">
+          <div class="row"><span class="name">Warm Smoked Turkey and Brie</span><span class="price">$22</span></div>
+          <p class="desc">Sliced apples and fig jam on fresh baked Noble walnut bread</p>
+        </li>
+        <li data-q="smoked salmon club* house cured salmon, heirloom tomatoes, avocado, pickled red onions, sliced cucumbers, caper-herb cream cheese on multigrain bread (bz)">
+          <div class="row"><span class="name">Smoked Salmon Club*</span><span class="price">$24</span></div>
+          <p class="desc">House cured salmon, heirloom tomatoes, avocado, pickled red onions, sliced cucumbers, caper-herb cream cheese on multigrain bread (bz)</p>
+        </li>
+        <li data-q="warm beef tenderloin sandwich caramelized onions and horseradish aioli on toasted baguette. add gorgonzola +$2">
+          <div class="row"><span class="name">Warm Beef Tenderloin Sandwich</span><span class="price">$24</span></div>
+          <p class="desc">Caramelized onions and horseradish aioli on toasted baguette. Add Gorgonzola +$2</p>
+        </li>
+        <li data-q="chicken veronique salad on croissant pulled chicken breast, grapes, celery and tarragon aioli on fresh baked croissant">
+          <div class="row"><span class="name">Chicken Veronique Salad on Croissant</span><span class="price">$22</span></div>
+          <p class="desc">Pulled chicken breast, grapes, celery and tarragon aioli on fresh baked croissant</p>
+        </li></ul>
+    </section>
+    <section id="the-creperie" class="sec">
+      <h2>The Creperie</h2>
+      
+      <ul>
+        <li data-q="gruyère &amp; parisian ham crêpes melted gruyère cheese, creamy béchamel sauce, served with roasted potato wedges">
+          <div class="row"><span class="name">Gruyère &amp; Parisian Ham Crêpes</span><span class="price">$23</span></div>
+          <p class="desc">Melted Gruyère cheese, creamy béchamel sauce, served with roasted potato wedges</p>
+        </li>
+        <li data-q="wild mushroom and leek crêpes sautéed cremini mushrooms, leeks, baby spinach, goat cheese and béchamel sauce, served with roasted potato wedges (v)">
+          <div class="row"><span class="name">Wild Mushroom and Leek Crêpes</span><span class="price">$21</span></div>
+          <p class="desc">Sautéed cremini mushrooms, leeks, baby spinach, goat cheese and béchamel sauce, served with roasted potato wedges (v)</p>
+        </li>
+        <li data-q="seafood crêpes blue crab, shrimp, smoked salmon, spinach, mushrooms, and leeks, served with roasted potato wedges">
+          <div class="row"><span class="name">Seafood Crêpes</span><span class="price">$24</span></div>
+          <p class="desc">Blue crab, shrimp, smoked salmon, spinach, mushrooms, and leeks, served with roasted potato wedges</p>
+        </li>
+        <li data-q="chicken crêpes roasted chicken, sautéed cremini mushrooms, leeks, baby spinach, and goat cheese, served with roasted potato wedges">
+          <div class="row"><span class="name">Chicken Crêpes</span><span class="price">$23</span></div>
+          <p class="desc">Roasted chicken, sautéed cremini mushrooms, leeks, baby spinach, and goat cheese, served with roasted potato wedges</p>
+        </li>
+        <li data-q="blueberry crêpes 3 berry crêpes filled with orange mascarpone, topped with blueberry compote and vanilla whipped cream (v)">
+          <div class="row"><span class="name">Blueberry Crêpes</span><span class="price">$20</span></div>
+          <p class="desc">3 berry crêpes filled with orange mascarpone, topped with blueberry compote and vanilla whipped cream (v)</p>
+        </li>
+        <li data-q="nutella crêpes 3 french-style crêpes filled with nutella, garnished with mascarpone whipped cream and sliced strawberries (v)">
+          <div class="row"><span class="name">Nutella Crêpes</span><span class="price">$23</span></div>
+          <p class="desc">3 French-style crêpes filled with Nutella, garnished with mascarpone whipped cream and sliced strawberries (v)</p>
+        </li></ul>
+    </section>
+    <section id="salads" class="sec">
+      <h2>Salads</h2>
+      <p class="note">Add chicken +$6, add shrimp +$8, add salmon fillet +$10, add (1) crab cake +$12</p>
+      <ul>
+        <li data-q="mediterranean salad romaine, cucumbers, red onions, tomatoes, kalamata olives, garbanzo beans, feta cheese, campari tomatoes, toasted almonds, and feta vinaigrette (bz, gf, v)">
+          <div class="row"><span class="name">Mediterranean Salad</span><span class="price">$18</span></div>
+          <p class="desc">Romaine, cucumbers, red onions, tomatoes, Kalamata olives, garbanzo beans, feta cheese, Campari tomatoes, toasted almonds, and feta vinaigrette (bz, gf, v)</p>
+        </li>
+        <li data-q="pesto grilled shrimp salad* baby lettuces, avocado, tomato, goat cheese, grilled corn, lime vinaigrette, topped with frizzled tortilla strips (bz)">
+          <div class="row"><span class="name">Pesto Grilled Shrimp Salad*</span><span class="price">$23</span></div>
+          <p class="desc">Baby lettuces, avocado, tomato, goat cheese, grilled corn, lime vinaigrette, topped with frizzled tortilla strips (bz)</p>
+        </li>
+        <li data-q="raspberry and goat cheese salad warm goat cheese medallions, fresh raspberries, field greens, julienned jicama &amp; carrots, and raspberry vinaigrette topped with candied pecans (bz, v)">
+          <div class="row"><span class="name">Raspberry and Goat Cheese Salad</span><span class="price">$19</span></div>
+          <p class="desc">Warm goat cheese medallions, fresh raspberries, field greens, julienned jicama &amp; carrots, and raspberry vinaigrette topped with candied pecans (bz, v)</p>
+        </li>
+        <li data-q="strawberry chicken salad sliced grilled chicken, vine-ripened strawberries, mixed baby greens, toasted sliced almonds and poppyseed vinaigrette (df, gf)">
+          <div class="row"><span class="name">Strawberry Chicken Salad</span><span class="price">$22</span></div>
+          <p class="desc">Sliced grilled chicken, vine-ripened strawberries, mixed baby greens, toasted sliced almonds and poppyseed vinaigrette (df, gf)</p>
+        </li>
+        <li data-q="french country chicken salad roasted chicken, romaine &amp; arugula, avocado, grilled corn, campari tomatoes, pitted dates, chèvre, toasted almonds and tarragon-mustard vinaigrette (gf)">
+          <div class="row"><span class="name">French Country Chicken Salad</span><span class="price">$21</span></div>
+          <p class="desc">Roasted chicken, romaine &amp; arugula, avocado, grilled corn, Campari tomatoes, pitted dates, chèvre, toasted almonds and tarragon-mustard vinaigrette (gf)</p>
+        </li></ul>
+    </section>
+    <section id="the-classics" class="sec">
+      <h2>The Classics</h2>
+      
+      <ul>
+        <li data-q="warm salmon niçoise* seared faroe island salmon with mixed greens, campari tomatoes, green beans, baby potatoes, hard boiled eggs, and olives, with tarragon vinaigrette (bz, gf)">
+          <div class="row"><span class="name">Warm Salmon Niçoise*</span><span class="price">$25</span></div>
+          <p class="desc">Seared Faroe Island salmon with mixed greens, Campari tomatoes, green beans, baby potatoes, hard boiled eggs, and olives, with tarragon vinaigrette (bz, gf)</p>
+        </li>
+        <li data-q="fresh lump crab cakes* two lump crab cakes served with remoulade sauce on baby lettuces, with jicama, carrots, mango salsa, and lime vinaigrette (bz)">
+          <div class="row"><span class="name">Fresh Lump Crab Cakes*</span><span class="price">$26</span></div>
+          <p class="desc">Two lump crab cakes served with remoulade sauce on baby lettuces, with jicama, carrots, mango salsa, and lime vinaigrette (bz)</p>
+        </li>
+        <li data-q="short rib beef hash roasted beef short ribs, poblanos, caramelized onions, yukon gold potatoes, served with horseradish crème fraîche, housemade salsa, and tortilla">
+          <div class="row"><span class="name">Short Rib Beef Hash</span><span class="price">$24</span></div>
+          <p class="desc">Roasted beef short ribs, poblanos, caramelized onions, Yukon Gold potatoes, served with horseradish crème fraîche, housemade salsa, and tortilla</p>
+        </li></ul>
+    </section>
+    <section id="patisserie" class="sec">
+      <h2>Patisserie</h2>
+      
+      <ul>
+        <li data-q="strawberry scone ">
+          <div class="row"><span class="name">Strawberry Scone</span><span class="price">$5.50</span></div>
+          
+        </li>
+        <li data-q="cinnamon-pecan roll ">
+          <div class="row"><span class="name">Cinnamon-Pecan Roll</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="almond croissant ">
+          <div class="row"><span class="name">Almond Croissant</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="butter croissant ">
+          <div class="row"><span class="name">Butter Croissant</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="pain au chocolat ">
+          <div class="row"><span class="name">Pain au Chocolat</span><span class="price">$5.50</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="beverages" class="sec">
+      <h2>Beverages</h2>
+      <p class="note">Coffee from Local Roastery of Cave Creek. Desserts: please ask your server for today&#39;s selection of pastries, desserts and Arcadia Farms&#39; signature specialty cakes</p>
+      <ul>
+        <li data-q="fizzy ginger lemonade ">
+          <div class="row"><span class="name">Fizzy Ginger Lemonade</span><span class="price">$4.50</span></div>
+          
+        </li>
+        <li data-q="southern peach iced tea unsweetened">
+          <div class="row"><span class="name">Southern Peach Iced Tea</span><span class="price">$3.50</span></div>
+          <p class="desc">Unsweetened</p>
+        </li>
+        <li data-q="coke, diet coke, sprite ">
+          <div class="row"><span class="name">Coke, Diet Coke, Sprite</span><span class="price">$3.50</span></div>
+          
+        </li>
+        <li data-q="pellegrino ">
+          <div class="row"><span class="name">Pellegrino</span><span class="price">$6</span></div>
+          
+        </li>
+        <li data-q="cold brew ">
+          <div class="row"><span class="name">Cold Brew</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="coffee ">
+          <div class="row"><span class="name">Coffee</span><span class="price">$4</span></div>
+          
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>We are glad to accept up to 2 forms of payment per check. Separate checks are politely declined. 22% service fee will be added to parties of 8 or more. Salt is available upon request. Kid size portions available for all entrées (children 12 and under). *These items may be served raw or undercooked.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Arcadia Farms Café.</strong> Not the official menu. Copied from their public menu on 2026-09-22. This preview expires October 6.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Arcadia Farms Café menu preview was free to look at until October 6. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-06T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Café à la C&#39;Art Menu</title>
+<meta name="description" content="Menu for Café à la C&#39;Art, Downtown / Tucson Museum of Art (Stevens House, N Main Ave).">
+<style>
+:root{--bg:#fbfbfa;--surface:#fff;--text:#1c1d1f;--muted:#5d6166;--line:#e4e5e2;--accent:#1d6b52;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--surface:#1c1d20;--text:#ecedee;--muted:#a3a7ad;--line:#2c2e32;--accent-ink:#fff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:2rem;padding-bottom:1rem}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .5rem}
+.facts{display:flex;flex-wrap:wrap;gap:.25rem 1rem;color:var(--muted);font-size:.95rem}
+.facts a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.search{display:block;width:100%;margin:.75rem 0 .5rem;padding:.7rem .9rem;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search::placeholder{color:var(--muted)}
+.search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+nav.secs{display:flex;gap:.4rem;overflow-x:auto;padding:0 0 .75rem;scrollbar-width:none;scroll-snap-type:x proximity}
+nav.secs::-webkit-scrollbar{display:none}
+nav.secs a{flex:none;scroll-snap-align:start;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.9rem;white-space:nowrap;background:var(--surface)}
+nav.secs a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.secs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sec{padding:1.75rem 0 .5rem}
+.sec h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .25rem;color:var(--accent)}
+@media (prefers-color-scheme:dark){.sec h2{color:color-mix(in srgb,var(--accent) 55%,#fff)}}
+.note{margin:0 0 .5rem;color:var(--muted);font-size:.92rem}
+ul{list-style:none;margin:0;padding:0}
+li{padding:.8rem 0}
+li+li{border-top:1px solid var(--line)}
+.row{display:flex;align-items:baseline;gap:1rem}
+.name{font-weight:600;flex:1}
+.price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.prices{display:flex;flex-wrap:wrap;gap:.35rem .9rem;margin-top:.3rem;font-size:.92rem}.pp b{font-variant-numeric:tabular-nums}.pl{color:var(--muted)}
+.desc{margin:.2rem 0 0;color:var(--muted);font-size:.93rem;max-width:60ch}
+.empty{display:none;padding:2rem 0;color:var(--muted)}
+footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85rem}
+.banner{position:fixed;left:.75rem;right:.75rem;bottom:.75rem;z-index:20;max-width:42rem;margin:0 auto;padding:.6rem .6rem .6rem 1rem;display:flex;align-items:center;gap:.75rem;border-radius:10px;background:#26282b;color:#f1f1f1;font-size:.85rem;line-height:1.4;box-shadow:0 8px 30px rgb(0 0 0 / .25)}
+.banner p{margin:0;flex:1}.banner button{flex:none;font:inherit;font-weight:600;padding:.45rem .9rem;border-radius:8px;border:0;background:#f1f1f1;color:#1c1d1f;cursor:pointer}
+.hide{display:none!important}
+.expired{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:var(--bg)}
+.expired>div{max-width:28rem}.expired h2{font-size:1.5rem;margin:0 0 .5rem}.expired p{margin:0 0 .75rem;color:var(--muted)}
+.expired a{display:inline-block;padding:.7rem 1.1rem;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+.expired[hidden]{display:none}
+@media print{.bar,.banner,.search{display:none}body{background:#fff;color:#000;font-size:11pt}.sec{break-inside:avoid-page;padding-top:1rem}li{padding:.35rem 0}.sec h2{color:#000}footer{padding:1rem 0}}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Café à la C&#39;Art</h1>
+  <div class="facts"><a href="https://maps.google.com/?q=150%20N.%20Main%20Ave%2C%20Tucson%2C%20AZ%2085701">150 N. Main Ave, Tucson, AZ 85701</a><a href="tel:5206288533">(520) 628-8533</a><span>Monday-Tuesday closed; Wednesday-Friday 10am-2pm; Saturday-Sunday 8am-2pm</span></div>
+</header>
+<div class="bar"><div class="wrap">
+  <label for="q" class="hide">Search the menu</label>
+  <input id="q" class="search" type="search" aria-label="Search the menu" placeholder="Search the menu" autocomplete="off">
+  <nav class="secs" aria-label="Menu sections"><a href="#house-specialty" data-sec="house-specialty">House Specialty</a><a href="#salads" data-sec="salads">Salads</a><a href="#sandwiches" data-sec="sandwiches">Sandwiches</a><a href="#burgers" data-sec="burgers">Burgers</a><a href="#soup-of-the-day" data-sec="soup-of-the-day">Soup of the Day</a><a href="#brunch-eggs-omelets-skillets-frittatas" data-sec="brunch-eggs-omelets-skillets-frittatas">Brunch - Eggs, Omelets, Skillets &amp; Frittatas</a><a href="#brunch-favorites" data-sec="brunch-favorites">Brunch - Favorites</a><a href="#brunch-a-little-on-the-side" data-sec="brunch-a-little-on-the-side">Brunch - A Little on the Side</a></nav>
+</div></div>
+<main class="wrap">
+  
+    <section id="house-specialty" class="sec">
+      <h2>House Specialty</h2>
+      
+      <ul>
+        <li data-q="house made posole a house specialty. braised pork, hominy, mild chiles, garlic, spices, topped with shredded cabbage, cilantro, scallions">
+          <div class="row"><span class="name">House Made Posole</span></div>
+          <p class="desc">A house specialty. Braised pork, hominy, mild chiles, garlic, spices, topped with shredded cabbage, cilantro, scallions</p><div class="prices"><span class="pp"><span class="pl">Cup</span> <b>$7.50</b></span><span class="pp"><span class="pl">Bowl</span> <b>$14.95</b></span></div>
+        </li></ul>
+    </section>
+    <section id="salads" class="sec">
+      <h2>Salads</h2>
+      <p class="note">Add grilled chicken +$6.50; seared salmon* or grilled flank steak* +$8</p>
+      <ul>
+        <li data-q="seared salmon &amp; rice noodle* cucumbers, bell peppers, edamame, pickled carrots, red cabbage, mixed greens, radish sprouts, sesame seeds, ginger soy vinaigrette">
+          <div class="row"><span class="name">Seared Salmon &amp; Rice Noodle*</span><span class="price">$18.00</span></div>
+          <p class="desc">Cucumbers, bell peppers, edamame, pickled carrots, red cabbage, mixed greens, radish sprouts, sesame seeds, ginger soy vinaigrette</p>
+        </li>
+        <li data-q="flank steak* honey hoisin marinated flank, kalamata olives, roasted peppers, grape tomatoes, feta, grilled red onion, mixed greens, crispy onions, honey balsamic vinaigrette">
+          <div class="row"><span class="name">Flank Steak*</span><span class="price">$18.00</span></div>
+          <p class="desc">Honey hoisin marinated flank, kalamata olives, roasted peppers, grape tomatoes, feta, grilled red onion, mixed greens, crispy onions, honey balsamic vinaigrette</p>
+        </li>
+        <li data-q="farmstand chicken peppered bacon, gorgonzola, egg, avocado, tomatoes, mixed greens, butternut squash, dates, seeds, jalapeño ranch">
+          <div class="row"><span class="name">Farmstand Chicken</span><span class="price">$17.50</span></div>
+          <p class="desc">Peppered bacon, gorgonzola, egg, avocado, tomatoes, mixed greens, butternut squash, dates, seeds, jalapeño ranch</p>
+        </li>
+        <li data-q="the centennial roasted butternut squash, honey crisp apples, goat cheese, dried cranberries, toasted almonds, arugula, pepitas, citrus shallot vinaigrette">
+          <div class="row"><span class="name">The Centennial</span><span class="price">$15.50</span></div>
+          <p class="desc">Roasted butternut squash, honey crisp apples, goat cheese, dried cranberries, toasted almonds, arugula, pepitas, citrus shallot vinaigrette</p>
+        </li></ul>
+    </section>
+    <section id="sandwiches" class="sec">
+      <h2>Sandwiches</h2>
+      <p class="note">Sandwiches and burgers come with choice of french fries, field greens salad, or daily salad</p>
+      <ul>
+        <li data-q="salmon b.l.t.* peppered bacon, arugula, tomato, chipotle aïoli, house made focaccia">
+          <div class="row"><span class="name">Salmon B.L.T.*</span><span class="price">$17.50</span></div>
+          <p class="desc">Peppered bacon, arugula, tomato, chipotle aïoli, house made focaccia</p>
+        </li>
+        <li data-q="rothschild braised short ribs, pepper jack, roasted red peppers, chipotle aïoli, toasted challah roll">
+          <div class="row"><span class="name">Rothschild</span><span class="price">$17.00</span></div>
+          <p class="desc">Braised short ribs, pepper jack, roasted red peppers, chipotle aïoli, toasted challah roll</p>
+        </li>
+        <li data-q="grilled chicken grilled chicken, roasted tomatoes, red onion jam, bacon, smoked gouda, arugula, roasted garlic aïoli, toasted challah bun">
+          <div class="row"><span class="name">Grilled Chicken</span><span class="price">$17.00</span></div>
+          <p class="desc">Grilled chicken, roasted tomatoes, red onion jam, bacon, smoked gouda, arugula, roasted garlic aïoli, toasted challah bun</p>
+        </li>
+        <li data-q="cafe croque country ham, gruyère, béchamel, grain mustard aïoli, herbes de provence, rustic bread">
+          <div class="row"><span class="name">Cafe Croque</span><span class="price">$17.50</span></div>
+          <p class="desc">Country ham, gruyère, béchamel, grain mustard aïoli, herbes de Provence, rustic bread</p>
+        </li>
+        <li data-q="smoked beet and goat cheese pumpkin seed pistachio tahini, roasted carrot spread, fresh arugula, house made focaccia. available vegan. contains nuts">
+          <div class="row"><span class="name">Smoked Beet and Goat Cheese</span><span class="price">$16.00</span></div>
+          <p class="desc">Pumpkin seed pistachio tahini, roasted carrot spread, fresh arugula, house made focaccia. Available vegan. Contains nuts</p>
+        </li>
+        <li data-q="ginger apricot almond chicken salad on an almond crusted croissant, pea sprouts">
+          <div class="row"><span class="name">Ginger Apricot Almond Chicken Salad</span><span class="price">$16.00</span></div>
+          <p class="desc">On an almond crusted croissant, pea sprouts</p>
+        </li></ul>
+    </section>
+    <section id="burgers" class="sec">
+      <h2>Burgers</h2>
+      <p class="note">Grilled to order 100% Angus beef. Served with choice of french fries, field greens salad, or daily salad</p>
+      <ul>
+        <li data-q="cafe burger* smoked peppered bacon, avocado, pepper jack cheese, chipotle aïoli, challah roll">
+          <div class="row"><span class="name">Cafe Burger*</span><span class="price">$18.00</span></div>
+          <p class="desc">Smoked peppered bacon, avocado, pepper jack cheese, chipotle aïoli, challah roll</p>
+        </li>
+        <li data-q="build your own* toasted challah bun; chipotle aïoli or whole grain mustard aïoli on request. add sharp cheddar, swiss, gorgonzola, pepper jack, provolone, grilled red onions, avocado or applewood bacon for +$0.80 each">
+          <div class="row"><span class="name">Build Your Own*</span><span class="price">$16.00</span></div>
+          <p class="desc">Toasted challah bun; chipotle aïoli or whole grain mustard aïoli on request. Add sharp cheddar, swiss, gorgonzola, pepper jack, provolone, grilled red onions, avocado or applewood bacon for +$0.80 each</p>
+        </li></ul>
+    </section>
+    <section id="soup-of-the-day" class="sec">
+      <h2>Soup of the Day</h2>
+      
+      <ul>
+        <li data-q="soup of the day ">
+          <div class="row"><span class="name">Soup of the Day</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Cup</span> <b>$6.50</b></span><span class="pp"><span class="pl">Bowl</span> <b>$9.00</b></span></div>
+        </li>
+        <li data-q="soup &amp; side salad ">
+          <div class="row"><span class="name">Soup &amp; Side Salad</span><span class="price">$12.00</span></div>
+          
+        </li></ul>
+    </section>
+    <section id="brunch-eggs-omelets-skillets-frittatas" class="sec">
+      <h2>Brunch - Eggs, Omelets, Skillets &amp; Frittatas</h2>
+      <p class="note">Brunch is served Saturday and Sunday</p>
+      <ul>
+        <li data-q="simply eggs* two eggs, choice of applewood smoked bacon, southwestern turkey sausage, grilled ham steak, or chorizo, rosemary potatoes, artisan toast">
+          <div class="row"><span class="name">Simply Eggs*</span><span class="price">$14.50</span></div>
+          <p class="desc">Two eggs, choice of applewood smoked bacon, southwestern turkey sausage, grilled ham steak, or chorizo, rosemary potatoes, artisan toast</p>
+        </li>
+        <li data-q="portobello omelet sautéed mushrooms, roasted red peppers, spinach leaves, pesto, feta cheese, rosemary potatoes, artisan toast">
+          <div class="row"><span class="name">Portobello Omelet</span><span class="price">$16.00</span></div>
+          <p class="desc">Sautéed mushrooms, roasted red peppers, spinach leaves, pesto, feta cheese, rosemary potatoes, artisan toast</p>
+        </li>
+        <li data-q="birria omelet beef birria, three cheeses, pico de gallo, cilantro crema, crispy corn tortilla strips, potatoes, artisan toast">
+          <div class="row"><span class="name">Birria Omelet</span><span class="price">$15.50</span></div>
+          <p class="desc">Beef birria, three cheeses, pico de gallo, cilantro crema, crispy corn tortilla strips, potatoes, artisan toast</p>
+        </li>
+        <li data-q="frittata florentine sautéed spinach, bacon, onions, tomatoes, cheddar &amp; jack cheese, rosemary potatoes, artisan toast">
+          <div class="row"><span class="name">Frittata Florentine</span><span class="price">$15.50</span></div>
+          <p class="desc">Sautéed spinach, bacon, onions, tomatoes, cheddar &amp; jack cheese, rosemary potatoes, artisan toast</p>
+        </li>
+        <li data-q="cafe skillet* skillet rosemary potatoes topped with two eggs, bacon, onions, tomatoes, jack &amp; cheddar cheese, toasted multigrain bread">
+          <div class="row"><span class="name">Cafe Skillet*</span><span class="price">$16.00</span></div>
+          <p class="desc">Skillet rosemary potatoes topped with two eggs, bacon, onions, tomatoes, jack &amp; cheddar cheese, toasted multigrain bread</p>
+        </li>
+        <li data-q="market skillet* skillet rosemary potatoes, two eggs, caramelized onions, avocado, zucchini, red peppers, parmesan, feta, multigrain toast">
+          <div class="row"><span class="name">Market Skillet*</span><span class="price">$16.00</span></div>
+          <p class="desc">Skillet rosemary potatoes, two eggs, caramelized onions, avocado, zucchini, red peppers, parmesan, feta, multigrain toast</p>
+        </li></ul>
+    </section>
+    <section id="brunch-favorites" class="sec">
+      <h2>Brunch - Favorites</h2>
+      
+      <ul>
+        <li data-q="grilled breakfast burrito warm flour tortilla, scrambled eggs, cheddar &amp; jack cheeses, rosemary potatoes, salsa, choice of meat or roasted vegetables">
+          <div class="row"><span class="name">Grilled Breakfast Burrito</span><span class="price">$13.50</span></div>
+          <p class="desc">Warm flour tortilla, scrambled eggs, cheddar &amp; jack cheeses, rosemary potatoes, salsa, choice of meat or roasted vegetables</p>
+        </li>
+        <li data-q="chilaquiles* crispy tortilla chips, red chili enchilada sauce, two eggs, avocado, cheddar &amp; jack cheeses, calabacitas, feta">
+          <div class="row"><span class="name">Chilaquiles*</span><span class="price">$16.50</span></div>
+          <p class="desc">Crispy tortilla chips, red chili enchilada sauce, two eggs, avocado, cheddar &amp; jack cheeses, calabacitas, feta</p>
+        </li>
+        <li data-q="avocado toast* toasted multigrain, avocado, bacon, grape tomatoes, two eggs any style, pepitas, pickled onion, roasted poblano, feta cheese, rosemary potatoes">
+          <div class="row"><span class="name">Avocado Toast*</span><span class="price">$16.50</span></div>
+          <p class="desc">Toasted multigrain, avocado, bacon, grape tomatoes, two eggs any style, pepitas, pickled onion, roasted poblano, feta cheese, rosemary potatoes</p>
+        </li>
+        <li data-q="salmon benedict* toasted english muffin, sautéed spinach, panko-crusted salmon cake, two poached eggs, dill dijon cream sauce, rosemary potatoes">
+          <div class="row"><span class="name">Salmon Benedict*</span><span class="price">$17.00</span></div>
+          <p class="desc">Toasted english muffin, sautéed spinach, panko-crusted salmon cake, two poached eggs, dill dijon cream sauce, rosemary potatoes</p>
+        </li>
+        <li data-q="southwestern eggs benedict* grilled tomatoes, pork carnitas, roasted poblanos, pico de gallo, two poached eggs, guajillo cream sauce, english muffin">
+          <div class="row"><span class="name">Southwestern Eggs Benedict*</span><span class="price">$17.00</span></div>
+          <p class="desc">Grilled tomatoes, pork carnitas, roasted poblanos, pico de gallo, two poached eggs, guajillo cream sauce, english muffin</p>
+        </li>
+        <li data-q="seasonal french toast rotates weekly">
+          <div class="row"><span class="name">Seasonal French Toast</span><span class="price">$14.00</span></div>
+          <p class="desc">Rotates weekly</p>
+        </li>
+        <li data-q="buttermilk pancakes ">
+          <div class="row"><span class="name">Buttermilk Pancakes</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Short Stack</span> <b>$8.50</b></span><span class="pp"><span class="pl">Full Stack</span> <b>$11.50</b></span></div>
+        </li></ul>
+    </section>
+    <section id="brunch-a-little-on-the-side" class="sec">
+      <h2>Brunch - A Little on the Side</h2>
+      
+      <ul>
+        <li data-q="peppered bacon, grilled ham steak, southwest turkey sausage or pork beef chorizo ">
+          <div class="row"><span class="name">Peppered Bacon, Grilled Ham Steak, Southwest Turkey Sausage or Pork Beef Chorizo</span><span class="price">$5</span></div>
+          
+        </li>
+        <li data-q="two eggs any style* ">
+          <div class="row"><span class="name">Two Eggs Any Style*</span><span class="price">$4</span></div>
+          
+        </li>
+        <li data-q="skillet rosemary potatoes ">
+          <div class="row"><span class="name">Skillet Rosemary Potatoes</span><span class="price">$3.50</span></div>
+          
+        </li>
+        <li data-q="artisan multigrain toast with olive oil ">
+          <div class="row"><span class="name">Artisan Multigrain Toast with Olive Oil</span><span class="price">$3</span></div>
+          
+        </li>
+        <li data-q="seasonal fruit bowl ">
+          <div class="row"><span class="name">Seasonal Fruit Bowl</span></div>
+          <div class="prices"><span class="pp"><span class="pl">Full</span> <b>$6.50</b></span><span class="pp"><span class="pl">Half</span> <b>$4.50</b></span></div>
+        </li></ul>
+    </section>
+  <p class="empty" id="empty">No items match that search.</p>
+</main>
+<footer class="wrap"><p>* Consumer Advisory: Consumption of under-cooked meat, poultry, eggs, or seafood may increase the risk of food-borne illnesses. Alert your server if you have special dietary requirements. We only use cage free eggs.</p><p>Prices and availability may change.</p></footer>
+<aside class="banner" role="note" id="banner">
+  <p><strong>Preview for Café à la C&#39;Art.</strong> Not the official menu. Copied from their public menu on 2026-09-22. This preview expires October 6.</p>
+  <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
+</aside>
+<div class="expired" id="expired" hidden>
+  <div>
+    <h2>This preview has expired</h2>
+    <p>The Café à la C&#39;Art menu preview was free to look at until October 6. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
+  </div>
+</div>
+<script>if (new Date() >= new Date("2026-10-06T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>
+(()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>{const on=a.dataset.sec===e.target.id;a.setAttribute('aria-current',on);if(on)a.scrollIntoView({block:'nearest',inline:'nearest'})})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>io.observe(s));})();
+</script>
+</body>
+</html>
