@@ -218,17 +218,17 @@ footer{padding-top:2.5rem;padding-bottom:6rem;color:var(--muted);font-size:.85re
 </main>
 <footer class="wrap"><p>**Crowd Favorite. Vegan friendly items are marked with a leaf on the menu.</p><p>Prices and availability may change.</p></footer>
 <aside class="banner" role="note" id="banner">
-  <p><strong>Preview for 7323 Chicago Cafe.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires October 5.</p>
+  <p><strong>Preview for 7323 Chicago Cafe.</strong> Not the official menu. Copied from their public menu on 2026-09-21. This preview expires September 20.</p>
   <button type="button" aria-label="Dismiss preview notice" onclick="this.parentNode.remove()">OK</button>
 </aside>
 <div class="expired" id="expired" hidden>
   <div>
     <h2>This preview has expired</h2>
-    <p>The 7323 Chicago Cafe menu preview was free to look at until October 5. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
+    <p>The 7323 Chicago Cafe menu preview was free to look at until September 20. To turn it into a live page with a QR code and print-ready PDF, it's $29 one time.</p>
     <p><a href="https://buy.stripe.com/28EbJ06hd8pi2VS4lPbsc01">Activate it for $29</a></p>
   </div>
 </div>
-<script>if (new Date() >= new Date("2026-10-05T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
+<script>if (new Date() >= new Date("2026-09-20T23:59:59")) { document.getElementById("expired").hidden = false; document.getElementById("banner")?.remove(); document.querySelector("main").hidden = true; document.querySelector(".bar").hidden = true; }</script>
 <script>
 (()=>{const q=document.getElementById('q'),secs=[...document.querySelectorAll('.sec')],empty=document.getElementById('empty'),links=[...document.querySelectorAll('nav.secs a')];
 q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();let any=false;secs.forEach(s=>{let n=0;s.querySelectorAll('li').forEach(li=>{const hit=!v||li.dataset.q.includes(v);li.classList.toggle('hide',!hit);if(hit)n++});s.classList.toggle('hide',!n);if(n)any=true});empty.style.display=any?'none':'block'});
